@@ -9,6 +9,7 @@ description = "Terminal games: a dinosaur runner and an interactive bookshelf ex
 readme = "README.md"
 requires-python = ">=3.10"
 keywords = ["game", "terminal", "curses", "runner"]
+license = "MIT"
 
 [project.scripts]
 dino-run = "dino_game.game:run"
