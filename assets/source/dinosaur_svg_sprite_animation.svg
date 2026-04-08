@@ -1,0 +1,380 @@
+<svg width="100%" viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>
+  @media (prefers-color-scheme: dark) {
+    .ground-fill { fill: #2a3a1a; }
+    .ground-line-s { stroke: #4a5a2a; }
+    .grass { fill: #5a7a2a; }
+  }
+  @media (prefers-color-scheme: light) {
+    .ground-fill { fill: #d4c9a0; }
+    .ground-line-s { stroke: #b0a878; }
+    .grass { fill: #7a9a3a; }
+  }
+
+  .dino-body { fill: #4a8c3f; }
+  .dino-dark { fill: #3a7030; }
+  .dino-light { fill: #5ca04e; }
+  .dino-belly { fill: #c8d8a0; }
+  .dino-eye-w { fill: #fff; }
+  .dino-eye-p { fill: #1a1a1a; }
+  .dino-mouth { fill: #2d5a24; }
+  .dino-teeth { fill: #f0ece0; }
+  .dino-claw { fill: none; stroke: #d8cca8; stroke-width: 1.5; stroke-linecap: round; }
+  .dino-tongue { fill: #d46a6a; }
+  .dino-spike { fill: #3a7030; }
+  .dino-foot { fill: #3a7030; }
+
+  /* === IDLE === */
+  @keyframes idle-body { 0%,100%{transform:translate(0,0)} 50%{transform:translate(0,-1.5px)} }
+  @keyframes idle-head { 0%,100%{transform:rotate(0deg)} 60%{transform:rotate(2deg)} }
+  @keyframes idle-arm { 0%,100%{transform:rotate(0deg)} 50%{transform:rotate(-5deg)} }
+  @keyframes idle-forearm { 0%,100%{transform:rotate(0deg)} 40%{transform:rotate(8deg)} 80%{transform:rotate(-3deg)} }
+  @keyframes idle-arm-back { 0%,100%{transform:rotate(0deg)} 50%{transform:rotate(-3deg)} }
+  @keyframes idle-tail {
+    0% { transform: rotate(0deg); }
+    30% { transform: rotate(5deg); }
+    70% { transform: rotate(-4deg); }
+    100% { transform: rotate(0deg); }
+  }
+  @keyframes idle-tailtip {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-8deg); }
+    50% { transform: rotate(2deg); }
+    75% { transform: rotate(-6deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  #idle-group { animation: idle-body 2s ease-in-out infinite; }
+  #tail-base { transform-origin: 262px 195px; animation: idle-tail 2.8s ease-in-out infinite; }
+  #tail-tip { transform-origin: 195px 186px; animation: idle-tailtip 2.2s ease-in-out infinite; }
+  #head-group { transform-origin: 340px 175px; animation: idle-head 3s ease-in-out infinite; }
+  #arm { transform-origin: 340px 190px; animation: idle-arm 2.8s ease-in-out infinite; }
+  #arm-forearm { animation: idle-forearm 3.2s ease-in-out infinite; }
+  #arm-back { animation: idle-arm-back 3s ease-in-out infinite; }
+  #blink { animation: blink 4s ease-in-out infinite; }
+  @keyframes blink { 0%,42%,48%,100%{opacity:0} 44%,46%{opacity:1} }
+
+  /* === ROAR === */
+  @keyframes roar-head { 0%{transform:rotate(0)} 12%{transform:rotate(-18deg)} 60%{transform:rotate(-18deg)} 80%{transform:rotate(-5deg)} 100%{transform:rotate(0)} }
+  @keyframes roar-jaw { 0%{transform:rotate(0)} 10%{transform:rotate(22deg)} 55%{transform:rotate(20deg)} 100%{transform:rotate(0)} }
+  @keyframes roar-body { 0%{transform:translate(0,0)} 8%{transform:translate(2px,-3px)} 20%{transform:translate(-1px,-2px)} 50%{transform:translate(1px,-1px)} 100%{transform:translate(0,0)} }
+  @keyframes roar-arm { 0%{transform:rotate(0)} 15%{transform:rotate(-30deg)} 60%{transform:rotate(-25deg)} 100%{transform:rotate(0)} }
+  @keyframes roar-forearm { 0%{transform:rotate(0)} 12%{transform:rotate(35deg)} 55%{transform:rotate(30deg)} 100%{transform:rotate(0)} }
+  @keyframes roar-arm-back { 0%{transform:rotate(0)} 15%{transform:rotate(-20deg)} 60%{transform:rotate(-15deg)} 100%{transform:rotate(0)} }
+  @keyframes roar-tail {
+    0%{transform:rotate(0)} 10%{transform:rotate(12deg)} 25%{transform:rotate(-8deg)}
+    40%{transform:rotate(10deg)} 55%{transform:rotate(-6deg)} 70%{transform:rotate(8deg)} 100%{transform:rotate(0)}
+  }
+  @keyframes roar-tailtip {
+    0%{transform:rotate(0)} 8%{transform:rotate(-15deg)} 20%{transform:rotate(12deg)}
+    35%{transform:rotate(-14deg)} 50%{transform:rotate(10deg)} 65%{transform:rotate(-8deg)} 100%{transform:rotate(0)}
+  }
+  @keyframes roar-text { 0%{opacity:0;transform:translate(0,5px) scale(0.5)} 12%{opacity:1;transform:translate(0,0) scale(1.1)} 18%{transform:translate(0,0) scale(1)} 65%{opacity:1;transform:translate(0,0)} 100%{opacity:0;transform:translate(5px,-5px) scale(0.8)} }
+  @keyframes roar-shake1 { 0%,100%{transform:translate(0,0)} 15%{transform:translate(2px,0)} 30%{transform:translate(-2px,1px)} 45%{transform:translate(1px,-1px)} 60%{transform:translate(0,0)} }
+  @keyframes tongue-out { 0%{transform:scaleY(0)} 15%{transform:scaleY(1)} 55%{transform:scaleY(1)} 100%{transform:scaleY(0)} }
+
+  .roar #idle-group { animation: roar-body 1.6s ease-out forwards; }
+  .roar #head-group { animation: roar-head 1.6s ease-out forwards; }
+  .roar #jaw { animation: roar-jaw 1.6s ease-out forwards; }
+  .roar #arm { animation: roar-arm 1.6s ease-out forwards; }
+  .roar #arm-forearm { animation: roar-forearm 1.6s ease-out forwards; }
+  .roar #arm-back { animation: roar-arm-back 1.6s ease-out forwards; }
+  .roar #tail-base { animation: roar-tail 1.6s ease-out forwards; }
+  .roar #tail-tip { animation: roar-tailtip 1.6s ease-out forwards; }
+  .roar #roar-text { animation: roar-text 1.6s ease-out forwards; }
+  .roar #roar-lines { animation: roar-text 1.6s ease-out forwards; }
+  .roar #tongue { animation: tongue-out 1.6s ease-out forwards; transform-origin: 370px 170px; }
+  .roar .shake-line { animation: roar-shake1 0.3s linear infinite; }
+
+  /* === WALK === */
+  @keyframes walk-body { 0%,100%{transform:translate(0,0)} 15%{transform:translate(1px,-3px)} 35%{transform:translate(0,0)} 65%{transform:translate(1px,-3px)} 85%{transform:translate(0,0)} }
+
+  /* Left leg: thigh swings from hip. Contact-lift-swing-plant cycle */
+  @keyframes walk-Lthigh {
+    0%   { transform: rotate(15deg); }   /* contact: forward */
+    25%  { transform: rotate(25deg); }   /* push: further forward */
+    50%  { transform: rotate(-5deg); }   /* lift: passing under */
+    75%  { transform: rotate(-20deg); }  /* swing: back */
+    100% { transform: rotate(15deg); }   /* plant: forward again */
+  }
+  /* Shin counter-rotates: extends on push, bends on swing */
+  @keyframes walk-Lshin {
+    0%   { transform: rotate(-15deg); }
+    25%  { transform: rotate(-5deg); }   /* extending */
+    50%  { transform: rotate(5deg); }
+    75%  { transform: rotate(30deg); }   /* bent on swing-through */
+    100% { transform: rotate(-15deg); }
+  }
+  /* Foot stays flat on ground during contact, flexes on lift */
+  @keyframes walk-Lfoot {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-15deg); }  /* toe-off */
+    50%  { transform: rotate(10deg); }   /* dorsiflexion in air */
+    75%  { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }    /* flat for contact */
+  }
+
+  /* Right leg: same cycle, offset 50% */
+  @keyframes walk-Rthigh {
+    0%   { transform: rotate(-5deg); }
+    25%  { transform: rotate(-20deg); }
+    50%  { transform: rotate(15deg); }
+    75%  { transform: rotate(25deg); }
+    100% { transform: rotate(-5deg); }
+  }
+  @keyframes walk-Rshin {
+    0%   { transform: rotate(5deg); }
+    25%  { transform: rotate(30deg); }
+    50%  { transform: rotate(-15deg); }
+    75%  { transform: rotate(-5deg); }
+    100% { transform: rotate(5deg); }
+  }
+  @keyframes walk-Rfoot {
+    0%   { transform: rotate(10deg); }
+    25%  { transform: rotate(5deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-15deg); }
+    100% { transform: rotate(10deg); }
+  }
+
+  @keyframes walk-tail {
+    0%{transform:rotate(0)} 25%{transform:rotate(10deg)} 50%{transform:rotate(0)} 75%{transform:rotate(-8deg)} 100%{transform:rotate(0)}
+  }
+  @keyframes walk-tailtip {
+    0%{transform:rotate(0)} 20%{transform:rotate(-12deg)} 45%{transform:rotate(5deg)} 70%{transform:rotate(-10deg)} 100%{transform:rotate(0)}
+  }
+  @keyframes walk-head { 0%,100%{transform:rotate(0)} 25%{transform:rotate(2deg)} 75%{transform:rotate(-1deg)} }
+  @keyframes walk-arm { 0%,100%{transform:rotate(0)} 25%{transform:rotate(-12deg)} 75%{transform:rotate(8deg)} }
+  @keyframes walk-forearm { 0%,100%{transform:rotate(0)} 25%{transform:rotate(15deg)} 75%{transform:rotate(-5deg)} }
+  @keyframes walk-arm-back { 0%,100%{transform:rotate(0)} 25%{transform:rotate(6deg)} 75%{transform:rotate(-8deg)} }
+  @keyframes walk-across { 0%{transform:translateX(0)} 100%{transform:translateX(380px)} }
+  @keyframes dust-puff { 0%{opacity:0;r:0} 20%{opacity:0.4;r:4} 100%{opacity:0;r:8;transform:translate(-12px,-8px)} }
+
+  .walk #idle-group { animation: walk-body 0.4s ease-in-out infinite; }
+  .walk #head-group { animation: walk-head 0.4s ease-in-out infinite; }
+  .walk #tail-base { animation: walk-tail 0.4s ease-in-out infinite; }
+  .walk #tail-tip { animation: walk-tailtip 0.4s ease-in-out infinite; }
+  .walk #arm { animation: walk-arm 0.4s ease-in-out infinite; }
+  .walk #arm-forearm { animation: walk-forearm 0.4s ease-in-out infinite; }
+  .walk #arm-back { animation: walk-arm-back 0.4s ease-in-out infinite; }
+
+  .walk #left-thigh  { animation: walk-Lthigh 0.4s ease-in-out infinite; }
+  .walk #left-shin   { animation: walk-Lshin  0.4s ease-in-out infinite; }
+  .walk #left-foot   { animation: walk-Lfoot  0.4s ease-in-out infinite; }
+  .walk #right-thigh { animation: walk-Rthigh 0.4s ease-in-out infinite; }
+  .walk #right-shin  { animation: walk-Rshin  0.4s ease-in-out infinite; }
+  .walk #right-foot  { animation: walk-Rfoot  0.4s ease-in-out infinite; }
+
+  .walk #walk-wrapper { animation: walk-across 3s linear forwards; }
+  .walk .dust-p { animation: dust-puff 0.4s ease-out infinite; }
+  .walk .dust-p:nth-child(2) { animation-delay: 0.2s; }
+
+  #roar-text, #roar-lines, #tongue { opacity: 0; }
+  .dust-p { opacity: 0; }
+</style>
+
+<!-- Ground -->
+<rect class="ground-fill" x="0" y="268" width="680" height="52" rx="0"/>
+<line class="ground-line-s" x1="0" y1="268" x2="680" y2="268" stroke-width="1.5"/>
+<g class="grass">
+  <path d="M30 268 L34 255 L38 268" fill="currentColor" opacity="0.6"/>
+  <path d="M100 268 L103 258 L106 268" fill="currentColor" opacity="0.5"/>
+  <path d="M180 268 L184 256 L188 268" fill="currentColor" opacity="0.6"/>
+  <path d="M260 268 L263 260 L266 268" fill="currentColor" opacity="0.4"/>
+  <path d="M400 268 L404 254 L408 268" fill="currentColor" opacity="0.5"/>
+  <path d="M500 268 L503 259 L506 268" fill="currentColor" opacity="0.6"/>
+  <path d="M580 268 L584 256 L588 268" fill="currentColor" opacity="0.5"/>
+  <path d="M640 268 L643 261 L646 268" fill="currentColor" opacity="0.4"/>
+</g>
+
+<g id="scene-group">
+<g id="walk-wrapper">
+<g id="idle-group">
+
+  <!-- Dust particles -->
+  <circle class="dust-p" cx="290" cy="266" r="0" fill="#b0a878"/>
+  <circle class="dust-p" cx="280" cy="264" r="0" fill="#b0a878"/>
+
+  <!-- TAIL -->
+  <g id="tail-base">
+    <path class="dino-body" d="
+      M265 180 C250 175, 220 170, 195 175
+      L192 190 C218 195, 248 200, 265 210 Z
+    "/>
+    <path class="dino-dark" d="
+      M260 204 C245 200, 222 196, 198 190
+      C218 198, 242 204, 262 210 Z
+    " opacity="0.45"/>
+    <path class="dino-spike" d="M242 172 L247 156 L252 172"/>
+    <path class="dino-spike" d="M220 172 L226 155 L232 172"/>
+    <g id="tail-tip">
+      <path class="dino-body" d="
+        M198 175 C178 170, 156 166, 142 170
+        C138 175, 140 181, 146 184
+        C158 188, 178 190, 198 190 Z
+      "/>
+      <path class="dino-dark" d="
+        M190 187 C175 186, 158 184, 148 182
+        C158 188, 175 190, 195 190 Z
+      " opacity="0.4"/>
+      <path class="dino-dark" d="
+        M146 174 C138 170, 128 172, 126 176
+        C130 180, 140 182, 146 180 Z
+      "/>
+      <path class="dino-spike" d="M168 166 L174 150 L180 166"/>
+    </g>
+  </g>
+
+  <!--
+    LEGS: proper articulated structure
+    Each leg = thigh (pivots at hip) > shin (pivots at knee) > foot (pivots at ankle)
+    Hip joints sit at bottom of body ellipse.
+    Left leg (behind, darker) hip at (295, 220)
+    Right leg (front) hip at (320, 220)
+  -->
+
+  <!-- LEFT LEG (behind body, darker shade) -->
+  <g id="left-thigh" style="transform-origin: 295px 220px;">
+    <!-- Thigh: muscular upper segment -->
+    <path class="dino-dark" d="
+      M289 220 C287 228, 286 236, 288 244
+      L298 244 C300 236, 299 228, 297 220 Z
+    "/>
+    <!-- Shin group pivots at knee (293, 244) -->
+    <g id="left-shin" style="transform-origin: 293px 244px;">
+      <!-- Shin: thinner lower segment -->
+      <path class="dino-dark" d="
+        M290 244 C289 250, 288 256, 290 262
+        L296 262 C298 256, 297 250, 296 244 Z
+      " opacity="0.85"/>
+      <!-- Foot group pivots at ankle (293, 262) -->
+      <g id="left-foot" style="transform-origin: 293px 262px;">
+        <!-- Foot pad -->
+        <ellipse class="dino-foot" cx="293" cy="265" rx="10" ry="4"/>
+        <!-- Three toes with claws -->
+        <path class="dino-claw" d="M285 264 L280 268 M289 265 L286 270 M297 265 L300 270"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT LEG (front, main body color) -->
+  <g id="right-thigh" style="transform-origin: 320px 220px;">
+    <!-- Thigh -->
+    <path class="dino-body" d="
+      M314 220 C312 228, 311 236, 313 244
+      L323 244 C325 236, 324 228, 322 220 Z
+    "/>
+    <!-- Shin group pivots at knee (318, 244) -->
+    <g id="right-shin" style="transform-origin: 318px 244px;">
+      <!-- Shin -->
+      <path class="dino-dark" d="
+        M315 244 C314 250, 313 256, 315 262
+        L321 262 C323 256, 322 250, 321 244 Z
+      "/>
+      <!-- Foot group pivots at ankle (318, 262) -->
+      <g id="right-foot" style="transform-origin: 318px 262px;">
+        <!-- Foot pad -->
+        <ellipse class="dino-foot" cx="318" cy="265" rx="10" ry="4"/>
+        <!-- Three toes with claws -->
+        <path class="dino-claw" d="M310 264 L305 268 M314 265 L311 270 M322 265 L325 270"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Back arm (behind body, peeking out) -->
+  <g id="arm-back" style="transform-origin: 330px 190px;">
+    <path class="dino-dark" d="
+      M330 188 C334 192, 337 198, 338 204
+      L334 206 C333 200, 330 194, 327 190 Z
+    " opacity="0.7"/>
+    <g style="transform-origin: 336px 205px;">
+      <path class="dino-dark" d="
+        M334 204 C336 208, 337 212, 336 216
+        L332 217 C333 213, 332 209, 330 205 Z
+      " opacity="0.7"/>
+      <path class="dino-claw" d="M334 216 L337 222 M332 217 L330 223" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- Body (drawn over leg tops to hide joints) -->
+  <ellipse class="dino-body" cx="310" cy="195" rx="55" ry="35"/>
+  <ellipse class="dino-belly" cx="318" cy="208" rx="32" ry="18" opacity="0.7"/>
+
+  <!-- Body spikes -->
+  <path class="dino-spike" d="M268 163 L274 146 L280 162"/>
+  <path class="dino-spike" d="M286 158 L293 140 L300 157"/>
+  <path class="dino-spike" d="M305 156 L312 138 L319 155"/>
+  <path class="dino-spike" d="M323 158 L330 142 L337 157"/>
+
+  <!-- Front arm (T-Rex style: short upper arm, tiny forearm, two-clawed hand) -->
+  <g id="arm" style="transform-origin: 340px 190px;">
+    <!-- Upper arm -->
+    <path class="dino-light" d="
+      M340 188 C345 193, 350 200, 352 207
+      L347 209 C346 202, 342 195, 338 190 Z
+    "/>
+    <!-- Forearm: pivots at elbow -->
+    <g id="arm-forearm" style="transform-origin: 350px 208px;">
+      <path class="dino-body" d="
+        M348 207 C350 211, 352 216, 351 221
+        L346 222 C347 217, 346 212, 344 208 Z
+      "/>
+      <!-- Two-fingered hand with hooked claws -->
+      <!-- Finger 1 (upper, longer) -->
+      <path class="dino-dark" d="M349 220 C352 223, 355 226, 353 229 L350 228 C352 225, 350 223, 348 221Z"/>
+      <path fill="#e8dcc0" d="M353 228 L356 233 C354 234, 351 233, 350 231Z"/>
+      <!-- Finger 2 (lower, shorter) -->
+      <path class="dino-dark" d="M347 222 C349 225, 351 228, 349 230 L346 229 C348 227, 347 225, 345 223Z"/>
+      <path fill="#e8dcc0" d="M349 229 L351 234 C349 235, 346 234, 346 232Z"/>
+    </g>
+  </g>
+
+  <!-- Head -->
+  <g id="head-group">
+    <ellipse class="dino-body" cx="348" cy="178" rx="22" ry="20"/>
+    <path class="dino-body" d="M340 150 Q338 140 345 135 Q358 128 378 132 Q398 136 405 148 Q408 158 400 165 Q388 172 370 174 Q350 175 340 168Z"/>
+    <path class="dino-light" d="M378 134 Q392 138 400 148 Q395 140 380 136Z" opacity="0.5"/>
+    <ellipse class="dino-dark" cx="396" cy="148" rx="3" ry="2.5"/>
+    <ellipse class="dino-eye-w" cx="374" cy="146" rx="9" ry="8"/>
+    <circle class="dino-eye-p" cx="376" cy="146" r="4.5"/>
+    <circle fill="#fff" cx="378" cy="144" r="1.8"/>
+    <ellipse id="blink" class="dino-body" cx="374" cy="146" rx="9.5" ry="8.5" opacity="0"/>
+    <path class="dino-dark" d="M364 138 Q370 134 382 136 Q386 137 384 139 Q374 136 366 140Z" opacity="0.6"/>
+    <path class="dino-mouth" d="M388 160 Q400 162 405 157 Q408 162 402 167 Q392 170 384 168Z"/>
+    <path class="dino-teeth" d="M392 164 L394 168 L396 164 M399 162 L401 166 L403 162"/>
+
+    <g id="jaw" style="transform-origin: 380px 168px;">
+      <path class="dino-dark" d="M370 170 Q382 172 400 168 Q404 172 398 176 Q385 180 370 177Z"/>
+      <path class="dino-teeth" d="M388 170 L390 174 L392 170 M395 169 L397 173 L399 169"/>
+      <ellipse id="tongue" class="dino-tongue" cx="388" cy="176" rx="8" ry="4" opacity="0"/>
+    </g>
+
+    <g id="roar-text" opacity="0">
+      <text x="420" y="125" font-family="sans-serif" font-size="22" font-weight="500" fill="#333" letter-spacing="1">RAWRR!</text>
+    </g>
+    <g id="roar-lines" opacity="0" stroke="#666" stroke-width="2" stroke-linecap="round">
+      <line class="shake-line" x1="415" y1="140" x2="430" y2="135"/>
+      <line class="shake-line" x1="412" y1="152" x2="428" y2="152"/>
+      <line class="shake-line" x1="414" y1="128" x2="426" y2="120"/>
+    </g>
+  </g>
+
+</g>
+</g>
+</g>
+
+<!-- Buttons -->
+<g cursor="pointer" onclick="this.closest('svg').classList.remove('roar','walk')">
+  <rect x="195" y="286" width="80" height="28" rx="6" fill="#f0f0f0" stroke="#ccc" stroke-width="1"/>
+  <text x="235" y="304" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="500" fill="#333">Idle</text>
+</g>
+<g cursor="pointer" onclick="let s=this.closest('svg');s.classList.remove('roar','walk');void s.offsetWidth;s.classList.add('roar');setTimeout(()=>s.classList.remove('roar'),1700)">
+  <rect x="295" y="286" width="80" height="28" rx="6" fill="#f0f0f0" stroke="#ccc" stroke-width="1"/>
+  <text x="335" y="304" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="500" fill="#333">Rawr!</text>
+</g>
+<g cursor="pointer" onclick="let s=this.closest('svg');s.classList.remove('roar','walk');void s.offsetWidth;s.classList.add('walk');setTimeout(()=>{s.classList.remove('walk')},3100)">
+  <rect x="395" y="286" width="80" height="28" rx="6" fill="#f0f0f0" stroke="#ccc" stroke-width="1"/>
+  <text x="435" y="304" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="500" fill="#333">Sprint!</text>
+</g>
+
+</svg>
