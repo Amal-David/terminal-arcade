@@ -50,16 +50,18 @@ bookshelf
 
 ## Claude Code Ambient Quotes
 
-This repo includes a PostToolUse hook for [Claude Code](https://claude.ai/code) that delivers contextually relevant book quotes during your coding sessions.
+This repo includes a PostToolUse hook for [Claude Code](https://claude.ai/code) that delivers contextually relevant book quotes during your coding sessions. After every few tool calls, a quote appears — matched to what you're doing (debugging gets perseverance quotes, shipping gets courage quotes, etc.).
 
-### Install
+![Ambient Quote Hook](assets/screenshots/ambient_quote_hook.png)
+
+### Setup for Claude Code (CLI & Desktop)
 
 1. Clone the repo:
    ```bash
    git clone https://github.com/Amal-David/terminal-arcade.git
    ```
 
-2. Add to your `~/.claude/settings.json` (merge with existing hooks if you have any):
+2. Add the hook to `~/.claude/settings.json` (merge with existing hooks if you have any):
    ```json
    {
      "hooks": {
@@ -80,15 +82,36 @@ This repo includes a PostToolUse hook for [Claude Code](https://claude.ai/code) 
 
 3. Replace `/path/to/terminal-arcade` with the actual clone location.
 
-Every few tool calls, you'll get a quote matched to your coding context — debugging gets perseverance quotes, shipping gets courage quotes, and so on.
+This works everywhere Claude Code runs — the CLI (`claude`), the desktop app, and VS Code / JetBrains extensions. The `~/.claude/settings.json` file is shared across all of them.
 
-**Configure** (optional) at `~/.config/bookshelf/config.json`:
+### Configuration
+
+Optionally create `~/.config/bookshelf/config.json`:
+
 ```json
 {
   "quote_cadence": 5,
   "context_matching": true
 }
 ```
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `quote_cadence` | 5 | Show a quote every Nth tool call |
+| `context_matching` | true | Match quotes to coding context |
+
+### How it works
+
+The hook runs after every tool call. It tracks a counter and shows a quote every `quote_cadence` calls. When `context_matching` is enabled, it reads the tool name, command, and file path to pick a relevant quote:
+
+| Coding Context | Quote Tags |
+|---------------|------------|
+| Debugging, fixing bugs | perseverance, resilience, patience |
+| Building, creating | creativity, ambition, innovation |
+| Testing | discipline, focus, perseverance |
+| Shipping, deploying | courage, risk, ambition |
+| Refactoring | simplicity, growth, change |
+| Late night work | solitude, perseverance, focus |
 
 ## Test
 
