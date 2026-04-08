@@ -48,6 +48,48 @@ bookshelf
 # or: python3 -m bookshelf
 ```
 
+## Claude Code Ambient Quotes
+
+This repo includes a PostToolUse hook for [Claude Code](https://claude.ai/code) that delivers contextually relevant book quotes during your coding sessions.
+
+### Install
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Amal-David/terminal-arcade.git
+   ```
+
+2. Add to your `~/.claude/settings.json` (merge with existing hooks if you have any):
+   ```json
+   {
+     "hooks": {
+       "PostToolUse": [
+         {
+           "hooks": [
+             {
+               "type": "command",
+               "command": "python3 /path/to/terminal-arcade/bookshelf/skill/hook.py",
+               "timeout": 5
+             }
+           ]
+         }
+       ]
+     }
+   }
+   ```
+
+3. Replace `/path/to/terminal-arcade` with the actual clone location.
+
+Every few tool calls, you'll get a quote matched to your coding context — debugging gets perseverance quotes, shipping gets courage quotes, and so on.
+
+**Configure** (optional) at `~/.config/bookshelf/config.json`:
+```json
+{
+  "quote_cadence": 5,
+  "context_matching": true
+}
+```
+
 ## Test
 
 ```bash

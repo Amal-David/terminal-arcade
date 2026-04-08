@@ -12,7 +12,7 @@ Install by adding to ~/.claude/settings.json:
         "hooks": [
           {
             "type": "command",
-            "command": "python3 /Users/amal/experiments/terminal-games/bookshelf/skill/hook.py",
+            "command": "python3 /path/to/terminal-arcade/bookshelf/skill/hook.py",
             "timeout": 5
           }
         ]
