@@ -3,17 +3,18 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "terminal-games"
-version = "0.3.0"
-description = "Terminal games: a dinosaur runner and an interactive bookshelf explorer."
+name = "terminal-arcade"
+version = "0.4.0"
+description = "Terminal games: a dinosaur runner, snake game, and an interactive bookshelf explorer."
 readme = "README.md"
 requires-python = ">=3.10"
-keywords = ["game", "terminal", "curses", "runner"]
+keywords = ["game", "terminal", "curses", "runner", "snake"]
 license = "MIT"
 
 [project.scripts]
 dino-run = "dino_game.game:run"
+snake-game = "snake_game.game:run"
 bookshelf = "bookshelf.app:run"
 
 [tool.setuptools]
-packages = ["dino_game", "bookshelf", "bookshelf.data", "bookshelf.screens", "bookshelf.ui", "bookshelf.skill"]
+packages = ["dino_game", "snake_game", "bookshelf", "bookshelf.data", "bookshelf.screens", "bookshelf.ui", "bookshelf.skill"]
