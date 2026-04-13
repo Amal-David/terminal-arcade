@@ -14,9 +14,10 @@ from .storage import load_high_score, save_high_score
 FPS = 20
 FRAME_TIME = 1.0 / FPS
 
-GRID_W = 20
-GRID_H = 20
 CELL_W = 2  # each cell is 2 chars wide for square aspect ratio
+
+# Grid fills ~80% of terminal, computed at runtime
+GRID_FILL = 0.80
 
 INITIAL_SPEED = 6.0  # moves per second
 MAX_SPEED = 14.0
@@ -31,7 +32,7 @@ BONUS_LIFETIME = 120  # frames (~6 seconds)
 SCORE_FLASH_FRAMES = 8
 
 MIN_WIDTH = 50
-MIN_HEIGHT = 26
+MIN_HEIGHT = 20
 
 # Direction vectors
 UP = (0, -1)
@@ -51,7 +52,6 @@ HEAD_CHARS = {
 BODY_CHAR = "██"
 FOOD_CHAR = "◆◆"
 BONUS_CHAR = "★★"
-EMPTY_CHAR = "  "
 
 # ── Title Art ────────────────────────────────────────────────────────────────
 
@@ -65,20 +65,37 @@ TITLE_ART = [
 ]
 
 SNAKE_ART = [
-    "      ██████████████████████►► ◆◆",
+    "      ██████████████████████████████████████████████████►► ◆◆",
     "      ██",
-    "      ██████████████►►",
+    "      ████████████████████████████████►►",
 ]
+
+
+# ── Grid sizing ──────────────────────────────────────────────────────────────
+
+def compute_grid_size(term_h: int, term_w: int) -> tuple[int, int]:
+    """Compute grid dimensions to fill ~80% of the terminal."""
+    # Reserve 3 rows for HUD (top) and 1 for bottom margin
+    available_h = term_h - 4
+    # Reserve 2 cols for border chars
+    available_w = term_w - 2
+
+    grid_h = max(10, int(available_h * GRID_FILL))
+    grid_w = max(15, int((available_w * GRID_FILL) / CELL_W))
+
+    return grid_w, grid_h
 
 
 # ── State ────────────────────────────────────────────────────────────────────
 
 @dataclass
 class GameState:
-    snake: list[tuple[int, int]] = field(default_factory=lambda: [(10, 10), (9, 10), (8, 10)])
+    grid_w: int = 30
+    grid_h: int = 20
+    snake: list[tuple[int, int]] = field(default_factory=list)
     direction: tuple[int, int] = field(default_factory=lambda: RIGHT)
     next_direction: tuple[int, int] = field(default_factory=lambda: RIGHT)
-    food: tuple[int, int] = field(default_factory=lambda: (15, 10))
+    food: tuple[int, int] = field(default_factory=lambda: (0, 0))
     bonus_food: tuple[int, int] | None = None
     bonus_timer: int = 0
     score: int = 0
@@ -97,9 +114,14 @@ class GameState:
     death_anim_frame: int = 0
 
 
-def new_game(high_score: int) -> GameState:
+def new_game(high_score: int, grid_w: int = 30, grid_h: int = 20) -> GameState:
     state = GameState()
+    state.grid_w = grid_w
+    state.grid_h = grid_h
     state.high_score = high_score
+    # Start snake in the center
+    cx, cy = grid_w // 2, grid_h // 2
+    state.snake = [(cx, cy), (cx - 1, cy), (cx - 2, cy)]
     state.food = spawn_food(state)
     return state
 
@@ -111,7 +133,7 @@ def spawn_food(state: GameState) -> tuple[int, int]:
     if state.bonus_food:
         occupied.add(state.bonus_food)
     while True:
-        pos = (random.randint(0, GRID_W - 1), random.randint(0, GRID_H - 1))
+        pos = (random.randint(0, state.grid_w - 1), random.randint(0, state.grid_h - 1))
         if pos not in occupied:
             return pos
 
@@ -121,7 +143,7 @@ def spawn_bonus(state: GameState) -> tuple[int, int] | None:
         occupied = set(state.snake)
         occupied.add(state.food)
         for _ in range(50):
-            pos = (random.randint(0, GRID_W - 1), random.randint(0, GRID_H - 1))
+            pos = (random.randint(0, state.grid_w - 1), random.randint(0, state.grid_h - 1))
             if pos not in occupied:
                 return pos
     return None
@@ -131,7 +153,7 @@ def move_snake(state: GameState) -> None:
     state.direction = state.next_direction
     hx, hy = state.snake[0]
     dx, dy = state.direction
-    new_head = ((hx + dx) % GRID_W, (hy + dy) % GRID_H)
+    new_head = ((hx + dx) % state.grid_w, (hy + dy) % state.grid_h)
 
     # Self-collision
     if new_head in set(state.snake):
@@ -302,7 +324,10 @@ def render_title(stdscr, state: GameState, height: int, width: int, has_color: b
     dim_attr = curses.A_DIM
     art_attr = curses.color_pair(3) | curses.A_BOLD if has_color else curses.A_BOLD
 
-    y = 2
+    # Center vertically
+    total_lines = len(TITLE_ART) + 1 + len(SNAKE_ART) + 8
+    y = max(1, (height - total_lines) // 2)
+
     for line in TITLE_ART:
         safe_addstr(stdscr, y, max(0, (width - len(line)) // 2), line, title_attr)
         y += 1
@@ -338,47 +363,54 @@ def render_game(stdscr, state: GameState, height: int, width: int, has_color: bo
     border_attr = curses.color_pair(4) if has_color else curses.A_DIM
     dead_attr = curses.color_pair(6) | curses.A_BOLD if has_color else curses.A_BOLD
 
-    # Center the grid
-    grid_pixel_w = GRID_W * CELL_W + 2  # +2 for left/right border
-    grid_pixel_h = GRID_H + 2  # +2 for top/bottom border
+    gw = state.grid_w
+    gh = state.grid_h
+
+    # Grid pixel dimensions (border included)
+    grid_pixel_w = gw * CELL_W + 2
+    grid_pixel_h = gh + 2
+
+    # Center the grid in the terminal
     ox = max(0, (width - grid_pixel_w) // 2)
     oy = max(2, (height - grid_pixel_h) // 2)
 
-    # HUD
+    # ── HUD row (above the grid) ──
+    hud_y = oy - 1
     score_text = f"Score: {state.score}"
     length_text = f"Length: {len(state.snake)}"
     speed_text = f"Speed: {state.speed:.0f}"
+    hi_text = f"HI {state.high_score}" if state.high_score > 0 else ""
 
     if state.score_flash_timer > 0 and state.score_flash_timer % 2 == 0:
         score_attr = curses.A_NORMAL
     else:
         score_attr = curses.color_pair(3) | curses.A_BOLD if has_color else curses.A_BOLD
 
-    safe_addstr(stdscr, oy - 1, ox + 1, score_text, score_attr)
-    safe_addstr(stdscr, oy - 1, ox + grid_pixel_w - len(speed_text) - 1, speed_text, curses.A_DIM)
+    safe_addstr(stdscr, hud_y, ox + 1, score_text, score_attr)
+    safe_addstr(stdscr, hud_y, ox + (grid_pixel_w - len(length_text)) // 2, length_text, curses.A_DIM)
+    right_text = f"{hi_text}  {speed_text}" if hi_text else speed_text
+    safe_addstr(stdscr, hud_y, ox + grid_pixel_w - len(right_text) - 1, right_text, curses.A_DIM)
 
-    hi_text = f"HI {state.high_score}" if state.high_score > 0 else ""
-    mid_x = ox + (grid_pixel_w - len(length_text)) // 2
-    safe_addstr(stdscr, oy - 1, mid_x, length_text, curses.A_DIM)
-    if hi_text:
-        safe_addstr(stdscr, oy - 1, ox + grid_pixel_w - len(hi_text) - len(speed_text) - 3, hi_text, curses.A_DIM)
-
-    # Border
-    safe_addstr(stdscr, oy, ox, "╔" + "═" * (GRID_W * CELL_W) + "╗", border_attr)
-    for row in range(GRID_H):
+    # ── Border ──
+    safe_addstr(stdscr, oy, ox, "╔" + "═" * (gw * CELL_W) + "╗", border_attr)
+    for row in range(gh):
         safe_addstr(stdscr, oy + 1 + row, ox, "║", border_attr)
-        safe_addstr(stdscr, oy + 1 + row, ox + 1 + GRID_W * CELL_W, "║", border_attr)
-    safe_addstr(stdscr, oy + GRID_H + 1, ox, "╚" + "═" * (GRID_W * CELL_W) + "╝", border_attr)
+        safe_addstr(stdscr, oy + 1 + row, ox + 1 + gw * CELL_W, "║", border_attr)
+    safe_addstr(stdscr, oy + gh + 1, ox, "╚" + "═" * (gw * CELL_W) + "╝", border_attr)
 
-    # Grid contents
+    # ── Grid contents ──
     snake_set = set(state.snake)
     head = state.snake[0] if state.snake else None
 
-    for row in range(GRID_H):
-        for col in range(GRID_W):
+    for row in range(gh):
+        for col in range(gw):
+            pos = (col, row)
+            # Skip empty cells for performance
+            if pos not in snake_set and pos != state.food and pos != state.bonus_food:
+                continue
+
             cx = ox + 1 + col * CELL_W
             cy = oy + 1 + row
-            pos = (col, row)
 
             if pos == head:
                 char = HEAD_CHARS.get(state.direction, "██")
@@ -390,7 +422,6 @@ def render_game(stdscr, state: GameState, height: int, width: int, has_color: bo
             elif pos == state.food:
                 safe_addstr(stdscr, cy, cx, FOOD_CHAR, food_attr)
             elif pos == state.bonus_food:
-                # Blink bonus when about to expire
                 if state.bonus_timer > 30 or state.frame_count % 4 < 3:
                     safe_addstr(stdscr, cy, cx, BONUS_CHAR, bonus_attr)
 
@@ -455,7 +486,9 @@ def main(stdscr) -> None:
     has_color = init_colors()
 
     high_score = load_high_score()
-    state = new_game(high_score)
+    height, width = stdscr.getmaxyx()
+    grid_w, grid_h = compute_grid_size(height, width)
+    state = new_game(high_score, grid_w, grid_h)
 
     while state.running:
         frame_start = time.monotonic()
@@ -472,7 +505,10 @@ def main(stdscr) -> None:
         elif action == "restart":
             if state.high_score_dirty:
                 save_high_score(state.high_score)
-            state = new_game(state.high_score)
+            # Recompute grid in case terminal was resized
+            height, width = stdscr.getmaxyx()
+            grid_w, grid_h = compute_grid_size(height, width)
+            state = new_game(state.high_score, grid_w, grid_h)
             state.started = True
             continue
 
