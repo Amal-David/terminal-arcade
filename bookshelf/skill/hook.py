@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """PostToolUse hook — shows a book quote every Nth tool call.
 
-This script reads JSON from stdin (tool call details) and outputs
-JSON to stdout with a systemMessage containing a relevant quote.
+Tracks which quotes have been shown and how many times, so you get
+variety across your session. Quotes are deprioritized after being shown
+and only repeat once the full pool is exhausted.
 
 Install by adding to ~/.claude/settings.json:
 {
@@ -34,6 +35,9 @@ PROJECT_ROOT = str(Path(__file__).resolve().parents[2])
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
+# How many recent quote indices to avoid repeating
+RECENT_WINDOW = 50
+
 
 def get_context_tags(input_data: dict) -> list[str]:
     """Extract context tags from tool call data."""
@@ -63,7 +67,7 @@ def get_context_tags(input_data: dict) -> list[str]:
 
 
 def pick_quote(context_tags: list[str] | None = None) -> dict | None:
-    """Pick a quote, optionally matching context tags."""
+    """Pick a quote, avoiding recently shown ones and deprioritizing repeats."""
     from bookshelf.data.quotes import QUOTES
     from bookshelf.skill.config import load_hook_state, save_hook_state
 
@@ -71,38 +75,67 @@ def pick_quote(context_tags: list[str] | None = None) -> dict | None:
         return None
 
     state = load_hook_state()
-    last_idx = state.get("last_quote_idx", -1)
+    shown_counts: dict[str, int] = state.get("shown_counts", {})
+    recent_indices: list[int] = state.get("recent_indices", [])
+    recent_set = set(recent_indices)
 
-    if context_tags:
-        # Score quotes by tag overlap
-        scored = []
-        for i, q in enumerate(QUOTES):
+    total = len(QUOTES)
+
+    # Build candidate list with scoring
+    candidates: list[tuple[float, int]] = []
+
+    for i, q in enumerate(QUOTES):
+        score = 0.0
+
+        # Context relevance (0-3 points)
+        if context_tags:
             overlap = len(set(q.tags) & set(context_tags))
-            if overlap > 0:
-                scored.append((overlap, i, q))
+            score += overlap
 
-        if scored:
-            # Pick from top-scoring quotes, avoiding the last shown
-            scored.sort(key=lambda x: x[0], reverse=True)
-            top_score = scored[0][0]
-            candidates = [(i, q) for s, i, q in scored if s >= top_score - 1 and i != last_idx]
+        # Penalize recently shown (strong penalty)
+        if i in recent_set:
+            score -= 5.0
 
-            if candidates:
-                idx, quote = random.choice(candidates)
-                state["last_quote_idx"] = idx
-                save_hook_state(state)
-                return {"text": quote.text, "author": quote.author, "book": quote.book_title, "tags": list(quote.tags)}
+        # Penalize frequently shown (mild penalty per showing)
+        times_shown = shown_counts.get(str(i), 0)
+        score -= times_shown * 0.5
 
-    # Fallback: random quote
-    available = [i for i in range(len(QUOTES)) if i != last_idx]
-    if not available:
-        available = list(range(len(QUOTES)))
+        candidates.append((score, i))
 
-    idx = random.choice(available)
+    # Sort by score descending, then pick randomly from the top tier
+    candidates.sort(key=lambda x: x[0], reverse=True)
+    top_score = candidates[0][0]
+
+    # Top tier = anything within 1 point of the best score
+    top_tier = [(s, i) for s, i in candidates if s >= top_score - 1.0]
+
+    # Pick randomly from top tier
+    _, idx = random.choice(top_tier)
     q = QUOTES[idx]
+
+    # Update state
+    shown_counts[str(idx)] = shown_counts.get(str(idx), 0) + 1
+    recent_indices.append(idx)
+    # Keep recent window bounded
+    if len(recent_indices) > RECENT_WINDOW:
+        recent_indices = recent_indices[-RECENT_WINDOW:]
+
+    state["shown_counts"] = shown_counts
+    state["recent_indices"] = recent_indices
     state["last_quote_idx"] = idx
+    state["total_quotes_shown"] = state.get("total_quotes_shown", 0) + 1
     save_hook_state(state)
-    return {"text": q.text, "author": q.author, "book": q.book_title, "tags": list(q.tags)}
+
+    times = shown_counts[str(idx)]
+    return {
+        "text": q.text,
+        "author": q.author,
+        "book": q.book_title,
+        "tags": list(q.tags),
+        "times_shown": times,
+        "total_shown": state["total_quotes_shown"],
+        "unique_shown": len(shown_counts),
+    }
 
 
 def main():
@@ -111,7 +144,6 @@ def main():
     except (json.JSONDecodeError, Exception):
         input_data = {}
 
-    # Load state and check cadence
     from bookshelf.skill.config import load_hook_state, save_hook_state, get_cadence, is_context_matching_enabled
 
     state = load_hook_state()
@@ -139,7 +171,8 @@ def main():
 
     # Format the quote as a system message
     tags_str = " ".join(f"#{t}" for t in quote["tags"][:3])
-    message = f'📖 "{quote["text"]}"\n   — {quote["author"]}, {quote["book"]}\n   {tags_str}'
+    stats = f"[{quote['unique_shown']}/485 unique quotes shown]"
+    message = f'📖 "{quote["text"]}"\n   — {quote["author"]}, {quote["book"]}\n   {tags_str}\n   {stats}'
 
     result = {"systemMessage": message}
     print(json.dumps(result))
