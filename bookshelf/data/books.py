@@ -46,11 +46,25 @@ def load_all_books() -> list[Book]:
     from bookshelf.data.books_motivation import MOTIVATION_BOOKS
     from bookshelf.data.books_startup import STARTUP_BOOKS
     from bookshelf.data.books_romance import ROMANCE_BOOKS
+    from bookshelf.data.books_fiction import FICTION_BOOKS
+    from bookshelf.data.books_science import SCIENCE_BOOKS
+    from bookshelf.data.books_philosophy import PHILOSOPHY_BOOKS
+    from bookshelf.data.books_psychology import PSYCHOLOGY_BOOKS
+    from bookshelf.data.books_history import HISTORY_BOOKS
 
     all_books = []
     seen_titles: set[str] = set()
 
-    for dicts in (MOTIVATION_BOOKS, STARTUP_BOOKS, ROMANCE_BOOKS):
+    for dicts in (
+        MOTIVATION_BOOKS,
+        STARTUP_BOOKS,
+        ROMANCE_BOOKS,
+        FICTION_BOOKS,
+        SCIENCE_BOOKS,
+        PHILOSOPHY_BOOKS,
+        PSYCHOLOGY_BOOKS,
+        HISTORY_BOOKS,
+    ):
         for book in _dicts_to_books(dicts):
             if book.title not in seen_titles:
                 all_books.append(book)

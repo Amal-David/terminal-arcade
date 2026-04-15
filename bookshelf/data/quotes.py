@@ -3607,3 +3607,63 @@ QUOTES = [
         tags=["love", "risk", "vulnerability"],
     ),
 ]
+
+# Merge quotes from expanded genre modules, deduplicating by text
+from bookshelf.data.quotes_fiction import FICTION_QUOTES, ROMANCE_EXTRA_QUOTES
+from bookshelf.data.quotes_science_philosophy import SCIENCE_QUOTES, PHILOSOPHY_QUOTES
+from bookshelf.data.quotes_psych_history import (
+    PSYCHOLOGY_QUOTES,
+    HISTORY_QUOTES,
+    MOTIVATION_EXTRA_QUOTES,
+    STARTUP_EXTRA_QUOTES,
+)
+
+# Title normalization: map common short titles to their full book titles
+_TITLE_FIXES = {
+    "The 7 Habits": "The 7 Habits of Highly Effective People",
+    "The Subtle Art": "The Subtle Art of Not Giving a F*ck",
+    "Thinking Fast and Slow": "Thinking, Fast and Slow",
+    "Creativity Inc": "Creativity, Inc.",
+    "Psychology of Money": "The Psychology of Money",
+    "12 Rules for Life": "12 Rules for Life: An Antidote to Chaos",
+    "Song of Achilles": "The Song of Achilles",
+    "Call Me By Your Name": "Call Me by Your Name",
+    "Big Magic": "Big Magic: Creative Living Beyond Fear",
+    "Extreme Ownership": "Extreme Ownership: How U.S. Navy SEALs Lead and Win",
+    "Flow": "Flow: The Psychology of Optimal Experience",
+    "Grit": "Grit: The Power of Passion and Perseverance",
+    "Ikigai": "Ikigai: The Japanese Secret to a Long and Happy Life",
+    "Make Your Bed": "Make Your Bed: Little Things That Can Change Your Life...and Maybe the World",
+    "Mindset": "Mindset: The New Psychology of Success",
+    "Quiet": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
+}
+
+
+def _merge_and_dedup(*quote_lists: list) -> list:
+    seen_texts: set[str] = set()
+    merged = []
+    for quotes in quote_lists:
+        for q in quotes:
+            key = q.text[:80].lower().strip()
+            if key in seen_texts:
+                continue
+            seen_texts.add(key)
+            # Fix known title mismatches
+            title = _TITLE_FIXES.get(q.book_title, q.book_title)
+            if title != q.book_title:
+                q = Quote(text=q.text, book_title=title, author=q.author, chapter=q.chapter, tags=q.tags)
+            merged.append(q)
+    return merged
+
+
+QUOTES = _merge_and_dedup(
+    QUOTES,
+    FICTION_QUOTES,
+    ROMANCE_EXTRA_QUOTES,
+    SCIENCE_QUOTES,
+    PHILOSOPHY_QUOTES,
+    PSYCHOLOGY_QUOTES,
+    HISTORY_QUOTES,
+    MOTIVATION_EXTRA_QUOTES,
+    STARTUP_EXTRA_QUOTES,
+)

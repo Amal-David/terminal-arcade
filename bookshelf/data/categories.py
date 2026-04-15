@@ -16,9 +16,34 @@ GENRES = {
         "icon": "♥",
         "description": "Love stories, relationships, and the heart",
     },
+    "fiction": {
+        "label": "Fiction",
+        "icon": "✦",
+        "description": "Literary fiction, classics, sci-fi, fantasy, and thrillers",
+    },
+    "science": {
+        "label": "Science",
+        "icon": "◎",
+        "description": "Physics, biology, technology, and the natural world",
+    },
+    "philosophy": {
+        "label": "Philosophy",
+        "icon": "◇",
+        "description": "Ancient wisdom, existentialism, ethics, and the examined life",
+    },
+    "psychology": {
+        "label": "Psychology",
+        "icon": "◈",
+        "description": "The mind, behavior, decision-making, and human nature",
+    },
+    "history": {
+        "label": "History",
+        "icon": "▣",
+        "description": "World events, civilizations, wars, and the story of humanity",
+    },
 }
 
-GENRE_ORDER = ["all", "motivation", "startup", "romance"]
+GENRE_ORDER = ["all", "motivation", "startup", "romance", "fiction", "science", "philosophy", "psychology", "history"]
 
 MOODS = [
     "hustle mode",

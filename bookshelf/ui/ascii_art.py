@@ -38,6 +38,11 @@ GENRE_ICONS = {
     "motivation": "★",
     "startup": "◆",
     "romance": "♥",
+    "fiction": "✦",
+    "science": "◎",
+    "philosophy": "◇",
+    "psychology": "◈",
+    "history": "▣",
     "all": "●",
 }
 
