@@ -153,7 +153,12 @@ def move_snake(state: GameState) -> None:
     state.direction = state.next_direction
     hx, hy = state.snake[0]
     dx, dy = state.direction
-    new_head = ((hx + dx) % state.grid_w, (hy + dy) % state.grid_h)
+    new_head = (hx + dx, hy + dy)
+
+    # Wall collision ends the run.
+    if not (0 <= new_head[0] < state.grid_w and 0 <= new_head[1] < state.grid_h):
+        state.is_dead = True
+        return
 
     # Self-collision
     if new_head in set(state.snake):

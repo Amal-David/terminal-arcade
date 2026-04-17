@@ -1,6 +1,6 @@
 # Star Blast
 
-A Nokia-inspired side-scrolling terminal shooter with a short campaign, an endless mode, and a small arcade HUD.
+A Nokia-inspired vertical terminal shooter with a larger starship sprite, chunkier enemy ships, a tighter playfield, a short campaign, and an endless mode.
 
 ## Run
 
@@ -17,9 +17,10 @@ star-blast
 
 | Key | Action |
 |---|---|
-| `Up` / `W` | Move up |
-| `Down` / `S` | Move down |
-| `Space` | Fire |
+| `Left` / `A` | Move left |
+| `Right` / `D` | Move right |
+| `Space` | Fire, or hold for repeated shots on terminals with key repeat |
+| `F` | Toggle autofire on / off |
 | `P` | Pause / Resume |
 | `A` / `D` / `←` / `→` | Change mode on title screen |
 | `1` / `2` | Pick Campaign / Endless |
@@ -33,11 +34,11 @@ star-blast
 
 ## Enemy Types
 
-- `*` Debris — slow, disposable hazards
-- `>` Scout — fast basic ships
-- `Z` Zigzag — weaving enemies that drift vertically
-- `H` Turret — armored shooters that fire straight bolts
-- `<M>` Carrier — stage boss with burst fire and high health
+- `[#]` Debris — slow, disposable hazards
+- `[V]` Scout — fast basic ships
+- `<W>` Zigzag — weaving enemies that drift across lanes
+- `[###]` Turret — armored shooters that fire straight bolts
+- `/MMM\` Carrier — stage boss with burst fire and high health
 
 ## Scoring
 

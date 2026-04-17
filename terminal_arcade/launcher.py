@@ -111,7 +111,7 @@ def build_entries() -> list[ArcadeEntry]:
             id="snake",
             title="Snake",
             subtitle="Classic Nokia snake",
-            blurb="Wrap the edges, chase food, and manage the increasing speed as the snake grows across the grid.",
+            blurb="Chase food, avoid the walls, and manage the increasing speed as the snake grows across the grid.",
             controls="Arrows or WASD move  |  P pause  |  Q quit",
             min_size=(50, 20),
             launch=launch_snake,
@@ -120,8 +120,8 @@ def build_entries() -> list[ArcadeEntry]:
             id="star_blast",
             title="Star Blast",
             subtitle="Nokia-style space shooter",
-            blurb="Blast through a short campaign or hold out in endless mode against scouts, zigzags, turrets, and carrier bosses.",
-            controls="UP or W climb  |  DOWN or S dive  |  SPACE fire  |  P pause  |  Q quit",
+            blurb="Pilot a larger starship through a tighter vertical arena and blast descending waves in campaign or endless mode.",
+            controls="LEFT or A strafe  |  RIGHT or D strafe  |  HOLD SPACE fire  |  F autofire  |  Q quit",
             min_size=(72, 24),
             launch=launch_star_blast,
         ),
@@ -282,7 +282,10 @@ def launcher_main(stdscr, entries: list[ArcadeEntry], initial_index: int = 0) ->
 
 def open_launcher(entries: list[ArcadeEntry], initial_index: int = 0) -> int | None:
     """Open the launcher in its own curses session."""
-    return curses.wrapper(lambda stdscr: launcher_main(stdscr, entries, initial_index))
+    try:
+        return curses.wrapper(lambda stdscr: launcher_main(stdscr, entries, initial_index))
+    except KeyboardInterrupt:
+        return None
 
 
 def run() -> None:

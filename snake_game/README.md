@@ -1,6 +1,6 @@
 # Snake
 
-A Nokia-style terminal snake game with wrapping edges, speed progression, and bonus food.
+A Nokia-style terminal snake game with wall collisions, speed progression, and bonus food.
 
 ![Gameplay](../assets/screenshots/snake_gameplay.png)
 
@@ -26,8 +26,8 @@ snake-game
 
 ## Gameplay
 
-- Snake wraps around edges (exits right, appears on left — classic Nokia behavior)
-- Game over on self-collision only
+- Hitting a wall ends the run
+- Game over on wall or self-collision
 - Speed increases every 5 food items (6 → 14 moves/sec)
 - Regular food (◆) = 10 points
 - Bonus food (★) = 30 points, appears randomly and blinks before disappearing

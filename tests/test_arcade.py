@@ -3,7 +3,7 @@ import unittest
 from unittest.mock import patch
 
 import dino_game.game as dino_game
-from terminal_arcade.launcher import build_entries, interpret_key, move_selection
+from terminal_arcade.launcher import build_entries, interpret_key, move_selection, open_launcher
 
 
 class ArcadeLauncherTests(unittest.TestCase):
@@ -29,6 +29,10 @@ class ArcadeLauncherTests(unittest.TestCase):
 
     def test_interpret_key_ignores_out_of_range_quick_launch(self) -> None:
         self.assertEqual(("noop", None), interpret_key(ord("4"), 2))
+
+    def test_open_launcher_returns_none_on_keyboard_interrupt(self) -> None:
+        with patch("terminal_arcade.launcher.curses.wrapper", side_effect=KeyboardInterrupt):
+            self.assertIsNone(open_launcher(build_entries()))
 
 
 class DinoRunTests(unittest.TestCase):

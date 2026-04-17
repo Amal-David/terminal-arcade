@@ -46,42 +46,41 @@ class TestSnakeMovement(unittest.TestCase):
             move_snake(state)
             hx, hy = state.snake[0]
             dx, dy = direction
-            self.assertEqual(hx, (10 + dx) % GW)
-            self.assertEqual(hy, (10 + dy) % GH)
+            self.assertEqual(hx, 10 + dx)
+            self.assertEqual(hy, 10 + dy)
             self.assertFalse(state.is_dead, f"Died moving {direction}")
 
-    def test_wrap_right(self):
+    def test_hits_right_wall(self):
         state = new_game(0, GW, GH)
         state.snake = [(GW - 1, 10), (GW - 2, 10), (GW - 3, 10)]
         state.direction = RIGHT
         state.next_direction = RIGHT
         move_snake(state)
-        self.assertEqual(state.snake[0], (0, 10))
-        self.assertFalse(state.is_dead)
+        self.assertTrue(state.is_dead)
 
-    def test_wrap_left(self):
+    def test_hits_left_wall(self):
         state = new_game(0, GW, GH)
         state.snake = [(0, 10), (1, 10), (2, 10)]
         state.direction = LEFT
         state.next_direction = LEFT
         move_snake(state)
-        self.assertEqual(state.snake[0], (GW - 1, 10))
+        self.assertTrue(state.is_dead)
 
-    def test_wrap_top(self):
+    def test_hits_top_wall(self):
         state = new_game(0, GW, GH)
         state.snake = [(10, 0), (10, 1), (10, 2)]
         state.direction = UP
         state.next_direction = UP
         move_snake(state)
-        self.assertEqual(state.snake[0], (10, GH - 1))
+        self.assertTrue(state.is_dead)
 
-    def test_wrap_bottom(self):
+    def test_hits_bottom_wall(self):
         state = new_game(0, GW, GH)
         state.snake = [(10, GH - 1), (10, GH - 2), (10, GH - 3)]
         state.direction = DOWN
         state.next_direction = DOWN
         move_snake(state)
-        self.assertEqual(state.snake[0], (10, 0))
+        self.assertTrue(state.is_dead)
 
 
 class TestCollision(unittest.TestCase):
