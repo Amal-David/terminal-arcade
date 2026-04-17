@@ -15,6 +15,26 @@ pip install -e .
 dino-run
 ```
 
+If `dino-run` is not found after install, `pip` probably placed scripts in a user directory that is not on `PATH`.
+
+| OS | Script directory |
+|---|---|
+| macOS | `$(python3 -m site --user-base)/bin` |
+| Linux | `$(python3 -m site --user-base)/bin` |
+| Windows | `$(py -m site --user-base)\Scripts` |
+
+You can either add that directory to `PATH`, or run the module directly:
+
+```bash
+# macOS / Linux
+python3 -m dino_game
+```
+
+```powershell
+# Windows
+py -m dino_game
+```
+
 ## Controls
 
 | Key | Action |

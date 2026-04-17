@@ -4,20 +4,47 @@ import unittest
 from dino_game.assets import DINOSAUR_FRAMES, DINOSAUR_ORDER
 from dino_game.generated_svg_frames import SVG_TYRANT_FRAMES
 from dino_game.game import (
+    CLEAR_TIME_FRAMES,
+    FAMILY_FLYER,
+    FAMILY_GROUND_LARGE,
+    FAMILY_GROUND_SMALL,
+    FLYER_BASE_MIN_GAP,
+    FLYER_MIN_SPEED,
+    GAP_COEFFICIENT,
+    GROUND_BASE_MIN_GAP,
+    GROUND_LARGE_GROUP_MIN_SPEED,
+    INITIAL_SPEED,
+    MAX_GROUP_SIZE,
+    MAX_GAP_COEFFICIENT,
+    ROAR_CHARGE_MAX,
+    SPEED_ACCELERATION,
+    DINO_X,
+    ROAR_RANGE,
     GameState,
     Obstacle,
-    PATTERN_TEMPLATES,
-    ROAR_CHARGE_MAX,
+    SpawnGroup,
     apply_roar_hits,
-    available_patterns,
+    available_families,
     biome_for_score,
     choose_dinosaur,
-    choose_pattern,
+    choose_group_size,
+    choose_spawn_family,
+    choose_spawn_group,
     cycle_dinosaur,
+    group_render_width,
+    hazard_width,
+    sample_group_gap,
     selected_dinosaur_key,
-    speed_target,
+    spawn_obstacle_group,
     trigger_roar,
+    update_difficulty,
+    update_obstacles,
 )
+
+
+class SilentAudio:
+    def play(self, _name: str) -> None:
+        pass
 
 
 class GameplayTests(unittest.TestCase):
@@ -28,16 +55,115 @@ class GameplayTests(unittest.TestCase):
         self.assertEqual("basalt", biome_for_score(600))
         self.assertEqual("scrub", biome_for_score(900))
 
-    def test_speed_target_is_monotonic(self) -> None:
-        checkpoints = [0, 150, 300, 600, 900, 1200]
-        speeds = [speed_target(score) for score in checkpoints]
-        self.assertEqual(sorted(speeds), speeds)
-        self.assertGreater(speeds[-1], speeds[0])
+    def test_speed_acceleration_is_smooth(self) -> None:
+        state = GameState(speed=INITIAL_SPEED)
+        audio = SilentAudio()
 
-    def test_each_biome_has_multiple_patterns(self) -> None:
-        for biome, speed in [("scrub", 2.6), ("fossil", 3.1), ("basalt", 3.8)]:
-            patterns = available_patterns(biome, speed)
-            self.assertGreaterEqual(len(patterns), 4, biome)
+        speeds = []
+        for _ in range(8):
+            update_difficulty(state, audio)
+            speeds.append(state.speed)
+
+        increments = [round(curr - prev, 6) for prev, curr in zip([INITIAL_SPEED] + speeds[:-1], speeds)]
+        self.assertTrue(all(increment == round(SPEED_ACCELERATION, 6) for increment in increments))
+
+    def test_flyer_family_unlocks_at_target_speed(self) -> None:
+        self.assertNotIn(FAMILY_FLYER, available_families(FLYER_MIN_SPEED - 0.01))
+        self.assertIn(FAMILY_FLYER, available_families(FLYER_MIN_SPEED))
+
+    def test_ground_large_groups_unlock_at_target_speed(self) -> None:
+        low_rng = random.Random(7)
+        self.assertTrue(
+            all(choose_group_size(FAMILY_GROUND_LARGE, GROUND_LARGE_GROUP_MIN_SPEED - 0.01, low_rng) == 1 for _ in range(20))
+        )
+
+        high_rng = random.Random(7)
+        self.assertTrue(
+            any(choose_group_size(FAMILY_GROUND_LARGE, GROUND_LARGE_GROUP_MIN_SPEED, high_rng) > 1 for _ in range(50))
+        )
+
+    def test_spawn_family_never_repeats_three_times(self) -> None:
+        history: list[str] = []
+        rng = random.Random(42)
+
+        for _ in range(300):
+            family = choose_spawn_family(FLYER_MIN_SPEED + 0.6, history, rng)
+            history.append(family)
+            if len(history) >= 3:
+                self.assertFalse(history[-1] == history[-2] == history[-3])
+
+    def test_spawn_family_never_places_flyer_after_flyer(self) -> None:
+        rng = random.Random(9)
+        for _ in range(100):
+            self.assertNotEqual(FAMILY_FLYER, choose_spawn_family(FLYER_MIN_SPEED + 0.5, [FAMILY_FLYER], rng))
+
+    def test_sampled_gap_varies_within_bounds(self) -> None:
+        rng = random.Random(11)
+        values = [sample_group_gap(FAMILY_GROUND_SMALL, "desert_pad", 2, 2.5, rng) for _ in range(40)]
+        min_gap = round(group_render_width("desert_pad", 2) * 2.5 + GROUND_BASE_MIN_GAP * GAP_COEFFICIENT)
+        max_gap = round(min_gap * MAX_GAP_COEFFICIENT)
+
+        self.assertGreater(len(set(values)), 1)
+        self.assertTrue(all(min_gap <= value <= max_gap for value in values))
+
+    def test_flyer_gap_uses_flyer_base_gap(self) -> None:
+        rng = random.Random(5)
+        value = sample_group_gap(FAMILY_FLYER, "scavenger", 1, 3.2, rng)
+        min_gap = round(group_render_width("scavenger", 1) * 3.2 + FLYER_BASE_MIN_GAP * GAP_COEFFICIENT)
+        max_gap = round(min_gap * MAX_GAP_COEFFICIENT)
+        self.assertGreaterEqual(value, min_gap)
+        self.assertLessEqual(value, max_gap)
+
+    def test_no_obstacles_spawn_during_clear_time(self) -> None:
+        state = GameState(started=True, current_biome="scrub")
+        rng = random.Random(3)
+
+        for frame in range(CLEAR_TIME_FRAMES):
+            state.running_frames = frame
+            update_obstacles(state, 80, rng)
+            self.assertEqual([], state.obstacles)
+
+        state.running_frames = CLEAR_TIME_FRAMES
+        update_obstacles(state, 80, rng)
+        self.assertTrue(state.obstacles)
+
+    def test_spawned_group_uses_spacing_and_starts_offscreen(self) -> None:
+        state = GameState(started=True, current_biome="scrub", speed=2.8)
+        rng = random.Random(1)
+        group = SpawnGroup(
+            family=FAMILY_GROUND_SMALL,
+            hazard_name="desert_pad",
+            group_size=MAX_GROUP_SIZE,
+            gap_after=24,
+        )
+
+        spawn_obstacle_group(state, 80, rng, group)
+
+        self.assertEqual(MAX_GROUP_SIZE, len(state.obstacles))
+        self.assertTrue(all(obstacle.x >= 80 for obstacle in state.obstacles))
+
+        width = hazard_width("desert_pad")
+        for previous, current in zip(state.obstacles, state.obstacles[1:]):
+            self.assertEqual(previous.x + width + 1, current.x)
+
+    def test_spawned_group_stays_outside_reaction_window(self) -> None:
+        state = GameState(started=True, current_biome="scrub", speed=2.8)
+        rng = random.Random(4)
+        group = SpawnGroup(
+            family=FAMILY_GROUND_LARGE,
+            hazard_name="desert_tall",
+            group_size=2,
+            gap_after=30,
+        )
+
+        spawn_obstacle_group(state, 80, rng, group)
+
+        self.assertTrue(all(obstacle.x > DINO_X + ROAR_RANGE for obstacle in state.obstacles))
+
+    def test_choose_spawn_group_can_emit_flyer_after_unlock(self) -> None:
+        rng = random.Random(12)
+        groups = [choose_spawn_group("basalt", FLYER_MIN_SPEED + 0.4, [], rng).family for _ in range(120)]
+        self.assertIn(FAMILY_FLYER, groups)
 
     def test_roar_requires_full_charge(self) -> None:
         state = GameState(roar_charge=ROAR_CHARGE_MAX - 1)
@@ -51,27 +177,15 @@ class GameplayTests(unittest.TestCase):
         state = GameState(roar_charge=ROAR_CHARGE_MAX)
         trigger_roar(state)
         state.obstacles = [
-            Obstacle(x=18, hazard_name="desert_pad", biome="scrub"),
-            Obstacle(x=20, hazard_name="desert_tall", biome="scrub"),
-            Obstacle(x=45, hazard_name="desert_stump", biome="scrub"),
+            Obstacle(x=18, hazard_name="desert_pad", biome="scrub", family=FAMILY_GROUND_SMALL, group_id=0),
+            Obstacle(x=20, hazard_name="desert_tall", biome="scrub", family=FAMILY_GROUND_LARGE, group_id=1),
+            Obstacle(x=45, hazard_name="desert_stump", biome="scrub", family=FAMILY_GROUND_SMALL, group_id=2),
         ]
 
         destroyed = apply_roar_hits(state, frame_count=0)
 
         self.assertEqual(1, destroyed)
         self.assertEqual(["desert_tall", "desert_stump"], [o.hazard_name for o in state.obstacles])
-
-    def test_pattern_groups_never_exceed_two(self) -> None:
-        self.assertTrue(all(pattern.group_size <= 2 for pattern in PATTERN_TEMPLATES))
-
-    def test_pattern_selection_avoids_triple_repeat(self) -> None:
-        history: list[str] = []
-        rng = random.Random(42)
-        for _ in range(300):
-            choice = choose_pattern("scrub", 2.8, history, rng)
-            history.append(choice.name)
-            if len(history) >= 3:
-                self.assertFalse(history[-1] == history[-2] == history[-3])
 
     def test_roster_has_ten_dinosaur_options(self) -> None:
         self.assertEqual(10, len(DINOSAUR_ORDER))

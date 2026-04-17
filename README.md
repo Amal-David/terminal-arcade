@@ -44,20 +44,64 @@ cd terminal-arcade
 pip install -e .
 ```
 
+If `pip` warns that `arcade`, `dino-run`, `snake-game`, or `bookshelf` were installed to a directory that is not on `PATH`, you can either run the modules directly or add the user script directory to `PATH`.
+
+User script directories:
+
+| OS | Script directory |
+|---|---|
+| macOS | `$(python3 -m site --user-base)/bin` |
+| Linux | `$(python3 -m site --user-base)/bin` |
+| Windows | `$(py -m site --user-base)\Scripts` |
+
+Examples:
+
+```bash
+# macOS / Linux: temporary PATH update for the current shell
+export PATH="$(python3 -m site --user-base)/bin:$PATH"
+
+# macOS / Linux: run without touching PATH
+python3 -m terminal_arcade
+python3 -m dino_game
+python3 -m snake_game
+python3 -m bookshelf
+```
+
+```powershell
+# Windows PowerShell: temporary PATH update for the current session
+$env:Path = "$(py -m site --user-base)\Scripts;$env:Path"
+
+# Windows: run without touching PATH
+py -m terminal_arcade
+py -m dino_game
+py -m snake_game
+py -m bookshelf
+```
+
 ## Run
 
 ```bash
+# Full arcade launcher
+arcade
+# or: python3 -m terminal_arcade
+# or on Windows: py -m terminal_arcade
+
+# Direct shortcuts
+
 # Dino Run
 dino-run
 # or: python3 -m dino_game
+# or on Windows: py -m dino_game
 
 # Snake
 snake-game
 # or: python3 -m snake_game
+# or on Windows: py -m snake_game
 
 # The Bookshelf
 bookshelf
 # or: python3 -m bookshelf
+# or on Windows: py -m bookshelf
 ```
 
 ## Claude Code Ambient Quotes

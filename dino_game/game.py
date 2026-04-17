@@ -29,9 +29,7 @@ FRAME_TIME = 1.0 / FPS
 
 INITIAL_SPEED = 1.7
 MAX_SPEED = 4.8
-SPEED_STEP = 0.22
-SPEED_DRIFT_DIVISOR = 2200.0
-SPEED_TIER_SCORE = 150
+SPEED_ACCELERATION = 0.0015
 
 BASE_JUMP_VELOCITY = -5.25
 GRAVITY = 0.72
@@ -51,10 +49,6 @@ ROAR_CHARGE_PER_FRAME = 0.65
 ROAR_TIMER_FRAMES = 10
 ROAR_RANGE = 18
 ROAR_SCORE_BONUS = 25
-
-ACTION_NEUTRAL = "neutral"
-ACTION_JUMP = "jump"
-ACTION_DUCK = "duck"
 
 JUMP_KEYS = {curses.KEY_UP, ord(" "), ord("w"), ord("W")}
 DUCK_KEYS = {curses.KEY_DOWN, ord("s"), ord("S")}
@@ -81,16 +75,23 @@ HERO_STANDING_BOX = (8, 6)
 HERO_DUCK_BOX = (9, 3)
 SCAVENGER_BOX = (5, 2)
 
-TRANSITION_GAP_BONUS = {
-    (ACTION_NEUTRAL, ACTION_NEUTRAL): 8,
-    (ACTION_NEUTRAL, ACTION_JUMP): 11,
-    (ACTION_NEUTRAL, ACTION_DUCK): 13,
-    (ACTION_JUMP, ACTION_NEUTRAL): 10,
-    (ACTION_JUMP, ACTION_JUMP): 13,
-    (ACTION_JUMP, ACTION_DUCK): 20,
-    (ACTION_DUCK, ACTION_NEUTRAL): 12,
-    (ACTION_DUCK, ACTION_JUMP): 22,
-    (ACTION_DUCK, ACTION_DUCK): 15,
+FAMILY_GROUND_SMALL = "ground_small"
+FAMILY_GROUND_LARGE = "ground_large"
+FAMILY_FLYER = "flyer"
+
+GROUND_BASE_MIN_GAP = 16
+FLYER_BASE_MIN_GAP = 20
+GAP_COEFFICIENT = 0.6
+MAX_GAP_COEFFICIENT = 1.5
+MAX_GROUP_SIZE = 3
+MEMBER_SPACING = 1
+GROUND_LARGE_GROUP_MIN_SPEED = 2.6
+FLYER_MIN_SPEED = 3.0
+
+FAMILY_WEIGHTS = {
+    FAMILY_GROUND_SMALL: 5,
+    FAMILY_GROUND_LARGE: 4,
+    FAMILY_FLYER: 2,
 }
 
 
@@ -98,27 +99,19 @@ TRANSITION_GAP_BONUS = {
 class HazardSpec:
     name: str
     sprite_key: str
-    action: str
+    family: str
     fragile: bool
-    biome: str
-    min_speed: float = 0.0
-    bird_y_offset: int = 0
-    speed_offset: float = 0.0
     hitbox: tuple[int, int] = (5, 5)
 
 
 @dataclass(frozen=True)
-class PatternTemplate:
-    name: str
-    biome: str
-    hazards: tuple[tuple[str, int], ...]
-    min_speed: float
-    action: str
-    weight: int = 1
-
-    @property
-    def group_size(self) -> int:
-        return len(self.hazards)
+class SpawnGroup:
+    family: str
+    hazard_name: str
+    group_size: int
+    gap_after: int
+    y_offset: int = 0
+    speed_offset: float = 0.0
 
 
 @dataclass
@@ -126,6 +119,13 @@ class Obstacle:
     x: float
     hazard_name: str
     biome: str
+    family: str
+    group_id: int
+    group_size: int = 1
+    gap_after: int = 0
+    following_obstacle_created: bool = True
+    y_offset: int = 0
+    speed_offset: float = 0.0
 
     @property
     def spec(self) -> HazardSpec:
@@ -154,10 +154,8 @@ class GameState:
     ground_offset: float = 0.0
     ground_rough: bool = False
     ground_segment_remaining: float = 0.0
-    pattern_history: list[str] = field(default_factory=list)
-    last_pattern_name: str | None = None
-    queued_pattern_name: str | None = None
-    queued_gap: int = 0
+    family_history: list[str] = field(default_factory=list)
+    next_group_id: int = 0
 
     current_biome: str = "scrub"
     banner_text: str = BIOME_LABELS["scrub"]
@@ -179,159 +177,98 @@ HAZARD_SPECS = {
     "desert_pad": HazardSpec(
         name="desert_pad",
         sprite_key="desert_pad",
-        action=ACTION_JUMP,
+        family=FAMILY_GROUND_SMALL,
         fragile=True,
-        biome="scrub",
-        min_speed=0.0,
         hitbox=(3, 4),
     ),
     "desert_tall": HazardSpec(
         name="desert_tall",
         sprite_key="desert_tall",
-        action=ACTION_JUMP,
+        family=FAMILY_GROUND_LARGE,
         fragile=False,
-        biome="scrub",
-        min_speed=1.9,
         hitbox=(5, 6),
     ),
     "desert_stump": HazardSpec(
         name="desert_stump",
         sprite_key="desert_stump",
-        action=ACTION_JUMP,
+        family=FAMILY_GROUND_SMALL,
         fragile=True,
-        biome="scrub",
-        min_speed=1.2,
         hitbox=(5, 3),
     ),
     "fossil_ribs": HazardSpec(
         name="fossil_ribs",
         sprite_key="fossil_ribs",
-        action=ACTION_JUMP,
+        family=FAMILY_GROUND_LARGE,
         fragile=False,
-        biome="fossil",
-        min_speed=2.2,
         hitbox=(7, 4),
     ),
     "fossil_spire": HazardSpec(
         name="fossil_spire",
         sprite_key="fossil_spire",
-        action=ACTION_JUMP,
+        family=FAMILY_GROUND_LARGE,
         fragile=False,
-        biome="fossil",
-        min_speed=2.4,
         hitbox=(5, 5),
     ),
     "fossil_heap": HazardSpec(
         name="fossil_heap",
         sprite_key="fossil_heap",
-        action=ACTION_JUMP,
+        family=FAMILY_GROUND_SMALL,
         fragile=True,
-        biome="fossil",
-        min_speed=2.2,
         hitbox=(6, 3),
     ),
     "basalt_spike": HazardSpec(
         name="basalt_spike",
         sprite_key="basalt_spike",
-        action=ACTION_JUMP,
+        family=FAMILY_GROUND_LARGE,
         fragile=False,
-        biome="basalt",
-        min_speed=2.9,
         hitbox=(5, 6),
     ),
     "basalt_vent": HazardSpec(
         name="basalt_vent",
         sprite_key="basalt_vent",
-        action=ACTION_JUMP,
+        family=FAMILY_GROUND_LARGE,
         fragile=False,
-        biome="basalt",
-        min_speed=3.0,
         hitbox=(5, 4),
     ),
     "basalt_shards": HazardSpec(
         name="basalt_shards",
         sprite_key="basalt_shards",
-        action=ACTION_JUMP,
+        family=FAMILY_GROUND_SMALL,
         fragile=True,
-        biome="basalt",
-        min_speed=3.0,
         hitbox=(6, 4),
     ),
-    "scavenger_high": HazardSpec(
-        name="scavenger_high",
+    "scavenger": HazardSpec(
+        name="scavenger",
         sprite_key="scavenger",
-        action=ACTION_NEUTRAL,
+        family=FAMILY_FLYER,
         fragile=True,
-        biome="scrub",
-        min_speed=2.5,
-        bird_y_offset=-7,
-        speed_offset=0.2,
-        hitbox=SCAVENGER_BOX,
-    ),
-    "scavenger_mid": HazardSpec(
-        name="scavenger_mid",
-        sprite_key="scavenger",
-        action=ACTION_JUMP,
-        fragile=True,
-        biome="fossil",
-        min_speed=3.0,
-        bird_y_offset=-4,
-        speed_offset=0.25,
-        hitbox=SCAVENGER_BOX,
-    ),
-    "scavenger_low": HazardSpec(
-        name="scavenger_low",
-        sprite_key="scavenger",
-        action=ACTION_DUCK,
-        fragile=True,
-        biome="basalt",
-        min_speed=3.4,
-        bird_y_offset=-1,
-        speed_offset=0.3,
         hitbox=SCAVENGER_BOX,
     ),
 }
 
-PATTERN_TEMPLATES = (
-    PatternTemplate("scrub_pad", "scrub", (("desert_pad", 0),), 0.0, ACTION_JUMP, 6),
-    PatternTemplate("scrub_tall", "scrub", (("desert_tall", 0),), 1.9, ACTION_JUMP, 4),
-    PatternTemplate("scrub_stump", "scrub", (("desert_stump", 0),), 1.2, ACTION_JUMP, 4),
-    PatternTemplate(
-        "scrub_pair",
-        "scrub",
-        (("desert_pad", 0), ("desert_stump", 8)),
-        2.4,
-        ACTION_JUMP,
-        2,
-    ),
-    PatternTemplate("scrub_scavenger", "scrub", (("scavenger_high", 0),), 2.5, ACTION_NEUTRAL, 2),
-    PatternTemplate("fossil_ribs", "fossil", (("fossil_ribs", 0),), 2.2, ACTION_JUMP, 5),
-    PatternTemplate("fossil_spire", "fossil", (("fossil_spire", 0),), 2.4, ACTION_JUMP, 4),
-    PatternTemplate("fossil_heap", "fossil", (("fossil_heap", 0),), 2.2, ACTION_JUMP, 4),
-    PatternTemplate(
-        "fossil_pair",
-        "fossil",
-        (("fossil_heap", 0), ("fossil_spire", 8)),
-        3.0,
-        ACTION_JUMP,
-        2,
-    ),
-    PatternTemplate("fossil_scavenger", "fossil", (("scavenger_mid", 0),), 3.0, ACTION_JUMP, 2),
-    PatternTemplate("basalt_spike", "basalt", (("basalt_spike", 0),), 2.9, ACTION_JUMP, 5),
-    PatternTemplate("basalt_vent", "basalt", (("basalt_vent", 0),), 3.0, ACTION_JUMP, 4),
-    PatternTemplate("basalt_shards", "basalt", (("basalt_shards", 0),), 3.0, ACTION_JUMP, 4),
-    PatternTemplate(
-        "basalt_pair",
-        "basalt",
-        (("basalt_shards", 0), ("basalt_spike", 9)),
-        3.5,
-        ACTION_JUMP,
-        2,
-    ),
-    PatternTemplate("basalt_scavenger", "basalt", (("scavenger_low", 0),), 3.4, ACTION_DUCK, 2),
-)
+BIOME_FAMILY_VARIANTS = {
+    "scrub": {
+        FAMILY_GROUND_SMALL: ("desert_pad", "desert_stump"),
+        FAMILY_GROUND_LARGE: ("desert_tall",),
+        FAMILY_FLYER: ("scavenger",),
+    },
+    "fossil": {
+        FAMILY_GROUND_SMALL: ("fossil_heap",),
+        FAMILY_GROUND_LARGE: ("fossil_ribs", "fossil_spire"),
+        FAMILY_FLYER: ("scavenger",),
+    },
+    "basalt": {
+        FAMILY_GROUND_SMALL: ("basalt_shards",),
+        FAMILY_GROUND_LARGE: ("basalt_spike", "basalt_vent"),
+        FAMILY_FLYER: ("scavenger",),
+    },
+}
 
-PATTERN_BY_NAME = {pattern.name: pattern for pattern in PATTERN_TEMPLATES}
+SCAVENGER_FLIGHT_LEVELS = (
+    (-7, 0.2),
+    (-4, 0.25),
+    (-1, 0.3),
+)
 
 
 def selected_dinosaur_key(state: GameState) -> str:
@@ -368,14 +305,14 @@ def sprite_dimensions(lines: list[str]) -> tuple[int, int]:
     return max(len(line) for line in lines), len(lines)
 
 
-def pattern_width(pattern: PatternTemplate) -> int:
-    width = 0
-    for hazard_name, offset in pattern.hazards:
-        spec = HAZARD_SPECS[hazard_name]
-        sprite = sprite_lines(spec.sprite_key)
-        hazard_width = sprite_dimensions(sprite)[0]
-        width = max(width, offset + hazard_width)
-    return width
+def hazard_width(hazard_name: str) -> int:
+    spec = HAZARD_SPECS[hazard_name]
+    return sprite_dimensions(sprite_lines(spec.sprite_key))[0]
+
+
+def group_render_width(hazard_name: str, group_size: int) -> int:
+    width = hazard_width(hazard_name)
+    return (width * group_size) + (MEMBER_SPACING * max(0, group_size - 1))
 
 
 def biome_for_score(score: int) -> str:
@@ -383,51 +320,66 @@ def biome_for_score(score: int) -> str:
     return keys[(score // BIOME_LENGTH) % len(keys)]
 
 
-def speed_target(score: int) -> float:
-    tier_bonus = (score // SPEED_TIER_SCORE) * SPEED_STEP
-    drift_bonus = min(0.75, score / SPEED_DRIFT_DIVISOR)
-    return min(MAX_SPEED, INITIAL_SPEED + tier_bonus + drift_bonus)
+def available_families(speed: float) -> list[str]:
+    families = [FAMILY_GROUND_SMALL, FAMILY_GROUND_LARGE]
+    if speed >= FLYER_MIN_SPEED:
+        families.append(FAMILY_FLYER)
+    return families
 
 
-def available_patterns(biome: str, speed: float) -> list[PatternTemplate]:
-    return [
-        pattern
-        for pattern in PATTERN_TEMPLATES
-        if pattern.biome == biome and speed >= pattern.min_speed
+def trailing_family_count(history: list[str], family: str) -> int:
+    count = 0
+    for previous in reversed(history):
+        if previous != family:
+            break
+        count += 1
+    return count
+
+
+def choose_spawn_family(speed: float, history: list[str], rng: random.Random) -> str:
+    candidates = available_families(speed)
+    filtered = [
+        family
+        for family in candidates
+        if trailing_family_count(history, family) < 2
+        and not (family == FAMILY_FLYER and history and history[-1] == FAMILY_FLYER)
     ]
+    candidates = filtered or candidates
+    return rng.choices(candidates, weights=[FAMILY_WEIGHTS[family] for family in candidates], k=1)[0]
 
 
-def choose_pattern(biome: str, speed: float, history: list[str], rng: random.Random) -> PatternTemplate:
-    candidates = available_patterns(biome, speed)
-    if not candidates:
-        return next(pattern for pattern in PATTERN_TEMPLATES if pattern.biome == biome)
-
-    if len(history) >= 2 and history[-1] == history[-2]:
-        filtered = [pattern for pattern in candidates if pattern.name != history[-1]]
-        if filtered:
-            candidates = filtered
-
-    if history:
-        last_pattern = PATTERN_BY_NAME[history[-1]]
-        if last_pattern.group_size > 1:
-            filtered = [pattern for pattern in candidates if pattern.group_size == 1]
-            if filtered:
-                candidates = filtered
-        if last_pattern.action == ACTION_DUCK:
-            filtered = [pattern for pattern in candidates if pattern.action != ACTION_DUCK]
-            if filtered:
-                candidates = filtered
-
-    return rng.choices(candidates, weights=[pattern.weight for pattern in candidates], k=1)[0]
+def choose_group_size(family: str, speed: float, rng: random.Random) -> int:
+    if family == FAMILY_FLYER:
+        return 1
+    if family == FAMILY_GROUND_LARGE and speed < GROUND_LARGE_GROUP_MIN_SPEED:
+        return 1
+    return rng.randint(1, MAX_GROUP_SIZE)
 
 
-def required_pattern_gap(previous: PatternTemplate | None, upcoming: PatternTemplate, speed: float) -> int:
-    previous_action = previous.action if previous else ACTION_NEUTRAL
-    recovery = TRANSITION_GAP_BONUS[(previous_action, upcoming.action)]
-    base = round(speed * 4) + pattern_width(upcoming)
-    group_bonus = max(0, upcoming.group_size - 1) * 4
-    previous_group_bonus = 3 if previous and previous.group_size > 1 else 0
-    return max(18, base + recovery + group_bonus + previous_group_bonus)
+def sample_group_gap(family: str, hazard_name: str, group_size: int, speed: float, rng: random.Random) -> int:
+    base_min_gap = FLYER_BASE_MIN_GAP if family == FAMILY_FLYER else GROUND_BASE_MIN_GAP
+    min_gap = round(group_render_width(hazard_name, group_size) * speed + base_min_gap * GAP_COEFFICIENT)
+    max_gap = round(min_gap * MAX_GAP_COEFFICIENT)
+    return rng.randint(min_gap, max_gap)
+
+
+def choose_spawn_group(biome: str, speed: float, history: list[str], rng: random.Random) -> SpawnGroup:
+    family = choose_spawn_family(speed, history, rng)
+    hazard_name = rng.choice(BIOME_FAMILY_VARIANTS[biome][family])
+    group_size = choose_group_size(family, speed, rng)
+    y_offset = 0
+    speed_offset = 0.0
+    if family == FAMILY_FLYER:
+        y_offset, speed_offset = rng.choice(SCAVENGER_FLIGHT_LEVELS)
+    gap_after = sample_group_gap(family, hazard_name, group_size, speed, rng)
+    return SpawnGroup(
+        family=family,
+        hazard_name=hazard_name,
+        group_size=group_size,
+        gap_after=gap_after,
+        y_offset=y_offset,
+        speed_offset=speed_offset,
+    )
 
 
 def centered_hitbox(
@@ -491,8 +443,7 @@ def get_obstacle_sprite(obstacle: Obstacle, frame_count: int) -> list[str]:
 def get_obstacle_hitbox(obstacle: Obstacle, frame_count: int, ground_y: int) -> tuple[int, int, int, int]:
     sprite = get_obstacle_sprite(obstacle, frame_count)
     draw_y = ground_y - len(sprite)
-    if obstacle.spec.sprite_key == "scavenger":
-        draw_y += obstacle.spec.bird_y_offset
+    draw_y += obstacle.y_offset
     return centered_hitbox(int(obstacle.x), draw_y, sprite, obstacle.spec.hitbox)
 
 
@@ -638,55 +589,72 @@ def update_physics(state: GameState, audio: AudioManager) -> None:
         audio.play("land")
 
 
-def ensure_queued_pattern(state: GameState, rng: random.Random) -> None:
-    if state.queued_pattern_name is not None:
-        return
-    biome = state.current_biome
-    previous = PATTERN_BY_NAME[state.last_pattern_name] if state.last_pattern_name else None
-    next_pattern = choose_pattern(biome, state.speed, state.pattern_history, rng)
-    state.queued_pattern_name = next_pattern.name
-    state.queued_gap = required_pattern_gap(previous, next_pattern, state.speed)
+def obstacle_right_edge(obstacle: Obstacle, frame_count: int) -> float:
+    return obstacle.x + sprite_dimensions(get_obstacle_sprite(obstacle, frame_count))[0]
 
 
-def spawn_queued_pattern(state: GameState, screen_width: int) -> None:
-    if state.queued_pattern_name is None:
-        return
-    pattern = PATTERN_BY_NAME[state.queued_pattern_name]
-    previous = PATTERN_BY_NAME[state.last_pattern_name] if state.last_pattern_name else None
-    spawn_offset = pattern_width(previous) if previous else 6
-    start_x = float(screen_width + spawn_offset)
+def is_obstacle_visible(obstacle: Obstacle, frame_count: int, screen_width: int) -> bool:
+    return obstacle_right_edge(obstacle, frame_count) > 0 and obstacle.x < screen_width
 
-    for hazard_name, offset in pattern.hazards:
-        state.obstacles.append(Obstacle(x=start_x + offset, hazard_name=hazard_name, biome=pattern.biome))
 
-    state.last_pattern_name = pattern.name
-    state.pattern_history.append(pattern.name)
-    if len(state.pattern_history) > 6:
-        state.pattern_history.pop(0)
-    state.queued_pattern_name = None
-    state.queued_gap = 0
+def spawn_obstacle_group(
+    state: GameState,
+    screen_width: int,
+    rng: random.Random,
+    group: SpawnGroup | None = None,
+) -> SpawnGroup:
+    spawn_group = group or choose_spawn_group(state.current_biome, state.speed, state.family_history, rng)
+    width = hazard_width(spawn_group.hazard_name)
+    x = float(screen_width)
+
+    for index in range(spawn_group.group_size):
+        is_last = index == spawn_group.group_size - 1
+        state.obstacles.append(
+            Obstacle(
+                x=x,
+                hazard_name=spawn_group.hazard_name,
+                biome=state.current_biome,
+                family=spawn_group.family,
+                group_id=state.next_group_id,
+                group_size=spawn_group.group_size,
+                gap_after=spawn_group.gap_after if is_last else 0,
+                following_obstacle_created=not is_last,
+                y_offset=spawn_group.y_offset,
+                speed_offset=spawn_group.speed_offset,
+            )
+        )
+        x += width + MEMBER_SPACING
+
+    state.next_group_id += 1
+    state.family_history.append(spawn_group.family)
+    if len(state.family_history) > 6:
+        state.family_history.pop(0)
+    return spawn_group
 
 
 def update_obstacles(state: GameState, screen_width: int, rng: random.Random) -> None:
     for obstacle in state.obstacles:
-        obstacle.x -= state.speed + obstacle.spec.speed_offset
+        obstacle.x -= state.speed + obstacle.speed_offset
 
-    state.obstacles = [obstacle for obstacle in state.obstacles if obstacle.x > -24]
+    state.obstacles = [
+        obstacle for obstacle in state.obstacles if obstacle_right_edge(obstacle, state.frame_count) > 0
+    ]
 
     if state.running_frames < CLEAR_TIME_FRAMES:
         return
 
-    ensure_queued_pattern(state, rng)
     if not state.obstacles:
-        spawn_queued_pattern(state, screen_width)
+        spawn_obstacle_group(state, screen_width, rng)
         return
 
-    rightmost = max(
-        obstacle.x + sprite_dimensions(get_obstacle_sprite(obstacle, state.frame_count))[0]
-        for obstacle in state.obstacles
-    )
-    if rightmost + state.queued_gap <= screen_width:
-        spawn_queued_pattern(state, screen_width)
+    last_obstacle = state.obstacles[-1]
+    if (
+        not last_obstacle.following_obstacle_created
+        and is_obstacle_visible(last_obstacle, state.frame_count, screen_width)
+        and obstacle_right_edge(last_obstacle, state.frame_count) + last_obstacle.gap_after <= screen_width
+    ):
+        last_obstacle.following_obstacle_created = True
+        spawn_obstacle_group(state, screen_width, rng)
 
 
 def apply_roar_hits(state: GameState, frame_count: int) -> int:
@@ -737,9 +705,8 @@ def update_score(state: GameState, audio: AudioManager) -> None:
 
 
 def update_difficulty(state: GameState, audio: AudioManager) -> None:
-    target = speed_target(state.score)
-    if state.speed < target:
-        state.speed = min(target, state.speed + 0.02)
+    if state.speed < MAX_SPEED:
+        state.speed = min(MAX_SPEED, state.speed + SPEED_ACCELERATION)
 
     next_biome = biome_for_score(state.score)
     if next_biome != state.current_biome:
@@ -777,10 +744,8 @@ def reset_state(state: GameState) -> None:
     state.ground_offset = 0.0
     state.ground_rough = False
     state.ground_segment_remaining = 0.0
-    state.pattern_history.clear()
-    state.last_pattern_name = None
-    state.queued_pattern_name = None
-    state.queued_gap = 0
+    state.family_history.clear()
+    state.next_group_id = 0
     state.current_biome = "scrub"
     state.banner_text = BIOME_LABELS["scrub"]
     state.banner_timer = BANNER_FRAMES
@@ -964,9 +929,7 @@ def render_hero(stdscr, state: GameState, ground_y: int, has_color: bool) -> Non
 def render_obstacles(stdscr, state: GameState, ground_y: int, has_color: bool) -> None:
     for obstacle in state.obstacles:
         sprite = get_obstacle_sprite(obstacle, state.frame_count)
-        draw_y = ground_y - len(sprite)
-        if obstacle.spec.sprite_key == "scavenger":
-            draw_y += obstacle.spec.bird_y_offset
+        draw_y = ground_y - len(sprite) + obstacle.y_offset
         color = curses.color_pair(biome_color_id(obstacle.biome)) | curses.A_BOLD if has_color else curses.A_BOLD
         draw_sprite(stdscr, sprite, draw_y, int(obstacle.x), color)
 
@@ -1060,9 +1023,10 @@ def main(stdscr) -> None:
         audio.stop()
 
 
-def run() -> None:
+def run(show_exit_message: bool = True) -> None:
     try:
         curses.wrapper(main)
     except KeyboardInterrupt:
         pass
-    print("Thanks for playing Dino Run!")
+    if show_exit_message:
+        print("Thanks for playing Dino Run!")
