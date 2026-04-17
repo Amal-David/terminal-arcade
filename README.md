@@ -22,6 +22,12 @@ Classic Nokia snake for your terminal. Wrapping edges, speed progression, and bo
 
 [Read more →](snake_game/README.md)
 
+### Star Blast
+
+A faithful Nokia-style space shooter with a 3-stage campaign, endless survival mode, and a compact retro HUD.
+
+[Read more →](star_blast/README.md)
+
 ### The Bookshelf
 
 A terminal book discovery app with 313 books across motivation, startup, and romance genres. Browse, search, collect favorites, and explore quotes.
@@ -98,6 +104,11 @@ dino-run
 snake-game
 # or: python3 -m snake_game
 # or on Windows: py -m snake_game
+
+# Star Blast
+star-blast
+# or: python3 -m star_blast
+# or on Windows: py -m star_blast
 
 # The Bookshelf
 bookshelf

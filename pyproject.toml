@@ -15,7 +15,8 @@ license = "MIT"
 arcade = "terminal_arcade.launcher:run"
 dino-run = "dino_game.game:run"
 snake-game = "snake_game.game:run"
+star-blast = "star_blast.game:run"
 bookshelf = "bookshelf.app:run"
 
 [tool.setuptools]
-packages = ["dino_game", "snake_game", "bookshelf", "bookshelf.data", "bookshelf.screens", "bookshelf.ui", "bookshelf.skill", "terminal_arcade"]
+packages = ["dino_game", "snake_game", "star_blast", "bookshelf", "bookshelf.data", "bookshelf.screens", "bookshelf.ui", "bookshelf.skill", "terminal_arcade"]

@@ -18,6 +18,7 @@ QUICK_LAUNCH_KEYS = {
     ord("1"): 0,
     ord("2"): 1,
     ord("3"): 2,
+    ord("4"): 3,
 }
 
 TITLE_ART = [
@@ -91,6 +92,11 @@ def build_entries() -> list[ArcadeEntry]:
 
         run_bookshelf()
 
+    def launch_star_blast() -> None:
+        from star_blast.game import run as run_star_blast
+
+        run_star_blast()
+
     return [
         ArcadeEntry(
             id="dino",
@@ -109,6 +115,15 @@ def build_entries() -> list[ArcadeEntry]:
             controls="Arrows or WASD move  |  P pause  |  Q quit",
             min_size=(50, 20),
             launch=launch_snake,
+        ),
+        ArcadeEntry(
+            id="star_blast",
+            title="Star Blast",
+            subtitle="Nokia-style space shooter",
+            blurb="Blast through a short campaign or hold out in endless mode against scouts, zigzags, turrets, and carrier bosses.",
+            controls="UP or W climb  |  DOWN or S dive  |  SPACE fire  |  P pause  |  Q quit",
+            min_size=(72, 24),
+            launch=launch_star_blast,
         ),
         ArcadeEntry(
             id="bookshelf",
@@ -224,7 +239,7 @@ def render(stdscr, entries: list[ArcadeEntry], selected: int, has_color: bool) -
     for offset, line in enumerate(textwrap.wrap(current.controls, detail_w - 6)):
         safe_addstr(stdscr, detail_y + detail_h - 3 + offset, detail_x + 3, line, curses.A_DIM)
 
-    footer = "↑/↓ or j/k move   Enter or Space play   1/2/3 quick launch   Q or Esc quit"
+    footer = "↑/↓ or j/k move   Enter or Space play   1/2/3/4 quick launch   Q or Esc quit"
     safe_addstr(stdscr, height - 2, max(0, (width - len(footer)) // 2), footer, curses.A_DIM)
     stdscr.refresh()
 
