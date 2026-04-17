@@ -16,8 +16,8 @@ FRAME_TIME = 1.0 / FPS
 
 CELL_W = 2  # each cell is 2 chars wide for square aspect ratio
 
-# Grid fills ~80% of terminal, computed at runtime
-GRID_FILL = 0.80
+# Grid fills a bit over two thirds of the terminal, computed at runtime
+GRID_FILL = 0.68
 
 INITIAL_SPEED = 6.0  # moves per second
 MAX_SPEED = 14.0
@@ -42,12 +42,12 @@ RIGHT = (1, 0)
 
 OPPOSITES = {UP: DOWN, DOWN: UP, LEFT: RIGHT, RIGHT: LEFT}
 
-# Snake characters (head shows direction)
+# Snake characters (head shows direction with a small connector to the body)
 HEAD_CHARS = {
-    UP: "▲▲",
-    DOWN: "▼▼",
-    LEFT: "◄◄",
-    RIGHT: "►►",
+    UP: "▀▀",
+    DOWN: "▄▄",
+    LEFT: "◀█",
+    RIGHT: "█▶",
 }
 BODY_CHAR = "██"
 FOOD_CHAR = "◆◆"

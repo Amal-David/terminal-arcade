@@ -27,6 +27,7 @@ Classic Nokia snake for your terminal. Wrapping edges, speed progression, and bo
 A terminal book discovery app with 313 books across motivation, startup, and romance genres. Browse, search, collect favorites, and explore quotes.
 
 ![The Bookshelf — Browse](assets/screenshots/bookshelf_browse.png)
+![The Bookshelf — Detail](assets/screenshots/bookshelf_detail.png)
 
 [Read more →](bookshelf/README.md)
 

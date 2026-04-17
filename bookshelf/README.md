@@ -68,7 +68,7 @@ Manage your reading lists across four tabs:
 | Startup | 99 | ◆ |
 | Romance | 82 | ♥ |
 
-Each book includes mood tags (e.g. "hustle mode", "cozy night", "fresh start") and the quote catalog has 303+ quotes with context tags.
+Each book includes mood tags (e.g. "hustle mode", "cozy night", "fresh start") and the quote catalog has 2,500+ quotes with context tags.
 
 ## Persistence
 

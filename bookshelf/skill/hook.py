@@ -66,6 +66,68 @@ def get_context_tags(input_data: dict) -> list[str]:
     return list(matched_tags)
 
 
+def total_quote_count() -> int:
+    """Return the current size of the merged quote catalog."""
+    from bookshelf.data.quotes import QUOTES
+
+    return len(QUOTES)
+
+
+def _quote_score(
+    quote,
+    idx: int,
+    shown_counts: dict[str, int],
+    recent_set: set[int],
+    context_tags: list[str] | None,
+) -> float:
+    score = 0.0
+
+    if context_tags:
+        score += len(set(quote.tags) & set(context_tags))
+
+    if idx in recent_set:
+        score -= 5.0
+
+    score -= shown_counts.get(str(idx), 0) * 0.5
+    return score
+
+
+def select_quote_index(
+    quotes: list,
+    shown_counts: dict[str, int],
+    recent_indices: list[int],
+    context_tags: list[str] | None = None,
+) -> int:
+    """Select a quote index, exhausting unseen quotes before repeating."""
+    recent_set = set(recent_indices)
+    unseen = [i for i in range(len(quotes)) if shown_counts.get(str(i), 0) == 0]
+
+    candidate_indices = [i for i in unseen if i not in recent_set]
+    if not candidate_indices:
+        candidate_indices = unseen
+    if not candidate_indices:
+        candidate_indices = [i for i in range(len(quotes)) if i not in recent_set]
+    if not candidate_indices:
+        candidate_indices = list(range(len(quotes)))
+
+    candidates = [
+        (_quote_score(quotes[i], i, shown_counts, recent_set, context_tags), i)
+        for i in candidate_indices
+    ]
+    candidates.sort(key=lambda x: x[0], reverse=True)
+    top_score = candidates[0][0]
+    top_tier = [(score, idx) for score, idx in candidates if score >= top_score - 1.0]
+    _, idx = random.choice(top_tier)
+    return idx
+
+
+def format_quote_message(quote: dict, total_quotes: int) -> str:
+    """Format the quote payload as the Claude system message."""
+    tags_str = " ".join(f"#{t}" for t in quote["tags"][:3])
+    stats = f"[{quote['unique_shown']}/{total_quotes} unique quotes shown]"
+    return f'📖 "{quote["text"]}"\n   — {quote["author"]}, {quote["book"]}\n   {tags_str}\n   {stats}'
+
+
 def pick_quote(context_tags: list[str] | None = None) -> dict | None:
     """Pick a quote, avoiding recently shown ones and deprioritizing repeats."""
     from bookshelf.data.quotes import QUOTES
@@ -77,40 +139,7 @@ def pick_quote(context_tags: list[str] | None = None) -> dict | None:
     state = load_hook_state()
     shown_counts: dict[str, int] = state.get("shown_counts", {})
     recent_indices: list[int] = state.get("recent_indices", [])
-    recent_set = set(recent_indices)
-
-    total = len(QUOTES)
-
-    # Build candidate list with scoring
-    candidates: list[tuple[float, int]] = []
-
-    for i, q in enumerate(QUOTES):
-        score = 0.0
-
-        # Context relevance (0-3 points)
-        if context_tags:
-            overlap = len(set(q.tags) & set(context_tags))
-            score += overlap
-
-        # Penalize recently shown (strong penalty)
-        if i in recent_set:
-            score -= 5.0
-
-        # Penalize frequently shown (mild penalty per showing)
-        times_shown = shown_counts.get(str(i), 0)
-        score -= times_shown * 0.5
-
-        candidates.append((score, i))
-
-    # Sort by score descending, then pick randomly from the top tier
-    candidates.sort(key=lambda x: x[0], reverse=True)
-    top_score = candidates[0][0]
-
-    # Top tier = anything within 1 point of the best score
-    top_tier = [(s, i) for s, i in candidates if s >= top_score - 1.0]
-
-    # Pick randomly from top tier
-    _, idx = random.choice(top_tier)
+    idx = select_quote_index(QUOTES, shown_counts, recent_indices, context_tags)
     q = QUOTES[idx]
 
     # Update state
@@ -169,10 +198,7 @@ def main():
         print(json.dumps({}))
         return
 
-    # Format the quote as a system message
-    tags_str = " ".join(f"#{t}" for t in quote["tags"][:3])
-    stats = f"[{quote['unique_shown']}/485 unique quotes shown]"
-    message = f'📖 "{quote["text"]}"\n   — {quote["author"]}, {quote["book"]}\n   {tags_str}\n   {stats}'
+    message = format_quote_message(quote, total_quote_count())
 
     result = {"systemMessage": message}
     print(json.dumps(result))

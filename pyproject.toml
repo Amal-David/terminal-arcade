@@ -12,9 +12,10 @@ keywords = ["game", "terminal", "curses", "runner", "snake"]
 license = "MIT"
 
 [project.scripts]
+arcade = "terminal_arcade.launcher:run"
 dino-run = "dino_game.game:run"
 snake-game = "snake_game.game:run"
 bookshelf = "bookshelf.app:run"
 
 [tool.setuptools]
-packages = ["dino_game", "snake_game", "bookshelf", "bookshelf.data", "bookshelf.screens", "bookshelf.ui", "bookshelf.skill"]
+packages = ["dino_game", "snake_game", "bookshelf", "bookshelf.data", "bookshelf.screens", "bookshelf.ui", "bookshelf.skill", "terminal_arcade"]
