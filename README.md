@@ -1,8 +1,8 @@
 # Terminal Arcade
 
-A collection of terminal-based games and apps built with Python and curses.
+A collection of terminal-based games and apps built with Python and curses, wrapped in a retro arcade launcher.
 
-![Dino Run — Gameplay](assets/screenshots/dino_gameplay.png)
+![Arcade Launcher](assets/screenshots/arcade_launcher.png)
 
 ## Games
 
@@ -16,7 +16,7 @@ An endless runner with 10 selectable dinosaurs, 3 rotating biomes, a charge-base
 
 ### Snake
 
-Classic Nokia snake for your terminal. Wrapping edges, speed progression, and bonus food.
+Classic Nokia snake for your terminal. Wall collisions, speed progression, and bonus food.
 
 ![Snake — Gameplay](assets/screenshots/snake_gameplay.png)
 
@@ -25,6 +25,8 @@ Classic Nokia snake for your terminal. Wrapping edges, speed progression, and bo
 ### Star Blast
 
 A faithful Nokia-style space shooter with a 3-stage campaign, endless survival mode, and a compact retro HUD.
+
+![Star Blast — Gameplay](assets/screenshots/star_blast_gameplay.png)
 
 [Read more →](star_blast/README.md)
 
