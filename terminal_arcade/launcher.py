@@ -14,12 +14,6 @@ MOVE_UP_KEYS = {curses.KEY_UP, ord("k"), ord("K")}
 MOVE_DOWN_KEYS = {curses.KEY_DOWN, ord("j"), ord("J")}
 LAUNCH_KEYS = {curses.KEY_ENTER, 10, 13, ord(" ")}
 QUIT_KEYS = {ord("q"), ord("Q"), 27}
-QUICK_LAUNCH_KEYS = {
-    ord("1"): 0,
-    ord("2"): 1,
-    ord("3"): 2,
-    ord("4"): 3,
-}
 
 TITLE_ART = [
     "  █████╗ ██████╗  ██████╗ █████╗ ██████╗ ███████╗",
@@ -92,6 +86,16 @@ def build_entries() -> list[ArcadeEntry]:
 
         run_bookshelf()
 
+    def launch_chess() -> None:
+        from chess_game.game import run as run_chess
+
+        run_chess()
+
+    def launch_tetris() -> None:
+        from tetris_game.game import run as run_tetris
+
+        run_tetris()
+
     def launch_star_blast() -> None:
         from star_blast.game import run as run_star_blast
 
@@ -115,6 +119,24 @@ def build_entries() -> list[ArcadeEntry]:
             controls="Arrows or WASD move  |  P pause  |  Q quit",
             min_size=(50, 20),
             launch=launch_snake,
+        ),
+        ArcadeEntry(
+            id="tetris",
+            title="Tetris",
+            subtitle="Classic endless stacker",
+            blurb="Stack tetrominoes, chase line clears, and survive the accelerating pace with one next-piece preview.",
+            controls="←/A left  |  →/D right  |  ↓/S drop  |  SPACE hard drop  |  X/↑ cw  |  Z ccw",
+            min_size=(72, 26),
+            launch=launch_tetris,
+        ),
+        ArcadeEntry(
+            id="chess",
+            title="Chess",
+            subtitle="Rule-based strategy duel",
+            blurb="Play White against a built-in engine with easy, medium, and hard search levels plus typed move input.",
+            controls="Type moves like e2e4  |  undo / new / resign  |  Enter submit  |  Q quit",
+            min_size=(84, 28),
+            launch=launch_chess,
         ),
         ArcadeEntry(
             id="star_blast",
@@ -154,8 +176,10 @@ def interpret_key(key: int, entry_count: int) -> tuple[str, int | None]:
         return "move", 1
     if key in LAUNCH_KEYS:
         return "launch", None
-    if key in QUICK_LAUNCH_KEYS and QUICK_LAUNCH_KEYS[key] < entry_count:
-        return "launch_index", QUICK_LAUNCH_KEYS[key]
+    if ord("1") <= key <= ord("9"):
+        quick_index = key - ord("1")
+        if quick_index < entry_count:
+            return "launch_index", quick_index
     return "noop", None
 
 
@@ -239,7 +263,8 @@ def render(stdscr, entries: list[ArcadeEntry], selected: int, has_color: bool) -
     for offset, line in enumerate(textwrap.wrap(current.controls, detail_w - 6)):
         safe_addstr(stdscr, detail_y + detail_h - 3 + offset, detail_x + 3, line, curses.A_DIM)
 
-    footer = "↑/↓ or j/k move   Enter or Space play   1/2/3/4 quick launch   Q or Esc quit"
+    quick_launch = "/".join(str(index) for index in range(1, len(entries) + 1))
+    footer = f"↑/↓ or j/k move   Enter or Space play   {quick_launch} quick launch   Q or Esc quit"
     safe_addstr(stdscr, height - 2, max(0, (width - len(footer)) // 2), footer, curses.A_DIM)
     stdscr.refresh()
 

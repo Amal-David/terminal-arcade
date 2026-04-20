@@ -22,6 +22,20 @@ Classic Nokia snake for your terminal. Wall collisions, speed progression, and b
 
 [Read more →](snake_game/README.md)
 
+### Tetris
+
+Classic endless block stacking with standard wall kicks, one next-piece preview, and level-based speed-up.
+
+![Tetris — Gameplay](assets/screenshots/tetris_gameplay.png)
+
+[Read more →](tetris_game/README.md)
+
+### Chess
+
+Play White against a built-in rule-based engine with easy, medium, and hard difficulty levels plus typed move input.
+
+[Read more →](chess_game/README.md)
+
 ### Star Blast
 
 A faithful Nokia-style space shooter with a 3-stage campaign, endless survival mode, and a compact retro HUD.
@@ -53,7 +67,7 @@ cd terminal-arcade
 pip install -e .
 ```
 
-If `pip` warns that `arcade`, `dino-run`, `snake-game`, or `bookshelf` were installed to a directory that is not on `PATH`, you can either run the modules directly or add the user script directory to `PATH`.
+If `pip` warns that `arcade`, `dino-run`, `snake-game`, `tetris`, `chess-game`, `star-blast`, or `bookshelf` were installed to a directory that is not on `PATH`, you can either run the modules directly or add the user script directory to `PATH`.
 
 User script directories:
 
@@ -73,6 +87,9 @@ export PATH="$(python3 -m site --user-base)/bin:$PATH"
 python3 -m terminal_arcade
 python3 -m dino_game
 python3 -m snake_game
+python3 -m tetris_game
+python3 -m chess_game
+python3 -m star_blast
 python3 -m bookshelf
 ```
 
@@ -84,6 +101,9 @@ $env:Path = "$(py -m site --user-base)\Scripts;$env:Path"
 py -m terminal_arcade
 py -m dino_game
 py -m snake_game
+py -m tetris_game
+py -m chess_game
+py -m star_blast
 py -m bookshelf
 ```
 
@@ -106,6 +126,16 @@ dino-run
 snake-game
 # or: python3 -m snake_game
 # or on Windows: py -m snake_game
+
+# Tetris
+tetris
+# or: python3 -m tetris_game
+# or on Windows: py -m tetris_game
+
+# Chess
+chess-game
+# or: python3 -m chess_game
+# or on Windows: py -m chess_game
 
 # Star Blast
 star-blast

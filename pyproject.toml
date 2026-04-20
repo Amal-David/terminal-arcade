@@ -5,18 +5,20 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "terminal-arcade"
 version = "0.4.0"
-description = "Terminal games: a dinosaur runner, snake game, and an interactive bookshelf explorer."
+description = "Terminal games: Dino Run, Snake, Tetris, Chess, Star Blast, and an interactive bookshelf explorer."
 readme = "README.md"
 requires-python = ">=3.10"
-keywords = ["game", "terminal", "curses", "runner", "snake"]
+keywords = ["game", "terminal", "curses", "runner", "snake", "tetris", "chess"]
 license = "MIT"
 
 [project.scripts]
 arcade = "terminal_arcade.launcher:run"
 dino-run = "dino_game.game:run"
 snake-game = "snake_game.game:run"
+tetris = "tetris_game.game:run"
+chess-game = "chess_game.game:run"
 star-blast = "star_blast.game:run"
 bookshelf = "bookshelf.app:run"
 
 [tool.setuptools]
-packages = ["dino_game", "snake_game", "star_blast", "bookshelf", "bookshelf.data", "bookshelf.screens", "bookshelf.ui", "bookshelf.skill", "terminal_arcade"]
+packages = ["dino_game", "snake_game", "tetris_game", "chess_game", "star_blast", "bookshelf", "bookshelf.data", "bookshelf.screens", "bookshelf.ui", "bookshelf.skill", "terminal_arcade"]
