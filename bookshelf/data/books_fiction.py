@@ -32,7 +32,7 @@ FICTION_BOOKS = [
         "year": 1815,
         "genre": "fiction",
         "mood": ["Sunday morning", "butterflies", "cozy night"],
-        "summary": "A self-assured young woman meddles in the love lives of her neighbors, only to discover her own heart has been blind.",
+        "summary": "Jane Austen's Emma, published in 1815, takes as its heroine a wealthy, clever, self-satisfied young woman whom Austen described in a letter as someone 'nobody but myself will much like.' Emma Woodhouse, twenty-one and already mistress of her widowed father's estate at Hartfield, has decided that matchmaking is her vocation, and the novel is the story of her successive errors as she misreads the people around her — chief among them the obscure Harriet Smith, whom Emma tries to elevate above her station; the smooth incomer Frank Churchill; the patronized Jane Fairfax; the embarrassing Miss Bates; and the steady, exact, frequently irritated Mr. Knightley, whose long-standing affection for Emma is the only attachment in Highbury that she cannot quite see. The book is constructed with extraordinary technical precision, with the reader invited to perceive what Emma cannot, and is the great Austen novel of self-knowledge slowly arrived at. It is also unmistakably comic and extremely funny, sustained by the village ensemble that surrounds the heroine.",
     },
     {
         "title": "Persuasion",
@@ -40,7 +40,7 @@ FICTION_BOOKS = [
         "year": 1817,
         "genre": "fiction",
         "mood": ["heartbreak recovery", "slow burn", "rainy afternoon"],
-        "summary": "Anne Elliot gets a second chance at love with the naval captain she was persuaded to reject years earlier.",
+        "summary": "Persuasion, the last novel Jane Austen completed and published posthumously in 1817, is a quieter, more autumnal book than her earlier comedies. Its heroine Anne Elliot, twenty-seven and effectively shelved within her snobbish father Sir Walter's declining household, was eight years earlier persuaded by an older confidante to break off her engagement to a young naval officer named Frederick Wentworth on prudential grounds. The novel begins with the Elliots forced by debt to lease their seat at Kellynch to none other than the now-prosperous Captain Wentworth's sister and brother-in-law, throwing Anne and her former fiancé back into one another's company across drawing rooms and seaside lodgings at Lyme Regis and Bath. The plot follows whether the two can recognize each other again as the people they have become. Austen is unusually pointed in this book about wasted youth, the rising naval middle class, and the moral failures of inherited rank, and the novel includes one of the finest letters in English fiction in its closing chapters.",
     },
     {
         "title": "Great Expectations",
@@ -48,7 +48,7 @@ FICTION_BOOKS = [
         "year": 1861,
         "genre": "fiction",
         "mood": ["self-discovery", "slow burn", "late night reflection"],
-        "summary": "Pip's journey from humble origins to gentleman reveals how wealth and status can corrupt as easily as they elevate.",
+        "summary": "Charles Dickens's Great Expectations, serialized in 1860 to 1861, is a first-person bildungsroman narrated by Philip Pirrip, called Pip, an orphan raised on the bleak Kent marshes by his harsh sister and her gentle blacksmith husband Joe Gargery. The novel opens with the unforgettable encounter on the marshes between the small terrified Pip and the escaped convict Abel Magwitch, who menaces the boy into bringing him food and a file. Years later, when Pip is summoned to entertain the reclusive Miss Havisham at the decaying Satis House and meets her cold ward Estella, he begins to feel the shame of his class and the impossibility of his desire. An anonymous benefactor then transforms his prospects, dispatching him to London as a young gentleman and setting up the slow and ultimately devastating revelation of who that benefactor really is and what gentlemanly status has actually cost him. The book is among Dickens's most disciplined and one of the great English novels of self-deception and belated moral recognition.",
     },
     {
         "title": "A Tale of Two Cities",
@@ -56,7 +56,7 @@ FICTION_BOOKS = [
         "year": 1859,
         "genre": "fiction",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Love, sacrifice, and resurrection play out against the chaos of the French Revolution in London and Paris.",
+        "summary": "Charles Dickens's A Tale of Two Cities, serialized in 1859, is set in London and Paris in the years leading up to and during the French Revolution and is among Dickens's most plot-driven and least comic novels. The book opens with the resurrection of Dr. Manette, a French physician imprisoned in the Bastille for eighteen years and brought back to life — physically and emotionally — by his daughter Lucie. Around this central reunion Dickens braids the lives of three men in love with Lucie: Charles Darnay, the renounced French aristocrat working as a tutor in London; Sydney Carton, the dissipated, brilliant, self-loathing English barrister; and the loyal Mr. Stryver. As the Revolution turns from grievance to terror, the action moves to Paris under the watchful tribunal of Madame Defarge, the knitting tricoteuse whose family was destroyed by Darnay's relatives. The book ends in one of the most quoted closing scenes in English literature, with Carton choosing the guillotine in Darnay's place. The novel's first and last lines have entered the language.",
     },
     {
         "title": "David Copperfield",
@@ -64,7 +64,7 @@ FICTION_BOOKS = [
         "year": 1850,
         "genre": "fiction",
         "mood": ["self-discovery", "cozy night", "slow burn"],
-        "summary": "Dickens's most autobiographical novel follows an orphan's picaresque journey from childhood misery to literary success.",
+        "summary": "David Copperfield, serialized in 1849 and 1850, is the novel Charles Dickens called his favorite, and it is the most autobiographical of his books. Narrated in the first person by its hero from earliest childhood to settled adulthood, the novel follows David from his idyllic infancy with his young widowed mother and the maid Peggotty, through the brutal entry of his stepfather Mr. Murdstone and Murdstone's cruel sister, his exile to Salem House school under the savage Mr. Creakle, his enslaved boyhood at the wine-bottling warehouse from which he eventually flees, his rescue by his eccentric aunt Betsey Trotwood, his school years at Canterbury, his friendship with the brilliant manipulator James Steerforth, his apprenticeship as a proctor and rise to novelist, his first imprudent marriage to the child-bride Dora Spenlow, and his eventual second marriage to the steady Agnes Wickfield. Around David, Dickens packs one of his great ensemble casts: Mr. Micawber, Uriah Heep, Mr. Dick, Mr. Peggotty, Little Em'ly. The novel is unusually generous in tone for Dickens and is widely read as the central English bildungsroman.",
     },
     {
         "title": "Oliver Twist",
@@ -72,7 +72,7 @@ FICTION_BOOKS = [
         "year": 1838,
         "genre": "fiction",
         "mood": ["rainy afternoon", "ugly cry", "self-discovery"],
-        "summary": "A workhouse orphan falls in with London's criminal underworld before discovering his true origins.",
+        "summary": "Oliver Twist, Charles Dickens's second novel, was serialized in Bentley's Miscellany from 1837 to 1839 and was the first English novel to take a child as its central protagonist throughout. Born in a parish workhouse to an unknown mother who dies in childbirth, Oliver is raised in the punitive shadow of the new 1834 Poor Law and famously begs for more gruel in the scene that opened the novel into a piece of social protest. He flees abuse and finds himself in London under the corrupting tutelage of Fagin, the receiver of stolen goods who runs a den of child pickpockets including the Artful Dodger and Charley Bates, and through Fagin into the orbit of the violent housebreaker Bill Sikes and the doomed Nancy. Dickens balances melodrama and Hogarthian street observation; the underworld scenes brought slum London onto middle-class drawing-room tables. The novel's plot turns on Oliver's hidden parentage and the unraveling of a conspiracy to keep him from his inheritance, and it remains one of the foundational works of Victorian social fiction.",
     },
     {
         "title": "Crime and Punishment",
@@ -80,7 +80,7 @@ FICTION_BOOKS = [
         "year": 1866,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "A destitute student murders a pawnbroker and is consumed by guilt, paranoia, and the slow unraveling of his rationalizations.",
+        "summary": "Fyodor Dostoevsky's Crime and Punishment, serialized in 1866, follows the destitute former student Rodion Romanovich Raskolnikov through the stifling summer streets of St. Petersburg as he plans, executes, and gradually disintegrates under the weight of the murder of an old pawnbroker and her innocent half-sister. Raskolnikov has convinced himself, in a half-finished theoretical article, that 'extraordinary' men have a moral right to step over ordinary ethics in the service of greater goals; the novel is in part the dismantling of that idea by his own psyche. Around Raskolnikov circle a remarkable supporting cast: his sister Dunya, who is being pressed into a marriage to escape poverty; the dissolute aristocrat Svidrigailov, whose nihilism is colder and more honest than Raskolnikov's; the saintly prostitute Sonya Marmeladov, who reads to him from the Gospel of John; and the patient detective Porfiry Petrovich, who interrogates him without ever directly naming what he knows. The novel is the founding text of psychological crime fiction and remains Dostoevsky's most accessible long work.",
     },
     {
         "title": "The Brothers Karamazov",
@@ -88,7 +88,7 @@ FICTION_BOOKS = [
         "year": 1880,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection", "self-discovery"],
-        "summary": "Three brothers grapple with faith, free will, and patricide in Dostoevsky's sprawling philosophical masterpiece.",
+        "summary": "The Brothers Karamazov, Fyodor Dostoevsky's last and largest novel, was serialized in 1879 and 1880 and is generally considered his philosophical and artistic summit. The plot is built around a patricide: the dissolute provincial landowner Fyodor Pavlovich Karamazov is murdered, and one of his three sons is responsible. The legitimate sons embody three competing temperaments. Dmitri is the sensual, impulsive elder brother locked in a bitter rivalry with his father over the woman Grushenka. Ivan is the cold rationalist intellectual whose famous chapter 'The Grand Inquisitor' poses one of the great challenges to religious faith in world literature. Alyosha is the youngest, a novice at the local monastery under the elder Father Zosima, and the moral center of the book. There is also the illegitimate epileptic son Smerdyakov, who has absorbed Ivan's ideas and drawn his own conclusions. Around them Dostoevsky stages an extended argument about faith, free will, suffering, and the existence of God, climaxing in a sensational courtroom drama that nonetheless leaves the deepest questions open.",
     },
     {
         "title": "The Idiot",
@@ -96,7 +96,7 @@ FICTION_BOOKS = [
         "year": 1869,
         "genre": "fiction",
         "mood": ["existential crisis", "rainy afternoon"],
-        "summary": "A genuinely good man returns to a corrupt St. Petersburg society that cannot comprehend or tolerate his innocence.",
+        "summary": "Fyodor Dostoevsky's The Idiot, serialized in 1868 and 1869, is the novel he set himself to write after years of considering whether a 'positively beautiful man' could be plausibly drawn in modern fiction. The protagonist Prince Lev Nikolayevich Myshkin returns to Russia from a Swiss sanatorium where he has been treated for epilepsy and a long childlike incapacity, and arrives in St. Petersburg society utterly unprepared for its calculations of money, status, and pride. Myshkin's instinctive trust, his refusal to take offense, and his genuine attention to the dignity of the people around him register on others as either folly or sainthood. He is drawn into a quadrangle of impossible relationships with the proud, scarred, mistress-of-her-own-degradation Nastasya Filippovna, the dark merchant Rogozhin, the fiery young Aglaya Yepanchin, and the ailing nihilist Ippolit. The novel includes the famous reproduction of Holbein's Christ in the Tomb as a still point and ends in catastrophe. It is among the strangest and most experimentally structured of Dostoevsky's major books and a continuing object of critical fascination.",
     },
     {
         "title": "Notes from Underground",
@@ -104,7 +104,7 @@ FICTION_BOOKS = [
         "year": 1864,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "A bitter, isolated narrator's ramblings form one of literature's first explorations of existential alienation.",
+        "summary": "Notes from Underground, Fyodor Dostoevsky's short novel of 1864, is widely regarded as the first work of existentialist fiction and the doorway between his earlier semi-naturalist work and the great novels that would follow. The book is in two parts. The first is the unnamed narrator's monologue from the underground — a forty-something retired civil servant living in spiteful self-imposed isolation in St. Petersburg — attacking the rationalist utilitarian ideas then circulating in Russian intellectual life and insisting on the freedom of human beings to act against their own best interests, even to suffer, simply to assert that they cannot be calculated. The second part, set sixteen years earlier, narrates three episodes from the narrator's younger life that together form a case study in the very pettiness, vanity, and humiliation he has just been theorizing about, including a dinner party at which he humiliates himself before old schoolmates and a cruel encounter with the young prostitute Liza in which his abstract lecturing collapses into something far more shameful. The book is short, savagely written, and foundational.",
     },
     {
         "title": "War and Peace",
@@ -112,7 +112,7 @@ FICTION_BOOKS = [
         "year": 1869,
         "genre": "fiction",
         "mood": ["slow burn", "late night reflection", "self-discovery"],
-        "summary": "Five aristocratic families navigate love, loss, and the Napoleonic Wars in Tolstoy's epic meditation on history and free will.",
+        "summary": "Leo Tolstoy's War and Peace, serialized between 1865 and 1867 and published in book form in 1869, is one of the longest and most ambitious novels ever written and arguably the central work of nineteenth-century European fiction. Across roughly twelve hundred pages it follows five aristocratic Russian families — the Bolkonskys, the Bezukhovs, the Rostovs, the Kuragins, and the Drubetskoys — between 1805 and 1820, the period of the Napoleonic invasions of Russia. Three figures hold the foreground: the brooding Prince Andrei Bolkonsky, who seeks meaning in war and loses faith in it; the awkward, illegitimate Pierre Bezukhov, who inherits a fortune and bumbles through Masonry, marriage, captivity, and conversion; and the radiant young Natasha Rostova, whose growing up structures the moral arc of the book. Around the personal drama Tolstoy stages whole battles — Austerlitz, Borodino, the burning of Moscow — and pauses repeatedly for philosophical essays on the nature of history, free will, and the impossibility of attributing events to great men. The combination of intimate domestic realism and sweeping historical philosophy is unique.",
     },
     {
         "title": "Anna Karenina",
@@ -120,7 +120,7 @@ FICTION_BOOKS = [
         "year": 1877,
         "genre": "fiction",
         "mood": ["heartbreak recovery", "ugly cry", "late night reflection"],
-        "summary": "A married aristocrat's passionate affair with a dashing officer spirals toward tragedy against the backdrop of Russian high society.",
+        "summary": "Anna Karenina, serialized between 1875 and 1877, is Leo Tolstoy's second great novel and his most controlled. The book runs two narratives in deliberate counterpoint. The first follows Anna Arkadyevna Karenina, the elegant wife of a senior Petersburg official and the mother of a young son, whose passionate affair with the officer Count Alexei Vronsky sets her on a course of social disgrace, isolation, and eventual self-destruction. The second follows the awkward landowner Konstantin Levin, a stand-in for Tolstoy himself, whose courtship of and marriage to the young Kitty Shcherbatsky becomes the novel's portrait of how an honest, working life of farming and family might be built outside the corruption of fashionable society. Tolstoy alternates between the two strands until they finally cross late in the book. Around them he stages a wide social panorama — Moscow drawing rooms, Petersburg salons, country estates, government departments, Italian villas, racetracks — and a sustained argument about marriage, agriculture, religion, and what constitutes a good life. The famous opening sentence remains one of the most quoted in fiction.",
     },
     {
         "title": "The Adventures of Huckleberry Finn",
@@ -128,7 +128,7 @@ FICTION_BOOKS = [
         "year": 1884,
         "genre": "fiction",
         "mood": ["road trip", "summer vibes", "self-discovery"],
-        "summary": "A boy and an escaped slave raft down the Mississippi, confronting the hypocrisy of antebellum America.",
+        "summary": "Mark Twain's The Adventures of Huckleberry Finn, published in the United States in 1885 and a year earlier in the United Kingdom, follows the unschooled white boy Huck Finn and the escaped slave Jim down the Mississippi River on a raft, in a sequel that takes the comic Tom Sawyer setup and turns it into something far darker and more searching. Fleeing his violent drunken father, Huck stages his own death and meets Jim, who has run from his owner Miss Watson on rumors of being sold further south. The two travel together through a series of riverside encounters with feuding Grangerfords, the conman Duke and Dauphin, and the long unraveling consequences of an antebellum South in which Huck has been raised to see Jim as property and slowly, painfully, comes to see him as a friend. The famous chapter in which Huck decides he will go to hell rather than betray Jim is a hinge of American literary history. Twain's vernacular voice opened a new register for the American novel; Hemingway called it the source of all modern American literature.",
     },
     {
         "title": "The Adventures of Tom Sawyer",
@@ -136,7 +136,7 @@ FICTION_BOOKS = [
         "year": 1876,
         "genre": "fiction",
         "mood": ["summer vibes", "beach read", "road trip"],
-        "summary": "A mischievous boy's adventures along the Mississippi capture the freedom and peril of a vanishing frontier childhood.",
+        "summary": "Mark Twain's The Adventures of Tom Sawyer, published in 1876, was Twain's first solo novel and the book that established the imaginative geography of the American boyhood story. Set in the fictional Missouri river-town of St. Petersburg in roughly the 1840s, the novel follows the orphan Tom, raised by his Aunt Polly with his half-brother Sid, through a series of episodic adventures that have entered American folklore: the trick by which Tom gets the neighborhood boys to whitewash Aunt Polly's fence for him; the courtship of the new girl Becky Thatcher; the staged disappearance to Jackson's Island with Huck Finn and Joe Harper, and the boys' surprise attendance at their own funeral; the witnessing of a graveyard murder by the menacing Injun Joe; the hunt for buried treasure; and the climactic ordeal of being lost in McDougal's Cave. The book is shorter, lighter, and more comic than its sequel Huckleberry Finn, but Twain's vernacular and his unsentimental eye for the cruelties of small-town adult life are already fully developed, and the novel introduced both Tom and Huck to American imagination.",
     },
     {
         "title": "The Great Gatsby",
@@ -144,7 +144,7 @@ FICTION_BOOKS = [
         "year": 1925,
         "genre": "fiction",
         "mood": ["late night reflection", "heartbreak recovery", "summer vibes"],
-        "summary": "Jay Gatsby's lavish pursuit of a lost love exposes the hollow promise of the American Dream in the Jazz Age.",
+        "summary": "F. Scott Fitzgerald's The Great Gatsby, published in 1925, is a short novel narrated by the Yale-educated bond salesman Nick Carraway, who has rented a small house on the West Egg of Long Island next door to the mysterious millionaire Jay Gatsby. Gatsby throws lavish weekend parties for hundreds of strangers, none of whom know him, in pursuit of a single goal: to attract back the attention of Daisy Buchanan, his lost love from before the war, who is now married to the brutish old-money Tom Buchanan and lives just across the bay. Through the summer of 1922 Nick watches Gatsby engineer a reunion, watches Tom take a working-class mistress in the ash-grey valley between Long Island and Manhattan, and watches a series of small carelessnesses build toward an automobile accident and its violent aftermath. Beneath the elegant prose the novel is a scalding indictment of the American class system, of the romantic project of self-invention, and of the rich who, in Nick's famous closing judgment, smash up things and creatures and retreat into their money.",
     },
     {
         "title": "Tender Is the Night",
@@ -152,7 +152,7 @@ FICTION_BOOKS = [
         "year": 1934,
         "genre": "fiction",
         "mood": ["heartbreak recovery", "slow burn", "summer vibes"],
-        "summary": "A brilliant psychiatrist's marriage and career disintegrate on the glittering Riviera of the 1920s.",
+        "summary": "Tender Is the Night, F. Scott Fitzgerald's fourth and last completed novel, was published in 1934 nearly a decade after The Great Gatsby and after years of personal collapse during which his wife Zelda was repeatedly hospitalized for schizophrenia and Fitzgerald's drinking deepened. The book follows Dick Diver, a brilliant young American psychiatrist who marries Nicole Warren, his beautiful, immensely wealthy patient at a Swiss clinic, and tries to build a life with her on the French Riviera among a glittering circle of expatriates. The novel opens through the eyes of the young actress Rosemary Hoyt, who falls in love with the seemingly perfect Divers; midway, the perspective shifts to expose the long history of Nicole's incestuous trauma and Dick's compromised double role as both husband and analyst; the final act tracks Dick's slow professional, sexual, and alcoholic decline as Nicole grows stronger and finally leaves him. Fitzgerald revised the book through several structures and never settled the order; the novel is widely regarded as his most personal, the closest he came to the disaster of his own marriage on the page.",
     },
     {
         "title": "The Old Man and the Sea",
@@ -160,7 +160,7 @@ FICTION_BOOKS = [
         "year": 1952,
         "genre": "fiction",
         "mood": ["self-discovery", "hustle mode", "morning ritual"],
-        "summary": "An aging Cuban fisherman wages an epic battle with a giant marlin, testing the limits of human endurance and dignity.",
+        "summary": "Ernest Hemingway's The Old Man and the Sea, published in 1952 after a decade in which his reputation had wavered, is a novella of barely a hundred pages that became the basis of his Nobel citation in 1954 and a Pulitzer Prize the year before. The story is told in spare, deceptively simple prose and follows the aging Cuban fisherman Santiago, who has gone eighty-four days without catching a fish from his small skiff out of Havana. The boy Manolin, who used to fish with him, has been ordered by his parents to join a more successful boat. On the eighty-fifth day Santiago rows out alone far into the Gulf Stream and hooks an enormous marlin that drags him for two days and two nights before he can finally bring it alongside; the long return journey is then ravaged by sharks. The novella's surface is action and sea-craft; beneath it the book is a meditation on solitary effort, the dignity of work performed past its returns, and the loneliness of the old. The closing chapters, with the boy waiting on the shore, are among Hemingway's most affecting.",
     },
     {
         "title": "A Farewell to Arms",
@@ -168,7 +168,7 @@ FICTION_BOOKS = [
         "year": 1929,
         "genre": "fiction",
         "mood": ["heartbreak recovery", "ugly cry", "late night reflection"],
-        "summary": "An American ambulance driver and an English nurse fall in love amid the senseless destruction of World War I.",
+        "summary": "Ernest Hemingway's A Farewell to Arms, published in 1929, draws on Hemingway's own service as a Red Cross ambulance driver on the Italian front in 1918 and is in part the novel that established him as a major figure in American letters. The narrator is the young American volunteer Frederic Henry, attached to the Italian army in 1917 along the Isonzo, who meets and falls in love with the British nurse Catherine Barkley at a military hospital. The book has two main movements. The first traces their cynical love affair turning into something deeper against the backdrop of the catastrophic Italian retreat from Caporetto in October 1917, which Hemingway renders in one of the most famous extended passages of modern war writing. The second follows Henry's desertion and the lovers' improbable escape across Lake Maggiore into neutral Switzerland, where they live in quiet alpine isolation through Catherine's pregnancy. The novel ends with one of the most starkly economical tragedies in modern fiction. Hemingway's clipped declarative prose, his hostility to abstract heroic language, and his evasion-by-understatement reach mature form here.",
     },
     {
         "title": "For Whom the Bell Tolls",
@@ -176,7 +176,7 @@ FICTION_BOOKS = [
         "year": 1940,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "An American volunteer in the Spanish Civil War has seventy-two hours to blow a bridge and confront his own mortality.",
+        "summary": "Ernest Hemingway's For Whom the Bell Tolls, published in 1940, draws on his time as a war correspondent during the Spanish Civil War and is the longest of his major novels. The book takes place across roughly seventy-two hours behind Nationalist lines in the Sierra de Guadarrama in late May 1937. Robert Jordan, a young American university Spanish instructor and Republican volunteer, has been assigned by a Soviet general to coordinate with a small band of peasant guerrillas led by the half-broken Pablo and his much fiercer wife Pilar to blow a bridge in support of an upcoming Republican offensive. In the cave camp Jordan meets the cropped-haired Maria, a young woman the guerrillas have rescued from Nationalist captivity, and the two fall into a brief, urgent love. The novel weaves political argument, granular Spanish military detail, an unforgettable extended account of a Republican village's massacre of its own Nationalist sympathizers told by Pilar, and a final demolition mission that Jordan suspects from the start cannot succeed. The title comes from a John Donne meditation that supplies the novel's moral spine.",
     },
     {
         "title": "The Sun Also Rises",
@@ -184,7 +184,7 @@ FICTION_BOOKS = [
         "year": 1926,
         "genre": "fiction",
         "mood": ["road trip", "heartbreak recovery", "summer vibes"],
-        "summary": "Lost Generation expatriates drink, travel, and ache through postwar Paris and the bullfighting rings of Spain.",
+        "summary": "The Sun Also Rises, Ernest Hemingway's first major novel, was published in 1926 and effectively defined the literary Lost Generation. The narrator Jake Barnes is an American newspaperman living in Paris, rendered impotent by a war wound that he refuses to discuss directly. He is in love with the British socialite Lady Brett Ashley, who loves him in return but moves through a series of other men because their affair cannot be consummated. With a small group — the Princeton boxer Robert Cohn, the financée Frances Clyne, the cynical writer Bill Gorton, the Greek count Mippipopolous, the alcoholic veteran Mike Campbell — Jake leaves Paris for Pamplona and the festival of San Fermín, where the bullfighting and the drinking become the matter of the book and Brett begins an affair with the young matador Pedro Romero that disrupts the whole party. Hemingway's stripped prose, his iceberg theory of unspoken weight, and his sense of postwar displacement here arrive fully formed. The book's epigraph from Gertrude Stein gave the postwar generation its name, and the novel itself is foundational to twentieth-century American fiction.",
     },
     {
         "title": "Moby-Dick",
@@ -192,7 +192,7 @@ FICTION_BOOKS = [
         "year": 1851,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection", "slow burn"],
-        "summary": "Captain Ahab's obsessive hunt for a white whale becomes an allegory for humanity's struggle against the unknowable.",
+        "summary": "Herman Melville's Moby-Dick, or, The Whale, published in 1851, was a commercial failure on appearance and sat in near-obscurity for seventy years before being recovered in the 1920s as one of the central texts of the American literary canon. The narrator, who introduces himself in the famous opening line as Ishmael, ships out of New Bedford on the Pequod, a Nantucket whaling vessel under the command of the maimed Captain Ahab, whose leg has been taken by an enormous white sperm whale called Moby Dick. The voyage that begins as a commercial expedition is gradually revealed to be Ahab's monomaniacal hunt for vengeance, into which he enlists the multiethnic crew — the harpooners Queequeg, Tashtego, and Daggoo, and the patient first mate Starbuck — through speeches of cosmic ambition. Melville interleaves the narrative with extensive cetological essays, theatrical interludes, sermons, and metaphysical digressions, building a hybrid form that has no real precursor. The book is at once a sea adventure, an encyclopedia of whaling, a philosophical theodicy, and an indictment of American expansionism, and its pursuit is now read as one of the great fables of obsession.",
     },
     {
         "title": "Jane Eyre",
@@ -200,7 +200,7 @@ FICTION_BOOKS = [
         "year": 1847,
         "genre": "fiction",
         "mood": ["self-discovery", "butterflies", "cozy night"],
-        "summary": "An orphaned governess insists on equality and moral independence in a world determined to deny her both.",
+        "summary": "Charlotte Brontë's Jane Eyre, published in 1847 under the masculine pseudonym Currer Bell, is one of the founding novels of English first-person feminine consciousness and was an immediate sensation. The book follows its plain, small, fierce orphan narrator from her unhappy childhood at Gateshead under the cruel Reed family, through the cold pious deprivations of Lowood school where her friend Helen Burns dies of typhus, to her late adolescent placement as governess at Thornfield Hall to the ward of the brooding, sardonic, much older Edward Rochester. Their slow recognition of each other across class is interrupted at the altar by the discovery of Rochester's first wife Bertha Mason, the so-called madwoman in the attic whose Caribbean origin and silent presence have generated a substantial scholarly afterlife. Jane flees, finds shelter and a marriage proposal she rejects with the missionary St. John Rivers, and ultimately returns to Rochester in the famous closing chapters. Brontë's central insistence — that her heroine claims the right to equal moral and intellectual standing with her employer — was startling in 1847 and shapes the novel still.",
     },
     {
         "title": "Wuthering Heights",
@@ -208,7 +208,7 @@ FICTION_BOOKS = [
         "year": 1847,
         "genre": "fiction",
         "mood": ["ugly cry", "heartbreak recovery", "winter blanket"],
-        "summary": "Heathcliff and Catherine's destructive passion consumes two families across generations on the Yorkshire moors.",
+        "summary": "Emily Brontë's Wuthering Heights, her only novel, was published in 1847 under the pseudonym Ellis Bell and met an early reception that ranged from puzzled to scandalized. The book is set on the bleak Yorkshire moors and structured as a complicated nested narrative — Lockwood, a tenant at the neighboring Thrushcross Grange, hears the story from the housekeeper Nelly Dean — that covers two generations of two intertwined families, the Earnshaws of Wuthering Heights and the Lintons of the Grange. At its center is the consuming, articulately violent attachment between the foundling Heathcliff, brought to Wuthering Heights as a small dark-skinned child, and the willful Cathy Earnshaw, whose decision to marry the cultivated Edgar Linton instead of Heathcliff sets in motion a multigenerational cycle of revenge. Heathcliff systematically degrades and dispossesses both families until the next generation — young Cathy, Hareton Earnshaw, and Linton Heathcliff — finally breaks the pattern. The book's gothic intensity, refusal of moral comfort, and structural ingenuity place it among the most distinctive novels in English, and its central pair has become a touchstone for romantic destructiveness in Western literature.",
     },
     {
         "title": "To Kill a Mockingbird",
@@ -216,7 +216,7 @@ FICTION_BOOKS = [
         "year": 1960,
         "genre": "fiction",
         "mood": ["self-discovery", "rainy afternoon", "Sunday morning"],
-        "summary": "A young girl in Depression-era Alabama watches her father defend a Black man falsely accused of rape, learning hard truths about justice.",
+        "summary": "Harper Lee's To Kill a Mockingbird, published in 1960, won the 1961 Pulitzer Prize for fiction and remains one of the most widely read American novels of the twentieth century. Narrated in retrospect by Jean Louise 'Scout' Finch, who in the events of the novel is a six- to nine-year-old girl in the fictional Maycomb, Alabama in the early 1930s, the book has two intertwined plots. The first is the small drama of Scout, her older brother Jem, and their summer friend Dill obsessing over the unseen recluse Boo Radley next door. The second is the trial of Tom Robinson, a Black field hand falsely accused of raping a poor white woman named Mayella Ewell, defended by Scout's widowed lawyer father Atticus Finch over the violent objections of the town. The two plots meet on a dark road on Halloween night. The novel established Atticus as one of American fiction's most quoted moral exemplars; later scholarly conversation, especially after the 2015 publication of the earlier draft Go Set a Watchman, has complicated that reading. The book is taught in roughly half of American secondary schools.",
     },
     {
         "title": "One Hundred Years of Solitude",
@@ -224,7 +224,7 @@ FICTION_BOOKS = [
         "year": 1967,
         "genre": "fiction",
         "mood": ["slow burn", "late night reflection", "rainy afternoon"],
-        "summary": "Seven generations of the Buendía family live, love, and repeat their mistakes in the mythical town of Macondo.",
+        "summary": "Gabriel García Márquez's One Hundred Years of Solitude, published in 1967, is the central novel of Latin American magical realism and the work that won its author the 1982 Nobel Prize in Literature. The book follows seven generations of the Buendía family in the fictional town of Macondo, founded in the Colombian jungle by the patriarch José Arcadio Buendía and his wife Úrsula Iguarán, who are also first cousins haunted by the family fear that their incestuous descendants will be born with pig tails. Across roughly a century the novel braids the rise and decline of Macondo with cycles of repeating Buendía names — endless José Arcadios and Aurelianos — civil wars between Liberals and Conservatives, the arrival of the banana plantation and a thinly fictionalized version of the 1928 banana massacre, traveling gypsies led by the alchemist Melquíades, and the slow drift of the town toward oblivion. García Márquez moves between miraculous events and granular daily life in the same level register, refusing the distinction between magic and history. The novel's first sentence, with its firing squad and its remembered ice, is among the most famous in modern fiction.",
     },
     {
         "title": "The Catcher in the Rye",
@@ -232,7 +232,7 @@ FICTION_BOOKS = [
         "year": 1951,
         "genre": "fiction",
         "mood": ["self-discovery", "existential crisis", "late night reflection"],
-        "summary": "Holden Caulfield wanders New York City for three days, railing against phoniness while struggling with grief and growing up.",
+        "summary": "J.D. Salinger's The Catcher in the Rye, published in 1951, is a first-person novel narrated by sixteen-year-old Holden Caulfield from a sanatorium in California, recalling the three days the previous winter that brought him there. Expelled from yet another preparatory school in Pennsylvania, Holden flees east before going home and spends a long disoriented weekend in New York City, encountering nuns at a sandwich counter, hiring and panicking out of an encounter with a prostitute, drinking with a former girlfriend, dancing with strangers in hotel bars, sneaking home to see his beloved younger sister Phoebe, visiting an old English teacher, and roaming the carousel in Central Park. Beneath the cynical comic monologue, the novel turns out to be the story of Holden's incomplete grief for his younger brother Allie, who died of leukemia, and his terror of growing up into the 'phony' adult world he despises. Salinger's distinctive vernacular voice, his refusal of redemptive plotting, and his close attention to adolescent emotional precision made the book one of the most influential American novels of the postwar period and a perennial fixture of high school reading lists.",
     },
     {
         "title": "Brave New World",
@@ -240,7 +240,7 @@ FICTION_BOOKS = [
         "year": 1932,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "A pleasure-saturated dystopia where humanity is engineered for compliance and the price of stability is freedom.",
+        "summary": "Aldous Huxley's Brave New World, published in 1932, is the foundational dystopian novel of pleasure-based social control and is now usually paired with Orwell's later Nineteen Eighty-Four as the two contrasting twentieth-century totalitarian visions. Huxley imagines a World State, six hundred years after Henry Ford, in which natural reproduction has been abolished, embryos are decanted on assembly lines and conditioned in vitro into one of five rigid castes, sexual promiscuity and shallow consumption are state-mandated, family attachments and serious art have been engineered out of human life, and the synthetic euphoric drug soma is freely distributed to manage any residual unhappiness. The plot follows Bernard Marx, a slightly defective Alpha-Plus, and his colleague Lenina Crowne to a 'Savage Reservation' in the American Southwest, from which they bring back a young man called John, raised on Shakespeare and Hopi religion, into the World State. John's collision with engineered comfort produces the novel's central argument. Huxley's specific worry — that consumer pleasure and technological convenience could neutralize political freedom without anyone needing to be coerced — has aged unnervingly well.",
     },
     {
         "title": "Catch-22",
@@ -248,7 +248,7 @@ FICTION_BOOKS = [
         "year": 1961,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection", "road trip"],
-        "summary": "A World War II bombardier is trapped by the circular logic of military bureaucracy in this savage satire of war.",
+        "summary": "Joseph Heller's Catch-22, published in 1961, is set on the fictional Mediterranean island of Pianosa during the closing months of World War II and follows the U.S. Army Air Forces bombardier Captain John Yossarian and the absurd cast of officers and enlisted men around him. Yossarian wants to stop flying combat missions over Italy because he keeps almost dying, but the regulations contain a paradox: a pilot can be grounded for insanity, but anyone who asks to be grounded for insanity is by definition rationally afraid for his life and therefore not insane. The unwritten rule, named in the title, becomes the operating logic of the whole institution. Heller writes in a deliberately scrambled chronology and across a comic ensemble — the entrepreneur Milo Minderbinder running a syndicate buying Egyptian cotton at a loss, the crepuscular Chaplain Tappman, the dead man in Yossarian's tent, the perpetually promoted ex-PFC Wintergreen — until late in the book a tragic event the reader has glimpsed in fragments is finally told straight. The novel coined a phrase that has entered everyday English and remains the great absurdist American war novel.",
     },
     {
         "title": "The Count of Monte Cristo",
@@ -256,7 +256,7 @@ FICTION_BOOKS = [
         "year": 1844,
         "genre": "fiction",
         "mood": ["hustle mode", "slow burn", "late night reflection"],
-        "summary": "A wrongfully imprisoned sailor escapes, finds a fortune, and orchestrates an elaborate revenge on those who betrayed him.",
+        "summary": "Alexandre Dumas's The Count of Monte Cristo, serialized in 1844 and 1845, is one of the great popular adventure novels of the nineteenth century. It opens in 1815 Marseille with the young merchant sailor Edmond Dantès on the verge of his promotion to captain and his marriage to the Catalan girl Mercédès. A jealous rival, a calculating naval officer who covets Mercédès, and a cynical Bonapartist-turned-royalist magistrate together manufacture a treason charge, and Dantès is buried in the island prison of the Château d'If for fourteen years. There he meets the Italian polymath Abbé Faria, who teaches him languages, science, and the location of an immense buried treasure on the island of Monte Cristo. After a celebrated escape concealed in Faria's burial sack, the now-rich Dantès reinvents himself as the Count of Monte Cristo and returns to a Paris in which his betrayers have all risen to power, spending the next decade methodically destroying them. The book is enormous, melodramatic, beautifully plotted, and unusually attentive to the cost of revenge to the avenger. It has stayed continuously in print for nearly two centuries.",
     },
     {
         "title": "Les Misérables",
@@ -554,7 +554,7 @@ FICTION_BOOKS = [
         "year": 1951,
         "genre": "fiction",
         "mood": ["hustle mode", "late night reflection", "side project vibes"],
-        "summary": "A mathematician predicts the fall of a galactic empire and establishes a foundation to shorten the coming dark age.",
+        "summary": "Isaac Asimov's Foundation, originally a sequence of stories published in Astounding Science Fiction between 1942 and 1950 and collected as a fix-up novel in 1951, is the founding text of the long-running Foundation universe and one of the most influential works in twentieth-century science fiction. The setup is the brittle far-future Galactic Empire of twelve thousand worlds, ruled from the planet-city Trantor and on the brink of an unrecognized collapse. The mathematician Hari Seldon has developed a new statistical science called psychohistory, which can predict the behavior of large populations though never of individuals, and his calculations show a thirty-thousand-year barbarian dark age unless his secret Foundation, established at the galactic edge on the planet Terminus, can compress that interregnum to a single millennium. The book follows the first century and a half of that Foundation through a series of carefully arranged crises — political, religious, commercial — each of which can be resolved by exactly one available course of action, the so-called Seldon plan. The Foundation series reshaped how science fiction handled long historical timescales and was a stated influence on figures from Krugman to Musk.",
     },
     {
         "title": "I, Robot",
@@ -562,7 +562,7 @@ FICTION_BOOKS = [
         "year": 1950,
         "genre": "fiction",
         "mood": ["side project vibes", "late night reflection"],
-        "summary": "Nine linked stories explore the Three Laws of Robotics and the unintended consequences of programming morality into machines.",
+        "summary": "Isaac Asimov's I, Robot, a 1950 fix-up of nine connected short stories originally published between 1940 and 1950, is the central text of the Three Laws of Robotics and the work that more than any other shaped the modern fictional imagination of artificial minds in conflict with human intentions. The book is framed as the reminiscences of the aging robopsychologist Susan Calvin, employed for her career at U.S. Robots and Mechanical Men, recounting nine episodes from the history of positronic-brain robotics. Each story takes a deceptively simple deductive form: a robot is observed to behave in some apparently inexplicable way, and the question is which of Asimov's three Laws — must not harm a human, must obey orders, must protect itself — is in conflict with which other under exactly what conditions. The cumulative effect across the volume is a survey of how rule-bound systems generate unpredictable behavior precisely because they are rule-bound, an argument with surprising relevance to twenty-first-century AI alignment debates. The book established the robot-as-thinking-machine in popular consciousness and is foundational to almost everything that followed in the subgenre.",
     },
     {
         "title": "The Caves of Steel",
@@ -570,7 +570,7 @@ FICTION_BOOKS = [
         "year": 1954,
         "genre": "fiction",
         "mood": ["side project vibes", "late night reflection"],
-        "summary": "A human detective and a robot partner solve a murder in a future Earth where humanity lives in vast enclosed cities.",
+        "summary": "Isaac Asimov's The Caves of Steel, published in 1954, is a classical detective novel set inside one of Asimov's far-future Earths and the book that introduced the New York City Police plainclothesman Elijah Baley and his humaniform robot partner R. Daneel Olivaw, a pairing that would recur across several later Asimov books and eventually link his Robot and Foundation series. The setting is a teeming, agoraphobic Earth in which humanity lives entirely inside enormous domed City structures, no longer able to tolerate open air, and tensions are high between the planetbound 'Earthmen' and the small population of 'Spacers' who long ago colonized off-world planets and now live in lavish low-density suburbs outside the City. When a prominent Spacer roboticist is murdered in the Spacer enclave near New York, Baley is assigned to the case under the watch of Olivaw, a robot designed to look indistinguishable from a Spacer. The detective work is thoughtful and rule-following, but the book's lasting interest is its argument about how dense and fragile a human social ecology can become.",
     },
     {
         "title": "2001: A Space Odyssey",
@@ -578,7 +578,7 @@ FICTION_BOOKS = [
         "year": 1968,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "A mysterious monolith propels humanity from the African savanna to Jupiter in a meditation on evolution and artificial intelligence.",
+        "summary": "Arthur C. Clarke's 2001: A Space Odyssey, published in 1968 in deliberate parallel with Stanley Kubrick's film, was developed jointly with Kubrick from Clarke's earlier short story 'The Sentinel.' The novel opens four million years ago on the African savanna, where a black monolith of unknown origin appears among a tribe of starving man-apes and reshapes them into tool-users. It then jumps to a near-future moon base where a second monolith has been deliberately buried and is detected only when sunlight first strikes it after the lunar dawn — sending an unmistakable beacon toward Saturn. The bulk of the novel follows the spacecraft Discovery on a mission to Saturn's moon Iapetus under the command of Dr. David Bowman and Frank Poole, accompanied by the highly capable HAL 9000 onboard computer that suffers what may be the most famous breakdown in science-fiction history. Clarke ends in territory where the film does only by suggestion — Bowman's encounter with the third monolith and his transformation into the Star-Child. The book is a foundational text of metaphysical hard science fiction.",
     },
     {
         "title": "Rendezvous with Rama",
@@ -586,7 +586,7 @@ FICTION_BOOKS = [
         "year": 1973,
         "genre": "fiction",
         "mood": ["side project vibes", "late night reflection"],
-        "summary": "A massive cylindrical spacecraft enters the solar system, and a crew races to explore its mysteries before it leaves.",
+        "summary": "Arthur C. Clarke's Rendezvous with Rama, published in 1973 and winner of the Hugo, Nebula, and BSFA awards, is the most acclaimed of his middle-period novels and the founding work of the so-called 'big dumb object' subgenre. In the year 2131 a spaceguard detection system spots a perfectly cylindrical object fifty kilometers long and twenty wide entering the solar system on a fast hyperbolic trajectory, designated Rama. The exploration ship Endeavour under Commander Bill Norton is the only vessel that can match velocities with it, and the crew is given a few weeks to enter and survey the alien craft before it loops around the sun and leaves the solar system forever. Inside they find a vast cylindrical interior with rotational gravity, a frozen central sea ringed by alien cities, and biomechanical 'biot' caretakers that activate as Rama warms in approach. Clarke's writing is austerely competent and emphasizes the experience of disciplined human curiosity in the face of utter alien indifference. The book ends without revealing what Rama is or who built it, an act of restraint that has shaped science fiction's mystery genre ever since.",
     },
     {
         "title": "Childhood's End",
@@ -594,7 +594,7 @@ FICTION_BOOKS = [
         "year": 1953,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Benevolent alien Overlords bring peace to Earth, but their true purpose for humanity is far more radical than utopia.",
+        "summary": "Arthur C. Clarke's Childhood's End, published in 1953, is one of his most ambitious early novels and the book that broke him into mainstream Anglophone reading. The novel opens with the sudden appearance of enormous alien spaceships above every major city on Earth in the late twentieth century, halting an incipient nuclear war. Their unseen masters, who reveal themselves only by voice through a single intermediary they call Karellen, identify themselves as Overlords and announce that they will benignly govern humanity from orbit. Over the next decades they end war, poverty, and most disease; they also quietly suppress superstition, blunt human ambition, and refuse to show themselves in person. When at last they do, in one of the most famous reveals in genre fiction, the explanation begins to emerge for what they are protecting humanity for: the next evolutionary step, in which the children of the species pass into a collective post-human consciousness called the Overmind. The novel's final chapters are quietly devastating. Clarke is taking on transcendence on a planetary scale and refusing easy comfort.",
     },
     {
         "title": "The Left Hand of Darkness",
@@ -602,7 +602,7 @@ FICTION_BOOKS = [
         "year": 1969,
         "genre": "fiction",
         "mood": ["self-discovery", "winter blanket", "late night reflection"],
-        "summary": "An envoy to a planet of ambisexual beings learns that gender is just one of many assumptions about what makes us human.",
+        "summary": "Ursula K. Le Guin's The Left Hand of Darkness, published in 1969, won both the Hugo and Nebula awards in the same year and is one of the foundational works of feminist science fiction. The novel is set on the bitterly cold planet Gethen, called Winter, and is narrated alternately by Genly Ai, a male envoy from the interstellar Ekumen sent alone to invite Gethen to join the federation, and by his Gethenian counterpart Estraven, the disgraced prime minister of the kingdom of Karhide. Gethenians are ambisexual: for most of their lives they are neuter humans, but once a month they enter 'kemmer' and develop temporarily into male or female bodies, with no fixed gender role across a lifetime. Le Guin uses this setup to interrogate the ways gender structures everything in the cultures her envoy comes from. The plot turns on diplomatic intrigue between Karhide and the rival nation of Orgoreyn, a horrific labor-camp imprisonment, and a long, intimate trek across an arctic ice sheet during which the friendship between Genly and Estraven becomes the moral center of the book.",
     },
     {
         "title": "The Dispossessed",
@@ -610,7 +610,7 @@ FICTION_BOOKS = [
         "year": 1974,
         "genre": "fiction",
         "mood": ["existential crisis", "self-discovery", "late night reflection"],
-        "summary": "A physicist from an anarchist moon visits the capitalist planet it orbits, questioning what freedom really means.",
+        "summary": "Ursula K. Le Guin's The Dispossessed, subtitled 'An Ambiguous Utopia' and published in 1974, is set on the twin worlds of Urras and Anarres, sharing the same orbit. The protagonist Shevek is a brilliant theoretical physicist born on Anarres, the desert moon settled two centuries earlier by anarcho-syndicalist exiles led by the philosopher Odo, where there is no money, no property, no formal government, and no centralized state, but increasingly suffocating informal social pressure. Frustrated in his work and unable to publish his General Temporal Theory under the bureaucratic constraints of his ostensibly free society, Shevek becomes the first person in two hundred years to travel to Urras, the capitalist mother planet that Anarres regards as the enemy. The novel alternates chapters between Shevek's life on Anarres growing up and the journey on Urras as a celebrity guest who slowly understands the price of his hosts' wealth. The book is a masterpiece of comparative political imagination, refusing to score either society as the simple utopia, and remains one of the most respected explicitly political novels in science fiction.",
     },
     {
         "title": "A Wizard of Earthsea",
@@ -618,7 +618,7 @@ FICTION_BOOKS = [
         "year": 1968,
         "genre": "fiction",
         "mood": ["self-discovery", "cozy night", "road trip"],
-        "summary": "A young wizard must hunt the shadow he unleashed, learning that true power lies in knowing your own name.",
+        "summary": "Ursula K. Le Guin's A Wizard of Earthsea, published in 1968, is the first volume of the long Earthsea cycle and one of the most influential fantasy novels of the second half of the twentieth century. The book opens on the small Hardic island of Gont with a goatherd boy named Duny, who discovers an instinct for magic, takes the use-name Sparrowhawk, and is given the secret true-name Ged by his first teacher, the mage Ogion. Sent for formal study to the Wizards' School on Roke, Ged becomes the most gifted student of his year and, in an act of pride during a contest with a rival, summons a creature from the realm of the dead and is gravely scarred when a shadow tears free with him through the wound between worlds. The rest of the novel is the long pursuit and reversal of that shadow across the islands of Earthsea, until Ged learns that he must turn and hunt it rather than be hunted. Le Guin grounds the magic in Taoist patience and the Hardic concept of 'true name,' and produces one of fantasy's most quietly lasting moral fables.",
     },
     {
         "title": "Dune",
@@ -626,7 +626,7 @@ FICTION_BOOKS = [
         "year": 1965,
         "genre": "fiction",
         "mood": ["hustle mode", "self-discovery", "late night reflection"],
-        "summary": "A young noble is thrust into the politics of a desert planet whose spice controls the fate of the universe.",
+        "summary": "Frank Herbert's Dune, published in 1965 and winner of the first Nebula Award and a Hugo, is the founding novel of one of science fiction's largest and most influential cycles. The book is set in a far-future feudal interstellar empire ten thousand years after a religious uprising banned thinking machines, and turns on control of the desert planet Arrakis, the only known source of the spice melange — a substance that extends life, sharpens consciousness, and makes interstellar navigation possible. The young heir Paul Atreides arrives on Arrakis with his father Duke Leto and his Bene Gesserit mother Lady Jessica, only for the rival House Harkonnen to ambush them under the secret sponsorship of the Padishah Emperor. Forced into the deep desert, Paul finds shelter among the Fremen, the planet's tough, water-disciplined indigenous people, and slowly transforms into both their messianic Lisan al-Gaib and a strategic threat to the empire. Herbert weaves together ecology, religion, dynastic politics, and prophecy into a deliberately overstuffed setting that has shaped the imagination of every subsequent generation of science fiction writers.",
     },
     {
         "title": "Dune Messiah",
@@ -634,7 +634,7 @@ FICTION_BOOKS = [
         "year": 1969,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Paul Atreides grapples with the monstrous consequences of his own godhood as conspiracies close in around him.",
+        "summary": "Dune Messiah, Frank Herbert's 1969 sequel to Dune, is the second volume of his Dune cycle and a deliberately disorienting follow-up to the messianic triumph of the first book. Twelve years have passed since Paul Atreides became Emperor of the known universe, and his Fremen jihad has slaughtered roughly sixty billion people across the galaxy in his name. Herbert is explicit that this volume is meant to disabuse readers who took the first novel as a hero's journey: the Paul who emerges from the dunes was, by the author's account, a warning rather than a model, and Dune Messiah is the working-out of the consequences. The plot turns on a coordinated conspiracy against Paul by the Bene Gesserit, the Spacing Guild, the Tleilaxu Face Dancers, and his own shamed sister-wife Princess Irulan, centered on the resurrected ghola of Paul's old friend Duncan Idaho, now called Hayt. Paul's prescience traps him as much as it empowers him, and the book closes with his deliberate walking into the desert as the blind father of unborn twins. It is shorter, denser, and bleaker than its predecessor.",
     },
     {
         "title": "Do Androids Dream of Electric Sheep?",
@@ -642,7 +642,7 @@ FICTION_BOOKS = [
         "year": 1968,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection", "rainy afternoon"],
-        "summary": "A bounty hunter tracks rogue androids in a post-apocalyptic San Francisco, questioning what separates human from machine.",
+        "summary": "Philip K. Dick's Do Androids Dream of Electric Sheep?, published in 1968 and the basis for Ridley Scott's later Blade Runner, is set in a post-nuclear San Francisco in which most of the surviving population has emigrated off-world to escape a planet ruined by the dust of World War Terminus. The bounty hunter Rick Deckard works for the SFPD retiring escaped Nexus-6 androids — humanoid robots manufactured for off-world colonial labor — using a Voigt-Kampff empathy test that is, in the novel's worldview, the last thing distinguishing the genuinely human. Across one long day Deckard hunts six fugitive Nexus-6 models while becoming romantically and morally entangled with the android Rachael Rosen, struggling with the religious empathy-machine Mercerism that structures human emotional life on the depopulated Earth, and obsessing over his own desire to own a real animal rather than the electric sheep grazing on his apartment-building roof. Dick is interested less in the action than in the metaphysical question the novel circles relentlessly: what work is empathy actually doing, and is its absence enough to disqualify someone from personhood. The book is one of the central texts of late-twentieth-century paranoid science fiction.",
     },
     {
         "title": "The Man in the High Castle",
@@ -650,7 +650,7 @@ FICTION_BOOKS = [
         "year": 1962,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "In an alternate history where the Axis won WWII, Americans live under German and Japanese rule, and a forbidden novel imagines Allied victory.",
+        "summary": "Philip K. Dick's The Man in the High Castle, published in 1962 and winner of the Hugo Award, is set in 1962 in a North America divided between the Greater German Reich on the East Coast, the Pacific States of America under Japanese occupation on the West Coast, and a buffer Rocky Mountain States in between, after a victorious Axis power won the Second World War in Dick's alternate timeline. The novel braids the lives of half a dozen characters across San Francisco, Denver, and beyond: the Jewish jewelry dealer Frank Frink hiding in plain sight, the trade-attaché Mr. Tagomi navigating the I Ching for guidance through a tense Japanese-German diplomatic crisis, the ex-fascist truck driver Joe Cinnadella with hidden plans, the antique dealer Robert Childan terrified of his Japanese clientele, and Frank's estranged wife Juliana. Several of them are reading or pursuing the same mysterious banned book, The Grasshopper Lies Heavy, which itself imagines an alternate history in which the Allies won. Dick uses the doubled counterfactuals to ask what 'reality' even means and to study how ordinary people behave under occupation. The book is among Dick's most carefully constructed major novels.",
     },
     {
         "title": "Ubik",
@@ -658,7 +658,7 @@ FICTION_BOOKS = [
         "year": 1969,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Reality begins to decay around a group of psychics, and a mysterious product called Ubik may be the only thing keeping the world together.",
+        "summary": "Philip K. Dick's Ubik, published in 1969, is set in a near-future 1992 in which corporations employ rival teams of psychics — telepaths and precogs on one side, anti-psychics or 'inertials' on the other — and the recently deceased can be preserved in 'half-life' moratoria where the living can briefly converse with them. Glen Runciter runs an anti-psi agency whose star inertial, Joe Chip, narrates much of the book. After what appears to be an assassination attempt on the Moon, Runciter dies, and the agency's surviving operatives begin to experience the world decaying around them: cigarettes go stale, milk sours, money on currency reverts to long-dead presidents, time itself seems to slip backward. Strange messages from Runciter appear on television, in matchbooks, and on graffiti, all directing Joe Chip to find a substance called Ubik that can stabilize reality. Dick keeps inverting the reader's understanding of who is alive and who is in half-life. The novel is one of his most fully realized late metaphysical books, and Time's list of the hundred best English-language novels since 1923 includes it.",
     },
     {
         "title": "Fahrenheit 451",
@@ -666,7 +666,7 @@ FICTION_BOOKS = [
         "year": 1953,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection", "self-discovery"],
-        "summary": "A fireman whose job is to burn books begins to read them and discovers the dangerous power of ideas.",
+        "summary": "Ray Bradbury's Fahrenheit 451, published in 1953 and inspired in part by his fears about midcentury McCarthy-era censorship and television's hold on attention, is set in a near-future American city in which all books have been outlawed and the firemen, who once put out fires, now exist to burn any books that are discovered. The protagonist Guy Montag is one of these firemen and lives a numbed life with his pill-addled wife Mildred, whose attention is occupied by the wall-sized parlor television and by the tiny radio Seashell earpieces she sleeps with. A walk home with the seventeen-year-old neighbor girl Clarisse, who notices the world, sets Montag on a slow defection that begins with stealing a book from a fire and ends with him fleeing the mechanical hound and a city about to be destroyed in war. Out in the woods he finds a community of homeless intellectuals who have memorized whole books for a future when civilization can read again. The title comes from the temperature at which paper supposedly auto-ignites and has entered the language as shorthand for state censorship.",
     },
     {
         "title": "The Martian Chronicles",
@@ -674,7 +674,7 @@ FICTION_BOOKS = [
         "year": 1950,
         "genre": "fiction",
         "mood": ["late night reflection", "rainy afternoon"],
-        "summary": "Poetic, interconnected tales of humanity's colonization of Mars explore loneliness, nostalgia, and the death of civilizations.",
+        "summary": "Ray Bradbury's The Martian Chronicles, a 1950 fix-up of stories he had been publishing in the pulp magazines of the late 1940s, is less a conventional novel than a sequence of poetic episodes set across roughly twenty-six years of human contact with Mars beginning in 1999. The early stories chronicle the failure of three early American expeditions, all destroyed by an indigenous Martian civilization that itself fades almost entirely from chickenpox and other terrestrial diseases brought by the explorers. The middle of the book follows the chaotic settlement of the now-empty planet by waves of American immigrants — vacationers, missionaries, fugitive slaves, real-estate speculators — most of whom recreate the worst of small-town twentieth-century America in the Martian deserts. The closing stories pivot back to Earth as nuclear war annihilates the home planet, and a small band of returnees confront the question of what kind of new civilization, if any, can be built on the ruins of two. Bradbury's prose is unmistakably elegiac rather than technical, and the book reads now as a postwar reflection on settler colonialism, mass extinction, and the loneliness of utopian projects.",
     },
     {
         "title": "Something Wicked This Way Comes",
@@ -682,7 +682,7 @@ FICTION_BOOKS = [
         "year": 1962,
         "genre": "fiction",
         "mood": ["cozy night", "late night reflection", "winter blanket"],
-        "summary": "Two boys confront a sinister traveling carnival that preys on the desires and fears of their small town.",
+        "summary": "Ray Bradbury's Something Wicked This Way Comes, published in 1962, is set in the small Illinois town of Green Town in late October and follows two thirteen-year-old boys, Jim Nightshade and William Halloway, born minutes apart on either side of midnight on Halloween. A mysterious traveling carnival, Cooger and Dark's Pandemonium Shadow Show, arrives at three in the morning to a station no train should be coming through, and the boys watch it set up in a meadow outside town. As the days that follow unfold, the carnival's central attraction — a carousel that can age its rider forward or backward by years for each revolution — begins to remake the lives of Green Town's residents in their most secret and distorted desires. Will's mild-mannered fifty-four-year-old librarian father Charles becomes the unlikely adversary of the carnival's tattooed Mr. Dark. Bradbury writes the book in a deliberately rich autumnal prose register, shading dark fantasy into a serious meditation on aging, on the danger of wishing for what one does not really want, and on the strangeness of growing up in the American Midwest.",
     },
     {
         "title": "Slaughterhouse-Five",
@@ -690,7 +690,7 @@ FICTION_BOOKS = [
         "year": 1969,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Billy Pilgrim comes unstuck in time, bouncing between the firebombing of Dresden and an alien zoo on Tralfamadore.",
+        "summary": "Kurt Vonnegut's Slaughterhouse-Five, published in 1969, draws on Vonnegut's own experience as a young American POW in Dresden during the Allied firebombing of February 13 to 15, 1945. The novel's protagonist, Billy Pilgrim, an unimpressive Indianapolis optometrist, has come unstuck in time, and the book moves without warning between his suburban midcentury life, his service as a luckless infantry chaplain's assistant in the Battle of the Bulge, his survival of Dresden as a prisoner sheltering in the underground meat locker that gives the book its title, and his abduction by aliens called Tralfamadorians who keep him in a zoo on their planet alongside the actress Montana Wildhack. The Tralfamadorians experience time non-sequentially, which licenses both Vonnegut's fragmented structure and the recurring fatalist refrain 'so it goes' that follows every mention of death. The book is at once an antiwar novel, a science-fiction parody, a comic memoir, and a meditation on how trauma resists narrative ordering. Subtitled 'The Children's Crusade: A Duty-Dance with Death,' it is Vonnegut's most enduring single book and a regular fixture of postwar American literature courses.",
     },
     {
         "title": "Cat's Cradle",
@@ -698,7 +698,7 @@ FICTION_BOOKS = [
         "year": 1963,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection", "beach read"],
-        "summary": "A writer researching the atomic bomb stumbles onto a substance that could freeze all the water on Earth.",
+        "summary": "Kurt Vonnegut's Cat's Cradle, published in 1963, is a short comic novel narrated by a writer who calls himself Jonah and is researching a book about what important Americans were doing on the day of the Hiroshima bombing. The thread leads him to the children of Felix Hoenikker, the fictional Nobel laureate physicist who fathered both the atomic bomb and a substance called ice-nine, a polymorph of water that freezes all liquid water it touches at a temperature of 114 degrees Fahrenheit. Tracking the dispersed Hoenikker children — Frank, Newt, and Angela — Jonah ends up on the impoverished Caribbean island of San Lorenzo, ruled by the dying dictator 'Papa' Monzano and home to the proscribed religion Bokononism, an explicitly invented set of harmless lies that nonetheless make life livable for the islanders. Vonnegut interleaves Bokononist epigrams throughout the book in his characteristic short numbered chapters. The plot moves toward a small-scale extinction event with the off-hand inevitability of his best work, and the novel sits at the intersection of cold-war science satire, religious parody, and meditation on the moral indifference of pure research. It earned Vonnegut his master's degree in anthropology retroactively from Chicago.",
     },
     {
         "title": "The Sirens of Titan",
@@ -706,7 +706,7 @@ FICTION_BOOKS = [
         "year": 1959,
         "genre": "fiction",
         "mood": ["existential crisis", "road trip", "late night reflection"],
-        "summary": "The richest man in America is manipulated across the solar system in a cosmic joke about free will and purpose.",
+        "summary": "Kurt Vonnegut's The Sirens of Titan, his second novel published in 1959, is a deeply strange and extended cosmic comedy that opens in a near-future America in which Malachi Constant is the richest man on Earth, mostly through inherited luck. The science-fiction premise is the chrono-synclastic infundibulum, a pocket of space where the contradictions among possible futures are reconciled, and into which a Connecticut investor named Winston Niles Rumfoord and his dog Kazak have fallen, scattering their bodies into a long elliptical wave that materializes briefly on Earth, Mars, and Saturn's moon Titan. From Titan, Rumfoord can see the past and future and uses that knowledge to manipulate humanity, especially Constant, into a series of humiliating roles that include a Martian invasion of Earth and the founding of a new pacifist religion called the Church of God the Utterly Indifferent. The eventual reveal — that the entire history of human civilization, including the Great Wall of China and the Pyramids, has been organized as a millennia-long signaling apparatus by a Tralfamadorian robot named Salo who needs a replacement spacecraft part on Titan — is one of the great deflations in science fiction and shapes the book's argument about meaning and free will.",
     },
     {
         "title": "Neuromancer",
@@ -714,7 +714,7 @@ FICTION_BOOKS = [
         "year": 1984,
         "genre": "fiction",
         "mood": ["late night reflection", "side project vibes", "hustle mode"],
-        "summary": "A washed-up hacker is recruited for one last job in cyberspace, launching the cyberpunk genre.",
+        "summary": "William Gibson's Neuromancer, published in 1984, is the founding novel of cyberpunk and the work that gave the language the word 'cyberspace.' Henry Dorsett Case is a former cowboy console hacker now broken in the underworld of the Sprawl — Gibson's noirish near-future Boston-Atlanta Metropolitan Axis — after his nervous system was deliberately damaged by former employers as punishment for stealing from them. He is recruited out of his suicidal Chiba City stupor by the deeply scarred ex-soldier Armitage and the mirror-shaded street samurai Molly Millions to attempt a complicated heist that ultimately reveals itself as the merger of two artificial intelligences, Wintermute and Neuromancer, owned by the immensely wealthy Tessier-Ashpool family and constrained by Turing Police protocols against AI escape. Gibson's prose has a propulsive, brand-saturated, hardboiled register that effectively invented the genre's voice. The book is shaped by Burroughs and Chandler as much as by science fiction, and it imagined nearly every visual and structural metaphor that the next forty years of digital culture, cyberpunk fiction, and films from The Matrix to Ghost in the Shell would draw on. It won the Nebula, Hugo, and Philip K. Dick Awards — the first novel ever to take all three.",
     },
     {
         "title": "Snow Crash",
@@ -722,7 +722,7 @@ FICTION_BOOKS = [
         "year": 1992,
         "genre": "fiction",
         "mood": ["side project vibes", "hustle mode", "late night reflection"],
-        "summary": "A hacker and pizza deliveryman investigates a virtual drug that crashes both computers and human minds.",
+        "summary": "Neal Stephenson's Snow Crash, published in 1992, sits comfortably alongside Neuromancer as a defining cyberpunk novel and is responsible for popularizing both the term 'avatar' as the on-screen body of a virtual world inhabitant and the concept of the 'Metaverse' that would later be appropriated by social-network corporations. The book is set in a near-future Los Angeles balkanized into private corporate franchise-states. The protagonist Hiro Protagonist is, exactly as he introduces himself, a sword-wielding hacker who delivers pizzas for the Mafia in his day job and is one of the founding programmers of the Metaverse, a global virtual-reality network in which much of upper-class social life has migrated. He teams with a teenage skateboard courier named Y.T. to investigate a strange new substance called Snow Crash that is functioning simultaneously as a computer virus, a recreational drug, and a neurological infection. The plot pulls in ancient Sumerian linguistics, the Tower of Babel, the Asherah cult, the L. Bob Rife media empire, and a giant Aleut harpooner. Stephenson's writing is deliberately maximalist, comic, and information-dense, and Snow Crash is a substantial influence on the entire post-1990s techno-thriller register.",
     },
     {
         "title": "The Hitchhiker's Guide to the Galaxy",
@@ -730,7 +730,7 @@ FICTION_BOOKS = [
         "year": 1979,
         "genre": "fiction",
         "mood": ["beach read", "road trip", "cozy night"],
-        "summary": "Earth is demolished for a hyperspace bypass, and the last surviving human hitches a ride through a very absurd universe.",
+        "summary": "Douglas Adams's The Hitchhiker's Guide to the Galaxy, published in 1979 and adapted from a 1978 BBC Radio 4 series, is the founding novel of British comic science fiction. The book opens with the unlikely Englishman Arthur Dent, who is informed that his house is to be demolished to make way for a bypass on the same morning that the planet Earth is demolished by the Vogons to make way for a hyperspace bypass. He is rescued at the last moment by his friend Ford Prefect, who turns out to be an alien researcher for the eponymous interstellar travel guide. The two hitch a series of increasingly improbable rides across the galaxy, falling in with the two-headed three-armed President of the Galaxy Zaphod Beeblebrox, the depressed robot Marvin, the only other human survivor Trillian, and the editorial entries of the Guide itself. The plot moves toward the construction of a planet-sized supercomputer to compute the ultimate answer to life, the universe, and everything, which turns out to be 42, with the actual question lost. Adams's prose is dry, recursive, and deeply influential on subsequent Anglophone comic and absurdist fiction.",
     },
     {
         "title": "Ender's Game",
@@ -738,7 +738,7 @@ FICTION_BOOKS = [
         "year": 1985,
         "genre": "fiction",
         "mood": ["hustle mode", "self-discovery", "side project vibes"],
-        "summary": "A child genius is trained in orbital battle school to command humanity's fleet against an alien invasion.",
+        "summary": "Orson Scott Card's Ender's Game, published as a novel in 1985 after a 1977 short story of the same name, won both the Nebula and Hugo awards and established Card as a major figure in popular science fiction. The book is set in a near-future Earth recovering from two close-run wars against the insectoid alien Formics — universally called 'Buggers' — and preparing for a third. To find a commander capable of leading the human counterstrike, the International Fleet recruits brilliant children, monitoring them through neural implants from infancy. The protagonist Andrew 'Ender' Wiggin, the third child of his family in a strictly two-child world, is taken at age six to the orbital Battle School, where he advances through increasingly punishing zero-gravity team combat exercises while being deliberately isolated from peers by a faculty determined to forge him into a strategic weapon. The book is also the story of Ender's cruel older brother Peter and his loving older sister Valentine, who back on Earth conduct their own information war under pseudonyms. The famous final twist about the nature of Ender's last battle has shaped the genre, and the novel is now widely taught as a study in moral responsibility under deception.",
     },
     {
         "title": "The Forever War",
@@ -746,7 +746,7 @@ FICTION_BOOKS = [
         "year": 1974,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "A soldier fights an interstellar war where time dilation means centuries pass on Earth between each deployment.",
+        "summary": "Joe Haldeman's The Forever War, first serialized in 1972 to 1975 and published as a novel in 1974, draws directly on Haldeman's experience as a U.S. Army combat engineer in Vietnam and is the great science-fiction antiwar novel of its generation. In a near-future Earth that has accidentally drawn humanity into a war with a mysterious alien race called the Taurans, brilliant young men and women are conscripted to fight the war by traveling between battlegrounds through wormhole-like 'collapsars,' which permit interstellar travel only at extreme relativistic velocity. The protagonist William Mandella, a physics graduate, deploys for what is for him a tour of months and returns to find that decades have passed on Earth — that his family is dead, his society has reorganized along sexual and economic lines he no longer recognizes, and the war he was sent to fight has continued without him understanding why. The book follows Mandella across roughly twelve hundred subjective years of human time as the war drags on against a foe humanity gradually realizes it had no reason to be fighting. The book won the Nebula, Hugo, and Locus awards and remains the canonical science-fiction Vietnam novel.",
     },
     {
         "title": "Solaris",
@@ -754,7 +754,7 @@ FICTION_BOOKS = [
         "year": 1961,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Scientists orbiting a sentient ocean planet confront manifestations of their deepest guilt and grief.",
+        "summary": "Stanisław Lem's Solaris, published in Polish in 1961 and translated into English in 1970, is one of the founding texts of science fiction's first-contact subgenre and Lem's best-known novel internationally. The psychologist Kris Kelvin arrives at a small research station hovering above the planet Solaris, an ocean world covered by a single vast, living, intelligent body of plasma whose nature has resisted decades of human study under a discipline called Solaristics. He finds the station in disarray: one of the three remaining scientists has killed himself, the others are barely functional, and the long-dead body of Kelvin's wife Harey, who committed suicide a decade earlier on Earth, appears in his quarters as a perfect physical replica that the planet has constructed from his own memories. Each of the surviving scientists has been visited by such a 'Phi-creature.' The novel's central preoccupation — and its lasting power — is its insistence that meaningful contact between fundamentally alien intelligences may be impossible, that humans confronted with the genuinely Other will only ever encounter projections of themselves. The book has been adapted twice for the screen, by Andrei Tarkovsky in 1972 and by Steven Soderbergh in 2002.",
     },
     {
         "title": "Contact",
@@ -762,7 +762,7 @@ FICTION_BOOKS = [
         "year": 1985,
         "genre": "fiction",
         "mood": ["self-discovery", "late night reflection", "existential crisis"],
-        "summary": "An astronomer receives a message from Vega containing instructions to build a machine, igniting a global debate about science and faith.",
+        "summary": "Carl Sagan's Contact, his only completed novel, was published in 1985 and was developed in parallel with a film script that took more than a decade to reach the screen as the 1997 Robert Zemeckis adaptation. The protagonist Eleanor Arroway, a Cornell-educated radio astronomer working at the Very Large Array in New Mexico, detects a clearly artificial repeating signal coming from the star Vega twenty-six light years away. Layered into the carrier is a video transmission of Hitler's 1936 Olympic broadcast — apparently the first powerful television signal Earth ever leaked into space — and beneath that, instructions for building an enormous and expensive machine of unknown function. The novel follows Arroway through years of geopolitical wrangling over construction of the Machine, religious controversy in which a fundamentalist movement attempts to discredit the message, attempts at sabotage, and eventually the journey itself, in which a small crew is briefly transported via wormhole to a meeting with a being that takes the form of Arroway's deceased father. Sagan, a working planetary scientist, is unusually serious about the science and unusually generous to the religious arguments his protagonist confronts.",
     },
     {
         "title": "Hyperion",
@@ -770,7 +770,7 @@ FICTION_BOOKS = [
         "year": 1989,
         "genre": "fiction",
         "mood": ["slow burn", "late night reflection", "road trip"],
-        "summary": "Seven pilgrims share their stories en route to the Time Tombs of Hyperion, where the terrifying Shrike awaits.",
+        "summary": "Dan Simmons's Hyperion, published in 1989 and winner of the Hugo Award for best novel, is the first volume of the Hyperion Cantos and is structured as an explicit homage to Geoffrey Chaucer's Canterbury Tales. Seven pilgrims have been chosen by the powerful TechnoCore artificial intelligences and the Hegemony of Man to travel together to the Time Tombs on the rim world of Hyperion, where they will face the terrifying creature called the Shrike, which moves backward in time and impales worshippers and victims alike on a great metal Tree of Pain. As the pilgrims travel, they take turns telling each other the stories of why they were chosen and what each hopes from the Shrike. The Priest's tale, the Soldier's, the Poet's, the Scholar's, the Detective's, the Consul's, and the Templar's open out into wildly different science-fictional terrains — religious horror, military epic, satirical literary biography, the impossibly painful Sol Weintraub story of his daughter aging backward day by day. The novel ends with the pilgrims arriving at the Tombs, leaving the resolution to its sequel The Fall of Hyperion. The book is one of the high-water marks of late-twentieth-century science-fiction worldbuilding.",
     },
     {
         "title": "The Three-Body Problem",
@@ -947,7 +947,7 @@ FICTION_BOOKS = [
         "year": 1958,
         "genre": "fiction",
         "mood": ["cozy night", "self-discovery", "rainy afternoon"],
-        "summary": "Young Arthur is educated by Merlyn and grows into a king who tries to replace might with right.",
+        "summary": "T.H. White's The Once and Future King, a single volume composed of four separately published Arthurian books and finally collected in 1958, is the most influential modern English-language retelling of the Matter of Britain. The first part, The Sword in the Stone, follows the young orphan Arthur, called Wart, under the eccentric tutelage of the time-traveling magician Merlyn, who educates him by transforming him into successive animals to learn how each kind of society organizes power. The second, The Queen of Air and Darkness, draws him into the long unhappy entanglement with the Orkney clan and his own sister Morgause. The third, The Ill-Made Knight, centers on Lancelot, his ugliness, his impossible Christian striving, and his ruinous love for Guinevere. The fourth, The Candle in the Wind, chronicles the slow collapse of Camelot under Mordred's manipulation. White wrote the books between 1938 and 1958 and the war years are unmistakable in their meditation on aggression, force, and the dream of replacing 'might' with 'right.' The novel underlies almost every modern Arthurian work, including the Disney film of its first part and Lerner and Loewe's Camelot.",
     },
     {
         "title": "Stardust",
@@ -955,7 +955,7 @@ FICTION_BOOKS = [
         "year": 1999,
         "genre": "fiction",
         "mood": ["butterflies", "beach read", "cozy night"],
-        "summary": "A young man crosses into the land of Faerie to retrieve a fallen star, who turns out to be a sharp-tongued woman.",
+        "summary": "Neil Gaiman's Stardust, originally published in 1998 as a four-part illustrated book with art by Charles Vess and the following year as a prose novel, is a deliberately old-fashioned fairy tale set in the small Victorian English village of Wall, named for the long stone wall that separates the human world from the kingdom of Faerie on the other side. The young Tristran Thorn, born in mysterious circumstances and infatuated with the icy local beauty Victoria Forester, promises to bring her a fallen star from beyond the wall in exchange for her hand. Tristran crosses over and discovers that in Faerie a fallen star is a young woman with a broken leg, named Yvaine, whom he must drag homeward through a country also being hunted by three witch-queens who need her heart for immortality and the squabbling sons of the dying Lord of Stormhold. Gaiman writes in a deliberately straight voice, treating the conventions of folktale with affection rather than irony. The book is short, structurally satisfying, and a strong gateway into Gaiman's larger body of work; the 2007 Matthew Vaughn film adaptation considerably expanded the climax.",
     },
     {
         "title": "The Colour of Magic",
@@ -963,7 +963,7 @@ FICTION_BOOKS = [
         "year": 1983,
         "genre": "fiction",
         "mood": ["beach read", "road trip", "cozy night"],
-        "summary": "A hapless wizard and the Discworld's first tourist stumble through a flat world carried on the backs of four elephants atop a giant turtle.",
+        "summary": "Terry Pratchett's The Colour of Magic, published in 1983, is the first novel in the Discworld series, which would eventually run to forty-one books and become one of the best-selling Anglophone fantasy series of all time. The Discworld is a flat planet supported by four enormous elephants standing on the back of the cosmically swimming turtle Great A'Tuin. The book is structured as four interlocking novellas and is one of the more uneven Discworld volumes, since Pratchett had not yet entirely settled on his characteristic mix of genre parody and earnest moral comedy. It introduces two of the series' enduring figures: the failed and constitutionally cowardly wizard Rincewind, expelled from the Unseen University after looking at one of the eight forbidden spells of the Octavo, and the unflappable Twoflower, the Disc's first tourist, fresh off a boat from the wealthy Counterweight Continent and accompanied by a homicidal sentient piece of luggage that walks on hundreds of little legs. The pair lurch through Ankh-Morpork, dragon-haunted temples, and a ridiculous plunge over the rim of the Disc. The book is good company and an acceptable introduction; many readers prefer to start later in the series.",
     },
     # ── Thriller / Mystery ────────────────────────────────────────────────
     {
@@ -972,7 +972,7 @@ FICTION_BOOKS = [
         "year": 2005,
         "genre": "fiction",
         "mood": ["late night reflection", "winter blanket", "hustle mode"],
-        "summary": "A disgraced journalist and a brilliant hacker investigate a decades-old disappearance in a wealthy Swedish family.",
+        "summary": "Stieg Larsson's The Girl with the Dragon Tattoo, published posthumously in Swedish as Män som hatar kvinnor — 'Men Who Hate Women' — in 2005 and in English in 2008, is the first volume of the Millennium trilogy and the book that launched what came to be called Nordic noir as a global publishing phenomenon. The disgraced financial journalist Mikael Blomkvist, recently convicted of libel, is hired by the elderly industrialist Henrik Vanger to investigate the unsolved 1966 disappearance of his great-niece Harriet from the family's island estate. He is joined by the antisocial, brilliantly capable hacker and security researcher Lisbeth Salander, who has been tracking him for the law firm vetting Vanger's offer and who carries her own brutal history with the Swedish guardianship system. The investigation uncovers a forty-year pattern of misogynistic violence inside a powerful Swedish family. Larsson, a journalist who specialized in covering the far right and who died of a heart attack at fifty before any of his three completed novels appeared, wrote with a polemical edge against what he saw as Swedish institutional protection of male violence; the books have sold more than a hundred million copies.",
     },
     {
         "title": "The Girl Who Played with Fire",
@@ -980,7 +980,7 @@ FICTION_BOOKS = [
         "year": 2006,
         "genre": "fiction",
         "mood": ["late night reflection", "hustle mode"],
-        "summary": "Lisbeth Salander becomes the prime suspect in a triple murder and must unravel a conspiracy rooted in her own past.",
+        "summary": "Stieg Larsson's The Girl Who Played with Fire, published in Swedish in 2006 and in English in 2009, is the second volume of the Millennium trilogy and pivots the series from a stand-alone investigation into the long-running back-story of the hacker Lisbeth Salander herself. As the Stockholm magazine Millennium prepares to publish a major investigative piece on Eastern European sex trafficking by the young researcher Dag Svensson and his criminologist partner Mia Bergman, both are murdered in their apartment, and Lisbeth's fingerprints are found on the gun. She becomes the most wanted woman in Sweden while Mikael Blomkvist tries to clear her, and the novel slowly opens out the secret behind 'all the evil' — the long-classified intelligence service operation around Lisbeth's father Alexander Zalachenko, a defected Soviet GRU officer protected by a section of Swedish security at the cost of Lisbeth's mother and Lisbeth's own institutionalization. Larsson's voice is more controlled here than in the first book, the procedural sequences are sharper, and the closing stretch — which leaves Lisbeth in a near-fatal state and the conspiracy half-revealed — shifted the trilogy's energy toward the third volume's courtroom showdown.",
     },
     {
         "title": "Gone Girl",
@@ -988,7 +988,7 @@ FICTION_BOOKS = [
         "year": 2012,
         "genre": "fiction",
         "mood": ["late night reflection", "cozy night"],
-        "summary": "A wife disappears on her wedding anniversary, and alternating narrators reveal that nothing in this marriage is what it seems.",
+        "summary": "Gillian Flynn's Gone Girl, published in 2012, became one of the defining domestic thrillers of the early twenty-first century and helped popularize the unreliable-narrator structure that has dominated the subgenre since. The novel opens on the morning of Nick and Amy Dunne's fifth wedding anniversary in the small Missouri town of North Carthage, where Amy disappears under suspicious circumstances from the house she shares with Nick. Flynn alternates first-person narration between Nick's present-tense investigation as the police suspicion settles on him and Amy's diary, which retells the marriage in flashback from her own perspective. Roughly halfway through the novel a structural reveal upends everything the reader has accepted about both narrators, and the second half becomes a tense study in two intelligent, manipulative people trapped in a public theater of grief. Flynn writes a sharp, vinegary prose, and the book is interested less in whodunit than in what the public theater of marriage and victimhood demands of the people performing it. The 2014 David Fincher film adaptation, with a screenplay by Flynn herself, was a commercial and critical hit that sealed the book's reach.",
     },
     {
         "title": "Sharp Objects",
@@ -996,7 +996,7 @@ FICTION_BOOKS = [
         "year": 2006,
         "genre": "fiction",
         "mood": ["late night reflection", "winter blanket"],
-        "summary": "A journalist returns to her small hometown to cover the murders of two girls and confronts her own dark family history.",
+        "summary": "Gillian Flynn's Sharp Objects, her 2006 debut novel, is a short, dense Southern Gothic psychological thriller narrated in the first person by Camille Preaker, a young Chicago crime reporter recovering from a hospitalization for self-injury. Her editor sends her back to the small Missouri town of Wind Gap, the place she has spent her adult life avoiding, to cover the murder of a young girl and the disappearance of another. Camille moves back into her childhood home with her glacial hypochondriac mother Adora, the wealthy heir of the local pig-processing industry, and her thirteen-year-old half-sister Amma, whom she barely knows. As Camille reports the case with the methodical detective Richard Willis, her own unresolved trauma — the loss of an older sister, the words she has carved into her own skin since adolescence — comes back into focus, and the diagnostic register of the novel turns toward Munchausen by proxy. Flynn writes in a controlled, observational voice that sets the template for her later thrillers, and the book is unsparing about the small-town female social order. The HBO adaptation in 2018 brought new attention to the novel.",
     },
     {
         "title": "Dark Places",
@@ -1004,7 +1004,7 @@ FICTION_BOOKS = [
         "year": 2009,
         "genre": "fiction",
         "mood": ["late night reflection", "winter blanket"],
-        "summary": "The sole survivor of a family massacre revisits the crime decades later and discovers that the brother she accused may be innocent.",
+        "summary": "Gillian Flynn's Dark Places, published in 2009 between Sharp Objects and Gone Girl, is a tightly plotted thriller built around the long shadow of a 1985 Kansas farmhouse massacre. Libby Day, the only surviving child of the Day family, was seven when her mother and two older sisters were murdered, and her testimony as a small girl helped convict her teenage brother Ben of the crime. Twenty-five years later, broke and emotionally feral, Libby is contacted by the Kill Club, a true-crime network of amateurs who believe Ben was innocent and who pay her in fragments of cash to revisit the surviving witnesses. Flynn alternates Libby's first-person present-day investigation with third-person chapters from the day of the murders, slowly assembling what the seven-year-old Libby could not piece together at the time: the satanic-panic accusations, the rural debt that was breaking her mother, the violent boyfriend, and the chain of decisions that ended in the killings. The novel is darker and less twisty than Gone Girl, and many readers consider it Flynn's most disciplined book. The 2015 film adaptation drew mixed reviews.",
     },
     {
         "title": "In the Woods",
@@ -1012,7 +1012,7 @@ FICTION_BOOKS = [
         "year": 2007,
         "genre": "fiction",
         "mood": ["rainy afternoon", "late night reflection", "slow burn"],
-        "summary": "A Dublin detective investigates a child's murder in the same woods where his own childhood friends vanished twenty years ago.",
+        "summary": "Tana French's In the Woods, her 2007 debut novel and the first book of the loose Dublin Murder Squad sequence, is a literary police procedural narrated in the first person by Detective Adam Robert Ryan. Twenty years before the events of the novel, three twelve-year-old children went into the woods outside the small Dublin commuter town of Knocknaree; only Adam returned, found clutching a tree with blood in his sneakers and no usable memory of what had happened to his friends Peter and Jamie. Now reinvented as Rob, with the Irish accent he picked up at boarding school, he is assigned along with his closest partner Detective Cassie Maddox to investigate the murder of a twelve-year-old girl found laid out on an altar stone at an archaeological dig in those same woods. The cases circle one another without ever quite meeting in the way the reader is taught by genre to expect, and French is unusually willing to let the central mystery resist resolution. The novel is more interested in the slow disintegration of Rob's professional poise and his partnership with Cassie, and it has shaped the literary direction of the modern crime novel.",
     },
     {
         "title": "The Likeness",
@@ -1020,7 +1020,7 @@ FICTION_BOOKS = [
         "year": 2008,
         "genre": "fiction",
         "mood": ["late night reflection", "slow burn", "winter blanket"],
-        "summary": "An undercover detective assumes the identity of a murdered woman who looks exactly like her, infiltrating a tight-knit group of friends.",
+        "summary": "Tana French's The Likeness, published in 2008 as the second of the Dublin Murder Squad books, picks up Cassie Maddox after the events of In the Woods and pairs her with the elder undercover detective Frank Mackey. A young woman has been murdered in a derelict cottage outside a Wicklow village, and her identity card carries the name Lexie Madison — an alias Cassie herself created during an earlier undercover deployment — and her face is identical to Cassie's. The dead woman lived with four classmates from Trinity College in a half-restored Georgian manor called Whitethorn House, and Frank persuades the half-broken Cassie to assume Lexie's identity, claim a miraculous survival, and live among the four roommates long enough to discover who killed her. The setup tilts the novel toward The Secret History as much as toward conventional procedural, and French is mostly interested in the strange suspended utopia the five housemates have built and what its dissolution requires. The book is one of the most unusual novels in modern crime fiction in its willingness to be a domestic and friendship novel as much as a murder mystery, and many readers consider it French's strongest single book.",
     },
     {
         "title": "The Secret History",
@@ -1028,7 +1028,7 @@ FICTION_BOOKS = [
         "year": 1992,
         "genre": "fiction",
         "mood": ["late night reflection", "slow burn", "self-discovery"],
-        "summary": "A group of classics students at a Vermont college commit a murder and slowly unravel under the weight of their secret.",
+        "summary": "Donna Tartt's The Secret History, her 1992 debut novel, opens with the sentence that announces it as an 'inverted detective story': the narrator Richard Papen, looking back from the safety of years, tells the reader that he and four of his classmates killed their friend Bunny one snowy April morning at their small elite Vermont college. The novel then walks back to Richard's arrival at fictional Hampden College from a colorless California suburb and his entry into a small, exclusive Greek seminar taught by the eccentric professor Julian Morrow. The five students — Henry, the brilliant manipulator; the patrician twins Charles and Camilla Macaulay; the sharp-tongued Francis Abernathy; and the loutish Bunny Corcoran — drift into an experiment in Dionysian ritual that ends in the accidental killing of a local farmer. Bunny's eventual discovery of what they have done turns him into the slow and increasingly intolerable threat that the prologue has already told us they will neutralize. Tartt's novel is steeped in classics, alcohol, snow, and class anxiety, and it became the founding text of what is now called dark academia.",
     },
     {
         "title": "Rebecca",
@@ -1221,7 +1221,7 @@ FICTION_BOOKS = [
         "year": 2011,
         "genre": "fiction",
         "mood": ["cozy night", "butterflies", "winter blanket"],
-        "summary": "Two young magicians are pitted against each other in a mysterious black-and-white circus that only opens at night.",
+        "summary": "Erin Morgenstern's The Night Circus, her 2011 debut novel, is set largely in the Cirque des Rêves, a black-and-white traveling circus that arrives in cities without warning, opens only at sunset, and contains a series of impossible tents — an ice garden, a wishing tree, a cloud maze — designed by two magicians whose competition has used the entire enterprise as its arena. The two magicians, Celia Bowen and Marco Alisdair, were bound to one another in childhood by their teachers as opposing pieces in a long, lethal contest neither has any easy way out of. The novel moves nonlinearly across roughly thirty years on either side of the turn of the twentieth century, alternating perspectives among the magicians, the troupe of acrobats and contortionists who depend on the circus, the heir-presumptive young twins born within it on opening night, and the besotted teenage farm boy Bailey from a small town the circus visits. Morgenstern's prose is sensory and slow, more concerned with atmosphere than with mystery, and the novel is widely cited as a defining contemporary example of romantic fantasy that prioritizes mood and image over plot machinery.",
     },
     {
         "title": "Station Eleven",
@@ -1229,7 +1229,7 @@ FICTION_BOOKS = [
         "year": 2014,
         "genre": "fiction",
         "mood": ["late night reflection", "existential crisis", "self-discovery"],
-        "summary": "A traveling Shakespeare company performs for scattered settlements in a post-pandemic Great Lakes region, because survival is insufficient.",
+        "summary": "Emily St. John Mandel's Station Eleven, published in 2014, opens with a famous Hollywood actor named Arthur Leander dying onstage during a production of King Lear in Toronto, on the same night that a catastrophic flu — the so-called Georgia Flu — begins killing the audience and ultimately ninety-nine percent of the world's population within weeks. Twenty years later, the novel follows the Traveling Symphony, a small caravan of musicians and Shakespearean actors led by the young Kirsten Raymonde — a child actress on stage with Arthur the night he died — as they move between the scattered settlements of the Great Lakes region performing Beethoven and Shakespeare for survivors who increasingly cannot remember the world before. Mandel braids the post-collapse story with a series of pre-pandemic chapters tracing Arthur's three failed marriages, the comic-book artist Miranda who created the obscure graphic novel Station Eleven from which the book takes its title, the EMS responder Jeevan who tried and failed to revive Arthur, and the violent self-styled prophet who menaces the Traveling Symphony from a settlement in Michigan. The book is unusually graceful for an apocalyptic novel, animated by the troupe's motto: 'Survival is insufficient.'",
     },
     {
         "title": "The House of the Spirits",
@@ -1237,7 +1237,7 @@ FICTION_BOOKS = [
         "year": 1982,
         "genre": "fiction",
         "mood": ["slow burn", "late night reflection", "rainy afternoon"],
-        "summary": "Three generations of the Trueba family live through love, revolution, and the supernatural in a Latin American epic.",
+        "summary": "Isabel Allende's The House of the Spirits, published in 1982 in Spanish as La casa de los espíritus and translated into English in 1985, was Allende's debut novel and the book that established her as the most internationally read Chilean novelist of her generation. The book follows three generations of the Trueba family across roughly a century in an unnamed Latin American country closely modeled on Chile. The patriarch is the conservative landowner and eventual senator Esteban Trueba, whose volcanic temper and patriarchal violence shape the family across decades. Around him circulate the prophetically gifted Clara del Valle, who marries Esteban after the death of her sister; their daughter Blanca, who carries on a long forbidden affair with the peasant boy Pedro Tercero García; and their granddaughter Alba, whose adolescence collides with the U.S.-backed military coup that overthrows the elected socialist president and inaugurates years of dictatorship and torture. Allende, the cousin of Chile's deposed Salvador Allende, draws on the magical realist tradition of García Márquez but writes from a distinctly female register, treating the supernatural as continuous with domestic life. The novel was banned in Chile for years after its publication and remains widely read.",
     },
     {
         "title": "Shōgun",
@@ -1245,7 +1245,7 @@ FICTION_BOOKS = [
         "year": 1975,
         "genre": "fiction",
         "mood": ["slow burn", "hustle mode", "road trip"],
-        "summary": "An English navigator shipwrecked in 1600 Japan becomes entangled in the political machinations of warring samurai lords.",
+        "summary": "James Clavell's Shōgun, published in 1975, is a doorstop historical novel set in the Japan of 1600 and is the first written, though chronologically third, of his loosely connected Asian Saga. The protagonist John Blackthorne is a fictionalized version of the real English navigator William Adams, the only survivor in command rank of a Dutch trading expedition wrecked on the coast of Izu Province at the threshold of the long civil war that would end with the Tokugawa shogunate. Captured by samurai loyal to the daimyo Toranaga — a closely modeled fictional version of Tokugawa Ieyasu — Blackthorne is gradually drawn into Toranaga's elaborate political maneuverings against the rival Christian-aligned regent Ishido. Across more than a thousand pages Clavell follows Blackthorne's awkward immersion in a culture whose codes are alien to him, his slow education in tea ceremony, sword craft, and language, his complicated romance with the Christian noblewoman Toda Mariko, and the long buildup to the campaign that culminates in the historical Battle of Sekigahara. The novel was a massive popular success on publication, was the basis of an enormously watched 1980 NBC miniseries, and was readapted by FX in 2024 in a celebrated new production.",
     },
     {
         "title": "The Master and Margarita",
@@ -1253,7 +1253,7 @@ FICTION_BOOKS = [
         "year": 1967,
         "genre": "fiction",
         "mood": ["late night reflection", "existential crisis", "Sunday morning"],
-        "summary": "The Devil visits Soviet Moscow, wreaking havoc on the literary establishment while a love story and a Pontius Pilate retelling unfold in parallel.",
+        "summary": "Mikhail Bulgakov's The Master and Margarita, written in secret across roughly twelve years between 1928 and Bulgakov's death in 1940 and not published in any complete form until 1967, is widely considered the great Soviet novel and one of the major works of twentieth-century European fiction. The book interleaves three narratives. In the contemporary frame the Devil, calling himself Professor Woland, arrives in 1930s Stalinist Moscow with a retinue including the giant talking black cat Behemoth, the fanged assassin Azazello, the hideous Korovyev, and a beautiful naked witch named Hella, and proceeds to dismantle the corrupt Soviet literary bureaucracy with elaborate cruelty. In a parallel love story, the unnamed Master, a writer driven into a psychiatric clinic by the censorship of his unpublishable novel about Pontius Pilate, is rescued by the bored unhappy wife Margarita, who agrees to host the Devil's annual ball in exchange for the Master's return. The Master's banned novel itself appears as a third strand: a careful, secular retelling of the encounter between Pilate and Yeshua Ha-Notsri in Jerusalem. The book is at once political satire, theological argument, and impossible love story.",
     },
     {
         "title": "Piranesi",
@@ -1261,7 +1261,7 @@ FICTION_BOOKS = [
         "year": 2020,
         "genre": "fiction",
         "mood": ["self-discovery", "cozy night", "rainy afternoon"],
-        "summary": "A man living in a labyrinth of infinite halls and tidal oceans slowly uncovers who he is and how he came to be there.",
+        "summary": "Susanna Clarke's Piranesi, published in 2020 sixteen years after her debut Jonathan Strange & Mr Norrell and after a long absence from publication during chronic illness, is a short, strange, intricate novel narrated in the form of journal entries by a man who calls himself Piranesi though he is fairly sure that is not actually his name. He lives alone in what he calls the House: a labyrinth of infinite ornate vestibules opening on more vestibules, each crowded with statues, with tides that flood the lower levels on calculable schedules and clouds that drift through the upper halls. He believes there are only two living humans in existence — himself and a man he calls the Other, who visits twice a week and whom he assists with research into a 'Great and Secret Knowledge.' The arrival of evidence of a third person threatens the careful order of his world and slowly opens out the truth about who he is, what the House actually is, and how he came to be there. The book is short and unusually delicate, drawing on Borges, the etchings of Piranesi himself, and the imagery of C.S. Lewis. It won the Women's Prize for Fiction in 2021.",
     },
     {
         "title": "Jonathan Strange & Mr Norrell",
@@ -1269,7 +1269,7 @@ FICTION_BOOKS = [
         "year": 2004,
         "genre": "fiction",
         "mood": ["slow burn", "cozy night", "winter blanket"],
-        "summary": "Two magicians revive English magic during the Napoleonic Wars, but their rivalry awakens ancient and dangerous forces.",
+        "summary": "Susanna Clarke's Jonathan Strange & Mr Norrell, her 2004 debut novel, is an enormous alternate-history fantasy set in a Regency England in which English magic, long dormant since the disappearance of the medieval magician-king John Uskglass three hundred years earlier, is suddenly being practiced again. The reclusive Yorkshire scholar Gilbert Norrell is at the start of the book the only practicing magician in England, but his desire to monopolize and respectabilize the discipline rapidly produces an opposing student in the dashing young gentleman amateur Jonathan Strange, whom he initially trains and ultimately quarrels with. Around their increasingly bitter pedagogical rivalry Clarke weaves the British war effort against Napoleon, the social discipline of Regency London, the troubled marriage of the politician Sir Walter Pole and his magically resurrected wife Lady Pole, and the long shadow of the gentleman-with-the-thistle-down hair, a malevolent fairy whose bargain with Norrell sets the engine of the novel turning. Clarke's prose is a meticulous Austen-Dickens pastiche complete with hundreds of footnotes that produce a parallel scholarly tradition for English magic. The book won the Hugo and the World Fantasy Awards.",
     },
     {
         "title": "The Buried Giant",
@@ -1277,7 +1277,7 @@ FICTION_BOOKS = [
         "year": 2015,
         "genre": "fiction",
         "mood": ["slow burn", "rainy afternoon", "late night reflection"],
-        "summary": "An elderly couple in post-Arthurian Britain set out to find their son, journeying through a land where a mysterious mist has erased collective memory.",
+        "summary": "Kazuo Ishiguro's The Buried Giant, published in 2015, was the first novel he produced after winning the Nobel Prize and is the strangest book in his catalogue, set in a vaguely post-Arthurian Britain in which a pervasive mist generated by the dragon Querig is steadily erasing the collective memory of the population. The novel follows the elderly Britons Axl and Beatrice, who barely remember the son they intend to visit, on a slow walking journey across the West Country. They are joined for stretches of the journey by the young orphan Edwin, the aged Sir Gawain still loyally serving the long-dead King Arthur, and the Saxon warrior Wistan, whose mission is to slay the dragon and lift the mist — an act that will allow Britons and Saxons alike to remember the genocide that quietly built the peace they currently inhabit. Ishiguro is doing in fairy-tale form the same examination of guilt, memory, and the cost of forgetting that animates his other novels. The book is divisive among readers; some find its allegorical machinery overweight, others consider it among his most quietly affecting late works. It is a serious meditation on whether forgiveness can be built on amnesia.",
     },
     {
         "title": "Homegoing",
