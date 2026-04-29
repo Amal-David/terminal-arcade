@@ -717,7 +717,7 @@ HISTORY_BOOKS = [
         "year": 2006,
         "genre": "history",
         "mood": ["winter blanket", "rainy afternoon"],
-        "summary": "A compelling single-volume narrative of World War I, blending battlefield drama with political intrigue.",
+        "summary": "G.J. Meyer's A World Undone is a compelling single-volume popular narrative of the First World War, written for general readers who want a clear chronological spine of the conflict without committing to a multi-volume specialist work. Meyer is a journalist by background, and the book is built around extended battlefield narratives — the German invasion of Belgium and the Marne, Tannenberg and the Masurian Lakes, Gallipoli, Verdun, the Somme, Caporetto, Passchendaele, the Hundred Days — that are interspersed with shorter analytical chapters on topics like the prewar arms races, the failure of socialist internationalism, the Russian Revolution, and the eventual American intervention. He pays particular attention to the political mismatch between the war's industrial scale and the unimaginative leadership trying to manage it, and to the home fronts that gradually broke under strain. The book is not original scholarship and does not pretend to be, but it draws on a wide range of secondary literature and is unusually clear about competing interpretations of contested moments. As an accessible introduction to the war for readers who want one book before tackling Tuchman, Hastings, or Christopher Clark, it has stayed in steady print since 2006.",
     },
     {
         "title": "The Cold War: A New History",
@@ -725,7 +725,7 @@ HISTORY_BOOKS = [
         "year": 2005,
         "genre": "history",
         "mood": ["boardroom energy", "late night reflection"],
-        "summary": "A concise, authoritative account of the decades-long superpower struggle that defined the second half of the twentieth century.",
+        "summary": "John Lewis Gaddis's The Cold War: A New History is a concise general-reader synthesis of the four-and-a-half-decade superpower contest, written by the Yale historian who has spent his career arguing about its origins and meaning. The book is organized thematically rather than strictly chronologically, with chapters on the return of fear after 1945, the bomb and the strategy of deterrence, the fight for the third world, the human-rights revolution that began with the Helsinki Accords, the actors — Stalin, Mao, Eisenhower, Kennedy, Brezhnev, Reagan, Gorbachev, John Paul II — whose decisions mattered most, and the eventual moral and economic exhaustion of the Soviet bloc. Gaddis writes from a position of cautious post-revisionist consensus: the Cold War was largely a conflict caused by Stalin's Soviet Union and ended by the slow collapse of communism's claim to legitimacy, but the United States and its allies committed enough sins along the way that triumphalism is unwarranted. The book draws on a generation of post-1991 archival work that opened the Soviet, Chinese, and Eastern European sides of the story, and it is the rare short book on the period that takes the human-rights and ideational dimensions as seriously as the strategic ones. It remains the standard short introduction.",
     },
     {
         "title": "Midnight in Chernobyl",
@@ -733,7 +733,7 @@ HISTORY_BOOKS = [
         "year": 2019,
         "genre": "history",
         "mood": ["cozy night", "late night reflection"],
-        "summary": "A minute-by-minute account of the Chernobyl disaster, the cover-up, and the heroism of those who responded.",
+        "summary": "Adam Higginbotham's Midnight in Chernobyl is a meticulously reported account of the April 26, 1986 explosion at Reactor No. 4 of the V.I. Lenin Nuclear Power Plant in Soviet Ukraine, the response that followed, and the longer-term consequences for the Soviet Union. Higginbotham draws on more than a hundred interviews with surviving operators, firefighters, scientists, party officials, and resettled villagers, and on Soviet documents that were inaccessible during the Cold War. The book is structured as a fast-moving narrative that begins with the design choices of the RBMK reactor and the bureaucratic culture of Soviet nuclear power, then walks the reader minute by minute through the safety test that went catastrophically wrong, the impossible decisions made on the night and the days that followed, the radioactive plume's drift across Europe, the evacuation of Pripyat, and the construction of the original sarcophagus. He is especially good on the calculated state deception that compounded the physical disaster, and on the tension between Soviet pride and the international community's eventual access. The book is widely considered the definitive English-language history of the disaster, and corrects several of the simplifications popularized by HBO's miniseries that appeared the same year.",
     },
     {
         "title": "The Making of the Atomic Bomb",
@@ -741,7 +741,7 @@ HISTORY_BOOKS = [
         "year": 1986,
         "genre": "history",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "The definitive history of the Manhattan Project, from nuclear physics breakthroughs to Hiroshima.",
+        "summary": "Richard Rhodes's The Making of the Atomic Bomb, winner of the 1988 Pulitzer Prize for general nonfiction and the National Book Award, is the standard history of the Manhattan Project and remains the single most ambitious popular synthesis of twentieth-century physics in print. The book opens not with politics but with science, tracing the discoveries that made the bomb conceivable: Rutherford's nucleus, Bohr's atom, the discovery of the neutron, Fermi's slow-neutron experiments in Rome, Hahn and Strassmann's chemical evidence for fission, Meitner and Frisch's interpretation. From there Rhodes follows the migration of European physicists to America under fascist pressure, the Einstein-Szilard letter that prompted government interest, the wartime industrial buildup at Oak Ridge, Hanford, and Los Alamos, the scientific personalities — Oppenheimer, Bethe, Teller, Feynman, Bohr, Rabi — who made the project work, the Trinity test in July 1945, and the destruction of Hiroshima and Nagasaki. Rhodes treats the moral arguments seriously without flattening them, gives a particularly devastating account of the Hiroshima ground-level effects, and ends with the immediate postwar argument about international control. The book runs nearly nine hundred pages and is dense with science, but Rhodes is an unusually graceful writer, and the result has remained a standard text for thirty-five years.",
     },
     {
         "title": "Thirteen Days: A Memoir of the Cuban Missile Crisis",
@@ -749,7 +749,7 @@ HISTORY_BOOKS = [
         "year": 1969,
         "genre": "history",
         "mood": ["boardroom energy", "hustle mode"],
-        "summary": "An insider account of the thirteen days in October 1962 when the world stood on the brink of nuclear war.",
+        "summary": "Robert F. Kennedy's Thirteen Days is a brief insider memoir of the Cuban Missile Crisis of October 1962, written by the attorney general who was also the president's brother and one of the small Executive Committee that managed the crisis day by day. Kennedy completed the book in 1967 and 1968 from his contemporaneous notes; it was published posthumously after his assassination, with introductions by Robert McNamara and Theodore Sorensen. The narrative follows the thirteen days from the U-2 photographs of Soviet medium-range missile sites in Cuba through the deliberations of the ExComm, the imposition of the naval quarantine, the tense back-channel negotiations with Khrushchev that ultimately produced the deal — public Soviet withdrawal in exchange for a U.S. pledge not to invade Cuba and a quiet later removal of American Jupiter missiles from Turkey. Kennedy is unusually candid about how close the world came to nuclear war, about the hawkish military advice the Joint Chiefs gave the president, and about the personal pressures of the deliberations. The book's account has been revised by later scholarship, especially after Soviet archives opened, but its eyewitness texture has kept it in print, and it remains a standard primary source for studies of crisis decision-making and presidential leadership.",
     },
     {
         "title": "The Autobiography of Benjamin Franklin",
@@ -757,7 +757,7 @@ HISTORY_BOOKS = [
         "year": 1791,
         "genre": "history",
         "mood": ["morning ritual", "productivity"],
-        "summary": "Franklin's own account of his rise from humble origins to becoming one of America's most influential figures.",
+        "summary": "Benjamin Franklin's Autobiography is one of the founding texts of American self-presentation and was written in four parts between 1771 and 1790, the year he died. The book covers Franklin's life only through 1757 — his Boston boyhood as the runaway apprentice to his older brother's print shop, his arrival in Philadelphia at age seventeen, his rise as a tradesman printer, his publication of Poor Richard's Almanack, his founding of subscription libraries, fire companies, the American Philosophical Society, and what would become the University of Pennsylvania, his electrical experiments, and his early career as a colonial agent in London — and stops well before the Revolutionary career for which he is best remembered. The book is famous for its account of Franklin's program of moral self-improvement, organized around thirteen virtues he tracked in a small notebook with daily check marks, and for the easy, ironic prose voice that became the literary signature of American practical wisdom. It has been read continuously since publication as a how-to manual for self-made character, but it is also a sly and self-aware piece of writing that lets the reader watch Franklin compose his own legend in real time. It remains a foundational document of American identity.",
     },
     {
         "title": "Narrative of the Life of Frederick Douglass",
@@ -765,7 +765,7 @@ HISTORY_BOOKS = [
         "year": 1845,
         "genre": "history",
         "mood": ["self-discovery", "hustle mode"],
-        "summary": "The powerful autobiography of an escaped slave who became one of the greatest orators and abolitionists in American history.",
+        "summary": "Frederick Douglass's Narrative of the Life of Frederick Douglass, an American Slave, published in 1845 when he was twenty-seven, is the first and shortest of his three autobiographies and the founding text of the slave narrative as an American literary form. Douglass tells the story of his birth on a Maryland plantation, his separation from his mother as an infant, his training as a house slave in Baltimore where Sophia Auld began secretly teaching him to read until her husband forbade it, his return to brutal field labor, his physical confrontation with the slave-breaker Edward Covey, and his eventual escape to New Bedford in 1838 disguised as a sailor. The book is written in clear, controlled prose that turns out to be devastatingly effective: Douglass refuses melodrama and lets the documented facts of slave life speak for themselves, and he interleaves analytical passages on what slavery does to enslavers as well as to the enslaved. Published with prefatory letters from William Lloyd Garrison and Wendell Phillips that vouched for its authorship — at a moment when no slave was supposed to be capable of writing such a book — the Narrative made Douglass an international figure. He fled to Britain to avoid recapture, returned with funds to buy his freedom, and went on to become the most prominent Black American of the nineteenth century.",
     },
     {
         "title": "The Federalist Papers",
@@ -773,7 +773,7 @@ HISTORY_BOOKS = [
         "year": 1788,
         "genre": "history",
         "mood": ["boardroom energy", "Sunday morning"],
-        "summary": "The foundational essays arguing for ratification of the Constitution that remain essential to understanding American government.",
+        "summary": "The Federalist Papers are eighty-five essays published in New York newspapers between October 1787 and May 1788 under the pseudonym Publius, written by Alexander Hamilton, James Madison, and John Jay to argue for ratification of the proposed federal Constitution. Hamilton wrote roughly fifty-one of the essays, Madison twenty-nine, and Jay five; the three coordinated their work but argued in distinct voices and on different terrains. The essays are not abstract political philosophy but a piece of contested public advocacy aimed at New York's ratifying convention, where Anti-Federalist sentiment was strong. Across the eighty-five papers Publius defends the proposed structure point by point: the necessity of union, the dangers of pure democracy and the design of the extended republic, the separation of powers, federalism, the bicameral legislature, the executive, the judiciary, and the Bill of Rights debate that ultimately produced the first ten amendments. Federalist No. 10 on faction and No. 51 on checks and balances are the most quoted, but the work as a whole is remarkable for its intellectual seriousness and its refusal to talk down to the public it sought to persuade. It has been cited by every major American court interpreting the Constitution since, and remains the indispensable contemporary commentary on the document's structure.",
     },
     {
         "title": "Battle Cry of Freedom: The Civil War Era",
@@ -781,7 +781,7 @@ HISTORY_BOOKS = [
         "year": 1988,
         "genre": "history",
         "mood": ["winter blanket", "late night reflection"],
-        "summary": "The single best one-volume history of the American Civil War, covering causes, battles, and consequences.",
+        "summary": "James M. McPherson's Battle Cry of Freedom won the 1989 Pulitzer Prize for history and remains the standard one-volume history of the American Civil War in print. The book covers the long sectional crisis from the end of the Mexican War in 1848 through the surrender at Appomattox in 1865, devoting roughly the first third to the political and ideological causes of the war and the remaining two thirds to the war itself. McPherson's central interpretive move is to argue that the war was fundamentally about slavery — its expansion, its restriction, and ultimately its destruction — and that explanations rooted in tariffs, states' rights as an abstract principle, or modernization fail to account for the actual political record. The military narrative is unusually well-handled for a comprehensive history: McPherson treats the campaigns of 1861 through 1865 in clear chronological order, weaves the western and eastern theaters together rather than alternating them, and is especially strong on how mid-war Union strategy evolved under Grant and Sherman. He also pays attention to the home fronts, the politics of emancipation, the role of Black soldiers, and the diplomacy that kept Britain and France from intervening. The book is widely assigned in undergraduate and graduate Civil War courses and has not been displaced.",
     },
     {
         "title": "The Power Broker: Robert Moses and the Fall of New York",
@@ -789,7 +789,7 @@ HISTORY_BOOKS = [
         "year": 1974,
         "genre": "history",
         "mood": ["boardroom energy", "late night reflection"],
-        "summary": "The epic biography of the unelected official who reshaped New York City through sheer political will.",
+        "summary": "Robert A. Caro's The Power Broker is a thirteen-hundred-page biography of Robert Moses, the unelected official who, between roughly 1924 and 1968, reshaped New York City and its surrounding region through a series of overlapping appointed positions — parks commissioner, head of the Triborough Bridge and Tunnel Authority, chairman of the State Power Authority, head of the Long Island State Park Commission, and a dozen others. Caro spent seven years on the book and conducted hundreds of interviews, including the few cooperating sessions Moses himself gave near the end of his life, and the result is a study in the accumulation, exercise, and concealment of unelected American power. Moses built four hundred and sixteen miles of parkways, thirteen bridges, hundreds of playgrounds, the Lincoln Center, the United Nations site, and most of New York's mid-century public infrastructure; in the process he displaced hundreds of thousands of working-class and predominantly nonwhite residents, gutted Bronx neighborhoods for the Cross Bronx Expressway, and starved mass transit in favor of an automobile-centric region. Caro frames his subject without sympathy but with a near-obsessive interest in how Moses concentrated power inside ostensibly technical agencies. The book won the 1975 Pulitzer Prize for biography and has stayed in print continuously, becoming one of the most influential works of American nonfiction in the postwar period.",
     },
     {
         "title": "The Years of Lyndon Johnson: The Path to Power",
@@ -797,7 +797,7 @@ HISTORY_BOOKS = [
         "year": 1982,
         "genre": "history",
         "mood": ["hustle mode", "boardroom energy"],
-        "summary": "The first volume of Caro's monumental biography tracing LBJ's ruthless ascent from the Texas Hill Country.",
+        "summary": "The Path to Power is the first volume of Robert A. Caro's still-unfinished multivolume biography of Lyndon B. Johnson and covers Johnson's life from birth in 1908 in the Texas Hill Country through his unsuccessful 1941 Senate run. Caro's work is extraordinary for its archival depth, its physical reconstruction of place, and its psychological seriousness. He moved with his wife Ina to live in the Hill Country for years to understand the conditions that shaped Johnson's family and ambition, and he interviewed everyone Johnson grew up with who would speak. The book traces Johnson's domineering father, his more refined and disappointed mother, his college years at Southwest Texas State Teachers College, his early teaching of impoverished Mexican-American students at Cotulla, his rise as a young congressional secretary, his marriage to Lady Bird, his successful 1937 special-election run for the U.S. House, and his role in bringing electricity to the Hill Country through the Pedernales Electric Cooperative. The portrait that emerges is morally complicated: a politician of unusual ambition and effectiveness, capable of real generosity to those he could not coerce and real cruelty to those he could, who had already by 1941 become a master of campaign finance and political mechanics. The volume won the National Book Critics Circle Award and set the template for the four that followed.",
     },
     # ── Additional History ────────────────────────────────────────────────
     {
@@ -838,7 +838,7 @@ HISTORY_BOOKS = [
         "year": 1998,
         "genre": "history",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "The horrifying story of King Leopold II's exploitation of the Congo Free State and the activists who fought to expose it.",
+        "summary": "Adam Hochschild's King Leopold's Ghost recovers a chapter of late-nineteenth-century history that had been almost entirely buried by 1998 when the book appeared: the personal colonial empire that King Leopold II of Belgium ran in the Congo Basin between 1885 and 1908. Leopold acquired the Congo Free State as private property at the Berlin Conference of 1884 to 1885 by presenting himself as a humanitarian opposed to the Arab slave trade. Once in control, he extracted ivory and especially wild rubber through a system of forced labor enforced by a private army called the Force Publique, which routinely cut off the hands of laborers who failed to meet quotas. Estimates of the resulting deaths from murder, starvation, exhaustion, and disease range upward of ten million. Hochschild traces both the system and the early international human-rights campaign that eventually exposed it, led by the British shipping clerk Edmund Dene Morel, the Irish diplomat Roger Casement, and the Black American journalist George Washington Williams. The book reads at the pace of a thriller, but its scholarship is serious and its argument fairly direct: this was one of the largest avoidable death tolls of the modern colonial era, and it was forgotten because the perpetrators won the public-relations war until very recently.",
     },
     {
         "title": "Bury the Chains",
@@ -846,7 +846,7 @@ HISTORY_BOOKS = [
         "year": 2005,
         "genre": "history",
         "mood": ["hustle mode", "self-discovery"],
-        "summary": "Hochschild tells the gripping story of the British abolitionist movement that ended the slave trade.",
+        "summary": "Adam Hochschild's Bury the Chains tells the story of the British movement to abolish the slave trade, and eventually slavery itself, between roughly 1787 and 1838 — one of the first sustained, organized, broadly popular human-rights campaigns in the modern world. Hochschild centers the narrative on a small group of activists who met in a London printing shop in May 1787 and decided to attempt to end an institution that virtually no respectable Briton then thought of as something that could end. The cast includes the Quaker organizer Granville Sharp, the campaigning printer Thomas Clarkson who traveled enormous distances to gather testimony from sailors and former slave-ship surgeons, the parliamentary leader William Wilberforce, and a generation of formerly enslaved Black writers and orators — Olaudah Equiano above all — whose voices made the moral case in person. Hochschild also follows the eight major slave revolts in the British Caribbean, especially the 1791 Haitian Revolution next door and the 1831 Christmas Rising in Jamaica led by Sam Sharpe, that pressured Parliament from the other direction. The book is good on the slow accretion of techniques the movement invented: petition drives, consumer boycotts, lapel pins, mass public meetings. The trade was abolished in 1807 and slavery itself in 1833, with apprenticeship phasing it out by 1838.",
     },
     {
         "title": "The Invention of Wings",
@@ -854,7 +854,7 @@ HISTORY_BOOKS = [
         "year": 2014,
         "genre": "history",
         "mood": ["self-discovery", "hustle mode"],
-        "summary": "Based on the real Grimké sisters of Charleston, a story of a slaveholder's daughter and an enslaved girl who both fight for freedom.",
+        "summary": "Sue Monk Kidd's The Invention of Wings is a historical novel — strictly speaking, this entry sits at the edge of the history shelf — based on the real Grimké sisters of Charleston, South Carolina, who were among the first prominent white American women to publicly oppose slavery and then advocate for women's rights. The novel alternates between two first-person voices over thirty-five years beginning in 1803. Sarah Grimké, daughter of a wealthy slaveholding family and given an enslaved girl named Hetty 'Handful' Grimké as her eleventh-birthday present, is the historical figure who would later flee north with her sister Angelina, write antislavery pamphlets, and tour the country lecturing on abolition and women's equality. Hetty is largely Kidd's invention woven from the sparse historical record: she is rebellious, smart, and the daughter of a quilting mother whose appliquéd story-quilts thread through the novel as a folk record of survival and resistance. The book braids the two women's lives together across decades of restriction, defiance, and revolt — including a fictionalized treatment of the 1822 Denmark Vesey conspiracy. Kidd is candid that the novel takes liberties; her aim is to make a forgotten chapter of American moral courage felt as well as known. Oprah's Book Club selection in 2014, the book introduced the Grimkés to a wide audience.",
     },
     {
         "title": "Empire of Cotton",
@@ -862,7 +862,7 @@ HISTORY_BOOKS = [
         "year": 2014,
         "genre": "history",
         "mood": ["late night reflection", "boardroom energy"],
-        "summary": "Beckert reveals how cotton shaped global capitalism, connecting slavery, industrialization, and empire into a single world system.",
+        "summary": "Sven Beckert's Empire of Cotton, winner of the Bancroft Prize, is a global history of the cotton industry from roughly 1500 to the present and the founding work of what scholars now call the new history of capitalism. Beckert's central argument is that modern capitalism was not born in British factories alone but in what he calls 'war capitalism' — the violent fusion of slave-worked plantations, expropriated indigenous land, militarized merchant networks, and state power — that made the eighteenth- and nineteenth-century cotton economy possible. The book follows cotton through its successive imperial phases: Indian and Levantine handloom production that dominated world markets before 1750; British industrial mechanization fed by raw cotton from American slave plantations; the disruption of the U.S. Civil War that sent imperial powers scrambling to develop alternative supply zones in Egypt, India, Central Asia, and West Africa; the long twentieth-century shift back to manufacturing in Asia under different labor regimes; and the contemporary industry centered on Chinese, Bangladeshi, and Vietnamese factories. Beckert reads cotton as a single integrated world system across five centuries and is unsparing about the violence that built and sustained it. The book is dense but lucid, and it has become widely assigned in courses on global capitalism, slavery, and economic history.",
     },
     {
         "title": "The Color of the Sky",
@@ -870,7 +870,7 @@ HISTORY_BOOKS = [
         "year": 2014,
         "genre": "history",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Baptist argues that the expansion of slavery in the American South was the engine that drove the nation's economic growth.",
+        "summary": "Edward Baptist's book — better known by its actual title, The Half Has Never Been Told: Slavery and the Making of American Capitalism — argues that the dramatic expansion of cotton slavery in the American South between 1790 and 1860 was not, as long-standing economic histories had it, a backward institution standing apart from the modernizing North. Slavery was instead, Baptist argues, a central engine of nineteenth-century American economic growth and an integral part of the same financial and industrial system. He builds the case through a deliberate scaling between the macroeconomic and the personal. On the macro side, Baptist tracks the explosion of cotton output, the speculative slave-mortgage securities sold in London and Amsterdam, the linkages to New York banking and northern textile mills, and the role of slave-grown cotton in financing American expansion westward. On the personal side he uses recently digitized slave narratives and plantation records to document what he calls the 'pushing system' — escalating violence, including systematic torture, used by enslavers to drive picking productivity higher every season. The combination is meant to make a familiar story feel strange again: this was not a peculiar institution out of step with American development but a co-author of it. The book has been influential and contested in equal measure.",
     },
     {
         "title": "Stalingrad",
@@ -878,7 +878,7 @@ HISTORY_BOOKS = [
         "year": 1998,
         "genre": "history",
         "mood": ["winter blanket", "late night reflection"],
-        "summary": "Beevor's harrowing account of the Battle of Stalingrad, the turning point of World War II on the Eastern Front.",
+        "summary": "Antony Beevor's Stalingrad was the book that broke open Eastern Front military history for English-language general readers when it appeared in 1998, drawing for the first time on Russian and German archives newly accessible after the end of the Cold War. The book covers the German Sixth Army's drive into the south of the Soviet Union in summer 1942, the encirclement of Stalingrad on the Volga, the months of street-by-street and floor-by-floor urban combat that consumed both armies, the Soviet counterencirclement under Operation Uranus in November, the collapse of Manstein's relief effort, and the destruction of the Sixth Army by February 1943. Beevor is particularly attentive to the human conditions inside the city: the cold, hunger, executions, NKVD blocking detachments, the use of Hiwi Soviet auxiliaries by the Wehrmacht, and the systematic murder of Stalingrad's civilians by both sides. He also folds in the operational and strategic levels — Hitler's interference, Paulus's paralysis, Zhukov and Vasilevsky's planning — without losing the experiential perspective that gave the book its impact. Stalingrad won several major prizes including the Samuel Johnson Prize, was translated into more than thirty languages, and remains the standard popular English-language history of the battle that turned the war on the Eastern Front.",
     },
     {
         "title": "The Fall of Berlin 1945",
@@ -886,7 +886,7 @@ HISTORY_BOOKS = [
         "year": 2002,
         "genre": "history",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Beevor chronicles the apocalyptic final battle of the European war and the suffering of soldiers and civilians on all sides.",
+        "summary": "Antony Beevor's The Fall of Berlin 1945 follows directly from his earlier Stalingrad and treats the destruction of Nazi Germany from the Soviet winter offensive of January 1945 through the surrender of the Reich in early May. Drawing again on Russian, German, and Western archival sources, Beevor reconstructs the Soviet drive across Poland and into eastern Germany, the encirclement of the German capital, the brutal block-by-block fighting through the Berlin city center, Hitler's last weeks in the Reich Chancellery bunker, the parallel collapses on the Western Front, and the catastrophic experiences of the millions of German civilians and refugees caught in the path of the advancing Red Army. The book caused considerable controversy on its publication in 2002 because of its detailed documentation of mass rape committed by Soviet soldiers in occupied territory — Beevor estimated victims in the high hundreds of thousands and possibly higher — drawing on contemporary reports filed by Soviet political officers themselves. He is unsparing on Nazi crimes, on the German leadership's deliberate prolongation of a hopeless war that cost hundreds of thousands of additional lives, and on the suffering of foreign forced laborers, concentration-camp prisoners, and Holocaust survivors as front lines moved across them. The book remains a standard popular account of the European war's final months.",
     },
     {
         "title": "D-Day: The Battle for Normandy",
@@ -894,7 +894,7 @@ HISTORY_BOOKS = [
         "year": 2009,
         "genre": "history",
         "mood": ["hustle mode", "rainy afternoon"],
-        "summary": "Beevor provides a comprehensive account of the Normandy campaign from the beaches to the liberation of Paris.",
+        "summary": "Antony Beevor's D-Day: The Battle for Normandy is a comprehensive single-volume account of the Allied invasion of France in June 1944 and the seventy-seven-day campaign that followed, ending with the liberation of Paris on August 25. Like his other books on the European war, it draws extensively on the diaries, letters, and unit war diaries of soldiers and civilians on all sides — American, British, Canadian, Polish, Free French, German, and the Norman civilians caught between them. The book is structured chronologically and Beevor takes care to give the relatively underreported British and Canadian sectors at Sword, Juno, and Gold Beaches, and the long brutal fight at Caen, the same attention as the better-known American story at Omaha and Utah. He is unsparing on the casualties — Allied infantry losses in Normandy were higher per capita than for almost any other Anglo-American campaign of the war — and on the sometimes catastrophic effects of Allied air and artillery on French civilians and on Allied troops themselves through friendly fire. The Falaise pocket, the closing trap that destroyed much of the German Seventh Army, gets one of the most vivid accounts in print. The book complements rather than replaces older D-Day narratives by Stephen Ambrose and Cornelius Ryan, and is notable for treating Normandy as a campaign rather than just a landing.",
     },
     {
         "title": "Citizens: A Chronicle of the French Revolution",
@@ -902,7 +902,7 @@ HISTORY_BOOKS = [
         "year": 1989,
         "genre": "history",
         "mood": ["rainy afternoon", "late night reflection"],
-        "summary": "Schama reinterprets the French Revolution as a story driven by personalities, culture, and violence rather than impersonal social forces.",
+        "summary": "Simon Schama's Citizens, published for the bicentennial of 1789, is a long popular history of the French Revolution that took explicit aim at the Marxist and structuralist interpretations that had dominated the field through most of the twentieth century. Schama argues that the Revolution cannot be reduced to a rising bourgeoisie overthrowing a feudal aristocracy, since the French nobility was already commercially modernized and the bourgeoisie had been expanding within the old regime for decades; nor can it be neatly progressive, since violence was not a regrettable side effect but in many ways the Revolution's animating energy from the start. Schama writes a deliberately narrative, character-driven history through the late 1780s — fiscal crisis, the Estates-General, the Tennis Court Oath, the storming of the Bastille — and through the radicalizing years of 1789 to 1794, ending with the fall of Robespierre at the close of the Terror. Personalities carry the book: Lafayette, Mirabeau, Marie Antoinette, Danton, Saint-Just, Robespierre, Louis XVI as a tragic Bourbon rather than a cartoon. Schama is candid that his account leans culturally and politically against radical revolution, and the book set off a substantial professional argument when it appeared. It remains one of the most accessible and combative single-volume French Revolution narratives in English.",
     },
     {
         "title": "Cleopatra: A Life",
@@ -910,7 +910,7 @@ HISTORY_BOOKS = [
         "year": 2010,
         "genre": "history",
         "mood": ["boardroom energy", "self-discovery"],
-        "summary": "Schiff strips away centuries of myth to reveal the real Cleopatra: a shrewd political strategist and the richest woman in the Mediterranean.",
+        "summary": "Stacy Schiff's Cleopatra: A Life is a popular biography of the last Ptolemaic ruler of Egypt that sets out to rescue its subject from two thousand years of hostile Roman propaganda and Hollywood fantasy. Schiff is candid about the methodological challenge: virtually nothing in Cleopatra's own voice survives, and almost every contemporary source — Cicero, the Augustan poets, Plutarch, Suetonius — was hostile, late, or both. Working from those sources read against the grain and from the rich material record of Hellenistic Alexandria, Schiff reconstructs a queen who came to the throne at eighteen in 51 BCE, who was the immensely wealthy ruler of one of the most cosmopolitan cities in the ancient Mediterranean, who spoke nine languages, who managed a sophisticated bureaucracy and a contested succession, and who navigated three decades of Roman civil-war politics by allying first with Caesar and then with Mark Antony — bearing children to both — until the defeat at Actium in 31 BCE and the suicides of 30 BCE that ended the Ptolemaic dynasty and made Egypt a Roman province. Schiff is particularly good on the gendered dynamic of Roman attacks on Cleopatra, and on the Hellenistic political culture in which her actions made strategic sense. The book won the 2011 PEN/Jacqueline Bograd Weld Award and was a major bestseller.",
     },
     {
         "title": "The Radium Girls",
@@ -918,7 +918,7 @@ HISTORY_BOOKS = [
         "year": 2017,
         "genre": "history",
         "mood": ["self-discovery", "existential crisis"],
-        "summary": "The true story of the women who painted watch dials with radium, were poisoned by their employers, and fought back in the courts.",
+        "summary": "Kate Moore's The Radium Girls tells the story of the young women employed by the U.S. Radium Corporation in Orange, New Jersey and the Radium Dial Company in Ottawa, Illinois between roughly 1917 and the 1930s, painting luminous radium-laced numerals onto watch and clock dials. Their employers trained them to point their fine camel-hair brushes between their lips to keep the tip sharp — a technique called 'lip-pointing' — while assuring them the radium paint was harmless. As the women began to die in their twenties of catastrophic injuries to jaws, teeth, hips, and bones, their employers systematically lied about what was happening, falsified the medical examinations that were eventually demanded, and in some cases relocated to escape liability. Moore reconstructs the legal fight that followed through women named Grace Fryer, Catherine Donohue, and others, who pushed lawsuits forward despite their own physical disintegration. The cases ultimately won, helped establish modern occupational disease law in the United States, and produced legal precedents that shaped the regulation of industrial chemicals and worker safety for the rest of the century. Moore is unsparing on the corporations and the individual physicians and lawyers who enabled them, and she lets the women speak from their own letters and depositions wherever the record allows. The book has helped restore the workers themselves to a story long told as a regulatory parable.",
     },
     {
         "title": "Destiny of the Republic",
@@ -926,7 +926,7 @@ HISTORY_BOOKS = [
         "year": 2011,
         "genre": "history",
         "mood": ["rainy afternoon", "boardroom energy"],
-        "summary": "The assassination of President Garfield becomes a story about Alexander Graham Bell, medical arrogance, and a tragedy that changed American politics.",
+        "summary": "Candice Millard's Destiny of the Republic is a popular history of the four-month-long death of President James A. Garfield, who was shot at a Washington train station on July 2, 1881 and lingered until September 19. Millard treats the assassination as the intersection of three biographies and two then-current scientific debates. The biographies are Garfield himself — a self-made Ohioan, Civil War general, and reluctantly drafted Republican nominee whose election had broken open a brewing Republican civil war between Stalwarts and Half-Breeds; his deluded assassin Charles Guiteau, a failed lawyer and frequenter of utopian communities who believed he had a divine commission to remove the president; and Alexander Graham Bell, who interrupted his work on the telephone to invent and rush to Washington a metal-detection device meant to locate the bullet lodged in the president's body. The two scientific debates are antiseptic surgery, which Garfield's lead physicians arrogantly rejected even as they probed his wound repeatedly with unsterilized fingers, and the early state of medical electricity. Millard argues persuasively that Garfield was killed by his doctors rather than by Guiteau, and that the ensuing public outrage helped pass the Pendleton Civil Service Reform Act of 1883. The book is brisk, character-driven, and deeply researched.",
     },
     {
         "title": "The River of Doubt",
@@ -934,7 +934,7 @@ HISTORY_BOOKS = [
         "year": 2005,
         "genre": "history",
         "mood": ["road trip", "hustle mode"],
-        "summary": "Theodore Roosevelt's harrowing 1914 expedition down an uncharted tributary of the Amazon nearly killed him.",
+        "summary": "Candice Millard's The River of Doubt reconstructs the disastrous 1913 to 1914 expedition that the recently defeated former president Theodore Roosevelt led, with his son Kermit and the Brazilian co-commander Cândido Rondon, down an uncharted tributary of the Amazon called the Rio da Dúvida — the River of Doubt. Roosevelt, fifty-five and reeling from his loss in the 1912 three-way election, accepted the invitation as part of a planned South American lecture tour and grossly underestimated the journey. The expedition's miscalculations, from outsized supplies to undertrained boatmen, became immediately clear once they entered a thousand-mile descent through dense rainforest dotted with cataracts, hostile encounters with indigenous Cinta Larga warriors, malarial fevers, and starvation rations. Roosevelt cut his leg, which became severely infected, contracted malaria, and at one point asked his son to leave him to die rather than slow the party. The expedition emerged at the Madeira River months later, having mapped the river — now named the Rio Roosevelt or Rio Teodoro — but having lost three men and broken Roosevelt's health permanently; he died five years later partly of consequences of the journey. Millard pays serious attention to Rondon, the half-indigenous Brazilian engineer whose navigational skill and ethical insistence on nonviolence with native peoples kept the expedition alive.",
     },
     {
         "title": "Empires of the Word",
@@ -942,7 +942,7 @@ HISTORY_BOOKS = [
         "year": 2005,
         "genre": "history",
         "mood": ["Sunday morning", "late night reflection"],
-        "summary": "Ostler traces the rise and fall of the world's great languages, from Sumerian to English, revealing how language shapes power.",
+        "summary": "Nicholas Ostler's Empires of the Word is a six-thousand-year linguistic history of the world, written by a polyglot Sanskritist who treats the spread, replacement, and occasional persistence of human languages as a subject in its own right rather than as a footnote to political history. The book is organized around case studies of languages whose reach far exceeded the speakers' political fortunes: Sumerian, Akkadian, and Aramaic across the ancient Near East; Egyptian as the longest continuously spoken language in any one place; Greek across the Mediterranean and as far as Bactria; Latin and the much longer afterlife of its Romance daughters; the Sinitic languages and writing system across East Asia; Sanskrit's improbable role as the high learned language of much of South and Southeast Asia despite never being a native vernacular for most of its prestige zone; Arabic across the post-conquest Islamic world; the Iberian languages in the Americas; Russian across the Eurasian steppe; and English in the modern global era. Ostler's interest is in what makes a language travel: military conquest is part of the story but rarely the whole, and the book traces commercial networks, religious diffusion, prestige, scribal infrastructure, and population movement as parallel mechanisms. It is a long, dense, sometimes idiosyncratic book that has reshaped popular thinking about why people end up speaking what they speak.",
     },
     {
         "title": "The Mongol Empire",
@@ -950,7 +950,7 @@ HISTORY_BOOKS = [
         "year": 2018,
         "genre": "history",
         "mood": ["boardroom energy", "hustle mode"],
-        "summary": "May provides a comprehensive overview of the largest contiguous land empire in history and its lasting impact on world civilization.",
+        "summary": "Timothy May's The Mongol Empire is a comprehensive scholarly synthesis of the empire that, between 1206 and roughly 1368, became the largest contiguous land empire in human history, stretching at its peak from the Pacific coast of China to the Hungarian plain. May, a specialist who writes both for academic and general audiences, organizes the book in two halves. The first is a chronological narrative beginning with the political conditions of the late twelfth-century Mongol steppe, the consolidation of the various Mongol clans under Temüjin who took the title Chinggis Khan in 1206, the conquests of the Tangut Xi Xia, the Jin and Song Chinese states, the Khwarazmian Empire of Central Asia, the principalities of Rus', the Caliphate at Baghdad, and the failed campaigns into Mamluk Syria and the Indian subcontinent. The second half is thematic, treating administration, taxation, religion, military structure, the elite ranks of women, the Yam postal system that integrated the empire, and the trade networks under what historians now call the Pax Mongolica that allowed Marco Polo and Ibn Battuta to travel. May is especially good on the empire's deliberate division after Möngke's death and the four successor khanates that survived as separate polities into the late medieval period. The book is the standard one-volume introduction in English.",
     },
     {
         "title": "Prisoners of Geography",
@@ -958,6 +958,6 @@ HISTORY_BOOKS = [
         "year": 2015,
         "genre": "history",
         "mood": ["Sunday morning", "boardroom energy"],
-        "summary": "Marshall explains how physical geography — mountains, rivers, seas — continues to shape the politics and conflicts of nations.",
+        "summary": "Tim Marshall's Prisoners of Geography, written by a former Sky News diplomatic editor, is a brisk popular geopolitical primer organized around ten regions, each treated in its own chapter: Russia, China, the United States, Western Europe, Africa, the Middle East, India and Pakistan, Korea and Japan, Latin America, and the Arctic. Marshall's central thesis is that the physical features of the earth — mountains, rivers, seas, navigable harbors, the absence of the same — set hard constraints that political leaders have to work around, and that an enormous amount of the conflict and alignment of the contemporary world is legible once you read the map carefully. He argues, for instance, that Russian foreign policy is in large part organized around the historical absence of natural defensive barriers on the North European Plain; that China's Pacific posture and Belt and Road ambitions reflect its blockade vulnerability through the Malacca Strait; that the United States benefits from a continent-spanning navigable river system and friendly neighbors. The book is consciously generalist, simplifies in places that specialists would qualify, and has been criticized for occasionally deterministic readings, but as a quickly readable framework that gets people thinking about why borders are where they are, it has been a substantial bestseller and is widely used in introductory international-relations courses.",
     },
 ]
