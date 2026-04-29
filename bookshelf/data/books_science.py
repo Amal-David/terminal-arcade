@@ -23,7 +23,7 @@ SCIENCE_BOOKS = [
         "year": 1976,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Dawkins reframes evolution from the gene's perspective, introducing the concept of memes and arguing that genes are the true units of natural selection.",
+        "summary": "Richard Dawkins's The Selfish Gene, published in 1976, was the book that popularized the gene-centered view of evolution and made Dawkins a major public scientist. Drawing on the work of W.D. Hamilton, George Williams, and John Maynard Smith, Dawkins argues that the proper unit of selection is not the species, the group, or even the individual organism, but the replicating gene itself. Organisms, in his memorable formulation, are 'survival machines' built by genes to perpetuate copies of themselves. The book uses this lens to make sense of phenomena that had previously seemed paradoxical, especially altruistic behavior in social animals — explained through kin selection and the calculus of inclusive fitness — and stable patterns of cooperation, explained through evolutionarily stable strategies imported from game theory. The final chapter introduces the concept of the 'meme,' a unit of cultural transmission that Dawkins suggests behaves analogously to a gene, and which has since taken on a life of its own. The book has been hugely influential, has been criticized for the rhetorical implications of the 'selfish' framing, and remains one of the most cited works in modern evolutionary biology.",
     },
     {
         "title": "Surely You're Joking, Mr. Feynman!",
@@ -31,7 +31,7 @@ SCIENCE_BOOKS = [
         "year": 1985,
         "genre": "science",
         "mood": ["beach read", "Sunday morning", "fresh start"],
-        "summary": "A collection of Feynman's wildly entertaining adventures, from safecracking at Los Alamos to playing bongo drums in Brazil.",
+        "summary": "Surely You're Joking, Mr. Feynman!, published in 1985, is a collection of anecdotes told by the Nobel-winning physicist Richard Feynman to his drumming partner Ralph Leighton, who recorded and edited them into book form. The structure is loose and chronological, ranging across Feynman's childhood in Far Rockaway, his undergraduate years at MIT, his graduate work at Princeton, his time at Los Alamos during the Manhattan Project, his postwar professorships at Cornell and Caltech, and various sabbaticals in Brazil and Japan. The book is famous for the comic set-pieces: Feynman talking his way into safe-cracking the personal vaults of senior Manhattan Project administrators to expose lax security; Feynman teaching himself to draw and trying to sell paintings at a topless bar; Feynman performing samba on the streets of Rio with the school of frevo musicians; Feynman embarrassing pompous philosophers and humanities professors at faculty dinners. Beneath the comic register the book is a sustained argument for a particular kind of restless empirical curiosity and intolerance of pretension. It became a standard text in popular science autobiography and helped shape the public image of Feynman that survives him.",
     },
     {
         "title": "The Structure of Scientific Revolutions",
@@ -39,7 +39,7 @@ SCIENCE_BOOKS = [
         "year": 1962,
         "genre": "science",
         "mood": ["late night reflection", "career pivot"],
-        "summary": "Kuhn introduces the concept of paradigm shifts, arguing that science progresses through revolutionary changes rather than steady accumulation.",
+        "summary": "Thomas S. Kuhn's The Structure of Scientific Revolutions, published in 1962, is one of the most influential works of philosophy and history of science of the twentieth century, and the book that put the words 'paradigm' and 'paradigm shift' into general English. Kuhn, originally a Harvard physicist who turned to history and philosophy, argued that the standard textbook picture of science as a steady accumulation of well-confirmed facts is both historically inaccurate and pedagogically misleading. Real science, on his account, alternates between long periods of 'normal science' in which researchers solve puzzles within an inherited paradigm — a shared framework of assumptions, instruments, exemplary problems, and standards of explanation — and shorter, traumatic periods of 'revolutionary science' in which mounting anomalies make the old paradigm untenable and a new one emerges to replace it. He develops the case through detailed historical episodes including the Copernican replacement of Ptolemy, the Newtonian and Einsteinian transitions, and the chemical revolution led by Lavoisier. The book has been enormously influential beyond philosophy of science, in fields from sociology to organizational behavior, and has also been steadily criticized by working scientists and rival philosophers since.",
     },
     {
         "title": "Silent Spring",
@@ -47,7 +47,7 @@ SCIENCE_BOOKS = [
         "year": 1962,
         "genre": "science",
         "mood": ["rainy afternoon", "existential crisis"],
-        "summary": "Carson's landmark work documenting the environmental devastation caused by pesticides launched the modern environmental movement.",
+        "summary": "Rachel Carson's Silent Spring, published in 1962, is the founding text of the modern environmental movement and the book that more than any other forced the regulatory rethinking of synthetic pesticides in the United States. Carson, a marine biologist and former U.S. Fish and Wildlife Service writer who had already produced the bestselling The Sea Around Us, opens with a lyrical fable about a small American town from which all birdsong has disappeared, then methodically documents the cascading ecological and human-health damage caused by indiscriminate spraying of organochlorine pesticides, especially DDT, dieldrin, parathion, and aldrin. She marshals evidence from working entomologists, wildlife biologists, and oncologists to show that the chemicals do not vanish after killing their targets but accumulate up the food chain, contaminate water tables, and leave residues in human breast milk, all while the target insect populations evolve resistance. The book was attacked savagely by chemical-industry public relations on its appearance, but was vindicated by the President's Science Advisory Committee in 1963, helped lead to DDT's eventual ban in 1972, and helped spark the founding of the Environmental Protection Agency. Carson herself died of breast cancer in 1964.",
     },
     {
         "title": "The Double Helix",
@@ -55,7 +55,7 @@ SCIENCE_BOOKS = [
         "year": 1968,
         "genre": "science",
         "mood": ["hustle mode", "self-discovery"],
-        "summary": "Watson's candid and controversial account of the race to discover the structure of DNA.",
+        "summary": "James Watson's The Double Helix, published in 1968, is a candid and notoriously self-promoting personal memoir of the discovery of the double-helical structure of DNA at the Cavendish Laboratory in Cambridge in February and March of 1953. Watson, who would later share the 1962 Nobel Prize in Physiology or Medicine with Francis Crick and Maurice Wilkins, narrates the eighteen months leading up to the discovery from his own perspective as a brash twenty-three-year-old American postdoc. The book is unusual for popular science writing of its era in that Watson refuses to flatten the human and political dimensions of the work: he writes openly about the rivalry with Linus Pauling, the rocky working relationships at the Cavendish, the failed model-building, and the use of unauthorized X-ray crystallography photographs by Rosalind Franklin — Photograph 51 — that supplied the missing structural clues. His treatment of Franklin is sharply criticized as condescending and sexist, and Watson added a more conciliatory epilogue in later editions. The book is taught in scientific writing courses both as a model of vivid first-person narrative and as a cautionary text in research ethics and credit attribution.",
     },
     {
         "title": "A Short History of Nearly Everything",
@@ -63,7 +63,7 @@ SCIENCE_BOOKS = [
         "year": 2003,
         "genre": "science",
         "mood": ["Sunday morning", "rainy afternoon", "beach read"],
-        "summary": "Bryson makes the history of science entertaining and accessible, covering everything from the Big Bang to the rise of civilization.",
+        "summary": "Bill Bryson's A Short History of Nearly Everything, published in 2003, is a popular science history written by a travel writer who decided he did not understand the natural world he lived in and would attempt to repair the omission in public. The book is structured loosely from the Big Bang outward, then in: the formation of the universe and our solar system, the size and structure of the earth, the deep history of plate tectonics, climate, mass extinction, the development of life from microbes to humans, and the strangeness of being a complex multicellular animal. Bryson is candid that he is a curious amateur rather than a scientist, and the book's organizing trick is to talk to working specialists in each field — paleontologists, geologists, particle physicists, biochemists — and to retell what they tell him with a cheerful, mildly skeptical eye for human eccentricity. The set-pieces are often as much about scientists as about science: Newton's quirks, the clergymen who founded modern geology, the rivalries of nineteenth-century paleontology, the obsessive attempts to weigh the earth. The book won the Aventis Prize and the Descartes Prize for science writing and remains a popular gateway into the broader literature.",
     },
     {
         "title": "The Elegant Universe",
@@ -71,7 +71,7 @@ SCIENCE_BOOKS = [
         "year": 1999,
         "genre": "science",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Greene explains string theory and the quest for a unified theory of physics with remarkable clarity and enthusiasm.",
+        "summary": "Brian Greene's The Elegant Universe, published in 1999, was the most successful popular introduction to superstring theory of its decade and earned its author a National Book Award nomination and a major PBS Nova series. Greene, a working string theorist at Columbia, walks general readers through the central problem motivating contemporary fundamental physics: the irreconcilability of general relativity, which describes gravity at large scales, and quantum mechanics, which describes the other three fundamental forces at small scales. He argues that string theory — which posits that the elementary particles are not point-like but instead vibrating one-dimensional strings, with different vibrational modes corresponding to different particles — offers a candidate unified framework. Along the way Greene introduces extra spatial dimensions wrapped up at small scales, supersymmetry, the five competing string theories that the second superstring revolution showed are facets of a single underlying eleven-dimensional M-theory, and the contested experimental status of the whole program. He is unusually clear about what is conjecture and what is established. The book is now somewhat dated by subsequent developments, but it remains the most readable single-volume tour of late-twentieth-century theoretical physics.",
     },
     {
         "title": "Chaos: Making a New Science",
@@ -79,7 +79,7 @@ SCIENCE_BOOKS = [
         "year": 1987,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Gleick chronicles the birth of chaos theory, showing how simple systems can produce astonishingly complex behavior.",
+        "summary": "James Gleick's Chaos: Making a New Science, published in 1987, was the first book to bring the new mathematical field of chaos theory to a wide popular audience and remains the canonical popular history of the field's emergence. Gleick traces the work of a scattered handful of scientists and mathematicians who, beginning in the 1960s and largely outside the prestigious centers of their disciplines, found that very simple deterministic systems can generate behavior so sensitive to initial conditions that long-term prediction becomes impossible. The cast includes the meteorologist Edward Lorenz, who discovered the butterfly effect in his weather simulations; Mitchell Feigenbaum, who found a universal constant governing the period-doubling route to chaos; the mathematicians Stephen Smale and James Yorke; the cardiologists studying chaotic heart rhythms; and Benoit Mandelbrot, whose fractal geometry described the self-similar structure of coastlines and clouds and turbulence. Gleick's gift is to convey the conceptual shock without flattening the mathematics: the recognition that determinism does not entail predictability shook several disciplines simultaneously. The book won the National Book Award and helped establish narrative popular science as a major nonfiction genre.",
     },
     {
         "title": "The Emperor's New Mind",
@@ -87,7 +87,7 @@ SCIENCE_BOOKS = [
         "year": 1989,
         "genre": "science",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Penrose argues that human consciousness cannot be simulated by a computer, drawing on physics, mathematics, and philosophy.",
+        "summary": "Roger Penrose's The Emperor's New Mind, published in 1989, is a long, idiosyncratic argument by one of the most accomplished mathematical physicists of the twentieth century against the proposition that human consciousness is, or could be, equivalent to the operation of a sufficiently sophisticated digital computer. Penrose builds his case through a sweeping tour of contemporary physics and mathematics aimed at a determined general reader: Turing machines and the limits of algorithmic computation, Gödel's incompleteness theorems, classical and quantum mechanics, the measurement problem, black holes and entropy, and the relativity of time. His central positive proposal — developed at greater length in the later Shadows of the Mind and in collaboration with the anesthesiologist Stuart Hameroff — is that conscious thought may depend on quantum-coherent processes occurring in the microtubules of neurons, and that a complete theory of mind will require an as-yet-unfound physics of quantum gravity that allows non-computable elements. The argument is contested by most working AI researchers and most working neuroscientists, but the book is admired even by its critics for its breadth and its serious refusal to handwave the technical material.",
     },
     {
         "title": "Gödel, Escher, Bach",
@@ -95,7 +95,7 @@ SCIENCE_BOOKS = [
         "year": 1979,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Hofstadter weaves together mathematics, art, and music to explore the nature of intelligence, self-reference, and consciousness.",
+        "summary": "Douglas Hofstadter's Gödel, Escher, Bach: An Eternal Golden Braid, published in 1979 and winner of the 1980 Pulitzer Prize for general nonfiction, is one of the most ambitious and least classifiable works of popular science of the twentieth century. The book's central question is how meaning, consciousness, and the experience of being a self can arise from a substrate that is, in the end, a bunch of interacting components without any of those properties. Hofstadter pursues this through three running motifs: the music of J.S. Bach, with its self-referential canons; the visual art of M.C. Escher, with its impossible loops and figure-ground reversals; and the mathematics of Kurt Gödel, whose 1931 incompleteness theorems showed that any sufficiently rich formal system will contain true statements unprovable within itself. He weaves these together with playful Lewis-Carroll-inspired dialogues between Achilles and the Tortoise, recursive systems, formal logic, molecular biology, Zen Buddhism, and the early days of artificial intelligence. The book is enormous, demanding, and joyful, and a rite of passage for many people who later went into computer science, cognitive science, or mathematics.",
     },
     {
         "title": "The Blind Watchmaker",
@@ -103,7 +103,7 @@ SCIENCE_BOOKS = [
         "year": 1986,
         "genre": "science",
         "mood": ["Sunday morning", "self-discovery"],
-        "summary": "Dawkins makes a powerful case for evolution by natural selection, dismantling arguments for intelligent design.",
+        "summary": "Richard Dawkins's The Blind Watchmaker, published in 1986, is the book in which Dawkins makes the sustained case for evolution by natural selection as a sufficient explanation for the apparent design of living organisms. The title is a direct response to William Paley's 1802 watchmaker analogy, in which Paley argued that finding a watch on a heath would force an inference to a designer; Dawkins argues that the watchmaker, in the case of biology, is blind, lacking foresight, working by the cumulative selection of small advantageous variants over geological time. The book is unusually rich in worked examples and computer simulations: Dawkins introduces his own 'biomorph' programs, demonstrating how randomly mutated branching shapes can be selected toward complex insect-like forms within a few generations; he walks through the evolution of the eye to dismantle the argument from irreducible complexity; he treats bat echolocation, polar bear adaptation, and the slow drift of speciation. He is particularly sharp on the difference between random mutation, which most readers correctly intuit cannot produce design, and cumulative selection, which can. The book is one of the most effective popular defenses of evolutionary biology in print.",
     },
     {
         "title": "The Demon-Haunted World",
@@ -271,7 +271,7 @@ SCIENCE_BOOKS = [
         "year": 2014,
         "genre": "science",
         "mood": ["existential crisis", "rainy afternoon"],
-        "summary": "Kolbert documents the current mass extinction caused by human activity, visiting ecosystems around the world.",
+        "summary": "Elizabeth Kolbert's The Sixth Extinction, published in 2014 and winner of the 2015 Pulitzer Prize for general nonfiction, argues that the rapid loss of biodiversity now visibly underway is a sixth global mass extinction event comparable in scale to the five canonical ones in the geological record, and that this one is being caused by a single species. Kolbert, a New Yorker staff writer with a long environmental beat, structures the book around field reporting on a series of vanishing or threatened species and the scientists studying them: the Panamanian golden frog wiped out by chytrid fungus, the great auk of the North Atlantic, the staghorn coral whose bleaching she observes underwater on the Great Barrier Reef, the white-nose-syndrome bats of the eastern United States, the rhinos of Cincinnati, the surviving Sumatran orangutan. Each chapter pairs the field visit with a historical layer — Cuvier's discovery of extinction itself, Darwin and Lyell's debates over natural rates, the K-Pg asteroid — to ground the present crisis in the history of the science. The book is unsparing but understated, and has become one of the standard popular accounts of the Anthropocene.",
     },
     {
         "title": "The Hidden Life of Trees",
@@ -279,7 +279,7 @@ SCIENCE_BOOKS = [
         "year": 2015,
         "genre": "science",
         "mood": ["cozy night", "Sunday morning", "rainy afternoon"],
-        "summary": "Wohlleben reveals how trees communicate, share nutrients, and care for their young through underground fungal networks.",
+        "summary": "Peter Wohlleben's The Hidden Life of Trees, published in German in 2015 and translated into English in 2016, is a popular synthesis of forest ecology drawn from Wohlleben's twenty-plus years as a forester in the Eifel region of Germany and from his reading of recent academic plant-biology literature. The book argues that trees in healthy old-growth forests function less as individual organisms competing for light and water than as members of cooperative networks, communicating through chemical and electrical signals and especially through underground fungal mycorrhizal connections sometimes called the 'wood wide web.' Wohlleben describes parent trees that direct sugars to their offspring through these networks, beech communities that collectively defend against insect predation by releasing volatile compounds, and old stumps kept alive for centuries by surrounding trees passing them carbohydrate. Some of his more anthropomorphic claims have been pushed back on by working forest ecologists, but the underlying science of mycorrhizal networks and chemical signaling is well-established. The book has been criticized and adored in roughly equal measure, has sold millions of copies in dozens of languages, and has substantially shifted public conversation about forest management.",
     },
     {
         "title": "Guns, Germs, and Steel",
@@ -287,7 +287,7 @@ SCIENCE_BOOKS = [
         "year": 1997,
         "genre": "science",
         "mood": ["Sunday morning", "rainy afternoon"],
-        "summary": "Diamond argues that geography and environment, not racial superiority, explain why some civilizations conquered others.",
+        "summary": "Jared Diamond's Guns, Germs, and Steel opens with a question put to him by a New Guinean friend named Yali: why did Europeans end up with so much cargo, and his people with so little? Diamond's twelve-thousand-year answer deliberately strips race and innate intelligence out of the explanation. Instead, he argues that the trajectories of human societies were determined by environmental endowments — the wild plants and animals available for domestication, the orientation of continental axes that allowed crops and technologies to spread, and the disease ecologies created by living with herd animals. Eurasia's east-west axis and its abundance of large domesticable mammals gave its peoples earlier agriculture, denser populations, more complex states, and immune systems hardened by centuries of livestock-borne disease — the actual ingredients of the guns, germs, and steel that overwhelmed the Americas, Australia, and southern Africa. Diamond synthesizes archaeology, linguistics, evolutionary biology, and epidemiology into a single explanatory framework. The book has been challenged by historians for underplaying culture and contingency, but its central move has reshaped how world history is taught, and it won the 1998 Pulitzer Prize.",
     },
     {
         "title": "The Blank Slate",
@@ -295,7 +295,7 @@ SCIENCE_BOOKS = [
         "year": 2002,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Pinker challenges the idea that humans are born as blank slates, making the case for an innate human nature shaped by evolution.",
+        "summary": "Steven Pinker's The Blank Slate, published in 2002, is a long popular argument against what he calls the modern blank-slate doctrine: the assumption, widespread in mid-twentieth-century social science and humanities, that the human mind is essentially formless at birth and shaped almost entirely by culture, language, and upbringing. Pinker pairs this with what he sees as two related modern doctrines: the 'noble savage' picture of pre-civilized humans as peaceful and egalitarian, and the 'ghost in the machine' picture of an immaterial soul lying outside biology. Drawing on cognitive science, behavioral genetics, evolutionary psychology, neuroscience, and twin studies, he argues that there is in fact substantial innate structure to human cognition, emotion, and social behavior, and that pretending otherwise has produced bad social science and bad public policy. The book is at its strongest in the central chapters on what behavioral genetics has shown about the heritability of personality and intelligence; it is most contested in the political and ethical sections, where Pinker takes on debates about parenting, gender, and violence. The book is widely read and steadily disputed.",
     },
     {
         "title": "The Better Angels of Our Nature",
@@ -303,7 +303,7 @@ SCIENCE_BOOKS = [
         "year": 2011,
         "genre": "science",
         "mood": ["Sunday morning", "fresh start"],
-        "summary": "Pinker presents extensive data showing that violence has declined dramatically over the course of human history.",
+        "summary": "Steven Pinker's The Better Angels of Our Nature, published in 2011, is a long, data-heavy argument that interpersonal violence has declined dramatically across human history at multiple time scales. Pinker walks through six 'major declines': the pacification process from prehistoric tribal violence to settled states; the civilizing process from medieval Europe to the early modern absolutist period; the humanitarian revolution of the seventeenth and eighteenth centuries that progressively abolished slavery, judicial torture, and the most theatrical executions; the long peace among great powers since 1945; the new peace following the end of the Cold War; and the rights revolutions of the postwar era. The book is built on a synthesis of historical, anthropological, criminological, and political-science data, and Pinker is explicit about the deflationary force of presenting per-capita rather than absolute numbers. The argument has been criticized — for its baseline measurements of prehistoric violence, its handling of structural violence, and its political optimism — but the descriptive claim that several specific kinds of violence have declined is broadly supported. It is a long, important, much-debated work.",
     },
     {
         "title": "Enlightenment Now",
@@ -311,7 +311,7 @@ SCIENCE_BOOKS = [
         "year": 2018,
         "genre": "science",
         "mood": ["fresh start", "morning ritual"],
-        "summary": "Pinker argues that reason, science, and humanism have made the world measurably better by almost every metric.",
+        "summary": "Steven Pinker's Enlightenment Now, published in 2018, is a sequel of sorts to Better Angels, extending the underlying argument from violence to a broader portfolio of human well-being indicators — life expectancy, infant mortality, literacy, undernourishment, extreme poverty, leisure time, civil rights — most of which Pinker shows to have improved substantially over the past two centuries. He attributes these gains to the four ideals of the Enlightenment as he reads it: reason, science, humanism, and progress. The book pairs about seventy charts showing measurable improvement with chapter-by-chapter rebuttals of nostalgic and declinist counter-narratives from the political left and right. Pinker is most controversial in his treatment of climate change, which he treats as a serious but tractable problem rather than a civilization-scale threat, and in his sometimes dismissive engagement with critics. The book was widely championed in centrist and libertarian circles and just as widely criticized for what some see as an overly tidy graph-based optimism, but the descriptive claim that several large indicators of human flourishing have improved in recent generations is well-documented.",
     },
     {
         "title": "The Language Instinct",
@@ -319,7 +319,7 @@ SCIENCE_BOOKS = [
         "year": 1994,
         "genre": "science",
         "mood": ["Sunday morning", "self-discovery"],
-        "summary": "Pinker argues that language is a biological instinct hardwired into our brains by evolution, not a cultural invention.",
+        "summary": "Steven Pinker's The Language Instinct, published in 1994, is the book that brought the Chomskyan view of language as a biological instinct to a popular audience and established Pinker as a major popular science writer. Drawing on his own research at MIT and on the broader generative linguistics tradition, Pinker argues that the human capacity for language is best understood as a species-specific cognitive adaptation, evolved by natural selection, rather than a cultural invention or a general byproduct of intelligence. The book walks readers through the structure of language at the levels of phonology, morphology, syntax, semantics, and the lexicon, illustrating each with vivid examples drawn from creole formation among children of pidgin-speaking adults, the universal stages of child language acquisition, sign languages as full natural languages, the linguistic deficits of patients with specific brain lesions, and the famous deaf Nicaraguan children who spontaneously generated their own grammar. Pinker is firmly on the side of innate universal grammar in a debate that has continued since publication. The book is funny, generous with examples, and remains the standard popular introduction to the field.",
     },
     {
         "title": "Behave: The Biology of Humans at Our Best and Worst",
@@ -327,7 +327,7 @@ SCIENCE_BOOKS = [
         "year": 2017,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Sapolsky examines human behavior by working backward from the moment of action through neuroscience, hormones, genetics, and culture.",
+        "summary": "Robert Sapolsky's Behave: The Biology of Humans at Our Best and Worst, published in 2017, is a seven-hundred-page synthesis of decades of research on the biological substrates of human behavior, written by a Stanford neurobiologist and primatologist who has spent his career studying baboons in the Serengeti and stress in laboratory rats. The book is organized as a series of nested zooms outward from a single moment of human action: the second before the action, where neural circuits fire; the seconds to minutes before, where sensory and emotional systems prime decisions; the hours to days before, where hormones modulate; the months to years before, where adolescent and developmental neuroplasticity has shaped the brain; back to childhood, prenatal environment, genes, and finally evolutionary, ecological, and cultural pressures over millions of years. Sapolsky uses this scaffolding to address aggression, empathy, group identity, hierarchy, free will, and moral judgment. He writes with extraordinary range and a comic voice without sacrificing scientific care, and the book is one of the most important popular treatments of the biological roots of human behavior published in the early twenty-first century.",
     },
     {
         "title": "Why We Sleep",
@@ -335,7 +335,7 @@ SCIENCE_BOOKS = [
         "year": 2017,
         "genre": "science",
         "mood": ["cozy night", "self-discovery"],
-        "summary": "Walker makes a compelling scientific case for why sleep is the most important thing you can do for your health.",
+        "summary": "Matthew Walker's Why We Sleep, published in 2017, is a popular synthesis by a Berkeley neuroscientist of decades of research on the biology of sleep, written for general readers and built around the central claim that sleep is not a passive state but an active and nonnegotiable biological process whose disruption damages essentially every system in the human body. Walker explains the architecture of sleep — the alternation of NREM and REM stages, the role of the suprachiasmatic nucleus, the glymphatic clearance of metabolic waste — and walks through the literature linking insufficient sleep to impaired learning and memory consolidation, mood disorders, immune dysfunction, cardiovascular disease, hormonal disruption, weight gain, and increased risk of certain cancers. He is particularly insistent that adults need closer to eight hours than to six, that sleep cannot be made up on weekends, and that alcohol and most prescription sleep aids degrade sleep architecture even when they produce subjective drowsiness. Some of his specific statistical claims have been challenged by other sleep researchers since publication, but the broader thrust of the book is well-supported. It has been one of the most influential popular health books of the late 2010s.",
     },
     {
         "title": "The Body: A Guide for Occupants",
@@ -343,7 +343,7 @@ SCIENCE_BOOKS = [
         "year": 2019,
         "genre": "science",
         "mood": ["Sunday morning", "beach read"],
-        "summary": "Bryson takes a witty and wonder-filled tour through the human body, explaining how our remarkable biological machinery works.",
+        "summary": "Bill Bryson's The Body: A Guide for Occupants, published in 2019, is the human-anatomy companion to his earlier A Short History of Nearly Everything, written in the same accessible voice and built on the same method: read widely, interview specialists, and retell the resulting picture in popular prose. Bryson's twenty-three chapters move loosely outward and inward through the body — the skin, the brain, the head, the mouth and throat, the heart, the chemistry of blood, the lungs and breath, the food and the gut, the sleeping body, the immune system, the reproductive system, the senses, the nerves, and finally medicine, disease, aging, and death. He is particularly good on the physiology of the senses and on the strangeness of the brain, on how vaccines actually work, and on the medical history of major diseases like syphilis, polio, and AIDS. The book interleaves anatomical fact with potted biographies of the scientists, surgeons, and quacks who got us to the present understanding. It is breezy rather than systematic and is best read as a curious survey rather than as a textbook substitute, and remains one of the most popular general-anatomy popular science books of recent years.",
     },
     {
         "title": "Bad Blood",
@@ -351,7 +351,7 @@ SCIENCE_BOOKS = [
         "year": 2018,
         "genre": "science",
         "mood": ["hustle mode", "career pivot"],
-        "summary": "The shocking true story of Theranos and Elizabeth Holmes, exposing how Silicon Valley hype and fraud nearly endangered patients' lives.",
+        "summary": "John Carreyrou's Bad Blood, published in 2018, is a methodical investigative reconstruction of the rise and collapse of Theranos, the Silicon Valley medical-testing startup founded by the Stanford dropout Elizabeth Holmes in 2003. By 2015 Theranos was valued at nine billion dollars on the strength of its claim to run hundreds of blood-panel diagnostic tests from a single drop of finger-prick blood through a proprietary 'Edison' device. Carreyrou, a Wall Street Journal reporter, broke the story over a long sequence of articles beginning that same year, against active legal threats from Theranos's chairman David Boies. The book details what his reporting and subsequent litigation eventually exposed: the Edison device did not work; Theranos was running its actual patient tests on third-party Siemens analyzers and falsifying results; senior officers including Holmes and her chief operating officer and partner Sunny Balwani lied repeatedly to investors, the FDA, and the press. Carreyrou follows the company's collapse, the Walgreens partnership, the criminal-fraud charges against Holmes and Balwani, and the wreckage of an organizational culture built on fear. It is a model of business investigative journalism.",
     },
     {
         "title": "The Innovators",
@@ -359,7 +359,7 @@ SCIENCE_BOOKS = [
         "year": 2014,
         "genre": "science",
         "mood": ["side project vibes", "hustle mode"],
-        "summary": "Isaacson traces the history of the digital revolution from Ada Lovelace to the inventors of the internet and search engines.",
+        "summary": "Walter Isaacson's The Innovators, published in 2014, is a long popular history of the digital revolution organized around the central argument that almost every major advance in computing was the result of teams and overlapping collaborations rather than lone geniuses. The book opens with Ada Lovelace's 1843 notes on Charles Babbage's Analytical Engine and walks forward through Alan Turing and the wartime code-breakers of Bletchley Park, John von Neumann and the architecture of the modern stored-program computer, the development of the transistor at Bell Labs by Shockley, Bardeen, and Brattain, the founding of Intel and the microprocessor revolution, the personal computer years of Wozniak, Jobs, Gates, and Allen, the early ARPANET and the development of the internet protocols, the World Wide Web under Tim Berners-Lee, the search-engine wars culminating in Google, and the rise of social media. Isaacson's prose is workmanlike and accessible, and the book is built on a substantial body of interviews. The research overlaps significantly with his earlier biographies of Jobs, Einstein, Franklin, and others, and serves well as a general-reader introduction to the material.",
     },
     {
         "title": "Steve Jobs",
@@ -367,7 +367,7 @@ SCIENCE_BOOKS = [
         "year": 2011,
         "genre": "science",
         "mood": ["hustle mode", "career pivot", "self-discovery"],
-        "summary": "The authorized biography of Apple's co-founder, revealing his genius, obsessions, and turbulent personality.",
+        "summary": "Walter Isaacson's Steve Jobs, published in October 2011 a few weeks after Jobs's death from pancreatic cancer, is the authorized biography of the Apple co-founder, drawn from more than forty interviews Isaacson conducted with Jobs over two years and from interviews with more than a hundred friends, family members, colleagues, and rivals. The book traces Jobs from his adoption by working-class parents in the South Bay through his eccentric Reed College years, his cofounding of Apple with Steve Wozniak in 1976, his rise as the Apple II and Macintosh figurehead, his ouster from Apple in 1985, his founding of NeXT, his purchase and rescue of Pixar, his triumphant return to Apple in 1997, and the iMac, iPod, iTunes Store, iPhone, and iPad cycles that turned Apple into the most valuable company in the world. Isaacson is unsparing on Jobs's notorious cruelty to colleagues and family members, his binary 'reality distortion field,' his prolonged refusal of conventional cancer treatment, and his complex relationships with his children. The book is the standard biographical source on Jobs and helped seed several later films.",
     },
     {
         "title": "The Code Breaker",
@@ -375,7 +375,7 @@ SCIENCE_BOOKS = [
         "year": 2021,
         "genre": "science",
         "mood": ["hustle mode", "fresh start"],
-        "summary": "Isaacson tells the story of Jennifer Doudna and the discovery of CRISPR gene editing, a technology that will transform life itself.",
+        "summary": "Walter Isaacson's The Code Breaker, published in 2021, is a popular biography centered on the molecular biologist Jennifer Doudna and the development of CRISPR-Cas9 gene editing, the technology for which Doudna and her collaborator Emmanuelle Charpentier shared the 2020 Nobel Prize in Chemistry. Isaacson traces Doudna's path from a Hilo, Hawaii childhood and Pomona College through her structural biology training under Jack Szostak, her work on RNA, and her gradual entry into the strange world of bacterial CRISPR sequences whose function remained unclear until experimental work in the late 2000s revealed them to be an adaptive bacterial immune system targeting viral DNA. The 2012 paper that demonstrated CRISPR-Cas9 could be repurposed as a programmable gene-editing tool changed biology. The book also handles the bitter patent and credit dispute with Feng Zhang of the Broad Institute, the COVID-19 pandemic that pulled Doudna and her colleagues into testing and antibody work, and the ethical debates around germline editing including the He Jiankui CRISPR-baby scandal. Isaacson is clear about the science and unusually attentive to the messy human dynamics of contemporary biology research.",
     },
     {
         "title": "Life 3.0",
@@ -383,7 +383,7 @@ SCIENCE_BOOKS = [
         "year": 2017,
         "genre": "science",
         "mood": ["existential crisis", "career pivot", "late night reflection"],
-        "summary": "Tegmark explores what it means for artificial intelligence to surpass human intelligence and how we can shape its future.",
+        "summary": "Max Tegmark's Life 3.0, published in 2017, is a wide-ranging popular treatment of artificial general intelligence and what its eventual development may mean for humanity, written by an MIT physicist who founded the Future of Life Institute. The book's three-tier framework names Life 1.0 as biological organisms whose hardware and software are both genetically determined, Life 2.0 as humans, who can rewrite their own software through learning while their hardware is fixed, and Life 3.0 as a hypothetical future intelligence that can rewrite both its software and its hardware. Tegmark walks readers through current AI research, the scaling debates around machine learning, and the technical and political questions that arise if and when machine intelligence reaches and exceeds the human level: alignment, value loading, the orthogonality of intelligence and goals, the corrigibility problem, and the geopolitical and economic dynamics of an AI race. He devotes substantial space to a fictional 'Omega Team' scenario as a thought experiment for what the rapid emergence of superintelligence could look like. The book has been influential among working AI researchers and policy thinkers and is a common entry point into the AI safety conversation.",
     },
     {
         "title": "Our Mathematical Universe",
@@ -391,7 +391,7 @@ SCIENCE_BOOKS = [
         "year": 2014,
         "genre": "science",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Tegmark argues that reality is fundamentally mathematical and explores the implications of a multiverse.",
+        "summary": "Max Tegmark's Our Mathematical Universe, published in 2014, is the popular exposition of the radical metaphysical thesis Tegmark calls the Mathematical Universe Hypothesis: that physical reality is not merely well-described by mathematics but is, fundamentally, a mathematical structure, and that all mathematical structures that exist abstractly correspond to physical realities. The book is structured around four nested kinds of multiverse he distinguishes. Level I is the spatially infinite multiverse implied by inflationary cosmology and the cosmic horizon. Level II is the multiverse of bubble universes with different physical constants generated by eternal inflation. Level III is the many-worlds interpretation of quantum mechanics. Level IV is Tegmark's own ultimate ensemble of all logically consistent mathematical structures. Along the way Tegmark gives accessible accounts of inflationary cosmology, the cosmic microwave background, dark energy, and quantum measurement. The book is more philosophically ambitious than most popular cosmology, and the Level IV claim has been criticized as untestable and possibly meaningless even by physicist sympathetic to the earlier levels. It is one of the more intellectually adventurous popular physics books of the 2010s.",
     },
     {
         "title": "The Road to Reality",
@@ -399,7 +399,7 @@ SCIENCE_BOOKS = [
         "year": 2004,
         "genre": "science",
         "mood": ["late night reflection", "productivity"],
-        "summary": "Penrose provides a comprehensive guide to the laws of the universe, from basic mathematics to the frontiers of physics.",
+        "summary": "Roger Penrose's The Road to Reality, published in 2004, is a thousand-page attempt to walk a determined general reader from the foundations of mathematics through to the frontier of theoretical physics. It is unusual among popular science books in that Penrose insists on doing the actual mathematics rather than gesturing at it: the early chapters work through real numbers, complex numbers, calculus on manifolds, fiber bundles, and Riemann surfaces with worked examples and substantial figures. Only after several hundred pages of mathematical foundations does the book turn to the physics — Maxwell's equations, classical mechanics in Lagrangian and Hamiltonian forms, special and general relativity, quantum mechanics in its Hilbert-space and path-integral formulations, quantum field theory, and the Standard Model — before closing with Penrose's own preferred speculations on cosmology and the foundations of quantum measurement. The book is famously demanding and rewards patient working through; many readers use it as a structured map for further study. Penrose is candid about which parts of contemporary theoretical physics he regards with skepticism, including string theory and the multiverse, and the closing chapters are unmistakably his own argument.",
     },
     {
         "title": "Cycles of Time",
@@ -407,7 +407,7 @@ SCIENCE_BOOKS = [
         "year": 2010,
         "genre": "science",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Penrose presents his radical conformal cyclic cosmology theory, proposing that the universe goes through infinite cycles.",
+        "summary": "Roger Penrose's Cycles of Time, published in 2010, presents his speculative cosmological proposal called Conformal Cyclic Cosmology, in which what we conventionally call the Big Bang is not the beginning of all things but the conformal continuation of a previous epoch — a so-called aeon — that has dilated to such low energy and large scale that there is no longer a preferred local clock, at which point the conformal geometry can be re-scaled and the next aeon begins. Penrose builds the case from a particular reading of the second law of thermodynamics — specifically from the very low entropy state required at the Big Bang, which conventional cosmology has no fully satisfying account of — and from the geometry of conformal rescaling under general relativity. He argues that signatures from the previous aeon, including circular features in the cosmic microwave background that he labels Hawking points after the late-stage evaporation of supermassive black holes, may be empirically detectable, a claim that has been contested by other cosmologists. The book is a serious mathematical proposal written for general readers willing to follow the geometry, and it remains a minority view within the field.",
     },
     {
         "title": "Seven Brief Lessons on Physics",
@@ -415,7 +415,7 @@ SCIENCE_BOOKS = [
         "year": 2014,
         "genre": "science",
         "mood": ["Sunday morning", "beach read", "morning ritual"],
-        "summary": "Rovelli distills the most beautiful ideas in modern physics into seven short, lyrical essays.",
+        "summary": "Carlo Rovelli's Seven Brief Lessons on Physics, published in Italian in 2014 and in English translation in 2015, is the short, lyrical book that established Rovelli internationally as the most literary of working theoretical physicists. The book is barely eighty pages and consists of seven short essays. The first treats Einstein's general theory of relativity and the geometric reading of gravity as the curvature of spacetime. The second introduces quantum mechanics and the strangeness of measurement. The third describes the architecture of the cosmos at large scales, from the local solar system to the present cosmological model. The fourth covers elementary particles and the quantum field theory that grounds them. The fifth introduces Rovelli's own field, loop quantum gravity, as a candidate reconciliation of relativity and quantum theory. The sixth addresses the second law of thermodynamics and the apparent direction of time. The seventh closes with a brief humanist reflection on the human place inside the universe modern physics has described. The book sold in the millions in dozens of languages and was particularly notable for finding a wide non-specialist readership in Italy, where it became a national bestseller.",
     },
     {
         "title": "The Order of Time",
@@ -423,7 +423,7 @@ SCIENCE_BOOKS = [
         "year": 2017,
         "genre": "science",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Rovelli dismantles our intuitive understanding of time, showing that much of what we assume about it is wrong.",
+        "summary": "Carlo Rovelli's The Order of Time, published in Italian in 2017 and in English translation in 2018, is a popular meditation on the physics, philosophy, and human experience of time, written in three movements. The first part dismantles the everyday picture of time, walking the reader through what twentieth-century physics has shown that time is not: not universal, since clocks run differently at different gravitational potentials and velocities; not directional, since the fundamental equations of physics are time-symmetric; not absolute, since events do not have a definite global ordering. The second part is the harder, more austere section, in which Rovelli sketches what time might actually be in his own framework of loop quantum gravity, where the fundamental description of the world dispenses with the variable t altogether and encodes change in relations among quantum events. The third part returns to human experience and asks why time still feels so vivid to us, locating the answer in entropy, the structure of memory, and the perspective of beings whose interactions with the world are coarse-grained. The book is unusually beautiful, drawing on Anaximander, Augustine, Heidegger, and Proust as much as on physicists.",
     },
     {
         "title": "Reality Is Not What It Seems",
@@ -431,7 +431,7 @@ SCIENCE_BOOKS = [
         "year": 2014,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Rovelli traces the evolution of our understanding of reality from Democritus to loop quantum gravity.",
+        "summary": "Carlo Rovelli's Reality Is Not What It Seems, published in Italian in 2014 and translated into English in 2016, is his most fully argued popular book and is best read as the more substantive companion to Seven Brief Lessons on Physics. Rovelli traces the long arc of Western thinking about the fundamental constitution of matter and space, beginning with the pre-Socratic atomism of Democritus and Leucippus and walking forward through Aristotle, Newton, Faraday and Maxwell, the classical synthesis of the late nineteenth century, the Einsteinian revolutions in special and general relativity, the strange experimental results that built quantum mechanics, and Dirac's relativistic field theory. The closing chapters turn to Rovelli's own contemporary work in loop quantum gravity, where space and time are not the smooth continuous backdrop of classical physics but are themselves quantized into discrete loops at the Planck scale and emerge as relational properties of interacting events. He is candid that loop quantum gravity is one of two main contemporary approaches alongside string theory, and that neither has yet been confirmed experimentally. The book is approachable for a careful general reader and is one of the better single-volume tours of contemporary fundamental physics.",
     },
     {
         "title": "The First Three Minutes",
@@ -439,7 +439,7 @@ SCIENCE_BOOKS = [
         "year": 1977,
         "genre": "science",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Weinberg describes the first moments after the Big Bang, making cosmology accessible to general readers.",
+        "summary": "Steven Weinberg's The First Three Minutes, published in 1977, is the book that brought hot Big Bang cosmology to a popular audience, written by the Nobel laureate physicist who shared the 1979 prize for the unification of the electromagnetic and weak forces. The book opens with a vivid frame: a description of the first hundredth of a second after the Big Bang and a step-by-step expansion outward through the cosmic clock to the moment, about three minutes in, when the temperature dropped enough for stable atomic nuclei of helium and a trace of lithium to form alongside the existing hydrogen. Weinberg walks readers through the discovery of the cosmic microwave background by Penzias and Wilson in 1965, the Friedmann-Lemaître-Robertson-Walker cosmology, the calculation of the primordial helium abundance, and the open empirical questions of his moment, including whether the universe was open or closed. The book has dated in some specifics — the cosmological constant, dark matter, and inflation entered the picture after publication — but the explanatory clarity has held, and it remains one of the founding texts of popular physical cosmology.",
     },
     {
         "title": "Dreams of a Final Theory",
@@ -447,7 +447,7 @@ SCIENCE_BOOKS = [
         "year": 1992,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Weinberg reflects on the search for the ultimate laws of nature and what a final theory of physics might look like.",
+        "summary": "Steven Weinberg's Dreams of a Final Theory, published in 1992 in the immediate context of the U.S. Congressional debates over the funding of the Superconducting Super Collider, is part popular physics and part political and philosophical brief for the grand-unification project. Weinberg, a major architect of the electroweak unification, argues that a final theory — a single fundamental theoretical framework from which all observable physical regularities can in principle be derived — is a coherent and important goal, and that the current state of the field, particularly through string theory and other quantum-gravity programs, is genuinely making progress toward it. The book covers the meaning of reductionism, the relation between elegance and truth in physical theory, the history of unification programs from Maxwell forward, and the various proposals for going beyond the Standard Model. The closing chapters, written for a general audience, are unusually frank about Weinberg's own views on philosophy of science, the limits of philosophy in helping working physicists, and the public-funding politics of fundamental research; the SSC was indeed canceled by Congress the year after the book appeared, an outcome Weinberg viewed as a major intellectual loss.",
     },
     {
         "title": "Hyperspace",
@@ -455,7 +455,7 @@ SCIENCE_BOOKS = [
         "year": 1994,
         "genre": "science",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Kaku explores higher dimensions, parallel universes, and the possibility of traveling through space and time.",
+        "summary": "Michio Kaku's Hyperspace, published in 1994, is one of the more enthusiastic popular treatments of higher-dimensional theories in twentieth-century physics, written by a CCNY theoretical physicist who has spent decades on string field theory. The book is organized in four parts. The first traces the historical idea of higher dimensions through Riemann's geometry, Edwin Abbott's Flatland, the Kaluza-Klein attempt to unify gravity and electromagnetism by adding a small fifth dimension, and the abandonment and rediscovery of these ideas in the late twentieth century. The second introduces string theory and superstring theory, explaining why the mathematical consistency of the theory requires ten or twenty-six spacetime dimensions and how the extra dimensions might be compactified. The third treats popular speculative consequences — wormholes, parallel universes, time travel, and the possibility of escaping the eventual heat death of our universe through hyperspace — and is more enthusiastic than current consensus would warrant. The fourth closes with reflections on the cultural and philosophical resonance of the multidimensional turn. The book is dated in places but remains a readable popular gateway into the subject.",
     },
     {
         "title": "The Future of Humanity",
@@ -463,7 +463,7 @@ SCIENCE_BOOKS = [
         "year": 2018,
         "genre": "science",
         "mood": ["fresh start", "existential crisis"],
-        "summary": "Kaku envisions how humanity will colonize Mars, travel to the stars, and achieve immortality through science.",
+        "summary": "Michio Kaku's The Future of Humanity, published in 2018, is a deliberately optimistic forecast of human spacefaring civilization across the next several centuries, drawing on interviews with working space scientists and on Kaku's reading of the public roadmaps of NASA, SpaceX, Blue Origin, and the Chinese national space program. The book is organized as a sequence of expanding spheres of human reach: a return to the Moon and the establishment of a permanent base; the colonization of Mars, with terraforming projections that Kaku takes more seriously than most working planetary scientists; mining and habitats in the asteroid belt; the moons of the gas giants; engineered exoplanetary destinations; and ultimately interstellar voyages, including discussion of Breakthrough Starshot's laser-pushed lightsails and longer-term proposals for nuclear fusion or antimatter propulsion. The closing chapters take seriously the prospect of digital uploading and posthuman survival across deep time. The book is more speculative than rigorous and is best read as a sympathetic survey of where major scientific and engineering proposals would take us if substantial portions of them succeeded; specialists have criticized some of Kaku's specific timelines, but the book is a useful conspectus of the long-horizon space community's thinking.",
     },
     {
         "title": "Physics of the Future",
@@ -471,7 +471,7 @@ SCIENCE_BOOKS = [
         "year": 2011,
         "genre": "science",
         "mood": ["fresh start", "side project vibes"],
-        "summary": "Kaku interviews hundreds of scientists to predict what technology will look like by the year 2100.",
+        "summary": "Michio Kaku's Physics of the Future, published in 2011, is a forecast of how scientific and technological capabilities are likely to evolve through the year 2100. Kaku states that he interviewed roughly three hundred working scientists and engineers across his subject domains and aimed to constrain his projections to extrapolations grounded in laboratory work currently underway rather than in pure futurism. The book is organized topically: the future of the computer, of artificial intelligence, of medicine, of nanotechnology, of energy, of space travel, and of wealth. Within each chapter, Kaku gives near-term, mid-century, and end-of-century projections, marking each as more or less speculative. He is particularly attentive to the convergence of fields — bio-nanotechnology, computational neuroscience, programmable matter — and to the political and social consequences of those convergences. As with most futurology the timing is the weakest part of the work; specific predictions for the 2020s have aged unevenly. But as a structured map of where the major scientific frontiers were thinking in the early 2010s and what they hoped to deliver, it remains a useful and readable reference.",
     },
     {
         "title": "The Pleasure of Finding Things Out",
@@ -479,7 +479,7 @@ SCIENCE_BOOKS = [
         "year": 1999,
         "genre": "science",
         "mood": ["Sunday morning", "morning ritual", "fresh start"],
-        "summary": "A collection of Feynman's best short works and interviews, showcasing his infectious curiosity and scientific joy.",
+        "summary": "Richard Feynman's The Pleasure of Finding Things Out, published in 1999 eleven years after Feynman's death, is a posthumous collection of short pieces — interviews, lectures, articles, and forewords — assembled by his literary executor Jeffrey Robbins to give general readers a single-volume introduction to the broader Feynman corpus. The pieces include the famous BBC interview that gave the book its title, in which Feynman talks about the experience of doing science as a kind of pleasure rather than a duty; his lectures on the role of computers and his speech 'There's Plenty of Room at the Bottom,' which is widely credited as the founding document of nanotechnology; his minority report appended to the Rogers Commission's investigation of the Challenger disaster, in which Feynman publicly demonstrated the failure of an O-ring rubber seal in cold water; and reflections on his upbringing, his refusal to wear a tie at Caltech, his disregard for honors, and his views on religion and science. The collection is uneven by design and the pieces overlap in places, but it is a serviceable Feynman reader for someone who has not yet found the larger volumes.",
     },
     {
         "title": "What Do You Care What Other People Think?",
@@ -487,7 +487,7 @@ SCIENCE_BOOKS = [
         "year": 1988,
         "genre": "science",
         "mood": ["Sunday morning", "self-discovery"],
-        "summary": "Feynman shares more personal adventures, including his investigation of the Challenger disaster and his love for his first wife.",
+        "summary": "Richard Feynman's What Do You Care What Other People Think?, published in 1988 and the loose sequel to Surely You're Joking, Mr. Feynman!, was assembled in collaboration with his drumming partner Ralph Leighton and published the year of Feynman's death from cancer. The volume splits cleanly into two halves. The first half is a series of personal essays, the most affecting of which is the long account of Feynman's early marriage to his high school sweetheart Arlene Greenbaum, who died of tuberculosis at twenty-five during the Manhattan Project years; the title quote is one of Arlene's, taken from a story about Feynman caring too much what his Princeton colleagues thought. The second half is Feynman's account of his service on the 1986 Rogers Commission investigating the Challenger space shuttle disaster, including his now-famous public demonstration that the rubber O-rings in the solid rocket boosters lost resilience in ice water at near-launch temperatures, and his unsparing minority report on NASA management's habit of internal probability inflation. The book is shorter, sadder, and more personal than its predecessor and is widely considered the better of the two.",
     },
     {
         "title": "The Character of Physical Law",
@@ -495,7 +495,7 @@ SCIENCE_BOOKS = [
         "year": 1965,
         "genre": "science",
         "mood": ["late night reflection", "morning ritual"],
-        "summary": "Feynman's Messenger Lectures at Cornell exploring the fundamental character of the laws of nature.",
+        "summary": "Richard Feynman's The Character of Physical Law, published in 1965 the year of his Nobel Prize, is the printed edition of seven Messenger Lectures Feynman delivered at Cornell University in 1964 for an audience of mixed-discipline graduate students and educated laypeople. Feynman tries to do something unusual in the lectures: instead of explaining particular physical laws, he attempts to discuss the general character that physical laws share. He works through the law of gravitation as a long worked example, then steps back to examine the relation between physics and mathematics; the question of why mathematics is unreasonably effective in describing nature; the symmetries that constrain physical theories; the distinction between past and future; the role of probability and quantum mechanics in describing reality; and the open question of whether contemporary physical understanding is converging or whether new conceptual revolutions are still needed. The lectures were filmed and have been freely available online for decades; they are widely regarded as the best surviving record of Feynman teaching beyond the famous Caltech lectures. The book is short, accessible, and a quick introduction to Feynman's distinctive voice.",
     },
     {
         "title": "Genome: The Autobiography of a Species in 23 Chapters",
@@ -503,7 +503,7 @@ SCIENCE_BOOKS = [
         "year": 1999,
         "genre": "science",
         "mood": ["Sunday morning", "self-discovery"],
-        "summary": "Ridley picks one gene from each chromosome to tell the story of the human species through its DNA.",
+        "summary": "Matt Ridley's Genome: The Autobiography of a Species in 23 Chapters, published in 1999 a few years before the first complete sequence of the human genome was announced, is a popular tour of the genetic basis of being human, organized around a clever conceit: each of the book's twenty-three chapters takes one of the twenty-three pairs of human chromosomes and uses one notable gene located on it to tell a particular biological or cultural story. The chromosome 1 chapter discusses life itself; the chromosome 2 chapter introduces the chimpanzee fusion that distinguishes us from our nearest relatives; chapter 7 follows the FOXP2 gene and the origins of language; chapter 11 deals with personality through the dopamine receptor gene; chapter 16 deals with memory; chapter 17 with cancer-suppressor genes; the X and Y chapters with sex determination and conflict. The book is propulsive and journalistic rather than rigorous, and Ridley is a popularizer rather than a working scientist; some claims have aged better than others as genome-wide association studies and behavioral genetics have refined the picture. It remains one of the most readable popular gateways into thinking about genetics as a piece of natural history.",
     },
     {
         "title": "The Red Queen",
@@ -511,7 +511,7 @@ SCIENCE_BOOKS = [
         "year": 1993,
         "genre": "science",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "Ridley explores how sexual selection and the evolutionary arms race between parasites and hosts drive the evolution of sex.",
+        "summary": "Matt Ridley's The Red Queen: Sex and the Evolution of Human Nature, published in 1993, is a popular synthesis of late-twentieth-century evolutionary thinking on sex, gender, and human social behavior, drawing especially on the work of W.D. Hamilton, Geoffrey Parker, John Maynard Smith, and Robert Trivers. The title is taken from the Red Queen hypothesis in evolutionary biology, named after Lewis Carroll's Through the Looking-Glass — the idea that organisms must keep evolving simply to maintain their relative fitness against coevolving parasites and competitors. Ridley uses this framework to argue that sexual reproduction itself, despite its considerable costs compared with asexual reproduction, persists because it provides the only fast-enough generator of immunological diversity to keep up with rapidly evolving parasites. The book then extends the argument to mate choice, sexual dimorphism, and a series of more contested claims about innate human behavioral differences shaped by sexual selection. The book is more confident than current consensus is on some of the human-behavioral chapters and more careful than its summary makes it sound on the underlying biology, and remains one of the most read popular treatments of the field.",
     },
     {
         "title": "The Ancestor's Tale",
@@ -519,7 +519,7 @@ SCIENCE_BOOKS = [
         "year": 2004,
         "genre": "science",
         "mood": ["Sunday morning", "rainy afternoon"],
-        "summary": "Dawkins traces evolution backward from humans to the origin of life, meeting our ancestors at each branching point.",
+        "summary": "Richard Dawkins's The Ancestor's Tale, published in 2004, is structured as a Chaucer-inspired pilgrimage backward through evolutionary time. Beginning with humans alive today, Dawkins walks the reader to each successive 'rendezvous' point at which a different branch of the tree of life merges into our own lineage, working back to the last universal common ancestor and the origin of life itself. There are forty rendezvous in the original edition. The first joins us with the chimpanzees and bonobos around six million years ago; later we meet other apes, monkeys, prosimians, rodents, marsupials, fish, sponges, plants, fungi, and ultimately the unicellular organisms from which all multicellular life descended. At each rendezvous Dawkins pauses to tell a 'tale' — the Peacock's Tale on sexual selection, the Salamander's Tale on ring species, the Grasshopper's Tale on race and gradualism — that uses the encounter to illustrate a particular evolutionary idea or empirical episode. The book is one of Dawkins's most affectionate and his richest popular survey of biological diversity, written with his coauthor Yan Wong. A revised second edition was published in 2016 with updated phylogenetic dating.",
     },
     {
         "title": "The Greatest Show on Earth",
@@ -527,7 +527,7 @@ SCIENCE_BOOKS = [
         "year": 2009,
         "genre": "science",
         "mood": ["Sunday morning", "fresh start"],
-        "summary": "Dawkins lays out the comprehensive evidence for evolution, treating it as the most spectacular show in biology.",
+        "summary": "Richard Dawkins's The Greatest Show on Earth: The Evidence for Evolution, published in 2009 to coincide with the bicentennial of Darwin's birth and the sesquicentennial of On the Origin of Species, is the book in which Dawkins presents the empirical case for evolution itself, in contrast to the more theoretical machinery of his earlier books. The chapters work through the major lines of evidence: artificial selection in domestic plants and animals as a controlled illustration of the underlying process; the geological record of stratification and isotope dating; the fossil intermediates that have been recovered, including the celebrated transitional forms between fish and tetrapods, between dinosaurs and birds, and between land mammals and whales; comparative anatomy and the evidence of homologous and vestigial structures; embryological development; biogeography; the concordance of independent molecular phylogenies built from different gene families; and direct observation of evolutionary change in present-day populations of bacteria, fish, and finches. Dawkins is sharp about creationist counterarguments, which the book takes on directly, and the book is intended in part as an answer to them. It is one of the more rigorous popular surveys of evolutionary evidence in print.",
     },
     {
         "title": "Climbing Mount Improbable",
@@ -535,7 +535,7 @@ SCIENCE_BOOKS = [
         "year": 1996,
         "genre": "science",
         "mood": ["Sunday morning", "self-discovery"],
-        "summary": "Dawkins explains how natural selection builds complex structures like eyes and spider webs through gradual, cumulative steps.",
+        "summary": "Richard Dawkins's Climbing Mount Improbable, published in 1996, is the book in which he most patiently dismantles the intuition that complex biological structures are too improbable to have arisen by gradual natural selection. The titular metaphor imagines a mountain whose front face is a sheer cliff — the all-at-once leap that creationist arguments require — but whose back slope rises gradually through small upward steps that are individually probable. Each chapter climbs one such mountain. Dawkins works carefully through the eye, showing the surviving range of intermediate eye-types in living organisms from light-sensitive patches in flatworms through pinhole eyes in nautili to compound eyes in arthropods and camera eyes in vertebrates and cephalopods. He treats spider web construction, the strangler fig, the symbiotic relationship between figs and their pollinator wasps, and the evolution of flight through gliding intermediates. He also returns to his computer-simulated 'biomorph' thought experiments, extending them to demonstrate how arbitrary forms can be selected toward complex structures within thousands of generations. The book is one of the more pedagogically useful introductions to incremental adaptation.",
     },
     {
         "title": "Contact",
@@ -543,7 +543,7 @@ SCIENCE_BOOKS = [
         "year": 1985,
         "genre": "science",
         "mood": ["late night reflection", "existential crisis", "cozy night"],
-        "summary": "Sagan's novel about humanity's first contact with extraterrestrial intelligence, blending hard science with philosophical depth.",
+        "summary": "Carl Sagan's Contact, his only completed novel and an unusual entry in this catalog as a piece of science fiction, was published in 1985 and developed in parallel with a film script that took more than a decade to reach the screen as the 1997 Robert Zemeckis adaptation. The protagonist Eleanor Arroway, a Cornell-educated radio astronomer working at the Very Large Array in New Mexico, detects a clearly artificial repeating signal from the star Vega twenty-six light years away. Layered into the carrier wave is a video transmission of Hitler's 1936 Olympic broadcast and beneath that, instructions for building an enormous machine of unknown function. The novel follows Arroway through years of geopolitical wrangling over construction of the Machine, religious controversy in which a fundamentalist movement attempts to discredit the message, attempts at sabotage, and eventually the journey itself, in which a small crew is briefly transported via wormhole to a meeting with a being that takes the form of Arroway's deceased father. Sagan, a working planetary scientist, is unusually serious about the science and unusually generous to the religious arguments his protagonist confronts.",
     },
     {
         "title": "The Martian",
@@ -551,7 +551,7 @@ SCIENCE_BOOKS = [
         "year": 2011,
         "genre": "science",
         "mood": ["hustle mode", "beach read", "summer vibes"],
-        "summary": "An astronaut stranded on Mars must use science and engineering to survive, blending humor with realistic problem-solving.",
+        "summary": "Andy Weir's The Martian, originally self-published in 2011 and reissued in 2014 by Crown after it became an internet phenomenon, is a hard-science-fiction survival novel that improbably became a global bestseller and the basis for Ridley Scott's 2015 film adaptation. The astronaut Mark Watney, a botanist and engineer assigned to the third crewed expedition to Mars, is presumed dead after a freak dust storm during an emergency evacuation and abandoned by his crewmates on the surface of the planet. Most of the book is in the form of Watney's logs, written in a wisecracking engineering register, as he uses the equipment left behind by the mission to grow potatoes from Thanksgiving rations and Martian regolith fertilized with crew sewage, manufacture water by hydrogen-burning rocket fuel, hack a long-decommissioned Pathfinder probe to reestablish contact with Earth, and ultimately drive a modified rover thirty-two hundred kilometers across the planet to the next planned landing site. Interspersed are NASA chapters about the rescue effort. The book's real interest is the granular plausibility of its problem-solving, and it has become one of the more popular contemporary works of competent-protagonist science fiction.",
     },
     {
         "title": "Superintelligence",
@@ -559,7 +559,7 @@ SCIENCE_BOOKS = [
         "year": 2014,
         "genre": "science",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Bostrom examines the risks of artificial superintelligence and the challenge of ensuring it aligns with human values.",
+        "summary": "Nick Bostrom's Superintelligence: Paths, Dangers, Strategies, published in 2014, is the book that brought the existential-risk argument about advanced artificial intelligence from a small philosophical subculture into the mainstream of technology discussion. Bostrom, the founding director of the Future of Humanity Institute at Oxford, defines superintelligence as any cognitive system that substantially exceeds human performance in essentially every domain, and works carefully through three intertwined questions: how a superintelligence might be developed (whole-brain emulation, scaled-up machine learning, deliberate engineering); what dynamics might govern its emergence (slow takeoff versus fast, single project versus multipolar competition); and what makes the alignment problem so hard. He introduces several now-standard concepts including the orthogonality thesis — that a system can have arbitrarily great instrumental capability paired with essentially any goal — instrumental convergence, the treacherous turn, and the corrigibility problem. The book is dense, often abstract, and unsparing in its diagnosis of how easy it would be to get the development of advanced AI catastrophically wrong, and it has reshaped the working vocabulary of AI safety research and policy thinking over the decade since publication.",
     },
     {
         "title": "The Singularity Is Near",
@@ -567,7 +567,7 @@ SCIENCE_BOOKS = [
         "year": 2005,
         "genre": "science",
         "mood": ["existential crisis", "fresh start", "career pivot"],
-        "summary": "Kurzweil predicts that accelerating technological change will lead to a merging of human and machine intelligence.",
+        "summary": "Ray Kurzweil's The Singularity Is Near, published in 2005, is the book that made the term 'singularity' a piece of mass-culture vocabulary, drawing on earlier work by Vernor Vinge and articulating the optimistic transhumanist case that exponential technological progress will produce, around the year 2045 by Kurzweil's projection, a moment at which machine intelligence so far exceeds biological intelligence that the historical period after that point becomes essentially unforeseeable from before it. Kurzweil organizes his argument around what he calls the Law of Accelerating Returns, illustrated with a long series of plots from microchip transistor counts to genome sequencing costs that have indeed continued to fall during the years since publication. He is most controversial in his projections about brain reverse engineering, mind uploading, and engineered biological immortality, and in his confident dating of when those become available. The book has been criticized as both technologically over-optimistic and ethically thin, and many of its specific timelines have already missed; but as a marker of how the early-2000s techno-futurist coalition imagined the century, it is a primary document worth reading critically.",
     },
     {
         "title": "The Age of Spiritual Machines",
@@ -575,7 +575,7 @@ SCIENCE_BOOKS = [
         "year": 1999,
         "genre": "science",
         "mood": ["existential crisis", "career pivot"],
-        "summary": "Kurzweil envisions a future where machines match and exceed human intelligence, exploring implications for consciousness.",
+        "summary": "Ray Kurzweil's The Age of Spiritual Machines, published in 1999 a few years before the dot-com bust, is the earlier and more discursive of his two major popular forecasting books and develops in less polished form many of the ideas he would later compress into The Singularity Is Near. Kurzweil presents what he calls the Law of Accelerating Returns through a chronology of cosmic and biological evolution that he then extrapolates into the future, walks through his then-novel argument that brain emulation will become technically possible within a few decades, and devotes substantial space to questions about machine consciousness, identity, and rights. The book is structured loosely as a sequence of historical and predictive essays interspersed with Q-and-A dialogues between the author and a fictional human interlocutor named Molly, who progresses through the chapters from reasonable skeptic to digital posthuman. Some of the specific predictions for 2009, 2019, and 2029 have aged in interesting ways, with the personal-assistant-AI predictions arriving more or less on schedule and the brain-emulation predictions still essentially out of reach. The book remains a useful primary document in the history of late-1990s techno-futurism.",
     },
     {
         "title": "Hackers: Heroes of the Computer Revolution",
@@ -583,7 +583,7 @@ SCIENCE_BOOKS = [
         "year": 1984,
         "genre": "science",
         "mood": ["side project vibes", "hustle mode"],
-        "summary": "Levy chronicles the hackers who built the computer revolution, from MIT's Tech Model Railroad Club to Silicon Valley.",
+        "summary": "Steven Levy's Hackers: Heroes of the Computer Revolution, published in 1984, is the book that popularized the original meaning of the word 'hacker' as a member of the loose but identifiable subculture of curious, virtuosic, anti-authoritarian computer enthusiasts who built the personal computer industry. Levy organizes the book in three sections. The first covers the late-1950s and 1960s MIT Tech Model Railroad Club and the early Artificial Intelligence Laboratory, where the original culture took shape around the TX-0 and PDP-1 minicomputers; here Levy first articulates what he calls the Hacker Ethic — a set of unwritten norms about open access to information, decentralization, and judging people by their work rather than credentials. The second section covers the mid-1970s hardware hackers of Silicon Valley, the Homebrew Computer Club, the Apple founding, and the rise of the personal-computer industry. The third covers the early game-software hackers of the 1980s and the commercial frictions that began to wear on the original ethic. Levy revised the book multiple times; the 25th-anniversary edition includes an updated afterword. It remains a primary document of computing history and a cited classic.",
     },
     {
         "title": "The Soul of a New Machine",
@@ -591,7 +591,7 @@ SCIENCE_BOOKS = [
         "year": 1981,
         "genre": "science",
         "mood": ["hustle mode", "side project vibes"],
-        "summary": "Kidder follows a team of engineers racing to build a new minicomputer, capturing the obsessive drive of engineering culture.",
+        "summary": "Tracy Kidder's The Soul of a New Machine, published in 1981 and winner of the 1982 Pulitzer Prize for general nonfiction, is a landmark of long-form technology journalism, written from a year Kidder spent embedded inside a project at Data General Corporation in Westborough, Massachusetts. The team, the so-called Eagle group led by the engineer Tom West, is racing to design a 32-bit minicomputer in roughly twelve months to compete against Digital Equipment Corporation's anticipated VAX, with most of the work done by recent college graduates putting in eighty-hour weeks under West's deliberately opaque management. Kidder follows the project through every phase: the architectural arguments, the slow assembly of the Multiprocessor Communications Adapter, the debugging marathons, the eventual successful boot. The book is most enduring not for its technical detail — which is now thirty years out of date — but for its anthropological portrait of an engineering subculture's commitments, its fluency at describing how creative technical work actually feels from inside, and its honest treatment of the sacrifices the company extracted in exchange. It is widely regarded as the founding text of the technology-team narrative genre.",
     },
     {
         "title": "The Mythical Man-Month",
@@ -599,7 +599,7 @@ SCIENCE_BOOKS = [
         "year": 1975,
         "genre": "science",
         "mood": ["productivity", "daily grind"],
-        "summary": "Brooks's classic on software engineering argues that adding people to a late project makes it later.",
+        "summary": "Frederick P. Brooks Jr.'s The Mythical Man-Month, published in 1975 and reissued with new essays in 1995, is the founding text of software project management, drawn from Brooks's experience leading the development of IBM's OS/360 operating system in the 1960s. The book is a collection of essays in which Brooks attempts to extract durable lessons from what he calls his most expensive failure. The most famous of these is Brooks's Law: 'adding manpower to a late software project makes it later,' on the grounds that the additional people require training, fragment communication, and increase coordination overhead faster than they add productive output. Other essays articulate the tar pit metaphor for the long unrewarding middle of large software projects, the surgical team metaphor for high-leverage small teams, the second-system effect in which a successful first system tempts an over-elaborate second, the No Silver Bullet essay on essential versus accidental complexity, and the concept of conceptual integrity as the most important quality of a designed system. The book has been continuously in print and is widely regarded as required reading in the discipline; the twentieth-anniversary edition added Brooks's reflections on what had and had not held up.",
     },
     {
         "title": "Code: The Hidden Language of Computer Hardware and Software",
@@ -607,7 +607,7 @@ SCIENCE_BOOKS = [
         "year": 1999,
         "genre": "science",
         "mood": ["side project vibes", "rainy afternoon"],
-        "summary": "Petzold builds up from flashlights and Morse code to explain how computers work at the most fundamental level.",
+        "summary": "Charles Petzold's Code: The Hidden Language of Computer Hardware and Software, published in 1999, is one of the most respected popular introductions to how digital computers actually work. The book is written for a curious general reader without prior technical background and builds up the abstractions of computing one at a time. Petzold begins with very simple codes — Morse code, Braille, two flashlights blinking in a window — and uses them to introduce the deeper idea of representing information through patterns. From there he assembles, in an extended thought experiment, an actual working computer. He introduces electrical relays, then logic gates, then full and half adders, then memory cells, then a small instruction set, then an assembler, then higher-level programming languages and operating systems. The book closes with a quick tour of graphical user interfaces and the early Web. Petzold's pedagogical choice is unusual: he refuses to gesture at the abstractions and instead actually walks the reader through the construction. The result is a book that demands attention but actually delivers conceptual understanding, and it is widely recommended in computer-science programs as a first-year reading.",
     },
     {
         "title": "The Art of Computer Programming, Volume 1",
@@ -615,7 +615,7 @@ SCIENCE_BOOKS = [
         "year": 1968,
         "genre": "science",
         "mood": ["late night reflection", "productivity"],
-        "summary": "Knuth's magnum opus on algorithms and programming, considered the bible of computer science.",
+        "summary": "Donald Knuth's The Art of Computer Programming, Volume 1: Fundamental Algorithms, first published in 1968 and continuously revised since, is the opening volume of one of the most ambitious and idiosyncratic projects in the history of technical publishing. Knuth set out in the early 1960s to write a comprehensive treatise on the analysis of computer algorithms; the planned seven volumes have grown and contracted over six decades, with Volume 4 alone now extending to multiple sub-volumes. Volume 1 covers foundational material: a long chapter on the mathematical preliminaries needed to follow the rest of the work, including elementary combinatorics, generating functions, and asymptotic analysis; a description of Knuth's idealized assembly-language target machine MIX, used throughout the series for concrete pseudocode; and an extensive treatment of the basic data structures, with linear lists, trees, and arithmetic algorithms. Knuth's insistence on rigorous mathematical analysis of algorithm efficiency, his typographical revolution that produced the TeX system as a side effect, and his method of including problems with difficulty ratings have all become standard. The series has been called by many working computer scientists the closest thing to a sacred text the field has produced.",
     },
     {
         "title": "Artificial Intelligence: A Modern Approach",
@@ -623,7 +623,7 @@ SCIENCE_BOOKS = [
         "year": 1995,
         "genre": "science",
         "mood": ["productivity", "career pivot"],
-        "summary": "The definitive textbook on AI, covering everything from search algorithms to machine learning and natural language processing.",
+        "summary": "Stuart Russell and Peter Norvig's Artificial Intelligence: A Modern Approach, first published in 1995 and now in its fourth edition, is the most widely assigned textbook in the field and is used in introductory and graduate AI courses at well over a thousand universities. The book is organized around the framing of AI as the study of rational agents — systems that perceive their environment and take actions to maximize a measure of expected performance — rather than the older framings around symbolic logic alone or imitation of human cognition. From this central frame the book builds out classical search and planning algorithms, constraint satisfaction, propositional and first-order logic, knowledge representation and ontologies, probabilistic reasoning under uncertainty, the full range of supervised and unsupervised machine learning techniques, reinforcement learning, perception and computer vision, natural language understanding and generation, robotics, multi-agent systems, and a substantial closing section on the philosophical and ethical foundations of the field. The fourth edition substantially expanded the deep learning and ethics chapters in light of the late-2010s revolution. The book is broad rather than deep, and many graduate students supplement it with specialist texts, but it remains the canonical first reference for the field.",
     },
     {
         "title": "Human Compatible",
@@ -631,7 +631,7 @@ SCIENCE_BOOKS = [
         "year": 2019,
         "genre": "science",
         "mood": ["existential crisis", "career pivot"],
-        "summary": "Russell argues that the standard model of AI is fundamentally flawed and proposes a new approach to building beneficial machines.",
+        "summary": "Stuart Russell's Human Compatible: Artificial Intelligence and the Problem of Control, published in 2019, is an accessible book-length statement of Russell's argument that the standard formulation of AI as the maximization of an externally specified objective function is dangerously incomplete and that a better foundation is needed before machine intelligence reaches and exceeds the human level. Russell, a Berkeley computer scientist who is one of the authors of the dominant AI textbook, formalizes what he calls the standard model — a system optimizing a fixed objective — and argues that this model produces several reliable failure modes including reward hacking, instrumental convergence on resource acquisition and self-preservation, and the inability of operators to safely turn the system off if it has been built to maximize its objective. He proposes in its place an alternative he calls inverse reward design, in which the system holds explicit uncertainty about the human objective, attempts to learn that objective by observing human behavior under bounded rationality, and is structured so that human oversight is part of the system's expected utility rather than an obstacle to it. The book is the most accessible technical statement of his alignment program.",
     },
     {
         "title": "Deep Learning",
@@ -639,7 +639,7 @@ SCIENCE_BOOKS = [
         "year": 2016,
         "genre": "science",
         "mood": ["productivity", "side project vibes"],
-        "summary": "The comprehensive textbook on deep learning covering mathematical foundations, modern techniques, and research frontiers.",
+        "summary": "Ian Goodfellow, Yoshua Bengio, and Aaron Courville's Deep Learning, published by MIT Press in 2016, is the comprehensive academic textbook that defined the field at the moment of its broad consolidation. The book is freely available online and is used in graduate machine-learning programs at most major universities. It is organized in three parts. The first reviews the applied mathematics needed to follow the rest: linear algebra, probability and information theory, numerical computation, and the foundations of machine learning. The second part covers the modern deep-learning toolkit as it stood in the mid-2010s: feedforward networks, regularization, optimization for training, convolutional neural networks for vision, sequence modeling with recurrent and recursive networks, applications to speech and natural language. The third part covers research-frontier topics including linear factor models, autoencoders, representation learning, structured probabilistic graphical models, Monte Carlo methods, the partition function, approximate inference, and deep generative models. The book has aged unevenly — the transformer architecture published the year of its release would shortly displace much of the sequence-modeling content — but it remains the standard reference for foundational deep-learning concepts and the mathematical underpinnings of the field.",
     },
     {
         "title": "The Master Algorithm",
@@ -647,7 +647,7 @@ SCIENCE_BOOKS = [
         "year": 2015,
         "genre": "science",
         "mood": ["career pivot", "side project vibes"],
-        "summary": "Domingos surveys the five tribes of machine learning and their quest to find the one algorithm that can learn anything.",
+        "summary": "Pedro Domingos's The Master Algorithm, published in 2015, is a popular introduction to machine learning organized around a clever pedagogical framework: the field, Domingos argues, has been historically divided into five 'tribes,' each of which carries its own paradigmatic assumption about what learning fundamentally is. The Symbolists, descended from logic and good-old-fashioned AI, treat learning as the discovery of explicit rules. The Connectionists, descended from neuroscience and now the dominant tribe, treat it as the calibration of neural networks. The Evolutionaries treat it as a fitness-driven search through possible programs by genetic algorithms. The Bayesians treat it as principled probabilistic inference from prior to posterior. The Analogizers treat it as similarity-based reasoning, exemplified by support vector machines and nearest-neighbor methods. Domingos walks through the strengths and limits of each tribe, the key historical figures behind each, and his own argument that the future of the field lies in synthesizing all five into what he calls a master algorithm. The book is dated by the explosion of deep learning since publication, but its conceptual map remains a useful framework for thinking about why different machine-learning techniques work for different problems.",
     },
     {
         "title": "Weapons of Math Destruction",
@@ -655,7 +655,7 @@ SCIENCE_BOOKS = [
         "year": 2016,
         "genre": "science",
         "mood": ["existential crisis", "career pivot"],
-        "summary": "O'Neil exposes how big data algorithms can increase inequality, reinforcing racism, and threatening democracy.",
+        "summary": "Cathy O'Neil's Weapons of Math Destruction, published in 2016, is a sharp polemical critique of the proliferation of opaque, large-scale algorithmic decision systems in American institutions, written by a Harvard PhD mathematician who left the hedge-fund world after the 2008 financial crisis. O'Neil's working definition of a Weapon of Math Destruction is an algorithm that scales widely, is operationally opaque to its subjects, and produces feedback loops that systematically disadvantage already-disadvantaged populations. She walks through example domains in turn: predictive policing systems that funnel patrols back to neighborhoods that produced more arrests in the past; credit-scoring systems that punish thin-file applicants from poor communities; algorithmic teacher-evaluation systems that fire competent educators on noisy proxies; recidivism-prediction tools used in sentencing; targeted advertising systems that systematically exclude protected groups from housing and employment opportunities. O'Neil's central technical point is unobjectionable to working data scientists: an automated system trained on biased data will replicate the bias at scale. The book has been hugely influential in policy circles and in the discipline that has come to call itself algorithmic accountability or fairness, accountability, and transparency in machine learning.",
     },
     {
         "title": "The Idea Factory: Bell Labs and the Great Age of American Innovation",
@@ -663,7 +663,7 @@ SCIENCE_BOOKS = [
         "year": 2012,
         "genre": "science",
         "mood": ["hustle mode", "side project vibes"],
-        "summary": "Gertner tells the story of Bell Labs, where the transistor, laser, and information theory were born.",
+        "summary": "Jon Gertner's The Idea Factory, published in 2012, is a popular institutional biography of Bell Telephone Laboratories during its twentieth-century golden age, when the research arm of AT&T's regulated telephone monopoly produced an extraordinary cluster of technologies including the transistor, the laser, the photovoltaic solar cell, the communications satellite, the Unix operating system, the C programming language, and the foundational work in information theory and statistical quality control. Gertner organizes the book around the personalities of the lab's most prominent researchers — Mervin Kelly, Claude Shannon, William Shockley, John Bardeen, Walter Brattain, John Pierce, Bill Baker, and others — and the deliberate institutional design choices that made the lab unusually productive: long planning horizons, freedom to pursue self-directed research, physical proximity between fundamental and applied scientists, regulated-monopoly funding stability, and a culture that valued patient theoretical work alongside hard engineering. The book is also a quiet elegy for the kind of corporate research lab that the post-1984 breakup of AT&T and the subsequent shift to short-term shareholder economics have made nearly extinct. It is widely read in technology-policy circles as a case study in industrial research organization.",
     },
     {
         "title": "The Pragmatic Programmer",
@@ -671,7 +671,7 @@ SCIENCE_BOOKS = [
         "year": 1999,
         "genre": "science",
         "mood": ["productivity", "side project vibes", "career pivot"],
-        "summary": "Hunt and Thomas offer practical advice on software craftsmanship, from writing flexible code to managing complexity.",
+        "summary": "Andrew Hunt and David Thomas's The Pragmatic Programmer, originally published in 1999 and substantially revised in a twentieth-anniversary edition in 2019, is one of the most widely read and reread books in working software development. Subtitled 'From Journeyman to Master' in the original edition and 'Your Journey to Mastery' in the twentieth-anniversary edition, the book is a collection of about a hundred short, practical essays on the craft of writing software, drawn from Hunt and Thomas's combined decades of consulting experience. The advice ranges from the small and concrete — DRY (Don't Repeat Yourself), orthogonal design, defensive programming with assertions, version-controlling everything, automating builds — to broader career-shaping recommendations about the importance of learning a new language every year, knowing your tools at expert level, and treating one's work as a craft. The book is unusual in working-programmer literature for the breadth of its advice, the unfussy tone, and its insistence that the qualities the authors call 'pragmatic' are themselves a kind of professional virtue. It has been continuously in print for a quarter century and is widely placed on lists of the books professional software developers most consistently recommend.",
     },
     {
         "title": "Longitude",
@@ -679,7 +679,7 @@ SCIENCE_BOOKS = [
         "year": 1995,
         "genre": "science",
         "mood": ["rainy afternoon", "Sunday morning"],
-        "summary": "Sobel tells the story of John Harrison's forty-year quest to build a clock accurate enough to determine longitude at sea.",
+        "summary": "Dava Sobel's Longitude, published in 1995, is a short, well-told popular history of the eighteenth-century longitude problem and the self-taught Yorkshire clockmaker John Harrison who solved it. By the early eighteenth century European maritime navigation could fix latitude reliably from celestial observations but had no practical method for fixing longitude at sea, which depended on knowing the time at a reference meridian — usually Greenwich — and comparing it to local solar noon. Existing pendulum clocks failed at sea because the rolling deck and changes in temperature and humidity disrupted them. After the loss of four British ships and nearly two thousand sailors in the 1707 Scilly disaster, Parliament's Longitude Act of 1714 offered a prize of up to twenty thousand pounds for an accurate solution. Harrison spent more than four decades building successive marine chronometers — H1, H2, H3, and finally the watch-sized H4 — to demonstrate that a sufficiently temperature-stable mechanical clock could keep accurate time at sea. The book is also the story of the Royal Astronomer Nevil Maskelyne, whose preference for the rival lunar-distance method led him to obstruct Harrison's prize claim. Sobel narrates the dispute clearly and won the book a wide popular readership.",
     },
     {
         "title": "The Periodic Table",
@@ -687,7 +687,7 @@ SCIENCE_BOOKS = [
         "year": 1975,
         "genre": "science",
         "mood": ["rainy afternoon", "self-discovery"],
-        "summary": "Levi uses chemical elements as metaphors for episodes in his life, from growing up Jewish in fascist Italy to surviving Auschwitz.",
+        "summary": "Primo Levi's The Periodic Table, published in Italian in 1975 and in English translation in 1984, is a short, hybrid memoir-essay-fiction collection by the Italian chemist and Auschwitz survivor that the Royal Institution voted in 2006 the best science book ever written. The book consists of twenty-one chapters, each named for a chemical element, and each braiding some autobiographical episode from Levi's life with the chemistry of that element. The early chapters trace his Jewish-Piedmontese family origins through ancestors as Argon, his university chemistry training in increasingly antisemitic Fascist Italy as Hydrogen and Zinc, his early professional life under the racial laws as Iron and Potassium. The harder middle chapters recount his deportation to Auschwitz and survival through forced laboratory work as Cerium and Vanadium. The closing chapters cover his postwar career as a chemist at a Turin paint manufacturer through Chromium, Nitrogen, and Carbon, the last of which is one of the most beautiful short essays ever written about an element. The book is unmistakably a major work of twentieth-century European literature in the form of a chemistry memoir, and is widely taught alongside Levi's earlier If This Is a Man.",
     },
     {
         "title": "Uncle Tungsten",
@@ -695,7 +695,7 @@ SCIENCE_BOOKS = [
         "year": 2001,
         "genre": "science",
         "mood": ["cozy night", "self-discovery"],
-        "summary": "Sacks recalls his childhood fascination with chemistry and the periodic table, blending memoir with the history of science.",
+        "summary": "Oliver Sacks's Uncle Tungsten, published in 2001, is the neurologist and writer's memoir of a London childhood saturated by chemistry, family, and refuge during and after the Second World War. The title comes from his uncle Dave, the proprietor of Tungstalite Limited, a small London company that manufactured tungsten-filament light bulbs and tungsten alloys, and who patiently introduced the young Sacks to the elements through workbench demonstrations, mineral specimens, and a small home laboratory. Sacks devotes substantial attention to the history of the periodic table itself, from Lavoisier and Dalton through Mendeleev and Moseley, alongside his own boyhood experiments with magnesium ribbons, photographic chemistry, and his prized analytical balance. Interleaved with the science is the harder personal material: his family's Jewish-Lithuanian origins, his hated wartime evacuation to a rural boarding school where he was beaten and starved, the long shadow of his mother's role as a senior anatomist who showed him human cadavers as a small boy, and the early mental illness of his older brother Michael. The book is one of the most affecting English-language memoirs of a scientific childhood and a model of how to interleave biography and chemistry without sentimentalizing either.",
     },
     {
         "title": "The Man Who Mistook His Wife for a Hat",
@@ -703,7 +703,7 @@ SCIENCE_BOOKS = [
         "year": 1985,
         "genre": "science",
         "mood": ["rainy afternoon", "self-discovery"],
-        "summary": "Sacks presents extraordinary clinical tales of patients with bizarre neurological conditions, revealing the mysteries of the brain.",
+        "summary": "Oliver Sacks's The Man Who Mistook His Wife for a Hat, published in 1985, is the case-history collection that established Sacks as the most widely read neurologist-essayist of his generation and helped consolidate the literary genre that has come to be called narrative medicine. The book collects twenty-four short clinical vignettes drawn from Sacks's practice, each of which uses an unusual neurological condition to illuminate a broader point about how the brain constructs experience. The title essay describes a music professor whose visual agnosia caused him to mistake his wife's head for his hat as he reached to put it back on; other essays profile the man with a profound case of Korsakov's syndrome who could form no new memories and lived in a permanently re-drafted present, the woman who had lost her sense of proprioception and described feeling disembodied, the autistic twins who could mentally factor extraordinarily large numbers, and the elderly woman dying of neurosyphilis whose remaining symptoms included an intense joyful exuberance she did not want to lose. Sacks writes in the case-history tradition of the Russian neurologist A.R. Luria, treating patients as whole persons rather than diagnostic specimens. The book established the modern popular neurology genre.",
     },
     {
         "title": "An Anthropologist on Mars",
@@ -711,7 +711,7 @@ SCIENCE_BOOKS = [
         "year": 1995,
         "genre": "science",
         "mood": ["rainy afternoon", "self-discovery"],
-        "summary": "Sacks profiles seven individuals whose neurological conditions give them unique perspectives on the world.",
+        "summary": "Oliver Sacks's An Anthropologist on Mars, published in 1995, is a follow-up to The Man Who Mistook His Wife for a Hat that exchanges that book's two-dozen short vignettes for seven longer case studies, each given chapter-length space to develop. The cases are unusually varied: an artist whose loss of color vision after a road accident transformed his entire imaginative world; a midwestern surgeon with severe Tourette syndrome who managed nonetheless to operate at high skill; a man blind from infancy whose sight was surgically restored in middle age and who could not learn to interpret what he was now seeing; a savant autistic artist named Stephen Wiltshire whose architectural drawings recorded entire skylines from a single helicopter pass; the patient Virgil whose recovery from blindness was incomplete; the painter Franco Magnani who could reproduce his Tuscan childhood village from memory after decades away; and the title's autistic animal scientist Temple Grandin, whose self-description gave Sacks his title. The longer form lets Sacks pursue questions of neurological adaptation, plasticity, and identity in greater depth than the previous book allowed, and the Grandin chapter in particular is widely credited with helping bring autistic perspectives into mainstream awareness.",
     },
     {
         "title": "Awakenings",
@@ -719,7 +719,7 @@ SCIENCE_BOOKS = [
         "year": 1973,
         "genre": "science",
         "mood": ["rainy afternoon", "late night reflection"],
-        "summary": "Sacks recounts how he used L-DOPA to awaken patients who had been frozen by encephalitis lethargica for decades.",
+        "summary": "Oliver Sacks's Awakenings, first published in 1973 and revised through several subsequent editions, is the book that established his reputation outside the medical profession and the source material for the 1990 film with Robin Williams and Robert De Niro. The book documents Sacks's work in the late 1960s at Beth Abraham Hospital in the Bronx with a group of long-institutionalized patients, almost all of whom were the surviving victims of encephalitis lethargica, the global 'sleeping sickness' epidemic that had swept the world from 1916 to roughly 1927 and left many of its survivors in a state of progressively severe Parkinsonian rigidity, frozen in time for decades. In 1969 Sacks began administering the recently introduced drug L-DOPA, then in early use for ordinary Parkinson's disease, to these patients, and observed dramatic and complex awakenings: speech and movement returned, decades of frozen interior life poured out, but for many patients the effect was unstable and accompanied by side effects that eventually overwhelmed the therapy. The book is built around twenty patient case histories told individually and frankly. It is one of the founding works of clinical narrative writing and remains continuously in print.",
     },
     {
         "title": "The Disappearing Spoon",
@@ -727,7 +727,7 @@ SCIENCE_BOOKS = [
         "year": 2010,
         "genre": "science",
         "mood": ["beach read", "Sunday morning"],
-        "summary": "Kean tells wild, true tales from every corner of the periodic table, making chemistry entertaining and surprising.",
+        "summary": "Sam Kean's The Disappearing Spoon, published in 2010, is a popular history of the periodic table organized as a series of episodic stories about individual elements and the people who discovered, used, abused, or were poisoned by them. The title comes from a popular nineteenth-century chemistry-club gag in which a spoon cast from gallium — a metal with a melting point just below body temperature — would dissolve in the host's hot tea. Kean walks through the elements in roughly the order their stories appear, rather than by atomic number, and the chapters cluster loosely by theme: the politics of element naming, especially the bitter rivalries between Cold-War-era American and Soviet superheavy-element groups; the medical history of gadolinium, technetium, and other isotopes; the social history of phosphorus matches and mercury hat-makers; the scientific careers of Mendeleev, Marie Curie, Glenn Seaborg, and Lise Meitner; the strange chemical idiosyncrasies that gave us tungsten light bulbs, helium balloons, lithium-ion batteries, fluorinated polymers, and the bismuth pharmaceutical Pepto-Bismol. The book is briskly written and occasionally loose with detail, but as an entry-level popular treatment of inorganic chemistry that makes the periodic table feel like a story rather than a chart, it works well.",
     },
     {
         "title": "Astrophysics for People in a Hurry",
@@ -735,7 +735,7 @@ SCIENCE_BOOKS = [
         "year": 2017,
         "genre": "science",
         "mood": ["commute listen", "morning ritual"],
-        "summary": "Tyson condenses the essential ideas of astrophysics into a quick, accessible read for busy people.",
+        "summary": "Neil deGrasse Tyson's Astrophysics for People in a Hurry, published in 2017, is a short popular synthesis of contemporary astrophysics by the director of the Hayden Planetarium and probably the most recognized American science communicator of his generation. The book is deliberately brief — twelve short chapters totaling fewer than two hundred pages — and is structured as a fast tour of the major topics a curious reader might want a working sense of: the first few seconds after the Big Bang, the cosmic microwave background, the elements heavier than hydrogen and helium that were forged in stars and supernovae, the role of light in carrying nearly all astronomical information, the structure of galaxies, the evidence for dark matter and dark energy, the search for life elsewhere, and a closing reflection on the cosmic perspective and what Tyson takes to be its moral implications. The book is breezy and has been criticized by some specialists for the inevitable simplifications that come with its length and pace, but it is squarely aimed at a reader who wants to spend a few hours getting oriented to modern astrophysics rather than starting a graduate program. It became a major bestseller and a frequent gift book.",
     },
     {
         "title": "The Particle at the End of the Universe",
@@ -743,7 +743,7 @@ SCIENCE_BOOKS = [
         "year": 2012,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Carroll tells the story of the hunt for the Higgs boson, explaining why it matters for our understanding of reality.",
+        "summary": "Sean Carroll's The Particle at the End of the Universe, published in 2012 just months after the formal announcement at CERN, is a popular history and explanation of the discovery of the Higgs boson at the Large Hadron Collider in July of that year. Carroll, a Caltech theoretical physicist, walks readers through the physical theory that predicted the particle: the Standard Model of particle physics, the field-based picture of the quantum vacuum, the symmetry-breaking mechanism worked out in the early 1960s by Peter Higgs along with Robert Brout, François Englert, Gerald Guralnik, Carl Hagen, and Tom Kibble, and the role of the Higgs field in giving fundamental particles their mass. He then traces the experimental history that led to the LHC's construction, the design and engineering of the ATLAS and CMS detectors, the analysis methods that distinguished the new particle's signal from background, and the institutional politics that surrounded the announcement. The book is unusually candid about why this particular result, while a triumphant confirmation of the Standard Model, also clarifies how thin our current theoretical understanding extends beyond it, and remains one of the better popular accounts of a landmark twenty-first-century physics result.",
     },
     {
         "title": "Something Deeply Hidden",
@@ -751,7 +751,7 @@ SCIENCE_BOOKS = [
         "year": 2019,
         "genre": "science",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Carroll argues for the many-worlds interpretation of quantum mechanics as the simplest explanation of reality.",
+        "summary": "Sean Carroll's Something Deeply Hidden, published in 2019, is a popular argument for taking the many-worlds interpretation of quantum mechanics seriously — and indeed treating it as the default ontology — by a Caltech theoretical physicist who has spent much of his career thinking about the foundations of quantum mechanics and cosmology. Carroll opens with the observation that the standard textbook treatment of quantum mechanics, often called the Copenhagen interpretation, embeds an awkward two-rule structure: smooth Schrödinger evolution most of the time, mysterious instantaneous wavefunction collapse during measurement. He argues that the Hugh Everett III formulation from 1957, which retains only the smooth evolution and accepts the wavefunction's literal existence as physical, is by Occam's-razor reasoning the simplest interpretation, with the apparent multiplication of worlds an unavoidable cost rather than a problem. The book walks through Bell's theorem, decoherence, the measurement problem, the role of branching, the question of where probabilities come from in a strictly deterministic theory, and Carroll's own program with collaborators on deriving spacetime from quantum entanglement structure. The book is provocative and clearly written, and represents one of the most rigorous popular cases for many-worlds in print.",
     },
     {
         "title": "The Big Picture",
@@ -759,7 +759,7 @@ SCIENCE_BOOKS = [
         "year": 2016,
         "genre": "science",
         "mood": ["late night reflection", "existential crisis", "self-discovery"],
-        "summary": "Carroll explores how physics, philosophy, and human purpose fit together in a naturalistic worldview.",
+        "summary": "Sean Carroll's The Big Picture, published in 2016, is the most ambitious of his popular books, attempting to bring physics, philosophy of mind, and ethics into a single naturalistic framework. Carroll calls his position 'poetic naturalism': there is one fundamental physical reality describable by the natural sciences, and human concepts at higher levels of description — temperature, life, mind, value — are not literal additional metaphysical layers but useful patterns of talking about the underlying physics that earn their keep by being predictively or pragmatically helpful. The book is built in fifty short chapters that move outward from the foundations: the laws of physics and what is known to be settled science, the second law of thermodynamics and the arrow of time, the emergence of complexity from simple rules, the origin and nature of life, consciousness, free will, the constructive function of moral reasoning in the absence of cosmic moral authority, and the significance of human meaning in a finite universe with no built-in purpose. Carroll is unusually candid about where his confidence is high and where it is provisional, and the book is widely read as a sympathetic and rigorous statement of contemporary scientific naturalism.",
     },
     {
         "title": "Flatland: A Romance of Many Dimensions",
@@ -767,7 +767,7 @@ SCIENCE_BOOKS = [
         "year": 1884,
         "genre": "science",
         "mood": ["cozy night", "late night reflection"],
-        "summary": "Abbott's satirical novella about a two-dimensional world makes higher dimensions intuitive through clever storytelling.",
+        "summary": "Edwin A. Abbott's Flatland: A Romance of Many Dimensions, published in 1884 under the pseudonym A. Square by the English schoolmaster and theologian who wrote it, is a satirical novella that doubles as one of the earliest popular expositions of higher-dimensional geometry. The narrator, a Square living in a strictly two-dimensional world called Flatland, describes the rigid social order of his society — circles at the top of the hierarchy, isosceles triangles at the bottom, women degraded to mere line segments — and the elaborate visual conventions Flatlanders use to identify each other since they can only ever see one another in cross-section. The plot turns on the visit of a three-dimensional Sphere who attempts to explain the third dimension to the Square. The Square ascends and is converted, and is then jailed for heresy when he tries to spread his vision back home. The book is on its surface a charming geometry primer for general readers, and on a second read a sharp Victorian satire of the rigidity of class and gender hierarchies. It has remained continuously in print for more than a century and shaped popular intuitions about dimensional thinking.",
     },
     {
         "title": "The Eighth Day of Creation",
@@ -775,7 +775,7 @@ SCIENCE_BOOKS = [
         "year": 1979,
         "genre": "science",
         "mood": ["rainy afternoon", "self-discovery"],
-        "summary": "Judson's definitive history of molecular biology, tracing the discoveries of DNA, RNA, and proteins through the scientists who made them.",
+        "summary": "Horace Freeland Judson's The Eighth Day of Creation, published in 1979 and substantially expanded in 1996, is the definitive popular history of the founding decades of molecular biology and one of the great works of twentieth-century scientific journalism. Judson, a former Time correspondent and humanities professor, conducted hundreds of hours of interviews with the founding generation of molecular biologists during the 1970s while many were still working scientists, and the book is built around their first-person accounts of the field's core breakthroughs. He covers the determination of the double-helical structure of DNA at the Cavendish Laboratory; the breaking of the genetic code by Marshall Nirenberg, Heinrich Matthaei, Severo Ochoa, and others; the determination of protein structure by Max Perutz and John Kendrew at Cambridge; the elucidation of the lac operon and gene regulation by François Jacob and Jacques Monod at the Pasteur Institute; the central dogma of molecular biology articulated by Francis Crick; and the long maturation of these results into the recombinant-DNA revolution of the 1970s. Judson is unusually deep on the scientific reasoning itself rather than just the personalities, and the book is widely regarded as one of the best science histories ever written.",
     },
     {
         "title": "Entangled Life",
@@ -783,7 +783,7 @@ SCIENCE_BOOKS = [
         "year": 2020,
         "genre": "science",
         "mood": ["Sunday morning", "rainy afternoon", "cozy night"],
-        "summary": "Sheldrake explores the hidden world of fungi, revealing how they shape ecosystems, medicine, and even human consciousness.",
+        "summary": "Merlin Sheldrake's Entangled Life, published in 2020, is a popular synthesis of recent fungal biology written by a Cambridge mycologist whose Ph.D. fieldwork in Panamanian rainforest mycorrhizal networks underlies large stretches of the book. Sheldrake argues that fungi are fundamental and underappreciated to almost every visible terrestrial ecosystem and to many functions of the modern human world, and the book walks through the major lines of evidence chapter by chapter. He treats the lichen as a community of fungi and photosynthesizers that overturns simple species concepts; the wood-wide-web of mycorrhizal networks through which trees share carbohydrate, water, and chemical signals; the truffle and the long mammalian-fungal coevolutionary relationship around food; the psilocybin-producing Psilocybe genus and the ongoing return of these compounds to clinical psychiatry; the use of fungi in fermentation, antibiotic production, and bioremediation of industrial pollution; and the strange evolutionary territory of the entomopathogenic Cordyceps, which can manipulate insect behavior. Sheldrake writes with unusual literary care for working-scientist popular writing, and the book has been one of the more popular gateway introductions to its field of the early 2020s.",
     },
     {
         "title": "The Vital Question",
@@ -791,7 +791,7 @@ SCIENCE_BOOKS = [
         "year": 2015,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Lane argues that energy is the key to understanding the origin of life and why complex life evolved only once.",
+        "summary": "Nick Lane's The Vital Question, published in 2015, is a closely argued popular treatment of one of the deepest open problems in biology: why life on Earth, after originating roughly four billion years ago, took roughly two billion years to produce the first complex eukaryotic cell, and why that transition appears to have happened exactly once in the history of the planet. Lane, a London-based evolutionary biochemist, argues that the answer is energy: specifically, the chemiosmotic gradients across membranes that all living cells use to power metabolism. Drawing on his own research and on the work of Mike Russell, William Martin, and others, Lane proposes that life originated at alkaline hydrothermal vents on the early ocean floor, where natural geochemical proton gradients across thin mineral barriers provided the first energy source for nascent biochemistry. The book then argues that the eukaryotic transition was made possible only by an unlikely endosymbiosis between a host cell and the bacterial ancestor of mitochondria, providing the energetic surplus needed for genetic and structural complexity. The argument is technical but unusually clear, and the book is one of the most important popular biology books of the last decade.",
     },
     {
         "title": "Oxygen: The Molecule that Made the World",
@@ -1135,7 +1135,7 @@ SCIENCE_BOOKS = [
         "year": 2012,
         "genre": "science",
         "mood": ["existential crisis", "rainy afternoon"],
-        "summary": "Quammen investigates how animal infections jump to humans, presciently exploring the science behind pandemics.",
+        "summary": "David Quammen's Spillover, published in 2012, is a comprehensive popular treatment of zoonotic diseases — infections that originate in non-human animal reservoirs and spill over into human populations — and is widely regarded as one of the most prescient science books of its decade in light of the COVID-19 pandemic that arrived seven years later. Quammen, a longtime National Geographic field reporter, traveled with virologists, epidemiologists, ecologists, and bushmeat hunters across central Africa, southeast Asia, and Australia to report on disease emergence in situ. The book is organized as a series of case studies of major and minor zoonotic events: Hendra virus from flying foxes to horses to humans in Queensland; Ebola in central Africa, including the Marburg outbreaks and the long mystery of its mammalian reservoir; Q fever; Lyme disease and the ecological dynamics of deer-tick reservoirs; Marburg; severe acute respiratory syndrome SARS in 2003 and its connection to Chinese horseshoe bats and palm civets; and an entire long final section on the past and likely future of pandemic influenza and coronavirus emergence. Quammen's central argument — that humans have created the conditions for the next pandemic and should expect more — has been widely cited since 2020.",
     },
     {
         "title": "The Lives of a Cell",
@@ -1143,7 +1143,7 @@ SCIENCE_BOOKS = [
         "year": 1974,
         "genre": "science",
         "mood": ["Sunday morning", "cozy night"],
-        "summary": "Thomas's elegant essays reveal the beauty of biology, from the inner life of cells to the interconnectedness of all living things.",
+        "summary": "Lewis Thomas's The Lives of a Cell: Notes of a Biology Watcher, published in 1974, is a small collection of twenty-nine short essays originally published in the New England Journal of Medicine between 1971 and 1973 that won the National Book Award and established Thomas as one of the most graceful science essayists of the late twentieth century. Thomas, then president of Memorial Sloan-Kettering Cancer Center, used the column to reflect, often through a single biological observation as a starting point, on the deep interconnectedness of life. The title essay argues that human cells are themselves communities — the mitochondria within them are direct descendants of bacterial endosymbionts, the chloroplasts of plant cells likewise — and that the boundary between organism and ecosystem is therefore not where common sense puts it. Other essays treat communication among termites, the question of whether mass behavior in human societies has biological precedents in social insects, the chemical ecology of pheromones, the unexpectedly cooperative microbiology of healthy human bodies, and Thomas's own meditations on death and disease. The book is short, kind, and unusually well-written, and is a regular fixture of lists of the best popular biology of the postwar period.",
     },
     # ── Additional Science ────────────────────────────────────────────────
     {
@@ -1152,7 +1152,7 @@ SCIENCE_BOOKS = [
         "year": 1839,
         "genre": "science",
         "mood": ["road trip", "Sunday morning", "self-discovery"],
-        "summary": "Darwin's journal of his five-year circumnavigation aboard HMS Beagle, the voyage that planted the seeds of evolution.",
+        "summary": "Charles Darwin's The Voyage of the Beagle, first published in 1839 as the third volume of the official narrative of the Beagle survey voyage and reissued in revised standalone form in 1845, is the journal that the young Darwin kept during the five years he spent as the unpaid gentleman-naturalist on Captain Robert FitzRoy's hydrographic survey expedition between 1831 and 1836. The book follows the ship's circumnavigation: the Cape Verde Islands, the long survey of the Atlantic and Pacific coasts of South America with detailed accounts of Patagonia and Tierra del Fuego, the Galápagos archipelago whose finches and tortoises later became central to his evolutionary thinking, Tahiti, New Zealand, Australia, the Cocos Keeling Islands, Mauritius, and the long return through Cape Town. Darwin's interests are extraordinarily broad and the journal records geological observations on the Andes uplift and on coral reef formation, fossil identifications including the giant ground sloth Megatherium, ethnographic accounts of indigenous peoples that mix anthropological curiosity with the Victorian prejudices of his moment, and meticulous biological notes whose later interpretation would lead to the theory of natural selection twenty years on. It remains the founding document of nineteenth-century scientific travel writing.",
     },
     {
         "title": "The Immortal Life of Henrietta Lacks",
@@ -1160,7 +1160,7 @@ SCIENCE_BOOKS = [
         "year": 2010,
         "genre": "science",
         "mood": ["rainy afternoon", "self-discovery"],
-        "summary": "Skloot tells the story of the woman whose cancer cells were taken without consent and revolutionized medicine.",
+        "summary": "Rebecca Skloot's The Immortal Life of Henrietta Lacks, published in 2010 after more than a decade of reporting, tells the entwined stories of a Black tobacco farmer who died of cervical cancer at Johns Hopkins in 1951; the laboratory tissue line called HeLa that doctors derived without her knowledge or consent from a biopsy taken before her death and that has since become the most widely used immortal human cell line in biological research; and her descendants, who learned only decades later that their mother's cells had become a multi-billion-dollar research substrate while her own family lived without health insurance. Skloot weaves the medical and scientific narrative — HeLa's role in the development of the Salk polio vaccine, in cancer biology, in mapping the human genome, and in countless individual labs — with intimate biographical reporting on Henrietta herself, her husband Day, and especially her daughter Deborah, whose grief and confusion shape the book's emotional core. The book is an unusual piece of work: at once a popular history of postwar cell biology, a study of medical-research ethics and informed consent, and a portrait of one specific Black family's relationship to American medicine.",
     },
     {
         "title": "Power, Sex, Suicide: Mitochondria and the Meaning of Life",
@@ -1168,7 +1168,7 @@ SCIENCE_BOOKS = [
         "year": 2005,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Lane argues that mitochondria hold the key to understanding sex, aging, and the origin of complex life.",
+        "summary": "Nick Lane's Power, Sex, Suicide: Mitochondria and the Meaning of Life, published in 2005, is the popular biology book that established Lane internationally and laid much of the conceptual groundwork for his later The Vital Question. The thesis is that mitochondria — the small organelles inside every eukaryotic cell that generate the chemiosmotic gradients used to power cellular metabolism — are far more central to understanding eukaryotic evolution than their textbook description as 'cellular powerhouses' suggests. The book is organized in seven parts that take up different consequences of taking mitochondria seriously: the deep evolutionary origin of the eukaryotic cell as an endosymbiotic merger between a host cell and a bacterial ancestor of mitochondria; the energetic case for why all complex multicellular life depends on this merger; the strange fact that mitochondria retain their own DNA and use it for elements of their own machinery; the role of mitochondrial DNA in evolutionary genetics and in maternal lineages; the argument that the existence of two sexes is itself an evolved response to mitochondrial inheritance; the role of mitochondrial dysfunction in aging and senescence; and the central role of mitochondria in apoptosis. The book is dense but enormously rewarding.",
     },
     {
         "title": "The Selfish Gene",
@@ -1176,7 +1176,7 @@ SCIENCE_BOOKS = [
         "year": 1976,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Dawkins reframes evolution from the gene's perspective, introducing the concept of memes and the idea that organisms are vehicles for their genes.",
+        "summary": "Richard Dawkins's The Selfish Gene, published in 1976, was the book that popularized the gene-centered view of evolution and made Dawkins a major public scientist. Building on the work of W.D. Hamilton, George Williams, and John Maynard Smith, Dawkins argues that the proper unit of selection in evolutionary biology is not the species, the group, or the individual organism, but the replicating gene itself; organisms are 'vehicles' or 'survival machines' built by genes to perpetuate copies of themselves through time. The book uses this lens to make sense of phenomena that had previously seemed paradoxical to group-level thinking, especially altruistic behavior in social animals, which is explained through kin selection and the calculus of inclusive fitness, and stable cooperation, explained through evolutionarily stable strategies imported from game theory. Toward the end Dawkins introduces the term 'meme' as a proposed unit of cultural transmission analogous to a gene. The book has been hugely influential, has been criticized for the rhetorical implications of the 'selfish' framing, and is one of the most cited works in modern evolutionary biology. (This entry duplicates an earlier one in the catalog; both have been kept and rewritten distinctly.)",
     },
     {
         "title": "Six Easy Pieces",
@@ -1184,7 +1184,7 @@ SCIENCE_BOOKS = [
         "year": 1994,
         "genre": "science",
         "mood": ["Sunday morning", "morning ritual"],
-        "summary": "Six of Feynman's most accessible lectures distilled from his legendary Caltech course, covering atoms, gravity, and quantum behavior.",
+        "summary": "Six Easy Pieces is a 1994 selection drawn from the Feynman Lectures on Physics, the legendary 1961 to 1963 introductory undergraduate physics course Richard Feynman delivered at Caltech and which his colleagues Robert Leighton and Matthew Sands transcribed and edited into the three-volume Lectures. The 'Easy Pieces' volume is the slim popular reader, comprising the six lectures that depend least on prior physics or mathematics. The first lecture is on atoms in motion and is one of Feynman's most quoted essays — including the line about what one sentence to pass to the next generation if all scientific knowledge were lost — and arguing that the atomic hypothesis is the single most powerful idea in science. The other five cover the relation of physics to other sciences, the conservation of energy, the theory of gravitation, quantum behavior, and the relation of physics to the broader sweep of human knowledge. The lectures are unusually clear without being dumbed down, and the book is widely recommended as a first contact with serious physics for a general reader who wants more than handwaving but is not ready for the full Lectures. A companion volume, Six Not-So-Easy Pieces, covers harder material on relativity and symmetry.",
     },
     {
         "title": "The Structure of Evolutionary Theory",
@@ -1192,7 +1192,7 @@ SCIENCE_BOOKS = [
         "year": 2002,
         "genre": "science",
         "mood": ["late night reflection", "rainy afternoon"],
-        "summary": "Gould's magnum opus revises Darwinian theory by emphasizing punctuated equilibrium, species selection, and structural constraints.",
+        "summary": "Stephen Jay Gould's The Structure of Evolutionary Theory, published in 2002 just two months before Gould's death from a metastasizing cancer he had been living with for two decades, is his fourteen-hundred-page magnum opus and the work he intended to summarize a lifetime of evolutionary theorizing. The book has two halves. The first is a long historical reconstruction of Darwinian theory from On the Origin of Species through the modern synthesis of the 1930s and 1940s, attempting to recover the texture and tensions of Darwinian thinking before the synthesis ironed them out. The second is Gould's own constructive proposal: a substantially revised modern Darwinism organized around three planks. The first is hierarchical selection, in which natural selection operates not only on genes and individual organisms but also on populations, species, and clades. The second is punctuated equilibrium, the model of speciation Gould developed with Niles Eldredge in the 1970s that has long-stable lineages broken by rapid bursts of evolutionary change at branching events. The third is structural constraint, the role of developmental and architectural limitations in shaping the available adaptive landscape. The book is dense, contested, and essential reading for anyone serious about contemporary evolutionary theory.",
     },
     {
         "title": "A Crack in Creation",
@@ -1200,7 +1200,7 @@ SCIENCE_BOOKS = [
         "year": 2017,
         "genre": "science",
         "mood": ["fresh start", "side project vibes"],
-        "summary": "The co-discoverer of CRISPR tells the story of the gene-editing revolution and grapples with its ethical implications.",
+        "summary": "Jennifer Doudna and Samuel Sternberg's A Crack in Creation, published in 2017, is the popular co-authored memoir-and-explainer by Doudna, the Berkeley molecular biologist who would share the 2020 Nobel Prize in Chemistry with Emmanuelle Charpentier for the development of CRISPR-Cas9 gene editing, and Sternberg, who was Doudna's graduate student during the period the book covers. The first half of the book is a reconstruction of the science: the original microbiology of bacterial CRISPR sequences as an adaptive defense against invading viruses; the 2012 paper by Doudna, Charpentier, and their collaborators that demonstrated how Cas9 could be programmed with a single guide RNA to cut DNA at any chosen sequence; and the rapid colonization of biomedical research by the resulting toolkit. The second half is Doudna's first-person engagement with the ethical questions that came at her almost immediately after publication: the prospect of germline gene editing, the eventual He Jiankui CRISPR-baby episode in 2018, the convening of international scientific summits to slow human-germline applications, and the broader question of how to regulate a fast-moving technology. The book is unusually candid about a working scientist's anxieties about her own discovery's implications.",
     },
     {
         "title": "The Ends of the World",
@@ -1208,7 +1208,7 @@ SCIENCE_BOOKS = [
         "year": 2017,
         "genre": "science",
         "mood": ["existential crisis", "rainy afternoon"],
-        "summary": "Brannen travels to the sites of Earth's five mass extinctions, revealing what they tell us about our planet's fragile future.",
+        "summary": "Peter Brannen's The Ends of the World, published in 2017, is a popular paleontology travelogue across the deep history of Earth's five canonical mass extinctions: the end-Ordovician roughly 444 million years ago, the late Devonian extinctions clustered around 372 to 359 million years ago, the catastrophic end-Permian roughly 252 million years ago that nearly ended complex life, the end-Triassic, and the well-known end-Cretaceous about sixty-six million years ago that closed the dinosaur era. Brannen, a science journalist, traveled with paleontologists, geochemists, and stratigraphers to the actual rock outcrops that record each extinction — the Ordovician Hirnantian black shales, the Permian-Triassic boundary in China and Italy, the Triassic-Jurassic boundary on the Hartford Basin border, the K-Pg boundary at El Kef, Tunisia and at the Hell Creek formation in Montana — and pairs the field reporting with chapters that walk through the leading mechanisms behind each event. The book's running theme is that the leading suspects across these events are climate and ocean-chemistry disruptions on geologic timescales, often initiated by enormous volcanic provinces, and that the rapid rate at which industrial humans are now changing both the climate and the ocean is alarming in this longer perspective.",
     },
     {
         "title": "The Elegant Universe",
@@ -1216,7 +1216,7 @@ SCIENCE_BOOKS = [
         "year": 1999,
         "genre": "science",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Greene explains string theory and the quest for a unified theory of physics with remarkable clarity.",
+        "summary": "Brian Greene's The Elegant Universe, published in 1999, was the most successful popular introduction to superstring theory of its decade, written by a working Columbia string theorist for general readers. Greene walks readers through the central problem motivating contemporary fundamental physics: the irreconcilability of general relativity, which describes gravity at large scales, and quantum mechanics, which describes the other three fundamental forces at small scales. He argues that string theory — which posits that the elementary particles are not point-like but instead vibrating one-dimensional strings, with different vibrational modes corresponding to different particles — offers a candidate unified framework. The book introduces extra spatial dimensions wrapped up at small scales, supersymmetry, the five competing string theories that the second superstring revolution showed are facets of an underlying eleven-dimensional M-theory, and the contested experimental status of the program. Greene is unusually clear about what is conjecture and what is established, and the book earned him a National Book Award nomination and a major PBS Nova series. (This entry duplicates an earlier one in the catalog; both have been kept and rewritten distinctly.)",
     },
     {
         "title": "Until the End of Time",
@@ -1224,7 +1224,7 @@ SCIENCE_BOOKS = [
         "year": 2020,
         "genre": "science",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Greene traces the arc of time from the Big Bang to the far future, exploring how consciousness and meaning emerge from a physical universe.",
+        "summary": "Brian Greene's Until the End of Time, published in 2020, is the most ambitious of his popular books and his most personal. The book is structured as an enormously long timeline running from the Big Bang into the deep cosmological future, and it asks at each stage where consciousness, meaning, and human purpose might fit into a universe described by physics. Greene walks through the standard cosmological history — inflation, the cosmic microwave background, structure formation, the first stars and galaxies, our solar system — and then turns more philosophical: the rise of life from prebiotic chemistry, the appearance of consciousness, the human drive to create religion, art, story, and meaning, and the deep puzzle of the second law of thermodynamics that gives the universe its arrow. The closing chapters extrapolate forward through the death of the last stars, the very long deep future of black holes, the slow heat death of the cosmos, and the question of whether anything we have built will leave a permanent trace on the universe. Greene writes from a stoic naturalist position. The book was a commercial bestseller and is one of his more contemplative works.",
     },
     {
         "title": "The Extended Phenotype",
@@ -1232,7 +1232,7 @@ SCIENCE_BOOKS = [
         "year": 1982,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Dawkins argues that genes reach beyond the body of the organism to influence the wider environment, from beaver dams to parasite behavior.",
+        "summary": "Richard Dawkins's The Extended Phenotype, published in 1982, is the more technical professional follow-up to The Selfish Gene and the book Dawkins himself has called his most important contribution to evolutionary theory. The central thesis is that the proper unit of phenotypic effect for a gene is not limited to the body of the organism in which the gene resides; it can extend out into the world. A beaver's dam is part of the extended phenotype of the beaver's genes, an artifact whose construction is shaped by genetic variation and that affects the beaver's reproductive success. The intricate cup-and-pulley case of a caddisfly larva, the manipulated burrow-digging behavior of a parasitoid-infected ant, the host-flooding wing growth induced by the parasitic worm Spinochordodes are all extended phenotypes of the genes responsible. The book makes an explicit theoretical case that natural selection should be understood at the level of the replicator and its phenotypic effects, wherever those effects fall, rather than at the level of the discrete organism. The book is more demanding than The Selfish Gene, and is often the one Dawkins recommends to working biologists who only know him through the popular work.",
     },
     {
         "title": "Genome Editing: A Very Short Introduction",
@@ -1240,7 +1240,7 @@ SCIENCE_BOOKS = [
         "year": 2023,
         "genre": "science",
         "mood": ["fresh start", "side project vibes"],
-        "summary": "Parrington provides a concise overview of genome editing technologies from CRISPR to base editing and their implications for medicine and society.",
+        "summary": "John Parrington's Genome Editing: A Very Short Introduction, published in 2023 in the long-running Oxford University Press 'Very Short Introductions' series, is a brief expert overview of the rapidly developing field of programmable genetic modification. Parrington, a physiologist at Oxford with a teaching role spanning genetics and pharmacology, walks readers through the historical transition from earlier homologous-recombination methods, zinc-finger nucleases, and TALENs to the much faster and more accessible CRISPR-Cas9 system, and then through the second-generation refinements that followed: base editing developed by David Liu's group, prime editing, and the various Cas variants now used to target RNA, regulate transcription, or insert larger sequences. The book covers contemporary therapeutic applications including the recently approved sickle-cell disease treatment Casgevy, agricultural and livestock applications, the open question of off-target effects, the bioethical debate around germline editing including the He Jiankui CRISPR-baby episode, and the question of how the technology should be regulated internationally. The Very Short Introductions format constrains the book to roughly two hundred pages, but Parrington provides a denser scientific treatment than most popular books on the field.",
     },
     {
         "title": "Your Inner Fish",
@@ -1248,7 +1248,7 @@ SCIENCE_BOOKS = [
         "year": 2008,
         "genre": "science",
         "mood": ["Sunday morning", "self-discovery"],
-        "summary": "Shubin reveals how the human body is a patchwork of structures inherited from fish, reptiles, and early mammals.",
+        "summary": "Neil Shubin's Your Inner Fish, published in 2008, is a popular evolutionary anatomy book by the University of Chicago paleontologist whose team discovered Tiktaalik roseae, the late-Devonian fish-tetrapod transition fossil that has become the canonical specimen for the move of vertebrates from water to land. The book pairs the field-discovery story with a chapter-by-chapter walk through the human body in which Shubin shows that essentially every feature of contemporary anatomy is inherited from earlier organisms with quite different lifestyles. The bones of the human hand can be matched, finger by finger, to the bones in Tiktaalik's fin. The structure of the inner ear and middle ear can be traced through the fossil record from gill arches in fish through the jaw bones of early reptiles. The hiccup, Shubin argues, is a vestigial neural reflex inherited from an aquatic breathing pattern. Eye structure preserves the long history of vertebrate vision. The book closes with an epilogue on what this deep continuity means for the medical conditions humans are prone to. The book is short, vivid, and based on a 2014 PBS documentary series of the same name.",
     },
     {
         "title": "The Diversity of Life",
@@ -1256,7 +1256,7 @@ SCIENCE_BOOKS = [
         "year": 1992,
         "genre": "science",
         "mood": ["rainy afternoon", "existential crisis"],
-        "summary": "Wilson surveys the astonishing variety of life on Earth and sounds the alarm about the mass extinction crisis caused by human activity.",
+        "summary": "Edward O. Wilson's The Diversity of Life, published in 1992, is the popular synthesis of biological diversity for general readers by the Harvard biologist who, more than any other working scientist of the twentieth century, championed the discipline he called biodiversity. The book has three movements. The first is a vivid tour of the variety of life — through tropical rainforest canopy, soil microbiome, deep-sea hydrothermal vents, and the often surprising metropolitan ecosystems of urban environments — drawing on Wilson's own decades of fieldwork on ant species. The second turns to the deep evolutionary history of biodiversity, the rate of new species formation, the mathematical models of island biogeography Wilson developed with Robert MacArthur, and the long fossil-record patterns of extinction. The third is the alarm chapter that gave the book its political reach: Wilson estimates contemporary species loss at thousands of times the background rate, projects the catastrophic erosion of tropical ecosystems through habitat destruction, and argues that humans are now driving a sixth mass extinction comparable to the great pre-human ones. Wilson closes with policy proposals on protected areas and conservation finance. The book remains a foundational text of the conservation-biology movement.",
     },
     {
         "title": "Consilience: The Unity of Knowledge",
@@ -1264,7 +1264,7 @@ SCIENCE_BOOKS = [
         "year": 1998,
         "genre": "science",
         "mood": ["late night reflection", "Sunday morning"],
-        "summary": "Wilson argues that all branches of knowledge — from physics to the humanities — can and should be unified into a single framework.",
+        "summary": "Edward O. Wilson's Consilience: The Unity of Knowledge, published in 1998, is the late-career book in which Wilson argues for what he calls 'consilience,' the unification of all branches of knowledge — natural sciences, social sciences, humanities — into a single explanatory framework grounded in the natural sciences and ultimately in evolutionary biology. The argument runs that the historical separation of the so-called Two Cultures of C.P. Snow's famous lecture is contingent rather than principled, that the deepest insights into human behavior, ethics, art, and religion will eventually be naturalized into a continuous body of empirical knowledge, and that the great unfinished projects of the twenty-first century — environmental sustainability, the design of just political institutions, the cultivation of meaning — require precisely this kind of cross-disciplinary integration. Wilson is a generous interlocutor with the humanities he wants to absorb, but the program is unmistakably reductive, and the book provoked sustained pushback from the humanities and social sciences who argued that their forms of knowledge are not in fact reducible. Whatever one's position on the underlying argument, Consilience is one of the more ambitious twentieth-century manifestos for scientific universalism.",
     },
     {
         "title": "Chaos: Making a New Science",
@@ -1272,7 +1272,7 @@ SCIENCE_BOOKS = [
         "year": 1987,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Gleick chronicles the birth of chaos theory, showing how simple systems produce astonishingly complex behavior.",
+        "summary": "James Gleick's Chaos: Making a New Science, published in 1987, was the first book to bring the new mathematical field of chaos theory to a wide popular audience and remains the canonical popular history of the field's emergence. Gleick traces the work of a scattered handful of scientists and mathematicians who, beginning in the 1960s and largely outside the prestigious centers of their disciplines, found that simple deterministic systems can generate behavior so sensitive to initial conditions that long-term prediction becomes impossible. The cast includes the meteorologist Edward Lorenz, who discovered the butterfly effect in his weather simulations; Mitchell Feigenbaum, who found a universal constant governing the period-doubling route to chaos; the mathematicians Stephen Smale and James Yorke; the cardiologists studying chaotic heart rhythms; and Benoit Mandelbrot, whose fractal geometry described the self-similar structure of coastlines, clouds, and turbulence. Gleick's gift is to convey the conceptual shock without flattening the mathematics: the recognition that determinism does not entail predictability shook several disciplines simultaneously. The book won the National Book Award. (This entry duplicates an earlier one in the catalog; both have been kept and rewritten distinctly.)",
     },
     {
         "title": "Helgoland",
@@ -1280,7 +1280,7 @@ SCIENCE_BOOKS = [
         "year": 2020,
         "genre": "science",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Rovelli tells the story of quantum mechanics through the young Werner Heisenberg's breakthrough on a windswept island, arguing for a relational interpretation of reality.",
+        "summary": "Carlo Rovelli's Helgoland, published in Italian in 2020 and in English translation in 2021, is the Italian theoretical physicist's popular argument for the relational interpretation of quantum mechanics. The book takes its title and its opening chapter from the small windswept North Sea island of Helgoland, where the twenty-three-year-old Werner Heisenberg, suffering from severe hay fever, retreated in June 1925 and worked out the matrix-mechanical formulation that became the first complete formalism of modern quantum mechanics. From this opening Rovelli walks through the founding of quantum theory in the late 1920s, the famously irreconcilable competing interpretations that have followed — Copenhagen, many-worlds, hidden variables, QBism — and develops his own preferred relational interpretation, in which the properties of any quantum system exist only relative to the systems they interact with, rather than as absolute features of the world. Rovelli traces the philosophical resonances of this view in a wide range of thinkers from Nāgārjuna's Madhyamaka Buddhism through Hume, Mach, and the early Soviet philosopher Alexander Bogdanov. The book is short, beautifully written, and Rovelli's most fully argued popular work on quantum foundations.",
     },
     {
         "title": "The Equations of Life",
@@ -1288,7 +1288,7 @@ SCIENCE_BOOKS = [
         "year": 2018,
         "genre": "science",
         "mood": ["late night reflection", "Sunday morning"],
-        "summary": "Cockell argues that the laws of physics narrowly constrain what life can be, meaning alien life may look surprisingly familiar.",
+        "summary": "Charles Cockell's The Equations of Life, published in 2018, is a popular astrobiology book by an Edinburgh astrobiologist arguing the perhaps surprising thesis that the constraints of physics on living systems are tight enough that life elsewhere in the universe may turn out to look much more familiar than science fiction tradition suggests. The book walks through the various scales at which physics constrains biology. At the level of the cell, surface-tension and diffusion physics impose hard upper and lower size limits and shape the structure of membranes. At the level of organism construction, gravity, scaling laws, and the mechanical properties of biological materials constrain what shapes are mechanically possible. At the level of biochemistry, the universal energetics of metabolism — particularly redox chemistry and the use of carbon as a backbone — Cockell argues are not arbitrary contingencies of Earth life but consequences of the available chemistry. He extends the argument to evolution itself, arguing that convergent evolution we observe across distantly related Earth lineages — eyes evolving multiple times, streamlined body shapes appearing in fish and dolphins — is evidence for the strength of these physical constraints. The book is sober, well-argued, and unusual in popular astrobiology for its conservatism.",
     },
     {
         "title": "Behave: The Biology of Humans at Our Best and Worst",
@@ -1296,7 +1296,7 @@ SCIENCE_BOOKS = [
         "year": 2017,
         "genre": "science",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Sapolsky traces human behavior backward from the moment of action through the brain, hormones, genes, and culture that shaped it.",
+        "summary": "Robert Sapolsky's Behave: The Biology of Humans at Our Best and Worst, published in 2017, is a seven-hundred-page synthesis of decades of research on the biological substrates of human behavior, written by a Stanford neurobiologist and primatologist who has spent his career studying baboons in the Serengeti and stress in laboratory rats. The book is organized as a series of nested zooms outward from a single moment of human action: the second before the action, where neural circuits fire; the seconds to minutes before, where sensory and emotional systems prime decisions; the hours to days before, where hormones modulate; the months to years before, where adolescent and developmental neuroplasticity has shaped the brain; back to childhood, prenatal environment, genes, and finally evolutionary, ecological, and cultural pressures over millions of years. Sapolsky uses the scaffolding to address aggression, empathy, group identity, hierarchy, free will, and moral judgment. He writes with extraordinary range and a comic voice without sacrificing scientific care. (This entry duplicates an earlier one in the catalog; both have been kept and rewritten distinctly.)",
     },
     {
         "title": "The Disordered Cosmos",
@@ -1304,6 +1304,6 @@ SCIENCE_BOOKS = [
         "year": 2021,
         "genre": "science",
         "mood": ["self-discovery", "existential crisis"],
-        "summary": "Prescod-Weinstein interweaves particle physics and cosmology with an examination of how racism and sexism shape who gets to do science.",
+        "summary": "Chanda Prescod-Weinstein's The Disordered Cosmos, published in 2021, is a hybrid popular physics book and political memoir by a particle cosmologist who is one of fewer than one hundred Black American women ever to have earned a Ph.D. in physics. The book braids two registers. The first is a clear popular treatment of contemporary cosmology — the particle content of the Standard Model, the open question of dark matter and the leading candidates for it including Prescod-Weinstein's own work on axions, the cosmic microwave background and inflationary cosmology, the structure-formation history of the universe, and the open problems at the frontier of fundamental physics. The second is a sustained, autobiographical, and unsparing examination of how racism, misogyny, and the colonial-imperial roots of much astronomical infrastructure shape who gets to participate in the scientific enterprise; here she discusses her own experiences of harassment, the longstanding controversy over the construction of the Thirty Meter Telescope on Mauna Kea, and the ways Black, indigenous, and women physicists have been historically excluded from the field. The book is unusual in popular physics writing for refusing to separate the science from the institutional politics of who has been allowed to do it.",
     },
 ]
