@@ -8,7 +8,7 @@ FICTION_BOOKS = [
         "year": 1949,
         "genre": "fiction",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "A dystopian masterpiece about totalitarian control, surveillance, and the power of language to shape reality.",
+        "summary": "Set in a perpetually warring superstate called Oceania, Orwell's final novel follows Winston Smith, a low-level Party functionary who quietly rewrites the historical record at the Ministry of Truth. Beneath the gaze of Big Brother and the ever-watching telescreens, Winston begins keeping a forbidden diary, falls into an illicit affair with a coworker named Julia, and edges toward what he believes is an underground resistance led by a shadowy figure called Goldstein. Orwell's interest is not merely a future of surveillance and torture but the mechanics of how power sustains itself by colonizing thought, memory, and language. Newspeak shrinks vocabulary to make heresy literally unthinkable; doublethink trains citizens to hold contradictions without strain; the past is malleable because all the records of it are. The book's grimmest insight is that pain and isolation can dismantle even the most stubborn private mind. Published in 1949, it grew out of Orwell's experience with totalitarian propaganda during the Spanish Civil War and his alarm at postwar Stalinism, but its long influence has come from the way it dramatizes timeless temptations of authority. Phrases like Big Brother, thoughtcrime, memory hole, and Room 101 have become standard tools for describing democratic erosion, mass surveillance, and the manipulation of truth, which is why each new generation tends to rediscover the novel as if it had been written about its own moment.",
     },
     {
         "title": "Pride and Prejudice",
@@ -16,7 +16,7 @@ FICTION_BOOKS = [
         "year": 1813,
         "genre": "fiction",
         "mood": ["cozy night", "butterflies", "Sunday morning"],
-        "summary": "Elizabeth Bennet navigates class, family, and her own misjudgments on the way to an unlikely romance with the proud Mr. Darcy.",
+        "summary": "Jane Austen's most beloved novel opens with one of literature's most quoted lines and proceeds to deflate it: that a single man in possession of a good fortune must be in want of a wife. The Bennets, a Hertfordshire family with five unmarried daughters and an entailed estate, are stirred when the wealthy bachelor Mr. Bingley arrives in the neighborhood with his even wealthier and more reserved friend Mr. Darcy. The novel's true center is Elizabeth, the second daughter, whose lively intelligence is both her shield and her blind spot. Her clash with Darcy begins as mutual misreading, hardens into open contempt after a botched proposal, and slowly thaws as letters, second meetings, and the disastrous behavior of her younger sister force each to revise the story they have told themselves about the other. Austen uses free indirect discourse with such precision that the reader feels Elizabeth's certainty crack in real time. Around this central misunderstanding she stages a sharp comedy of manners about money, inheritance law, the marriage market, and the small social cruelties that shape a woman's prospects in Regency England. Published in 1813, the book has held its place because the ironic voice still sounds modern, the secondary characters from Mr. Collins to Lady Catherine remain comic landmarks, and the pleasure of watching two intelligent people change their minds about each other never goes out of style.",
     },
     {
         "title": "Sense and Sensibility",
@@ -24,7 +24,7 @@ FICTION_BOOKS = [
         "year": 1811,
         "genre": "fiction",
         "mood": ["cozy night", "butterflies", "rainy afternoon"],
-        "summary": "Two sisters embody reason and emotion as they search for love and stability after their father's death.",
+        "summary": "Jane Austen's first published novel, issued anonymously in 1811 under the byline A Lady, traces the shifting fortunes of the Dashwood sisters after the death of their father leaves them and their mother displaced from the family estate by the terms of an entail. Elinor, the elder, is governed by sense, careful judgment, and a habit of containing feeling so as not to burden others. Marianne, three years younger, is governed by sensibility, romantic ardor, and a conviction that strong emotion ennobles those who feel it. Each falls in love, and each is wounded: Elinor by her quiet attachment to the diffident Edward Ferrars, who turns out to be entangled by an old promise; Marianne by the dashing Willoughby, whose charm conceals a cynical reliance on money. Austen weighs the costs of both temperaments without finally taking either side, suggesting instead that good judgment requires tempering reason with feeling and feeling with discretion. Around the sisters she constructs an ensemble of memorable comic figures, from the loquacious Mrs. Jennings to the chilling Fanny Dashwood, and a series of finely observed set pieces in country drawing rooms and London townhouses. The novel introduces themes Austen would refine for the rest of her career: the precariousness of female economic life, the moral education of the heroine, and the small mercies of a well-made marriage in a society where marriage is also a survival strategy.",
     },
     {
         "title": "Emma",
@@ -264,7 +264,7 @@ FICTION_BOOKS = [
         "year": 1862,
         "genre": "fiction",
         "mood": ["ugly cry", "self-discovery", "slow burn"],
-        "summary": "An ex-convict's quest for redemption weaves through revolution, poverty, and the relentless pursuit of a police inspector.",
+        "summary": "Victor Hugo's sprawling 1862 epic follows Jean Valjean, a peasant imprisoned for nineteen years for stealing a loaf of bread, as he struggles to remake himself into an honest man under a false name. Released into a France that brands him forever as a convict, Valjean is shown an unexpected mercy by a bishop and devotes the rest of his life to atoning for the past, eventually becoming a factory owner, mayor, and adoptive father to the orphaned Cosette. Shadowing every step is Inspector Javert, the rigid agent of state law who sees no possibility of redemption and pursues Valjean across decades. Around this central pursuit, Hugo weaves the doomed romance of Cosette and the student revolutionary Marius, the tragic descent of the factory worker Fantine, and the failed June Rebellion of 1832 played out on the barricades of Paris. Hugo pauses constantly to digress on convent life, the Battle of Waterloo, the Paris sewers, and the misery of the urban poor, treating the novel as a moral and political treatise as much as a story. The book's central argument is that poverty, ignorance, and the criminalization of need produce the very evils society then punishes, and that grace, not law, is what changes a human being. Translated into countless languages and adapted endlessly for stage and screen, it remains one of the most influential works of nineteenth-century literature and a defining statement of Romantic humanism.",
     },
     {
         "title": "Don Quixote",
@@ -272,7 +272,7 @@ FICTION_BOOKS = [
         "year": 1605,
         "genre": "fiction",
         "mood": ["road trip", "self-discovery", "Sunday morning"],
-        "summary": "An aging gentleman loses his mind to chivalric romances and rides out to right the world's wrongs with comic futility.",
+        "summary": "Miguel de Cervantes's two-part novel, published in 1605 and 1615, is widely considered the first modern novel and one of the foundational works of Western literature. Alonso Quixano, a middle-aged Spanish gentleman, reads so many tales of knight-errantry that he loses his grip on reality, renames himself Don Quixote de la Mancha, dons rusted armor, mounts an old nag named Rocinante, and rides out to revive chivalry in a country that has long since forgotten it. He recruits a pragmatic peasant, Sancho Panza, as his squire with promises of an island to govern, and the mismatched pair wander Spain mistaking windmills for giants, inns for castles, and prostitutes for noble ladies. The first part is largely comic, mocking the romance genre by showing its absurdity in contact with reality, but the second part deepens into something stranger and more melancholy as Quixote and Sancho meet readers of the first volume and begin to feel themselves authored. Cervantes uses the framing device of a fictional Arabic historian, Cide Hamete Benengeli, to question how stories are made and who controls them. The book is at once a parody, a road novel, a meditation on madness and idealism, and a sustained inquiry into the porous border between imagination and the world. Its influence on the novel as a form, from Fielding to Flaubert to Borges, is incalculable.",
     },
     {
         "title": "Invisible Man",
@@ -280,7 +280,7 @@ FICTION_BOOKS = [
         "year": 1952,
         "genre": "fiction",
         "mood": ["existential crisis", "self-discovery", "late night reflection"],
-        "summary": "A nameless Black narrator recounts his journey through a society that refuses to see him as a human being.",
+        "summary": "Ralph Ellison's 1952 debut, winner of the National Book Award, opens in an underground room lit by 1,369 stolen light bulbs as its unnamed Black narrator looks back on the journey that drove him there. Raised in the Jim Crow South, he wins a college scholarship by humiliating himself in a brutal battle royal, then loses everything at a Black state college after inadvertently exposing a wealthy white trustee to ugly truths. Sent north to Harlem with sealed letters of recommendation that turn out to be sabotage, he stumbles through factory work, a riot, a Communist-style organization called the Brotherhood, and the orbit of a charismatic Black nationalist named Ras the Exhorter. At every turn the narrator discovers that the people around him, white and Black alike, see only the use he can be put to, never the person he is. Ellison fuses naturalism, surrealism, and the cadences of jazz and the Black sermon into a singular American voice, drawing on Dostoevsky, Eliot, and the blues in equal measure. The novel's central metaphor of social invisibility became one of the defining images of twentieth-century American literature, and its insistence on individual interiority against both racist erasure and ideological flattening made it foundational reading on race, identity, and democracy.",
     },
     {
         "title": "The Grapes of Wrath",
@@ -288,7 +288,7 @@ FICTION_BOOKS = [
         "year": 1939,
         "genre": "fiction",
         "mood": ["road trip", "ugly cry", "existential crisis"],
-        "summary": "The Joad family flees Dust Bowl Oklahoma for California, only to find that the promised land is no paradise.",
+        "summary": "John Steinbeck's 1939 novel, awarded the Pulitzer Prize and central to his Nobel citation, traces the migration of the Joad family from their foreclosed Oklahoma farm to the orchards of California during the Great Depression. Tom Joad, freshly paroled for manslaughter, returns home to find the family loading everything they own onto a barely running truck after the dust storms and the banks have driven them off the land. With the ex-preacher Jim Casy in tow, three generations of Joads push west along Route 66, losing members to death and despair before they reach a California whose promise of work has been deliberately oversold to flood the labor market and crush wages. Migrant camps, vigilante violence, hunger, and the slow politicization of Tom and his mother form the backbone of the second half. Steinbeck alternates the Joad chapters with short, lyrical interchapters that pan back to the broader landscape of dispossession, giving the novel the feel of both intimate family chronicle and national documentary. Drawing on his own reporting trips through migrant camps for the San Francisco News, Steinbeck wrote with a fierce, biblical anger about the moral economy of capitalism in collapse. Banned and burned on publication, the book reshaped American attitudes toward labor and the New Deal, and it endures as one of the most powerful protest novels in the language.",
     },
     {
         "title": "Of Mice and Men",
@@ -296,7 +296,7 @@ FICTION_BOOKS = [
         "year": 1937,
         "genre": "fiction",
         "mood": ["ugly cry", "heartbreak recovery"],
-        "summary": "Two displaced migrant workers share a dream of owning land, but the harsh realities of the Depression have other plans.",
+        "summary": "John Steinbeck's 1937 novella is a tightly compressed Depression-era tragedy set on a barley ranch in California's Salinas Valley. George Milton, sharp and compact, and Lennie Small, an enormous man with a child's mind and uncanny strength, drift from one farm job to the next, sustained by a shared dream of someday owning a small place where they can keep rabbits and live off the fat of the land. Steinbeck stages the entire story across a few days and a handful of locations — a riverbank, a bunkhouse, a barn — giving it the unity and inevitability of a stage play, which it became almost immediately. The other ranch hands fold into the tragedy in their own ways: the aging swamper Candy and his old dog, the proud Black stable hand Crooks, the lonely flirtation of the boss's son's wife, and the menacing son Curley. Steinbeck draws on his own years of migrant labor and on the era's vocabulary of New Deal compassion, but he refuses sentimentality. The book is a meditation on loneliness, the fragility of friendship in a world without safety nets, and the impossibility of the small American dream for those at the bottom of the labor market. Frequently taught in American schools and frequently challenged for its language, it remains one of the most-read works of twentieth-century American fiction.",
     },
     {
         "title": "East of Eden",
@@ -304,7 +304,7 @@ FICTION_BOOKS = [
         "year": 1952,
         "genre": "fiction",
         "mood": ["slow burn", "self-discovery", "late night reflection"],
-        "summary": "Two families in California's Salinas Valley replay the Cain and Abel story across generations.",
+        "summary": "John Steinbeck considered this 1952 novel his masterpiece, the book toward which all his other writing had been pointing. Set in California's Salinas Valley from the late nineteenth century to the end of the First World War, it interweaves the histories of two families: the Trasks, transplanted from Connecticut, and the Hamiltons, modeled on Steinbeck's own maternal grandparents. At its center stand Adam Trask, a gentle, self-deceiving idealist; his wife Cathy Ames, one of literature's most chilling portraits of pure malevolence; and their twin sons Cal and Aron, whose rivalry self-consciously rewrites the Cain and Abel story across a new generation. Steinbeck threads the Hebrew word timshel — translated as 'thou mayest' — through the book as a key to its central question: whether human beings are condemned by inheritance and circumstance to repeat their forebears' sins, or whether each person retains the freedom to choose otherwise. The Chinese American servant Lee, who spends years studying that single verse with elderly scholars, gives the novel its philosophical voice. Sprawling, biblical in cadence, and frankly autobiographical in its handling of Steinbeck's own family, the book has been read variously as moral allegory, regional saga, and intergenerational psychology. It became a long-running bestseller, was adapted into a celebrated 1955 Elia Kazan film, and remains, alongside The Grapes of Wrath, the work for which Steinbeck is most widely loved.",
     },
     {
         "title": "Animal Farm",
@@ -312,7 +312,7 @@ FICTION_BOOKS = [
         "year": 1945,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Farm animals overthrow their human master only to watch their revolution corrupted by the very power it sought to destroy.",
+        "summary": "George Orwell's 1945 novella, subtitled 'A Fairy Story,' recasts the Russian Revolution and the rise of Stalinism as a beast fable on a small English farm. The animals of Manor Farm, inspired by the speeches of the prize boar Old Major, overthrow their drunken human owner, rename the place Animal Farm, and adopt seven commandments that begin with 'whatever goes upon two legs is an enemy.' At first the farm prospers under animal rule, but the pigs Napoleon and Snowball quickly take charge of policy, and Napoleon, modeled closely on Stalin, eventually drives Snowball into exile with a pack of attack dogs. From there the revolution unravels by familiar steps: a cult of personality around Napoleon, show trials and executions, the gradual rewriting of the seven commandments, the cynical use of the fearful sheep and the loyal cart-horse Boxer, and finally the pigs walking on two legs and dining with humans. Orwell wrote the book during the wartime alliance with the Soviet Union and struggled to find a publisher willing to print so direct an attack on a current ally. Its lasting power lies in the precision with which Orwell mapped the mechanics of betrayed revolution onto the grammar of children's storytelling, producing a parable whose individual lines — 'all animals are equal, but some animals are more equal than others' — have entered everyday political vocabulary.",
     },
     {
         "title": "Heart of Darkness",
@@ -320,7 +320,7 @@ FICTION_BOOKS = [
         "year": 1899,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "A steamboat captain journeys up the Congo River and confronts the horror at the heart of European colonialism.",
+        "summary": "Joseph Conrad's 1899 novella, drawn from his own brief and traumatic stint as a Congo riverboat captain in 1890, is told as a story-within-a-story aboard a yawl moored on the Thames at dusk. The seaman Marlow recounts how, after taking a job with a Belgian ivory company, he steamed up an unnamed African river to recover the company's most successful agent, a brilliant idealist named Kurtz who has gone silent in the deep interior. What Marlow finds along the way — chained laborers dying in a 'grove of death,' grotesquely incompetent colonial functionaries, and finally a Kurtz who has crowned himself a god to the local people and decorated his station with severed heads — collapses any belief in the civilizing pretensions of European empire. The book's prose is dense, hallucinatory, and oblique, refusing to name the country or the river and presenting Africa largely as a screen onto which Marlow projects horror. That choice has made the novella both a foundational anti-imperial text and the subject of sustained postcolonial critique, most famously in Chinua Achebe's 1975 lecture 'An Image of Africa.' Conrad's portrait of moral collapse in a frontier of unchecked power has nevertheless shaped twentieth-century literature deeply, providing the structural template for Francis Ford Coppola's Apocalypse Now and a touchstone for writers from T. S. Eliot to V. S. Naipaul.",
     },
     {
         "title": "Lord of the Flies",
@@ -328,7 +328,7 @@ FICTION_BOOKS = [
         "year": 1954,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Schoolboys stranded on a deserted island descend from civilization into savagery.",
+        "summary": "William Golding's 1954 debut, written in postwar England in deliberate response to the optimism of Victorian island adventures like R. M. Ballantyne's The Coral Island, strands a group of British schoolboys on an uninhabited tropical island after their evacuation plane is shot down. Without adults, the boys at first try to organize themselves: the level-headed Ralph is elected leader, the bookish and asthmatic Piggy provides the practical thinking, and the choirboy Jack volunteers his choristers as hunters. A conch shell becomes a totem of order, a signal fire becomes their best hope of rescue, and a meeting place becomes a parliament. Within weeks, all of it begins to fray. Jack's hunters discover the pleasure of violence, the younger boys talk of a 'beast' on the mountain, and the small society fissures along lines of fear, charisma, and ritual. Golding, a Royal Navy veteran who had seen warfare firsthand, treats the island as a clean experimental space in which he can demonstrate his thesis: that civilization is a thin and willed achievement and that, stripped of its adult scaffolding, the human capacity for cruelty surfaces with terrifying ease. The book was rejected by twenty-one publishers before it appeared and went on to become one of the most-taught novels in English, central to twentieth-century debates about innate evil, the function of social institutions, and the formation of boys.",
     },
     {
         "title": "Frankenstein",
@@ -336,7 +336,7 @@ FICTION_BOOKS = [
         "year": 1818,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection", "rainy afternoon"],
-        "summary": "A scientist creates life and then abandons it, unleashing a creature whose suffering mirrors the monstrousness of its maker.",
+        "summary": "Mary Shelley began this 1818 novel during the famously rainy summer of 1816 at Lake Geneva, when Lord Byron proposed that he, John Polidori, Percy Shelley, and the eighteen-year-old Mary Godwin each try to write a ghost story. Frankenstein is the only one that mattered, and it founded modern science fiction. The book is told through nested letters from the Arctic explorer Robert Walton, who rescues a dying stranger named Victor Frankenstein from the polar ice. Frankenstein recounts how, as a brilliant student at Ingolstadt, he assembled a being from scavenged human parts and shocked it to life — then fled in horror from his own creation. The unnamed creature, intelligent and articulate, teaches himself language by spying on a peasant family, reads Paradise Lost and Plutarch, and seeks his maker only to be met with rejection. Out of that wound he turns murderous, working his revenge through the people Frankenstein loves while demanding that his creator build him a mate. Shelley draws on her parents William Godwin and Mary Wollstonecraft, on Romantic debates about Promethean ambition, on contemporary experiments with galvanism, and on her own grief over a lost infant to produce a remarkably modern meditation on scientific responsibility, the ethics of creation, and the violence done by abandonment. The novel's central image — the maker repulsed by what he has made — has remained one of the dominant metaphors of Western technological anxiety.",
     },
     {
         "title": "Dracula",
@@ -344,7 +344,7 @@ FICTION_BOOKS = [
         "year": 1897,
         "genre": "fiction",
         "mood": ["late night reflection", "cozy night", "winter blanket"],
-        "summary": "An ancient vampire invades Victorian England through letters, diaries, and nightmares in the definitive Gothic horror novel.",
+        "summary": "Bram Stoker's 1897 novel codified the modern vampire and made Transylvania a permanent address in the Western imagination. Built entirely from letters, journal entries, telegrams, and newspaper clippings, the book opens with the young English solicitor Jonathan Harker traveling to a remote Carpathian castle to finalize a property purchase for a mysterious aristocrat, Count Dracula. Harker quickly realizes he is a prisoner and that his host moves between rooms at impossible speeds, casts no reflection, and sleeps in a coffin. Once Dracula reaches England by ship, the narrative widens to include Harker's fiancée Mina Murray, her vivacious friend Lucy Westenra, Lucy's three suitors, and the Dutch metaphysician Abraham Van Helsing, who slowly identifies the predator stalking them and organizes a hunt that runs from London asylums to graveyards back to the castle in the East. Stoker drew on Eastern European folklore, on John Polidori's earlier 'The Vampyre,' on Sheridan Le Fanu's 'Carmilla,' and on the period's anxieties about reverse colonization, mass immigration, female sexuality, and emerging technologies like the typewriter and the phonograph that the novel pointedly puts to use. Reception was mixed at first, but the book became central to twentieth-century horror through F. W. Murnau's Nosferatu and Tod Browning's 1931 film with Bela Lugosi. Dracula remains the foundational text of Gothic horror in English and the template for nearly every subsequent vampire story.",
     },
     # ── Modern Literary Fiction ───────────────────────────────────────────
     {
@@ -353,7 +353,7 @@ FICTION_BOOKS = [
         "year": 1987,
         "genre": "fiction",
         "mood": ["ugly cry", "late night reflection", "existential crisis"],
-        "summary": "A formerly enslaved woman is haunted by the ghost of the daughter she killed to save from slavery.",
+        "summary": "Toni Morrison's 1987 novel, awarded the Pulitzer Prize and central to her 1993 Nobel citation, is set in 1873 Cincinnati at a house called 124 Bluestone Road, which is haunted by a baby ghost. The house belongs to Sethe, a former slave who escaped from a Kentucky plantation called Sweet Home eighteen years earlier and who lives now with her surviving daughter Denver and the lingering grief of two sons who fled and a baby daughter whose throat she cut to keep her from being returned to bondage. The arrival of Paul D, another Sweet Home survivor, and then of a young woman who calls herself Beloved and may be the murdered daughter returned in flesh, forces Sethe to confront a past she has spent two decades managing rather than facing. Morrison drew the central act from the historical case of Margaret Garner, who in 1856 killed her own child rather than have her recaptured under the Fugitive Slave Act. Working in a prose that fuses Faulkner's interiority with the cadences of African American oral storytelling, Morrison builds the novel through fragmented memory, communal voices, and a kind of haunting that is both literal and historical. Beloved insists on the unspeakable scale of slavery's psychic damage, on the costs of survival, and on the work that Black communities, particularly Black women, have done to bear witness. It is widely regarded as one of the defining American novels of the twentieth century.",
     },
     {
         "title": "Song of Solomon",
@@ -361,7 +361,7 @@ FICTION_BOOKS = [
         "year": 1977,
         "genre": "fiction",
         "mood": ["self-discovery", "road trip", "late night reflection"],
-        "summary": "A young Black man journeys south to uncover his family's past and discovers the myth of flying Africans.",
+        "summary": "Toni Morrison's 1977 third novel, which won the National Book Critics Circle Award and was the first novel by a Black writer chosen by the Book of the Month Club since Native Son, follows Macon 'Milkman' Dead III through his journey from a comfortable but stifled middle-class childhood in a Michigan city to the rural Virginia hill country where his ancestors lived. Born to a property-owning father obsessed with material accumulation and a mother starved of intimacy, Milkman drifts through his twenties under the spell of his rough cousin Guitar, his haunted aunt Pilate, and a casual cruelty toward the women who love him. A rumor of buried gold sends him south, but the trip turns into something else entirely: a slow, attentive recovery of family names, songs, and the legend of Solomon, his great-grandfather, who according to community memory simply flew back to Africa, leaving his children behind. Morrison weaves African American folk material, biblical naming, and Greek tragic structure into a novel that treats flight as both liberation and abandonment. Song of Solomon was the book that secured Morrison's reputation as a major American novelist; Barack Obama has cited it as one of the books that shaped him, and it is consistently named among the most important works of late twentieth-century American fiction.",
     },
     {
         "title": "Sula",
@@ -369,7 +369,7 @@ FICTION_BOOKS = [
         "year": 1973,
         "genre": "fiction",
         "mood": ["self-discovery", "existential crisis"],
-        "summary": "Two Black women in a small Ohio town take opposite paths, and their friendship becomes a mirror for identity and freedom.",
+        "summary": "Toni Morrison's 1973 second novel is set in the Bottom, a Black hilltop neighborhood above the white town of Medallion, Ohio, between roughly 1919 and 1965. At its center is the friendship of two girls, Nel Wright and Sula Peace, whose temperaments split along lines that the novel will spend decades examining. Nel grows up in an immaculate, conventional household and chooses marriage, motherhood, and the constraints of her community. Sula, raised in the chaotic, open house run by her grandmother Eva and her mother Hannah, leaves town for ten years and returns wearing pants, having affairs with married men, and refusing every script the community has written for her. Their bond and its long aftermath give Morrison the structure for a novel that is also about the unnamed soldier shellshocked into founding a National Suicide Day, about Eva burning her drug-addicted son in his bed out of love, about how a Black town survives and judges, and about the kinds of women who get called witches because the language for them does not yet exist. Morrison's prose is compressed, lyric, and merciless, and the book is widely seen as the work in which she found her voice. It established her as the most significant new American novelist of the early seventies and laid the groundwork for everything that followed.",
     },
     {
         "title": "Midnight's Children",
@@ -377,7 +377,7 @@ FICTION_BOOKS = [
         "year": 1981,
         "genre": "fiction",
         "mood": ["self-discovery", "late night reflection", "road trip"],
-        "summary": "A child born at the moment of India's independence discovers he is telepathically linked to all other midnight-born children.",
+        "summary": "Salman Rushdie's 1981 second novel, which won the Booker Prize that year and was later named the Booker of Bookers and Best of the Booker, is narrated by Saleem Sinai, born in Bombay at the exact midnight that ushered in Indian independence on August 15, 1947. Saleem and the 1,000 other children born in that first hour discover that their birth has gifted them with magical powers — Saleem's is telepathy — and he eventually convenes them in an internal Midnight Children's Conference whose squabbles mirror the new nation's. Around this conceit, Rushdie threads three generations of Saleem's family from Kashmir to Agra to Bombay to Karachi, the partition of India and Pakistan, the wars of 1965 and 1971, the founding of Bangladesh, and the dictatorial Emergency declared by Indira Gandhi in 1975, during which Saleem comes to grief. Drawing equally on Tristram Shandy, the Mahabharata, the Arabian Nights, and Bombay film, the book launched what came to be called the Indian English novel and helped define magical realism as a postcolonial mode. Rushdie's narrator is unreliable, garrulous, self-pitying, and pun-mad, and the prose is the kind of layered linguistic carnival that reshaped expectations of what English fiction could sound like. The novel transformed Rushdie from a little-noticed first novelist into one of the most influential literary figures of his generation.",
     },
     {
         "title": "The Satanic Verses",
@@ -385,7 +385,7 @@ FICTION_BOOKS = [
         "year": 1988,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Two Indian actors survive a plane explosion and undergo surreal transformations in a novel about migration, faith, and identity.",
+        "summary": "Salman Rushdie's fourth novel, published in 1988, opens with two Indian actors falling thirty thousand feet from a hijacked Air India 747 over the English Channel and somehow surviving onto an English beach: Gibreel Farishta, a Bombay film star who has played Hindu gods, and Saladin Chamcha, a voice actor who has spent his adult life remaking himself as an Englishman. As they walk away from the ocean, Gibreel begins to manifest a halo and Saladin begins to grow horns and hooves, and the rest of the book braids their adventures in a 1980s London that Rushdie renders as 'Ellowen Deeowen' with parallel dream-sequences in which Gibreel imagines himself the archangel of an early-seventh-century Arabian merchant named Mahound founding a new monotheism. It was these dream sections, with their rewriting of Islamic origin stories and their use of names traditionally given to prostitutes for the wives of the prophet, that prompted Iran's Supreme Leader to issue a fatwa against Rushdie in February 1989, sending him into nine years of police protection and producing the most dangerous publishing controversy of the late twentieth century. The novel itself is sprawling, polyphonic, and very funny, a work obsessed with migration, hybridity, language, faith, and the costs of leaving one country for another. Even apart from its political afterlife, it is widely considered one of the most ambitious novels in English of its generation.",
     },
     {
         "title": "Norwegian Wood",
@@ -393,7 +393,7 @@ FICTION_BOOKS = [
         "year": 1987,
         "genre": "fiction",
         "mood": ["heartbreak recovery", "rainy afternoon", "slow burn"],
-        "summary": "A Tokyo college student navigates grief and desire, caught between a fragile woman tied to his past and a vibrant one pulling him forward.",
+        "summary": "Haruki Murakami's 1987 fifth novel, the book that turned him into a national phenomenon in Japan, is a quiet, autumnal love story narrated by Toru Watanabe in his late thirties, prompted to remember his college years when he hears the Beatles song that gives the book its title on a landing flight in Hamburg. As a freshman in Tokyo in 1968 and 1969, Toru is recovering from the suicide of his closest friend Kizuki and slowly drawn back into the orbit of Naoko, Kizuki's former girlfriend, who is herself collapsing under the same loss. Their fragile reconnection, conducted partly through long walks across Tokyo and partly through letters to a sanatorium in the mountains where Naoko goes for treatment, runs in counterpoint to his attraction to the bright, blunt fellow student Midori, who is nursing her own dying father and asking only that someone choose to live alongside her. The student protests of the era flicker at the edges of the story rather than driving it, and Murakami keeps the focus on rooms, music, food, and the small acts of attention that grief demands. Unlike his more surreal novels, Norwegian Wood is realist and deliberately classical in shape, drawing on The Catcher in the Rye and on the bittersweet conventions of Japanese seishun shosetsu, the youth novel. It remains the most-loved Murakami book in Japan and the gateway through which most international readers first encountered him.",
     },
     {
         "title": "Kafka on the Shore",
@@ -401,7 +401,7 @@ FICTION_BOOKS = [
         "year": 2002,
         "genre": "fiction",
         "mood": ["self-discovery", "late night reflection", "road trip"],
-        "summary": "A runaway teenager and an old man who talks to cats converge in a dreamlike narrative about fate and consciousness.",
+        "summary": "Haruki Murakami's 2002 novel, published in English in 2005 to international acclaim, alternates between two seemingly unrelated narratives that gradually braid together. In the first, fifteen-year-old Kafka Tamura runs away from his Tokyo home and from a strange Oedipal prophecy his sculptor father has laid on him, riding a bus to the southern city of Takamatsu and taking shelter in a private library run by the elegant Miss Saeki and her young assistant Oshima. In the second, an elderly man named Nakata, who lost the ability to read as a child after a wartime mass-fainting incident in the mountains, supports himself by finding lost cats in his Tokyo neighborhood, a job he can do because he can talk with them. After he is forced into a grotesque encounter with a man who calls himself Johnnie Walker, Nakata too is pulled toward Takamatsu, accompanied by a young truck driver named Hoshino. Murakami fills the book with leitmotifs — Beethoven's Archduke Trio, Coltrane, leeches falling from the sky, an entrance stone in a forest — and writes the convergence of the two narratives as a kind of metaphysical fairy tale rather than a thriller. Kafka on the Shore is one of the fullest expressions of his signature mode, a dreamlike literalism in which Greek tragedy, Shinto, libraries, and pop culture all share a single landscape, and it helped consolidate his standing as one of the most widely read living novelists.",
     },
     {
         "title": "The Wind-Up Bird Chronicle",
@@ -409,7 +409,7 @@ FICTION_BOOKS = [
         "year": 1994,
         "genre": "fiction",
         "mood": ["late night reflection", "existential crisis", "rainy afternoon"],
-        "summary": "A man searching for his missing cat descends into a surreal underworld where personal and historical violence intertwine.",
+        "summary": "Haruki Murakami's 1994-95 novel, published in three volumes in Japan and in a single condensed English translation in 1997, is widely considered his most ambitious and historically engaged work. Toru Okada, a former law-firm clerk drifting through unemployment in suburban Tokyo, begins searching for his wife Kumiko's missing cat at her urging, then for Kumiko herself when she disappears without explanation. The hunt pulls him into a strange, expanding cast: the cynical teenage neighbor May Kasahara, the prostitute-of-the-mind Malta Kano and her sister Creta, a war veteran named Lieutenant Mamiya whose long account of being thrown into a dry well in 1939 Mongolia gives the novel its central image, and Toru's brother-in-law Noboru Wataya, a rising media intellectual whose hidden cruelty becomes the book's antagonist. Toru himself starts climbing down into the dry well of an abandoned house on his street, where time and the ordinary boundary between bodies grow porous. Murakami uses the missing wife and the well as scaffolding for an exploration of unprocessed Japanese twentieth-century violence, particularly the brutalities of the Manchurian campaign and the Nomonhan border conflict. The book is structurally demanding, deliberately uneven, and one of the rare contemporary novels to take seriously the moral question of inherited national guilt. It established Murakami as a writer whose surreal mode could carry historical weight.",
     },
     {
         "title": "1Q84",
@@ -417,7 +417,7 @@ FICTION_BOOKS = [
         "year": 2009,
         "genre": "fiction",
         "mood": ["slow burn", "late night reflection", "butterflies"],
-        "summary": "Two strangers in an alternate 1984 Tokyo are drawn together by a mysterious cult, parallel worlds, and childhood love.",
+        "summary": "Haruki Murakami's three-volume 2009-10 novel, his longest, is set in a Tokyo of 1984 that gradually reveals itself as a slightly different reality the protagonists eventually call 1Q84, the Q standing for question mark. Aomame, a fitness instructor who moonlights as a contract assassin punishing men who abuse women, climbs down an emergency staircase off a Tokyo expressway one afternoon and notices afterward that the moon is now accompanied by a smaller green moon. Tengo, a math tutor and aspiring novelist, is recruited by an editor to ghostwrite a strange manuscript called Air Chrysalis, written by a teenage runaway from a religious commune. Their alternating chapters slowly reveal that they were classmates as children, that they have not seen one another in twenty years, that the cult Tengo has stumbled into and the man Aomame has been sent to kill are connected through entities the cult calls the Little People, and that the changed sky over Tokyo is the territory in which they may finally find each other. Murakami draws on Orwell's 1984, Janáček's Sinfonietta, fairy tale logic, and his own long preoccupation with parallel worlds and missing partners. The novel is at once a love story, a metaphysical thriller, and a meditation on writing and on the porous walls between fiction and the world, and on its release it was an enormous bestseller in Japan and abroad.",
     },
     {
         "title": "The Handmaid's Tale",
@@ -425,7 +425,7 @@ FICTION_BOOKS = [
         "year": 1985,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "In a theocratic America, a woman is forced into reproductive servitude and fights to survive with her identity intact.",
+        "summary": "Margaret Atwood's 1985 novel, set in a near-future Republic of Gilead that has overthrown the United States in a paramilitary coup and replaced its constitution with a theocratic, patriarchal regime grounded in selectively read Old Testament passages, is narrated by Offred, a woman whose name simply means 'of Fred,' the commander to whom she has been assigned. Plummeting fertility rates following environmental collapse have made viable reproduction the regime's central political problem, and women like Offred — sorted, retrained at the Red Center under sadistic 'Aunts,' and stripped of property, money, and reading — are loaned out to elite households so that their commanders can attempt to impregnate them in ritualized monthly ceremonies overseen by the commander's wife. Through Offred's restrained, often funny voice, Atwood reconstructs the texture of a daily life of shopping pairs and prayer and forbidden friendships and the half-remembered husband and daughter she lost in a failed border crossing. Atwood famously insisted that nothing in the book had not already happened somewhere in human history, drawing on Puritan New England, Ceaușescu's Romania, and contemporary American religious-right rhetoric. The novel won the inaugural Arthur C. Clarke Award and the Governor General's Award and has become one of the defining political fables of the late twentieth century, its currency renewed by recent battles over reproductive rights.",
     },
     {
         "title": "Oryx and Crake",
@@ -433,7 +433,7 @@ FICTION_BOOKS = [
         "year": 2003,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "The last human on earth recalls how corporate science, genetic engineering, and one brilliant friend ended civilization.",
+        "summary": "Margaret Atwood's 2003 novel, the first book in what became the MaddAddam trilogy, opens with a man who calls himself Snowman living in a tree on a beach, scavenging for canned food, draped in a dirty bedsheet, and watched over by a small group of pacific, herbivorous, genetically engineered humans called the Crakers, who treat him as a kind of awkward prophet. Through alternating flashbacks, Snowman remembers his earlier life as Jimmy, growing up in a near-future North America divided between corporate compounds where genetic engineers and their families enjoy comfortable security and lawless 'pleeblands' outside the walls. He recalls his father's work at OrganInc, a haunting young woman named Oryx who turned up in childhood pornography and reentered his life as an adult, and above all his brilliant best friend Crake, the bioengineer responsible both for the new humans on the beach and for the engineered plague that wiped out the rest of the species. Atwood declined to call the book science fiction, preferring 'speculative fiction,' and uses it to extend present-day debates about gene patents, factory medicine, corporate governance, and the entertainment economy. The novel was shortlisted for the Booker and the Orange and stands as one of the strongest entries in the contemporary post-apocalyptic tradition, alongside McCarthy's The Road and Mandel's Station Eleven.",
     },
     {
         "title": "The Blind Assassin",
@@ -441,7 +441,7 @@ FICTION_BOOKS = [
         "year": 2000,
         "genre": "fiction",
         "mood": ["slow burn", "rainy afternoon", "late night reflection"],
-        "summary": "An elderly woman unravels decades of family secrets through a novel-within-a-novel about love, betrayal, and pulp sci-fi.",
+        "summary": "Margaret Atwood's 2000 novel, which won the Booker Prize that year, is built as a Russian doll. The outermost frame is the present-tense narration of Iris Chase Griffen, an elderly Canadian widow looking back from a small Ontario town on the catastrophic history of her family. Inside that, Iris recovers her own twentieth-century: her industrialist father's bankruptcy, her marriage at nineteen to the much older businessman Richard Griffen, the loss of her sister Laura, who drove her car off a bridge in 1945 days after the war ended, and the posthumous publication under Laura's name of a scandalous novel called The Blind Assassin. Inside that frame again is the novel-within-the-novel, a clandestine love affair between an unnamed wealthy young woman and a leftist on the run, who together invent and tell each other a pulp science fiction tale set on the planet Zycron. Atwood uses these layers to set up a very slow act of detection in which the reader gradually understands which characters were really sleeping with which, who really wrote what, and what the real cost was of a family's silence. The novel is also a sustained engagement with twentieth-century Canadian history, with the conventions of pulp magazines, and with the question of who gets to be the author of a woman's own life. It is widely considered one of the high points of Atwood's career.",
     },
     {
         "title": "Atonement",
@@ -449,7 +449,7 @@ FICTION_BOOKS = [
         "year": 2001,
         "genre": "fiction",
         "mood": ["ugly cry", "heartbreak recovery", "slow burn"],
-        "summary": "A thirteen-year-old's false accusation destroys two lives, and the rest of the novel is her lifelong attempt to write it right.",
+        "summary": "Ian McEwan's 2001 novel is structured in three movements separated by decades. The long first section unfolds across a single hot day in 1935 at the Tallis family's country house in Surrey, where the precocious thirteen-year-old Briony, already a writer, watches her older sister Cecilia and the housekeeper's son Robbie Turner from a distance and persuades herself she has understood what she has seen. After a sequence of half-misread incidents — a moment at a fountain, a misdirected letter, an encounter in the library — a real assault on a visiting cousin gives Briony the occasion to name Robbie, fatefully and falsely, as the attacker. The second section follows Robbie, conscripted out of prison, through the chaos of the British retreat to Dunkirk in 1940, while the third tracks Briony as a young nurse in wartime London beginning the lifelong project of writing what she did, and a coda in 1999 supplies the final twist. McEwan uses the book to think about the moral status of fiction itself, asking what kind of atonement is possible when the novelist who did the harm is also the only person who can tell the story. The novel was shortlisted for the Booker, became a major commercial and critical success, and was adapted into Joe Wright's celebrated 2007 film, but the book's central argument about the limits of authorial reparation remains squarely on the page.",
     },
     {
         "title": "On Chesil Beach",
@@ -457,7 +457,7 @@ FICTION_BOOKS = [
         "year": 2007,
         "genre": "fiction",
         "mood": ["heartbreak recovery", "slow burn"],
-        "summary": "A newlywed couple's disastrous wedding night in 1962 England exposes how sexual inexperience and miscommunication can ruin a life.",
+        "summary": "Ian McEwan's 2007 novella is set in the summer of 1962, on the cusp of the cultural revolution that the title beach will help to retroactively name. Edward Mayhew, a young historian from a working-class background, and Florence Ponting, a violinist from a sheltered Oxford family, have just been married and arrive at a small hotel on Chesil Beach in Dorset for their wedding night. McEwan stages most of the book in nearly real time over a single evening, following a careful, suffocating dinner served by hotel staff in their suite, and braiding it with quietly devastating flashbacks to the year-long courtship that brought them here. Both are virgins; neither has the vocabulary or the privacy of family experience to talk about the thing they are about to attempt; and Florence is carrying a private terror of physical intimacy that she has never been able to name. The encounter that follows lasts only minutes, but McEwan turns it into a hinge on which two lives turn, and the brief final section flashes forward through decades of solitary aftermath. The book is a small masterpiece of class, period, and English emotional restraint, and it sits alongside Atonement as one of McEwan's tightest fictional studies of how a few unspoken sentences can permanently shape a life. It was shortlisted for the Booker Prize.",
     },
     {
         "title": "The Remains of the Day",
@@ -465,7 +465,7 @@ FICTION_BOOKS = [
         "year": 1989,
         "genre": "fiction",
         "mood": ["rainy afternoon", "heartbreak recovery", "slow burn"],
-        "summary": "An English butler on a road trip through the countryside slowly realizes he sacrificed love and moral agency for duty.",
+        "summary": "Kazuo Ishiguro's 1989 third novel, which won the Booker Prize and helped earn him the Nobel in 2017, is the diary of a six-day motoring trip Stevens, an aging English butler, takes through the West Country in the summer of 1956. He is officially driving down to see Miss Kenton, the former housekeeper at Darlington Hall, on the pretext of recruiting her back to the staff for his new American owner. Through the small, courteous prose he uses to record village pubs and the dignity of his profession, he also revisits the long years before the Second World War when his employer, Lord Darlington, hosted a series of conferences pushing for British rapprochement with Nazi Germany, and when his own tightly held devotion to service prevented him from acknowledging either Lord Darlington's growing political compromise or his own deep feeling for Miss Kenton. Ishiguro builds the novel almost entirely on Stevens's blind spots, allowing the reader to see what he cannot afford to: a life of self-denial in service of an employer who turned out to be morally indefensible, and an unspoken love that he had every chance to claim. The result is one of the most precise studies of repression and complicity in postwar English fiction. The 1993 Merchant Ivory film, with Anthony Hopkins as Stevens and Emma Thompson as Miss Kenton, made the book even more widely known.",
     },
     {
         "title": "Never Let Me Go",
@@ -473,7 +473,7 @@ FICTION_BOOKS = [
         "year": 2005,
         "genre": "fiction",
         "mood": ["ugly cry", "existential crisis", "slow burn"],
-        "summary": "Students at an idyllic English boarding school discover a devastating truth about their purpose in a quietly horrifying dystopia.",
+        "summary": "Kazuo Ishiguro's 2005 novel, set in a slightly altered version of late twentieth-century England, is narrated by Kathy H., a thirty-one-year-old 'carer' looking back on her childhood at an isolated boarding school called Hailsham and her young adulthood at the Cottages, where Hailsham graduates spend a few years before they begin their real work. Through Kathy's careful, conversational voice, the reader gradually understands what the children themselves only half-understand: they are clones, raised in protected enclaves so that their organs can eventually be harvested for ordinary citizens, and they will all 'complete' in young adulthood after a small number of donations. Around this slowly disclosed central fact, Ishiguro builds an intensely ordinary story of friendship and love among Kathy, the volatile Ruth, and the gentle Tommy, who chase a fragile rumor that couples in genuine love might be granted a temporary deferral. Ishiguro deliberately keeps the science vague and refuses to write a thriller of escape or rebellion, choosing instead to treat the children's acceptance of their fate as the heart of the book's quiet horror. Never Let Me Go is a meditation on mortality, on art and the soul, on how thoroughly people can be socialized into accepting the terms of their own use, and on the human practice of consoling ourselves with stories. It was shortlisted for the Booker and is widely taught alongside the great twentieth-century dystopias.",
     },
     {
         "title": "Klara and the Sun",
@@ -481,7 +481,7 @@ FICTION_BOOKS = [
         "year": 2021,
         "genre": "fiction",
         "mood": ["rainy afternoon", "self-discovery", "existential crisis"],
-        "summary": "A solar-powered artificial friend observes human love and sacrifice from a unique vantage point, raising questions about what it means to be alive.",
+        "summary": "Kazuo Ishiguro's 2021 novel, his first after winning the Nobel Prize in Literature, is narrated by Klara, a solar-powered Artificial Friend on display in a near-future store, where she watches passersby and waits to be chosen by a child. She is selected by Josie, a fragile teenager whose chronic illness is connected to a genetic 'lifting' procedure that has split this near-future society into the privileged enhanced and the ordinary unenhanced. Brought to Josie's home in the country, Klara observes the household's tensions — Josie's mother's anguished planning for her possible loss, the strained romance with the unlifted neighbor boy Rick, the unsettling visit to a sculptor named Mr. Capaldi — through a vision system that perceives the world in segmented panels and through a private theology in which the sun is a benevolent god whose intervention she increasingly tries to bargain for on Josie's behalf. Ishiguro keeps Klara's voice flatly attentive, refusing both sentimentality and overt commentary, so that the book's questions about what it would mean for a machine to love, to pray, and to be replaceable surface only obliquely. Klara and the Sun extends the concerns of Never Let Me Go into a near-future of automation, gene editing, and grief, and it was longlisted for the Booker Prize and widely reviewed as a quietly devastating fable about technology and personhood.",
     },
     {
         "title": "The Road",
@@ -489,7 +489,7 @@ FICTION_BOOKS = [
         "year": 2006,
         "genre": "fiction",
         "mood": ["existential crisis", "ugly cry", "winter blanket"],
-        "summary": "A father and son push a shopping cart through a scorched America, carrying the fire of human goodness in a world that has lost everything.",
+        "summary": "Cormac McCarthy's 2006 novel, awarded the Pulitzer Prize for Fiction, is set on a road in an unnamed America years after an unnamed catastrophe — most likely an asteroid strike or comparable extinction event — has set the country on fire and choked the sky with ash. A man and his young son, neither named, push a shopping cart south along a state highway in the direction of the coast, scavenging cans of peaches from looted houses and trying to avoid the bands of cannibal survivors who have come to dominate what is left of the population. The man is dying of a respiratory illness, the boy was born just after the disaster and has known nothing else, and the mother, in a flashback, has chosen suicide rather than continue. Their conversations about whether they are still 'the good guys' and about 'carrying the fire' carry the moral weight of the book, and McCarthy strips his trademark prose to a starker, even more biblical register than usual, removing most quotation marks and many apostrophes. The novel is at once an ecological warning, a fable about parenthood under conditions of total loss, and a sustained meditation on the persistence of love in a world without future. It was adapted into a 2009 film with Viggo Mortensen and is widely considered McCarthy's most accessible and emotionally direct major work.",
     },
     {
         "title": "Blood Meridian",
@@ -497,7 +497,7 @@ FICTION_BOOKS = [
         "year": 1985,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "A teenage runaway joins a scalp-hunting gang on the Texas-Mexico border in a relentlessly violent meditation on evil.",
+        "summary": "Cormac McCarthy's 1985 fifth novel, subtitled 'Or the Evening Redness in the West,' is set on the Texas-Mexico borderlands in 1849-50 and draws on the historical Glanton gang, a band of mercenary scalp hunters originally hired by the Mexican state of Chihuahua to bring back Apache scalps and quickly turning to the indiscriminate slaughter of anyone whose hair could be presented for bounty. McCarthy's protagonist, called only 'the kid,' a runaway from Tennessee, drifts into the gang at fourteen and rides with them through a landscape of lava beds, abandoned missions, and dry rivers. The gang is led by the historical John Joel Glanton but dominated by McCarthy's invention Judge Holden, an enormous, hairless, multilingual, child-killing white man who sermonizes on geology, war as the truest form of divination, and the necessity of dance, and whose status as a literal human being remains an open question through the book. Drawing on Samuel Chamberlain's My Confession, the King James Bible, Melville, and Faulkner, McCarthy writes an apocalyptic Western in baroque, archaic prose, refusing the genre's redemptive arcs and forcing the reader to look at frontier history as a series of unjustified atrocities. Once a critical orphan, the novel is now widely regarded as one of the great American novels and as McCarthy's most sustained meditation on violence, evil, and the nature of human will.",
     },
     {
         "title": "No Country for Old Men",
@@ -505,7 +505,7 @@ FICTION_BOOKS = [
         "year": 2005,
         "genre": "fiction",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "A hunter finds drug money in the desert and is pursued by an unstoppable killer in a stark parable about fate and violence.",
+        "summary": "Cormac McCarthy's 2005 novel, set in West Texas in 1980, is built from three interlocking points of view. Llewelyn Moss, a Vietnam veteran and welder out hunting antelope, stumbles in the desert on the wreckage of a drug deal — bullet-riddled trucks, dead Mexicans, a wounded survivor begging for water, and a satchel containing more than two million dollars. He takes the money and runs. Anton Chigurh, a hitman with a captive bolt pistol and a private moral system based on coin tosses, is sent after him. And Sheriff Ed Tom Bell, an aging West Texas lawman whose interludes punctuate the novel, watches the chase from the outside and tries to understand a wave of violence that he experiences as something genuinely new on his land. McCarthy strips the prose almost to dialogue and stage direction, refusing the lyrical excursions of Blood Meridian and giving the book the propulsive feel of a thriller. Beneath the chase, however, sits one of his most pointed arguments: that drug-economy violence has rendered the moral world Bell grew up in obsolete, and that the appropriate question is no longer whether evil can be defeated but what it asks of those who continue to live among it. The Coen brothers' 2007 adaptation, which won four Academy Awards including Best Picture, brought the book a much wider audience.",
     },
     {
         "title": "White Teeth",
@@ -513,7 +513,7 @@ FICTION_BOOKS = [
         "year": 2000,
         "genre": "fiction",
         "mood": ["beach read", "self-discovery", "road trip"],
-        "summary": "Two wartime friends and their families collide across cultures, generations, and North London in a sprawling comic novel about belonging.",
+        "summary": "Zadie Smith was twenty-four when this 2000 debut appeared, written largely while she was still an undergraduate at Cambridge, and it arrived with the kind of fanfare reserved for novels that announce a generation. The book is set mostly in the multiracial neighborhoods of late twentieth-century North London and follows two unlikely friends from a wartime tank crew — Archie Jones, a hapless white English paper-folder, and Samad Iqbal, a one-handed Bengali Muslim waiter haunted by the lineage of his great-grandfather — as their families ricochet around each other across decades. Archie's much younger Jamaican wife Clara, their daughter Irie, Samad's wife Alsana, and their twin sons Magid and Millat each carry a different angle on the question of how the children of immigrants make a life in a city that is both home and not. A third household, the bookishly liberal Chalfens, eventually pulls all three families into the orbit of FutureMouse, a genetic engineering experiment whose unveiling becomes the millenarian climax of the book. Smith blends Dickensian set pieces, Salman Rushdie–like polyphony, and a sharp comic ear for British speech to produce a novel as much about hairdressers and class teachers and Jehovah's Witnesses as about race, religion, and history. White Teeth won the Whitbread First Novel Award and the Guardian First Book Award and remains a foundational text of post-imperial British fiction.",
     },
     {
         "title": "On Beauty",
@@ -521,7 +521,7 @@ FICTION_BOOKS = [
         "year": 2005,
         "genre": "fiction",
         "mood": ["self-discovery", "rainy afternoon"],
-        "summary": "Two academic families — one liberal, one conservative — clash over art, race, and fidelity in a university town.",
+        "summary": "Set on a fictional New England college campus and partly in north London, Zadie Smith's third novel follows the entangled lives of two academic families whose patriarchs are bitter Rembrandt scholars on opposite sides of every cultural battle. Howard Belsey is a white English liberal whose career has stalled and whose marriage to Kiki, a warm Black American, is straining under the weight of an affair. Monty Kipps is a Trinidadian-born conservative whose arrival at the same college, with his wife and headstrong children in tow, reignites a feud that quickly becomes personal. Loosely modeled on E. M. Forster's Howards End, the novel braids together questions about art and authenticity, race and class, marriage and parenthood, and the costs of intellectual posturing. Smith pays equal attention to the Belsey children — Jerome's earnest religious turn, Zora's ambition, Levi's search for street credibility — and to the small humiliations that pile up in faculty meetings, dinner parties, and poetry slams. Behind the comedy of manners runs a sustained meditation on what beauty is for, whether love can survive vanity, and how families inherit and pass on their wounds. The result is a generous, sharply observed portrait of liberal academic life that treats its characters' contradictions with both irony and tenderness.",
     },
     {
         "title": "The Kite Runner",
@@ -529,7 +529,7 @@ FICTION_BOOKS = [
         "year": 2003,
         "genre": "fiction",
         "mood": ["ugly cry", "heartbreak recovery", "self-discovery"],
-        "summary": "A man returns to Taliban-controlled Kabul to rescue the son of his childhood friend, seeking atonement for a betrayal decades old.",
+        "summary": "Khaled Hosseini's debut novel opens in the comfortable Wazir Akbar Khan neighborhood of 1970s Kabul, where Amir, the privileged son of a wealthy Pashtun businessman, is inseparable from Hassan, the Hazara servant boy who flies kites with him through the city's winter skies. Their friendship is tested by class, ethnicity, and a single act of cowardice on the day Amir wins the local kite-fighting tournament — a betrayal that quietly poisons everything that follows. As the Soviet invasion shatters Afghanistan, Amir and his father flee to California, where they rebuild their lives among other refugees, attend flea markets, and learn to navigate a quieter American grief. Years later, a phone call from an old friend pulls Amir back toward Taliban-era Kabul, where he discovers the cost of his silence and the chance, however dangerous, to do what was always demanded of him. Hosseini weaves together fathers and sons, immigration and memory, the rituals of kite running, and the slow disfiguring of a country he clearly loves. The novel reaches for big themes of guilt, loyalty, and atonement without abandoning the specific textures of Afghan family life — pomegranate trees, naan, lullabies, and the particular shame of looking away when someone you love needs you to act.",
     },
     {
         "title": "Life of Pi",
@@ -537,7 +537,7 @@ FICTION_BOOKS = [
         "year": 2001,
         "genre": "fiction",
         "mood": ["self-discovery", "existential crisis", "beach read"],
-        "summary": "A boy and a Bengal tiger survive 227 days adrift on the Pacific in a story about faith, storytelling, and survival.",
+        "summary": "Yann Martel's Booker Prize-winning novel introduces Piscine Molitor Patel, a curious boy from Pondicherry who renames himself Pi to escape schoolyard mockery and embraces Hinduism, Christianity, and Islam simultaneously, much to the bafflement of his rationalist zookeeper father. When the family decides to emigrate to Canada and sell off their animals, the Japanese cargo ship carrying them sinks in the Pacific, leaving Pi as the only human survivor on a lifeboat shared with a hyena, a wounded zebra, an orangutan named Orange Juice, and a 450-pound Bengal tiger named Richard Parker. The bulk of the novel chronicles 227 days at sea, during which Pi must learn to ration water, catch fish and turtles, train a tiger by territorial discipline, and keep his faith in a universe that refuses to declare itself. He encounters bioluminescent algae, a temporary island of carnivorous trees, and the slow erosion of his own sense of self. After rescue, Japanese investigators interview Pi about the sinking and receive two very different versions of his ordeal, leaving readers to choose which story they prefer to believe. Framed as a tale that will make you believe in God, the book is finally a meditation on storytelling itself — on how narrative survival sometimes matters as much as physical survival.",
     },
     {
         "title": "The God of Small Things",
@@ -545,7 +545,7 @@ FICTION_BOOKS = [
         "year": 1997,
         "genre": "fiction",
         "mood": ["ugly cry", "slow burn", "rainy afternoon"],
-        "summary": "Twins in Kerala navigate caste, forbidden love, and family trauma in lush, fragmented prose.",
+        "summary": "Arundhati Roy's Booker Prize-winning debut is set in the lush green backwaters of Ayemenem, Kerala, and circles the lives of fraternal twins Estha and Rahel, who as children inhabit a private world of secret languages, palindromes, and reversed names. The narrative moves restlessly between two timelines: a few fateful days in 1969 surrounding the visit of their British cousin Sophie Mol, and the early 1990s, when the now-grown twins reunite at the family home after decades of estrangement. Around them spin their beautiful, divorced mother Ammu, their Oxford-returned uncle Chacko, the bitter aunt Baby Kochamma, and Velutha, an Untouchable carpenter whose presence in the household will change everything. Roy uses caste, communism, the legacy of colonialism, and the quiet despotism of the Love Laws — those that dictate who should be loved, and how, and how much — to frame a tragedy the reader senses long before it arrives. Her prose is famously inventive, bending grammar into childlike refrains and capitalized abstractions, and her structure withholds and releases information like a tightening knot. The result is a novel about small kindnesses and small cruelties, about the way history writes itself onto private bodies, and about the mute persistence of love after it has been forbidden.",
     },
     # ── Sci-Fi ────────────────────────────────────────────────────────────
     {
@@ -1285,7 +1285,7 @@ FICTION_BOOKS = [
         "year": 2016,
         "genre": "fiction",
         "mood": ["self-discovery", "ugly cry", "slow burn"],
-        "summary": "Two half-sisters in eighteenth-century Ghana start parallel lineages — one into American slavery, one into African colonialism — traced across three hundred years.",
+        "summary": "Yaa Gyasi's debut novel begins in eighteenth-century Ghana with two half-sisters, Effia and Esi, who never meet and whose lives diverge with brutal symmetry. Effia is married off to a British officer who runs Cape Coast Castle, while Esi is captured and held in the dungeons beneath that same fortress before being shipped to the American colonies in chains. From this opening fork, the narrative tracks seven generations of each lineage, devoting each chapter to a single descendant on either the Asante or American side. On the African branch the story moves through Fante and Asante warfare, the British colonial project, missionary schools, independence, and a contemporary return. On the American branch it passes through plantation slavery, the convict-leasing labor of Alabama coal mines, the Great Migration to Harlem, the heroin epidemic, and finally a Stanford-educated researcher confronting his inheritance. Gyasi uses each chapter as a self-contained portrait while letting an heirloom black stone, the memory of fire, and recurring water imagery thread the family tree together. The book's structure deliberately resists a single protagonist, treating history itself as the central character and showing how the trauma of the Atlantic slave trade ripples outward into both nations. By the final chapters, when descendants of the two sisters circle unknowingly toward Cape Coast, the novel has assembled a sweeping argument about diaspora, cultural memory, and the long aftermath of capture.",
     },
     # ── Additional Fiction ────────────────────────────────────────────────
     {
@@ -1294,7 +1294,7 @@ FICTION_BOOKS = [
         "year": 1942,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection", "beach read"],
-        "summary": "A man indifferent to his mother's death and to the conventions of society commits a senseless murder on an Algerian beach.",
+        "summary": "Albert Camus's first novel introduces Meursault, a young French Algerian clerk in colonial Algiers who narrates his life in a flat, present-tense voice that strips emotion from events others find shattering. The book opens with the famous line about his mother's death and proceeds through the funeral at the Marengo old people's home, where Meursault declines to view the body, smokes beside the coffin, and registers heat and tiredness rather than grief. He resumes his life the next day, beginning a casual affair with Marie, helping his unsavory neighbor Raymond compose a letter to lure back a former lover, and drifting into the dispute that follows. On a sweltering Sunday at a beach cottage outside the city, a confrontation with a man Raymond has wronged ends with Meursault firing five shots under a blinding sun, an act he attributes to the light rather than to intent. The second half of the novel is consumed by his trial, where the prosecution treats his composure at his mother's funeral as evidence of moral monstrosity rather than focusing on the killing itself. Awaiting execution, Meursault confronts a chaplain and finally articulates the philosophy the novel has been demonstrating: a refusal to invent meaning, an acceptance of the universe's benign indifference, and a defiant embrace of the present. The book became a foundational text of absurdism and a touchstone of twentieth-century existential literature.",
     },
     {
         "title": "Nausea",
@@ -1302,7 +1302,7 @@ FICTION_BOOKS = [
         "year": 1938,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "A historian in a provincial French town is overcome by a sickening awareness of the raw contingency of existence.",
+        "summary": "Jean-Paul Sartre's first novel is presented as the diary of Antoine Roquentin, a solitary historian living in the fictional French port town of Bouville while researching an eighteenth-century aristocrat, the Marquis de Rollebon. As the journal opens, Roquentin reports a strange disturbance creeping into ordinary objects: a pebble on the beach, a doorknob, a glass of beer, the suspenders of a fellow diner. Things stop being useful and become merely there, naked and superfluous, and the sensation he names Nausea begins to overtake him. The narrative tracks his slow disintegration of confidence in the categories that organize daily life, including history, identity, language, and even his own biography. He visits the local museum and rejects the bourgeois portraits hanging there, abandons his book on Rollebon when he can no longer believe in the past as a stable object, and watches his former lover Anny refuse the consolations of perfect moments. The most famous scene comes when he sits before the exposed root of a chestnut tree in a public garden and experiences existence itself as a sticky, formless excess that precedes any concept of it. The diary closes with Roquentin contemplating writing a novel, an austere art-object that might offer a different relationship to time. Published in 1938, the book became a foundational document of existentialism, dramatizing Sartre's later thesis that existence precedes essence through the texture of ordinary perception.",
     },
     {
         "title": "The Trial",
@@ -1310,7 +1310,7 @@ FICTION_BOOKS = [
         "year": 1925,
         "genre": "fiction",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "A bank clerk is arrested and prosecuted by a remote authority, the nature of his crime never revealed.",
+        "summary": "Franz Kafka's unfinished novel, published posthumously by his friend Max Brod against Kafka's own instructions, opens with the bank clerk Josef K. waking on his thirtieth birthday to find two warders in his rented room announcing that he has been arrested. He is never told what he is accused of, never taken into custody in any conventional sense, and is allowed to continue reporting to his job at the bank. The court itself proves to be an institution buried in the attics of tenement buildings on the outskirts of the city, staffed by petty officials, painters, lawyers, and clerks who claim familiarity with proceedings but offer no clarity. Over the course of a year K. searches for clarification, consults a self-important advocate named Huld, meets a court painter named Titorelli who explains that no one has ever obtained a true acquittal, and encounters a parable about a man waiting all his life before the door of the Law. Each visit deepens the sense that the legal apparatus is both nowhere and everywhere, that guilt is presumed but unknowable, and that bureaucratic dignity has displaced any genuine question of justice. K.'s career and relationships erode while the case grinds on. The novel's ending, in which two strangers escort him to a quarry, sealed the book as the central modern parable of unaccountable institutional power and lent the adjective Kafkaesque to the language.",
     },
     {
         "title": "The Metamorphosis",
