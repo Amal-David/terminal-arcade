@@ -5,7 +5,7 @@ HISTORY_BOOKS = [
         "year": 2011,
         "genre": "history",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "A sweeping account of humankind from the Stone Age to the present, exploring how biology and history shaped our societies.",
+        "summary": "Yuval Noah Harari traces seventy thousand years of human history through three transformative revolutions: the Cognitive, the Agricultural, and the Scientific. The book argues that the rise of Homo sapiens to planetary dominance turns on our unique capacity for shared fictions — the religions, nations, money systems, and corporations that exist only because enough humans collectively agree they do. Harari challenges several common intuitions along the way: agriculture, he claims, was not a triumph but a trap that locked humanity into harsher lives and rigid hierarchies; capitalism functions only through faith in the future; and the so-called progress of modernity has come at devastating cost to other species and to the contentment of individual humans. The book moves at a deliberately high altitude, drawing on biology, anthropology, economics, and philosophy to compress vast eras into accessible narrative. Harari is at his most provocative when he turns the story toward the present, suggesting that humanity now stands on the cusp of redesigning itself through bioengineering and artificial intelligence, and that the species we know may not survive that transition intact. Sapiens became one of the most widely read works of popular history of its decade, both praised for its synthetic ambition and criticized by specialists for sweeping generalizations — a debate that has only extended its reach.",
     },
     {
         "title": "Homo Deus",
@@ -13,7 +13,7 @@ HISTORY_BOOKS = [
         "year": 2015,
         "genre": "history",
         "mood": ["late night reflection", "fresh start"],
-        "summary": "Explores humanity's future as technology and biotechnology reshape what it means to be human.",
+        "summary": "Harari's follow-up to Sapiens turns from the past to a deeply unsettling forecast of the human future. Where Sapiens asked how we got here, Homo Deus asks where we are going — and concludes that the agendas of the twenty-first century are likely to be radically different from those of the twentieth. Famine, plague, and war, Harari argues, have been pushed from forces of nature down to manageable problems, freeing humanity to chase three new ambitions: immortality, engineered happiness, and godlike powers of creation. To pursue these goals, we are increasingly handing decisions to algorithms that know us better than we know ourselves, and the liberal humanism that has organized modern politics is quietly being eroded by an emerging worldview Harari calls 'Dataism' — the belief that information flow is the supreme value and that organisms are simply biological algorithms to be optimized. The book takes a scalpel to the idea of free will, drawing on neuroscience and behavioral economics to argue that the unified self is a story the brain tells itself. Harari is careful to frame these scenarios as possibilities rather than predictions, but the cumulative effect is sobering: a future in which a small techno-elite may upgrade itself into a new species, leaving the rest of humanity economically irrelevant. It is at once exhilarating, provocative, and easy to argue with — the rare big book that resets the conversation it enters.",
     },
     {
         "title": "21 Lessons for the 21st Century",
@@ -21,7 +21,7 @@ HISTORY_BOOKS = [
         "year": 2018,
         "genre": "history",
         "mood": ["Sunday morning", "existential crisis"],
-        "summary": "Tackles the most urgent questions of our present, from terrorism to fake news to the meaning of life.",
+        "summary": "Where Sapiens looked backward and Homo Deus looked forward, Harari's third volume plants itself firmly in the now and works through twenty-one of the most disorienting questions of contemporary life. The lessons are clustered in five sections: the technological challenges of automation and biotech; the political crisis of liberalism; despair and hope in the face of nuclear war, climate change, and migration; the search for truth in an age of fake news and propaganda; and resilience — what to teach children when nobody knows what jobs will exist in twenty years. Harari is unusually willing to sit with discomfort, refusing to package easy answers. He argues that the great political ideologies of the twentieth century — fascism, communism, liberalism — have collapsed into a single global story that no longer convinces anyone, and that the resulting vacuum is being filled by nostalgia, nationalism, and religion. He also turns inward: the closing essays take meditation seriously as a tool for paying attention in a world engineered to hijack it. The book is structured as a series of essays rather than a sustained argument, which lets Harari roam from artificial intelligence to humility to the meaning of life without forcing artificial coherence. It is less synthetic than Sapiens and less provocative than Homo Deus, but more useful as a guide to thinking about the present.",
     },
     {
         "title": "Guns, Germs, and Steel",
@@ -29,7 +29,7 @@ HISTORY_BOOKS = [
         "year": 1997,
         "genre": "history",
         "mood": ["late night reflection", "rainy afternoon"],
-        "summary": "Explains why certain civilizations conquered others through geography, agriculture, and environmental factors rather than racial superiority.",
+        "summary": "Jared Diamond opens with a question put to him by a New Guinean friend named Yali: why did Europeans end up with so much cargo, and his people with so little? The book is Diamond's twelve-thousand-year answer, and it deliberately strips race and innate intelligence out of the explanation. Instead, he argues that the trajectories of human societies were determined by environmental endowments — the wild plants and animals available for domestication, the orientation of continental axes that allowed crops and technologies to spread, and the disease ecologies created by living with herd animals. Eurasia's east-west axis and its abundance of large domesticable mammals gave its peoples earlier agriculture, denser populations, more complex states, and immune systems hardened by centuries of livestock-borne disease — the actual ingredients of the guns, germs, and steel that overwhelmed the Americas, Australia, and southern Africa. Diamond synthesizes work from archaeology, linguistics, evolutionary biology, and epidemiology into a single explanatory framework, then tests it against case studies from Polynesia to sub-Saharan Africa. The book has been challenged by historians who argue it underplays culture, contingency, and politics, but its central move — treating geography and ecology as first-order historical causes — has reshaped how world history is taught. It won the Pulitzer Prize for general nonfiction and remains the rare popular history that argues with social scientists on their own terms.",
     },
     {
         "title": "Collapse",
@@ -37,7 +37,7 @@ HISTORY_BOOKS = [
         "year": 2005,
         "genre": "history",
         "mood": ["existential crisis", "rainy afternoon"],
-        "summary": "Examines why past societies like the Maya and Easter Islanders failed, and what modern civilizations can learn from their collapse.",
+        "summary": "Diamond's follow-up to Guns, Germs, and Steel asks the dark inverse of that book's question: why do societies that have already succeeded sometimes destroy themselves? He builds his answer through a series of detailed case studies — the Norse settlements on Greenland, the Maya in the Yucatán, the Anasazi in the American Southwest, the islanders of Easter Island and Pitcairn, and the genocidal collapse of modern Rwanda — and abstracts from them a framework of five factors: environmental damage, climate change, hostile neighbors, weakened trade partners, and the society's chosen response to its problems. The choice variable is the one Diamond emphasizes most. Many of his collapsed societies were not unlucky so much as locked in by elite incentives, denial, or ritualized identities that prevented adaptation; the Norse Greenlanders, for instance, starved rather than eat fish or learn from the Inuit. The middle of the book takes a sharp turn into the present, comparing modern Montana, China, Australia, and the Dominican Republic to the historical cases and arguing that globalization both raises the stakes of failure and offers tools for averting it. Critics charge that Diamond underweights political and ideological causes and sometimes overfits the data, but his central warning — that ecological overshoot has ended civilizations before and could again — has only grown sharper with time.",
     },
     {
         "title": "The Histories",
@@ -45,7 +45,7 @@ HISTORY_BOOKS = [
         "year": -430,
         "genre": "history",
         "mood": ["Sunday morning", "late night reflection"],
-        "summary": "The foundational work of Western history, recounting the Greco-Persian Wars and the customs of ancient peoples.",
+        "summary": "Herodotus's Histories is the founding work of the Western historiographical tradition — the book that gave us the word 'history' itself, from his Greek term for 'inquiries.' Written in the fifth century BCE, it sets out to explain the causes and course of the Greco-Persian Wars, but along the way Herodotus folds in ethnographies of nearly every people he can hear about: Egyptians, Scythians, Lydians, Persians, Babylonians, Massagetae, and many more. The narrative engine is the rise of the Persian Empire under Cyrus, Cambyses, Darius, and Xerxes, leading to the wars at Marathon, Thermopylae, Salamis, and Plataea, where small Greek city-states improbably defeat the largest empire the world had yet seen. Herodotus interweaves military narrative with travelogue, marvel, gossip, religious reflection, and an unmistakable moral interest in hubris and the reversals of fortune that befall the powerful. He has been criticized since antiquity for credulity — Cicero called him both the father of history and the father of lies — but modern archaeology has steadily vindicated more of his reportage than ancient skeptics expected. What endures is his method: collecting accounts, weighing them, naming his sources, and making space for cultural difference rather than dismissing it. He invented, in effect, the idea that the past is something one investigates rather than simply inherits.",
     },
     {
         "title": "The Peloponnesian War",
@@ -53,7 +53,7 @@ HISTORY_BOOKS = [
         "year": -400,
         "genre": "history",
         "mood": ["boardroom energy", "late night reflection"],
-        "summary": "A rigorous account of the war between Athens and Sparta that set the standard for political and military history.",
+        "summary": "Thucydides served as an Athenian general in the war he chronicles, and his account of the twenty-seven-year struggle between Athens and Sparta from 431 to 404 BCE is the founding text of realist political analysis. He announces his method on the first page: where Herodotus collects marvels and tales, Thucydides will privilege strict accuracy and 'a possession for all time' rather than entertainment for the moment. The narrative tracks the war year by year through campaigns, plagues, sieges, betrayals, and revolts, but its lasting power comes from the speeches Thucydides reconstructs and the analytical interludes that frame them. Pericles' Funeral Oration becomes the canonical statement of democratic self-understanding; the Melian Dialogue lays bare the brutal arithmetic of power between strong and weak states; the description of the Athenian plague and the disastrous Sicilian Expedition are masterpieces of historical narrative. Thucydides is most famous now for the so-called Thucydides Trap — his observation that 'it was the rise of Athens and the fear that this inspired in Sparta that made war inevitable' — a frame that has been borrowed for great-power competition between the United States and China. The book itself breaks off mid-sentence in 411 BCE, unfinished but already complete in its diagnosis: that the moral language of cities tends to dissolve under the pressure of war, and that human nature, in his cold formulation, will continue to behave the same way under the same conditions.",
     },
     {
         "title": "SPQR: A History of Ancient Rome",
@@ -61,7 +61,7 @@ HISTORY_BOOKS = [
         "year": 2015,
         "genre": "history",
         "mood": ["Sunday morning", "rainy afternoon"],
-        "summary": "A fresh look at Roman history from its mythical founding to citizenship's expansion, challenging traditional narratives.",
+        "summary": "Mary Beard, the Cambridge classicist, writes a Roman history aimed at curious general readers without softening the questions specialists ask. SPQR — short for Senatus Populusque Romanus, the formula stamped on Roman standards — covers roughly the first thousand years of the city, from its half-mythical founding by Romulus around 753 BCE through the granting of full citizenship to all free inhabitants of the empire by Caracalla in 212 CE. Beard explicitly resists the heroic biography model. She is more interested in how Romans of every class lived, voted, worshipped, ate, and died than in another portrait of Caesar or Augustus, though she handles those figures with care when the narrative requires. She is particularly good on Rome's own arguments with itself: the Catilinarian conspiracy as a constitutional crisis, the contested figure of Cicero, the slow erosion of Republican norms, the bewildering institution of imperial succession. She is candid about how much we do not and cannot know — many sources are late, fragmentary, hostile, or all three — and her habits of source-handling are themselves part of the book's pedagogy. The result is a Roman history that takes seriously both the grand narrative and the slave girl, the imperial decree and the brothel graffito. SPQR became one of the rare academic histories to find a wide trade audience without sacrificing the scholar's care for evidence.",
     },
     {
         "title": "The Rise of Rome",
@@ -69,7 +69,7 @@ HISTORY_BOOKS = [
         "year": 2012,
         "genre": "history",
         "mood": ["boardroom energy", "hustle mode"],
-        "summary": "Traces Rome's transformation from a small settlement to the dominant power of the ancient Mediterranean world.",
+        "summary": "Anthony Everitt, the British classicist and biographer of Cicero and Augustus, writes a narrative history of the Roman Republic aimed squarely at general readers. The Rise of Rome covers roughly seven centuries, from the legendary founding of the city in the eighth century BCE through the emergence of the Augustan principate at the end of the first, but Everitt's emphasis falls on the long Republican middle, when Rome remade itself from a regional Italian power into the master of the Mediterranean. He is excellent on the structural ingredients: the Roman habit of incorporating defeated enemies as allies and citizens; the discipline of the legions and the genius for adapting tactics learned from each new opponent; the Senatorial culture of competitive virtue that sustained governance for centuries before turning lethal. Set-pieces include the wars with Pyrrhus, the three Punic Wars and the long shadow of Hannibal, the conquest of the Greek east, and the slow unraveling of Republican institutions under the strain of empire. Everitt does not pretend to advance a scholarly thesis; his strength is selection, pacing, and clear character work, with sympathetic but unromantic portraits of Scipio Africanus, Cato the Elder, the Gracchi, Sulla, Pompey, and Caesar. Readers who want a single accessible spine of Roman history before turning to Mary Beard or specialist monographs often start here.",
     },
     {
         "title": "Rubicon: The Last Years of the Roman Republic",
@@ -77,7 +77,7 @@ HISTORY_BOOKS = [
         "year": 2003,
         "genre": "history",
         "mood": ["boardroom energy", "late night reflection"],
-        "summary": "A dramatic retelling of the fall of the Roman Republic through the ambitions of Caesar, Pompey, and Cicero.",
+        "summary": "Tom Holland's narrative of the last century of the Roman Republic begins with Sulla's march on Rome and ends with Augustus quietly burying the Republican constitution under the trappings of restored tradition. The title refers to the small river Caesar crossed in 49 BCE in defiance of the Senate, but Holland's argument is that the Republic had been rotting for generations before that crossing made the rot visible. Wealth from conquest enriched a senatorial elite while crushing the small farmers who had been the backbone of the citizen army; ambitious generals built personal armies loyal to themselves rather than to Rome; political violence escalated in measured steps from the assassination of the Gracchi to the proscriptions of Sulla to the gang warfare of Clodius and Milo. Holland writes with the pace of a thriller and the eye of a novelist, but his characters — Marius, Sulla, Pompey, Crassus, Cicero, Cato, Caesar, Antony, Octavian — are drawn from the actual sources, and his interpretive backbone is serious. He pays particular attention to the Republican mentality itself, the obsessive cult of ancestral virtue and competitive glory that made the system both extraordinarily durable and incapable of accommodating a Caesar. Rubicon helped revive popular Roman history in the early 2000s and has stayed in print as a model of how to write narrative history without either dumbing down the politics or losing the reader.",
     },
     {
         "title": "The Decline and Fall of the Roman Empire",
@@ -85,7 +85,7 @@ HISTORY_BOOKS = [
         "year": 1776,
         "genre": "history",
         "mood": ["late night reflection", "winter blanket"],
-        "summary": "The monumental classic tracing Rome's decline from the height of the empire through the fall of Constantinople.",
+        "summary": "Edward Gibbon's six-volume work, published between 1776 and 1789, traces thirteen centuries of Roman and post-Roman history from the height of the empire under the Antonines through the fall of Constantinople to the Ottomans in 1453. It is one of the founding documents of modern historical writing in English: rigorously footnoted, beautifully composed, and animated by a clear analytical thesis. Gibbon argues that Rome's decline was not a sudden catastrophe but a long internal process, the predictable consequence of immoderate empire and of the gradual eroding effects of Christianity on the civic virtues that had built the state. The Christian chapters in particular caused a scandal on publication and remain the most contested portion of his argument; modern historians qualify many of his judgments and emphasize transformation rather than decline, but the sheer architectural ambition of his synthesis has not been matched. Gibbon's prose — ironical, balanced, generous with ornamental phrase — became a stylistic touchstone for English nonfiction. The work is also a self-portrait of an Enlightenment mind: skeptical, comparative, urban, more comfortable with civilization at its luxurious peak than with the upheavals that follow. Read in full, it is one of the great long reads in any language; even read selectively, it reshapes how a person thinks about empire, religion, and the slow rhythms of historical change.",
     },
     {
         "title": "Alexander Hamilton",
@@ -93,7 +93,7 @@ HISTORY_BOOKS = [
         "year": 2004,
         "genre": "history",
         "mood": ["hustle mode", "career pivot"],
-        "summary": "The definitive biography of America's first Treasury Secretary, revealing the immigrant orphan who built the nation's financial system.",
+        "summary": "Ron Chernow's eight-hundred-page biography reframed Alexander Hamilton for a generation and provided the source material that Lin-Manuel Miranda turned into the musical Hamilton. The book begins with Hamilton's improbable origins — born out of wedlock on the Caribbean island of Nevis, orphaned, raised in colonial poverty, and propelled to North America by a hurricane essay that impressed local benefactors enough to fund his passage. From there Chernow tracks Hamilton through the Revolutionary War as Washington's brilliant aide-de-camp, his rise as the country's first Treasury Secretary and architect of the federal financial system, his founding role in the Federalist Party, his bitter rivalries with Jefferson, Madison, Adams, and Burr, and his death by Burr's pistol in Weehawken in 1804. Chernow argues that Hamilton, more than any other founder, designed the institutional machinery that allowed the United States to grow into a continental power: the national bank, the assumption of state debts, the customs service, the Coast Guard, the doctrine of implied constitutional powers. He is also unsparing on Hamilton's flaws — vanity, sexual recklessness, an instinct for political street fighting that often hurt his own causes. The book restored Hamilton to the first rank of founding figures and remains the standard one-volume life.",
     },
     {
         "title": "Washington: A Life",
@@ -101,7 +101,7 @@ HISTORY_BOOKS = [
         "year": 2010,
         "genre": "history",
         "mood": ["boardroom energy", "morning ritual"],
-        "summary": "A comprehensive portrait of George Washington that humanizes the mythologized founding father.",
+        "summary": "Ron Chernow's nine-hundred-page biography is the modern standard life of George Washington, and it works very hard to recover the human being beneath the marble. Chernow reads the surviving letters, account books, and diaries with patience, and the figure that emerges is more interesting than the iconography: a self-made Virginia surveyor obsessed with land and reputation, an instinctive horseman of immense physical presence, a slow and careful learner who had to study his way to greatness. The book moves through Washington's youth in colonial Virginia, his harrowing apprenticeship in the French and Indian War, his rise as a planter at Mount Vernon, the eight-year ordeal of commanding the Continental Army, the Constitutional Convention, his two terms as the first president, and his retirement and death. Chernow does not flinch from Washington as an enslaver. He devotes substantial attention to the people Washington owned, the moral arguments he refused to confront in public while wrestling with them privately, and the late-life will that freed his enslaved workers but left his wife's enslaved 'dower' people in continuing bondage. The portrait is admiring without being hagiographic: Washington emerges as a man of steady judgment, deep insecurities, and a conscious public discipline that made the new republic possible.",
     },
     {
         "title": "Grant",
@@ -109,7 +109,7 @@ HISTORY_BOOKS = [
         "year": 2017,
         "genre": "history",
         "mood": ["hustle mode", "self-discovery"],
-        "summary": "Rehabilitates Ulysses S. Grant's reputation as both a military genius and a president who fought for civil rights.",
+        "summary": "Ron Chernow's third major founding-era biography rehabilitates a president long dismissed as a butcher in war and a stooge in office. Grant traces Ulysses S. Grant's full arc: his Ohio boyhood, his unhappy West Point education, the Mexican War, the years of failure as a peacetime soldier and farmer that ended with him selling firewood on St. Louis streets, his unexpected rise from obscurity in the Civil War to general-in-chief of the Union armies, the unconditional surrender at Appomattox, two presidential terms, his bankruptcy in retirement, and the cancer-driven race to finish his memoirs in time to provide for his family. Chernow's central reinterpretive moves are two. First, he treats Grant as a strategically gifted commander whose grasp of total war and willingness to coordinate continental campaigns were essential to Union victory, not merely a willingness to absorb casualties. Second, and more importantly, he reframes Grant's presidency as the most aggressive defense of Black civil rights between Reconstruction and the 1960s — Grant deployed federal troops against the Ku Klux Klan, signed the Enforcement Acts, and championed the Fifteenth Amendment, even as scandals among his appointees damaged his reputation. The book is long but propulsive, and it has substantially shifted the historical conversation about Grant.",
     },
     {
         "title": "Titan: The Life of John D. Rockefeller, Sr.",
@@ -117,7 +117,7 @@ HISTORY_BOOKS = [
         "year": 1998,
         "genre": "history",
         "mood": ["hustle mode", "boardroom energy"],
-        "summary": "The epic biography of America's first billionaire, exploring his ruthless business empire and surprising philanthropy.",
+        "summary": "Ron Chernow's biography of John D. Rockefeller is at once a portrait of the man, a history of Standard Oil, and an argument about how American industrial capitalism took its modern shape. Rockefeller was the most consequential businessman of the nineteenth century: by the 1880s his Standard Oil Trust controlled roughly ninety percent of American refining, and the methods that built it — predatory price cuts, secret railroad rebates, ruthless absorption of rivals — became the template for monopoly itself. Chernow pulls extensively from Rockefeller's own letters and the long oral-history interviews Rockefeller gave near the end of his life, and finds a man very different from the cartoon. He was a devout Northern Baptist who tithed obsessively from boyhood, a teetotaler in an industry of hard drinkers, an inveterate ledger-keeper who treated his life as a balance sheet between God's gifts and his own duties. The same systematic mind that built Standard Oil reinvented American philanthropy in retirement, founding the University of Chicago, Rockefeller University, and the Rockefeller Foundation, and underwriting the public-health campaigns that drove hookworm and yellow fever out of large parts of the world. Chernow lets the contradictions stand: a man simultaneously responsible for the antitrust era and for the modern research university.",
     },
     {
         "title": "John Adams",
@@ -125,7 +125,7 @@ HISTORY_BOOKS = [
         "year": 2001,
         "genre": "history",
         "mood": ["Sunday morning", "morning ritual"],
-        "summary": "Brings to life the passionate, brilliant second president and his partnership with Abigail Adams.",
+        "summary": "David McCullough's biography of John Adams is a deliberate attempt to rescue the second president from the historical shadow cast by Washington in front of him and Jefferson alongside him. Adams was the indispensable diplomat of the Revolution — pushing the Declaration through the Continental Congress, negotiating the Dutch loans that kept the cause alive, helping conclude the Treaty of Paris — and a one-term president whose refusal to be drawn into a wider war with France probably saved the young republic, even though it cost him reelection. McCullough draws heavily on the extraordinary Adams family papers, especially the lifelong correspondence between John and Abigail, and the marriage emerges as one of the great intellectual partnerships in American history. The book is also an extended meditation on the rivalry-friendship with Thomas Jefferson, which broke under the pressure of party politics, was repaired in retirement through a remarkable late-life correspondence, and ended with both men dying within hours of each other on July 4, 1826, the fiftieth anniversary of the Declaration. McCullough writes with warmth and a popular historian's instinct for the telling scene, and the book won the Pulitzer Prize and helped inspire a major HBO miniseries.",
     },
     {
         "title": "1776",
@@ -133,7 +133,7 @@ HISTORY_BOOKS = [
         "year": 2005,
         "genre": "history",
         "mood": ["fresh start", "hustle mode"],
-        "summary": "A gripping narrative of the pivotal year of American independence, focused on Washington's desperate military campaign.",
+        "summary": "David McCullough's 1776 zooms in on a single critical year in the American Revolution and tells it almost entirely from the military side. The book opens in London with George III addressing Parliament about the rebellion, and follows in parallel the British command and Washington's desperately under-equipped Continental Army through the calendar year. The narrative arc traces a series of near-disasters: the British capture of New York in a sequence of crushing defeats; Washington's retreat across New Jersey with an army on the verge of dissolution; the dwindling enlistments that nearly ended the war by Christmas; and the audacious, half-improbable counterstrokes at Trenton and Princeton that revived the revolutionary cause when it had all but collapsed. McCullough writes from the soldiers' letters and journals more than from policy papers, and he is especially good at the textures of camp, weather, hunger, and morale that shaped the campaign. The book is not a comprehensive military history of the year — diplomacy, the Declaration of Independence, and the home front mostly stay offstage — but as a focused study of how close the Revolution came to failing in its first full year, it is hard to beat.",
     },
     {
         "title": "Truman",
@@ -141,7 +141,7 @@ HISTORY_BOOKS = [
         "year": 1992,
         "genre": "history",
         "mood": ["daily grind", "boardroom energy"],
-        "summary": "The Pulitzer Prize-winning biography of the plain-spoken Missouri haberdasher who became president during the atomic age.",
+        "summary": "David McCullough's Pulitzer-winning biography of Harry Truman is a sympathetic, sometimes openly admiring portrait of a thirty-third president whose reputation has steadily risen since he left office in 1953. McCullough opens with the deep Missouri roots — small farms, Confederate sympathies, a tight-knit family — that shaped Truman's plainspoken conservatism, then tracks him through service as an artillery captain in France, his struggling haberdashery in Kansas City, his unlikely entry into Pendergast machine politics, and his dogged Senate career. Truman became Roosevelt's last-minute fourth-term running mate in 1944 and inherited the presidency in April 1945 with almost no preparation, no knowledge of the Manhattan Project, and a war still to end. McCullough is most powerful on the cluster of consequential decisions of Truman's first months: the use of atomic weapons against Japan, the recognition of Israel, the Truman Doctrine, the Marshall Plan, the Berlin Airlift. He is also unflinching on the harder calls — the Korean War, the firing of MacArthur, the steel-mill seizure, civil rights orders that desegregated the armed forces well before the rest of the country was ready. The book is long, generous, and grounded in deep archival work, and it largely set the modern scholarly view of Truman as a more substantial president than his contemporaries gave him credit for.",
     },
     {
         "title": "The Wright Brothers",
@@ -149,7 +149,7 @@ HISTORY_BOOKS = [
         "year": 2015,
         "genre": "history",
         "mood": ["side project vibes", "fresh start"],
-        "summary": "The story of two bicycle mechanics from Ohio who achieved the dream of human flight through sheer determination.",
+        "summary": "David McCullough's late-career study of Wilbur and Orville Wright is a brisk, deeply researched portrait of how powered human flight actually got built — not by a government program or a venerable laboratory, but by two unmarried brothers who ran a Dayton, Ohio bicycle shop and read voraciously between customers. McCullough draws from the Wright family's extraordinary letters and diaries to recover the temperament behind the achievement: a stable household led by a Bishop father who valued books, a sister Katharine whose teaching salary helped underwrite the experiments, methodical engineering instincts, and a near-religious patience for failure. The book follows the trajectory of the work itself — the early kite tests, the wind-tunnel they built in their workshop after concluding that the published aerodynamic tables were wrong, the four winters at Kitty Hawk, the first powered flight in 1903 that lasted twelve seconds, and the much harder fight that followed to convince a skeptical world the thing had actually been done. McCullough is especially good on the European reception, where Wilbur's demonstrations near Le Mans in 1908 transformed him into a global celebrity overnight. The book is short by McCullough's standards, but its strength is the intimate domestic register: a story of how two ordinary men, working with their hands in a Midwestern back shop, broke a problem civilizations had failed to solve.",
     },
     {
         "title": "Team of Rivals",
@@ -157,7 +157,7 @@ HISTORY_BOOKS = [
         "year": 2005,
         "genre": "history",
         "mood": ["boardroom energy", "career pivot"],
-        "summary": "How Lincoln's political genius turned his fiercest competitors into his closest cabinet allies during the Civil War.",
+        "summary": "Doris Kearns Goodwin's group biography of Abraham Lincoln and his cabinet became the source material for Steven Spielberg's Lincoln and one of the most influential popular histories of the early twenty-first century. The book opens with the 1860 Republican nomination, where Lincoln, the least credentialed candidate, defeated three more famous rivals: William Seward of New York, Salmon Chase of Ohio, and Edward Bates of Missouri. Goodwin's central insight is that Lincoln did something unusual after winning the presidency. Rather than reward loyal allies, he placed each of his three principal rivals in his cabinet — Seward as Secretary of State, Chase as Treasury Secretary, Bates as Attorney General — along with the Pennsylvania political fixer Simon Cameron and the Connecticut conservative Gideon Welles. The book is a dual study: of Lincoln himself, especially his almost incomprehensible emotional intelligence and discipline, and of the way he managed and ultimately bound to himself a group of strong-willed men who began the administration certain they were better suited to lead than he was. Goodwin draws on the cabinet members' personal letters and diaries, and the result is a Civil War political history told from inside the White House, with Lincoln's executive temperament — patience, magnanimity, an instinct for absorbing rather than punishing dissent — as both the subject and the moral.",
     },
     {
         "title": "The Bully Pulpit",
@@ -165,7 +165,7 @@ HISTORY_BOOKS = [
         "year": 2013,
         "genre": "history",
         "mood": ["boardroom energy", "hustle mode"],
-        "summary": "Explores the friendship and rivalry between Theodore Roosevelt and William Howard Taft and the birth of investigative journalism.",
+        "summary": "Doris Kearns Goodwin's dual biography of Theodore Roosevelt and William Howard Taft tracks the rise, partnership, and bitter break of the two Republicans who dominated American politics from the 1890s through 1912. Roosevelt and Taft began as close personal friends and political allies; Roosevelt as the energetic crusader who pushed the modern regulatory state into existence, Taft as the more judicial temperament Roosevelt handpicked to succeed him. Their relationship cracked under the strain of the presidency itself, and culminated in the three-way 1912 election that split the Republican Party and put Woodrow Wilson in the White House. Running alongside the political story is Goodwin's parallel history of the McClure's Magazine generation of investigative journalists — Ida Tarbell, Lincoln Steffens, Ray Stannard Baker — whose reporting on Standard Oil, municipal corruption, and railroad rebates created the public appetite that Roosevelt's reforms then channeled into law. The book argues that progressive politics and what Roosevelt himself called the 'muckrakers' worked symbiotically to remake the country, and that the breakdown of that alliance is part of what doomed the Progressive Era. It is long, character-driven, and unusually attentive to the role of journalism in democratic reform.",
     },
     {
         "title": "Leadership: In Turbulent Times",
@@ -173,7 +173,7 @@ HISTORY_BOOKS = [
         "year": 2018,
         "genre": "history",
         "mood": ["boardroom energy", "career pivot"],
-        "summary": "Examines how Lincoln, TR, FDR, and LBJ developed leadership qualities through adversity and personal crisis.",
+        "summary": "Doris Kearns Goodwin draws on a half-century of work on four American presidents — Abraham Lincoln, Theodore Roosevelt, Franklin Roosevelt, and Lyndon Johnson — and arranges what she has learned around a single question: how do leaders form, and how do they respond when the country is in crisis? The book is structured in three movements. The first traces the early ambitions of the four men, very different in temperament and class but each marked early by a recognition of public purpose. The second turns to adversity: Lincoln's depression, Theodore Roosevelt's loss of his wife and mother on the same day, Franklin Roosevelt's polio, Johnson's near-fatal heart attack. Goodwin treats these crises not as obstacles overcome but as forges that reshaped the men into leaders capable of national work. The third section then walks through a defining episode for each president — Lincoln and emancipation, Theodore Roosevelt and the 1902 anthracite coal strike, FDR and the first hundred days, Johnson and the civil rights legislation of 1964–65 — to show specific habits of leadership at work. The book is more accessible and more directly instructive than her group biographies, and it has been widely read in business and political contexts as well as historical ones.",
     },
     {
         "title": "American Lion: Andrew Jackson in the White House",
@@ -181,7 +181,7 @@ HISTORY_BOOKS = [
         "year": 2008,
         "genre": "history",
         "mood": ["boardroom energy", "hustle mode"],
-        "summary": "A portrait of Andrew Jackson's combative presidency and its lasting impact on American democracy.",
+        "summary": "Jon Meacham's American Lion is a Pulitzer-winning biography focused on Andrew Jackson's eight years in the White House, 1829 to 1837, with his earlier life sketched only as needed to set up the presidency. Jackson is one of the most consequential and least comfortable figures in the American canon: the orphaned Carolina backcountry boy who became a self-taught lawyer, the volatile duelist, the slaveholding planter, the general whose victory at New Orleans made him a national hero, the architect of forced Cherokee removal along the Trail of Tears, and the first president genuinely produced by mass democratic politics rather than the Atlantic seaboard elite. Meacham draws extensively on the personal papers of Jackson's adopted niece Emily Donelson, who served as White House hostess after Rachel Jackson's death, and uses the resulting domestic scenes to soften without sanitizing his subject. The political narrative tracks the great battles of the Jackson presidency — the Petticoat Affair, the Nullification Crisis with South Carolina, the war on the Second Bank of the United States, Indian removal — and argues that Jackson, for all his flaws, decisively expanded the power and democratic legitimacy of the presidency itself. The portrait is sympathetic without being soft, especially on race, and it has done much to anchor the modern reassessment of Jackson.",
     },
     {
         "title": "Thomas Jefferson: The Art of Power",
@@ -189,7 +189,7 @@ HISTORY_BOOKS = [
         "year": 2012,
         "genre": "history",
         "mood": ["Sunday morning", "boardroom energy"],
-        "summary": "Reveals Jefferson as a shrewd pragmatic politician behind the philosopher-statesman image.",
+        "summary": "Jon Meacham's biography of Thomas Jefferson is structured around an argument: that the philosopher-statesman of the popular imagination — the dreamy author of the Declaration, the Monticello polymath — was in practice one of the shrewdest, most ruthless practical politicians the country has produced. Meacham works through Jefferson's full life, from Virginia gentry boyhood to the early diplomatic missions to revolutionary Paris, the embattled Secretaryship of State under Washington, the bruising 1796 and 1800 elections, the two presidential terms, the Louisiana Purchase, the embargo, and the long retirement. He emphasizes the recurring pattern in which Jefferson speaks the language of pure principle while quietly making the deals, twisting the arms, and accepting the compromises that move events. The portrait is admiring but unsentimental, and it returns repeatedly to the central contradiction Meacham refuses to dissolve: a man who articulated the deepest American claims about human equality while owning hundreds of enslaved people, including his own children with Sally Hemings. The book draws on the full Jefferson papers and reads Jefferson through the modern political tradition he founded, treating him less as a remote sage than as the country's first effective party leader.",
     },
     {
         "title": "The Age of Revolution: 1789-1848",
@@ -197,7 +197,7 @@ HISTORY_BOOKS = [
         "year": 1962,
         "genre": "history",
         "mood": ["late night reflection", "career pivot"],
-        "summary": "Charts the dual revolution—French political and British industrial—that transformed the modern world.",
+        "summary": "Eric Hobsbawm's Age of Revolution is the first volume of a four-book quartet covering the long nineteenth century and the short twentieth that became a standard Marxist synthesis of modern world history. The argument of this volume is that the entire modern world was made by two simultaneous and mutually reinforcing revolutions: the political revolution that began in France in 1789 and the industrial revolution that took off in Britain in roughly the same decade. Hobsbawm tracks both forces across Europe and outward to the wider world. The political revolution, he argues, supplied the conceptual vocabulary of modernity — citizen, nation, people, ideology, left and right, even the word revolution itself in its modern sense — while the industrial revolution supplied the productive base. By 1848, the two had together remade urban life, class structure, religious authority, family form, and the global economy, but had also generated the social contradictions that produced the European-wide revolutions of that year. Hobsbawm writes from a clearly Marxist standpoint and is candid about it, but the book is also a model of synthesis: it reads art history, demography, agricultural prices, and political theory as parts of a single transformation. It remains widely assigned in introductory European history courses.",
     },
     {
         "title": "The Age of Capital: 1848-1875",
@@ -205,7 +205,7 @@ HISTORY_BOOKS = [
         "year": 1975,
         "genre": "history",
         "mood": ["boardroom energy", "hustle mode"],
-        "summary": "Examines the triumph of liberal capitalism and bourgeois society across the globe in the mid-nineteenth century.",
+        "summary": "The second volume of Eric Hobsbawm's nineteenth-century quartet covers the third quarter of the century, the decades between the failed revolutions of 1848 and the long depression that began in 1873. Where Age of Revolution traced the disruptive forces that brought Europe to the barricades, Age of Capital examines what came after the failure of those revolutions: the surprisingly durable triumph of liberal capitalism. The bourgeoisie did not need to seize political power across Europe to win; the period's ruling regimes simply absorbed enough liberal economic and constitutional content to make capitalism the operating system of an industrializing world. Hobsbawm tracks the spread of railways, the integration of global markets, the unification of Italy and Germany, the abolition of serfdom in Russia and slavery in the United States, the entrenchment of free trade as a near-universal ideology, and the rise of an industrial working class whose growing organization would shape the next era. He is unusually attentive to the cultural register: the realist novel, the museum, the world's fair, the new sciences of statistics and political economy, the bourgeois household. The book is the period's sunny chapter, and Hobsbawm is too good a Marxist to miss the contradictions it stored up for the volumes to follow.",
     },
     {
         "title": "The Age of Empire: 1875-1914",
@@ -213,7 +213,7 @@ HISTORY_BOOKS = [
         "year": 1987,
         "genre": "history",
         "mood": ["late night reflection", "rainy afternoon"],
-        "summary": "Traces the era of imperial expansion, rising nationalism, and the forces that led to World War I.",
+        "summary": "Eric Hobsbawm's Age of Empire closes his nineteenth-century triptych and is in many ways the darkest of the three volumes. The forty years it covers begin with the long depression of 1873 and end with the outbreak of World War I, and Hobsbawm reads them as the period in which the contradictions of the previous century's bourgeois order ripened into catastrophe. The volume's central subject is the new imperialism: the partition of Africa among European powers, the consolidation of colonial rule across South and Southeast Asia, the scramble for concessions in China, and the new American and Japanese empires that joined the older European ones in the Pacific. He argues that imperialism was not a marginal addition to capitalism but a structural feature of its monopolistic phase, and that the same period generated mass labor parties, modern nationalist movements, the women's suffrage campaigns, and avant-garde culture as parallel responses to the strain. He also gives one of the best short accounts in print of the cultural breaks of the period — physics, painting, music, the novel, all in upheaval at once. The book closes on the eve of August 1914 with a sober chapter on how a world this rich and this orderly destroyed itself, and serves as a bridge to the volume that follows.",
     },
     {
         "title": "The Age of Extremes: 1914-1991",
@@ -221,7 +221,7 @@ HISTORY_BOOKS = [
         "year": 1994,
         "genre": "history",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "A sweeping history of the short twentieth century, from the Great War through the collapse of the Soviet Union.",
+        "summary": "Age of Extremes is Eric Hobsbawm's account of what he calls the 'short twentieth century' — the seventy-seven years between the outbreak of World War I in 1914 and the collapse of the Soviet Union in 1991. The book is structured as a triptych: an Age of Catastrophe from 1914 through 1945, when the institutions of nineteenth-century liberal capitalism nearly destroyed themselves through two world wars, the Great Depression, and the rise of fascism; a Golden Age from roughly 1945 to 1973, the postwar boom in which a humanized capitalism, a stabilized communism, and decolonization briefly seemed compatible with steady improvement of life; and a Landslide from the early 1970s onward, in which the postwar settlement unraveled, the Soviet bloc disintegrated, and the social compromises that had restrained capitalism began to give way. Hobsbawm wrote the book in his late seventies as a Marxist historian watching the collapse of the political project he had spent his life inside, and the book's tone is unusually personal — clear-eyed about Stalinist crimes, candid about the failure of the communist alternative, but deeply unsentimental about the triumphant capitalism that replaced it. It is the most controversial of his quartet and probably the most ambitious one-volume history of the century in print.",
     },
     {
         "title": "The Third Reich in Power",
@@ -229,7 +229,7 @@ HISTORY_BOOKS = [
         "year": 2005,
         "genre": "history",
         "mood": ["late night reflection", "rainy afternoon"],
-        "summary": "Details how the Nazis transformed German society, economy, and culture after seizing power in 1933.",
+        "summary": "The Third Reich in Power is the second volume of Richard J. Evans's three-volume history of Nazi Germany, picking up where The Coming of the Third Reich ends in 1933 and running through the outbreak of war in September 1939. The volume's project is to document, in unsparing detail, what dictatorship actually looked like inside German society once the regime had consolidated control. Evans tracks the elimination of independent institutions one after another — political parties, trade unions, free press, churches, courts, professional associations — and the parallel construction of a coordinated Nazi society in their place. He devotes substantial attention to the economy, particularly the rapid rearmament that disguised structural weaknesses; to culture and education, where the regime sought to remake German consciousness from kindergarten upward; to the systematic persecution and progressive disenfranchisement of Jewish Germans through Nuremberg, Kristallnacht, and the seizure of Jewish property; and to the foreign policy aggressions from the Rhineland through Anschluss and Czechoslovakia. Evans writes with the calm authority of someone who has spent a career in the German archives, and his volumes are notable for refusing to mystify Nazism: it appears here as the work of identifiable institutions, decisions, and willing participants rather than as an inexplicable eruption of evil.",
     },
     {
         "title": "The Coming of the Third Reich",
@@ -237,7 +237,7 @@ HISTORY_BOOKS = [
         "year": 2003,
         "genre": "history",
         "mood": ["rainy afternoon", "late night reflection"],
-        "summary": "Explains how Germany's fragile democracy was destroyed and the Nazis rose to power in the aftermath of World War I.",
+        "summary": "The Coming of the Third Reich is the opening volume of Richard J. Evans's authoritative trilogy on Nazi Germany and traces the long road from the founding of the Weimar Republic in 1918 to Hitler's appointment as Chancellor in January 1933 and the consolidation of single-party rule that followed in the spring of that year. Evans explicitly resists the temptation to treat Hitler's victory as inevitable, and the strength of the volume is its careful reconstruction of the contingent failures that produced it: the trauma and stab-in-the-back myth left by World War I, the Versailles settlement, the hyperinflation of 1923, the brief stabilization of the late 1920s, the catastrophic effect of the Great Depression on a brittle political system, and the willingness of conservative German elites to invite the Nazis into government in the belief they could be controlled. He gives serious attention to the deeper currents — antisemitism, racial nationalism, paramilitary politics, contempt for the parliamentary regime — that the Nazis did not invent but channeled and weaponized. Evans is especially good on the rapid Gleichschaltung of 1933, the seven months in which the Nazis used legal forms and street terror together to dismantle the rule of law. The book is detailed without being technical, and remains a standard scholarly account.",
     },
     {
         "title": "The Third Reich at War",
@@ -245,7 +245,7 @@ HISTORY_BOOKS = [
         "year": 2008,
         "genre": "history",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "The final volume chronicling Nazi Germany's devastating war, genocide, and ultimate destruction.",
+        "summary": "The Third Reich at War is the concluding volume of Richard J. Evans's trilogy and covers Nazi Germany from the invasion of Poland in September 1939 through the regime's destruction in May 1945. Evans treats the war years as a single integrated history rather than separating military, diplomatic, social, and racial strands. The military narrative tracks the early Blitzkrieg victories that gave the regime control of most of continental Europe, the catastrophic decision to invade the Soviet Union in 1941, the turning points at Moscow, Stalingrad, and Kursk, the Anglo-American campaigns in North Africa and Italy, the Normandy invasion, and the long bleeding-out that ended in Berlin. Running alongside is the volume's central subject, the Holocaust: Evans documents the radicalization from prewar persecution through the Einsatzgruppen shootings on the Eastern Front to the systematic industrial extermination at Auschwitz, Treblinka, and the other Operation Reinhard camps. He is also strong on the German home front, the use of slave labor on a continental scale, the relations between the regime and the Wehrmacht, and the late-war turn toward genocidal violence even as defeat became unmistakable. The book is the most comprehensive single-volume scholarly account of Nazi Germany's wartime years available in English.",
     },
     {
         "title": "Hitler: Ascent 1889-1939",
@@ -253,7 +253,7 @@ HISTORY_BOOKS = [
         "year": 2016,
         "genre": "history",
         "mood": ["rainy afternoon", "late night reflection"],
-        "summary": "A detailed biography of Hitler's rise from failed artist to dictator, emphasizing his manipulative charisma.",
+        "summary": "Volker Ullrich's Hitler: Ascent is the first volume of a two-volume biography that consciously revises the long-dominant Ian Kershaw treatment in light of newer archival material and a different interpretive emphasis. Ullrich opens with Hitler's Austrian boyhood and follows the familiar arc — Vienna failures, the Bavarian regiment in World War I, the Munich beer-hall years, the failed putsch of 1923, the imprisonment that produced Mein Kampf, the political reinvention of the late 1920s, the mass electoral breakthrough during the Depression, the Chancellorship in 1933, and the consolidation of dictatorship through 1939 — but his interpretive moves are pointed. Where Kershaw treated Hitler as a kind of empty vessel filled by his followers' projections, Ullrich insists on the man as a deliberate actor, a calculating self-promoter, an unusually skillful charismatic performer who consciously crafted his persona, and a person who could be charming, cruel, indifferent, or hysterical as the political moment required. Ullrich is particularly strong on the social geography of Hitler's circle: his mistresses and chauffeurs, his manipulations of party rivals, his tastes and habits, and the complicity of mainstream German conservatives who chose to lift him into power. The volume ends on the eve of war and sets up the second book in the pair.",
     },
     {
         "title": "The Face of Battle",
@@ -261,7 +261,7 @@ HISTORY_BOOKS = [
         "year": 1976,
         "genre": "history",
         "mood": ["late night reflection", "rainy afternoon"],
-        "summary": "Revolutionized military history by examining what combat was actually like at Agincourt, Waterloo, and the Somme.",
+        "summary": "John Keegan's The Face of Battle is the book that broke open military history in the late twentieth century by asking a deceptively simple question: what is it actually like to be in the middle of a battle? Keegan was an instructor at Sandhurst, the British army's officer academy, when he wrote it, and the book opens with a long chapter dismantling the conventions of the standard 'battle piece' — the omniscient survey from the general's hill — for what they obscure: confusion, terror, exhaustion, the failure of orders to travel through smoke, the human breakdown of men ordered to stand still while objects designed to maim them are hurled past. He then examines three battles separated by half a millennium — Agincourt in 1415, Waterloo in 1815, and the first day of the Somme in 1916 — each in granular detail, paying close attention to weapons, formations, tempos, and especially to the experience of the soldier inside them. The point is not to debunk command history but to ground it in physical reality, and the book's effect on the field has been enormous; nearly every serious popular military historian writing in English afterward has worked in its shadow. It remains the standard introduction to thinking critically about how war is described.",
     },
     {
         "title": "The Second World War",
@@ -269,7 +269,7 @@ HISTORY_BOOKS = [
         "year": 1989,
         "genre": "history",
         "mood": ["winter blanket", "rainy afternoon"],
-        "summary": "A single-volume history of the global conflict that reshaped the twentieth century, told with clarity and authority.",
+        "summary": "John Keegan's The Second World War is the single-volume operational history that distills three decades of his teaching at Sandhurst and his work as a popular military historian. The book is organized in five thematic sections — the war in the air, in the Atlantic and Pacific, on the Eastern Front, in the Mediterranean and North Africa, and the closing campaigns of 1944–45 — rather than by strict chronology, on the argument that the war was actually a set of separate but intersecting conflicts that need to be grasped one at a time before being woven together. Keegan is principally concerned with how the war was fought rather than how it began, and the book is dense with operational analysis: the strategic choices, the logistical constraints, the technological asymmetries, the qualities of the commanders. He is candid about who fought best in which theater and why, and willing to overturn comfortable consensus on, for instance, the relative weights of the Eastern Front and the Anglo-American campaigns. The book is light on diplomacy and home-front history compared with rivals like Max Hastings or Antony Beevor, but as a clear, opinionated single-volume military history of the war it is hard to beat, and it remains a common starting point for serious general readers.",
     },
     {
         "title": "A History of Warfare",
@@ -277,7 +277,7 @@ HISTORY_BOOKS = [
         "year": 1993,
         "genre": "history",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Challenges Clausewitz by arguing war is a cultural phenomenon, tracing armed conflict from prehistory to the nuclear age.",
+        "summary": "John Keegan's A History of Warfare is his most theoretically ambitious book, a four-thousand-year sweep of human conflict explicitly designed as a quarrel with Carl von Clausewitz. Clausewitz's famous formula — that war is the continuation of policy by other means — has organized Western strategic thought since the early nineteenth century, and Keegan argues that it is too narrow. Treating war as rational state policy, he says, fails to make sense of most of the armed violence in human history: the slow stylized warfare of Polynesian island societies, the ritualized cavalry combats of the Mongols and Mamluks, the trench cultures of the Western Front, the ethnic massacres that closed the Cold War. Keegan instead presents war as a primarily cultural phenomenon — shaped by particular societies' beliefs about honor, masculinity, religion, and acceptable violence — and tracks how those cultures of war have evolved through the agricultural revolution, the chariot, the disciplined infantry, gunpowder, industrial mass armies, and the nuclear age. The book has been criticized by specialists for selective handling of the evidence and for caricaturing Clausewitz, but the critique it advances has reshaped how scholars now talk about war and society. It is the most argument-driven of Keegan's books and one of the great essays in synthetic military history.",
     },
     {
         "title": "Inferno: The World at War, 1939-1945",
@@ -285,7 +285,7 @@ HISTORY_BOOKS = [
         "year": 2011,
         "genre": "history",
         "mood": ["winter blanket", "late night reflection"],
-        "summary": "Focuses on the human experience of World War II through the voices of soldiers and civilians from every front.",
+        "summary": "Max Hastings's Inferno is a one-volume history of World War II written deliberately at the human scale, drawing on diaries, letters, oral histories, and unit records from every major belligerent to reconstruct what the war felt like for the people inside it. Hastings, a veteran British military historian, has the operational picture in command, and the book moves competently through the major campaigns from the Polish invasion in 1939 through the Japanese surrender in 1945. But the distinguishing feature of the volume is its emphasis on the experiences of ordinary soldiers and civilians: Soviet women conscripted into the Red Army, German women on bombed-out Hamburg streets, Indian sepoys in Malaya, American Marines on Pacific atolls, Bengali peasants dying in a famine the war helped engineer. Hastings is unsentimental about the conduct of his own side and about the often grim realities of the British and American war effort, and he is among the better Anglophone historians on the disproportionate suffering of Eastern Europe and the Pacific. He devotes substantial attention to the question of who fought well and who didn't, and his judgments are blunt. The book is a strong choice for readers who already know the war's outline and want a grounded sense of how it was experienced.",
     },
     {
         "title": "Overlord: D-Day and the Battle for Normandy",
@@ -293,7 +293,7 @@ HISTORY_BOOKS = [
         "year": 1984,
         "genre": "history",
         "mood": ["hustle mode", "rainy afternoon"],
-        "summary": "A vivid account of the D-Day invasion and the brutal campaign to liberate France from Nazi occupation.",
+        "summary": "Max Hastings's Overlord, first published in 1984, was one of the books that began the modern revisionist conversation about the Normandy campaign. The standard Anglo-American account had treated D-Day and the Battle for Normandy as a more or less competent operational triumph; Hastings, working from German divisional histories and from candid interviews with surviving Allied soldiers and officers, argued otherwise. He concluded that the Wehrmacht units defending Normandy fought, man for man, more effectively than the Allied formations attacking them, and that the eventual Allied victory was a function of overwhelming material superiority — air supremacy, naval gunfire, replacement manpower, fuel — rather than tactical excellence. The book opens with the planning and the June 6 landings themselves, then moves through the long, bloody hedgerow-by-hedgerow fighting in the Norman bocage, the failed early attempts at Caen, the eventual Cobra breakout and the closing of the Falaise pocket. Hastings is candid about the weaknesses of Allied infantry training, the over-reliance on artillery, and the controversial conduct of senior commanders, especially Bernard Montgomery. The argument has been qualified by later historians but its core has held up, and Overlord remains a serious, unsentimental military history that takes the German side of the Normandy campaign seriously.",
     },
     {
         "title": "Vietnam: An Epic Tragedy, 1945-1975",
@@ -301,7 +301,7 @@ HISTORY_BOOKS = [
         "year": 2018,
         "genre": "history",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "A comprehensive history of the Vietnam War drawing on sources from all sides of the conflict.",
+        "summary": "Max Hastings's Vietnam: An Epic Tragedy covers the full thirty-year span of the conflict, from the late stages of the French colonial war in 1945 through the fall of Saigon in 1975, and consciously refuses to organize the story around the American experience alone. Hastings draws on Vietnamese, French, and American sources, and the book gives substantial attention to North Vietnamese strategy, to the South Vietnamese army and government, and to the millions of civilians whose lives were shaped by the war. The treatment of the American war years — the escalation under Johnson, the search-and-destroy operations, Tet, Vietnamization, the air campaigns over the North, Cambodia, the Paris talks — is sober and unsparing, and Hastings is blunt about the strategic incoherence of the American effort. He is equally willing to expose the totalitarian violence of the Hanoi regime, the conscription drives, the postwar reeducation camps, and the boat-people exodus that followed reunification. The result is a history that sits with discomfort: Hastings finds neither side's conduct admirable, and the book reads as an extended argument that the war was tragic in the classical sense rather than redemptive on any side. It has become a standard one-volume reference for serious general readers.",
     },
     {
         "title": "Band of Brothers",
@@ -309,7 +309,7 @@ HISTORY_BOOKS = [
         "year": 1992,
         "genre": "history",
         "mood": ["hustle mode", "cozy night"],
-        "summary": "The true story of Easy Company, 506th Parachute Infantry Regiment, from D-Day through the end of World War II.",
+        "summary": "Stephen E. Ambrose's Band of Brothers reconstructs the wartime experience of one company of American paratroopers — Easy Company, 2nd Battalion, 506th Parachute Infantry Regiment, 101st Airborne Division — from their training at Camp Toccoa, Georgia in 1942 through the end of the war in Europe in 1945. Ambrose drew the book from extensive interviews and correspondence with the surviving members of the company, and the result is something between unit history and group memoir, with the perspectives of individual men carrying the narrative. Easy Company jumped into Normandy on D-Day, fought through Carentan and the hedgerows, dropped again at Eindhoven during Market Garden, suffered the brutal cold and shelling of the Bardenburg in the Battle of the Bulge, advanced into Germany, took Berchtesgaden, and finished the war guarding Hitler's Eagle's Nest. The book is built around personalities — the cruel and incompetent first commander Herbert Sobel, the steady and admired Dick Winters, a long roster of non-commissioned officers and privates — and is a clear-eyed look at the boredom, comradeship, fear, and horror that fighting men actually experienced. The HBO miniseries adaptation made the company famous, but the book stands on its own as one of the genre's most influential works.",
     },
     {
         "title": "D-Day: June 6, 1944",
@@ -317,7 +317,7 @@ HISTORY_BOOKS = [
         "year": 1994,
         "genre": "history",
         "mood": ["hustle mode", "fresh start"],
-        "summary": "A minute-by-minute account of the Allied invasion of Normandy, told through the experiences of the soldiers who fought.",
+        "summary": "Stephen E. Ambrose's D-Day: June 6, 1944 is a comprehensive popular history of the Allied invasion of Normandy, organized as something close to an hour-by-hour reconstruction of the day itself. Ambrose draws on hundreds of veteran interviews collected over decades by his Eisenhower Center at the University of New Orleans, and the book moves at troop level: airborne drops behind the lines, the predawn naval bombardment, the British and Canadian beaches at Sword, Juno, and Gold, the American landings at Utah and especially the slaughter at Omaha. Set-pieces include the glider assault on Pegasus Bridge, the airborne fighting around Sainte-Mère-Église, the ranger climb at Pointe du Hoc, and the pinned-down infantry on Omaha Beach who eventually moved off the seawall in small ad-hoc groups. Ambrose treats the day as a triumph of small-unit initiative and the citizen-soldier ethos rather than of high command, and his preferred frame is unmistakably patriotic. Later historians have qualified some of his judgments and questioned the rigor of his sourcing, but as a popular synthesis built on the voices of the men who landed, the book has been hugely influential — both Saving Private Ryan and Band of Brothers drew partly from this material — and remains one of the most read books on D-Day.",
     },
     {
         "title": "Undaunted Courage",
@@ -325,7 +325,7 @@ HISTORY_BOOKS = [
         "year": 1996,
         "genre": "history",
         "mood": ["road trip", "fresh start"],
-        "summary": "The epic story of Meriwether Lewis and the Lewis and Clark expedition across uncharted America.",
+        "summary": "Stephen E. Ambrose's Undaunted Courage tells the story of the Lewis and Clark Expedition through the figure of Meriwether Lewis, the brilliant, troubled Virginian Thomas Jefferson handpicked to lead the Corps of Discovery across the continent in 1804. Ambrose follows Lewis from his army career and his service as Jefferson's private secretary in the new Federal City through the long preparatory year of 1803 — botany, astronomy, navigation, medicine, the language of diplomacy with Indian nations — and the recruitment of William Clark as co-captain. The book then walks the expedition itself: up the Missouri to the Mandan villages, the winter of 1804–05, the spring crossing into the unknown, the meetings with the Lemhi Shoshone and the help of Sacagawea, the brutal traverse of the Bitterroot Range, the descent of the Columbia, the wet and miserable winter at Fort Clatsop, and the return. Ambrose is excellent on the daily texture of the journey — diet, weather, the river, the keelboat, the careful diplomacy with the dozens of Indian nations the Corps encountered — and on Lewis's tragic last years after the expedition, ending in his death by gunshot on the Natchez Trace in 1809. The book made the expedition a popular subject in a way it had not been for decades.",
     },
     {
         "title": "A People's History of the United States",
@@ -333,7 +333,7 @@ HISTORY_BOOKS = [
         "year": 1980,
         "genre": "history",
         "mood": ["existential crisis", "self-discovery"],
-        "summary": "American history told from the perspective of workers, minorities, and the marginalized rather than the powerful.",
+        "summary": "Howard Zinn's A People's History of the United States, first published in 1980, is the most influential dissenting account of the American story written in the twentieth century. Zinn, a former bombardier turned historian and activist, opens with the arrival of Columbus from the perspective of the Arawaks who met him, and from there builds a deliberately bottom-up history aimed at displacing the great-men narrative he had been taught and forced to teach. Each chapter looks at a familiar landmark of American history through the eyes of those usually offstage: the Pequot and Cherokee dispossessed by colonial expansion, the indentured servants and enslaved Africans whose labor built the early colonies, the women excluded from the founding, the workers in nineteenth-century textile mills and railroad camps, the soldiers and civilians on the receiving end of the country's wars, the immigrants and Black Americans pushed to the margins of progressive narratives. The book has been criticized by professional historians for selective evidence and a tendency to flatten complexity into a master narrative of elite oppression, but its instructional impact has been enormous. It has sold millions of copies, transformed undergraduate teaching, and given several generations of readers a different first frame for thinking about American history.",
     },
     {
         "title": "The Guns of August",
@@ -341,7 +341,7 @@ HISTORY_BOOKS = [
         "year": 1962,
         "genre": "history",
         "mood": ["rainy afternoon", "boardroom energy"],
-        "summary": "A gripping account of the first month of World War I and the miscalculations that turned a crisis into catastrophe.",
+        "summary": "Barbara Tuchman's The Guns of August, published in 1962 and an immediate Pulitzer winner, takes its title from a remark in the Goethe play Faust and confines itself almost entirely to a single calendar month: August 1914, the opening of World War I. Tuchman opens with the funeral of Edward VII in 1910, where the kings, princes, and grand dukes of Europe ride together in a cortege, and uses the scene as the entry into a world that did not yet know it was about to destroy itself. She then walks step by step through the diplomatic and military choices of the late summer of 1914, weaving the German and French war plans, the Russian mobilization, the Belgian invasion, the British declaration, and the early battles of the Frontiers and the Marne into a single fast-paced narrative. The book is famous for its argument that the catastrophe of the war owed less to malice than to rigidity — railroad timetables that could not be reversed once started, war plans that admitted no diplomatic adjustment, military doctrines that required offensive movement at any cost. President Kennedy reportedly read it during the Cuban Missile Crisis and used it to think about how easily great powers can stumble into war. It remains a model of narrative history.",
     },
     {
         "title": "A Distant Mirror: The Calamitous 14th Century",
@@ -349,7 +349,7 @@ HISTORY_BOOKS = [
         "year": 1978,
         "genre": "history",
         "mood": ["winter blanket", "rainy afternoon"],
-        "summary": "Parallels the chaos of the fourteenth century—plague, war, schism—with the turbulence of the twentieth.",
+        "summary": "Barbara Tuchman's A Distant Mirror is a panoramic history of the fourteenth century in Europe, structured around the long life of a single French nobleman, Enguerrand de Coucy VII, who fought in or witnessed most of the era's calamities. Tuchman's working title was 'The Calamitous Fourteenth Century,' and the book is built around the catastrophes that piled on top of each other in those decades: the Hundred Years War between England and France, the Great Famine, the recurrent waves of the Black Death that killed perhaps a third of Europe's population, the Babylonian captivity and Great Schism that fractured the papacy, the chronic peasant revolts, the Mongol invasions on the eastern fringe, and the ill-fated Crusader expedition that ended at Nicopolis. Tuchman wrote in an explicit but lightly worn parallel: she called the fourteenth century a 'distant mirror' for the twentieth, with both periods marked by institutional collapse, technological violence, and a sense that the inherited order had stopped working. The book is dense with social, religious, and military detail — peasant life, courtly love, knightly ransom, Jewish persecution, the rituals of the church — and is one of the most ambitious and readable popular histories of medieval Europe in print.",
     },
     {
         "title": "The Proud Tower",
@@ -357,7 +357,7 @@ HISTORY_BOOKS = [
         "year": 1966,
         "genre": "history",
         "mood": ["Sunday morning", "rainy afternoon"],
-        "summary": "Portraits of the Western world in the years before World War I, from anarchists to aristocrats.",
+        "summary": "Barbara Tuchman's The Proud Tower is structured as eight long thematic essays, each a portrait of a different stratum of Western society in the quarter-century before World War I. The chapters are not connected by chronology so much as by the cumulative impression that something dazzling and self-confident was about to fall. She walks through the British Tory aristocracy at the moment of its political twilight; the rise of an internationally networked anarchist movement that assassinated kings, presidents, and prime ministers across Europe and America; the United States Senate at the height of imperial debate over the Spanish-American War and the Philippines; the Dreyfus Affair and the laceration of French civic life; the Hague peace conferences that tried and failed to limit war as institutions; the German and central European music world surrounding Richard Strauss; and the international socialist movement that broke apart when its workers marched to war in 1914. Tuchman is explicit that the book is not a narrative history of the prewar period but a set of soundings, and the essays sometimes overlap with material she would treat at greater length in The Guns of August. As a study in how a confident civilization can sit atop the contradictions that will destroy it, The Proud Tower remains arresting, and it has aged unusually well.",
     },
     {
         "title": "Benjamin Franklin: An American Life",
@@ -365,7 +365,7 @@ HISTORY_BOOKS = [
         "year": 2003,
         "genre": "history",
         "mood": ["side project vibes", "hustle mode"],
-        "summary": "The life of America's most versatile founding father—printer, scientist, diplomat, and philosopher.",
+        "summary": "Walter Isaacson's biography of Benjamin Franklin is the standard one-volume modern life and an exercise in popular biography that Isaacson would refine in later books on Einstein, Steve Jobs, and Leonardo. Franklin offers an unusually rich subject: a printer's apprentice who ran away from his Boston master, became a self-made publisher and the first internationally famous American author through Poor Richard's Almanack, retired wealthy at forty-two to pursue science, made the experimental discoveries about electricity that won him European fame, served as a colonial agent in London, helped draft the Declaration of Independence, charmed the Treaty of Alliance with France out of Versailles, negotiated the Treaty of Paris that ended the Revolutionary War, and signed the Constitution at the age of eighty-one. Isaacson is interested in Franklin as the prototype of a peculiarly American character: pragmatic, tolerant, civic-minded, ironically self-presenting, more comfortable with compromise than ideology. He pays attention to the science and the inventions, to the printing trade, to the long estrangement from his Loyalist son William, and to Franklin's evolving views on slavery — he ended his life as the founding president of the Pennsylvania Abolition Society. The book is brisk, well-paced, and an excellent gateway into the larger Franklin literature for readers who want a complete portrait.",
     },
     {
         "title": "Einstein: His Life and Universe",
@@ -373,7 +373,7 @@ HISTORY_BOOKS = [
         "year": 2007,
         "genre": "history",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "A biography of the physicist who revolutionized our understanding of space, time, and the universe.",
+        "summary": "Walter Isaacson's Einstein: His Life and Universe was the first major biography to draw on the recently released Einstein archives at Hebrew University in Jerusalem, including the personal letters that fill out the human side of a figure long encrusted in iconography. Isaacson opens with the unhappy schoolboy in Wilhelmine Germany whose teachers thought him slow, traces him through his Swiss apprenticeship, the patent office in Bern, the miracle year of 1905 — the special theory of relativity, the photoelectric effect that founded quantum theory, Brownian motion, the equivalence of mass and energy — the long subsequent struggle to general relativity announced in 1915 and confirmed in the 1919 eclipse, and the global celebrity that followed. The second half of the book is the harder portion: Einstein's flight from Nazi Germany to Princeton, his decades-long failed search for a unified field theory, his famous discomfort with the indeterminism of mature quantum mechanics ('God does not play dice'), his moral and political activism, and his late-life reluctant role in alerting Roosevelt to the possibility of an atomic bomb. Isaacson handles the physics carefully without trying to make a scientific monograph out of the book, and offers a candid portrait of Einstein's marriages and his relationships with his children. The book remains the standard popular biography.",
     },
     {
         "title": "Kissinger: 1923-1968: The Idealist",
@@ -381,7 +381,7 @@ HISTORY_BOOKS = [
         "year": 2015,
         "genre": "history",
         "mood": ["boardroom energy", "late night reflection"],
-        "summary": "The first volume of the definitive biography, revealing Kissinger's intellectual formation and early diplomatic career.",
+        "summary": "Niall Ferguson's first volume of an authorized two-part biography of Henry Kissinger covers the years from his birth in Bavaria in 1923 through 1968, ending the night Richard Nixon won the presidency. The book covers the Jewish childhood in Fürth and the family's escape to New York in 1938, the wartime service as a young soldier in counterintelligence in occupied Germany — where Kissinger first developed his characteristic interest in the politics of weakness and order — the Harvard education, the dissertation on Metternich and the Congress of Vienna, the first books on nuclear strategy, and the rapid rise as a Republican foreign policy adviser to Nelson Rockefeller and others through the 1950s and 1960s. Ferguson's controlling argument is that Kissinger is best understood not as a cynical realpolitiker but as an idealist of order, a refugee shaped by the destruction of his own community who came to see stable balances of power as the precondition for any decent politics. The book is sympathetic, occasionally polemical, and built on unusually deep access to Kissinger's private papers and to the man himself. It ends just as Kissinger is about to enter the West Wing as Nixon's National Security Adviser, where the more controversial portion of his career begins; the second volume has been promised for years but not yet appeared.",
     },
     {
         "title": "On Tyranny: Twenty Lessons from the Twentieth Century",
@@ -389,7 +389,7 @@ HISTORY_BOOKS = [
         "year": 2017,
         "genre": "history",
         "mood": ["fresh start", "existential crisis"],
-        "summary": "A pocket guide to resisting authoritarianism, drawing urgent lessons from the collapse of democracies in the last century.",
+        "summary": "Timothy Snyder's On Tyranny is a deliberately small book — about a hundred pages, written for the pocket — published in early 2017 in direct response to the election of Donald Trump and the rise of analogous movements in Europe. Snyder, a Yale historian whose scholarly work has focused on Eastern European democracies that collapsed in the twentieth century, distills two decades of his research into twenty short lessons about what citizens can do when democratic institutions begin to erode. The lessons range from the practical to the moral and read more as moral imperatives than as analytical claims: do not obey in advance; defend institutions; beware the one-party state; take responsibility for the face of the world; remember professional ethics; be wary of paramilitaries; be reflective if you must be armed; stand out; be kind to our language; believe in truth; investigate; make eye contact and small talk; practice corporeal politics; establish a private life; contribute to good causes; learn from peers in other countries; listen for dangerous words; be calm when the unthinkable arrives; be a patriot; be as courageous as you can. The book has sold widely and become one of the most quoted civic primers of the era; its case is that the lessons of the twentieth century are still operational.",
     },
     {
         "title": "Bloodlands: Europe Between Hitler and Stalin",
@@ -397,7 +397,7 @@ HISTORY_BOOKS = [
         "year": 2010,
         "genre": "history",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Documents the deliberate mass murder of fourteen million people in the lands between Berlin and Moscow.",
+        "summary": "Timothy Snyder's Bloodlands argues that the standard separation of Hitler's and Stalin's atrocities into two distinct stories obscures the geography in which most of their victims actually died. Between 1932 and 1945, Snyder calculates, fourteen million civilians and prisoners of war were deliberately killed in a band of territory running through what is now Poland, Belarus, Ukraine, the Baltic states, and the western edge of Russia — the same lands occupied first by Stalin, then by Hitler, then by Stalin again. Snyder reconstructs that killing as a single integrated phenomenon. The book moves through the deliberate Soviet famine in Ukraine in 1932–33; Stalin's Great Terror of 1937–38; the joint Soviet–Nazi destruction of the Polish state and elites in 1939–41; the German extermination through hunger of Soviet prisoners of war and the Soviet civilian populations behind the Eastern Front; the systematic murder of Jews on Eastern European soil through the Einsatzgruppen and the death camps; and the postwar ethnic cleansings that completed the demographic transformation of the region. The achievement is in showing what these episodes look like when they are read as one continuous catastrophe carried out by two regimes operating in the same place rather than as two parallel histories. The book has reshaped the historiography of twentieth-century Europe.",
     },
     {
         "title": "Black Earth: The Holocaust as History and Warning",
@@ -405,7 +405,7 @@ HISTORY_BOOKS = [
         "year": 2015,
         "genre": "history",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Reframes the Holocaust as a consequence of ecological panic and state destruction, with warnings for the present.",
+        "summary": "Timothy Snyder's Black Earth picks up where Bloodlands left off and offers a more interpretive, more provocative account of how the Holocaust actually happened. Snyder argues that two conditions had to combine for industrial-scale extermination of the Jews to become possible. The first was Hitler's specifically ecological worldview, which treated nations as biological races competing for the soil and food of a finite planet, and treated the Jews not as a people but as a planetary parasite to be eradicated. The second, which Snyder considers underappreciated by previous historians, was state destruction. He shows that murder rates of Jews varied dramatically across occupied Europe according to whether prewar institutions — citizenship, courts, police, registries — survived or were obliterated by the German invasion. In countries where the state held, most Jews survived; where the state was destroyed, as in occupied Poland and the Soviet borderlands, almost none did. Snyder draws the moral case from this analysis: that the conditions of the Holocaust were not unique to interwar Europe and that ecological panics over food and water in the twenty-first century, combined with the deliberate hollowing-out of state institutions, could produce comparable atrocities. The book is more contested than Bloodlands and more self-consciously addressed to the present.",
     },
     {
         "title": "Gulag: A History",
@@ -413,7 +413,7 @@ HISTORY_BOOKS = [
         "year": 2003,
         "genre": "history",
         "mood": ["existential crisis", "winter blanket"],
-        "summary": "The definitive history of the Soviet concentration camp system that imprisoned millions over decades.",
+        "summary": "Anne Applebaum's Gulag, winner of the 2004 Pulitzer Prize for general nonfiction, is the first comprehensive English-language history of the Soviet camp system written after the partial opening of Russian and former Soviet archives in the 1990s. The book has three parts. The first traces the institutional history of the Gulag from the early Bolshevik experiments at Solovki in 1918 through Stalin's transformation of the system into an instrument of mass terror and forced labor in the 1930s, the wartime expansions, the postwar arrests of returning Soviet prisoners of war and conquered nationalities, the death of Stalin, and the eventual partial dismantling and renaming of the camps. The second part is a thematic ethnography of camp life: arrest, transit, the women's camps, food and work norms, sexual exploitation, the criminal subculture, the medical system, religion, art, escape, and revolt. The third covers the postwar memoir tradition that produced Solzhenitsyn and the long fight to make the Soviet camp experience publicly knowable. Applebaum is an unusually careful synthesist: she draws on dozens of scholarly monographs, hundreds of survivor memoirs, and her own archival work to give the system both its full statistical scale — perhaps eighteen million prisoners passed through it — and its lived human reality.",
     },
     {
         "title": "Iron Curtain: The Crushing of Eastern Europe, 1944-1956",
@@ -421,7 +421,7 @@ HISTORY_BOOKS = [
         "year": 2012,
         "genre": "history",
         "mood": ["rainy afternoon", "late night reflection"],
-        "summary": "How the Soviet Union systematically dismantled civil society and imposed totalitarian control on Eastern Europe.",
+        "summary": "Anne Applebaum's Iron Curtain documents how the Soviet Union systematically Sovietized Eastern Europe between the closing months of World War II and the consolidation of the Stalinist bloc by the mid-1950s. Applebaum focuses primarily on three countries — Poland, Hungary, and East Germany — but draws on archival research and oral histories from across the region to reconstruct the playbook the Soviets used. She shows that the imposition of one-party rule was neither immediate nor frontal. It happened through a sequence of deliberate moves: the ethnic cleansing and deportation that simplified national populations; the early seizure of police, ministry of interior, and broadcasting; the staged elections and so-called popular front coalitions that masked communist control; the systematic infiltration and elimination of civil-society institutions like youth groups, churches, sports clubs, and small businesses; the show trials of socialist and communist rivals; and the eventual nationalization and collectivization of the economy. The book is particularly strong on the cultural and personal dimensions — what it was like to be a young person in 1948 watching old institutions disappear and new ones replace them — and on the genuine if compromised popular enthusiasm that some communist movements briefly enjoyed before disillusionment set in. Applebaum's account is now the standard scholarly history of the period in English.",
     },
     {
         "title": "Twilight of Democracy",
@@ -429,7 +429,7 @@ HISTORY_BOOKS = [
         "year": 2020,
         "genre": "history",
         "mood": ["existential crisis", "boardroom energy"],
-        "summary": "A personal and intellectual account of how authoritarianism is seducing democracies around the world.",
+        "summary": "Anne Applebaum's Twilight of Democracy is shorter and more personal than her earlier histories of the Soviet world. The book opens at a New Year's party Applebaum and her husband, the Polish politician Radek Sikorski, threw at their country house in 1999, and traces the gradual ideological estrangement of many of their friends from that party — center-right liberal democrats then, supporters of authoritarian populism by the late 2010s. Applebaum uses these personal trajectories as the entry into a broader argument about why educated, prosperous people in stable democracies turn against democratic institutions. She covers Poland under PiS, Hungary under Orbán, the British Brexit movement, Trumpism in the United States, and the Vox movement in Spain, paying particular attention to the role of intellectuals and journalists who provided the legitimating apparatus that authoritarian projects need. Her diagnosis draws on twentieth-century literature — Czesław Miłosz's The Captive Mind especially — and on classical analysis of the appeal of dictatorship: a craving for unity, contempt for compromise, the lure of conspiratorial explanation, the anxieties of meritocracy. The book is candid about the author's own movement from the political right toward a more troubled liberalism, and it is one of the more honest short books on the contemporary democratic crisis.",
     },
     {
         "title": "The Rise and Fall of the Third Reich",
@@ -437,7 +437,7 @@ HISTORY_BOOKS = [
         "year": 1960,
         "genre": "history",
         "mood": ["winter blanket", "late night reflection"],
-        "summary": "A journalist's monumental history of Nazi Germany, written with firsthand knowledge of the regime.",
+        "summary": "William L. Shirer's Rise and Fall of the Third Reich, published in 1960, is one of the great popular histories of the twentieth century, written by a journalist who actually lived in Nazi Germany as a CBS correspondent through most of the 1930s and watched the regime consolidate from the inside. The book runs nearly twelve hundred pages and tracks the entire arc — from the German national catastrophe of 1918 and the failed Weimar experiment, through Hitler's rise, the construction of the Nazi state, the path to war, the great campaigns, the genocidal occupation policies, and the regime's destruction in 1945. Shirer drew heavily on the captured German foreign ministry archives that became available to journalists and historians at Nuremberg, and the book quotes extensively from Hitler's table talk, the diplomatic record, military memoranda, and Shirer's own diary. Modern academic historians have qualified some of his interpretations — the book leans on a 'special German path' explanation that subsequent scholarship has complicated, and it is more focused on diplomacy and high politics than on social history — but as the first comprehensive account by a competent and unsentimental witness, it has remained continuously in print for more than sixty years and shaped the historical imagination of multiple generations of readers.",
     },
     {
         "title": "A Short History of Nearly Everything",
@@ -445,7 +445,7 @@ HISTORY_BOOKS = [
         "year": 2003,
         "genre": "history",
         "mood": ["Sunday morning", "beach read"],
-        "summary": "A witty, accessible journey through science and history, from the Big Bang to the rise of civilization.",
+        "summary": "Bill Bryson's A Short History of Nearly Everything is a popular science history written by a travel writer who decided he did not understand the natural world he lived in and would attempt to repair the omission in public. The book is structured loosely from the Big Bang outward, then in: the formation of the universe and our solar system, the size and structure of the earth, the development of life from microbes to humans, and the deep history of plate tectonics, climate, mass extinction, and our own species. Bryson is candid that he is a curious amateur rather than a scientist, and the book's organizing trick is to talk to working specialists in each field — paleontologists, geologists, particle physicists, biochemists — and to retell what they tell him with a cheerful, mildly skeptical eye for human eccentricity. The set-pieces are often as much about scientists as about science: Newton's quirks, the clergymen who founded modern geology, the rivalries of nineteenth-century paleontology, the obsessive attempts to weigh the earth, the personalities of mid-century physics. The book won the Aventis Prize and the Descartes Prize for science writing, sold millions of copies, and has been used in middle and high school science programs around the world as an entry point into the broader literature.",
     },
     {
         "title": "The Rise and Fall of the Great Powers",
@@ -453,7 +453,7 @@ HISTORY_BOOKS = [
         "year": 1987,
         "genre": "history",
         "mood": ["boardroom energy", "late night reflection"],
-        "summary": "Analyzes the economic and military factors behind the rise and decline of major world powers since 1500.",
+        "summary": "Paul Kennedy's The Rise and Fall of the Great Powers is a structuralist history of international politics from roughly 1500 to the late twentieth century, organized around a single argument: that the strength of any great power is ultimately a function of the relative health of its productive economic base, and that empires fall when military commitments outrun economic capacity. Kennedy traces the cycle through the rise and decline of Habsburg Spain, the United Provinces, Bourbon France, Britain in the long nineteenth century, and the great-power system that destroyed itself in two world wars. The book is most famous for its analysis of what Kennedy called 'imperial overstretch' and for the closing chapters that applied the framework to the United States and the Soviet Union in the late 1980s. Kennedy did not predict the speed of the Soviet collapse, but he sketched it as plausible; on the United States, he warned that defense and security commitments not matched by an adequately growing productive economy would erode American primacy over the long run. The book sparked a substantial debate when it appeared in 1987, and the rise of China has only intensified the argument in the decades since. It is one of the most influential works of grand strategy of the late twentieth century.",
     },
     {
         "title": "The Silk Roads: A New History of the World",
@@ -461,7 +461,7 @@ HISTORY_BOOKS = [
         "year": 2015,
         "genre": "history",
         "mood": ["road trip", "Sunday morning"],
-        "summary": "Recenters world history around the ancient trade routes connecting East and West, challenging Western-centric narratives.",
+        "summary": "Peter Frankopan's The Silk Roads is a deliberate reorientation of world history away from the Mediterranean and the Atlantic and toward the central Eurasian corridor connecting Persia, the steppe, China, and India. Frankopan argues that for most of recorded history the wealth and creative energy of the world ran along these networks, and that the relatively brief Atlantic centuries of European dominance — from roughly the late fifteenth to the late twentieth — are the historical anomaly that needs explaining rather than the implicit baseline of world history. The book begins with the ancient empires of the Persian and Hellenistic worlds and works forward through the spread of Christianity and Islam, the Mongol unification of Eurasia and the trade networks that flourished beneath it, the Black Death whose entry into Europe ran along these same routes, the early modern Persian and Ottoman empires, the British and Russian games for Central Asia, the carve-up of the post-Ottoman Middle East, and into the twenty-first century with the resurgence of China and the Belt and Road Initiative. Frankopan writes for a popular audience, and specialists have argued with details, but the book has been hugely influential in popular and policy reading lists for the way it scrambles the conventional Western-centric mental map of where world history happens.",
     },
     {
         "title": "The Warmth of Other Suns",
@@ -469,7 +469,7 @@ HISTORY_BOOKS = [
         "year": 2010,
         "genre": "history",
         "mood": ["road trip", "self-discovery"],
-        "summary": "The epic story of the Great Migration, when six million Black Americans fled the South for a better life.",
+        "summary": "Isabel Wilkerson's The Warmth of Other Suns is a sweeping history of the Great Migration, the movement of roughly six million Black Americans out of the Jim Crow South to cities in the North, Midwest, and West between 1910 and 1970, told through the intertwined life stories of three migrants Wilkerson interviewed extensively over more than a decade. Ida Mae Brandon Gladney left Mississippi for Chicago in 1937 with her husband and small children. George Swanson Starling fled Florida for Harlem in the 1940s after running afoul of citrus growers who had threatened to kill him for organizing fellow pickers. Robert Joseph Pershing Foster, a brilliant Louisiana-trained physician, drove west to California in 1953 in search of a place where he could practice medicine without insult. Wilkerson uses these three lives to embody the social, economic, and emotional shape of the migration: the Jim Crow conditions that pushed people out, the journeys themselves, the city housing and labor markets that received them, the children and grandchildren whose opportunities the migration created, and the unmet hopes that wore on the migrants over decades. The book won the National Book Critics Circle Award and helped bring the Great Migration into mainstream public memory as one of the central events of twentieth-century American life.",
     },
     {
         "title": "Caste: The Origins of Our Discontents",
@@ -477,7 +477,7 @@ HISTORY_BOOKS = [
         "year": 2020,
         "genre": "history",
         "mood": ["existential crisis", "self-discovery"],
-        "summary": "Draws parallels between America's racial hierarchy, India's caste system, and Nazi Germany's racial laws.",
+        "summary": "Isabel Wilkerson's Caste argues that the American racial system is best understood not as racism alone but as a caste hierarchy: a rigid, inherited social structure that ranks human groups, attaches differential treatment to membership in each rank, and replicates itself through law, custom, language, and intimate behavior. To make the comparative case, Wilkerson holds three caste systems alongside each other — the centuries-old jati system of India, the racial caste system of Nazi Germany, and the American racial order from slavery through the present — and identifies what she calls the eight pillars of caste, including divine and natural justification, heritability, endogamy, occupational hierarchy, dehumanization, terror enforcement, and inherent superiority and inferiority. The book builds its argument through historical episodes — Nazi jurists studying Jim Crow when drafting the Nuremberg Laws, the elaborate etiquette of southern segregation, the everyday hostilities directed at Black professionals — and through Wilkerson's own life, including a long account of being mistreated as a Black New York Times correspondent in the South. Caste was published in 2020, became one of the most discussed nonfiction books of the year, and was adapted into the Ava DuVernay film Origin. It is at once a popular history, a sociological argument, and a personal essay.",
     },
     {
         "title": "The Color of Law",
