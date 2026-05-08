@@ -1,0 +1,19 @@
+Star Blast sound effects
+
+Source: Kenney Sci-fi Sounds 1.0
+URL: https://kenney.nl/assets/sci-fi-sounds
+
+License: Creative Commons Zero (CC0)
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Original notice:
+
+Sci-Fi Sounds (1.0)
+Created/distributed by Kenney (www.kenney.nl)
+Creation date: 11-10-2020
+
+This content is free to use in personal, educational and commercial projects.
+Crediting Kenney or www.kenney.nl is appreciated but not mandatory.
+
+Selected files were converted from OGG to 16-bit mono WAV at 22050 Hz for
+portable playback in this terminal game.

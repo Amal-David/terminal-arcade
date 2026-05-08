@@ -1,4 +1,4 @@
-"""Star Blast — a Nokia-inspired terminal shooter."""
+"""Star Blast — a large-sprite terminal space shooter."""
 
 from __future__ import annotations
 
@@ -7,25 +7,34 @@ import random
 import time
 from dataclasses import dataclass, field
 
+from .audio import AudioManager
 from .storage import load_scores, save_scores
 
 FPS = 20
 FRAME_TIME = 1.0 / FPS
 
-MIN_WIDTH = 72
-MIN_HEIGHT = 24
+MIN_WIDTH = 96
+MIN_HEIGHT = 34
 
-PLAYER_GLYPH = "/A\\"
-PLAYER_WIDTH = len(PLAYER_GLYPH)
-PLAYER_STRAFE_STEP = 2
-SHOT_COOLDOWN_FRAMES = 4
+PLAYER_SPRITE = (
+    "     /^\\     ",
+    "  __/___\\__  ",
+    " /_==_O_==_\\ ",
+    "   /_| |_\\   ",
+    "    /___\\    ",
+)
+PLAYER_WIDTH = max(len(line) for line in PLAYER_SPRITE)
+PLAYER_HEIGHT = len(PLAYER_SPRITE)
+PLAYER_STRAFE_STEP = 4
+SHOT_COOLDOWN_FRAMES = 3
 FIRE_HOLD_FRAMES = 3
 INVULNERABILITY_FRAMES = 24
 LEVEL_CLEAR_BONUS = 100
-PLAYFIELD_MIN_WIDTH = 34
-PLAYFIELD_MAX_WIDTH = 40
-PLAYFIELD_MIN_HEIGHT = 15
-PLAYFIELD_MAX_HEIGHT = 18
+PLAYFIELD_MIN_WIDTH = 58
+PLAYFIELD_MAX_WIDTH = 88
+PLAYFIELD_MIN_HEIGHT = 24
+PLAYFIELD_MAX_HEIGHT = 32
+MAX_VISUAL_EFFECTS = 18
 
 MODE_CAMPAIGN = "campaign"
 MODE_ENDLESS = "endless"
@@ -65,16 +74,106 @@ class EnemySpec:
     hp: int
     speed: float
     score: int
-    width: int
+    sprite: tuple[str, ...]
     shoots: bool = False
+
+    @property
+    def width(self) -> int:
+        return max(len(line) for line in self.sprite)
+
+    @property
+    def height(self) -> int:
+        return len(self.sprite)
 
 
 ENEMY_SPECS = {
-    "debris": EnemySpec(glyph="[#]", hp=1, speed=0.55, score=10, width=3),
-    "scout": EnemySpec(glyph="[V]", hp=1, speed=0.75, score=20, width=3),
-    "zigzag": EnemySpec(glyph="<W>", hp=1, speed=0.62, score=20, width=3),
-    "turret": EnemySpec(glyph="[###]", hp=3, speed=0.34, score=50, width=5, shoots=True),
-    "carrier": EnemySpec(glyph="/MMM\\", hp=10, speed=0.28, score=250, width=5, shoots=True),
+    "debris": EnemySpec(
+        glyph="<###>",
+        hp=1,
+        speed=0.55,
+        score=10,
+        sprite=(
+            "  _#_  ",
+            " /###\\ ",
+            " \\_#_/ ",
+        ),
+    ),
+    "scout": EnemySpec(
+        glyph="<[V]>",
+        hp=1,
+        speed=0.75,
+        score=20,
+        sprite=(
+            "  \\|/  ",
+            " <[V]> ",
+            "  /|\\  ",
+        ),
+    ),
+    "zigzag": EnemySpec(
+        glyph="<-W->",
+        hp=1,
+        speed=0.62,
+        score=20,
+        sprite=(
+            "  _/_  ",
+            " <-W-> ",
+            "  / \\  ",
+        ),
+    ),
+    "turret": EnemySpec(
+        glyph="[###]",
+        hp=3,
+        speed=0.34,
+        score=50,
+        sprite=(
+            " /=====\\ ",
+            "|  [#]  |",
+            " \\==^==/ ",
+        ),
+        shoots=True,
+    ),
+    "carrier": EnemySpec(
+        glyph="/MMMM\\",
+        hp=10,
+        speed=0.28,
+        score=250,
+        sprite=(
+            "     /^^\\     ",
+            "  __/====\\__  ",
+            " /|MMMMMMMM|\\ ",
+            "  \\|__[]__|/  ",
+            "    /____\\    ",
+        ),
+        shoots=True,
+    ),
+}
+
+
+EFFECT_SPRITES = {
+    "spark": (
+        ("  *  ",),
+        (" -*- ", "  *  "),
+        ("  .  ",),
+    ),
+    "enemy": (
+        ("  *  ", " *** ", "  *  "),
+        (" *#* ", "#####", " *#* "),
+        ("\\###/", "-###-", "/###\\"),
+        ("  .  ", ".   .", "  .  "),
+    ),
+    "player": (
+        (" \\ | / ", " --X-- ", " / | \\ "),
+        ("\\\\\\|///", "==XXX==", "///|\\\\\\"),
+        (" .-#-. ", "<#####>", " '-#-' "),
+        ("  ...  ", ".     .", "  ...  "),
+    ),
+    "boss": (
+        ("    *    ", "  *****  ", "    *    "),
+        (" \\#####/ ", "--#####--", " /#####\\ "),
+        ("\\\\@@@@@//", "==@@@@@==", "//@@@@@\\\\"),
+        (" .-###-. ", "< ##### >", " '-###-' "),
+        ("   ...   ", " .     . ", "   ...   "),
+    ),
 }
 
 
@@ -149,6 +248,15 @@ class Enemy:
 
 
 @dataclass
+class VisualEffect:
+    kind: str
+    x: float
+    y: float
+    age: int = 0
+    duration: int = 10
+
+
+@dataclass
 class GameState:
     selected_mode: str = MODE_CAMPAIGN
     mode: str = MODE_CAMPAIGN
@@ -177,6 +285,9 @@ class GameState:
     banner_timer: int = 0
     result_text: str = ""
     result_hint: str = ""
+    visual_effects: list[VisualEffect] = field(default_factory=list)
+    screen_shake_frames: int = 0
+    hit_flash_frames: int = 0
 
 
 def clamp_player_x(current: int, delta: int, field_w: int) -> int:
@@ -185,8 +296,8 @@ def clamp_player_x(current: int, delta: int, field_w: int) -> int:
 
 
 def player_row(field_h: int) -> int:
-    """Bottom row where the player ship sits."""
-    return max(0, field_h - 2)
+    """Top row where the player ship sits."""
+    return max(0, field_h - PLAYER_HEIGHT - 1)
 
 
 def endless_wave_for_score(score: int) -> int:
@@ -210,9 +321,9 @@ def endless_spawn_interval(wave: int) -> int:
 
 
 def compute_playfield(term_h: int, term_w: int) -> tuple[int, int, int, int]:
-    """Compute a compact centered playfield for keyboard movement."""
-    field_w = max(PLAYFIELD_MIN_WIDTH, min(term_w - 20, PLAYFIELD_MAX_WIDTH))
-    field_h = max(PLAYFIELD_MIN_HEIGHT, min(term_h - 8, PLAYFIELD_MAX_HEIGHT))
+    """Compute a large centered playfield for sprite-based movement."""
+    field_w = max(PLAYFIELD_MIN_WIDTH, min(term_w - 16, PLAYFIELD_MAX_WIDTH))
+    field_h = max(PLAYFIELD_MIN_HEIGHT, min(term_h - 9, PLAYFIELD_MAX_HEIGHT))
     ox = max(1, (term_w - (field_w + 2)) // 2)
     oy = max(2, (term_h - (field_h + 2)) // 2 - 1)
     return ox, oy, field_w, field_h
@@ -233,6 +344,43 @@ def safe_addstr(stdscr, y: int, x: int, text: str, attr: int = 0) -> None:
         stdscr.addstr(y, x, text, attr)
     except curses.error:
         pass
+
+
+def draw_sprite(stdscr, y: int, x: int, sprite: tuple[str, ...], attr: int) -> None:
+    """Draw a multi-line sprite, clipping through safe_addstr."""
+    for row_offset, line in enumerate(sprite):
+        safe_addstr(stdscr, y + row_offset, x, line, attr)
+
+
+def spawn_visual_effect(state: GameState, kind: str, x: float, y: float, duration: int | None = None) -> None:
+    """Queue a short-lived explosion or impact effect inside the playfield."""
+    frame_count = len(EFFECT_SPRITES[kind])
+    state.visual_effects.append(
+        VisualEffect(
+            kind=kind,
+            x=x,
+            y=y,
+            duration=duration if duration is not None else max(4, frame_count * 3),
+        )
+    )
+    state.visual_effects = state.visual_effects[-MAX_VISUAL_EFFECTS:]
+
+
+def advance_visual_effects(state: GameState) -> None:
+    """Tick transient blast/impact effects and screen flash timers."""
+    for effect in state.visual_effects:
+        effect.age += 1
+    state.visual_effects = [effect for effect in state.visual_effects if effect.age < effect.duration]
+    if state.screen_shake_frames > 0:
+        state.screen_shake_frames -= 1
+    if state.hit_flash_frames > 0:
+        state.hit_flash_frames -= 1
+
+
+def visual_effect_sprite(effect: VisualEffect) -> tuple[str, ...]:
+    frames = EFFECT_SPRITES[effect.kind]
+    frame_index = min(len(frames) - 1, effect.age * len(frames) // max(1, effect.duration))
+    return frames[frame_index]
 
 
 def init_colors() -> bool:
@@ -282,6 +430,9 @@ def start_game(state: GameState, field_w: int) -> None:
     state.bullets.clear()
     state.enemy_bullets.clear()
     state.enemies.clear()
+    state.visual_effects.clear()
+    state.screen_shake_frames = 0
+    state.hit_flash_frames = 0
     state.paused = False
     state.frame_count = 0
     state.stage_index = 0
@@ -334,6 +485,9 @@ def advance_campaign_if_needed(state: GameState) -> None:
     state.enemies.clear()
     state.bullets.clear()
     state.enemy_bullets.clear()
+    state.visual_effects.clear()
+    state.screen_shake_frames = 0
+    state.hit_flash_frames = 0
     state.banner_text = f"Stage {state.stage_index + 1}: {STAGES[state.stage_index].name}"
     state.banner_timer = 40
 
@@ -343,33 +497,47 @@ def _enemy_hit(enemy: Enemy, bullet: Bullet) -> bool:
     ex = int(round(enemy.x))
     ey = int(round(enemy.y))
     by = int(round(bullet.y))
-    return by == ey and ex <= bx < ex + enemy.width
+    spec = ENEMY_SPECS[enemy.kind]
+    return ey <= by < ey + spec.height and ex <= bx < ex + enemy.width
 
 
 def _player_hit_by_enemy(enemy: Enemy, player_x: int, field_h: int) -> bool:
     ex = int(round(enemy.x))
     ey = int(round(enemy.y))
     py = player_row(field_h)
-    return ey >= py and ex < player_x + PLAYER_WIDTH and player_x < ex + enemy.width
+    spec = ENEMY_SPECS[enemy.kind]
+    enemy_bottom = ey + spec.height - 1
+    player_bottom = py + PLAYER_HEIGHT - 1
+    vertical_overlap = ey <= player_bottom and py <= enemy_bottom
+    horizontal_overlap = ex < player_x + PLAYER_WIDTH and player_x < ex + enemy.width
+    return vertical_overlap and horizontal_overlap
 
 
-def handle_player_hit(state: GameState, field_w: int, field_h: int) -> None:
+def handle_player_hit(state: GameState, field_w: int, field_h: int, audio: AudioManager | None = None) -> None:
     """Apply player damage and respawn or end the run."""
     if state.player_invuln > 0:
         return
+
+    impact_x = state.player_x + PLAYER_WIDTH / 2
+    impact_y = player_row(field_h) + PLAYER_HEIGHT / 2
+    spawn_visual_effect(state, "player", impact_x, impact_y, duration=14)
+    state.screen_shake_frames = 8
+    state.hit_flash_frames = 12
+    if audio is not None:
+        audio.play("player_hit")
 
     state.lives -= 1
     state.player_invuln = INVULNERABILITY_FRAMES
     state.player_x = max(0, field_w // 2 - PLAYER_WIDTH // 2)
     state.enemy_bullets.clear()
     state.bullets.clear()
-    state.enemies = [enemy for enemy in state.enemies if enemy.y < field_h - 5]
+    state.enemies = [enemy for enemy in state.enemies if enemy.y < field_h - (PLAYER_HEIGHT + 4)]
 
     if state.lives <= 0:
         finish_session(state, "gameover", "Ship destroyed")
 
 
-def resolve_collisions(state: GameState, field_w: int, field_h: int) -> None:
+def resolve_collisions(state: GameState, field_w: int, field_h: int, audio: AudioManager | None = None) -> None:
     """Resolve projectile and ship collisions."""
     remaining_bullets: list[Bullet] = []
     boss_defeated = False
@@ -388,12 +556,20 @@ def resolve_collisions(state: GameState, field_w: int, field_h: int) -> None:
             continue
 
         hit_enemy.hp -= 1
+        center_x = hit_enemy.x + hit_enemy.width / 2
+        center_y = hit_enemy.y + ENEMY_SPECS[hit_enemy.kind].height / 2
         if hit_enemy.hp <= 0:
+            effect_kind = "boss" if hit_enemy.kind == "carrier" else "enemy"
+            spawn_visual_effect(state, effect_kind, center_x, center_y, duration=18 if effect_kind == "boss" else 12)
+            if audio is not None:
+                audio.play("boss_blast" if hit_enemy.kind == "carrier" else "enemy_blast")
             state.score += ENEMY_SPECS[hit_enemy.kind].score
             if hit_enemy.kind == "carrier":
                 state.score += LEVEL_CLEAR_BONUS
                 boss_defeated = True
             record_high_score(state)
+        else:
+            spawn_visual_effect(state, "spark", center_x, center_y, duration=5)
 
     state.bullets = remaining_bullets
     state.enemies = [enemy for enemy in state.enemies if enemy.hp > 0]
@@ -404,7 +580,11 @@ def resolve_collisions(state: GameState, field_w: int, field_h: int) -> None:
     for bullet in state.enemy_bullets:
         bx = int(round(bullet.x))
         by = int(round(bullet.y))
-        if state.player_invuln == 0 and by >= py and state.player_x <= bx < state.player_x + PLAYER_WIDTH:
+        if (
+            state.player_invuln == 0
+            and py <= by < py + PLAYER_HEIGHT
+            and state.player_x <= bx < state.player_x + PLAYER_WIDTH
+        ):
             player_hit = True
             continue
         surviving_enemy_bullets.append(bullet)
@@ -417,13 +597,13 @@ def resolve_collisions(state: GameState, field_w: int, field_h: int) -> None:
                 break
 
     if player_hit:
-        handle_player_hit(state, field_w, field_h)
+        handle_player_hit(state, field_w, field_h, audio)
 
     if boss_defeated:
         advance_campaign_if_needed(state)
 
 
-def fire_player_shot(state: GameState, field_h: int) -> None:
+def fire_player_shot(state: GameState, field_h: int, audio: AudioManager | None = None) -> None:
     """Spawn one player shot from the starship nose."""
     state.bullets.append(
         Bullet(
@@ -434,6 +614,8 @@ def fire_player_shot(state: GameState, field_h: int) -> None:
         )
     )
     state.shot_cooldown = SHOT_COOLDOWN_FRAMES
+    if audio is not None:
+        audio.play("laser")
 
 
 def toggle_autofire(state: GameState) -> None:
@@ -471,7 +653,7 @@ def update_enemies(state: GameState, field_w: int, field_h: int) -> None:
             enemy.fire_timer -= 1
             if enemy.fire_timer <= 0 and enemy.y > 2:
                 spawned_enemy_bullets.append(
-                    Bullet(x=enemy.x + enemy.width // 2, y=enemy.y + 1, dy=1.0, friendly=False)
+                    Bullet(x=enemy.x + enemy.width // 2, y=enemy.y + spec.height, dy=1.0, friendly=False)
                 )
                 enemy.fire_timer = 30
         elif enemy.kind == "carrier":
@@ -489,7 +671,7 @@ def update_enemies(state: GameState, field_w: int, field_h: int) -> None:
                 for delta in (-1, 0, 1):
                     shot_x = max(0, min(field_w - 1, int(round(enemy.x + enemy.width // 2)) + delta))
                     spawned_enemy_bullets.append(
-                        Bullet(x=float(shot_x), y=enemy.y + 1, dy=1.0, friendly=False)
+                        Bullet(x=float(shot_x), y=enemy.y + spec.height, dy=1.0, friendly=False)
                     )
                 enemy.fire_timer = 18
         else:
@@ -523,9 +705,10 @@ def spawn_for_mode(state: GameState, field_w: int, field_h: int, rng: random.Ran
         state.enemies.append(spawn_enemy(kind, field_w, field_h, rng))
 
 
-def update(state: GameState, field_w: int, field_h: int, rng: random.Random) -> None:
+def update(state: GameState, field_w: int, field_h: int, rng: random.Random, audio: AudioManager | None = None) -> None:
     """Advance one gameplay frame."""
     if state.screen != "playing" or state.paused:
+        advance_visual_effects(state)
         return
 
     state.frame_count += 1
@@ -544,13 +727,22 @@ def update(state: GameState, field_w: int, field_h: int, rng: random.Random) -> 
     update_enemies(state, field_w, field_h)
     state.bullets = _move_bullets(state.bullets, field_h)
     state.enemy_bullets = _move_bullets(state.enemy_bullets, field_h)
-    resolve_collisions(state, field_w, field_h)
+    resolve_collisions(state, field_w, field_h, audio)
+    advance_visual_effects(state)
 
 
-def handle_playing_keys(state: GameState, keys: list[int], field_w: int, field_h: int) -> None:
+def handle_playing_keys(
+    state: GameState,
+    keys: list[int],
+    field_w: int,
+    field_h: int,
+    audio: AudioManager | None = None,
+) -> None:
     """Apply gameplay controls after the current input queue has been read."""
     if any(key in PAUSE_KEYS for key in keys):
         state.paused = not state.paused
+        if audio is not None:
+            audio.play("menu")
         return
 
     if state.paused:
@@ -565,10 +757,16 @@ def handle_playing_keys(state: GameState, keys: list[int], field_w: int, field_h
     if any(key in FIRE_KEYS for key in keys):
         state.fire_hold_frames = FIRE_HOLD_FRAMES
     if state.shot_cooldown == 0 and (state.autofire_enabled or state.fire_hold_frames > 0):
-        fire_player_shot(state, field_h)
+        fire_player_shot(state, field_h, audio)
 
 
-def handle_input(stdscr, state: GameState, field_w: int, field_h: int) -> str | None:
+def handle_input(
+    stdscr,
+    state: GameState,
+    field_w: int,
+    field_h: int,
+    audio: AudioManager | None = None,
+) -> str | None:
     """Consume queued input and update state."""
     keys: list[int] = []
     while True:
@@ -584,21 +782,31 @@ def handle_input(stdscr, state: GameState, field_w: int, field_h: int) -> str | 
         for key in keys:
             if key in TITLE_LEFT_KEYS:
                 state.selected_mode = MODE_ENDLESS if state.selected_mode == MODE_CAMPAIGN else MODE_CAMPAIGN
+                if audio is not None:
+                    audio.play("menu")
             elif key in TITLE_RIGHT_KEYS:
                 state.selected_mode = MODE_ENDLESS if state.selected_mode == MODE_CAMPAIGN else MODE_CAMPAIGN
+                if audio is not None:
+                    audio.play("menu")
             elif key in TITLE_MODE_KEYS:
                 state.selected_mode = TITLE_MODE_KEYS[key]
+                if audio is not None:
+                    audio.play("menu")
         if any(key in RESTART_KEYS for key in keys):
             start_game(state, field_w)
+            if audio is not None:
+                audio.play("menu")
         return None
 
     if state.screen in {"gameover", "cleared"}:
         if any(key in RESTART_KEYS for key in keys):
             state.screen = "title"
             state.paused = False
+            if audio is not None:
+                audio.play("menu")
         return None
 
-    handle_playing_keys(state, keys, field_w, field_h)
+    handle_playing_keys(state, keys, field_w, field_h, audio)
     return None
 
 
@@ -610,19 +818,31 @@ def _draw_border(stdscr, ox: int, oy: int, field_w: int, field_h: int, attr: int
     safe_addstr(stdscr, oy + field_h + 1, ox, "╚" + "═" * field_w + "╝", attr)
 
 
+def _draw_starfield(stdscr, state: GameState, ox: int, oy: int, field_w: int, field_h: int, attr: int) -> None:
+    """Paint a deterministic moving starfield behind gameplay objects."""
+    drift = state.frame_count // 2
+    for row in range(field_h):
+        for col in range(field_w):
+            seed = (row * 29 + col * 17 + drift) % 113
+            if seed == 0:
+                safe_addstr(stdscr, oy + 1 + row, ox + 1 + col, "*", attr)
+            elif seed == 37:
+                safe_addstr(stdscr, oy + 1 + row, ox + 1 + col, ".", attr)
+
+
 def render_title(stdscr, state: GameState, height: int, width: int, has_color: bool) -> None:
     title_attr = curses.color_pair(2) | curses.A_BOLD if has_color else curses.A_BOLD
     accent_attr = curses.color_pair(1) | curses.A_BOLD if has_color else curses.A_BOLD
     selected_attr = (curses.color_pair(1) | curses.A_REVERSE | curses.A_BOLD) if has_color else (curses.A_REVERSE | curses.A_BOLD)
     dim_attr = curses.A_DIM
 
-    y = max(1, (height - 18) // 2)
+    y = max(1, (height - 24) // 2)
     for line in TITLE_ART:
         safe_addstr(stdscr, y, max(0, (width - len(line)) // 2), line, title_attr)
         y += 1
 
     y += 1
-    subtitle = "Nokia-inspired vertical shooter"
+    subtitle = "Large-sprite terminal space shooter"
     safe_addstr(stdscr, y, max(0, (width - len(subtitle)) // 2), subtitle, dim_attr)
     y += 2
 
@@ -636,10 +856,21 @@ def render_title(stdscr, state: GameState, height: int, width: int, has_color: b
         y += 2
 
     if state.selected_mode == MODE_CAMPAIGN:
-        blurb = "Fly a larger starship through three tighter lanes, with room to dodge and faster side-to-side control."
+        blurb = "Fly a full-size gunship through wide lanes, asteroid belts, turrets, and carrier bosses."
     else:
-        blurb = "Survive the compact lane layout as the descending waves get denser and faster."
+        blurb = "Survive a larger debris field as enemy ships and obstacles stack into denser waves."
     safe_addstr(stdscr, y, max(0, (width - len(blurb)) // 2), blurb, dim_attr)
+    y += 2
+
+    preview_title = "SHIP"
+    safe_addstr(stdscr, y, max(0, (width - len(preview_title)) // 2), preview_title, accent_attr)
+    y += 1
+    for line in PLAYER_SPRITE:
+        safe_addstr(stdscr, y, max(0, (width - len(line)) // 2), line, accent_attr)
+        y += 1
+
+    hazard_line = "Hazards: asteroids, scouts, zigzags, turrets, carriers"
+    safe_addstr(stdscr, y, max(0, (width - len(hazard_line)) // 2), hazard_line, dim_attr)
     y += 2
 
     gameplay_hint = "In game: A/D or ←/→ move   HOLD SPACE fire   F autofire   P pause"
@@ -652,6 +883,11 @@ def render_title(stdscr, state: GameState, height: int, width: int, has_color: b
 def render_playfield(stdscr, state: GameState, has_color: bool) -> None:
     height, width = stdscr.getmaxyx()
     ox, oy, field_w, field_h = compute_playfield(height, width)
+    if state.screen_shake_frames > 0:
+        shake_offsets = ((0, 0), (-1, 0), (1, 0), (0, -1), (0, 1), (-1, 1), (1, -1))
+        dx, dy = shake_offsets[state.screen_shake_frames % len(shake_offsets)]
+        ox = max(1, min(width - field_w - 3, ox + dx))
+        oy = max(2, min(height - field_h - 3, oy + dy))
 
     border_attr = curses.color_pair(5) if has_color else curses.A_DIM
     hud_attr = curses.color_pair(4) | curses.A_BOLD if has_color else curses.A_BOLD
@@ -659,6 +895,10 @@ def render_playfield(stdscr, state: GameState, has_color: bool) -> None:
     bullet_attr = curses.color_pair(2) | curses.A_BOLD if has_color else curses.A_BOLD
     enemy_attr = curses.color_pair(3) | curses.A_BOLD if has_color else curses.A_BOLD
     boss_attr = curses.color_pair(6) | curses.A_BOLD if has_color else curses.A_BOLD
+    impact_attr = curses.color_pair(3) | curses.A_REVERSE | curses.A_BOLD if has_color else (curses.A_REVERSE | curses.A_BOLD)
+    star_attr = curses.A_DIM
+    if state.hit_flash_frames > 0:
+        border_attr = impact_attr
 
     mode_text = MODE_LABELS[state.mode]
     phase_text = f"Stage {state.stage_index + 1}/3" if state.mode == MODE_CAMPAIGN else f"Wave {state.endless_wave}"
@@ -675,11 +915,12 @@ def render_playfield(stdscr, state: GameState, has_color: bool) -> None:
     hud_line = "  |  ".join(hud_parts)
 
     _draw_border(stdscr, ox, oy, field_w, field_h, border_attr)
+    _draw_starfield(stdscr, state, ox, oy, field_w, field_h, star_attr)
     safe_addstr(stdscr, oy - 1, max(0, (width - len(hud_line)) // 2), hud_line, hud_attr)
 
     ship_y = player_row(field_h)
     if state.player_invuln == 0 or state.player_invuln % 4 < 2:
-        safe_addstr(stdscr, oy + 1 + ship_y, ox + 1 + state.player_x, PLAYER_GLYPH, player_attr)
+        draw_sprite(stdscr, oy + 1 + ship_y, ox + 1 + state.player_x, PLAYER_SPRITE, player_attr)
 
     for bullet in state.bullets:
         safe_addstr(
@@ -700,13 +941,33 @@ def render_playfield(stdscr, state: GameState, has_color: bool) -> None:
 
     for enemy in state.enemies:
         attr = boss_attr if enemy.kind == "carrier" else enemy_attr
-        safe_addstr(
+        draw_sprite(
             stdscr,
             oy + 1 + int(round(enemy.y)),
             ox + 1 + int(round(enemy.x)),
-            ENEMY_SPECS[enemy.kind].glyph,
+            ENEMY_SPECS[enemy.kind].sprite,
             attr,
         )
+
+    for effect in state.visual_effects:
+        sprite = visual_effect_sprite(effect)
+        sprite_w = max(len(line) for line in sprite)
+        effect_attr = boss_attr if effect.kind == "boss" else enemy_attr
+        if effect.kind == "player":
+            effect_attr = impact_attr
+        elif effect.kind == "spark":
+            effect_attr = bullet_attr
+        draw_sprite(
+            stdscr,
+            oy + 1 + int(round(effect.y)) - len(sprite) // 2,
+            ox + 1 + int(round(effect.x)) - sprite_w // 2,
+            sprite,
+            effect_attr,
+        )
+
+    if state.hit_flash_frames > 0:
+        warning = "!!! HULL IMPACT !!!"
+        safe_addstr(stdscr, oy + field_h - 2, max(0, (width - len(warning)) // 2), warning, impact_attr)
 
     if state.banner_timer > 0 and state.banner_text:
         safe_addstr(stdscr, oy + field_h + 2, max(0, (width - len(state.banner_text)) // 2), state.banner_text, hud_attr)
@@ -765,42 +1026,46 @@ def main(stdscr) -> None:
         endless_high_score=scores["endless_high_score"],
     )
     rng = random.Random()
+    audio = AudioManager()
 
-    while state.running:
-        frame_start = time.monotonic()
-        height, width = stdscr.getmaxyx()
+    try:
+        while state.running:
+            frame_start = time.monotonic()
+            height, width = stdscr.getmaxyx()
 
-        if height < MIN_HEIGHT or width < MIN_WIDTH:
-            render(stdscr, state, has_color)
-            action = handle_input(stdscr, state, 1, 1)
+            if height < MIN_HEIGHT or width < MIN_WIDTH:
+                render(stdscr, state, has_color)
+                action = handle_input(stdscr, state, 1, 1, audio)
+                if action == "quit":
+                    break
+                curses.napms(50)
+                continue
+
+            _, _, field_w, field_h = compute_playfield(height, width)
+            if state.screen == "title" and state.player_x == 0:
+                state.player_x = max(0, field_w // 2 - PLAYER_WIDTH // 2)
+
+            action = handle_input(stdscr, state, field_w, field_h, audio)
             if action == "quit":
+                record_high_score(state)
                 break
-            curses.napms(50)
-            continue
 
-        _, _, field_w, field_h = compute_playfield(height, width)
-        if state.screen == "title" and state.player_x == 0:
-            state.player_x = max(0, field_w // 2 - PLAYER_WIDTH // 2)
+            update(state, field_w, field_h, rng, audio)
+            render(stdscr, state, has_color)
 
-        action = handle_input(stdscr, state, field_w, field_h)
-        if action == "quit":
-            record_high_score(state)
-            break
+            elapsed = time.monotonic() - frame_start
+            sleep_ms = max(1, int((FRAME_TIME - elapsed) * 1000))
+            curses.napms(sleep_ms)
+    finally:
+        audio.stop()
 
-        update(state, field_w, field_h, rng)
-        render(stdscr, state, has_color)
-
-        elapsed = time.monotonic() - frame_start
-        sleep_ms = max(1, int((FRAME_TIME - elapsed) * 1000))
-        curses.napms(sleep_ms)
-
-    if state.high_score_dirty:
-        save_scores(
-            {
-                "campaign_high_score": state.campaign_high_score,
-                "endless_high_score": state.endless_high_score,
-            }
-        )
+        if state.high_score_dirty:
+            save_scores(
+                {
+                    "campaign_high_score": state.campaign_high_score,
+                    "endless_high_score": state.endless_high_score,
+                }
+            )
 
 
 def run() -> None:

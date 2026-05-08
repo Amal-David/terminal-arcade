@@ -1,6 +1,6 @@
 # Star Blast
 
-A Nokia-inspired vertical terminal shooter with a larger starship sprite, chunkier enemy ships, a tighter playfield, a short campaign, and an endless mode.
+A large-sprite vertical terminal shooter with a full-size starship, asteroid obstacles, enemy ships, turret platforms, carrier bosses, punchier blast/impact effects, CC0 sci-fi sound effects, a short campaign, and an endless mode.
 
 ## Run
 
@@ -29,16 +29,16 @@ star-blast
 
 ## Modes
 
-- **Campaign** — 3 short stages with escalating enemy pressure and a carrier boss at the end of each stage
-- **Endless** — survival mode with steadily faster spawn pacing and tougher enemy mixes
+- **Campaign** — 3 short stages with escalating asteroid fields, enemy pressure, and a carrier boss at the end of each stage
+- **Endless** — survival mode with steadily faster spawn pacing and tougher obstacle/enemy mixes
 
 ## Enemy Types
 
-- `[#]` Debris — slow, disposable hazards
-- `[V]` Scout — fast basic ships
-- `<W>` Zigzag — weaving enemies that drift across lanes
-- `[###]` Turret — armored shooters that fire straight bolts
-- `/MMM\` Carrier — stage boss with burst fire and high health
+- `<###>` Debris — slow asteroid obstacles
+- `<[V]>` Scout — fast basic ships
+- `<-W->` Zigzag — weaving enemies that drift across lanes
+- `[###]` Turret — armored shooter platforms that fire straight bolts
+- `/MMMM\` Carrier — large stage boss with burst fire and high health
 
 ## Scoring
 
@@ -48,6 +48,12 @@ star-blast
 - Turret: +50
 - Carrier: +250
 - Campaign boss clear bonus: +100
+
+## Audio
+
+Star Blast plays optional sound effects for laser fire, enemy explosions, carrier blasts, menu feedback, and ship impacts. Audio playback uses `afplay` on macOS or `ffplay` when available; the game runs silently if neither player is installed.
+
+The bundled Star Blast sound effects come from [Kenney Sci-fi Sounds](https://kenney.nl/assets/sci-fi-sounds), licensed under [Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/). See [`assets/audio/star_blast/LICENSE.txt`](../assets/audio/star_blast/LICENSE.txt) for the local notice.
 
 High scores are stored locally in `star-blast/scores.json` under your platform app-data directory.
 

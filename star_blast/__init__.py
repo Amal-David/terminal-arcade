@@ -1,1 +1,1 @@
-"""Star Blast — a Nokia-inspired terminal space shooter."""
+"""Star Blast — a large-sprite terminal space shooter."""
