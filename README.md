@@ -2,7 +2,7 @@
 
 A retro arcade for your terminal — pure Python, zero dependencies, curses-based. Six fully-playable games and an interactive bookshelf, all behind a single launcher. Plus drop-in **Claude Code** and **Codex** hooks that surface a curated book quote after every tool call.
 
-**Topics:** `python` · `terminal` · `curses` · `arcade` · `retro-games` · `cli` · `claude-code` · `codex` · `agent-hooks` · `bookshelf` · `zero-dependencies`
+**Topics:** `python` · `terminal` · `curses` · `arcade` · `retro-games` · `games` · `cli` · `claude-code` · `codex` · `bookshelf` · `ascii-art` · `chiptune`
 
 ![Arcade Launcher](assets/screenshots/arcade_launcher.png)
 
@@ -230,6 +230,15 @@ Optionally tweak the hook behavior by creating a config file:
 |---------|---------|-------------|
 | `quote_cadence` | 5 | Show a quote every Nth tool call |
 | `context_matching` | true | Match quotes to your coding context |
+
+Common cadence values are `5` (default), `10`, or `20`. Flip between them without editing JSON:
+
+```bash
+python3 -m bookshelf.skill.cadence              # show current
+python3 -m bookshelf.skill.cadence 10           # set Claude cadence to 10
+python3 -m bookshelf.skill.cadence 20 --codex   # set Codex cadence to 20
+python3 -m bookshelf.skill.cadence 10 --both    # set both to 10
+```
 
 ### How it works
 
