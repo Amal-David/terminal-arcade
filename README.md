@@ -12,6 +12,14 @@ python3 -m bookshelf.skill.cadence 10   # one quote per 10 tool calls
 
 ## Games
 
+### Star Blast
+
+A large-sprite terminal space shooter with a full-size ship, asteroid obstacles, enemy craft, carrier bosses, punchier blast/impact effects, CC0 sci-fi SFX, campaign stages, and endless survival.
+
+![Star Blast — Gameplay](assets/screenshots/star_blast_gameplay.png)
+
+[Read more →](star_blast/README.md)
+
 ### Dino Run
 
 An endless runner with 10 selectable dinosaurs, 3 rotating biomes, a charge-based roar mechanic, and retro audio.
@@ -41,14 +49,6 @@ Classic endless block stacking with standard wall kicks, one next-piece preview,
 Play White against a built-in rule-based engine on a full-screen pixel-art board with easy, medium, and hard difficulty levels.
 
 [Read more →](chess_game/README.md)
-
-### Star Blast
-
-A large-sprite terminal space shooter with a full-size ship, asteroid obstacles, enemy craft, carrier bosses, punchier blast/impact effects, CC0 sci-fi SFX, campaign stages, and endless survival.
-
-![Star Blast — Gameplay](assets/screenshots/star_blast_gameplay.png)
-
-[Read more →](star_blast/README.md)
 
 ### The Bookshelf
 
