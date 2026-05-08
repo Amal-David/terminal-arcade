@@ -854,8 +854,10 @@ def quiescence(position: Position, alpha: int, beta: int, context: SearchContext
 
     for move in ordered_moves(position, captures_only=True):
         apply_move(position, move)
-        score = -quiescence(position, -beta, -alpha, context)
-        undo_move(position)
+        try:
+            score = -quiescence(position, -beta, -alpha, context)
+        finally:
+            undo_move(position)
         if score >= beta:
             return beta
         if score > alpha:
@@ -897,8 +899,10 @@ def negamax(position: Position, depth: int, alpha: int, beta: int, context: Sear
     moves = ordered_moves(position, captures_only=False, tt_move=tt_move)
     for move in moves:
         apply_move(position, move)
-        score = -negamax(position, depth - 1, -beta, -alpha, context, ply + 1)
-        undo_move(position)
+        try:
+            score = -negamax(position, depth - 1, -beta, -alpha, context, ply + 1)
+        finally:
+            undo_move(position)
         if score > best_score:
             best_score = score
             best_move = move
@@ -937,8 +941,10 @@ def search_best_move(position: Position, difficulty_key: str, rng: random.Random
             beta = math.inf
             for move in ordered_moves(position, tt_move=best_move):
                 apply_move(position, move)
-                score = -negamax(position, depth - 1, -beta, -alpha, context, 1)
-                undo_move(position)
+                try:
+                    score = -negamax(position, depth - 1, -beta, -alpha, context, 1)
+                finally:
+                    undo_move(position)
                 scored.append((score, move))
                 if score > alpha:
                     alpha = score

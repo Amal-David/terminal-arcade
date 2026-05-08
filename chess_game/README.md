@@ -1,6 +1,6 @@
 # Chess
 
-Terminal chess for the arcade launcher with a built-in rule-based engine and three difficulty levels.
+Terminal chess for the arcade launcher with a built-in rule-based engine, three difficulty levels, and a full-screen pixel-art board.
 
 ## Run
 
@@ -20,6 +20,9 @@ chess-game
 | `Left` / `Right` on title | Change difficulty |
 | `1` / `2` / `3` on title | Select Easy / Medium / Hard |
 | `Enter` | Start a game |
+| `Arrow keys` / `h` `j` `k` `l` | Move the board cursor |
+| `Space` / `Enter` | Select a piece or destination square |
+| `x` / `Backspace` | Clear the selected square |
 | `e2e4` | Play a move in UCI form |
 | `e7e8q` | Promote to a queen |
 | `undo` | Undo the last full turn |
