@@ -1,6 +1,8 @@
 # Terminal Arcade
 
-A collection of terminal-based games and apps built with Python and curses, wrapped in a retro arcade launcher.
+A retro arcade for your terminal — pure Python, zero dependencies, curses-based. Six fully-playable games and an interactive bookshelf, all behind a single launcher. Plus drop-in **Claude Code** and **Codex** hooks that surface a curated book quote after every tool call.
+
+**Topics:** `python` · `terminal` · `curses` · `arcade` · `retro-games` · `cli` · `claude-code` · `codex` · `agent-hooks` · `bookshelf` · `zero-dependencies`
 
 ![Arcade Launcher](assets/screenshots/arcade_launcher.png)
 
@@ -10,7 +12,7 @@ A collection of terminal-based games and apps built with Python and curses, wrap
 
 An endless runner with 10 selectable dinosaurs, 3 rotating biomes, a charge-based roar mechanic, and retro audio.
 
-![Dino Run — Title Screen](assets/screenshots/dino_title.png)
+![Dino Run — Gameplay](assets/screenshots/dino_gameplay.png)
 
 [Read more →](dino_game/README.md)
 
@@ -32,13 +34,13 @@ Classic endless block stacking with standard wall kicks, one next-piece preview,
 
 ### Chess
 
-Play White against a built-in rule-based engine with easy, medium, and hard difficulty levels plus typed move input.
+Play White against a built-in rule-based engine on a full-screen pixel-art board with easy, medium, and hard difficulty levels.
 
 [Read more →](chess_game/README.md)
 
 ### Star Blast
 
-A faithful Nokia-style space shooter with a 3-stage campaign, endless survival mode, and a compact retro HUD.
+A large-sprite terminal space shooter with a full-size ship, asteroid obstacles, enemy craft, carrier bosses, punchier blast/impact effects, CC0 sci-fi SFX, campaign stages, and endless survival.
 
 ![Star Blast — Gameplay](assets/screenshots/star_blast_gameplay.png)
 
@@ -109,43 +111,33 @@ py -m bookshelf
 
 ## Run
 
+The module form (`python3 -m ...`) always works after `pip install -e .`. The short script names (`arcade`, `dino-run`, etc.) only work if the user script directory is on your `PATH` — see the install notes above if `command not found`.
+
 ```bash
-# Full arcade launcher
-arcade
-# or: python3 -m terminal_arcade
-# or on Windows: py -m terminal_arcade
+# Full arcade launcher (recommended — always works)
+python3 -m terminal_arcade
+# or, if user scripts are on PATH: arcade
+# Windows: py -m terminal_arcade
 
 # Direct shortcuts
 
 # Dino Run
-dino-run
-# or: python3 -m dino_game
-# or on Windows: py -m dino_game
+python3 -m dino_game        # or: dino-run        # Windows: py -m dino_game
 
 # Snake
-snake-game
-# or: python3 -m snake_game
-# or on Windows: py -m snake_game
+python3 -m snake_game       # or: snake-game      # Windows: py -m snake_game
 
 # Tetris
-tetris
-# or: python3 -m tetris_game
-# or on Windows: py -m tetris_game
+python3 -m tetris_game      # or: tetris          # Windows: py -m tetris_game
 
 # Chess
-chess-game
-# or: python3 -m chess_game
-# or on Windows: py -m chess_game
+python3 -m chess_game       # or: chess-game      # Windows: py -m chess_game
 
 # Star Blast
-star-blast
-# or: python3 -m star_blast
-# or on Windows: py -m star_blast
+python3 -m star_blast       # or: star-blast      # Windows: py -m star_blast
 
 # The Bookshelf
-bookshelf
-# or: python3 -m bookshelf
-# or on Windows: py -m bookshelf
+python3 -m bookshelf        # or: bookshelf       # Windows: py -m bookshelf
 ```
 
 ## Claude Code Ambient Quotes
@@ -265,6 +257,75 @@ You need to install the package. Run `pip install -e .` from the repo root.
 **Quotes aren't matching my context**
 - Make sure `context_matching` is `true` in your config file (it is by default)
 - Context matching reads the tool name and command — it works best with Bash, Read, and Edit calls
+
+## Codex Ambient Quotes
+
+A `notify` hook for [Codex](https://github.com/openai/codex) that delivers a book quote every 5 turns while you work.
+
+> Codex's `notify` only fires on `turn-ended` (once per assistant response, not per tool call) and does not render the hook's stdout in chat. So the Codex flavor surfaces quotes via macOS notification on every 5th turn. On Linux/Windows the quote is written to Codex's turn log via stderr.
+
+### Quick Start
+
+**Requirements:** Python 3.10+, [Codex](https://github.com/openai/codex), macOS for the notification surface (Linux/Windows fall back to log output)
+
+**Step 1.** Clone and install (skip if you already did this for the Claude hook):
+
+```bash
+git clone https://github.com/Amal-David/terminal-arcade.git
+cd terminal-arcade
+pip install -e .
+```
+
+**Step 2.** Open `~/.codex/config.toml` and add the `notify` line at the top level:
+
+```toml
+notify = ["python3", "/path/to/terminal-arcade/bookshelf/skill/codex_notify.py"]
+```
+
+If you **already have a `notify` line**, Codex only honors one entry — wrap both behind a tiny dispatcher script that calls each in turn, or pick whichever you need most.
+
+**Step 3.** Replace `/path/to/terminal-arcade` with the actual path where you cloned the repo.
+
+**Step 4.** Restart Codex. A book quote will pop as a macOS notification on every 5th turn.
+
+### Configuration
+
+The Codex hook reads the same config file as the Claude hook:
+
+| Platform | Config path |
+|----------|-------------|
+| macOS | `~/Library/Application Support/bookshelf/config.json` |
+| Linux | `~/.local/share/bookshelf/config.json` |
+| Windows | `%APPDATA%/bookshelf/config.json` |
+
+```json
+{
+  "codex_quote_cadence": 5
+}
+```
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `codex_quote_cadence` | 5 | Show a quote every Nth Codex turn |
+
+The Codex counter (`codex_turn_count`) is tracked separately from Claude's tool-call counter, so the two hooks don't interfere if you run both.
+
+### How it works
+
+Codex calls the script with `turn-ended <json_payload>` after every assistant turn. The script ignores all other events, increments its own turn counter, and on every Nth turn picks a quote and surfaces it as a macOS notification (`osascript`). Quote selection reuses the same picker as the Claude hook — recently-shown quotes are deprioritized and the unseen pool is exhausted before repeats.
+
+### Troubleshooting
+
+**`ModuleNotFoundError: No module named 'bookshelf'`**
+Run `pip install -e .` from the repo root.
+
+**No notifications appearing**
+- Confirm `osascript -e 'display notification "test" with title "test"'` works in your terminal — Notification Center may need permission for your terminal app under System Settings → Notifications.
+- The hook fires every 5 turns by default — keep working, it'll show up.
+- Check that the path in `~/.codex/config.toml` points to the actual `codex_notify.py` location.
+
+**Notifications appear too often / not often enough**
+Bump `codex_quote_cadence`. Cadence counts Codex turns (one per assistant response), not individual tool calls.
 
 ## Test
 

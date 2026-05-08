@@ -12,7 +12,7 @@ class ArcadeLauncherTests(unittest.TestCase):
 
         self.assertEqual(["dino", "snake", "tetris", "chess", "star_blast", "bookshelf"], [entry.id for entry in entries])
         self.assertEqual(["Dino Run", "Snake", "Tetris", "Chess", "Star Blast", "Bookshelf"], [entry.title for entry in entries])
-        self.assertEqual([(70, 20), (50, 20), (72, 26), (84, 28), (72, 24), (80, 24)], [entry.min_size for entry in entries])
+        self.assertEqual([(70, 20), (50, 20), (72, 26), (108, 48), (96, 34), (80, 24)], [entry.min_size for entry in entries])
         self.assertTrue(all(callable(entry.launch) for entry in entries))
 
     def test_move_selection_wraps_in_both_directions(self) -> None:
