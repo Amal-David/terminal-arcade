@@ -1,6 +1,10 @@
 # Terminal Arcade
 
-A retro arcade for your terminal — pure Python, zero dependencies, curses-based. Six fully-playable games and an interactive bookshelf, all behind a single launcher. Plus drop-in **Claude Code** and **Codex** hooks that surface a curated book quote after every tool call.
+A retro arcade for your terminal — pure Python, zero dependencies, curses-based. Six fully-playable games and an interactive bookshelf, all behind a single launcher. Plus drop-in **Claude Code** and **Codex** hooks that surface a curated book quote every Nth tool call — configurable cadence (5 / 10 / 20) so the wisdom lands without breaking your flow.
+
+```bash
+python3 -m bookshelf.skill.cadence 10   # one quote per 10 tool calls
+```
 
 **Topics:** `python` · `terminal` · `curses` · `arcade` · `retro-games` · `games` · `cli` · `claude-code` · `codex` · `bookshelf` · `ascii-art` · `chiptune`
 
