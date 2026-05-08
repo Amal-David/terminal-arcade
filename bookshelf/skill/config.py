@@ -12,6 +12,7 @@ APP_DIR_NAME = "bookshelf"
 
 # Defaults (overridden by user config)
 DEFAULT_CADENCE = 5
+DEFAULT_CODEX_CADENCE = 5
 DEFAULT_CONTEXT_MATCHING = True
 
 
@@ -67,3 +68,14 @@ def is_context_matching_enabled() -> bool:
         return config.get("context_matching", DEFAULT_CONTEXT_MATCHING)
     except Exception:
         return DEFAULT_CONTEXT_MATCHING
+
+
+def get_codex_cadence() -> int:
+    """Get the configured Codex quote cadence (every Nth turn-ended event)."""
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+        from bookshelf.storage import load_config
+        config = load_config()
+        return config.get("codex_quote_cadence", DEFAULT_CODEX_CADENCE)
+    except Exception:
+        return DEFAULT_CODEX_CADENCE

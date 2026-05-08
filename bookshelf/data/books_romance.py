@@ -809,7 +809,7 @@ ROMANCE_BOOKS = [
         "year": 2019,
         "genre": "romance",
         "mood": ["fresh start", "cozy night"],
-        "summary": "A young widow and a washed-up baseball pitcher become unlikely roommates in a small Maine town, each hiding what they have lost.",
+        "summary": "A young widow and a washed-up baseball pitcher become unlikely roommates in a small Maine town, each hiding what they have lost. Evvie's husband died on the day she had finally decided to leave him, a secret that has frozen her grief into something more complicated than mourning. Dean was a major-league pitcher whose arm mysteriously stopped working — the yips, in baseball parlance — and who has come to Maine to disappear from the press and from himself. Their arrangement is purely practical at first: she has the apartment, he has the rent, and a strict no-questions rule keeps the past at bay. Holmes lets the thaw happen at the speed of real friendship, with banter that pokes at old wounds before it gets tender enough to stay. The book sits in the quieter corner of contemporary romance, closer to women's fiction than to a sweeping love story, and it earns its emotional weight by trusting small moments — a coffee shared, a pitch thrown into a back-yard net, a confession made in the kitchen at midnight. A warm, restorative read for anyone drawn to the idea that recovery and love can move at the same patient pace.",
     },
     {
         "title": "Love and Other Words",

@@ -898,7 +898,7 @@ STARTUP_BOOKS = [
         "year": 2022,
         "genre": "startup",
         "mood": ["boardroom energy", "hustle mode"],
-        "summary": "The Snowflake CEO's framework for raising the intensity, pace, and standards of an organization to achieve dramatically better results.",
+        "summary": "The Snowflake CEO's framework for raising the intensity, pace, and standards of an organization to achieve dramatically better results. Slootman, who took ServiceNow public and then turned Snowflake into one of the largest software IPOs in history, argues that most companies are running far below their potential because leaders have quietly normalized mediocrity — slow decisions, fuzzy priorities, polite tolerance of underperformance. His prescription is to ramp the entire system at once: sharpen the mission so anyone can repeat it, raise the bar on hiring so the team is densely talented, declare priorities ruthlessly so people stop pretending everything matters, and accelerate cadence so weeks feel like quarters. He pairs blunt operating advice with stories from the deck-clearing he did on arrival at each of his companies, including the painful early conversations and the metrics that flipped within a quarter once the standard moved. The book is short and unapologetic, written in the voice of an operator rather than a coach, and reads as much like a wartime memo as a leadership manifesto. It is essential reading for executives stewarding fast-growing companies who suspect — correctly — that the real problem is them.",
     },
     {
         "title": "The Mom Test",
@@ -914,7 +914,7 @@ STARTUP_BOOKS = [
         "year": 2019,
         "genre": "startup",
         "mood": ["founder mode", "boardroom energy"],
-        "summary": "A step-by-step framework for positioning products so customers understand why your product matters to them.",
+        "summary": "A step-by-step framework for positioning products so customers understand why your product matters to them. Dunford, who has positioned more than two dozen technology products as a fractional executive, argues that bad positioning is the single most overlooked reason good products fail in the market — they get compared to the wrong alternatives, evaluated on the wrong attributes, and dismissed by buyers who never understood what category they were in. Her process replaces the usual messaging-first approach with a deliberate sequence: list the competitive alternatives the customer would actually consider, identify the unique attributes only your product has, translate those attributes into the value the customer gets, find the segment that cares most about that value, and only then choose the market category that frames the whole story. She illustrates the moves with real repositioning case studies, several of them turning around products that had been written off internally as unsellable. The book is short, plainly written, and unusually generous with templates and exercises a small team can run in a workshop. It has become the default positioning manual inside many B2B SaaS companies, particularly for founders, product marketers, and anyone watching a sales pipeline stall for reasons no one can quite articulate.",
     },
     {
         "title": "The Almanack of Naval Ravikant",
@@ -930,7 +930,7 @@ STARTUP_BOOKS = [
         "year": 2017,
         "genre": "startup",
         "mood": ["scaling up", "hustle mode"],
-        "summary": "The definitive playbook for growth hacking from the person who coined the term, with frameworks for rapid experimentation across marketing and product.",
+        "summary": "The definitive playbook for growth hacking from the person who coined the term, with frameworks for rapid experimentation across marketing and product. Sean Ellis (who first identified the now-canonical product/market fit metric while running growth at Dropbox) and Morgan Brown lay out the operating model that produced the breakout trajectories of LogMeIn, Eventbrite, Pinterest, and others: a cross-functional growth team running short, structured experiment cycles against a clearly mapped funnel. The book walks through the full loop — sourcing experiment ideas from data and customer research, prioritizing them with the ICE scoring method, running them in weekly sprints, and feeding the winners back into the product. Equal attention is given to each stage of the funnel, with separate chapters on acquisition, activation, retention, revenue, and referral, and case studies showing the specific experiments that moved each metric. Ellis is firm that growth hacking is not a bag of viral tricks but a disciplined, scientific approach to compounding gains that requires real engineering capacity and senior buy-in. The book has become standard reading inside growth teams at consumer and SaaS startups, particularly for founders and growth leads designing their first systematic testing cadence.",
     },
     {
         "title": "The Cold Start Problem",
@@ -938,7 +938,7 @@ STARTUP_BOOKS = [
         "year": 2021,
         "genre": "startup",
         "mood": ["founder mode", "scaling up"],
-        "summary": "How the most successful network-effect businesses solved the chicken-and-egg problem of getting their first users.",
+        "summary": "How the most successful network-effect businesses solved the chicken-and-egg problem of getting their first users. Andrew Chen, a longtime Andreessen Horowitz partner who studied network effects across hundreds of investments, argues that every networked product moves through the same five stages — Cold Start, Tipping Point, Escape Velocity, Hitting the Ceiling, and the Moat — and that each stage demands a different growth strategy that founders frequently get wrong by importing tactics from a stage they aren't in yet. The Cold Start framework focuses on what he calls the atomic network: the smallest possible group of users for whom the product becomes valuable on its own, which must be assembled before any broader growth strategy can work. He draws on the early-stage histories of Tinder, Slack, Uber, Zoom, Dropbox, Airbnb, Twitch, and Clubhouse to show the exact moves operators used to seed those first networks — the manual sales, the hyper-local launches, the celebrity gambits, the supply-side subsidies — and the patterns that recur across them. The book is the most rigorous treatment of network-effect dynamics aimed at practitioners and has become essential reading for founders, product leaders, and investors evaluating any marketplace, social, or multi-sided product.",
     },
     {
         "title": "Working Backwards",
@@ -946,7 +946,7 @@ STARTUP_BOOKS = [
         "year": 2021,
         "genre": "startup",
         "mood": ["boardroom energy", "productivity"],
-        "summary": "Two former Amazon executives reveal the principles and practices that drive the company, from the PR/FAQ process to the bar raiser hiring method.",
+        "summary": "Two former Amazon executives reveal the principles and practices that drive the company, from the PR/FAQ process to the bar raiser hiring method. Colin Bryar and Bill Carr together spent more than two decades inside Amazon — Bryar served for years as Jeff Bezos's technical advisor, a 'shadow' role observing every leadership meeting — and they assembled the book from the operating practices they saw repeatedly produce results across wildly different parts of the business. Part one is the foundation: the leadership principles, the bar raiser interview process, single-threaded leadership, the prohibition on PowerPoint in favor of six-page narrative memos, and the working-backwards method itself, in which any new initiative must begin by drafting the press release and frequently asked questions a customer would read at launch. Part two applies these tools to product case studies including Kindle, Prime, Amazon Music, and the Fire Phone, examining the failures as honestly as the successes. The book is unusually concrete for a corporate-leadership volume, with templates, sample memos, and meeting structures that can be lifted directly into other organizations. It is a practical manual for executives, product leaders, and operators trying to import Amazon's mechanisms without working there.",
     },
     {
         "title": "Super Pumped",
@@ -962,7 +962,7 @@ STARTUP_BOOKS = [
         "year": 2020,
         "genre": "startup",
         "mood": ["founder mode", "late night reflection"],
-        "summary": "The inside story of Instagram, from its founding through the Facebook acquisition to the departure of its creators.",
+        "summary": "The inside story of Instagram, from its founding through the Facebook acquisition to the departure of its creators. Sarah Frier, a Bloomberg technology reporter, draws on hundreds of interviews — including with founders Kevin Systrom and Mike Krieger, Mark Zuckerberg, Sheryl Sandberg, and senior employees on both sides of the deal — to reconstruct how a small photo-sharing app built around aesthetic taste was bought for a billion dollars in 2012, ran with extraordinary independence inside Facebook for several years, and eventually saw its founders walk away amid pressure to align it more tightly with the parent company's growth machine. The book functions on three levels: a startup origin story, a corporate-acquisition case study with rare access to both sides of the integration, and a cultural history of how Instagram itself shaped influencer marketing, celebrity brand-building, and a generation's relationship with the visual self. Frier is unusually evenhanded about the trade-offs Instagram's design decisions imposed on its users, including the rise of curated unreality and its mental-health consequences. The book is essential reading for founders weighing acquisition offers, operators integrating acquired companies, and anyone trying to understand the social-media platforms that now define public attention.",
     },
     {
         "title": "Loonshots",
@@ -1010,6 +1010,6 @@ STARTUP_BOOKS = [
         "year": 2018,
         "genre": "startup",
         "mood": ["boardroom energy", "scaling up"],
-        "summary": "Netflix's former chief talent officer on building a culture of freedom and responsibility where adults make adult decisions.",
+        "summary": "Netflix's former chief talent officer on building a culture of freedom and responsibility where adults make adult decisions. Patty McCord co-authored the now-famous Netflix Culture Deck — the slide deck Sheryl Sandberg called the most important document ever to come out of the Valley — and this book is the operating philosophy behind it, written from the seat of the person who actually had to fire people, set comp, and design policy. Her core argument is that most HR practice exists to manage adults like children: vacation policies, expense rules, performance-improvement plans, ranking systems. McCord recommends replacing nearly all of it with a simple contract — high performance is required, the company will be honest about what it needs, and the employee is free to act like an adult in pursuit of those needs. She walks through how that translated to Netflix's no-vacation policy, top-of-market compensation, the keeper test that asks managers whether they would fight to retain each report, and the willingness to part with people whose skills no longer match where the company is going. The book is short, blunt, and occasionally uncomfortable, and it has become required reading for founders and HR leaders trying to build performance cultures without the bureaucratic apparatus of traditional companies.",
     },
 ]

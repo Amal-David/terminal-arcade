@@ -8,7 +8,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1899,
         "genre": "psychology",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Freud's foundational work argues that dreams are the royal road to the unconscious, revealing repressed wishes through symbolic imagery.",
+        "summary": "Freud's foundational work argues that dreams are the royal road to the unconscious, revealing repressed wishes through symbolic imagery. Published at the very end of the nineteenth century, the book introduces nearly every concept that would become identified with psychoanalysis — manifest versus latent content, condensation, displacement, censorship, dream-work, and the wish-fulfillment hypothesis — and grounds them in dozens of dreams, many of them Freud's own, including the famous dream of Irma's injection that he uses to demonstrate his interpretive method. The argument is that the apparent strangeness of a dream is the result of the mind's attempt to disguise unacceptable desires while still permitting their expression in sleep, and that the analyst's job is to reverse-engineer that disguise through free association. Freud was emphatic that the book was his most important — he predicted, correctly, that it would only be appreciated decades later — and successive editions accreted the new clinical material that became the body of psychoanalytic theory. It remains the indispensable starting point for understanding Freud, and through him a century of literature, film, and depth psychology that took the unconscious seriously.",
     },
     {
         "title": "Civilization and Its Discontents",
@@ -16,7 +16,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1930,
         "genre": "psychology",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Freud argues that the tension between individual desire and the demands of civilization is the root of human unhappiness.",
+        "summary": "Freud argues that the tension between individual desire and the demands of civilization is the root of human unhappiness. Written in the late 1920s as Europe slid toward totalitarianism, the essay extends his clinical theories of repression onto the largest possible canvas — society itself. Civilization, he claims, is built by demanding that each person renounce or sublimate the aggressive and erotic impulses that would otherwise tear social life apart, and the price of that renunciation is a chronic, low-grade dissatisfaction his readers would already recognize as neurosis. Along the way Freud sketches his famous typology of suffering — from our bodies, from the external world, and from our relations with other people — and dismisses the standard religious and political consolations as forms of denial. The book introduces the death drive into the broader cultural conversation and remains the most accessible single statement of his late-period worldview, blunter and more pessimistic than his clinical writings. It is essential reading for anyone studying psychoanalysis, modernist thought, or the long argument about whether human nature can be reconciled with the institutions we build to contain it.",
     },
     {
         "title": "The Ego and the Id",
@@ -24,7 +24,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1923,
         "genre": "psychology",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Freud introduces the structural model of the psyche — ego, id, and superego — reshaping how we think about the mind's architecture.",
+        "summary": "Freud introduces the structural model of the psyche — ego, id, and superego — reshaping how we think about the mind's architecture. By 1923 the older 'topographical' model of conscious, preconscious, and unconscious had begun to creak under the weight of clinical observations Freud could no longer reconcile with it, particularly the discovery that resistance and guilt could themselves be unconscious. The new model splits the mind into three agencies: the id, a cauldron of instinctual impulses operating on the pleasure principle; the ego, which mediates between those impulses and external reality; and the superego, the internalized voice of parental and cultural prohibition that produces guilt and conscience. The essay also sharpens his account of identification, mourning, and the death drive, and quietly relocates the unconscious from a place to a property that all three agencies share. It is short, dense, and aimed at fellow analysts rather than the lay reader, but every later metaphor of psychic conflict — including most pop-culture treatments of the inner critic and the inner child — descends from the architecture sketched here.",
     },
     {
         "title": "Man and His Symbols",
@@ -32,7 +32,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1964,
         "genre": "psychology",
         "mood": ["self-discovery", "late night reflection", "Sunday morning"],
-        "summary": "Jung's accessible introduction to his theories of archetypes, the collective unconscious, and the symbolic life of dreams.",
+        "summary": "Jung's accessible introduction to his theories of archetypes, the collective unconscious, and the symbolic life of dreams. Conceived in the last years of his life and finished by his closest collaborators after his death, the book was a deliberate attempt to translate Jungian psychology for a general audience after Jung agreed — somewhat reluctantly — that his work had remained too inaccessible. Jung writes the central chapter himself, laying out his case that the unconscious is not merely a repository of repressed personal experience but a deeper layer shared across humanity, populated by recurring images he calls archetypes: the shadow, the anima and animus, the wise old man, the self. Subsequent chapters by his disciples — including Marie-Louise von Franz on individuation and Joseph L. Henderson on ancient myth — apply the framework to dreams, art, and cultural symbols, with hundreds of illustrations from alchemical manuscripts to modern paintings. The book has stayed in print for sixty years because it remains the clearest single doorway into Jung's thought, particularly for readers approaching depth psychology from literature, religion, or therapy rather than from clinical training.",
     },
     {
         "title": "Memories, Dreams, Reflections",
@@ -40,7 +40,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1963,
         "genre": "psychology",
         "mood": ["self-discovery", "late night reflection", "morning ritual"],
-        "summary": "Jung's autobiography recounts his inner life, from childhood visions to his break with Freud and his explorations of the unconscious.",
+        "summary": "Jung's autobiography recounts his inner life, from childhood visions to his break with Freud and his explorations of the unconscious. Dictated to his secretary Aniela Jaffé in his final years and published shortly after his death, the book is unusual for an autobiography in that it largely ignores the external scaffolding of biography — career milestones, public controversies, professional honors — in favor of the inner journey Jung considered the only history worth telling. He recounts childhood encounters with what he called 'Personality No. 2,' the long apprenticeship to Freud and the painful theoretical break that followed, the years of voluntary descent into his own unconscious that produced the visions later collected in The Red Book, and the late-life turn to alchemy as a Western counterpart to Eastern meditative traditions. Travel chapters covering Africa, India, and the Pueblo of the American Southwest reveal a thinker testing his theories against radically different worldviews. The book has the texture of a confession and is the indispensable companion to his theoretical writing, showing how each major concept emerged from a specific inner experience he was trying to make sense of.",
     },
     {
         "title": "The Archetypes and the Collective Unconscious",
@@ -48,7 +48,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1959,
         "genre": "psychology",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Jung lays out his theory that universal mythic patterns — the shadow, the anima, the self — reside in a shared layer of the human psyche.",
+        "summary": "Jung lays out his theory that universal mythic patterns — the shadow, the anima, the self — reside in a shared layer of the human psyche. The volume collects the essays in which Jung most carefully distinguishes his own depth psychology from Freud's, arguing that beneath the personal unconscious of repressed memories lies a deeper collective unconscious populated by inherited psychic structures he calls archetypes. These archetypes are not images themselves but predispositions to produce certain images — the wise old man, the great mother, the trickster, the divine child — that recur across mythologies, dreams, and religious symbolism with a consistency that mere cultural transmission cannot explain. The book devotes long chapters to specific archetypes, particularly the Self as the organizing center of psychic wholeness and the process of individuation through which the conscious ego comes into right relationship with it. Densely written and aimed at fellow analysts, it is the canonical statement of Jungian metapsychology and remains foundational reading for analytical psychologists, scholars of religion and myth, and anyone studying the philosophical tradition that runs from Jung through Joseph Campbell to contemporary archetypal therapy.",
     },
     {
         "title": "Man's Search for Meaning",
@@ -56,7 +56,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1946,
         "genre": "psychology",
         "mood": ["existential crisis", "self-discovery", "fresh start"],
-        "summary": "A psychiatrist who survived Auschwitz argues that finding meaning — even in suffering — is the primary drive of human life.",
+        "summary": "A psychiatrist who survived Auschwitz argues that finding meaning — even in suffering — is the primary drive of human life. The first half of the book is Frankl's spare, unsparing memoir of three years in Nazi concentration camps, written from the perspective of a clinician observing both his fellow prisoners and himself. He notices that the prisoners who survived best were not the physically strongest but those who could project themselves toward something — a person, a purpose, a piece of unfinished work — that gave the daily horror a referent outside itself. The second half lays out logotherapy, the school of psychotherapy he developed before the war and refined inside the camps, which holds that the will to meaning is more fundamental than Freud's will to pleasure or Adler's will to power, and that neurosis is often the symptom of a meaning-vacuum rather than of suppressed instinct. He outlines specific techniques — paradoxical intention, dereflection, attitudinal change — for helping patients find meaning in unalterable suffering. The book has sold tens of millions of copies and remains the central modern statement of meaning-centered psychology.",
     },
     {
         "title": "Thinking, Fast and Slow",
@@ -64,7 +64,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2011,
         "genre": "psychology",
         "mood": ["productivity", "morning ritual", "self-discovery"],
-        "summary": "Kahneman maps the two systems of thought — fast intuition and slow deliberation — revealing the systematic biases that shape our decisions.",
+        "summary": "Kahneman maps the two systems of thought — fast intuition and slow deliberation — revealing the systematic biases that shape our decisions. The book is Daniel Kahneman's lifetime account of the work that won him a Nobel in economics: the long collaboration with Amos Tversky that established cognitive psychology's case against the rational-agent model used in classical economics. He divides cognition into System 1, the fast, automatic, associative process that handles most of life, and System 2, the slow, effortful reasoner that takes over only when System 1 falters. The book then catalogues the predictable ways the System 1 default goes wrong — anchoring, availability, representativeness, loss aversion, the planning fallacy, the affect heuristic, the focusing illusion — with the experiments that established each one and the cautions about how rarely awareness alone is enough to avoid them. The closing chapters introduce prospect theory, the experiencing-versus-remembering self, and the policy implications behavioral economics has since pulled into public life. It has become the standard one-volume tour of decision research, indispensable for managers, investors, designers, doctors, and anyone trying to understand the gap between how we believe we think and how we actually do.",
     },
     {
         "title": "Noise: A Flaw in Human Judgment",
@@ -72,7 +72,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2021,
         "genre": "psychology",
         "mood": ["productivity", "late night reflection"],
-        "summary": "Kahneman and co-authors reveal that random variability in judgment — noise — is as damaging as bias and far more neglected.",
+        "summary": "Kahneman and co-authors reveal that random variability in judgment — noise — is as damaging as bias and far more neglected. Written with Olivier Sibony and Cass Sunstein, the book draws a sharp distinction between two kinds of error: bias is a consistent shift away from the correct answer, while noise is the unwanted scatter of judgments around it. The authors marshal striking evidence that organizations have spent decades worrying about the first while tolerating, and often producing, enormous amounts of the second. Judges sentence near-identical defendants to wildly different prison terms; underwriters quote different premiums on the same risk; doctors disagree on diagnoses; performance reviewers rate the same employee inconsistently. They distinguish level noise (some judges are harsher overall), pattern noise (a judge's interaction with case features), and occasion noise (the same judge varying with mood or weather). Their proposed remedy — decision hygiene through structured aggregation, mediating assessments, scales anchored on cases, and the disciplined use of algorithms — is presented as a managerial discipline rather than a personal one. The book has reframed the conversation in fields from medicine to hiring, and is essential reading for anyone running a system whose output is human judgment.",
     },
     {
         "title": "The Undoing Project",
@@ -80,7 +80,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2016,
         "genre": "psychology",
         "mood": ["self-discovery", "rainy afternoon"],
-        "summary": "The story of the friendship between Kahneman and Tversky that revolutionized our understanding of human decision-making.",
+        "summary": "The story of the friendship between Kahneman and Tversky that revolutionized our understanding of human decision-making. Michael Lewis turns his reporter's eye on the two Israeli psychologists whose mid-1970s collaboration produced the experiments that founded behavioral economics, won a Nobel Prize, and reshaped fields from medicine to government to finance. The book is unusually candid for an intellectual biography because Lewis was given full access to the surviving Kahneman, to family and colleagues, and to a long archive of letters and recordings. He weaves the two men's improbably different temperaments — Tversky the brilliant, charismatic optimist; Kahneman the brooding, self-doubting refugee from Nazi Europe — into the story of their joint work on heuristics and biases, prospect theory, and the framing of risk, and shows how their thinking literally happened in the conversations between them. The later chapters track the slow corrosion of the friendship, Tversky's early death from cancer, and Kahneman's long second act applying their ideas to public life. It works simultaneously as a love story between collaborators and as the most accessible introduction to the ideas in Thinking, Fast and Slow.",
     },
     # ── Behavioral Economics / Science ────────────────────────────────────
     {
@@ -89,7 +89,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2008,
         "genre": "psychology",
         "mood": ["self-discovery", "morning ritual", "productivity"],
-        "summary": "Ariely reveals the hidden forces that shape our decisions, showing that our irrational behaviors are neither random nor senseless.",
+        "summary": "Ariely reveals the hidden forces that shape our decisions, showing that our irrational behaviors are neither random nor senseless. Drawing on a decade of his own behavioral-economics experiments at MIT and Duke, Ariely argues that human irrationality is systematic — predictable, replicable, and exploitable by anyone who understands the patterns. The book walks through a series of memorable studies: the relativity trap that makes a third 'decoy' option steer us toward the choice the seller wants, the way zero pricing changes behavior in ways no other price does, the moral cost of giving with social norms versus charging with market norms, the placebo effect of expensive aspirin, the strange ease with which honest people cheat by small amounts. Each chapter pairs the experiment with concrete implications for personal decisions, public policy, and product design. Ariely writes warmly and self-deprecatingly, often using stories from his own recovery from severe burn injuries as a teenager to motivate the questions, and the book has become one of the most accessible entry points into behavioral economics — particularly for designers, marketers, and policymakers who want to put the findings to work without reading the academic literature.",
     },
     {
         "title": "The Upside of Irrationality",
@@ -97,7 +97,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2010,
         "genre": "psychology",
         "mood": ["self-discovery", "daily grind"],
-        "summary": "Ariely explores how irrational behaviors can sometimes work in our favor, from motivation to meaning in work.",
+        "summary": "Ariely explores how irrational behaviors can sometimes work in our favor, from motivation to meaning in work. The follow-up to Predictably Irrational shifts the focus from the costs of human irrationality to its hidden benefits, a turn that took Ariely's work in a more affirmative direction. He examines why bonuses can backfire when stakes get high, how the IKEA effect — our tendency to overvalue what we have built ourselves — supports identity and creativity, why arbitrary coherence shapes long-term preferences, and how a sense of meaning and ownership transforms otherwise tedious work. Each chapter is structured around an experiment, several of them now-famous: the Adam Smith versus Karl Marx labor study, the Bionic Hand chapter on adaptation, the field study of how online dating sites systematically misrepresent the relationship between attribute matching and real-world chemistry. Ariely interleaves reflections on his own recovery from burn injuries, particularly on long-distance relationships and the psychology of physical pain, in a more personal register than its predecessor. Read together, the two books form a coherent argument that human decision-making is irrational in patterned ways, and that good design — of policies, products, and lives — should work with those patterns rather than against them.",
     },
     {
         "title": "The Honest Truth About Dishonesty",
@@ -105,7 +105,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2012,
         "genre": "psychology",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "Ariely investigates why we cheat, how we rationalize it, and what keeps most of us just a little bit dishonest.",
+        "summary": "Ariely investigates why we cheat, how we rationalize it, and what keeps most of us just a little bit dishonest. The book is built around a long line of experimental work in which subjects are given the opportunity to cheat for small monetary gain, with conditions that vary the temptation, the perceived victim, the reminders of moral identity, and the social context. The recurring finding is what Ariely calls the fudge factor: most people cheat only a little, just enough to capture the benefit while preserving their image of themselves as honest. From that base he extends to organizational and policy questions — why one bad apple genuinely does spoil the bunch, how creative people are also more skilled rationalizers, why conflicts of interest corrupt judgment in ways the conflicted person cannot detect, and why oaths and signed integrity statements at the start of forms work better than warnings at the end. The book doubles as a meditation on the gap between personal moral identity and behavior, and is widely used in business-ethics courses precisely because its experimental findings sit so uncomfortably with how organizations usually approach compliance. Read it for sharper instincts about your own ethical blind spots and the design of systems that have to assume them.",
     },
     {
         "title": "Nudge",
@@ -113,7 +113,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2008,
         "genre": "psychology",
         "mood": ["productivity", "side project vibes", "fresh start"],
-        "summary": "Small changes in how choices are presented — nudges — can dramatically improve decisions about health, wealth, and happiness.",
+        "summary": "Small changes in how choices are presented — nudges — can dramatically improve decisions about health, wealth, and happiness. Richard Thaler and Cass Sunstein argue that the structure of any choice — what defaults are set, what options are listed first, what information is salient, what reference points are evoked — exerts a powerful influence on human behavior, and that someone always designs that structure whether intentionally or not. They call those designers choice architects and propose libertarian paternalism: nudges that steer people toward better outcomes for themselves while preserving their freedom to choose otherwise. The book walks through applications in retirement saving (the now-famous Save More Tomorrow plan), organ donation, school lunch design, mortgage disclosure, environmental policy, and consumer protection, showing how default settings, framing, and feedback can outperform mandates and bans. Thaler later won a Nobel for this body of work, and governments from the UK Behavioural Insights Team to the US Office of Information and Regulatory Affairs have institutionalized the approach. The book remains the best single introduction to nudge theory for policymakers, product designers, and managers.",
     },
     {
         "title": "Misbehaving",
@@ -121,7 +121,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2015,
         "genre": "psychology",
         "mood": ["self-discovery", "side project vibes"],
-        "summary": "Thaler recounts how behavioral economics challenged the rational-agent model and reshaped policy and finance.",
+        "summary": "Thaler recounts how behavioral economics challenged the rational-agent model and reshaped policy and finance. Part memoir and part field history, the book follows Thaler from his graduate-school discovery of the endowment effect — the way people irrationally overvalue things they already own — through decades of guerrilla skirmishes with mainstream economists who insisted those anomalies must be measurement errors or trivial. Thaler tells the story through the people: Kahneman and Tversky as theoretical allies, his collaborators Richard Zeckhauser and Cass Sunstein, and the long parade of senior economists who initially dismissed the field. Along the way he explains how each anomaly — mental accounting, loss aversion, the planning fallacy, hyperbolic discounting, the fairness norms that govern price-setting — was first identified and how it eventually entered economic models. The closing chapters cover his policy work on retirement savings, the founding of the Save More Tomorrow program, and the rise of the choice architecture approach he and Sunstein laid out in Nudge. The book is both the best autobiography of a Nobel laureate in recent memory and the most accessible insider history of how behavioral economics moved from heresy to mainstream.",
     },
     {
         "title": "Influence: The Psychology of Persuasion",
@@ -129,7 +129,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1984,
         "genre": "psychology",
         "mood": ["hustle mode", "productivity", "career pivot"],
-        "summary": "Cialdini identifies six universal principles of persuasion — reciprocity, commitment, social proof, authority, liking, and scarcity.",
+        "summary": "Cialdini identifies six universal principles of persuasion — reciprocity, commitment, social proof, authority, liking, and scarcity. The book grew out of three years Cialdini spent embedded as a participant observer inside used-car lots, telemarketing rooms, fundraising operations, and Amway and Hare Krishna recruiting — anywhere professionals were trying to extract a yes from strangers — looking for the tactics that survived natural selection because they worked. He returned to academic research with six recurring patterns of automatic compliance and a cognitive explanation for each: reciprocity exploits our hard-wired sense of obligation after a gift, commitment harnesses our need for self-consistency, social proof leans on our use of others' behavior as a shortcut for our own, authority on our deference to legitimate symbols, liking on our tendency to say yes to people we feel rapport with, and scarcity on our overweighting of what we might lose. Each chapter pairs the principle with field examples and the laboratory experiments that confirmed it. A later seventh principle, unity, was added in a 2016 revision. The book has sold millions of copies and is the standard reference for marketers, salespeople, fundraisers, negotiators, and anyone who wants to recognize the levers being pulled on them.",
     },
     {
         "title": "Pre-Suasion",
@@ -137,7 +137,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2016,
         "genre": "psychology",
         "mood": ["hustle mode", "productivity"],
-        "summary": "Cialdini reveals that the key to influence lies in what you do before you deliver your message, not just in the message itself.",
+        "summary": "Cialdini reveals that the key to influence lies in what you do before you deliver your message, not just in the message itself. Three decades after Influence, Cialdini returns with a second concept he calls pre-suasion: the deliberate use of priming, attention-direction, and contextual framing in the moments before a request, designed to put the audience in a mental state where the message is far more likely to land. He builds the book around the principle that what you do before you say something often matters more than what you say, with experimental evidence ranging from the way a single ambient color shifts product preference, to how the questions a survey opens with reshape the answers that follow, to why the order in which arguments are presented matters as much as their content. He extends his classic six principles with the new principle of unity, which captures how shared identity outperforms mere liking. The book concludes with chapters on the ethics of these techniques and how they interact with contemporary digital media. It is essential reading for marketers, negotiators, leaders giving important talks, and anyone who wants to understand why some messages succeed while equally good ones fall flat.",
     },
     {
         "title": "Stumbling on Happiness",
@@ -145,7 +145,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2006,
         "genre": "psychology",
         "mood": ["self-discovery", "Sunday morning", "fresh start"],
-        "summary": "Gilbert shows that humans are terrible at predicting what will make them happy, and the reasons are hardwired into our brains.",
+        "summary": "Gilbert shows that humans are terrible at predicting what will make them happy, and the reasons are hardwired into our brains. Daniel Gilbert, a Harvard psychologist whose work on affective forecasting underlies most of the book's claims, argues that the imagination — the very faculty we rely on to picture our future selves and decide what to pursue — has three systematic flaws: it fills in details that aren't there, it edits out details we don't want to see, and it projects our current emotional state onto the imagined scene as if we will feel the same way then. The result is a cascade of small but consequential errors. We overestimate how badly bad outcomes will hurt and how long good ones will last, anchor our predictions on irrelevant comparisons, and discount the testimony of people who have actually lived the futures we are imagining. Gilbert delivers this argument in a tone closer to stand-up than to academic prose, with evidence drawn from psychology, neuroscience, and economics. The book remains one of the most engaging single introductions to the cognitive science of well-being, and is widely used to explain why so many of our most important decisions feel like mistakes once we are inside them.",
     },
     {
         "title": "The Art of Thinking Clearly",
@@ -153,7 +153,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2013,
         "genre": "psychology",
         "mood": ["productivity", "morning ritual"],
-        "summary": "A concise catalog of ninety-nine cognitive biases and logical fallacies that distort our reasoning every day.",
+        "summary": "A concise catalog of ninety-nine cognitive biases and logical fallacies that distort our reasoning every day. Rolf Dobelli, a Swiss novelist and entrepreneur who became fascinated by the literature on judgment errors after losing money in a poorly-reasoned investment, distills decades of behavioral research into chapters that run two or three pages each. Survivorship bias, sunk-cost fallacy, confirmation bias, the hindsight illusion, action bias, the it'll-get-worse-before-it-gets-better fallacy, framing, anchoring, and the planning fallacy all get the same treatment: a short story or example that triggers the bias, a cleaner explanation of how it works, and a one-line prescription for noticing it in your own thinking. The book is closer to a desk reference than a unified argument, but the brevity is the point — Dobelli explicitly designed it to be opened at any chapter and read in five minutes between meetings. It has become one of the best-selling popular psychology books in Europe and is widely used as an entry-level companion to denser works like Thinking, Fast and Slow. Useful for managers, traders, doctors, and anyone trying to install a personal habit of catching their own reasoning errors before they propagate into decisions.",
     },
     {
         "title": "Thinking in Bets",
@@ -161,7 +161,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2018,
         "genre": "psychology",
         "mood": ["productivity", "career pivot", "hustle mode"],
-        "summary": "A former poker champion shows how embracing uncertainty and thinking in probabilities leads to better decisions.",
+        "summary": "A former poker champion shows how embracing uncertainty and thinking in probabilities leads to better decisions. Annie Duke spent two decades at the top tier of professional poker — including a World Series of Poker bracelet — before turning to academic-grade decision research and consulting. The book's central move is to separate the quality of a decision from the quality of its outcome, since random chance is a feature of nearly every decision worth analyzing. Treating every choice as a bet, she argues, forces you to articulate what you believe, how confident you are, and what payoffs follow from being right or wrong, which in turn lets you learn from your decisions even when the outcomes do not cooperate. She offers concrete techniques for combatting hindsight bias and resulting (judging a decision by its outcome alone), uses 'mental time travel' to neutralize emotion in the moment of choice, and recommends decision groups that explicitly track confidence calibrations over time. The book has been adopted widely in poker, finance, sports analytics, and venture investing, and is a clear practical companion to Kahneman and Tetlock for anyone making consequential decisions under uncertainty.",
     },
     {
         "title": "Superforecasting",
@@ -169,7 +169,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2015,
         "genre": "psychology",
         "mood": ["productivity", "side project vibes"],
-        "summary": "Tetlock reveals that ordinary people using disciplined thinking can outpredict experts and intelligence analysts.",
+        "summary": "Tetlock reveals that ordinary people using disciplined thinking can outpredict experts and intelligence analysts. Philip Tetlock had already demonstrated in earlier work that pundits making confident predictions about geopolitics performed barely better than chance. Superforecasting is the affirmative sequel, drawing on the multi-year Good Judgment Project — a US intelligence community tournament in which thousands of volunteer forecasters competed at predicting world events. A small group of them, the superforecasters, beat the average and even, on certain question types, exceeded the accuracy of intelligence analysts with classified information. Written with journalist Dan Gardner, the book reverse-engineers what the top performers were doing right: they updated their probabilities frequently in small increments rather than swinging wildly, decomposed big questions into smaller ones with crisper answers, sought out information from outside their default echo chambers, made calibrated probability judgments rather than vague qualitative ones, and worked in collaborative teams that critiqued each other's reasoning. The framework has reshaped intelligence training, corporate strategy practice, and the still-young discipline of public forecasting tournaments. It is essential reading for analysts, investors, executives, and anyone whose job depends on getting the future approximately right.",
     },
     {
         "title": "The Paradox of Choice",
@@ -177,7 +177,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2004,
         "genre": "psychology",
         "mood": ["self-discovery", "daily grind", "existential crisis"],
-        "summary": "More options don't mean more happiness; Schwartz argues that excessive choice leads to anxiety, paralysis, and regret.",
+        "summary": "More options don't mean more happiness; Schwartz argues that excessive choice leads to anxiety, paralysis, and regret. Barry Schwartz, a Swarthmore psychologist, takes aim at the deep American assumption that maximizing freedom of choice is identical with maximizing well-being. He distinguishes maximizers — who try to identify the very best option in any decision — from satisficers, who choose anything that meets a threshold of good enough, and shows experimentally that maximizers report systematically lower satisfaction with their choices despite often making objectively better ones. Drawing on his own work and on Sheena Iyengar's famous jam study, where shoppers presented with twenty-four jam varieties were dramatically less likely to buy than those presented with six, he traces how an abundance of options inflates expectations, multiplies regret over rejected alternatives, exaggerates opportunity costs, and leaves us less satisfied even when the chosen option is excellent. The book was prescient about the psychological cost of digital-era choice overload — streaming catalogues, dating apps, online retail — and remains a clear, practical entry into the literature on decision-making and well-being for designers, policymakers, and anyone trying to manage their own decision fatigue.",
     },
     # ── Positive Psychology ───────────────────────────────────────────────
     {
@@ -186,7 +186,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2002,
         "genre": "psychology",
         "mood": ["fresh start", "morning ritual", "self-discovery"],
-        "summary": "The founder of positive psychology argues that lasting happiness comes from using your signature strengths in service of something larger.",
+        "summary": "The founder of positive psychology argues that lasting happiness comes from using your signature strengths in service of something larger. Martin Seligman spent the first half of his career as a leading researcher on learned helplessness and depression, and the second half deliberately turning the field around to ask the symmetric question: what makes psychologically healthy people thrive? Authentic Happiness was the popular announcement of that pivot. He distinguishes three kinds of happy life — the pleasant life of momentary positive feelings, the engaged life of flow and absorption, and the meaningful life of contributing to something beyond yourself — and argues that durable well-being comes mostly from the latter two, since the hedonic treadmill quickly resets the first. The book's most lasting practical contribution is the framework of signature strengths: a classification of twenty-four character strengths, with a self-assessment that helps readers identify their top five, and exercises for redeploying them in work, relationships, and leisure. Seligman draws on case studies and on the Penn Resilience Program to show how the framework is used clinically. The book launched the academic discipline of positive psychology and remains its most accessible introduction.",
     },
     {
         "title": "Flourish",
@@ -194,7 +194,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2011,
         "genre": "psychology",
         "mood": ["fresh start", "self-discovery", "productivity"],
-        "summary": "Seligman expands his theory beyond happiness to well-being, introducing the PERMA model: positive emotion, engagement, relationships, meaning, and accomplishment.",
+        "summary": "Seligman expands his theory beyond happiness to well-being, introducing the PERMA model: positive emotion, engagement, relationships, meaning, and accomplishment. Nine years after Authentic Happiness, Seligman concedes that 'happiness' as a single construct can't carry the load of what people actually want from a flourishing life. He replaces it with well-being as a multidimensional construct measured along five elements — captured in the acronym PERMA — each of which contributes independently to a good life and none of which can be reduced to the others. The book then argues that positive psychology should be measured against this fuller construct and applied to broader institutions: schools (with the Penn Resilience Program), the US Army's Comprehensive Soldier Fitness initiative which Seligman led, organizations, and even nations through national well-being indicators. He revises his stance on optimism, signature strengths, and gratitude in light of subsequent evidence, and addresses critics of positive psychology directly. The book has become required reading inside the well-being measurement community and for educators, military leaders, and policymakers trying to build institutions that produce flourishing rather than merely the absence of pathology.",
     },
     {
         "title": "Learned Optimism",
@@ -202,7 +202,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1990,
         "genre": "psychology",
         "mood": ["fresh start", "self-discovery", "heartbreak recovery"],
-        "summary": "Seligman shows that optimism is a learnable skill and that changing your explanatory style can ward off depression and improve performance.",
+        "summary": "Seligman shows that optimism is a learnable skill and that changing your explanatory style can ward off depression and improve performance. The book builds on Seligman's two decades of research into learned helplessness — the laboratory finding that organisms exposed to uncontrollable bad outcomes stop trying even when escape later becomes possible — and identifies the cognitive feature that protects some people from the same effect: their explanatory style. Pessimists, he argues, explain bad events as personal, pervasive, and permanent, while optimists explain them as external, specific, and temporary, and the difference is both measurable and modifiable. Seligman lays out a self-administered version of cognitive therapy's ABCDE framework — Adversity, Beliefs, Consequences, Disputation, Energization — that he and Aaron Beck refined into a tool for shifting explanatory style. He documents large-scale applications: training schoolchildren to prevent depression, retraining MetLife salespeople for higher resilience, predicting election outcomes, and improving athletic performance. The book is the practical manual for the optimism research that anchors the rest of his work, useful for clinicians, parents, coaches, and anyone trying to build psychological resilience without medication.",
     },
     {
         "title": "Flow: The Psychology of Optimal Experience",
@@ -210,7 +210,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1990,
         "genre": "psychology",
         "mood": ["productivity", "hustle mode", "side project vibes"],
-        "summary": "Csikszentmihalyi defines the state of flow — complete absorption in a challenging activity — and shows how to cultivate it for a more fulfilling life.",
+        "summary": "Csikszentmihalyi defines the state of flow — complete absorption in a challenging activity — and shows how to cultivate it for a more fulfilling life. Drawing on more than twenty years of empirical work using the experience sampling method — buzzing thousands of participants at random points throughout the day to record what they were doing and how they felt — Csikszentmihalyi identified a recurrent state his subjects described in similar terms regardless of culture or activity: clear goals, immediate feedback, perceived skill matched to perceived challenge, intense focus, the loss of self-consciousness, distortion of time, and intrinsic reward. He calls this state flow and argues that it represents optimal experience and is the largest available source of subjective well-being. The book examines how flow arises in work, sport, conversation, sex, parenting, and contemplative practice, and why so many modern conditions — over-easy entertainment, fragmented attention, mismatched challenge, externally imposed goals — corrode it. The closing chapters extend the framework into a general theory of meaning, arguing that a life of consciously chosen flow activities organized around a unifying purpose is the closest thing modern psychology can offer to a science of the good life. It is the foundational text on flow research and an essential bridge between cognitive psychology and the philosophy of well-being.",
     },
     {
         "title": "Creativity: Flow and the Psychology of Discovery and Invention",
@@ -218,7 +218,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1996,
         "genre": "psychology",
         "mood": ["side project vibes", "self-discovery", "fresh start"],
-        "summary": "Interviews with ninety-one creative individuals reveal the conditions, habits, and mental states that foster genuine innovation.",
+        "summary": "Interviews with ninety-one creative individuals reveal the conditions, habits, and mental states that foster genuine innovation. Csikszentmihalyi turns his flow-research methodology onto the question of where original ideas come from, conducting long structured conversations with Nobel laureates, MacArthur fellows, and other figures recognized as having transformed their fields — physicists, biologists, poets, jazz composers, sculptors, philosophers, public intellectuals. Out of the interviews he assembles a model with three components in continuous interaction: a domain (the body of accumulated knowledge), a field (the gatekeepers who decide what counts as a contribution), and the individual whose work is judged. Genuine creativity, in his terms, is what survives all three. The middle chapters on the personality and daily routines of creative subjects identify recurring traits — paradoxical pairings of energy and calm, playfulness and discipline, openness and rigor — that he attributes to the demands of sustained creative work. The closing section translates the findings into recommendations for cultivating creativity in one's own life: protecting attention, structuring environments, balancing skill and challenge, learning to enter flow on demand. The book is one of the cleanest empirical treatments of creativity available and a natural companion to his Flow.",
     },
     {
         "title": "The Happiness Hypothesis",
@@ -226,7 +226,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2006,
         "genre": "psychology",
         "mood": ["Sunday morning", "self-discovery", "morning ritual"],
-        "summary": "Haidt tests ancient wisdom — from Buddha to Stoics — against modern psychology and finds surprising overlap.",
+        "summary": "Haidt tests ancient wisdom — from Buddha to Stoics — against modern psychology and finds surprising overlap. Jonathan Haidt's premise is that traditions of practical philosophy worked out, by trial and reflection over centuries, much of what experimental psychology has only recently been able to demonstrate empirically. He organizes the book around ten 'Great Ideas' that recur across the world's major contemplative traditions — among them the divided self, reciprocity, the role of adversity, the way love and work create meaning, the importance of moral capital — and examines each in light of contemporary research. His controlling metaphor, borrowed from his own moral psychology, is the rider and the elephant: the rational mind sits atop a far larger emotional machine and can guide it only with skill. The book is best known for the way Haidt rehabilitates virtue ethics for a scientific audience, showing why advice that sounds like a fortune cookie often turns out to be empirically validated. It has become a staple introduction to positive psychology, used widely in undergraduate teaching and by readers looking for a serious modern engagement with ancient wisdom that does not collapse into either self-help or dismissive scientism.",
     },
     {
         "title": "The Righteous Mind",
@@ -234,7 +234,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2012,
         "genre": "psychology",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Haidt argues that moral judgments are driven by intuition, not reason, and maps the moral foundations that divide liberals and conservatives.",
+        "summary": "Haidt argues that moral judgments are driven by intuition, not reason, and maps the moral foundations that divide liberals and conservatives. The book has three parts. The first establishes the central claim that moral judgments are produced by fast intuitive evaluation while reasoning serves mainly to construct after-the-fact justifications, summarized in his memorable image of the rational rider on the intuitive elephant. The second part presents Moral Foundations Theory, the comparative-ethics framework Haidt developed with Craig Joseph and Jesse Graham, which identifies six recurring foundations across cultures — care, fairness, liberty, loyalty, authority, and sanctity — and shows that political liberals respond strongly to roughly half of them while conservatives respond more evenly across all six. The third part argues that humans are 'ninety percent chimp and ten percent bee,' equipped with a tribal psychology that lets us bind into cooperative moral groups but also blinds us to the legitimacy of opposing groups' values. The book has been extraordinarily influential in political psychology, conflict mediation, and journalism about polarization, and is essential reading for anyone trying to engage charitably with people whose moral instincts differ from their own.",
     },
     # ── Social Psychology ─────────────────────────────────────────────────
     {
@@ -243,7 +243,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2008,
         "genre": "psychology",
         "mood": ["hustle mode", "career pivot", "self-discovery"],
-        "summary": "Success isn't just about talent — Gladwell shows how culture, timing, and 10,000 hours of practice shape extraordinary achievement.",
+        "summary": "Success isn't just about talent — Gladwell shows how culture, timing, and 10,000 hours of practice shape extraordinary achievement. Malcolm Gladwell's third book builds a sustained case that the standard narrative of the self-made genius leaves out the vast contextual machinery — birthdate, family, era, country of origin, opportunity — that lets some prodigies become world-class while equally talented peers do not. The signature framework, drawn from K. Anders Ericsson's research and popularized in Gladwell's now-famous shorthand, is the 10,000-hour rule: that elite expertise requires roughly that many hours of deliberate practice, and that what looks like raw genius is usually a long head start hidden inside a lucky environment. Case studies range across Canadian junior hockey, the Beatles' Hamburg residency, Bill Joy and Bill Gates and the once-in-a-generation 1955 birth window for personal-computer pioneers, the cultural inheritance behind plane-crash communication failures, and rice-paddy mathematics. Critics have pushed back on the 10,000-hour claim and on his sweeping cultural explanations, but the book remains an enduring popularization of the idea that success is structural rather than purely meritocratic, and is widely assigned in business, education, and policy classes.",
     },
     {
         "title": "Blink",
@@ -251,7 +251,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2005,
         "genre": "psychology",
         "mood": ["self-discovery", "productivity"],
-        "summary": "Gladwell explores snap judgments and thin-slicing, revealing when rapid cognition is brilliant and when it fails us.",
+        "summary": "Gladwell explores snap judgments and thin-slicing, revealing when rapid cognition is brilliant and when it fails us. The book's premise is that the unconscious mind, working below the threshold of deliberate reasoning, can extract astonishingly accurate signal from extremely thin slices of behavior — sometimes seconds of footage, a single glance at a museum acquisition, the first thirty seconds of a marriage counseling session. Gladwell weaves together cases that show this faculty at its best: the art expert who recognizes a forgery the moment he sees it without being able to articulate why, the marital researcher John Gottman whose coding system can predict divorce from minutes of conversation, the firefighter whose body knows the floor is about to collapse before his conscious mind does. He then turns the argument against itself with cases where rapid cognition fails badly: police shootings driven by racial priming, blind orchestra auditions revealing previously invisible bias, the Pepsi Challenge that misleads Coca-Cola's own taste research. The lesson is not to trust intuition reflexively or to override it reflexively, but to understand the conditions under which thin-slicing is reliable and the conditions under which it goes wrong. The book remains the most popular gateway to research on intuition and implicit cognition.",
     },
     {
         "title": "The Tipping Point",
@@ -259,7 +259,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2000,
         "genre": "psychology",
         "mood": ["hustle mode", "side project vibes"],
-        "summary": "Ideas, behaviors, and products spread like epidemics — and small changes at the right moment can tip them into mainstream adoption.",
+        "summary": "Ideas, behaviors, and products spread like epidemics — and small changes at the right moment can tip them into mainstream adoption. Malcolm Gladwell's first book established the popular vocabulary that would dominate marketing and social-change writing for the next decade. He proposes three rules of social epidemics: the Law of the Few, which assigns oversized influence to a small set of Connectors, Mavens, and Salesmen who broker information across communities; the Stickiness Factor, which captures how the form of a message determines whether it lodges in memory or evaporates; and the Power of Context, which insists that small environmental cues — broken windows, neighborhood norms, group size — can flip a behavior into or out of contagion. Case studies include the resurgence of Hush Puppies, the New York City crime decline, Sesame Street's iterative redesign, the spread of teen smoking, and the disappearance of suicide clusters. Some of the empirical claims have been questioned in the years since, particularly around influencer theory, but the book's framing has become so embedded in how marketers, public-health officials, and product strategists describe diffusion that it remains the standard popular reference on social contagion.",
     },
     {
         "title": "Talking to Strangers",
@@ -267,7 +267,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2019,
         "genre": "psychology",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "Gladwell investigates why we are so bad at reading strangers, with devastating consequences from espionage to policing.",
+        "summary": "Gladwell investigates why we are so bad at reading strangers, with devastating consequences from espionage to policing. Built around the death of Sandra Bland after a routine traffic stop, the book argues that humans are systematically miscalibrated when judging people they do not know. Gladwell weaves together the failures of intelligence agencies that missed Bernie Madoff, Cuban double agents, and Adolf Hitler with social-psychology research from Tim Levine on the truth-default theory — our tendency to believe people unless the evidence against them becomes overwhelming — and from Emily Pronin on transparency, our mistaken belief that other people's faces and behavior reveal their inner states. He further argues that mismatched signals (an anxious truthful person, a calm liar) and a failure to attend to context (place, situation, coupling) produce the worst breakdowns. The book is more pessimistic than his earlier ones, building toward the conclusion that institutions designed for stranger encounters — courts, border posts, traffic stops, due diligence — should be redesigned to hold their default trust more carefully and their suspicion less aggressively. It is essential reading for anyone working in police, legal, or security domains.",
     },
     {
         "title": "David and Goliath",
@@ -275,7 +275,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2013,
         "genre": "psychology",
         "mood": ["hustle mode", "fresh start", "career pivot"],
-        "summary": "Underdogs win more often than we think — Gladwell reframes disadvantages as hidden advantages.",
+        "summary": "Underdogs win more often than we think — Gladwell reframes disadvantages as hidden advantages. The book takes its title from the biblical contest, which Gladwell reinterprets to show that David's sling was actually a far more lethal weapon at distance than Goliath's hand-to-hand armaments — Goliath was the underdog, not David. From there he extends the inversion across a series of case studies: civil-rights organizers in Birmingham who used apparent powerlessness to provoke televised brutality, dyslexics whose disability forced compensatory strategies that produced extraordinary careers, the children of trauma whose missing fathers steeled them rather than broke them, and the small Northern Ireland town whose use of overwhelming force to crush dissent only multiplied it. Two ideas thread through the book: that supposedly desirable advantages — wealth, top universities, big armies — frequently follow an inverted-U curve where more becomes counterproductive, and that the legitimacy of authority matters more for compliance than its raw power. Critics have argued that several individual case studies oversimplify, but the framing has become a touchstone in popular writing on resilience, asymmetric strategy, and counterintuitive disadvantage.",
     },
     {
         "title": "Obedience to Authority",
@@ -283,7 +283,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1974,
         "genre": "psychology",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Milgram's landmark experiments show that ordinary people will administer painful shocks to strangers when instructed by an authority figure.",
+        "summary": "Milgram's landmark experiments show that ordinary people will administer painful shocks to strangers when instructed by an authority figure. Stanley Milgram's full account of the Yale obedience studies, written more than a decade after their initial publication, walks readers through the experimental setup, the unexpected results, and the variations he ran to test which features of the situation produced compliance. In the basic condition, ordinary residents of New Haven recruited through a newspaper ad were instructed by a lab-coated experimenter to deliver progressively higher electric shocks to a stranger — actually a confederate — for incorrect answers on a memory test. Roughly two-thirds continued past the marker labeled XXX. Milgram ran more than a dozen variants, varying the proximity of victim and authority, the prestige of the institution, the presence of dissenting peers, and the role assignment, building an empirical map of when ordinary people obey destructive instructions. The book situates the findings in the long shadow of the Holocaust and the trial of Adolf Eichmann, and argues that the capacity for atrocity lies less in monstrous individuals than in unexamined institutional roles. It remains the canonical primary source on situational obedience research.",
     },
     {
         "title": "The Lucifer Effect",
@@ -291,7 +291,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2007,
         "genre": "psychology",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "The architect of the Stanford Prison Experiment explains how good people turn evil under situational pressure.",
+        "summary": "The architect of the Stanford Prison Experiment explains how good people turn evil under situational pressure. Philip Zimbardo's book is part memoir of the now-controversial 1971 Stanford study — in which student volunteers randomly assigned to play guards and prisoners produced behavior so cruel and degraded that the simulation had to be ended after six days — and part broader theory of evil rooted in situational and systemic forces rather than individual character. He calls this the Lucifer Effect, after the fall of the brightest angel, and uses it to argue that ordinary people will commit shocking acts under conditions that combine deindividuation, dehumanization of victims, diffused responsibility, gradual escalation, and uncritical obedience to legitimate authority. The book's longest later section applies the framework to Abu Ghraib, where Zimbardo served as an expert witness for one of the implicated American soldiers. He concludes with a chapter on how to resist the same forces — what he calls a 'banality of heroism' framework — and the Heroic Imagination Project he later founded. Critics have challenged some of the prison experiment's methodology, but the situationist argument remains canonical reading in social psychology, ethics, and military training.",
     },
     {
         "title": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
@@ -299,7 +299,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2012,
         "genre": "psychology",
         "mood": ["self-discovery", "rainy afternoon", "cozy night"],
-        "summary": "Cain argues that Western culture dramatically undervalues introverts, and that quiet temperaments drive creativity and leadership.",
+        "summary": "Cain argues that Western culture dramatically undervalues introverts, and that quiet temperaments drive creativity and leadership. Susan Cain documents what she calls the Extrovert Ideal — the cultural preference, particularly strong in American business and education, for outgoing, fast-talking, group-oriented personalities — and traces its rise from a small set of early twentieth-century cultural shifts including Dale Carnegie's self-help boom and the redesign of corporate office space. She then catalogs the costs of this preference for the roughly one-third to one-half of the population whose temperament leans introverted: open offices that destroy concentration, school classrooms structured around group work, hiring practices that select for charisma over substance, and a leadership canon that valorizes confidence over deliberation. Drawing on interviews with executives, lawyers, and scientists, on developmental research about the high-reactive infants who often grow into thoughtful adults, and on her own experience as a corporate lawyer, she makes the case for designing workplaces, schools, and relationships that genuinely work for both temperaments. The book has become a touchstone in conversations about workplace design, education reform, and leadership style.",
     },
     {
         "title": "The Social Animal",
@@ -307,7 +307,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1972,
         "genre": "psychology",
         "mood": ["self-discovery", "morning ritual"],
-        "summary": "A classic introduction to social psychology covering conformity, persuasion, attraction, prejudice, and aggression.",
+        "summary": "A classic introduction to social psychology covering conformity, persuasion, attraction, prejudice, and aggression. Elliot Aronson, who studied with Leon Festinger and ran the seminal jigsaw-classroom desegregation studies, wrote the first edition as the textbook he wished had existed when he started teaching. The book is organized around the experimental literature on social influence: Solomon Asch's conformity studies, Festinger's cognitive-dissonance experiments, Milgram's obedience research, the bystander studies prompted by the Kitty Genovese case, and Aronson's own work on prejudice reduction through cooperative learning. Aronson is unusual among introductory authors in foregrounding the moral and political stakes of the field. He treats social psychology as a tool for understanding why ordinary people sometimes fail to help, why elections turn on identity, and why integration so often fails when it relies on contact alone rather than on cooperation toward shared goals. Each new edition has been refreshed with current findings while retaining the conversational voice that distinguishes the book from drier textbooks. It remains the standard short introduction to social psychology used in undergraduate courses, and is widely read outside the academy by educators, policymakers, and managers.",
     },
     {
         "title": "Sapiens: A Brief History of Humankind",
@@ -315,7 +315,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2011,
         "genre": "psychology",
         "mood": ["late night reflection", "existential crisis", "self-discovery"],
-        "summary": "Harari traces how Homo sapiens came to dominate Earth through cognitive, agricultural, and scientific revolutions.",
+        "summary": "Harari traces how Homo sapiens came to dominate Earth through cognitive, agricultural, and scientific revolutions. Yuval Noah Harari's sweeping survey treats the entirety of human prehistory and history as four major transitions: the Cognitive Revolution roughly seventy thousand years ago, when our species developed the capacity for shared fictions and large-scale cooperation; the Agricultural Revolution, which he provocatively reframes as 'history's biggest fraud,' arguing that wheat domesticated us as much as we domesticated it; the unification of humankind through money, empire, and the universal religions; and the Scientific Revolution, in which the discovery of ignorance reorganized human society around capital, exploration, and progress. The argument that recurs throughout is that the social structures we treat as natural — corporations, nations, money, human rights — exist only as collectively imagined orders, and that the species' capacity to invent and inhabit such fictions is what produced everything else. Critics have pushed back on specific historical claims, particularly about hunter-gatherer life and the Agricultural Revolution, but the book's combination of pace, scope, and narrative confidence has made it one of the most widely read history books of the past decade and a recurring entry point for readers of cognitive evolutionary psychology.",
     },
     {
         "title": "The Coddling of the American Mind",
@@ -323,7 +323,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2018,
         "genre": "psychology",
         "mood": ["late night reflection", "career pivot"],
-        "summary": "Haidt and Lukianoff argue that overprotection is harming young people's mental health and their ability to engage with challenging ideas.",
+        "summary": "Haidt and Lukianoff argue that overprotection is harming young people's mental health and their ability to engage with challenging ideas. The book extends an Atlantic essay the authors published several years earlier, in which they argued that the late-2010s wave of campus speech controversies represented something deeper than ordinary student politics: a generational shift in how young Americans had been raised to think about safety, harm, and emotional discomfort. Their thesis identifies three 'great untruths' they believe have spread through child-rearing, schooling, and university culture — the untruth of fragility ('what doesn't kill you makes you weaker'), the untruth of emotional reasoning ('always trust your feelings'), and the untruth of us-versus-them ('life is a battle between good people and evil people'). They link these to rising rates of anxiety, depression, and self-harm among adolescents, and to the spread of safetyism in K–12 and higher education. The closing chapters propose practical correctives drawn from cognitive behavioral therapy, free-range parenting, and viewpoint-diverse pedagogy. The book has been heavily debated in education and public-health circles and pairs naturally with Haidt's later The Anxious Generation.",
     },
     # ── Neuroscience-Adjacent ─────────────────────────────────────────────
     {
@@ -332,7 +332,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2017,
         "genre": "psychology",
         "mood": ["late night reflection", "self-discovery", "existential crisis"],
-        "summary": "Sapolsky traces a behavior from the moment it happens back through the brain, hormones, genes, and culture that produced it.",
+        "summary": "Sapolsky traces a behavior from the moment it happens back through the brain, hormones, genes, and culture that produced it. Robert Sapolsky, a Stanford neuroendocrinologist who has spent decades studying baboons in the Serengeti and stress in humans, structures the book as a backwards-running cascade: pick any single behavior — a kiss, a punch, a vote — and ask what brain activity produced it one second earlier, what hormonal state shaped the brain seconds to minutes earlier, what neural plasticity from days to years before, what childhood and prenatal environment, what evolutionary pressures over millennia, what cultural inheritance over centuries. Each of these layers gets a chapter at roughly textbook depth but in Sapolsky's distinctively wisecracking prose, with frequent asides about the messiness of the underlying evidence. The book then applies the integrated framework to the hardest cases: morality, free will, religion, war, justice, and forgiveness. It is one of the most ambitious popular synthesizers of biological and behavioral science, equally at home in neuroscience, endocrinology, anthropology, and evolutionary biology, and indispensable for anyone serious about the biology of human conduct.",
     },
     {
         "title": "Why Zebras Don't Get Ulcers",
@@ -340,7 +340,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1994,
         "genre": "psychology",
         "mood": ["self-discovery", "daily grind", "fresh start"],
-        "summary": "A witty guide to how chronic stress damages our bodies and minds, and what we can learn from animals who handle it better.",
+        "summary": "A witty guide to how chronic stress damages our bodies and minds, and what we can learn from animals who handle it better. The title's central image — a zebra fleeing a lion experiences acute stress, the lion dies, and the zebra goes back to grazing within minutes — is Sapolsky's contrast for the modern human predicament, in which we activate the same fight-or-flight machinery for traffic and tax bills and then never turn it off. The book is a textbook-grade tour of stress physiology rendered in Sapolsky's irreverent voice, walking through how chronic activation of the sympathetic nervous system and the HPA axis produces measurable damage in the cardiovascular, metabolic, immune, reproductive, and cognitive systems, and how it accelerates aging at the cellular level. He devotes long chapters to the social-rank gradients in baboons and humans that determine who gets the worst of chronic stress, the role of perceived control and predictability, and the buffering effects of social support and religious practice. Closing chapters discuss interventions — exercise, meditation, therapy — that genuinely reduce chronic activation. It remains the standard one-volume introduction to stress biology.",
     },
     {
         "title": "Determined: A Science of Life Without Free Will",
@@ -348,7 +348,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2023,
         "genre": "psychology",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Sapolsky makes the case that free will is an illusion and explores what that means for morality, justice, and how we treat each other.",
+        "summary": "Sapolsky makes the case that free will is an illusion and explores what that means for morality, justice, and how we treat each other. The book is Sapolsky's most uncompromising statement of the determinist view that follows from his integrated biology of behavior: every choice is the unbroken downstream consequence of earlier biological and environmental causes — the brain state in this moment, the hormones an hour earlier, the genes inherited at conception, the culture absorbed in childhood — none of which the agent chose. He surveys the philosophical literature, including standard compatibilist defenses of free will, and argues that they all smuggle in a residual ghost in the machine that the science cannot accommodate. The middle chapters apply the position to specific cases: addiction, criminal responsibility, mental illness, schoolyard misbehavior, and the everyday judgments we make about colleagues and strangers. The closing section, the most personal of his career, addresses the question every reader will have: how does anyone live as if this were true? His answer is a quiet ethics of compassion — punishment recedes, blame loses its hold, and we treat one another more like fellow weather systems than like culpable agents.",
     },
     {
         "title": "Incognito: The Secret Lives of the Brain",
@@ -356,7 +356,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2011,
         "genre": "psychology",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "Most of what the brain does happens below conscious awareness — Eagleman reveals the hidden machinery that runs your life.",
+        "summary": "Most of what the brain does happens below conscious awareness — Eagleman reveals the hidden machinery that runs your life. David Eagleman, a Stanford neuroscientist with a particular gift for popular science writing, builds the book around the disorienting fact that consciousness is not a CEO directing the brain's activity but a small department briefed only when the rest of the organization wants its input. He uses neurological case studies, illusions, and clinical anecdotes to show how vision is constructed rather than received, how the gut influences mood and decisions, how Capgras syndrome and other disorders reveal the layered architecture of the self, and how the brain quietly negotiates between rival subagents whose conflict produces what we experience as deliberation. The book's most influential metaphor is the team-of-rivals model of the mind, in which competing neural coalitions vie for control of behavior and consciousness reads off the winning bid. Eagleman closes with implications for criminal justice, advertising, and the design of technology that interfaces with subconscious cognition. The book is widely used as a popular companion to undergraduate neuroscience courses and as a gateway for readers approaching the brain for the first time.",
     },
     {
         "title": "Livewired: The Inside Story of the Ever-Changing Brain",
@@ -364,7 +364,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2020,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start", "side project vibes"],
-        "summary": "Eagleman shows that the brain continuously rewires itself in response to experience, challenging the idea of a fixed neural blueprint.",
+        "summary": "Eagleman shows that the brain continuously rewires itself in response to experience, challenging the idea of a fixed neural blueprint. Rather than the standard image of a stable circuit board, Eagleman portrays the brain as livewired — a system in which neurons are constantly competing for territory, sensory inputs are interchangeable from the perspective of cortical processing, and the whole architecture is shaped by what the body actually does in the world. He builds the case with extraordinary case studies: blind people learning to see through tongue-mounted electrode arrays, deaf people learning to hear through vibrating vests, surgeons whose cortical hand maps shift to track the tools they use, and people whose hemispherectomies in childhood produce remarkably normal adult lives. The book turns these examples into a general theory of neural plasticity centered on competition, dynamic reallocation, and the body as the brain's interface with reality. Closing chapters explore the implications for sensory substitution, brain-computer interfaces, and AI systems that lack the embodied feedback loops biological brains take for granted. The book is one of the clearest popular treatments of plasticity since Norman Doidge's classic, and reflects Eagleman's own work on sensory-substitution devices.",
     },
     {
         "title": "The Brain That Changes Itself",
@@ -372,7 +372,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2007,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start"],
-        "summary": "Doidge tells stories of people who rewired their brains after strokes, injuries, and learning disabilities, revealing the power of neuroplasticity.",
+        "summary": "Doidge tells stories of people who rewired their brains after strokes, injuries, and learning disabilities, revealing the power of neuroplasticity. Norman Doidge, a Toronto-based psychiatrist and psychoanalyst, wrote what became the popular introduction to the neuroplasticity revolution at a time when most clinicians and laypeople still treated the adult brain as a fixed organ that only deteriorated with age and injury. The book is structured as a series of clinical portraits: a woman whose vestibular system has been destroyed by gentamicin and who recovers her balance using a head-mounted device that converts movement to tongue stimulation; a stroke patient who regains speech through Edward Taub's constraint-induced therapy; the late-life learners and dyslexic children retrained through Michael Merzenich's BrainHQ exercises. Doidge weaves these stories together with the experimental work that made each rehabilitation possible, particularly the cortical-remapping research of Merzenich and Taub. The book also discusses the implications for chronic pain, addiction, and obsessive-compulsive disorder. It launched the modern popular conversation about neuroplasticity and is the natural starting point for any reader before encountering the deeper academic literature.",
     },
     {
         "title": "The Brain's Way of Healing",
@@ -380,7 +380,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2015,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start"],
-        "summary": "Doidge explores neuroplastic treatments for pain, Parkinson's, and brain injuries that bypass conventional medicine.",
+        "summary": "Doidge explores neuroplastic treatments for pain, Parkinson's, and brain injuries that bypass conventional medicine. The follow-up to The Brain That Changes Itself extends the same case-study approach into a category Doidge calls neuroplastic healing — interventions that use sound, light, vibration, electrical stimulation, and movement to coax the brain into reorganizing itself in ways that conventional pharmaceutical and surgical approaches cannot. He profiles patients recovering from chronic pain through John Sarno-style mind-body work, Parkinson's patients regaining function through specific walking techniques, traumatic brain injury patients rehabilitated with low-intensity laser stimulation, and autistic children helped by Alfred Tomatis's auditory therapy. Each chapter begins with a clinical portrait and works back to the underlying mechanism, with care to distinguish well-established approaches from those still on the speculative edge. Critics have noted that some of the therapies Doidge writes about lack the scale of randomized evidence available for mainstream alternatives, and the book is best read with that caveat in mind. Even so, it remains the most accessible survey of the still-developing therapeutic frontier of clinical neuroplasticity, useful for clinicians, caregivers, and patients exploring options when standard treatments have plateaued.",
     },
     {
         "title": "Phantoms in the Brain",
@@ -388,7 +388,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1998,
         "genre": "psychology",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "A neurologist uses bizarre case studies — phantom limbs, blind sight — to probe how the brain constructs our sense of self.",
+        "summary": "A neurologist uses bizarre case studies — phantom limbs, blind sight — to probe how the brain constructs our sense of self. V.S. Ramachandran's most popular book is a tour of strange neurological conditions and the experimental tricks he and his colleagues devised to investigate them, often with strikingly low-tech apparatus. The famous mirror box, in which a phantom-limb patient sees the reflection of an intact arm and feels long-frozen pain begin to release, was developed by Ramachandran in his lab and remains the most visually arresting demonstration in the book. Other chapters cover Capgras syndrome (in which the patient cannot reconcile the visual face of a loved one with their emotional response, concluding the person must be an imposter), Cotard's delusion (the conviction of being already dead), synaesthesia, blind sight, anosognosia, and the strange unilateral neglect produced by right parietal damage. Each case is treated as a window onto the modular architecture of the normal brain, building a cumulative argument that consciousness, body image, free will, and even the integrity of the self are all constructions that can be selectively dismantled by lesion. The book remains a standard popular introduction to clinical neuroscience.",
     },
     {
         "title": "The Man Who Mistook His Wife for a Hat",
@@ -396,7 +396,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1985,
         "genre": "psychology",
         "mood": ["self-discovery", "late night reflection", "rainy afternoon"],
-        "summary": "Sacks presents neurological case studies with literary grace, revealing how brain disorders illuminate the nature of identity.",
+        "summary": "Sacks presents neurological case studies with literary grace, revealing how brain disorders illuminate the nature of identity. The collection that established Oliver Sacks as the unmatched literary clinician of late-twentieth-century neurology takes its title from one of its most famous chapters, in which a music professor with visual agnosia greets his wife's hairstyle as a hat. Each piece in the book is a portrait of a patient whose specific neurological deficit reveals something about the architecture of the normal mind: a sailor who can no longer form new memories and lives in a permanent 1945; a woman who has lost her sense of where her own limbs are; twins with extraordinary calendrical and prime-number gifts but very low conventional IQ; people whose Tourette's syndrome reorganizes around their personalities rather than constraining them. Sacks brings the warmth of a humanist physician and the prose of an essayist to clinical material that in other hands would read as catalogue, and the result has shaped both medical writing and literary nonfiction. The book remains a permanent crossover classic, read by clinicians as illustrative casework and by general readers as a meditation on how the brain shapes — and sometimes does not — what we mean by a person.",
     },
     {
         "title": "An Anthropologist on Mars",
@@ -404,7 +404,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1995,
         "genre": "psychology",
         "mood": ["self-discovery", "rainy afternoon"],
-        "summary": "Seven paradoxical neurological tales — including a surgeon with Tourette's and a colorblind painter — that expand our notion of normal.",
+        "summary": "Seven paradoxical neurological tales — including a surgeon with Tourette's and a colorblind painter — that expand our notion of normal. Oliver Sacks's title comes from Temple Grandin's description of how she, an autistic woman, experiences neurotypical social life: like an anthropologist among an alien tribe whose customs she has spent her life decoding. The book consists of seven extended portraits, longer and more deeply embedded in the patients' lives than the shorter pieces in The Man Who Mistook His Wife for a Hat. He follows the painter Jonathan I., who loses color vision after a car accident and slowly rebuilds an aesthetic of pure tonal contrast; Greg F., a young man whose pituitary tumor leaves him living in a perpetual psychedelic 1969; the surgeon Carl Bennett, whose Tourette's vanishes the moment he is operating; the autistic teenage savant Stephen Wishire, whose architectural drawings hold whole skylines in memory; and Grandin herself. Each portrait functions simultaneously as a neurological case study and a meditation on how identity, vocation, and aesthetic life are reconstituted around an organic constraint. The book deepens Sacks's career-long argument that what looks like deficit is also nearly always a creative reorganization of the self.",
     },
     {
         "title": "Musicophilia",
@@ -412,7 +412,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2007,
         "genre": "psychology",
         "mood": ["self-discovery", "cozy night", "Sunday morning"],
-        "summary": "Sacks explores how music can move, heal, and haunt the brain through stories of patients and musicians.",
+        "summary": "Sacks explores how music can move, heal, and haunt the brain through stories of patients and musicians. Late in his career Oliver Sacks turned his case-study lens onto the curious centrality of music in human neurology, and the resulting book is part clinical compendium and part personal meditation by a lifelong amateur pianist. He recounts amusia (the inability to hear musical patterns where others hear them), musicogenic epilepsy, the terrifying earworm, the savant abilities that often accompany Williams syndrome, and the sudden onset of musical hallucinations in elderly patients with deafness or stroke. Several chapters describe music's power to bypass otherwise damaged cognitive systems: severe Alzheimer's patients who can sing songs from their youth long after they have lost language, Parkinson's patients whose frozen gait unlocks the moment a familiar rhythm is played, autistic individuals for whom music opens a social channel that conversation cannot. Sacks writes with the affection of a clinician who has spent decades using music in therapeutic settings and the curiosity of someone perpetually puzzled that an evolutionarily superfluous capacity should be so deeply wired into the nervous system. The book is essential for music therapists, neurologists, and any reader who has wondered why a single song can restore a self.",
     },
     {
         "title": "Descartes' Error",
@@ -420,7 +420,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1994,
         "genre": "psychology",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "Damasio argues that emotion is essential to rational thought, overturning centuries of Western philosophy about the mind-body divide.",
+        "summary": "Damasio argues that emotion is essential to rational thought, overturning centuries of Western philosophy about the mind-body divide. The book takes its starting point from the famous case of Phineas Gage, the railroad foreman who survived an iron rod through his frontal lobe but emerged with intact intelligence and devastated decision-making. Damasio uses Gage and his own patients with similar prefrontal damage to argue that the canonical Cartesian picture — reason as a clean, disembodied computation that emotion only contaminates — has the relationship backwards. His somatic-marker hypothesis claims that the body's emotional responses to past outcomes are stored in the prefrontal cortex and replayed as gut feelings that shrink the otherwise impossibly large decision tree of everyday life to something a brain can solve in real time. Patients who lose those somatic markers retain reasoning ability on tests but cannot live functional lives because no option ever feels right or wrong. The book has been enormously influential across cognitive science, neuroeconomics, and philosophy of mind, and is the founding popular statement of embodied-cognition research. It remains essential for anyone working at the boundary of emotion and reason.",
     },
     {
         "title": "The Tell-Tale Brain",
@@ -428,7 +428,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2011,
         "genre": "psychology",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "Ramachandran explores what makes human brains unique, from mirror neurons to the neuroscience of aesthetics and language.",
+        "summary": "Ramachandran explores what makes human brains unique, from mirror neurons to the neuroscience of aesthetics and language. V.S. Ramachandran's most ambitious book attempts to explain why an organ only modestly larger than that of our closest evolutionary cousins should have produced art, language, mathematics, and self-reflective consciousness. He builds the argument around the role of mirror neurons in imitation, theory of mind, and the rapid cultural transmission that distinguished modern humans, and around the cross-modal abstraction faculties that make synaesthesia, metaphor, and aesthetic universals possible. The book ranges across his clinical work — phantom limbs, autism, body integrity disorders, anosognosia — and his cross-cultural studies of why some artistic principles (peak shift, isolation, contrast, symmetry) recur across utterly different traditions. The closing chapters address the hardest problems: the neural origin of language and the neural basis of self-awareness, which he treats as a recursive use of the same mirror-neuron machinery turned inward. Some of his theoretical claims, particularly around mirror neurons, have since been moderated by newer evidence, but the book remains a fluent and ambitious tour of cognitive neuroscience and an excellent companion to Phantoms in the Brain.",
     },
     # ── Popular Psychology / Motivation-Adjacent ──────────────────────────
     {
@@ -437,7 +437,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2009,
         "genre": "psychology",
         "mood": ["hustle mode", "career pivot", "productivity"],
-        "summary": "Pink argues that autonomy, mastery, and purpose — not carrots and sticks — are the true drivers of human motivation.",
+        "summary": "Pink argues that autonomy, mastery, and purpose — not carrots and sticks — are the true drivers of human motivation. Daniel Pink's synthesis of self-determination theory and behavioral-economics research challenges the standard managerial assumption that contingent rewards reliably elicit better performance. He shows that for routine, narrowly scoped work, financial incentives often improve output as expected, but that for the open-ended creative work that increasingly defines knowledge employment, the same incentives reliably reduce performance, intrinsic motivation, and ethical conduct. Drawing on Edward Deci, Richard Ryan, and Teresa Amabile, he proposes Motivation 3.0 as a successor to the carrot-and-stick model: a managerial style organized around three psychological needs, autonomy in how the work gets done, mastery as a craft trajectory the worker is on, and purpose connecting daily tasks to a larger cause. The book includes extended sections on results-only work environments, FedEx Days at Atlassian, and the redesign of school assessment, with practical toolkits for managers and parents. Pink's prose is brisk and accessible, and the book has become one of the most assigned management books of the past fifteen years, particularly in knowledge-work and creative organizations.",
     },
     {
         "title": "When: The Scientific Secrets of Perfect Timing",
@@ -445,7 +445,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2018,
         "genre": "psychology",
         "mood": ["productivity", "daily grind", "morning ritual"],
-        "summary": "The hidden science of timing reveals when to start projects, take breaks, and make decisions for peak performance.",
+        "summary": "The hidden science of timing reveals when to start projects, take breaks, and make decisions for peak performance. Daniel Pink's premise is that timing is treated as art when it should be treated as science: a sizable empirical literature on chronobiology, productivity research, and human-development arc has accumulated answers to questions like when in the day to schedule difficult work, when to take breaks and how long they should be, when in a project people are most prone to discouragement, and when in life people are most likely to make consequential changes. The book is divided into three temporal scales. The daily cycle establishes the morning peak, afternoon trough, and evening recovery curve and shows how to align analytic, administrative, and creative work to each phase. The middle section covers beginnings, midpoints, and endings, including the surprisingly powerful effect of synchronized starts on group cohesion and the U-shaped happiness curve that bottoms out in middle age. The third section deals with broader life timing — when to leave a job, when to retire, when to make a major switch. Each chapter ends with a practitioner's handbook of evidence-backed prescriptions. The book is essential reading for managers, educators, and anyone who wants to redesign their schedule against the grain of the body's actual clocks.",
     },
     {
         "title": "A Whole New Mind",
@@ -453,7 +453,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2005,
         "genre": "psychology",
         "mood": ["career pivot", "fresh start", "side project vibes"],
-        "summary": "Pink argues that the future belongs to right-brain thinkers — creators, empathizers, pattern recognizers, and meaning makers.",
+        "summary": "Pink argues that the future belongs to right-brain thinkers — creators, empathizers, pattern recognizers, and meaning makers. Written before the AI inflection but ahead of much of the conversation that anticipates it, Pink contends that the cognitive work that earlier generations were trained for — sequential, analytical, knowledge-recall — is being eaten on three fronts: by abundance (which devalues mere production), by Asia (which competes on cost for routine cognitive labor), and by automation (which competes on speed). What remains as the durable basis of human work, he argues, is what he calls the high-concept, high-touch capacities centered in right-hemisphere cognition. He organizes the prescription around six aptitudes — design, story, symphony, empathy, play, and meaning — each of them illustrated with case studies and ending in a portfolio of self-development exercises. While neuroscience has since clarified that right-brain/left-brain dichotomies are oversimplifications, Pink's underlying claim about the kinds of work that withstand commoditization has aged better than its metaphor, and the book remains widely assigned in design schools and innovation programs as an early statement of the case for a humanities-shaped career strategy in a quantitative economy.",
     },
     {
         "title": "To Sell Is Human",
@@ -461,7 +461,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2012,
         "genre": "psychology",
         "mood": ["hustle mode", "career pivot"],
-        "summary": "Pink reframes selling as a fundamental human activity and presents the new ABCs: attunement, buoyancy, and clarity.",
+        "summary": "Pink reframes selling as a fundamental human activity and presents the new ABCs: attunement, buoyancy, and clarity. Daniel Pink begins with a survey-driven observation that the modern knowledge economy has turned almost everyone into a salesperson, even when their formal job description does not include the word — teachers selling lessons, doctors selling treatment plans, designers selling proposals, parents selling broccoli. He argues that the older, transactional model of selling — predicated on the salesperson's information advantage over a buyer — has collapsed under the internet's symmetric access to information, and that the new ABCs replace the always-be-closing mindset of the mid-century pitch. Attunement is the capacity to take the perspective of others, buoyancy is the resilience to handle a constant stream of small rejections, and clarity is the ability to find and frame the right problem. He combines social-psychology research with practical exercises for each capacity, and a chapter on the case for delivering pitches in six varieties from the one-word pitch to the question pitch. The book has become a popular foundation for sales training programs that want to move past Glengarry Glen Ross-style techniques and into a more service-oriented approach.",
     },
     {
         "title": "Grit: The Power of Passion and Perseverance",
@@ -469,7 +469,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2016,
         "genre": "psychology",
         "mood": ["hustle mode", "fresh start", "self-discovery"],
-        "summary": "Duckworth's research shows that sustained passion and perseverance matter more than talent for achieving long-term goals.",
+        "summary": "Duckworth's research shows that sustained passion and perseverance matter more than talent for achieving long-term goals. Angela Duckworth's grit construct — the combination of long-term passion for a single domain and the perseverance to keep working at it through setbacks — emerged from her studies of West Point cadets, National Spelling Bee finalists, Chicago public-school students, and elite professionals, where it predicted persistence and ultimate success above and beyond IQ, prior achievement, and conscientiousness. The book lays out the theory and the evidence, but at least half of it is concerned with how to cultivate grit — in oneself, in one's children, and in the institutions one runs. Duckworth proposes interest, deliberate practice, purpose, and hope as the four developable components of grit, and offers prescriptions that draw on Carol Dweck's work on growth mindset, K. Anders Ericsson on practice, and her own work on self-control. She is candid about the construct's limitations, including the role of luck and structural advantage, in answer to critics who have worried about a bootstraps reading. The book remains the most accessible summary of an ongoing line of research and is widely used in education and athletic-coaching contexts.",
     },
     {
         "title": "Emotional Intelligence",
@@ -477,7 +477,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1995,
         "genre": "psychology",
         "mood": ["self-discovery", "career pivot", "morning ritual"],
-        "summary": "Goleman argues that EQ — self-awareness, empathy, and social skill — matters as much as IQ for success and well-being.",
+        "summary": "Goleman argues that EQ — self-awareness, empathy, and social skill — matters as much as IQ for success and well-being. Daniel Goleman's mid-1990s synthesis brought academic research on the affective basis of cognition to a mass readership and launched the term 'emotional intelligence' into business vernacular. He builds on the earlier work of Peter Salovey and John Mayer, who first defined the construct, and on Joseph LeDoux's work on the amygdala's role in fast emotional appraisal that often hijacks more deliberate cognition. The book presents a five-part model of emotional intelligence — self-awareness, self-regulation, motivation, empathy, and social skill — and argues across long sections drawn from education, family life, and the workplace that this cluster of capacities reliably predicts outcomes that pure cognitive ability does not. Closing chapters on the social brain, on classroom emotional-literacy curricula, and on managerial effectiveness laid the foundation for a follow-on cottage industry of EQ assessment and training. While later academic work has refined and in some cases challenged specific claims, the book remains the canonical popular statement of the case for emotional intelligence and an essential reference for anyone working in leadership development or education.",
     },
     {
         "title": "Social Intelligence",
@@ -485,7 +485,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2006,
         "genre": "psychology",
         "mood": ["self-discovery", "career pivot"],
-        "summary": "Goleman reveals how our brains are wired for connection and how social interactions shape our biology in real time.",
+        "summary": "Goleman reveals how our brains are wired for connection and how social interactions shape our biology in real time. The book extends Daniel Goleman's earlier work on emotional intelligence outward into the relational space between people, drawing on neuroscience research from the late 1990s and early 2000s on mirror neurons, oscillator neurons, and the social regulation of physiological state. The central argument is that human brains are not isolated information processors but coupled systems that influence each other's hormonal, immune, and emotional states moment to moment, even silently across a crowded room. Goleman walks through the implications: how a nurse's calm presence changes a patient's heart rate, how a single contemptuous look from a partner sends measurable cortisol spikes, how leaders' emotional states unconsciously regulate their teams' performance. He distinguishes social awareness (empathy in its perceptual sense) from social facility (the capacity to act skillfully on it), and argues that institutional design — schools, hospitals, workplaces — should be evaluated against its effect on the social brain. Some of the original mirror-neuron claims have been moderated by subsequent evidence, but the broader framing of social neuroscience remains influential and the book is widely used in clinical training and leadership programs.",
     },
     {
         "title": "Focus: The Hidden Driver of Excellence",
@@ -493,7 +493,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2013,
         "genre": "psychology",
         "mood": ["productivity", "hustle mode", "morning ritual"],
-        "summary": "Goleman argues that attention — inner, other, and outer focus — is the hidden ingredient behind excellence in every domain.",
+        "summary": "Goleman argues that attention — inner, other, and outer focus — is the hidden ingredient behind excellence in every domain. Daniel Goleman's third major book treats attention as the underlying resource that the emotional and social intelligence frameworks of his earlier work both depend on. He distinguishes three modes: inner focus, which underwrites self-awareness and self-regulation; other focus, which underlies empathy, listening, and the ability to read a room; and outer focus, which encompasses systems thinking, the ability to grasp the larger forces shaping a problem. He works through the cognitive science behind each mode — what kinds of attention they involve, how they can be trained, how they fail — and argues that elite performance in fields from chess to surgery to leadership is consistently characterized by skill across all three rather than only the first. Practical chapters discuss attention training for children, the cost of digital distraction on deep work, and the leadership consequences of leaders who can or cannot widen the aperture of their focus. The book builds explicitly on Mihaly Csikszentmihalyi's flow research and on Anders Ericsson's deliberate-practice framework, and is widely read alongside Cal Newport's Deep Work as a complementary popular statement.",
     },
     {
         "title": "Originals: How Non-Conformists Move the World",
@@ -501,7 +501,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2016,
         "genre": "psychology",
         "mood": ["side project vibes", "fresh start", "career pivot"],
-        "summary": "Grant explores how original thinkers champion new ideas, overcome doubt, and build cultures of innovation.",
+        "summary": "Grant explores how original thinkers champion new ideas, overcome doubt, and build cultures of innovation. Adam Grant, a Wharton organizational psychologist, builds the book around an argument with the romantic image of the lone genius who sees what no one else can: most successful originals, his data show, look much more like cautious negotiators who hedge their bets, procrastinate productively, generate huge volumes of mediocre ideas in order to find the few good ones, and time their challenges to power carefully. Drawing on his own research, on the careers of figures including Larry Page, Ray Dalio, Edwin Land, and the dissenters inside the Cuban missile crisis, and on a long line of social-psychology studies on conformity and innovation, he sketches both the personal habits and the organizational structures that allow originality to thrive. The middle chapters offer a practical theory of building diverse coalitions, communicating risky ideas without provoking defensive responses, and channeling the productive friction of dissent. Closing chapters apply the framework to parenting, schooling, and team culture. The book has been heavily adopted in management programs as a complement to Carol Dweck's Mindset and Adam's own Give and Take.",
     },
     {
         "title": "Think Again",
@@ -509,7 +509,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2021,
         "genre": "psychology",
         "mood": ["productivity", "self-discovery", "fresh start"],
-        "summary": "Grant argues that the ability to rethink and unlearn is more valuable than raw intelligence in a fast-changing world.",
+        "summary": "Grant argues that the ability to rethink and unlearn is more valuable than raw intelligence in a fast-changing world. The book is built on the premise that the modern world produces fresh evidence faster than most people update their beliefs, and that the meta-skill of mental flexibility is now more decisive than the raw intellectual horsepower educational systems have historically optimized for. Grant introduces the four cognitive modes — preacher, prosecutor, politician, and scientist — and argues that the scientist's stance, in which beliefs are explicit hypotheses subject to disconfirmation, is the rarest and most valuable. He examines individual barriers to rethinking (identity foreclosure, motivated reasoning, the overconfidence of the partly-informed) and interpersonal barriers (binary biases, false-flag attribution, the loss of curiosity in adversarial conversations), with case studies including a wildfire that killed thirteen smokejumpers because they could not let go of their tools, and the Wright brothers' productive arguments. Practical chapters cover how to disagree without breaking relationships, how to lead a learning culture, and how schools and workplaces can be redesigned around rethinking. The book has been very widely adopted in leadership and education circles since 2021.",
     },
     {
         "title": "Give and Take",
@@ -517,7 +517,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2013,
         "genre": "psychology",
         "mood": ["career pivot", "hustle mode"],
-        "summary": "Grant reveals that givers — people who contribute without keeping score — end up at both the top and bottom of success.",
+        "summary": "Grant reveals that givers — people who contribute without keeping score — end up at both the top and bottom of success. Adam Grant's first major book classifies people in workplace exchanges into three reciprocity styles: takers who try to extract more than they give, matchers who keep transactions even, and givers who contribute generously without expecting return. The intuition is that givers should lose, and on a short time horizon they often do — Grant shows that the lowest-performing salespeople, residents, and engineering students disproportionately fit the giver profile because they overinvest in others at the cost of their own work. The surprise is that the very top of those same fields is also disproportionately giver-shaped: over longer time horizons, generous behavior compounds reputation, network depth, and trust in ways takers and matchers cannot match. The middle chapters distinguish self-sacrificing givers from otherish givers who give skillfully — selectively, time-boxed, with reasonable boundaries — and that distinction explains who ends up at the top versus the bottom. The closing sections cover practical applications for teams, hiring, networking, and negotiation. The book has been one of the most influential management texts of the 2010s.",
     },
     {
         "title": "Range: Why Generalists Triumph in a Specialized World",
@@ -525,7 +525,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2019,
         "genre": "psychology",
         "mood": ["career pivot", "self-discovery", "side project vibes"],
-        "summary": "Epstein makes the case that breadth of experience and late specialization beat narrow expertise in most domains.",
+        "summary": "Epstein makes the case that breadth of experience and late specialization beat narrow expertise in most domains. David Epstein opens with the contrasting careers of Tiger Woods, who was hitting golf balls at twenty-two months and specialized maximally from infancy, and Roger Federer, who played soccer, badminton, basketball, and skiing into adolescence before settling on tennis, and notes that the Federer pattern — described in the literature as a sampling period followed by late commitment — is far more typical of high performers than the Woods pattern in fields where the rules are not as fixed as on a golf course. He extends the argument across science, music, sports, business, and the military, drawing on cognitive-science research distinguishing 'kind' learning environments where rapid early feedback rewards specialization from 'wicked' environments where surface patterns mislead and only broad analogical thinking transfers. Closing chapters cover the dangers of premature specialization in education, the value of slow horizontal moves in careers, and the surprising effectiveness of generalist insight in fields where specialists have plateaued. The book is essentially a sustained counterargument to the 10,000-hour-rule reading of Outliers, and is widely read in education, talent development, and career-design contexts.",
     },
     {
         "title": "Willpower: Rediscovering the Greatest Human Strength",
@@ -533,7 +533,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2011,
         "genre": "psychology",
         "mood": ["productivity", "hustle mode", "fresh start"],
-        "summary": "Baumeister and Tierney review the science of self-control, arguing that willpower is like a muscle that can be strengthened.",
+        "summary": "Baumeister and Tierney review the science of self-control, arguing that willpower is like a muscle that can be strengthened. Roy Baumeister's two-decade research program established the influential ego-depletion model, in which acts of self-regulation draw from a finite, glucose-linked psychological resource that fatigues with use and recovers with rest. The book presents the empirical case across domains — diet, exercise, financial discipline, parenting, addiction recovery — and argues that conscious self-control is one of the strongest predictors of life outcomes that psychology has identified, comparable to intelligence and surpassing both in malleability. Practical sections cover how to spend a limited budget of willpower wisely (especially in the morning, when stores are full), how to build implementation intentions and pre-commitments that route around willpower entirely, and how habits convert effortful regulation into automatic behavior. Note that ego-depletion replication has been heavily contested in the years since publication, and the authors have written follow-up qualifications. Even with that caveat the book remains a useful gateway to the literature on self-control, particularly for the practical chapters on environment design and habit substitution.",
     },
     {
         "title": "The Power of Habit",
@@ -541,7 +541,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2012,
         "genre": "psychology",
         "mood": ["productivity", "fresh start", "daily grind"],
-        "summary": "Duhigg unpacks the cue-routine-reward loop that drives habits and shows how to rewire it at the individual and organizational level.",
+        "summary": "Duhigg unpacks the cue-routine-reward loop that drives habits and shows how to rewire it at the individual and organizational level. Charles Duhigg's framework — the habit loop of cue, routine, reward, sustained by craving — synthesizes work from MIT's basal-ganglia studies and Stanford behavioral research into a vocabulary that has become the standard popular reference for thinking about automatic behavior. The book is divided into three concentric scales. The personal layer covers individual habits and the Golden Rule of Habit Change: keep the same cue and reward, swap only the routine. The organizational layer profiles keystone habits and the cultural habits that turned around Alcoa under Paul O'Neill, Starbucks under Howard Schultz, and the New York Fire Department after fatal training failures. The societal layer extends to the civil-rights movement and the marketing of Febreze and Pepsodent as case studies in how habits propagate at population scale. Each chapter pairs narrative with experimental evidence, and the book closes with a practical four-step framework for diagnosing and replacing personal habits. Duhigg's framing has been heavily adopted in coaching, public-health design, and product habit-design conversations.",
     },
     {
         "title": "Smarter Faster Better",
@@ -549,7 +549,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2016,
         "genre": "psychology",
         "mood": ["productivity", "hustle mode"],
-        "summary": "Duhigg explores the science of productivity through eight concepts including motivation, goal setting, and decision making.",
+        "summary": "Duhigg explores the science of productivity through eight concepts including motivation, goal setting, and decision making. The follow-up to The Power of Habit shifts from automatic behavior to the deliberate choices that shape modern productivity, organized as eight independently readable chapters each anchored in a memorable story: the marines whose new boot-camp curriculum doubled enlisted retention through induced agency, the Israeli pilot whose decision-making framework prevented Yom Kippur disaster from being worse, the Disney studio's organizational redesign for Frozen, the Saturday Night Live writers' room as a study in psychological safety, the Pixar story-development process, and the FBI's mid-2000s case-management reorganization after 9/11. Each chapter pairs the narrative with the underlying research — locus of control, mental-model construction, focus on the right SMART goals, the Toyota production system, the Google Aristotle study on team effectiveness, and probabilistic thinking. The argument that emerges is less a unified theory than a curated kit of mental moves the highest-performing professionals consistently execute. The book is a natural companion to Atomic Habits and Deep Work for managers and individual contributors trying to upgrade their working systems.",
     },
     {
         "title": "Mindless Eating",
@@ -557,7 +557,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2006,
         "genre": "psychology",
         "mood": ["self-discovery", "daily grind"],
-        "summary": "Wansink's experiments reveal how plate size, lighting, and labels trick us into overeating without awareness.",
+        "summary": "Wansink's experiments reveal how plate size, lighting, and labels trick us into overeating without awareness. Brian Wansink's Cornell food lab spent two decades engineering studies in which subjects came in for what they thought was a tasting session and unknowingly had their environment subtly manipulated — the size of their bowl, the height of the glass they were drinking from, the variety of M&M colors on the table, the distance to the snack bowl, the assertiveness of the menu wording, the lighting and music in the room. The aggregate finding is that the volume people eat is governed far more by environmental cues than by any internal sense of fullness, and that the brain settles for visual and contextual signals rather than caloric reality. The book turns those findings into a practical environmental-design approach: if the goal is to eat less, smaller plates, less variety on the table, and packages that signal portion size win out over willpower-based dieting. Note that Wansink himself was later sanctioned for serious data-handling problems on a number of his published papers, and several specific findings have been retracted; the broader environmental-cue argument has held up better than the contested individual studies.",
     },
     {
         "title": "Switch: How to Change Things When Change Is Hard",
@@ -565,7 +565,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2010,
         "genre": "psychology",
         "mood": ["fresh start", "career pivot", "productivity"],
-        "summary": "The Heaths present a framework — direct the rider, motivate the elephant, shape the path — for making change stick.",
+        "summary": "The Heaths present a framework — direct the rider, motivate the elephant, shape the path — for making change stick. Chip and Dan Heath build on Jonathan Haidt's metaphor of the deliberate rational rider perched atop the larger emotional elephant, adding a third element — the path — to capture the situational design that makes a desired change easier or harder. Each of the three components corresponds to a recurring obstacle: the rider needs clear direction (which the Heaths translate into the practice of finding bright spots and scripting the critical moves), the elephant needs emotional motivation (achieved through small wins, the right framing, and identity-based persuasion), and the path needs to be smoothed (through environmental design, default settings, and habit change). The book illustrates the framework with a long parade of real cases — a hospital reducing infection rates, a country reforming its child-welfare system, an executive turning around a slumping division — and ends with practical workbook material. Together with Made to Stick and Decisive, it forms the Heaths' trilogy of behavior-change books, and is widely used in change-management programs and public-policy work.",
     },
     {
         "title": "Made to Stick",
@@ -573,7 +573,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2007,
         "genre": "psychology",
         "mood": ["hustle mode", "side project vibes"],
-        "summary": "Why some ideas survive and others die: the SUCCESs formula — simple, unexpected, concrete, credible, emotional, stories.",
+        "summary": "Why some ideas survive and others die: the SUCCESs formula — simple, unexpected, concrete, credible, emotional, stories. Chip and Dan Heath examine the kinds of messages that lodge in memory and propagate against the noise of all the other things people are trying to communicate, drawing on urban-legend research, advertising, parable traditions, and the writing of Atul Gawande and Malcolm Gladwell. Their distilled checklist — Simple, Unexpected, Concrete, Credible, Emotional, Stories — is each given a chapter with field examples ranging from the JFK moonshot speech to the Got Milk campaign to a Stanford PhD's surprisingly viral talk on healthy school lunches. Throughout, the Heaths hammer at a recurring failure mode they call the Curse of Knowledge: experts forget what it was like not to know what they now know, and routinely communicate at a level of abstraction their audience cannot decode. Each chapter ends with practical exercises and a clinic in which the Heaths critique a real-world communication for SUCCESs failures and rewrites it. The book has been heavily adopted in marketing, public-health communication, and educational materials design, and pairs naturally with Switch and Decisive.",
     },
     {
         "title": "Thinking in Systems",
@@ -581,7 +581,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2008,
         "genre": "psychology",
         "mood": ["productivity", "side project vibes", "late night reflection"],
-        "summary": "A primer on systems thinking that reveals how feedback loops, delays, and leverage points shape everything from ecosystems to economies.",
+        "summary": "A primer on systems thinking that reveals how feedback loops, delays, and leverage points shape everything from ecosystems to economies. Donella Meadows, the lead author of the Limits to Growth report and a longtime systems-dynamics teacher at Dartmouth and elsewhere, drafted this book in the early 1990s as the introductory text she wished she had been able to hand new students; it was published posthumously in 2008. She walks through the basic vocabulary of stocks and flows, balancing and reinforcing feedback, and lag; the characteristic behaviors of systems (oscillation, exponential growth, overshoot, collapse); and the recurring system traps including policy resistance, the tragedy of the commons, escalation, drift to low performance, and rule beating. Her most quoted contribution, drawn from a famous 1999 essay reproduced as a chapter, is the hierarchy of leverage points — twelve places to intervene in a system, with paradigms and the ability to transcend paradigms at the top, and parameter tweaks at the bottom. The book closes with normative reflection on the discipline of systems thinking as a humility-inducing posture toward complex problems. It is the standard short introduction for policy analysts, environmental scientists, and managers approaching systems thinking for the first time.",
     },
     # ── Therapy / Mental Health ───────────────────────────────────────────
     {
@@ -590,7 +590,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2014,
         "genre": "psychology",
         "mood": ["self-discovery", "heartbreak recovery", "fresh start"],
-        "summary": "Van der Kolk shows that trauma reshapes the body and brain, and that recovery requires approaches beyond talk therapy — including EMDR, yoga, and neurofeedback.",
+        "summary": "Van der Kolk shows that trauma reshapes the body and brain, and that recovery requires approaches beyond talk therapy — including EMDR, yoga, and neurofeedback. Bessel van der Kolk, a psychiatrist who helped found the field of modern trauma research and ran the Trauma Center in Boston for decades, builds the book around four decades of clinical work with combat veterans, abused children, and survivors of catastrophic accidents. The unifying claim is that traumatic memory is encoded primarily in the body — in altered patterns of arousal, in interoceptive distortion, and in fragmented sensory and motor memory that bypasses the verbal narrative system. As a result, traditional talk therapy alone is often inadequate; durable recovery typically requires interventions that work directly with the body. He surveys the evidence for EMDR, neurofeedback, yoga, theatre, internal-family-systems therapy, and rhythmic activities such as drumming, treating each as a legitimate trauma intervention with its own indication. The book has become the most widely read non-academic work on trauma recovery, particularly among survivors who recognize their own experience in his descriptions of body-based dysregulation. It is also widely used in clinical training and in the broader cultural conversation about post-traumatic stress.",
     },
     {
         "title": "Daring Greatly",
@@ -598,7 +598,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2012,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start", "career pivot"],
-        "summary": "Brown argues that vulnerability is not weakness but the birthplace of courage, creativity, and authentic connection.",
+        "summary": "Brown argues that vulnerability is not weakness but the birthplace of courage, creativity, and authentic connection. Brené Brown, a University of Houston researcher who has spent more than two decades doing qualitative work on shame, vulnerability, and connection, builds the book around the recurring distinction her interviews surfaced between people who live wholeheartedly and those who don't: the former are willing to be seen without armor, accept that risk is built into love, and tolerate the discomfort of uncertainty in service of more meaningful relationships. The title comes from Theodore Roosevelt's 1910 'Man in the Arena' speech, which Brown reads as an early articulation of the courage-vulnerability link. She covers the mechanics of shame (and how it differs from guilt), the way scarcity culture amplifies feelings of inadequacy, the patterns of disengagement and perfectionism that family and workplaces use to avoid vulnerability, and the practical work of rebuilding wholeheartedness in parenting, education, and leadership. The book is the most accessible entry point to her body of work and was widely amplified by her TED talks. It pairs with The Gifts of Imperfection as a foundational pair before moving on to Rising Strong and Atlas of the Heart.",
     },
     {
         "title": "The Gifts of Imperfection",
@@ -606,7 +606,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2010,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start", "morning ritual"],
-        "summary": "Brown offers ten guideposts for wholehearted living, from letting go of perfectionism to cultivating self-compassion.",
+        "summary": "Brown offers ten guideposts for wholehearted living, from letting go of perfectionism to cultivating self-compassion. Drawn from the qualitative interview data Brené Brown had been collecting for years, the book identifies ten pairs of letting-go and cultivating practices that her wholehearted subjects had in common: letting go of what people think and cultivating authenticity, letting go of perfectionism and cultivating self-compassion, letting go of numbing and cultivating resilience, letting go of scarcity and cultivating gratitude, letting go of the need for certainty and cultivating intuition, and so on through ten in total. Each guidepost gets a chapter combining her research findings with personal narrative and practical exercises. The book is briefer and more workbook-shaped than her later writing, and it landed as her popular breakthrough alongside her first viral TED talk. While it is the chronologically earlier entry in her catalogue, it is often more useful as a hands-on companion to Daring Greatly than as a standalone introduction. Widely used in therapy practice, women's groups, and self-discovery curricula, it serves as a doorway into the rest of Brown's research on shame and vulnerability.",
     },
     {
         "title": "Atlas of the Heart",
@@ -614,7 +614,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2021,
         "genre": "psychology",
         "mood": ["self-discovery", "rainy afternoon"],
-        "summary": "Brown maps eighty-seven emotions and experiences, arguing that naming what we feel is the first step to meaningful connection.",
+        "summary": "Brown maps eighty-seven emotions and experiences, arguing that naming what we feel is the first step to meaningful connection. Brené Brown's most expansive book is structured as an emotional taxonomy — eighty-seven distinct emotions and experiences, grouped into thirteen 'places we go' (places we go when things are uncertain, when we compare, when things don't go as planned, etc.) — accompanied by short essays on each, drawn from her own qualitative research and from the broader emotion-science literature. The premise is that most of the emotional vocabulary in everyday English collapses dozens of distinct feelings into a small set of catchall terms, and that the lack of granular language is one of the largest under-recognized obstacles to meaningful relationship: if you cannot tell yourself or someone else whether what you feel is awe, wonder, surprise, anguish, or grief — never mind subtler distinctions like overwhelm, vulnerability, anxiety, or stress — you cannot ask for the right help or offer the right kind. The book is large, full-color, and visually arresting, and was developed in part as the basis for an HBO Max television series. It functions equally well as reference, workbook, and beautifully designed coffee-table object.",
     },
     {
         "title": "Rising Strong",
@@ -622,7 +622,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2015,
         "genre": "psychology",
         "mood": ["heartbreak recovery", "fresh start", "self-discovery"],
-        "summary": "Brown explores what it takes to get back up after failure, disappointment, or heartbreak through a process of reckoning, rumble, and revolution.",
+        "summary": "Brown explores what it takes to get back up after failure, disappointment, or heartbreak through a process of reckoning, rumble, and revolution. Brené Brown frames Rising Strong as a sequel that picks up where Daring Greatly leaves off: at the moment of falling, after a vulnerable risk has gone wrong. Drawing on more than a thousand interviews and on her own experiences with disappointment, betrayal, and creative failure, she identifies a three-step process her wholehearted subjects use to recover. The reckoning is the willingness to recognize emotion in the body and to stay with it long enough to investigate. The rumble is the harder cognitive work of distinguishing the story you initially told yourself about what happened from a more honest second story, often involving the recognition of one's own contribution and the projection one was making onto others. The revolution is the integration of that fuller understanding into how one moves forward — in relationships, in work, and in identity. The book is structurally tighter than Daring Greatly and is widely used in therapy, in leadership coaching, and in personal recovery work after professional or relational setbacks.",
     },
     {
         "title": "Feeling Good: The New Mood Therapy",
@@ -630,7 +630,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1980,
         "genre": "psychology",
         "mood": ["fresh start", "self-discovery", "heartbreak recovery"],
-        "summary": "The book that popularized cognitive behavioral therapy, offering practical techniques to identify and correct distorted thinking patterns.",
+        "summary": "The book that popularized cognitive behavioral therapy, offering practical techniques to identify and correct distorted thinking patterns. David Burns trained under Aaron Beck, the founder of cognitive therapy, and Feeling Good was the first widely accessible treatment of CBT for general readers. The opening chapters introduce the core CBT premise that emotional disturbance is mediated by thought rather than caused directly by events, and walks through the catalogue of cognitive distortions — all-or-nothing thinking, mental filter, disqualifying the positive, mind-reading, fortune-telling, magnification, emotional reasoning, should statements, labeling, and personalization — that depressed and anxious thinking reliably exhibits. The bulk of the book is a structured workbook of disputation techniques, the daily mood log, behavior-activation schedules, and dozens of patient transcripts illustrating how a single distortion is identified and challenged in real time. Later chapters cover specific applications to procrastination, perfectionism, anger, criticism, and self-esteem. Subsequent editions have included sections on medication and on more recent CBT developments. The book has been clinically tested as a bibliotherapy intervention with measurable effects on mild-to-moderate depression and remains the single most-recommended self-help book for cognitive therapy.",
     },
     {
         "title": "The Noonday Demon: An Atlas of Depression",
@@ -638,7 +638,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2001,
         "genre": "psychology",
         "mood": ["existential crisis", "self-discovery", "late night reflection"],
-        "summary": "Solomon weaves personal narrative, science, and cultural history into the definitive exploration of depression in all its dimensions.",
+        "summary": "Solomon weaves personal narrative, science, and cultural history into the definitive exploration of depression in all its dimensions. Andrew Solomon spent years researching what would become the most comprehensive single-author book on depression in English, drawing on his own severe and recurrent illness, on hundreds of interviews with sufferers and clinicians, and on a wide reading of biology, psychiatric history, anthropology, philosophy, and policy. The book is organized topically rather than chronologically, with chapters on breakdowns, treatments, alternatives, populations (including poverty, suicide, and demographic disparities), addiction, history, and politics. Solomon's prose is literary rather than clinical, and his willingness to write candidly about his own breakdowns and recoveries gave readers a permission slip that an entirely third-person account would not have. The book has been heavily revised in subsequent editions to include developments in psychopharmacology, talk therapy, and emerging treatments including ketamine and psilocybin. It won the National Book Award and has been translated into more than two dozen languages, and remains the single most-recommended general-reader book for understanding depression at full depth — useful equally for clinicians, family members, and anyone enduring or recovering from the illness.",
     },
     {
         "title": "Lost Connections",
@@ -646,7 +646,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2018,
         "genre": "psychology",
         "mood": ["existential crisis", "self-discovery", "fresh start"],
-        "summary": "Hari argues that depression and anxiety are largely caused by disconnection from meaningful work, people, and values — not just brain chemistry.",
+        "summary": "Hari argues that depression and anxiety are largely caused by disconnection from meaningful work, people, and values — not just brain chemistry. Johann Hari, drawing on more than three years of reporting and on a long history of his own depression, builds a case that the mainstream serotonin-deficiency story is at best radically incomplete. He works through nine causes of depression and anxiety that the empirical literature treats as primary: disconnection from meaningful work, disconnection from other people, disconnection from meaningful values, disconnection from childhood trauma, disconnection from status and respect, disconnection from the natural world, disconnection from a hopeful or secure future, and the role of genes and brain changes as real but secondary contributors. He extends the argument with reporting from communities and treatment models that practice what he calls reconnection — the Berlin tenants who fought eviction together, the doctors of Kotti, the universal-basic-income trials, the participatory mental-health programs of South Korea. Critics have pushed back on his treatment of the antidepressant evidence, and the book is best read alongside more clinical sources. Even with that caveat it has become widely influential in expanding the public conversation about depression beyond pharmacology.",
     },
     {
         "title": "Maybe You Should Talk to Someone",
@@ -654,7 +654,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2019,
         "genre": "psychology",
         "mood": ["self-discovery", "heartbreak recovery", "rainy afternoon"],
-        "summary": "A therapist who becomes a patient reveals the surprising commonalities in how we all resist change and search for meaning.",
+        "summary": "A therapist who becomes a patient reveals the surprising commonalities in how we all resist change and search for meaning. Lori Gottlieb, a psychotherapist and former television writer, structures the book around a personal crisis — a sudden breakup at midlife — that drives her into therapy with a colleague she calls Wendell. The narrative interleaves four parallel arcs: her own work in Wendell's office, and her treatment of three of her own patients including a Hollywood producer in self-destructive denial, a young newlywed with a terminal cancer diagnosis, and a woman in her seventies who has decided she will die by suicide on her next birthday if her life has not changed. Gottlieb writes about therapy from both sides of the chair with unusual candor, demystifying the room without gossiping out of school, and the four storylines braid into a sustained meditation on the way humans resist the changes we say we want. The book is widely read by therapists, by clients beginning therapy who want to understand the work, and by general readers as memoir; it has also been adapted into a Showtime series. It remains the most popular contemporary book about the inside of a therapist's office.",
     },
     {
         "title": "It Didn't Start with You",
@@ -662,7 +662,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2016,
         "genre": "psychology",
         "mood": ["self-discovery", "heartbreak recovery"],
-        "summary": "Wolynn explores how inherited family trauma can manifest in our bodies and behaviors, and offers techniques to break the cycle.",
+        "summary": "Wolynn explores how inherited family trauma can manifest in our bodies and behaviors, and offers techniques to break the cycle. Mark Wolynn, the director of the Family Constellation Institute and a clinician who has spent two decades working with patients whose presenting symptoms (anxiety, depression, chronic pain, phobias, irrational fears around money or commitment) stubbornly resist conventional therapy, draws on developments in epigenetics, attachment research, and family-systems theory to argue that some of these patterns are inherited rather than developmentally acquired. The book opens with the empirical case for transgenerational transmission of trauma — the children of Holocaust survivors and of Dutch Hunger Winter survivors who carry measurable biological and behavioral signatures of events they did not experience — and develops a clinical framework for identifying inherited rather than personal trauma in a presenting patient. The middle of the book is the Core Language Approach, a structured interview Wolynn has refined over years of practice that surfaces the emotional language and somatic markers patients are unconsciously borrowing from earlier generations. The closing chapters apply the approach to specific conditions and to the difficult work of integrating ancestral material once it has surfaced. The book has become a standard text in family-constellation and somatic-trauma circles.",
     },
     {
         "title": "Complex PTSD: From Surviving to Thriving",
@@ -670,7 +670,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2013,
         "genre": "psychology",
         "mood": ["self-discovery", "heartbreak recovery", "fresh start"],
-        "summary": "Walker provides a comprehensive guide to understanding and recovering from the effects of chronic childhood trauma.",
+        "summary": "Walker provides a comprehensive guide to understanding and recovering from the effects of chronic childhood trauma. Pete Walker, a California psychotherapist who has both studied and personally lived complex post-traumatic stress disorder, argues that the diagnosis of CPTSD — distinct from the standard PTSD that follows a single discrete trauma — is the most accurate framework for understanding the long-term consequences of growing up in a family whose primary caregivers were themselves chronically dysregulated, abusive, or emotionally absent. The book lays out the four characteristic survival types Walker has observed in his practice — fight, flight, freeze, and the often-overlooked fawn (in which a child learns that compliance and caretaking are the only routes to safety) — and the predictable adult patterns each produces in romantic, professional, and friendship relationships. The recovery framework runs through cognitive, emotional, somatic, and relational stages with extensive practical exercises and a long catalogue of inner-critic distortions and counter-techniques that Walker compiles from his own caseload. The book is unusually candid about the chronicity of the work and the compounding effects on adult relationships, and has become one of the most-recommended popular volumes in trauma-informed therapy circles.",
     },
     {
         "title": "Self-Compassion",
@@ -678,7 +678,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2011,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start", "morning ritual"],
-        "summary": "Neff presents the science of self-compassion and practical exercises for treating yourself with the kindness you'd offer a friend.",
+        "summary": "Neff presents the science of self-compassion and practical exercises for treating yourself with the kindness you'd offer a friend. Kristin Neff, a University of Texas educational psychologist who developed the most-used self-compassion measurement scale and ran much of the empirical research that established the construct, builds the book around the three components of self-compassion: self-kindness rather than self-judgment in moments of failure, common humanity rather than isolation in noticing that everyone struggles, and mindfulness rather than over-identification with painful feelings. Neff distinguishes self-compassion from self-esteem and shows that the empirical literature actually favors self-compassion: it is associated with similar resilience and well-being outcomes without the contingency on superiority over others that self-esteem builds in. The book includes long sections on the developmental and cultural barriers to self-compassion (particularly for women and for high-achievers whose harsh inner critic was a key engine of their early success), a self-compassion break exercise that has become widely used in clinical practice, and a sustained meditation tradition Neff has built around the framework. The book is widely recommended in therapy, particularly for clients whose inner critic is a significant maintenance factor for depression or anxiety.",
     },
     {
         "title": "The Drama of the Gifted Child",
@@ -686,7 +686,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1979,
         "genre": "psychology",
         "mood": ["self-discovery", "heartbreak recovery", "late night reflection"],
-        "summary": "Miller reveals how emotionally attuned children learn to suppress their true selves to meet parental needs, carrying the wound into adulthood.",
+        "summary": "Miller reveals how emotionally attuned children learn to suppress their true selves to meet parental needs, carrying the wound into adulthood. Alice Miller, a Swiss psychoanalyst who broke from the orthodoxy of her training in mid-career, builds the book around the developmental mechanism by which a particularly attuned and gifted child — gifted in the sense of unusually skilled at sensing what other people need — comes to suppress their own emerging self in service of caregivers whose own development was incomplete. The result, Miller argues, is an adult who appears externally accomplished but feels internally hollow, dependent on others' approval, and structurally unable to identify their own desires because the developmental machinery for doing so was redirected before it stabilized. The book treats the adult experience of grandiosity, depression, and contempt as the predictable downstream consequences of this early diversion, and offers a framework for retrieving the buried authentic self. Miller is widely credited with naming what is now called the false-self adaptation as a recognizable adult clinical pattern, and with bringing the vocabulary of childhood emotional injury into both psychoanalytic and popular conversation. The book is short, dense, and frequently recommended to therapy clients whose presenting picture matches the gifted-child pattern she described.",
     },
     {
         "title": "Attached",
@@ -694,7 +694,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2010,
         "genre": "psychology",
         "mood": ["butterflies", "self-discovery", "heartbreak recovery"],
-        "summary": "Levine and Heller use attachment theory to explain why some relationships thrive and others fail, and how to identify your own style.",
+        "summary": "Levine and Heller use attachment theory to explain why some relationships thrive and others fail, and how to identify your own style. Amir Levine, a Columbia psychiatrist, and Rachel Heller, a therapist, take adult attachment theory — the line of research initiated by Mary Ainsworth and Cindy Hazan that extends Bowlby's work on infant attachment into adult romantic life — and translate it into a popular guide for laypeople navigating dating and partnership. The book identifies three primary attachment styles in adult relationships: secure, anxious, and avoidant, with a fourth disorganized style touched on briefly. The bulk of the text then walks through how each style behaves in courtship, conflict, and long-term partnership, with particular attention to the anxious-avoidant pairing in which each partner's coping strategy systematically triggers the other's worst pattern. The practical chapters cover how to identify a secure partner during dating, how to rebuild security if your own style leans anxious or avoidant, and when an apparent attachment style is actually responsive to the relationship dynamic rather than dispositional. The book has become the standard popular gateway to attachment theory and is widely used in couples counseling and dating coaching.",
     },
     {
         "title": "Running on Empty",
@@ -702,7 +702,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2012,
         "genre": "psychology",
         "mood": ["self-discovery", "heartbreak recovery"],
-        "summary": "Webb identifies childhood emotional neglect as a hidden force that leaves adults feeling empty, disconnected, and unable to name what's wrong.",
+        "summary": "Webb identifies childhood emotional neglect as a hidden force that leaves adults feeling empty, disconnected, and unable to name what's wrong. Jonice Webb, a Massachusetts clinical psychologist, names a category of family-of-origin experience she calls Childhood Emotional Neglect — the absence of consistent emotional attunement from primary caregivers, even in homes that may have been materially provided for and free of overt abuse — and argues that it is one of the most common and least-named drivers of adult presentations of low-grade depression, attachment difficulty, and the persistent sense of being defectively different from other people. Because neglect is the absence of something rather than the presence of an event, sufferers usually have nothing to point to when asked about their childhood and dismiss themselves as having had a normal upbringing while quietly suspecting they did not. The book provides an extensive self-assessment checklist, identifies the typical adult patterns that follow from childhood emotional neglect (alexithymia, difficulty with help-seeking, harsh self-judgment, chronic feelings of emptiness), and walks through a clinical framework for recovery built around emotion identification, self-care, and the slow rebuilding of internal attunement. It has become widely circulated in self-help and trauma-informed circles for naming an experience many readers had never seen articulated.",
     },
     # ── Evolutionary / Broader Science of Mind ────────────────────────────
     {
@@ -711,7 +711,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2002,
         "genre": "psychology",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Pinker dismantles the idea that the mind is a blank slate, arguing that human nature includes innate cognitive and emotional predispositions.",
+        "summary": "Pinker dismantles the idea that the mind is a blank slate, arguing that human nature includes innate cognitive and emotional predispositions. Steven Pinker takes aim at three doctrines he labels the Blank Slate (the mind has no innate structure), the Noble Savage (people are naturally peaceful until civilization corrupts them), and the Ghost in the Machine (the soul is independent of the brain) — and argues that all three remain dominant in the humanities and policy circles even as the cognitive and behavioral sciences have piled up evidence against them. He surveys the empirical literature on heritability, gender differences, language acquisition, evolutionary psychology, and behavior genetics, and addresses the political and moral anxieties that have made each finding controversial. The middle section of the book takes on the four 'hot buttons' — politics, violence, gender, and parenting — where the gap between scientific consensus and educated public opinion is widest, while the closing section argues that an honest reckoning with human nature is more conducive to humane policy than the wishful denials it often replaces. The book is one of Pinker's most influential and most contested, and remains a central popular statement of the case against strong cultural-determinist views of the mind.",
     },
     {
         "title": "How the Mind Works",
@@ -719,7 +719,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1997,
         "genre": "psychology",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Pinker synthesizes cognitive science and evolutionary psychology to explain vision, emotion, humor, and consciousness.",
+        "summary": "Pinker synthesizes cognitive science and evolutionary psychology to explain vision, emotion, humor, and consciousness. Steven Pinker's most ambitious survey treats the mind as a system of computational organs evolved by natural selection to solve the recurring adaptive problems faced by ancestral hunter-gatherers, with each of those organs producing its own characteristic outputs in modern environments those evolutionary pressures could not have anticipated. The book is organized as a tour of major faculties — perception, reasoning, language, social cognition, emotion, family bonds, mating, religion, art, and humor — with each chapter combining the experimental literature on how the faculty actually works with an evolutionary-psychology argument about why it would have evolved that way. Pinker writes with characteristic fluency and the scope is broad enough that almost every reader finds new material. Critics have argued that some of the evolutionary stories are speculative and difficult to falsify, and the book is best read alongside skeptical work in the same area, but it remains one of the most readable single-author surveys of cognitive science available, and is widely used as a popular companion to undergraduate courses in cognitive psychology, evolutionary psychology, and philosophy of mind.",
     },
     {
         "title": "The Selfish Gene",
@@ -735,7 +735,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1994,
         "genre": "psychology",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Wright applies evolutionary psychology to explain jealousy, love, status-seeking, and morality through the lens of Darwinian selection.",
+        "summary": "Wright applies evolutionary psychology to explain jealousy, love, status-seeking, and morality through the lens of Darwinian selection. Robert Wright takes evolutionary psychology — the application of natural-selection thinking to the structure of the human mind — and frames it as the long-overdue Darwinian revolution in the human sciences. The book uses Charles Darwin's own life as a recurring narrative thread, with chapters tracking Darwin's marriage, religious doubts, and intellectual evolution as illustrations of the same evolved psychological mechanisms the theoretical chapters describe. Wright works through the now-canonical applications — sexual jealousy and parental investment, the cheater-detection module of social cognition, the role of status in male and female mating strategies, the evolved foundations of moral sentiment — and argues that recognizing these mechanisms as evolved adaptations to ancestral environments offers the strongest available framework for understanding why the modern world is so often a poor environmental match for the minds that have to live in it. Some specific evolutionary-psychology claims have been subsequently moderated, but the book remains an unusually well-written introduction to the field and is widely used as a companion to The Selfish Gene and How the Mind Works.",
     },
     {
         "title": "Why Buddhism Is True",
@@ -743,7 +743,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2017,
         "genre": "psychology",
         "mood": ["morning ritual", "self-discovery", "Sunday morning"],
-        "summary": "Wright argues that evolutionary psychology validates core Buddhist insights about the illusion of self and the roots of suffering.",
+        "summary": "Wright argues that evolutionary psychology validates core Buddhist insights about the illusion of self and the roots of suffering. Robert Wright builds the book around an unusual triangulation between three bodies of knowledge: the contemplative tradition of early Buddhism (especially the Pali canon teachings on the not-self and the conditioned origins of suffering), the empirical literature on cognitive psychology and emotion regulation, and the evolutionary psychology framework he developed in The Moral Animal. The unifying claim is that the Buddhist diagnosis of human suffering — that we are wired to grasp at impermanent pleasures, to avoid impermanent pains, and to misread the world through self-justifying constructions of self — is exactly what one would predict from a mind shaped by natural selection for inclusive fitness rather than for accurate self-knowledge. The middle chapters cover the modern empirical literature on meditation, the neuroscience of emotional reactivity, and the cross-cultural anthropology of Buddhist practice. Wright also writes from his own experience attending intensive vipassana retreats and includes a candid account of how the practice affected him. The book has become a popular bridge between contemplative practice and cognitive science.",
     },
     {
         "title": "Irrationally Yours",
@@ -751,7 +751,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2015,
         "genre": "psychology",
         "mood": ["beach read", "self-discovery"],
-        "summary": "Ariely answers real advice-column questions with behavioral science, offering witty insights into love, money, and daily dilemmas.",
+        "summary": "Ariely answers real advice-column questions with behavioral science, offering witty insights into love, money, and daily dilemmas. The book collects Dan Ariely's responses to readers of his Wall Street Journal advice column, in which laypeople sent in personal dilemmas and Ariely offered behavioral-economics-grounded responses rather than the more typical Dear-Abby moral counsel. The format works unusually well because the questions cover the granular texture of actual life — should I be jealous when my partner does something annoying with their phone, should I follow up after a job interview, should I keep buying lottery tickets, should I buy the extended warranty — and Ariely's responses anchor each in the relevant experimental literature on loss aversion, hyperbolic discounting, sunk-cost reasoning, social-norm framing, identifiable-victim effects, and dozens of other patterns. The book is intentionally light: each piece is two or three pages, the tone is conversational, and the cartoons by William Haefeli that accompany each piece keep it from settling into lecture mode. It functions as the easiest possible entry point into Ariely's earlier and harder books and as a way to build the habit of recognizing predictable irrationality in one's own daily decisions.",
     },
     {
         "title": "The Psychopath Test",
@@ -759,7 +759,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2011,
         "genre": "psychology",
         "mood": ["beach read", "late night reflection"],
-        "summary": "Ronson investigates the madness industry and asks how we decide who is sane and who is not.",
+        "summary": "Ronson investigates the madness industry and asks how we decide who is sane and who is not. Jon Ronson, a Welsh journalist whose work has wandered through the territory of conspiracy theorists, public shamings, and the strange edges of contemporary belief, structures the book around the Hare Psychopathy Checklist — the twenty-item instrument developed by the Canadian psychologist Robert Hare that has become the most-used measure of psychopathy in clinical and forensic settings. Ronson trains on the checklist, then sets out to apply it (sometimes seriously, sometimes mischievously) to a series of unusual subjects: a Broadmoor patient who feigned mental illness to avoid prison and now cannot get out, a former CEO whose decisive cost-cutting may have been pathological, the Scientologists who believe psychiatry is a global scam, a confessed recovered psychopath, and an anti-psychiatric movement that argues much of what gets diagnosed as mental disorder is normal human variation pathologized for profit. The book's tone is sometimes uncomfortably comic, but the underlying questions are serious: who has the authority to label someone insane, what is gained and lost by doing so, and what happens when the people doing the labeling have their own incentives. It is widely read both inside and outside clinical psychology.",
     },
     {
         "title": "Mistakes Were Made (But Not by Me)",
@@ -767,7 +767,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2007,
         "genre": "psychology",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "Tavris and Aronson explain how cognitive dissonance drives self-justification, from everyday excuses to wrongful convictions.",
+        "summary": "Tavris and Aronson explain how cognitive dissonance drives self-justification, from everyday excuses to wrongful convictions. Carol Tavris, a social psychologist and journalist, and Elliot Aronson, the dean of dissonance research, trace the long shadow that Festinger's mid-1950s theory of cognitive dissonance casts across the texture of human life. The opening chapters explain the mechanism — when behavior contradicts self-concept, it is the self-concept that quietly bends to absorb the contradiction rather than the behavior — and present the now-canonical experimental evidence. The book's contribution is in extending the framework beyond the laboratory into specific high-stakes domains. Long chapters apply dissonance reduction to wrongful criminal convictions (where prosecutors, having committed publicly to a suspect, become unable to revise their belief in the face of exonerating evidence), to medical errors that get repeated rather than investigated, to memory wars in therapy, to abusive relationships in which both parties construct stories that justify their continued participation, and to political polarization. Each chapter closes with practical suggestions for noticing dissonance reduction in oneself before it has hardened into commitment. The book has been adopted as standard reading in legal-system reform circles and in fields where confident expert judgment must remain revisable.",
     },
     {
         "title": "The Invisible Gorilla",
@@ -775,7 +775,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2010,
         "genre": "psychology",
         "mood": ["self-discovery", "productivity"],
-        "summary": "The researchers behind the famous inattention experiment reveal six everyday illusions that deceive our minds.",
+        "summary": "The researchers behind the famous inattention experiment reveal six everyday illusions that deceive our minds. Christopher Chabris and Daniel Simons, the cognitive psychologists who designed the now-iconic 'invisible gorilla' experiment in which roughly half of viewers fail to notice a person in a gorilla suit walking across a basketball-passing scene, take their famous demonstration of inattentional blindness as the opening for a broader argument. They identify six everyday illusions of human cognition: the illusion of attention (we fail to notice obvious things outside our focus), the illusion of memory (our recollections are confidently wrong), the illusion of confidence (the most confident speaker is usually not the most competent), the illusion of knowledge (we think we understand systems we cannot actually explain), the illusion of cause (we see causal relationships in coincidental patterns), and the illusion of potential (we believe latent abilities can be unlocked through tricks like the Mozart Effect). Each chapter pairs the experimental literature with consequential real-world examples — eyewitness misidentifications, medical misdiagnoses, plane-crash investigations, business decisions made by overconfident executives. The book remains one of the most accessible introductions to the limits of human cognition.",
     },
     {
         "title": "Influence Is Your Superpower",
@@ -783,7 +783,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2022,
         "genre": "psychology",
         "mood": ["hustle mode", "career pivot", "fresh start"],
-        "summary": "A Yale professor shares research-backed techniques for ethical persuasion, from framing requests to harnessing the magic of asking.",
+        "summary": "A Yale professor shares research-backed techniques for ethical persuasion, from framing requests to harnessing the magic of asking. Zoe Chance, who teaches the most-popular elective at the Yale School of Management, distills two decades of teaching and research into a system for influence that begins with the deliberately disarming claim that most professional persuasion is harder than it needs to be because askers do not actually ask. The book's first move is to install what she calls the Magic Question — 'What would it take?' — which converts negotiations from positional skirmishes into joint problem-solving conversations. From there she works through the cognitive science of frame setting, charisma, and behavioral momentum, with chapters drawing on Robert Cialdini's work on social proof and reciprocity, on Adam Galinsky's research on perspective-taking, and on her own studies of negotiation. Chance is unusually candid about the ethical dimension, distinguishing techniques that work by aligning interests from those that work by exploiting cognitive blind spots, and recommending only the former. Practical sections include scripts for difficult conversations, frameworks for asking for raises and resources, and guidance on building reputational capital across long time horizons. The book has become a standard supplement to negotiation courses for the post-Getting-to-Yes generation.",
     },
     {
         "title": "Subliminal: How Your Unconscious Mind Rules Your Behavior",
@@ -791,7 +791,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2012,
         "genre": "psychology",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "Mlodinow reveals how unconscious processes shape our memories, relationships, judgments, and sense of self.",
+        "summary": "Mlodinow reveals how unconscious processes shape our memories, relationships, judgments, and sense of self. Leonard Mlodinow, a theoretical physicist who has co-authored books with Stephen Hawking, turns his popular-science instincts onto the cognitive science of unconscious processing. The book is structured as a tour of laboratory phenomena — change blindness, priming, source confusion, the way memory is reconstructed rather than retrieved, the surprising amount of social judgment that happens before any conscious deliberation kicks in. Mlodinow presents each phenomenon through a memorable experiment: subjects whose strangers' faces are subliminally paired with positive associations subsequently rate them more trustworthy, jurors whose framing of a question changes their later memory of speed estimates, professionals whose hiring decisions are influenced by handshake firmness in the first three seconds. He extends the line into stereotype threat, implicit bias, and consumer behavior. The book is more breadth than depth and is best read alongside Daniel Kahneman's Thinking, Fast and Slow, but it covers some experimental terrain Kahneman does not, particularly around social cognition, and is written with the irreverence Mlodinow brings to all his popular work. It has become a popular gateway to the literature on automaticity in human cognition.",
     },
     {
         "title": "Scattered Minds",
@@ -799,7 +799,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1999,
         "genre": "psychology",
         "mood": ["self-discovery", "heartbreak recovery"],
-        "summary": "Maté reframes ADHD as a developmental issue rooted in early stress and attachment, offering compassionate approaches to healing.",
+        "summary": "Maté reframes ADHD as a developmental issue rooted in early stress and attachment, offering compassionate approaches to healing. Gabor Maté, a Vancouver family physician who diagnosed himself and two of his children with ADHD as adults, argues that the standard genetic-deficit-of-dopamine model misses the developmental context in which the condition characteristically emerges: early exposure to chronically stressed caregivers whose own attentional bandwidth was preoccupied. He treats the condition not as a brain disease in the conventional sense but as a developmental adaptation to early environmental conditions that shaped how the prefrontal regulatory system organized itself. He is careful not to dismiss the real biological substrate or the proper place of medication, but argues that medication alone misses what he sees as the underlying healing work — repairing the early attachment bandwidth, processing buried emotion, and rebuilding the regulatory capacities that did not develop on schedule. The book includes long sections on the cultural environment that produces an apparent epidemic, on the experience of ADHD adults in relationships, and on parenting strategies for ADHD children. Read together with When the Body Says No and In the Realm of Hungry Ghosts, it gives the fullest picture of Maté's developmental-attachment view of mental health.",
     },
     {
         "title": "In the Realm of Hungry Ghosts",
@@ -807,7 +807,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2008,
         "genre": "psychology",
         "mood": ["existential crisis", "self-discovery", "late night reflection"],
-        "summary": "Maté draws on neuroscience and his work with addicts in Vancouver's Downtown Eastside to argue that addiction is rooted in childhood pain, not character.",
+        "summary": "Maté draws on neuroscience and his work with addicts in Vancouver's Downtown Eastside to argue that addiction is rooted in childhood pain, not character. Gabor Maté spent twelve years as the staff physician at the Portland Hotel Society, a harm-reduction clinic for the most severely addicted residents of Vancouver's Downtown Eastside neighborhood, where he treated patients with active heroin, cocaine, and crystal-meth addictions in the context of homelessness, HIV, hepatitis C, and severe trauma histories. The book combines patient portraits — drawn with extraordinary humanity — with a long argument that addiction cannot be understood through the lens of moral failure or genetic inheritance alone, and that virtually every patient he treats carries an early-childhood trauma history that the addiction is, at the level of biology, an attempt to medicate. He extends the framework outward to so-called soft addictions — work, food, shopping, sex, screens — that operate on the same neurochemistry without the same legal status, and to the structural and economic conditions that funnel particular populations into the highest-risk forms of self-medication. The book has become one of the most influential statements of the trauma-informed view of addiction in the contemporary clinical and public-health conversation.",
     },
     # ── Additional Psychology ─────────────────────────────────────────────
     {
@@ -816,7 +816,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1973,
         "genre": "psychology",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Becker argues that the terror of death is the hidden mainspring of human activity, shaping everything from art to war.",
+        "summary": "Becker argues that the terror of death is the hidden mainspring of human activity, shaping everything from art to war. Ernest Becker, an American cultural anthropologist who wrote the book on his deathbed, synthesizes Kierkegaard, Freud, Otto Rank, and Norman O. Brown into the claim that human consciousness is uniquely cursed: we are biological creatures who know that we will die, and we cannot live with that knowledge intact. To survive psychologically we construct what Becker calls immortality projects — heroic self-conceptions, religious worldviews, national identifications, monumental achievements — that allow us to feel we are participating in something larger than our own perishable bodies. The book argues that essentially all of high human culture, from the building of civilizations to the creation of art, is fueled by the unconscious effort to escape this terror, and that essentially all of low human conduct, from war to scapegoating, is fueled by what happens when one immortality project encounters another. Becker's argument was extended into terror-management theory, which has produced one of the most replicable lines of experimental social-psychology research of the late twentieth century. The book won the 1974 Pulitzer Prize for general nonfiction.",
     },
     {
         "title": "Escape from Freedom",
@@ -824,7 +824,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1941,
         "genre": "psychology",
         "mood": ["existential crisis", "late night reflection", "self-discovery"],
-        "summary": "Fromm argues that modern freedom creates anxiety, driving people toward authoritarianism or destructive conformity.",
+        "summary": "Fromm argues that modern freedom creates anxiety, driving people toward authoritarianism or destructive conformity. Erich Fromm, a German-Jewish social psychologist who fled the Nazi rise to power and wrote this book in American exile in 1941, sets out to explain how a country at the height of European modernity could deliver itself voluntarily to fascism. His thesis is that modernity dismantled the rigid social structures of medieval life that had given individuals a place — uncomfortable but secure — and replaced them with a freedom that proved psychologically intolerable for many. Faced with the loneliness, smallness, and responsibility of free individual existence, people seek to escape the burden through three characteristic mechanisms: authoritarianism (submission to or domination of others), destructiveness (the obliteration of what threatens the self), and automaton conformity (becoming whatever the surrounding culture demands). Fromm's account of fascism is the book's most famous application, but he extends it to consumer culture, religion, and the everyday corporate life of his adopted country. The book launched what became the Frankfurt School's social-psychological tradition and has been periodically rediscovered in moments of populist upheaval, including the 2010s revival when its analysis of escape from freedom regained urgent relevance.",
     },
     {
         "title": "The Art of Loving",
@@ -832,7 +832,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1956,
         "genre": "psychology",
         "mood": ["self-discovery", "butterflies", "morning ritual"],
-        "summary": "Fromm argues that love is not a sentiment but an art that requires knowledge, effort, and practice to master.",
+        "summary": "Fromm argues that love is not a sentiment but an art that requires knowledge, effort, and practice to master. Erich Fromm's most popular book treats love the way one would treat carpentry or musicianship — as a discipline with theory, technique, and progressive mastery — and contends that the modern Western treatment of love as a feeling that befalls one and either lasts or doesn't is the central reason most adult relationships fail. He distinguishes the active orientations of love (giving, caring, responsibility, respect, knowledge) from the passive states the culture tends to confuse them with (being-loved, falling, attachment, infatuation), and writes long sections on the kinds of love beyond romantic love: brotherly love, motherly love, self-love, and love of God. Fromm is sharply critical of the consumer culture in which love had become, in his view, another good to be acquired and stored rather than practiced. The closing chapters propose a humanistic discipline of loving — the cultivation of attention, the rejection of narcissism, the practice of solitude, the orientation toward the other as a full subject. The book has been continuously in print since 1956 and remains one of the most widely read non-religious works on love.",
     },
     {
         "title": "The Sane Society",
@@ -840,7 +840,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1955,
         "genre": "psychology",
         "mood": ["existential crisis", "self-discovery"],
-        "summary": "Fromm diagnoses modern capitalist society as pathological and argues for a humanistic communitarian alternative.",
+        "summary": "Fromm diagnoses modern capitalist society as pathological and argues for a humanistic communitarian alternative. Erich Fromm extends his earlier social-psychology work into a sustained critique of mid-twentieth-century mass society, arguing that the criterion of mental health cannot be conformity to a society that is itself sick. He works through what he calls the pathology of normalcy: the dependence of consumer capitalism on producing perpetually unsatisfied individuals; the suppression of authentic spontaneity in workplace and political life; the alienation of human beings from their work, their communities, and ultimately themselves. Drawing on Marx as much as on Freud, he distinguishes alienation from neurosis: many people who appear functional by the standards of bureaucratic life are nonetheless living in a state of low-grade alienation that is not noticed precisely because it is universal. The closing portion of the book proposes humanistic communitarian socialism — small-scale, participatory, decentralized, and oriented toward worker self-management and meaningful community — as the structural alternative most likely to produce psychologically healthy human beings. The book is a key text of mid-century critical theory and remains read in social-psychology, political-philosophy, and intellectual-history courses concerned with the affective costs of modern economic organization.",
     },
     {
         "title": "Games People Play",
@@ -848,7 +848,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1964,
         "genre": "psychology",
         "mood": ["self-discovery", "daily grind", "career pivot"],
-        "summary": "Berne reveals the hidden transactions behind everyday social interactions, introducing transactional analysis to a popular audience.",
+        "summary": "Berne reveals the hidden transactions behind everyday social interactions, introducing transactional analysis to a popular audience. Eric Berne, a Canadian-American psychiatrist who broke from psychoanalytic orthodoxy to develop the school he called transactional analysis, builds the book around the observation that most social interactions are not the spontaneous events they appear to be but the predictable execution of scripts both parties have rehearsed since childhood. He distinguishes the three ego states most TA practitioners now know — Parent, Adult, and Child — and identifies a typology of ulterior transactions in which the words spoken at the surface level mask a different transaction underneath, with characteristic payoffs and switches. The book's most famous chapters catalogue specific games — Why Don't You/Yes But, If It Weren't For You, Now I've Got You, Schlemiel, See What You Made Me Do, Wooden Leg — each diagrammed with its standard moves, payoffs, and underlying existential position. It became one of the largest popular psychology hits of the 1960s and made transactional analysis briefly central to American self-improvement culture. The book remains useful as a vocabulary for naming repeating relational patterns and as a doorway into the broader TA literature for therapists and lay readers alike.",
     },
     {
         "title": "On Becoming a Person",
@@ -856,7 +856,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1961,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start", "morning ritual"],
-        "summary": "Rogers outlines his person-centered approach to therapy, arguing that empathy, genuineness, and unconditional positive regard enable growth.",
+        "summary": "Rogers outlines his person-centered approach to therapy, arguing that empathy, genuineness, and unconditional positive regard enable growth. Carl Rogers, a leading figure of mid-century American humanistic psychology and one of the founders of the encounter-group and client-centered-therapy traditions, gathered the book from twenty-one previously published papers and lectures spanning two decades of his clinical practice and research at Chicago and Wisconsin. The opening section is the autobiographical reconstruction of how he arrived at his core conviction that the therapist's job is not to direct, interpret, or instruct but to provide the relational conditions under which the client's own innate movement toward growth can resume. The middle sections work out the theoretical and empirical apparatus — the three core conditions (empathic understanding, congruence, and unconditional positive regard), the concept of the fully functioning person, and the early outcome research that helped establish therapy as a legitimate object of empirical study. The closing section applies the framework to education, parenting, and the conduct of organizations. The book has been in print continuously since 1961 and remains the central popular statement of person-centered therapy, foundational reading in humanistic psychology and counseling training.",
     },
     {
         "title": "Toward a Psychology of Being",
@@ -864,7 +864,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1962,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start"],
-        "summary": "Maslow expands his hierarchy of needs to explore peak experiences and self-actualization as the highest human motivations.",
+        "summary": "Maslow expands his hierarchy of needs to explore peak experiences and self-actualization as the highest human motivations. Abraham Maslow, the founder of humanistic psychology and one of the architects of what would later become positive psychology, takes the basic hierarchy he had introduced two decades earlier and pushes the analysis upward, devoting the bulk of the book to the upper-tier motivations he believed had been systematically neglected by both behaviorism and psychoanalysis. The book develops his concept of B-values (being-values, in contrast to D-values, deficiency-values) — the goods that self-actualizing people pursue not because something is missing but because the pursuit is intrinsically satisfying. He devotes long chapters to peak experiences, the temporary states of unitive, ego-transcending awareness reported by self-actualizers, and to the everyday plateau experiences that less peak-oriented people are still capable of cultivating. The closing chapters apply the framework to education, management, and creativity. The book is the most accessible primary statement of Maslow's mature thinking, written in the relaxed, exploratory voice of a clinician thinking aloud rather than the more formal expository voice of his earlier theoretical writing. It remains foundational reading in humanistic psychology, transpersonal psychology, and the intellectual prehistory of positive psychology.",
     },
     {
         "title": "The Farther Reaches of Human Nature",
@@ -872,7 +872,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1971,
         "genre": "psychology",
         "mood": ["self-discovery", "morning ritual"],
-        "summary": "Maslow's posthumous essays on creativity, values, and transcendence push humanistic psychology toward its farthest horizons.",
+        "summary": "Maslow's posthumous essays on creativity, values, and transcendence push humanistic psychology toward its farthest horizons. Published the year after Abraham Maslow's death, the volume collects the essays and lectures of his final decade in which he was working through what he had begun to call the fourth force in psychology — a transpersonal psychology that would treat self-transcendent experience, peak states, and the cultivation of B-values as serious objects of empirical study rather than as the territory of religion alone. The essays are uneven in finish, since several were drafted as drafts or as conference talks Maslow was still revising, but the trajectory is clear: a sustained extension of the hierarchy of needs above self-actualization to a sixth tier of self-transcendence that integrates the peak-experience research with explicit ethical commitment to causes beyond the individual self. He pulls together threads from Eastern contemplative traditions, from his own earlier studies of self-actualizing individuals, and from the human-potential movement his work had helped to spawn. The book is essential for understanding how humanistic psychology evolved into transpersonal psychology, and is read alongside Toward a Psychology of Being as the matched pair of Maslow's mature theoretical statements.",
     },
     {
         "title": "Influence Is Your Superpower",
@@ -880,7 +880,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2022,
         "genre": "psychology",
         "mood": ["hustle mode", "career pivot", "fresh start"],
-        "summary": "A Yale professor shares research-backed techniques for ethical persuasion, from framing requests to harnessing the magic of asking.",
+        "summary": "A Yale professor shares research-backed techniques for ethical persuasion, from framing requests to harnessing the magic of asking. Zoe Chance, who teaches the most-popular elective at the Yale School of Management, distills two decades of teaching and research into a system for influence that begins with the deliberately disarming claim that most professional persuasion is harder than it needs to be because askers do not actually ask. The book's first move is to install what she calls the Magic Question — 'What would it take?' — which converts negotiations from positional skirmishes into joint problem-solving conversations. From there she works through the cognitive science of frame setting, charisma, and behavioral momentum, with chapters drawing on Robert Cialdini's work on social proof and reciprocity, on Adam Galinsky's research on perspective-taking, and on her own studies of negotiation. Chance is unusually candid about the ethical dimension, distinguishing techniques that work by aligning interests from those that work by exploiting cognitive blind spots, and recommending only the former. Practical sections include scripts for difficult conversations, frameworks for asking for raises and resources, and guidance on building reputational capital across long time horizons. The book has become a standard supplement to negotiation courses for the post-Getting-to-Yes generation.",
     },
     {
         "title": "Rapt: Attention and the Focused Life",
@@ -888,7 +888,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2009,
         "genre": "psychology",
         "mood": ["productivity", "morning ritual", "self-discovery"],
-        "summary": "Gallagher argues that the quality of your life depends on what you pay attention to, drawing on neuroscience and psychology.",
+        "summary": "Gallagher argues that the quality of your life depends on what you pay attention to, drawing on neuroscience and psychology. Winifred Gallagher, who has written several other popular books on psychology and behavior, opens with the personal experience that motivated the book: her diagnosis with a serious cancer that focused her attention sharply on the question of how to use whatever time remained. Drawing on attention-research findings from neuroscientists including Michael Posner and Steven Yantis, on the longitudinal happiness research of Mihaly Csikszentmihalyi, and on the body of work on rumination and depression by researchers including Susan Nolen-Hoeksema, she builds the case that subjective experience is, to a far greater degree than most people recognize, simply the contents of one's own attention. From that premise the book extends to a series of practical chapters on the deliberate management of attention: how to enter and sustain flow, how to manage a wandering mind, how relationships and parenting are shaped by what one selects to notice in others, and how digital media reshape the ambient attention environment. The book is a thoughtful complement to Csikszentmihalyi and Goleman, less prescriptive but more philosophically grounded.",
     },
     {
         "title": "Mindset: The New Psychology of Success",
@@ -896,7 +896,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2006,
         "genre": "psychology",
         "mood": ["fresh start", "hustle mode", "career pivot"],
-        "summary": "Dweck reveals how a growth mindset — the belief that abilities can be developed — transforms achievement in school, work, and life.",
+        "summary": "Dweck reveals how a growth mindset — the belief that abilities can be developed — transforms achievement in school, work, and life. Carol Dweck, a Stanford developmental psychologist, distills three decades of research into the contrast between fixed and growth mindsets — the implicit beliefs people hold about whether intelligence and ability are essentially stable traits or capacities that can be developed through effort, strategy, and feedback. The book documents the surprisingly large effects this single belief has on motivation, persistence, and resilience: students with a growth mindset choose harder problems, sustain effort through failure, and improve more across a school year than students with a fixed mindset and identical baseline ability. Dweck extends the framework into business — including a famous treatment of Enron's fixed-mindset culture as the root of its accounting catastrophe — and into sports, parenting, and romantic relationships. The middle chapters offer practical interventions for cultivating a growth mindset in oneself and one's children, particularly around the kind of praise that builds a fixed identity ('You're so smart') versus the kind that builds a growth orientation ('You worked hard on that strategy'). The book has been heavily adopted in schools globally and is one of the most cited popular psychology titles of the last twenty years.",
     },
     {
         "title": "The Wisdom of Insecurity",
@@ -904,7 +904,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1951,
         "genre": "psychology",
         "mood": ["existential crisis", "self-discovery", "morning ritual"],
-        "summary": "Watts argues that our anxiety stems from trying to make the fluid moment permanent, and that embracing insecurity is the path to fulfillment.",
+        "summary": "Watts argues that our anxiety stems from trying to make the fluid moment permanent, and that embracing insecurity is the path to fulfillment. Alan Watts, the British-American philosopher who became the most popular Western interpreter of Zen Buddhism in the mid-twentieth century, builds the book around what he calls the law of reversed effort: the harder we try to secure ourselves against impermanence — through accumulation, control, certainty, religious belief, or scientific progress — the more we accentuate the very anxiety we are trying to escape. He works through Buddhist, Taoist, and Christian-mystic sources to argue that the self that is trying to be made secure is itself a fiction the mind has constructed by abstracting from the continuously flowing field of experience, and that the only durable peace comes from recognizing that the present moment is the only ground there ever is. Several of the book's chapters anticipate themes Watts would expand on for the rest of his career: the misuse of language as a tool that creates the illusion of separable selves and separable moments, the futility of self-improvement projects undertaken by the ego on the ego, and the unsought freedom that arrives when one stops trying to grasp the present. It remains one of his most read books.",
     },
     {
         "title": "Stumbling on Happiness",
@@ -920,7 +920,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2013,
         "genre": "psychology",
         "mood": ["fresh start", "self-discovery", "morning ritual"],
-        "summary": "A dialogue between a philosopher and a youth explores Adlerian psychology, arguing that happiness comes from the courage to be free of others' expectations.",
+        "summary": "A dialogue between a philosopher and a youth explores Adlerian psychology, arguing that happiness comes from the courage to be free of others' expectations. Ichiro Kishimi and Fumitake Koga's Japanese bestseller, written as five Socratic dialogues between an unnamed youth and a philosopher, popularizes the work of Alfred Adler — Freud's contemporary and rival, whose individual psychology emphasized social interest, life tasks, and the human need for belonging — for a contemporary audience that mostly knows Freud and Jung but rarely Adler. The book's central argument is that essentially all human suffering is interpersonal, and that the route to freedom runs through what Kishimi calls separation of tasks: the rigorous distinction between what is your responsibility and what is someone else's, with deliberate refusal to claim the latter or surrender the former. Other chapters cover Adler's theleological view of behavior (in which causes from the past are reframed as purposes in the present), the courage to be ordinary, and the move from a life lived for approval to a life lived for one's own values. The dialogue form keeps the prose unusually accessible, and the book has sold tens of millions of copies in Japan and Korea since publication and continues to spread internationally.",
     },
     {
         "title": "Wired for Love",
@@ -928,7 +928,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2012,
         "genre": "psychology",
         "mood": ["butterflies", "self-discovery", "heartbreak recovery"],
-        "summary": "Tatkin uses neuroscience and attachment theory to explain how couples can create secure-functioning relationships.",
+        "summary": "Tatkin uses neuroscience and attachment theory to explain how couples can create secure-functioning relationships. Stan Tatkin, a couples therapist who developed the Psychobiological Approach to Couple Therapy (PACT), integrates adult attachment theory, affective neuroscience, and arousal regulation into a clinical framework for how partners can move out of the reactive patterns adult attachment styles produce in stressful interactions. He distinguishes anchors (the secure-functioning archetype), islands (avoidants who learned early that other people were unsafe), and waves (the anxiously attached who learned that other people were inconsistent), and works through the predictable pairings each of those styles generates in adult relationships. The book's most useful contribution is probably the concept of the couple bubble: a deliberate two-person agreement to put each other's nervous systems first in the world, with practical commitments around morning departures, reconnection rituals, fight repair, and the management of in-laws and exes. The closing chapters cover how to redesign daily transitions, conflict handling, and bedtime routines to keep both partners' arousal systems regulated rather than chronically activated. The book is widely used in couples therapy and is the most accessible popular gateway to PACT and its psychobiological framing.",
     },
     {
         "title": "Hold Me Tight",
@@ -936,7 +936,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2008,
         "genre": "psychology",
         "mood": ["butterflies", "heartbreak recovery", "self-discovery"],
-        "summary": "Johnson presents emotionally focused therapy for couples, showing how recognizing attachment needs can transform relationships.",
+        "summary": "Johnson presents emotionally focused therapy for couples, showing how recognizing attachment needs can transform relationships. Sue Johnson, the principal developer of Emotionally Focused Therapy for Couples (EFT), translates her clinical model for general readers in what has become the most widely circulated popular book on the EFT framework. Her central claim is that adult romantic partnerships are organized around attachment needs every bit as primary as those between parents and infants, and that nearly all chronic conflict between long-term partners can be traced back to one or both partners experiencing the other as inaccessible, unresponsive, or unengaged in moments where they had a real need for connection. The book is structured around seven 'transformative conversations' that map the EFT clinical sequence: recognizing the demon dialogues couples fall into, finding the raw spots, revisiting a rocky moment, holding tight, forgiving injuries, bonding through sex and touch, and keeping love alive. Each conversation includes detailed dialogue, practical exercises, and case studies drawn from Johnson's clinical practice. The book is widely used both as a self-help workbook for couples and as the recommended popular companion to EFT therapy when one partner is in clinical work and the other is not.",
     },
     {
         "title": "The Interpretation of Cultures",
@@ -944,7 +944,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1973,
         "genre": "psychology",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Geertz introduces thick description as a method for understanding human behavior through the webs of meaning people construct.",
+        "summary": "Geertz introduces thick description as a method for understanding human behavior through the webs of meaning people construct. Clifford Geertz, an American cultural anthropologist whose fieldwork in Indonesia and Morocco shaped a generation of social-science methodology, gathered the volume from essays written across the 1960s and early 1970s. The book's most influential single contribution is the concept of thick description, borrowed from Gilbert Ryle: the difference between recording the bare physical fact that a person blinked and rendering the full layered meaning of that blink in context — voluntary or involuntary, signal or twitch, ironic or earnest — within the symbolic universe its participants inhabit. Geertz argues that human behavior cannot be understood from the outside through behaviorist or structural-functional methods alone, and that the cultural anthropologist's task is to work outward from concrete events into the webs of significance the participants themselves draw upon. The book includes the essay 'Deep Play: Notes on the Balinese Cockfight,' often cited as the canonical example of the method, and chapters on religion as a cultural system, common sense as a cultural system, and ideology. The volume reshaped American anthropology in the late twentieth century and remains foundational for cultural studies, ethnography, and qualitative social science more broadly.",
     },
     {
         "title": "Stumbling on Happiness",
@@ -960,7 +960,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2007,
         "genre": "psychology",
         "mood": ["fresh start", "self-discovery", "morning ritual"],
-        "summary": "Harris introduces Acceptance and Commitment Therapy, arguing that the pursuit of happiness often creates suffering and offering practical alternatives.",
+        "summary": "Harris introduces Acceptance and Commitment Therapy, arguing that the pursuit of happiness often creates suffering and offering practical alternatives. Russ Harris, an Australian physician and ACT trainer, distills the third-wave cognitive-behavioral therapy developed by Steven C. Hayes and colleagues into a popular guide. The book's contrarian opening claim is that the cultural mandate to be happy is itself a primary cause of unhappiness, since it makes any negative emotion a sign of failure and routes people into the experiential avoidance that is, in the ACT literature, the proximate driver of clinical levels of anxiety and depression. Harris then walks through the six core ACT processes — defusion (relating to thoughts as thoughts rather than as truth), acceptance, present-moment contact, self-as-context, committed values, and committed action — with exercises drawn from his clinical practice. The book is unusually skilled at translating the somewhat abstract ACT vocabulary into plain English without losing precision. It has become the most widely recommended self-help book for ACT, used both as standalone bibliotherapy for mild conditions and as a companion to ACT therapy for moderate and severe ones, and is the natural starting point before the denser academic texts by Hayes and Strosahl.",
     },
     {
         "title": "Emotional Agility",
@@ -968,7 +968,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2016,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start", "career pivot"],
-        "summary": "David argues that rigidly pursuing positive emotions backfires, and that loosening up our responses to inner experiences is the key to thriving.",
+        "summary": "David argues that rigidly pursuing positive emotions backfires, and that loosening up our responses to inner experiences is the key to thriving. Susan David, a Harvard Medical School psychologist who studies emotion regulation in workplace and parenting contexts, builds the book around the construct she calls emotional agility: the ability to engage with one's full emotional life — the difficult and uncomfortable parts as well as the pleasant ones — without being controlled by it. She distinguishes the agile response from two common failure modes: bottling, in which painful emotions are suppressed and routed into displaced behavior, and brooding, in which they are amplified through rumination. The middle of the book lays out a four-step practice — show up, step out, walk your why, and move on — drawing on the cognitive-behavioral and Acceptance and Commitment Therapy literatures along with David's own research. Long applied chapters cover the workplace, parenting, and the design of organizational cultures that allow people to bring whole selves to work without becoming self-indulgent about it. The book is an unusually polished bridge between the academic literature on emotion regulation and the practical day-to-day questions managers and parents actually face, and is widely used in leadership-development and coaching programs.",
     },
     {
         "title": "The Whole-Brain Child",
@@ -976,7 +976,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2011,
         "genre": "psychology",
         "mood": ["fresh start", "morning ritual"],
-        "summary": "Siegel and Bryson show parents how to nurture children's developing minds using twelve strategies rooted in neuroscience.",
+        "summary": "Siegel and Bryson show parents how to nurture children's developing minds using twelve strategies rooted in neuroscience. Daniel Siegel, the UCLA psychiatrist whose interpersonal-neurobiology framework underlies Mindsight, and Tina Payne Bryson, a parenting clinician, translate Siegel's developmental-neuroscience framework into a practical guide for parents managing the daily realities of toddler tantrums, sibling fights, school anxiety, and adolescent withdrawal. The book's organizing claim is that healthy emotional and cognitive development depends on integration across the brain's domains — left and right hemispheres, upper cortex and lower limbic regions, narrative memory and somatic memory — and that parental responses can either support or disrupt that integration. The twelve practical strategies are organized around four kinds of integration work, including 'name it to tame it' (helping a flooded child move from raw right-hemisphere experience to verbal left-hemisphere processing), 'engage, don't enrage' (recognizing when a child's upstairs brain has gone offline and waiting for it to return rather than escalating), and the 'connect and redirect' move that addresses the emotional state before correcting the behavior. The book is widely used in parenting classes and pairs naturally with Bryson and Siegel's later The Yes Brain.",
     },
     {
         "title": "Mindsight",
@@ -984,7 +984,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2010,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start"],
-        "summary": "Siegel introduces mindsight — the ability to perceive the mind itself — as a learnable skill that promotes emotional and relational well-being.",
+        "summary": "Siegel introduces mindsight — the ability to perceive the mind itself — as a learnable skill that promotes emotional and relational well-being. Daniel Siegel, a UCLA clinical professor of psychiatry whose interpersonal-neurobiology framework has shaped a generation of trauma-informed practice, builds the book around the working definition of mindsight as the capacity to focus the mind in a way that integrates the brain's various subsystems — left and right hemispheres, cortical and subcortical regions, narrative and somatic memory — into a coherent, regulated, flexibly adaptive whole. The book opens with a long case study of a teenage patient whose impulsive behavior was traced to a specific developmental disruption of integration, and uses the case to introduce the broader framework. Subsequent chapters work through the neuroscience of integration, the role of mindfulness practice in strengthening the prefrontal cortex's regulatory capacity, the way attachment patterns shape the ongoing development of mindsight in childhood, and the clinical applications of the framework to adult patients in trauma, attachment, and developmental psychopathology contexts. The book is widely used in clinical training and is the most accessible single-volume entry into Siegel's broader Interpersonal Neurobiology corpus.",
     },
     {
         "title": "The Boy Who Was Raised as a Dog",
@@ -992,7 +992,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2006,
         "genre": "psychology",
         "mood": ["self-discovery", "heartbreak recovery", "late night reflection"],
-        "summary": "Perry shares cases from his work with traumatized children, revealing how early experiences shape the developing brain.",
+        "summary": "Perry shares cases from his work with traumatized children, revealing how early experiences shape the developing brain. Bruce Perry, a child psychiatrist who has spent his career working with the most severely traumatized children in North America — survivors of the Branch Davidian compound, ritual-abuse cases, abandoned children rescued from extreme institutional neglect — uses the book to translate three decades of clinical and research experience into a portrait of how the developing brain organizes itself in response to early environments. The title comes from one of his most haunting cases: a young boy who had been kept caged with the family dog and whose social and motor patterns mirrored canine behavior more than human. Each chapter is structured around a clinical case, with Perry walking through what he saw, what was happening neurodevelopmentally beneath the surface, and what the slow trajectory of recovery looked like. The book's central neuroscience point — that early childhood is a uniquely sensitive period in which the architecture of stress regulation, attachment, and language is being assembled — is now the consensus view in developmental neuroscience, and Perry's clinical reasoning about pacing trauma interventions to the relevant developmental stage has shaped contemporary trauma-informed practice. The book is widely used in social-work training and child-welfare reform.",
     },
     {
         "title": "No Bad Parts",
@@ -1000,7 +1000,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2021,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start", "heartbreak recovery"],
-        "summary": "Schwartz introduces Internal Family Systems therapy, arguing that every part of our psyche has a positive intention and healing comes from compassionate inner leadership.",
+        "summary": "Schwartz introduces Internal Family Systems therapy, arguing that every part of our psyche has a positive intention and healing comes from compassionate inner leadership. Richard Schwartz, the founder of Internal Family Systems (IFS), distills four decades of clinical practice and theoretical refinement into the most popular introduction to the model for general readers. The book's central premise, articulated in the title, is that the psyche is not a single integrated self but a system of distinct sub-personalities — parts — each formed in response to specific developmental needs and protective tasks, and each carrying its own intention, history, and emotional charge. Schwartz distinguishes managers (the proactive parts that try to keep the system functional), firefighters (the reactive parts that emerge when overwhelm threatens), and exiles (the wounded child-parts that other parts have organized to protect), and argues that healing comes through the deliberate cultivation of Self-energy, the calm and curious central awareness that can welcome each part into compassionate dialogue. The book is structured to allow self-application of basic IFS techniques while making clear which kinds of work require qualified clinical support. It has become the single most-recommended popular entry point into IFS and has had wide influence in trauma-informed therapy.",
     },
     {
         "title": "Adult Children of Emotionally Immature Parents",
@@ -1008,7 +1008,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2015,
         "genre": "psychology",
         "mood": ["self-discovery", "heartbreak recovery", "fresh start"],
-        "summary": "Gibson helps readers recognize the effects of growing up with emotionally immature parents and develop strategies for healthier relationships.",
+        "summary": "Gibson helps readers recognize the effects of growing up with emotionally immature parents and develop strategies for healthier relationships. Lindsay Gibson, a clinical psychologist with decades of therapy practice, draws on her caseload to describe the specific patterns adults exhibit when they were raised by parents whose emotional development arrested before they were equipped to attune to a child's inner life. She identifies four common types of emotionally immature parents — emotional, driven, passive, and rejecting — and traces the predictable adaptations their children develop, particularly the role-self of an internalizing healing-fantasy child who learns to suppress real needs in service of parental fragility. The middle chapters detail the costs in adulthood: reflexive caretaking, attraction to similar partners, difficulty trusting one's own emotional reality, and chronic loneliness inside relationships. The practical sections then walk through how to disengage from the emotional-takeover dynamic, how to set appropriate distance from immature parents who are still in one's life, and how to cultivate the internal observer that allows for measured rather than reactive responses. The book has become standard reading in many therapy practices and is frequently recommended to clients beginning to recognize family-of-origin patterns in their adult difficulties.",
     },
     {
         "title": "Set Boundaries, Find Peace",
@@ -1016,7 +1016,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2021,
         "genre": "psychology",
         "mood": ["fresh start", "self-discovery", "daily grind"],
-        "summary": "Tawwab provides a practical guide to establishing healthy boundaries in relationships, work, and daily life.",
+        "summary": "Tawwab provides a practical guide to establishing healthy boundaries in relationships, work, and daily life. Nedra Glover Tawwab, a licensed clinical social worker who built a large following on Instagram by writing in plain language about boundary-setting in family, romantic, and workplace relationships, expanded her short-form posts into a structured book. The opening chapters define boundaries clearly (limits set in service of one's own well-being, not punishments imposed on others), distinguish them from controlling behavior, and lay out the predictable patterns by which people raised in boundary-poor environments struggle to set them as adults — guilt, fear of conflict, fear of abandonment, the fawning response. The middle of the book is structured by relationship type, with separate chapters on parents, romantic partners, children, friends, coworkers, and the social-media ambient social field. Each includes practical scripts for the specific kinds of boundary conversations the relationship typically requires. Closing chapters address the predictable pushback patterns boundary-setters encounter and how to maintain a boundary in the face of escalation. The book has become widely circulated in therapy practice and online for clients whose inability to set boundaries is a significant maintenance factor for their presenting concerns.",
     },
     {
         "title": "Burnout: The Secret to Unlocking the Stress Cycle",
@@ -1024,7 +1024,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2019,
         "genre": "psychology",
         "mood": ["daily grind", "fresh start", "self-discovery"],
-        "summary": "Nagoski and Nagoski explain the science of stress and burnout, showing how completing the stress cycle is the key to recovery.",
+        "summary": "Nagoski and Nagoski explain the science of stress and burnout, showing how completing the stress cycle is the key to recovery. Emily Nagoski, a sex educator and stress researcher, and her sister Amelia, a choral conductor, build the book around a deceptively simple distinction: dealing with the stressors in your life — paying bills, leaving a bad job, repairing a relationship — is not the same thing as dealing with the stress those stressors produce in your body, and most chronic burnout reflects a backlog of physiological stress that was never discharged even as some of its triggers were addressed. The book identifies seven complete-the-cycle activities supported by the empirical literature: physical activity, sleep, deep breathing, positive social interaction, laughter, affection, and crying or creative self-expression. They argue that women in particular run the highest risk of chronic backlog because of what they call the human-giver syndrome, the social expectation that women's resources are owed first to others. The book then extends to the burnout-driving cultural patterns specifically around perfectionism, the patriarchal myth of the bikini-industrial complex, and the disenfranchisement of rage. It is widely read by women navigating professional and caregiving demands and is unusually fluent in translating stress neuroscience into household-level practice.",
     },
     {
         "title": "Scattered: How Attention Deficit Disorder Originates and What You Can Do About It",
@@ -1032,7 +1032,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 1999,
         "genre": "psychology",
         "mood": ["self-discovery", "heartbreak recovery"],
-        "summary": "Maté reframes ADD as a developmental issue rooted in early stress and offers compassionate approaches beyond medication.",
+        "summary": "Maté reframes ADD as a developmental issue rooted in early stress and offers compassionate approaches beyond medication. The longer-titled edition of Gabor Maté's first major book on attention disorders applies his developmental-attachment view to children and adults alike, drawing on his own diagnosis and on his Vancouver family-medicine practice. Maté argues that attention regulation is not a pure biological inheritance but the outcome of an early-childhood developmental process that requires sustained, undistracted attunement from a primary caregiver — a resource that has become scarcer in late twentieth-century Western life as economic and cultural pressures fragment family time. He surveys the empirical literature on prefrontal development, on the role of dopamine and norepinephrine, and on the impact of early stress on the developing nervous system, arguing that medication can usefully address the proximate symptoms but does not on its own restore the regulatory capacities that did not develop on schedule. The book includes long practical sections for parents — how to repair attunement with an ADD child, how to manage homework, how to work with schools — and adult sections on relationships, careers, and self-acceptance. It remains widely recommended both within and outside conventional ADD treatment.",
     },
     {
         "title": "Permission to Feel",
@@ -1040,7 +1040,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2019,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start", "morning ritual"],
-        "summary": "Brackett introduces the RULER approach to emotional intelligence, arguing that recognizing and labeling emotions is the first step to managing them.",
+        "summary": "Brackett introduces the RULER approach to emotional intelligence, arguing that recognizing and labeling emotions is the first step to managing them. Marc Brackett, the founding director of the Yale Center for Emotional Intelligence, has spent two decades refining a school-based emotional-intelligence curriculum called RULER — Recognizing, Understanding, Labeling, Expressing, and Regulating emotions — that has been adopted in thousands of schools globally. The book opens with the developmental story behind the work: Brackett's own difficult childhood, the school environment in which his emotions were systematically unrecognized, and the uncle who later modeled the kind of sustained emotional attunement Brackett now teaches educators to provide. The middle of the book walks through the RULER framework with classroom and home-based applications, including the Mood Meter visual tool that has become widely used in schools to give students vocabulary for the emotional state they are currently experiencing. The closing sections extend the framework to workplace settings, parenting, and self-management, and offer guidance on adapting the approach for adults whose own emotional vocabulary is impoverished. The book is widely used by teachers, school counselors, and parents looking to install a shared emotional-intelligence vocabulary in family and classroom life.",
     },
     {
         "title": "Chatter: The Voice in Our Head, Why It Matters, and How to Harness It",
@@ -1048,7 +1048,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2021,
         "genre": "psychology",
         "mood": ["self-discovery", "productivity", "morning ritual"],
-        "summary": "Kross explores the science of inner dialogue and offers evidence-based tools for turning negative self-talk into a source of insight.",
+        "summary": "Kross explores the science of inner dialogue and offers evidence-based tools for turning negative self-talk into a source of insight. Ethan Kross, who runs the Emotion and Self Control Lab at the University of Michigan, has spent his career studying the inner voice — what people say to themselves, when, and with what effect on emotion regulation, decision-making, and physical health. The book starts from the observation that virtually everyone has periods in which the inner monologue turns hostile and rehearsal-driven, what Kross calls chatter, and that the difference between thriving and floundering is often less about avoiding chatter than about having reliable tools to manage it when it arrives. He surveys the research on distanced self-talk (using your own name in the third person measurably reduces stress and improves performance), mental time travel, ritualized behavior, the role of awe and nature exposure, and the surprisingly mixed effects of social support depending on how it is offered. Closing chapters offer a tool kit for parents, teachers, and managers who want to help others manage their inner voice. The book is one of the cleanest popular treatments of self-talk research and pairs naturally with Daniel Kahneman's work on System 1 and System 2 thinking.",
     },
     {
         "title": "Four Thousand Weeks: Time Management for Mortals",
@@ -1056,7 +1056,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2021,
         "genre": "psychology",
         "mood": ["existential crisis", "productivity", "morning ritual"],
-        "summary": "Burkeman argues that accepting our radical finitude — the average human lifespan is about four thousand weeks — is the path to a meaningful life.",
+        "summary": "Burkeman argues that accepting our radical finitude — the average human lifespan is about four thousand weeks — is the path to a meaningful life. Oliver Burkeman, a British journalist who spent years writing a productivity column before becoming convinced its underlying premise was wrong, opens with the arithmetic of the title: a typical lifespan of about eighty years contains roughly four thousand weeks, an arrestingly small number that the productivity industry obscures with promises of optimization and time gains that never materialize. The book then argues that conventional time-management advice intensifies rather than relieves the underlying anxiety because it assumes a future in which one has finally caught up — a state that, by definition, never arrives. Drawing on Heidegger, Buddhist time-thinking, and contemporary psychology, Burkeman proposes a counterintuitive turn: only by accepting that one will never get to all of it can one begin to choose well among the few things one will actually do. The closing chapters offer practical principles for finite life, including limiting work-in-progress, embracing constraint, choosing visibly limited identities, and tolerating the weight of true commitment. The book has become one of the most influential anti-productivity productivity books of the past decade.",
     },
     {
         "title": "Think Like a Monk",
@@ -1064,7 +1064,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2020,
         "genre": "psychology",
         "mood": ["morning ritual", "fresh start", "self-discovery"],
-        "summary": "Shetty draws on his time as a monk to offer practices for overcoming negativity, finding purpose, and building daily routines.",
+        "summary": "Shetty draws on his time as a monk to offer practices for overcoming negativity, finding purpose, and building daily routines. Jay Shetty, who spent three years as a Hindu monk before becoming a media personality and life coach, structures the book around what he calls the threefold path of letting go, growing, and giving. The opening section walks through the monkish work of letting go: identifying the inherited values and unexamined desires that have shaped one's current life from the outside, and deliberately questioning each of them. The middle section is the growth path, which adapts traditional Vedic and yogic frameworks for purpose-finding (the dharma framework — the intersection of what you are good at, what you love, and what the world needs), daily routine, breath and meditation practices, and conscious management of relationships. The closing section is the path of giving, which Shetty treats as both a moral imperative and a practical strategy for sustained happiness. The book is unusually approachable for a contemplative-practice volume because Shetty has translated traditional concepts into the vocabulary and rhythms of contemporary life, with practical exercises rather than abstract theology, and has become a popular gateway for general readers exploring contemplative practice.",
     },
     {
         "title": "Ultralearning",
@@ -1072,7 +1072,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2019,
         "genre": "psychology",
         "mood": ["hustle mode", "productivity", "side project vibes"],
-        "summary": "Young shares strategies for aggressive self-directed learning projects, showing how anyone can master hard skills quickly.",
+        "summary": "Young shares strategies for aggressive self-directed learning projects, showing how anyone can master hard skills quickly. Scott Young, who became known online for completing the MIT computer-science undergraduate curriculum from open-courseware materials in twelve months and for learning four languages by traveling and refusing to speak English, generalizes his methodology into what he calls the ultralearning approach. The opening defines ultralearning as self-directed, intensive, and aggressive learning of hard skills outside formal educational structures, and distinguishes it from incidental learning, structured education, and credentialed training. The middle of the book lays out nine principles drawn from cognitive-science research on deliberate practice, retrieval, spaced repetition, and direct practice in the target domain rather than its proxies. Each principle is illustrated with a case study from Young's own projects or from other ultralearners he has interviewed: chess masters, polyglots, software engineers retraining for new specializations, and adults who acquired professional-grade skills mid-career. The closing chapters cover common failure modes and how to design an ultralearning project for a real-world goal. The book has become widely circulated among autodidacts, career-pivoters, and homeschoolers and pairs naturally with Anders Ericsson's Peak.",
     },
     {
         "title": "Peak: Secrets from the New Science of Expertise",
@@ -1088,7 +1088,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2021,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start", "daily grind"],
-        "summary": "Lembke explains how our dopamine-driven brains are hijacked by modern abundance and offers a framework for restoring balance.",
+        "summary": "Lembke explains how our dopamine-driven brains are hijacked by modern abundance and offers a framework for restoring balance. Anna Lembke, the chief of the Stanford Addiction Medicine Clinic, takes a clinical view of the neurochemistry of addiction and applies it to behaviors that fall short of clinical thresholds but show the same underlying pattern. The recurring metaphor is the pleasure-pain balance: every reward triggers a compensatory pain response that the brain produces to maintain homeostasis, and as the reward is repeated the pain side of the balance grows, requiring more of the original reward to produce the same effect. In an environment of abundant cheap dopamine — alcohol, ultra-processed food, pornography, social media, gambling, online shopping — the cumulative effect is a generation operating at chronic dopamine deficit and looking everywhere for the next hit. Lembke offers a clinical framework for restoring balance built on dopamine fasting, deliberate exposure to discomfort, the role of pro-social shame, and what she calls plain-truth telling. The book interleaves patient case studies with neuroscience and her own experience navigating compulsive romance-novel reading. It has become a touchstone in popular conversations about technology, addiction, and contemporary mental health.",
     },
     {
         "title": "Why Has Nobody Told Me This Before?",
@@ -1096,7 +1096,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2022,
         "genre": "psychology",
         "mood": ["fresh start", "self-discovery", "morning ritual"],
-        "summary": "Smith distills therapeutic techniques into everyday tools for managing low mood, anxiety, grief, and motivation.",
+        "summary": "Smith distills therapeutic techniques into everyday tools for managing low mood, anxiety, grief, and motivation. Julie Smith, a UK clinical psychologist whose short TikTok and Instagram clips on common mental-health questions accumulated millions of followers during the pandemic, expanded the most-requested topics from those clips into a structured book. Each chapter takes a single recurring concern — what to do when motivation collapses, how to handle anxiety in the moment, how to regulate sleep, how to grieve, how to stop self-criticism, how to support a friend through a hard time — and walks through the evidence-based clinical techniques Smith uses with her own patients. The frameworks are drawn principally from cognitive-behavioral and acceptance-and-commitment therapy and from interventions tested in the chronic-stress and grief literatures. The book is structured to be opened to whichever chapter is relevant in a given week rather than read straight through, and includes journaling prompts and short exercises at the end of each section. It functions as a useful first-aid manual for people whose mental-health concerns are not severe enough for therapy but who would benefit from clinically-informed self-management.",
     },
     {
         "title": "Cured: The Life-Changing Science of Spontaneous Healing",
@@ -1104,7 +1104,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2020,
         "genre": "psychology",
         "mood": ["fresh start", "self-discovery"],
-        "summary": "Rediger investigates cases of remarkable recovery from serious illness, revealing the roles of identity, nutrition, and belief.",
+        "summary": "Rediger investigates cases of remarkable recovery from serious illness, revealing the roles of identity, nutrition, and belief. Jeffrey Rediger, a Massachusetts General Hospital psychiatrist who became fascinated with the medical literature on spontaneous remissions in late-stage cancer and other terminal illnesses, spent fifteen years tracking patients whose recoveries had been extensively documented and were not attributable to ordinary medical care. The book is structured around the four common factors he identified across these cases: a radical change in diet (typically toward whole-food, anti-inflammatory eating), a substantial reduction in chronic immune activation (often through dramatic life simplification or a long retreat from a pathogenic environment), a significant identity shift (the patient stops being the person who got sick and becomes someone whose sickness has revealed who they actually intend to be), and a profound shift in their connection to something larger than themselves (variously religious, communal, or transcendent). Rediger is careful to maintain clinical skepticism, acknowledges the high rate of false positives in this literature, and avoids any claim that these factors will reliably produce remission. The book is best read as a thoughtful integrative perspective on the conditions under which the body's healing capacities operate at their best.",
     },
     {
         "title": "The WEIRDest People in the World",
@@ -1112,7 +1112,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2020,
         "genre": "psychology",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Henrich argues that Western psychology is based on outlier populations and that the Church's medieval marriage policies reshaped human cognition.",
+        "summary": "Henrich argues that Western psychology is based on outlier populations and that the Church's medieval marriage policies reshaped human cognition. Joseph Henrich, the chair of Harvard's Department of Human Evolutionary Biology, builds the book around the WEIRD acronym — Western, Educated, Industrialized, Rich, and Democratic — to describe the population that has supplied the overwhelming majority of subjects in psychological research, and that turns out to be a global outlier on dozens of measured variables: individualism, analytical reasoning, impersonal trust, the moralization of effort, attitudes toward family obligation. The book then asks where these distinctively WEIRD psychological patterns came from. Henrich's striking thesis is that the medieval Catholic Church's Marriage and Family Program — the centuries-long campaign that prohibited cousin marriage, polygamy, and arranged marriage, and that broke down dense kin networks in favor of the nuclear family — produced precisely the kinship structure that, over generations, selected for the psychological traits researchers later mistook for human universals. The book combines historical, anthropological, and experimental evidence and has been hugely influential in cultural-evolution research. It is a long but unusually rewarding read for anyone trying to understand why standard cross-cultural generalizations from Western data so often fail.",
     },
     {
         "title": "Transcend: The New Science of Self-Actualization",
@@ -1120,7 +1120,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2020,
         "genre": "psychology",
         "mood": ["self-discovery", "fresh start", "morning ritual"],
-        "summary": "Kaufman updates Maslow's hierarchy of needs using modern psychology, integrating security, connection, and self-esteem into a sailboat metaphor for growth.",
+        "summary": "Kaufman updates Maslow's hierarchy of needs using modern psychology, integrating security, connection, and self-esteem into a sailboat metaphor for growth. Scott Barry Kaufman, a cognitive psychologist who runs the Center for Human Potential, returns to Abraham Maslow's late, never-published manuscripts and reconstructs the more nuanced hierarchy Maslow was working toward in the years before his death — one in which self-actualization is not a single peak but the integration of multiple developmental tasks, and in which self-transcendence sits above self-actualization rather than constituting its endpoint. He replaces the original pyramid metaphor with a sailboat: security, connection, and self-esteem form the hull that keeps the boat afloat, while exploration, love, and purpose are the sails that catch the wind of growth. The book then walks through each component in light of contemporary psychological research — attachment, self-determination theory, Big Five personality, character strengths, the latest empirical work on peak experiences and post-traumatic growth — and includes self-assessment questions for readers interested in mapping their own current configuration. The book is the most up-to-date popular gateway to humanistic and transpersonal psychology and is widely used in coaching and personal-development programs.",
     },
     {
         "title": "The Molecule of More",
@@ -1128,7 +1128,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2018,
         "genre": "psychology",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "Lieberman and Long explain how dopamine drives desire, ambition, and addiction, shaping everything from love to politics.",
+        "summary": "Lieberman and Long explain how dopamine drives desire, ambition, and addiction, shaping everything from love to politics. Daniel Lieberman, a clinical psychiatrist, and Michael Long, a science writer, distill recent neuroscience research on dopamine into a popular framework that distinguishes the dopamine system from the so-called here-and-now neurochemistry — endorphins, oxytocin, endocannabinoids — that handles present-moment pleasure and bonding. Their central claim is that dopamine is not the brain's pleasure molecule (a popular misreading) but its anticipation-and-pursuit molecule, the system that gets you out of bed to chase what is not yet there. The book traces this distinction across a wide range of human concerns: the way passionate romantic attraction's dopamine-driven phase reliably gives way to a quieter here-and-now bonding phase, the way creative drive and addictive dependency draw on the same circuits, the way political and ideological worldviews divide along dopamine-and-control versus presence-and-connection axes, and the way extreme over-investment in dopamine systems characterizes specific psychopathologies. Some of the book's broader cultural extrapolations have been criticized as overreach, but the central neuroscience is sound and the book has become a popular gateway to dopamine research for general readers.",
     },
     {
         "title": "Breath: The New Science of a Lost Art",
@@ -1136,7 +1136,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2020,
         "genre": "psychology",
         "mood": ["morning ritual", "self-discovery", "fresh start"],
-        "summary": "Nestor investigates how modern humans have lost the art of breathing and how reclaiming it can transform health and performance.",
+        "summary": "Nestor investigates how modern humans have lost the art of breathing and how reclaiming it can transform health and performance. James Nestor, a longtime science journalist and freediver, spent ten years researching what would become a remarkably wide-ranging book about a subject most people stop thinking about by elementary school. The premise is that modern human jaws and airways have shrunk over a few millennia of dietary changes, and that the resulting prevalence of mouth-breathing, sleep apnea, and chronic poor breathing patterns has measurable consequences for cardiovascular, metabolic, dental, and cognitive health. Nestor structures the book around a self-experiment in which he and a fellow subject deliberately mouth-breathe for ten days, with daily physiological measurements showing rapid degradation, before reversing the protocol. He travels through underground research labs studying CO2 tolerance, pulmonary rehabilitation programs, and contemplative-tradition practitioners — buteyko, pranayama, the Wim Hof method — to map the empirical case for nasal-only breathing, paced exhalation, and other practices. While some of his framing has been questioned, the book has become an unusually accessible introduction to a field that ordinarily lives in dental, pulmonology, and sleep-medicine literature.",
     },
     {
         "title": "When the Body Says No",
@@ -1144,7 +1144,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2003,
         "genre": "psychology",
         "mood": ["self-discovery", "heartbreak recovery"],
-        "summary": "Maté explores the connection between emotional stress and physical illness, arguing that repressed emotions can trigger disease.",
+        "summary": "Maté explores the connection between emotional stress and physical illness, arguing that repressed emotions can trigger disease. Gabor Maté's mid-2000s book on the mind-body connection draws on his decades of family-medicine practice, on the developing field of psychoneuroimmunology, and on patient histories he was able to follow longitudinally to argue that chronic suppression of legitimate negative emotion — particularly anger and resentment — produces a measurable inflammatory and immune burden that compounds over decades and increases the risk of autoimmune disease, certain cancers, and chronic neurological conditions. The book is built around chapters on multiple sclerosis, ALS, breast cancer, ulcerative colitis, prostate cancer, and rheumatoid arthritis, each woven together from clinical patient narratives Maté collected and from the relevant published medical literature. He is careful not to claim that emotion alone causes any of these diseases but rather that emotional patterns shaped in early childhood interact with genetic and environmental factors in ways the standard biomedical model has tended to ignore. Critics in conventional medicine have pushed back on some of the specific clinical claims, but the broader thesis on the body-mind connection has aged well alongside accumulating evidence in mind-body and trauma research.",
     },
     {
         "title": "The Anxious Generation",
@@ -1152,7 +1152,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2024,
         "genre": "psychology",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Haidt argues that the rewiring of childhood by smartphones and social media is the main cause of the teen mental health crisis.",
+        "summary": "Haidt argues that the rewiring of childhood by smartphones and social media is the main cause of the teen mental health crisis. Jonathan Haidt builds on the data trail he and Greg Lukianoff opened in The Coddling of the American Mind, but here narrows the focus to the specific shift that occurred between roughly 2010 and 2015 when smartphones with front-facing cameras and persistent social-media access became the default childhood-and-adolescent technology. He synthesizes the empirical literature showing simultaneous rises in adolescent anxiety, depression, self-harm, and suicidal ideation across multiple Western countries beginning in that exact window, with the steepest rises in girls, and works through the four mechanisms — sleep deprivation, attention fragmentation, social comparison, and the displacement of unstructured outdoor play — that he argues collectively account for the pattern. The middle of the book extends to the long-running collapse of independent childhood since the 1990s and the role of overprotection in the offline domain, which he argues compounds the under-protection in the online domain. The closing chapters propose four reform norms — no smartphones before high school, no social media before sixteen, phone-free schools, and far more independent play — that have entered policy debates in several countries since publication.",
     },
     {
         "title": "The Psychology of Money",
@@ -1168,7 +1168,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2018,
         "genre": "psychology",
         "mood": ["productivity", "fresh start", "hustle mode"],
-        "summary": "Clear presents a practical system for building good habits and breaking bad ones through tiny changes that compound over time.",
+        "summary": "Clear presents a practical system for building good habits and breaking bad ones through tiny changes that compound over time. James Clear's framework is built on four laws of behavior change applied symmetrically to building good habits and breaking bad ones: make it obvious, make it attractive, make it easy, and make it satisfying for habits to build, and the inverse for habits to break. He grounds the laws in behavioral psychology — habit stacking from Stanford's BJ Fogg, the two-minute rule from microhabit research, the role of identity in long-term change — and supplements with worked examples ranging from the marginal-gains British cycling team to his own career as a baseball player rebuilding after a serious face injury. The book's most lasting contribution is probably its identity-first framing: the goal is not to read more books but to become a reader, not to write more code but to become a craftsman, with the daily practice serving as a vote for the desired identity. Closing chapters cover the diminishing-returns plateau, the role of environment design, and the role of accountability partners. The book has become the bestselling popular book on habits of the past decade, displacing The Power of Habit.",
     },
     {
         "title": "Tiny Habits",
@@ -1176,7 +1176,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2019,
         "genre": "psychology",
         "mood": ["fresh start", "productivity", "morning ritual"],
-        "summary": "Fogg reveals that the key to lasting change is starting incredibly small and anchoring new behaviors to existing routines.",
+        "summary": "Fogg reveals that the key to lasting change is starting incredibly small and anchoring new behaviors to existing routines. BJ Fogg, the Stanford behavior scientist whose lab trained much of the first generation of consumer-app product designers, distills two decades of research into a deliberately small-bore framework. The book's central tool is the Tiny Habits formula: B = MAP, behavior occurs when motivation, ability, and a prompt converge — and since motivation is unreliable, the most reliable lever is to dramatically lower the ability barrier by shrinking the new behavior, then to anchor the prompt to an already-stable routine. He recommends habits so small they feel ridiculous (one push-up, one flossed tooth, one paragraph), pairs them with explicit anchors ('after I pour my morning coffee, I will…'), and adds an immediate small celebration to encode the brain's positive association. The book includes long sections on troubleshooting failed habit experiments, on the difference between aspirations and behaviors, and on coaching others through change. Fogg writes from the position of someone who has watched the same handful of failure modes recur across thousands of laboratory subjects and clients. The book is widely used by coaches, product designers, and anyone whose larger habit programs have repeatedly stalled.",
     },
     {
         "title": "Deep Work",
@@ -1184,7 +1184,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2016,
         "genre": "psychology",
         "mood": ["productivity", "hustle mode", "side project vibes"],
-        "summary": "Newport argues that the ability to focus without distraction is the most valuable skill in the modern economy.",
+        "summary": "Newport argues that the ability to focus without distraction is the most valuable skill in the modern economy. Cal Newport's premise is that knowledge work is increasingly bifurcated into two regimes: shallow work — fragmented, communications-driven, easily replicated — and deep work, the cognitively demanding effort of producing genuinely valuable output that neither machines nor cheap labor can match. He argues that an unintended consequence of digital workplace tools, ambient messaging, and open-plan offices is that most knowledge workers spend their entire days in the shallow lane while telling themselves they are productive, and that the structural advantage now goes to anyone who can systematically reclaim hours of deep work per day. The book's first half builds the case empirically, drawing on cognitive-psychology research on attention residue, the deliberate-practice literature, and case studies including Carl Jung's tower, Bill Gates's think weeks, and Adam Grant's long writing blocks. The second half offers four rules for cultivating deep work in real life: scheduling it ruthlessly, embracing boredom rather than reaching for stimulation, quitting most social media, and aggressively draining the shallows from the rest of the day. The book has been adopted as required reading inside many engineering, design, and academic teams.",
     },
     {
         "title": "Digital Minimalism",
@@ -1192,7 +1192,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2019,
         "genre": "psychology",
         "mood": ["fresh start", "productivity", "morning ritual"],
-        "summary": "Newport makes the case for a philosophy of technology use that prioritizes high-value activities over compulsive scrolling.",
+        "summary": "Newport makes the case for a philosophy of technology use that prioritizes high-value activities over compulsive scrolling. Cal Newport's follow-up to Deep Work shifts focus from the workplace to personal life, applying the same skeptical eye to consumer technology that the earlier book applied to office productivity. The argument is that the casual model of technology adoption — try a new app, keep it if it seems harmless, accumulate dozens until life is shaped by them — has produced what he calls a quiet desperation in many users who recognize they are not in control of their attention but cannot identify what to do about it. He proposes digital minimalism as a philosophy: use technology only in service of values you can articulate, in ways you have deliberately decided, and not because the alternative is leaving an account open by default. The book centers around a thirty-day digital declutter — strip away every optional technology, reintroduce them deliberately one at a time, and only the ones that pass an explicit value test — followed by chapters on rebuilding leisure, friendship, and solitude in the space recovered. The book has been particularly influential in the broader conversation about smartphone dependency and screen-time hygiene.",
     },
     {
         "title": "A World Without Email",
@@ -1200,7 +1200,7 @@ PSYCHOLOGY_BOOKS = [
         "year": 2021,
         "genre": "psychology",
         "mood": ["productivity", "daily grind"],
-        "summary": "Newport argues that the hyperactive hive mind of constant email is destroying productivity and proposes structured alternatives.",
+        "summary": "Newport argues that the hyperactive hive mind of constant email is destroying productivity and proposes structured alternatives. Cal Newport's premise is that email did not merely add a communication channel to knowledge work; it silently restructured the work itself into the constant interleaved improvisation he calls the hyperactive hive mind, a mode in which decisions are made through unstructured back-and-forth rather than through deliberate process. He marshals evidence from cognitive psychology, organizational design, and the productivity-research literature to show that this mode systematically degrades attention, decision quality, and well-being. The middle of the book is a tour of teams that have escaped the hive mind: software groups using ticketing systems for almost all internal coordination, executive offices using office hours and structured agendas, hospitals using protocol-based handoff. The closing chapters argue that the next major productivity gains will come less from individual time-management hacks than from the deliberate redesign of organizational workflows around explicit processes that obviate the need for ambient messaging. The book pairs naturally with Newport's earlier Deep Work and Digital Minimalism, but is targeted more squarely at managers and executives than at individual contributors.",
     },
     {
         "title": "Status Anxiety",

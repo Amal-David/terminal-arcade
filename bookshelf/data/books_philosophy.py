@@ -7,7 +7,7 @@ PHILOSOPHY_BOOKS = [
         "year": -375,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Plato's masterwork explores justice, the ideal state, and the nature of reality through Socratic dialogue.",
+        "summary": "Plato's masterwork explores justice, the ideal state, and the nature of reality through Socratic dialogue. The Republic is Plato's longest and most ambitious dialogue, structured around an extended cross-examination by Socrates of the question what justice is and whether the just life is happier than the unjust. To answer the question on the scale of an individual soul, Socrates proposes building up the same question on the larger scale of the city — a thought experiment that becomes the famous construction of the ideal kallipolis, with its three classes (rulers, auxiliaries, producers) corresponding to the three parts of the soul (reason, spirit, appetite). The middle books contain the Republic's most famous philosophical set pieces: the analogy of the divided line, the metaphor of the cave, the theory of the Forms, and the argument that the philosopher who has seen the Form of the Good is uniquely qualified to rule. The closing books describe the predictable decay of regimes (timocracy, oligarchy, democracy, tyranny) and the corresponding decay of the soul, ending with the myth of Er and the case that the just life is happier even on its own terms. It remains the single most important text in Western political philosophy.",
     },
     {
         "title": "Nicomachean Ethics",
@@ -15,7 +15,7 @@ PHILOSOPHY_BOOKS = [
         "year": -340,
         "genre": "philosophy",
         "mood": ["morning ritual", "self-discovery"],
-        "summary": "Aristotle argues that the good life consists of cultivating virtue and finding the mean between extremes.",
+        "summary": "Aristotle argues that the good life consists of cultivating virtue and finding the mean between extremes. Compiled from Aristotle's lectures at the Lyceum and named for either his son or his father Nicomachus, the Ethics is the foundational text of Western virtue ethics and the most influential single work on practical philosophy in the Western tradition. Aristotle begins with the question of what the human good actually is, working through and rejecting the candidates of pleasure, honor, and external goods before settling on eudaimonia — flourishing or human-being-well — defined as the activity of the soul in accordance with reason and over a complete life. The middle of the work catalogues the moral virtues (courage, temperance, justice, magnanimity, friendliness, truthfulness) and the intellectual virtues (practical wisdom, theoretical wisdom), with each moral virtue treated as the mean between two vices of excess and deficiency. The final books develop the theory of friendship as one of the highest goods, the role of pleasure in the well-ordered life, and the contemplative life as the highest form of human activity. The work has shaped every later virtue-ethical tradition from Aquinas through Alasdair MacIntyre's modern revival.",
     },
     {
         "title": "Meditations",
@@ -23,7 +23,7 @@ PHILOSOPHY_BOOKS = [
         "year": 180,
         "genre": "philosophy",
         "mood": ["morning ritual", "daily grind", "late night reflection"],
-        "summary": "The Roman emperor's private journal of Stoic reflections on duty, mortality, and inner peace.",
+        "summary": "The Roman emperor's private journal of Stoic reflections on duty, mortality, and inner peace. Marcus Aurelius wrote what we call the Meditations as a private notebook during the long campaigns of the late 170s, and it is unlikely he ever intended it for publication; the book reads as an emperor talking to himself in the only voice he could afford to fully trust. The twelve short books are not arguments but spiritual exercises — repeated reminders to himself, stated and restated in slightly different forms, of the core Stoic positions he was trying to internalize against the daily pressures of rule. Recurring themes include the dichotomy of control, the indifference of fate to personal preference, the brief duration of any human life on a cosmic scale, the duty of cooperative action with one's fellow citizens of the cosmopolis, and the practice of imagining one's own death from above as a way of relativizing immediate emotional reactivity. The book has been continuously in print since the Renaissance, has been the philosophical companion of figures from Frederick the Great to Bill Clinton, and remains the single most-read primary text in Roman Stoicism.",
     },
     {
         "title": "Letters from a Stoic",
@@ -31,7 +31,7 @@ PHILOSOPHY_BOOKS = [
         "year": 65,
         "genre": "philosophy",
         "mood": ["morning ritual", "cozy night", "self-discovery"],
-        "summary": "Seneca's letters to Lucilius offer practical Stoic wisdom on anger, grief, time, and the art of living.",
+        "summary": "Seneca's letters to Lucilius offer practical Stoic wisdom on anger, grief, time, and the art of living. The Epistulae Morales are 124 letters Seneca wrote to his friend Lucilius Junior in the last years of his life, after his retirement from the court of Nero and during the period in which he was preparing himself for the death he expected the emperor to demand. Each letter takes up a single Stoic theme — the management of anger, the use of time, the right attitude to wealth and to poverty, the kinds of friendship that are worth cultivating, the discipline of facing one's own mortality — and works through it in the conversational, often self-correcting voice of a teacher writing to a serious but still-developing student. Seneca is the most literary of the major Stoics, willing to mix Epicurean and Cynic material into his Stoic frame whenever it improves the argument, and his prose has shaped European essayistic writing from Montaigne through the present. The letters function equally well read consecutively as a course in applied Stoicism and read individually as freestanding essays, and remain the most accessible primary text of Roman Stoicism alongside Marcus Aurelius's Meditations.",
     },
     {
         "title": "Discourses and Selected Writings",
@@ -39,7 +39,7 @@ PHILOSOPHY_BOOKS = [
         "year": 108,
         "genre": "philosophy",
         "mood": ["morning ritual", "fresh start", "daily grind"],
-        "summary": "The former slave turned philosopher teaches that freedom comes from controlling our responses, not our circumstances.",
+        "summary": "The former slave turned philosopher teaches that freedom comes from controlling our responses, not our circumstances. Epictetus, born into slavery in Phrygia and freed in Rome before being exiled and founding his own school in Greece, never wrote anything himself; the Discourses are the lecture notes taken by his student Arrian, supplemented in some editions by the short distilled handbook called the Enchiridion. The central Stoic claim that organizes the entire corpus is the dichotomy of control: a sharp distinction between what is ours (our judgments, intentions, and responses) and what is not (our bodies, reputation, possessions, the actions of others, the events that befall us), with the practical instruction to invest emotional and ethical effort only in the first category and to greet the second with prepared equanimity. The Discourses extend this framework through dozens of practical applications — illness, exile, the loss of a child, the demands of public office, the fear of death — with the directness of a teacher who lived through most of them himself. The text remains the most accessible introduction to Roman Stoicism and the philosophical foundation of contemporary popular Stoicism.",
     },
     {
         "title": "On the Shortness of Life",
@@ -47,7 +47,7 @@ PHILOSOPHY_BOOKS = [
         "year": 49,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis", "fresh start"],
-        "summary": "Seneca argues that life is long enough if we stop wasting it on trivial pursuits and learn to live deliberately.",
+        "summary": "Seneca argues that life is long enough if we stop wasting it on trivial pursuits and learn to live deliberately. The short treatise, addressed to Seneca's father-in-law Paulinus, opens with the observation that virtually everyone complains about how little time they have been allotted, and turns it around: the problem is not that life is short but that we treat it carelessly, dispersing the time we do have into a thousand external concerns and never owning a single hour of it for ourselves. Seneca catalogues the ways we waste time (chasing political advancement, accumulating wealth, attending to other people's affairs, fearing the future, regretting the past, dulling the mind with diversion) and contrasts them with the deliberate Stoic life of philosophical reflection, friendship, and present-moment attention. The most quoted lines from the treatise — 'It is not that we have a short time to live, but that we waste much of it' — capture the work's central move: time as the fundamental scarce resource a serious life must learn to husband. Continuously in print since antiquity, the work has had a striking second life as a touchstone of contemporary popular Stoicism and remains the best brief introduction to Seneca's prose.",
     },
     {
         "title": "The Symposium",
@@ -55,7 +55,7 @@ PHILOSOPHY_BOOKS = [
         "year": -385,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "A dinner party of Athenian intellectuals delivers speeches on the nature of love, culminating in Socrates' account of Diotima's teachings.",
+        "summary": "A dinner party of Athenian intellectuals delivers speeches on the nature of love, culminating in Socrates' account of Diotima's teachings. The Symposium is a Platonic dialogue with the structure of a literary set piece: a drinking party at the home of the playwright Agathon at which seven speakers in turn deliver encomia of eros, the god of love. The earlier speeches range from the conventional (Phaedrus's appeal to glory, Pausanias's distinction between common and heavenly love) through the comic (Aristophanes's famous fable of the original spherical humans split in half by the gods, condemned to seek their other halves ever after) to the philosophically serious (Agathon's stylized praise). Socrates's speech is the climax: he reports the teachings of the priestess Diotima of Mantinea, who taught him that love is not a god but a daimon, an intermediate spirit, and that erotic desire properly understood is a ladder ascending from particular bodies through institutions, knowledge, and ultimately to the contemplation of the Form of the Beautiful itself. The dialogue closes with Alcibiades's drunken intrusion and his speech in praise of Socrates rather than of love, completing the dialogue's complex layered meditation on philosophical eros.",
     },
     {
         "title": "Apology",
@@ -63,7 +63,7 @@ PHILOSOPHY_BOOKS = [
         "year": -399,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Plato's account of Socrates' trial, where the philosopher defends the examined life and accepts death rather than abandon truth.",
+        "summary": "Plato's account of Socrates' trial, where the philosopher defends the examined life and accepts death rather than abandon truth. The Apology — the title is a transliteration of the Greek apologia, meaning legal defense rather than expression of regret — is Plato's reconstruction of the speech Socrates delivered at his trial in 399 BCE on the charges of impiety and corrupting the youth of Athens. Socrates begins by addressing the older slanders against him as a sophist and natural philosopher, accurately distinguishing his actual practice — the relentless cross-examination of fellow Athenians on what they thought they knew — from the activities he was confused with. He then takes the formal charges in turn, exposing his accuser Meletus's incoherence and refusing the standard rhetorical strategies (weeping family members, appeals to sympathy) that Athenian defendants ordinarily used. The most quoted line from the speech, 'the unexamined life is not worth living for a human being,' is delivered as Socrates declines the option of going into exile in order to keep philosophizing somewhere else, and accepts the death sentence the jury hands down. The Apology is foundational to Western philosophy and to the literary genre of dignified martyrdom for principle.",
     },
     {
         "title": "Politics",
@@ -71,7 +71,7 @@ PHILOSOPHY_BOOKS = [
         "year": -350,
         "genre": "philosophy",
         "mood": ["Sunday morning", "late night reflection"],
-        "summary": "Aristotle examines the nature of the state, citizenship, and the best forms of government.",
+        "summary": "Aristotle examines the nature of the state, citizenship, and the best forms of government. The companion to the Nicomachean Ethics, the Politics moves from individual flourishing to the political community without which Aristotle thought human flourishing was impossible. The opening books develop the famous claim that the human is by nature a political animal and the more controversial argument for natural slavery, both of which need to be read in the historical context of the fourth-century BCE Greek city-state. The middle books survey the regimes existing in the Greek world — the rule of one (kingship and tyranny), the rule of the few (aristocracy and oligarchy), and the rule of the many (constitutional government and democracy) — with extensive empirical analysis of how each tends to degenerate into its corrupted form and what conditions stabilize each. The later books develop Aristotle's preferred mixed constitution, the political role of the middle class, the requirements of education for citizenship, and the institutional design questions that occupied the Lyceum's research programs. Politics has shaped every later tradition of constitutional thought from Aquinas through the American founders, and remains a foundational text in political philosophy and comparative politics.",
     },
     {
         "title": "Tao Te Ching",
@@ -79,7 +79,7 @@ PHILOSOPHY_BOOKS = [
         "year": -400,
         "genre": "philosophy",
         "mood": ["morning ritual", "cozy night", "rainy afternoon"],
-        "summary": "Eighty-one short verses on the Way, teaching that true wisdom comes through yielding, simplicity, and effortless action.",
+        "summary": "Eighty-one short verses on the Way, teaching that true wisdom comes through yielding, simplicity, and effortless action. The Tao Te Ching, traditionally attributed to the semi-legendary sixth-century BCE sage Lao Tzu but probably the work of multiple hands compiled over several centuries, is the foundational text of Daoism and one of the most translated books in human history. Its eighty-one short chapters move between political philosophy, personal cultivation, and metaphysical poetry, all organized around the central concept of the Tao — the Way — that underlies and pervades the natural and social worlds and that cannot be adequately named or grasped by conceptual thinking. The text repeatedly contrasts the heavy-handed striving of conventional ambition with the practice of wu wei — non-coercive action — modeled on water that finds the lowest places, on infants who have not yet learned to grasp, and on uncarved wood that retains all of its potential. The Tao Te Ching has shaped East Asian philosophy and aesthetic life for two and a half millennia and has had a striking second life in twentieth-century Western literature, ecology, and contemplative practice. Its brevity and ambiguity make it useful both as deep contemplative companion and as introductory primer.",
     },
     {
         "title": "The Analects",
@@ -87,7 +87,7 @@ PHILOSOPHY_BOOKS = [
         "year": -479,
         "genre": "philosophy",
         "mood": ["morning ritual", "self-discovery"],
-        "summary": "A collection of Confucius's sayings on virtue, propriety, and the moral cultivation needed for good governance.",
+        "summary": "A collection of Confucius's sayings on virtue, propriety, and the moral cultivation needed for good governance. The Analects (Lunyu in Chinese, literally 'edited conversations') is the foundational text of Confucianism, compiled in the fifth and fourth centuries BCE from the recollections of Confucius's students of the dialogues, sayings, and brief incidents that defined their teacher's pedagogy. The book is short and structurally fragmentary by design — Confucius is presented in the way his students remembered him, in answer to specific questions and specific situations, rather than as a system. The recurring themes are nonetheless coherent: ren (humaneness, the central virtue), li (ritual propriety, which Confucius extends from formal ceremony to the conduct of daily life), xiao (filial piety), the gentleman or junzi as the moral ideal, the rectification of names, and the conviction that good governance is not a matter of laws and punishments but of the moral cultivation of the ruler. The Analects has shaped East Asian moral and political life for two and a half millennia and remains both the indispensable starting point for Confucian thought and a quietly modern guide to the cultivation of character in everyday relationships.",
     },
     {
         "title": "The Art of War",
@@ -95,7 +95,7 @@ PHILOSOPHY_BOOKS = [
         "year": -500,
         "genre": "philosophy",
         "mood": ["hustle mode", "productivity", "career pivot"],
-        "summary": "Sun Tzu's ancient treatise on strategy, applicable far beyond the battlefield to business, leadership, and daily life.",
+        "summary": "Sun Tzu's ancient treatise on strategy, applicable far beyond the battlefield to business, leadership, and daily life. Composed in China during the Warring States period and traditionally attributed to the general Sun Tzu, the Bingfa is divided into thirteen short chapters, each addressing a specific dimension of military strategy — laying plans, waging war, attack by stratagem, tactical dispositions, energy, weak points and strong, maneuvering, variation in tactics, the army on the march, terrain, the nine situations, attack by fire, and the use of spies. The recurring strategic insight that organizes the entire work is that the most accomplished general wins without battle, by deception, positioning, and the skillful exploitation of the enemy's own movements rather than through brute confrontation. Sun Tzu treats victory as the proper outcome of careful long-range planning rather than of bravery in the moment, and warns repeatedly against the costs of prolonged conflict, the value of intelligence over force, and the discipline of knowing both yourself and your opponent. The work has shaped Chinese military thought for more than two thousand years and has had an enormous second life in modern business, leadership, and competitive-strategy literature, where its formulations on positioning have become touchstones.",
     },
     {
         "title": "The Dhammapada",
@@ -103,7 +103,7 @@ PHILOSOPHY_BOOKS = [
         "year": -300,
         "genre": "philosophy",
         "mood": ["morning ritual", "cozy night", "self-discovery"],
-        "summary": "A collection of sayings attributed to the Buddha, offering guidance on the path to enlightenment through mindfulness and compassion.",
+        "summary": "A collection of sayings attributed to the Buddha, offering guidance on the path to enlightenment through mindfulness and compassion. The Dhammapada, whose Pali title roughly translates as 'verses of the Dharma,' is one of the most widely read texts in the Buddhist canon and the entry point most frequently recommended for new readers approaching Buddhist scripture. Compiled in the third century BCE from teachings traditionally attributed directly to the historical Buddha, the work consists of 423 short verses arranged into twenty-six topical chapters — chapters on the mind, on heedlessness, on craving, on anger, on the wise, on the awakened one, on impermanence, on the path. The verses are aphoristic rather than systematic, designed to be memorized and contemplated rather than studied as theory, and they retain a directness that survives translation: 'All that we are is the result of what we have thought; the mind is everything; what we think we become.' The text is widely used as a daily reading for both Theravada and Mahayana practitioners and as the most accessible introduction to early Buddhist thought for general readers without the dense philosophical apparatus of the longer suttas.",
     },
     {
         "title": "The Book of Five Rings",
@@ -111,7 +111,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1645,
         "genre": "philosophy",
         "mood": ["hustle mode", "morning ritual", "productivity"],
-        "summary": "The legendary swordsman's treatise on strategy, discipline, and mastery, applicable to any competitive pursuit.",
+        "summary": "The legendary swordsman's treatise on strategy, discipline, and mastery, applicable to any competitive pursuit. Miyamoto Musashi, the seventeenth-century Japanese swordsman who is reputed to have fought more than sixty duels without defeat and who founded the Niten Ichi-ryu school of two-sword combat, wrote the Go Rin no Sho in his final years in a cave on Mount Iwato, where he had retired to systematize his lifetime's understanding of the martial Way. The book is divided into five scrolls — Earth, Water, Fire, Wind, and Void — corresponding to the classical elements and to distinct dimensions of strategic understanding: Earth for the foundations, Water for adaptive technique, Fire for the dynamics of actual combat, Wind for the comparative analysis of rival schools, and Void for the highest understanding that transcends all technique. Musashi treats the sword as a vehicle for a more general study of strategy that he insists applies equally to commanders of armies and to the affairs of daily life, and the book has accordingly been a touchstone of Japanese business and leadership culture for centuries. It remains one of the most widely read and translated texts of the Japanese martial-arts canon.",
     },
     {
         "title": "Critique of Pure Reason",
@@ -119,7 +119,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1781,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Kant's revolutionary work examining the limits and possibilities of human knowledge, reshaping the foundations of Western philosophy.",
+        "summary": "Kant's revolutionary work examining the limits and possibilities of human knowledge, reshaping the foundations of Western philosophy. The Critique of Pure Reason, first published in 1781 and substantially revised in 1787, is the foundational text of Kant's critical philosophy and one of the most consequential single books in the Western tradition. Kant calls the project a Copernican revolution in philosophy: instead of asking how the mind conforms to the world, he asks how the world must conform to the structures of any possible knowing mind. The first half of the book — the Transcendental Aesthetic and the Transcendental Analytic — argues that space and time are the necessary forms of human sensibility, and that the categories of the understanding (substance, causality, unity, plurality, and others) are the necessary structures any intelligible experience must exhibit. The second half — the Transcendental Dialectic — turns these results against the metaphysical traditions, showing that traditional rationalist arguments for the soul, the world as a totality, and God systematically misuse reason by applying its categories beyond the boundaries of possible experience. The work shaped every subsequent philosophical tradition that took knowledge or metaphysics seriously, and remains one of the highest peaks of Western philosophical writing.",
     },
     {
         "title": "Groundwork of the Metaphysics of Morals",
@@ -127,7 +127,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1785,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Kant introduces the categorical imperative, arguing that moral duty is grounded in reason alone.",
+        "summary": "Kant introduces the categorical imperative, arguing that moral duty is grounded in reason alone. The Groundwork of the Metaphysics of Morals, published in 1785 between the first and second editions of the Critique of Pure Reason, is Kant's compact and accessible statement of the foundations of his moral philosophy. The book is structured as a three-part movement from common sense to philosophical foundations. The first section reflects on what an ordinary person already understands about moral worth, identifying the good will and the motive of duty as central. The second section develops the categorical imperative in its three best-known formulations — act only on a maxim you can will to be a universal law; treat humanity, in yourself and others, never merely as a means but always also as an end; act as a legislating member of a kingdom of ends — and shows how each captures the same underlying requirement of moral consistency. The third section grounds the moral law in the autonomy of rational agency, arguing that the freedom required for moral responsibility and the moral law itself imply each other. The work has shaped every later deontological tradition and remains the indispensable starting point for Kantian ethics.",
     },
     {
         "title": "An Enquiry Concerning Human Understanding",
@@ -135,7 +135,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1748,
         "genre": "philosophy",
         "mood": ["late night reflection", "Sunday morning"],
-        "summary": "Hume challenges the foundations of knowledge, arguing that our beliefs about cause and effect rest on habit rather than reason.",
+        "summary": "Hume challenges the foundations of knowledge, arguing that our beliefs about cause and effect rest on habit rather than reason. David Hume's Enquiry, a 1748 reworking of his earlier Treatise of Human Nature for a general readership, is the most accessible single text of British empiricism and the place most modern readers first encounter Hume's signature arguments. The book opens with the distinction between matters of fact (knowable only through experience) and relations of ideas (knowable a priori), then develops the famous problem of induction: any inference from past experience to future expectation depends on an assumption — the uniformity of nature — that cannot itself be established by either kind of reasoning, leaving causal inference grounded in nothing more than psychological habit. The middle of the book applies the same skeptical analysis to the traditional rationalist apparatus: the self as a substantial entity, the existence of an external world independent of perception, the testimony of miracles, and the inferences from design to a divine creator. The work shaped Kant's critical philosophy, twentieth-century logical empiricism, and the contemporary epistemology of science. Continuously in print for nearly three centuries, it remains the indispensable starting point for the empiricist tradition.",
     },
     {
         "title": "A Treatise of Human Nature",
@@ -143,7 +143,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1739,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Hume's ambitious attempt to apply experimental methods to the study of human psychology and morality.",
+        "summary": "Hume's ambitious attempt to apply experimental methods to the study of human psychology and morality. Published in three volumes between 1739 and 1740, Hume's Treatise of Human Nature was his most ambitious work, written before he turned thirty, and one he later said had 'fallen dead-born from the press.' Despite its initial reception, the Treatise contains the longest and most rigorous statements of the doctrines for which Hume would become canonical: the constructive program of a science of human nature on Newtonian-experimental lines, the distinction between impressions and ideas, the bundle theory of the self, the analysis of causal inference, the problem of induction, the is-ought gap (the famous warning that descriptive premises cannot by themselves yield prescriptive conclusions), the sentimentalist account of moral judgment, and the genealogy of justice as an artificial virtue arising from the conditions of moderate scarcity and limited generosity. The Treatise's analysis is denser and more systematic than Hume's later popularizations, and serious readers eventually return to it. The work shaped every subsequent empiricist and naturalist tradition, and remains foundational reading for philosophy of mind, epistemology, ethics, and philosophy of science.",
     },
     {
         "title": "Two Treatises of Government",
@@ -151,7 +151,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1689,
         "genre": "philosophy",
         "mood": ["Sunday morning", "career pivot"],
-        "summary": "Locke lays the groundwork for liberal democracy, arguing that government authority derives from the consent of the governed.",
+        "summary": "Locke lays the groundwork for liberal democracy, arguing that government authority derives from the consent of the governed. The Two Treatises of Government, published anonymously in 1689 in the immediate aftermath of England's Glorious Revolution, is the foundational text of modern liberal political theory. The First Treatise is a sustained refutation of Robert Filmer's Patriarcha, the contemporary defense of absolute monarchy by appeal to divine right and patriarchal descent from Adam, while the Second Treatise constructs Locke's positive theory: human beings begin in a state of nature governed by natural law, in which they hold unalienable rights to life, liberty, and property; government is legitimate only insofar as it has the consent of the governed and limits itself to protecting those rights; and citizens retain a right of revolution when government betrays its trust. Locke's labor theory of property, his account of legitimate revolution, and his framing of natural rights shaped the American Declaration of Independence (Jefferson borrowed the structure, with 'pursuit of happiness' substituted for 'property') and the broader Anglo-American constitutional tradition. The work remains indispensable for any serious engagement with the foundations of liberal democracy.",
     },
     {
         "title": "An Essay Concerning Human Understanding",
@@ -159,7 +159,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1689,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Locke argues that the mind begins as a blank slate and that all knowledge comes from experience.",
+        "summary": "Locke argues that the mind begins as a blank slate and that all knowledge comes from experience. John Locke's Essay Concerning Human Understanding, published in 1689 after roughly two decades of work, is the foundational statement of British empiricism and the most thorough seventeenth-century alternative to the Cartesian rationalism that dominated the previous generation. Locke begins by attacking the doctrine of innate ideas, arguing that the mind at birth is a tabula rasa, and that all the ideas a mind eventually contains derive from two sources: sensation (what comes through the senses from external objects) and reflection (what the mind notices about its own operations). The middle of the essay develops his distinctions among simple and complex ideas, primary and secondary qualities, real and nominal essences, and his theory of personal identity grounded in the continuity of consciousness rather than of substance. The closing books address language, knowledge proper, and the limits of human understanding. The Essay shaped Berkeley, Hume, Kant, and the entire subsequent epistemological tradition, and remains in print as one of the most important works of early modern philosophy.",
     },
     {
         "title": "The Social Contract",
@@ -167,7 +167,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1762,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Rousseau argues that legitimate political authority must be based on a social contract among free and equal citizens.",
+        "summary": "Rousseau argues that legitimate political authority must be based on a social contract among free and equal citizens. Jean-Jacques Rousseau's Du contrat social, published in 1762, opens with one of the most famous lines in political philosophy — 'Man is born free, and everywhere he is in chains' — and devotes the rest of the work to identifying the only kind of political arrangement in which the chains are legitimate. Rousseau argues that legitimate political authority can rest neither on force, nor on inherited right, nor on the consent of subjects to be governed by another, but only on the social contract through which citizens agree to give themselves laws determined by what he calls the general will, the common interest of the political community as opposed to the aggregated private interests of its members. The book develops the theory of popular sovereignty, the role of civil religion, and the famous (and ambiguous) doctrine that someone who refuses to follow the general will may rightly be 'forced to be free.' The work shaped the French Revolution, modern democratic theory, and every later debate about majoritarianism and the rights of dissent. It remains foundational reading in political philosophy.",
     },
     {
         "title": "Emile, or On Education",
@@ -175,7 +175,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1762,
         "genre": "philosophy",
         "mood": ["Sunday morning", "self-discovery"],
-        "summary": "Rousseau's treatise on education argues that children should learn through experience and nature rather than rote instruction.",
+        "summary": "Rousseau's treatise on education argues that children should learn through experience and nature rather than rote instruction. Emile, published in 1762, is Rousseau's longest and most ambitious work, structured as a hybrid of philosophical treatise and didactic novel that follows a single fictional child, Emile, through five stages of development from infancy to early adulthood under the care of a pseudo-tutor figure who narrates the work. The book's central pedagogical conviction is that the human is born good and corrupted by society, and that genuine education must therefore work with the child's natural development rather than imposing adult demands prematurely. Rousseau prescribes radically different curricula and approaches at each developmental stage — early childhood focused on physical health and sensory experience, middle childhood on hands-on practical skills, adolescence on moral and emotional development, young adulthood on civic and ethical formation. The fifth book, on the education of Sophie, Emile's intended bride, takes positions on women's education that have been heavily criticized since the Enlightenment. Despite these tensions, the work shaped the modern theory of childhood and child-centered education, and remains one of the most important texts in the history of educational thought.",
     },
     {
         "title": "Leviathan",
@@ -183,7 +183,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1651,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Hobbes argues that without a strong sovereign, human life would be solitary, poor, nasty, brutish, and short.",
+        "summary": "Hobbes argues that without a strong sovereign, human life would be solitary, poor, nasty, brutish, and short. Thomas Hobbes's Leviathan, published in 1651 in the immediate aftermath of the English Civil War, is the foundational text of modern social-contract theory and the most rigorous early-modern argument for absolute sovereignty as the only secure foundation of political life. Hobbes builds his argument from a materialist account of human psychology — every individual is driven by the unending pursuit of power and the fear of death — and works through what life would be like if the ordinary apparatus of civil society were removed. In this state of nature, every person has a right to everything, no industry or science is possible because no one can be sure their efforts will be theirs to keep, and life is famously 'solitary, poor, nasty, brutish, and short.' The only way out is for individuals to covenant with one another to transfer their natural rights to a sovereign authority — the Leviathan — who is granted enough power to enforce the covenant against any subset of subjects. The work shaped every subsequent contractarian tradition, including the rather different versions Locke and Rousseau offered as alternatives, and remains foundational political philosophy.",
     },
     {
         "title": "Beyond Good and Evil",
@@ -191,7 +191,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1886,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis", "self-discovery"],
-        "summary": "Nietzsche challenges the foundations of traditional morality, calling for a revaluation of all values.",
+        "summary": "Nietzsche challenges the foundations of traditional morality, calling for a revaluation of all values. Beyond Good and Evil, published in 1886, presents itself as a 'prelude to a philosophy of the future' and is one of Nietzsche's most aphoristically crystallized later works. The book is divided into nine sections that move through the prejudices of philosophers, the free spirit, the religious nature, epigrams and interludes, the natural history of morals, the scholar, our virtues, peoples and fatherlands, and what is noble. Nietzsche works to expose the metaphysical and psychological assumptions hiding inside what philosophers and ordinary people take as obvious moral judgments, distinguishing master morality (which originates in self-affirmation and treats noble qualities as the standard) from slave morality (which originates in resentment of the powerful and inverts noble values). The book is sharper, more personal, and more rhetorically polished than the earlier Genealogy of Morals or Thus Spoke Zarathustra, and serves as the most accessible single point of entry into Nietzsche's mature philosophy for a serious reader. It has shaped continental philosophy, literary modernism, and twentieth-century reckonings with the foundations of moral thought across a range of traditions.",
     },
     {
         "title": "Thus Spoke Zarathustra",
@@ -199,7 +199,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1883,
         "genre": "philosophy",
         "mood": ["existential crisis", "self-discovery", "late night reflection"],
-        "summary": "Nietzsche's literary masterpiece introduces the Übermensch and the eternal recurrence through the prophet Zarathustra's journey.",
+        "summary": "Nietzsche's literary masterpiece introduces the Übermensch and the eternal recurrence through the prophet Zarathustra's journey. Thus Spoke Zarathustra, written in four parts between 1883 and 1885, is the most literary and the most idiosyncratic of Nietzsche's books — a philosophical novel modeled on the cadences of biblical prose, in which the historical Persian prophet Zarathustra (Zoroaster) returns from solitude in the mountains to teach humanity the death of God, the doctrine of the Übermensch as the meaning of the earth, the will to power, and the doctrine of the eternal recurrence of the same. Each book follows Zarathustra through encounters with various human types — the higher men, the despisers of the body, the priests, the soothsayer, the ugliest man — that provide occasions for the central teachings to unfold. The book's prose is deliberately mythic, by turns lyrical and sermonic, and resists straightforward summary in the way Nietzsche's more analytical works do not. Nietzsche himself considered Zarathustra the greatest gift humanity had ever been given. The book has shaped twentieth-century literary modernism, philosophy of religion, and the existentialist tradition, and remains the most ambitious literary statement of his philosophy.",
     },
     {
         "title": "On the Genealogy of Morality",
@@ -207,7 +207,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1887,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Nietzsche traces the origins of moral concepts, arguing that guilt and bad conscience arose from the suppression of instincts.",
+        "summary": "Nietzsche traces the origins of moral concepts, arguing that guilt and bad conscience arose from the suppression of instincts. On the Genealogy of Morality, published in 1887 as a polemical companion to Beyond Good and Evil, is the most sustained single work of moral genealogy in the philosophical canon. Nietzsche organizes the book into three essays. The first traces the historical origin of the good-evil distinction characteristic of Christian morality back to the slave revolt in morality, in which the priestly class of a defeated people inverted the noble values of their conquerors and made meekness, suffering, and obedience into virtues. The second essay locates the origins of guilt and bad conscience in the internalization of aggressive instincts that had nowhere else to discharge once humans were corralled into peaceful societies, and traces the genesis of the punitive concept of debt. The third essay examines the ascetic ideal — the willingness to sacrifice life for what is alleged to be higher than life — and treats it as the most successful expression of the will to nothingness. The work has shaped twentieth-century philosophy, anthropology, and historical sociology, and remains foundational reading in moral psychology and the history of ethics.",
     },
     {
         "title": "The Gay Science",
@@ -215,7 +215,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1882,
         "genre": "philosophy",
         "mood": ["existential crisis", "self-discovery"],
-        "summary": "Nietzsche declares the death of God and explores the consequences for morality, art, and human meaning.",
+        "summary": "Nietzsche declares the death of God and explores the consequences for morality, art, and human meaning. The Gay Science, first published in 1882 and substantially expanded in 1887, contains some of Nietzsche's most quotable passages alongside some of his most revealing self-experiments. The title is borrowed from a Provençal phrase for the troubadour tradition's wedding of intellectual and erotic gifts, and Nietzsche uses it to signal that the work's seriousness will be carried by lightness, wit, and the playful disposition he calls 'gay' in the older English sense. The book contains the famous parable of the madman in the marketplace announcing the death of God, and the surrounding aphorisms develop the implications: the end of the metaphysical guarantee for traditional morality, the danger of Western nihilism filling the vacuum, the need for new values, and the conditions under which a free spirit might flourish in the absence of the old certainties. The fourth book, written shortly after Nietzsche's first encounter with Lou Andreas-Salomé, contains the first published statement of the eternal recurrence. The work occupies a pivotal position between the early and the late periods of his thought.",
     },
     {
         "title": "Being and Nothingness",
@@ -223,7 +223,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1943,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Sartre's magnum opus argues that existence precedes essence and that we are condemned to be free.",
+        "summary": "Sartre's magnum opus argues that existence precedes essence and that we are condemned to be free. Being and Nothingness, published in 1943, is Jean-Paul Sartre's longest and most ambitious philosophical work and the foundational text of his existentialist phenomenology. Sartre draws on Husserl's phenomenological method and Heidegger's Being and Time, but transforms both into a sharp dualism between two modes of being: being-in-itself (the dense self-identical mode of objects) and being-for-itself (the negating, self-aware, perpetually unfinished mode of consciousness). Consciousness, for Sartre, is fundamentally lack and freedom — not a thing but a refusal to be the thing it is contemplating, condemned to be free in the sense that it cannot escape its own choosing without choosing precisely that escape. The book develops his analyses of bad faith (the self-deception by which we treat ourselves as fixed essences to evade responsibility), the look (the way other consciousnesses transform our being-in-the-world by making us objects for them), and concrete relations with others (love, sadism, masochism, indifference) as distinct attempted resolutions of intersubjective conflict. The work shaped postwar continental philosophy, literary modernism, and the broader existentialist tradition.",
     },
     {
         "title": "Existentialism Is a Humanism",
@@ -231,7 +231,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1946,
         "genre": "philosophy",
         "mood": ["self-discovery", "fresh start"],
-        "summary": "Sartre defends existentialism as a philosophy of radical freedom, responsibility, and human dignity.",
+        "summary": "Sartre defends existentialism as a philosophy of radical freedom, responsibility, and human dignity. Existentialism Is a Humanism, the printed text of a 1945 lecture Sartre delivered in Paris just after the liberation, was Sartre's attempt to rescue the term existentialism from popular misunderstanding and to defend it against simultaneous attacks from Communist critics (who accused it of bourgeois individualism) and Catholic critics (who accused it of nihilism). The lecture is by far Sartre's most accessible philosophical text and remains the single most popular introduction to his thought. Sartre states the central claim plainly — for human beings, existence precedes essence, meaning that there is no fixed human nature determining what each individual must become and that each of us is responsible for defining ourselves through our choices — and traces the consequences for moral responsibility, anguish, abandonment, and despair. He argues that this radical freedom is not nihilistic but the foundation of a humanistic ethics in which every choice implicitly legislates for everyone. Sartre later expressed reservations about some of the lecture's simplifications, but the work continues to function as the ideal first text for general readers approaching twentieth-century existentialism.",
     },
     {
         "title": "The Myth of Sisyphus",
@@ -239,7 +239,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1942,
         "genre": "philosophy",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Camus argues that we must imagine Sisyphus happy, finding meaning through rebellion against the absurd.",
+        "summary": "Camus argues that we must imagine Sisyphus happy, finding meaning through rebellion against the absurd. The Myth of Sisyphus, published in 1942 alongside the novel The Stranger, is Albert Camus's foundational essay on the absurd and the work in which he most fully articulates the philosophical position that organizes his early writing. Camus opens with what he calls the only truly serious philosophical question — whether life is worth living — and argues that any honest reckoning with the human condition must begin from the encounter between a human mind that demands meaning and a universe that refuses to provide it, an encounter Camus calls the absurd. The essay then works through and rejects two false escapes: physical suicide, which abolishes the questioner rather than answering the question, and philosophical suicide, in which religious or existentialist thinkers (Camus reads Kierkegaard, Jaspers, Shestov, and Husserl in this category) project meaning onto the universe to evade its silence. The remaining live option is to maintain the absurd in conscious revolt, exemplified in the figure of Sisyphus eternally pushing his stone uphill. The book remains the single most important short essay in twentieth-century philosophy of meaning.",
     },
     {
         "title": "The Rebel",
@@ -247,7 +247,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1951,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Camus traces the history of rebellion and revolution, arguing for revolt tempered by moderation and solidarity.",
+        "summary": "Camus traces the history of rebellion and revolution, arguing for revolt tempered by moderation and solidarity. The Rebel, published in 1951, is Albert Camus's most ambitious work of political philosophy and the work that produced his famous public break with Sartre and the broader French intellectual left. Camus moves from the metaphysical absurd of his earlier writing to the political question of revolt, asking what political activity is consistent with the lucid consciousness of the absurd that he had defended in The Myth of Sisyphus. The book traces a history of rebellion through the Marquis de Sade, the Romantic dandy, the Russian nihilists, the surrealists, German national socialism, and the Bolshevik revolution, identifying a recurring pattern by which legitimate revolt against unjust conditions tips into revolution that justifies any present horror in the name of an imagined future utopia. Camus argues for a Mediterranean ethic of revolt — solidarity, moderation, the refusal to murder for an idea — that he draws from his classical and Greek inheritance. The book's critique of Soviet communism precipitated his rupture with Sartre, who had moved closer to the French Communist Party. It remains a central text in twentieth-century political philosophy.",
     },
     {
         "title": "The Stranger",
@@ -255,7 +255,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1942,
         "genre": "philosophy",
         "mood": ["existential crisis", "late night reflection", "beach read"],
-        "summary": "Camus's novel about a man indifferent to society's expectations, exposing the absurdity of conventional meaning.",
+        "summary": "Camus's novel about a man indifferent to society's expectations, exposing the absurdity of conventional meaning. The Stranger, published in 1942 alongside the philosophical essay The Myth of Sisyphus, is Albert Camus's most widely read novel and the literary expression of the philosophical position the essay states discursively. The protagonist, Meursault, is a colonial Algerian Frenchman whose flat, observational narration registers the events of his life — his mother's death, an offhand love affair, an absurd murder on a sun-bleached beach, his trial and condemnation — without any of the emotional or moral coloration the surrounding society expects of him. The novel's structure is bipartite. The first part recounts the events leading to the killing in Meursault's own laconic voice; the second part dramatizes his trial, in which the prosecution treats his earlier emotional inadequacies (failing to weep at his mother's funeral, beginning a romantic relationship the next day) as evidence of premeditated murderousness, and his existential indifference becomes the central scandal. The closing pages, in which Meursault confronts the prison chaplain and arrives at a hard-won lucidity about death, are among the most quoted in twentieth-century French literature.",
     },
     {
         "title": "The Second Sex",
@@ -263,7 +263,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1949,
         "genre": "philosophy",
         "mood": ["self-discovery", "existential crisis"],
-        "summary": "De Beauvoir's groundbreaking analysis of women's oppression argues that one is not born but becomes a woman.",
+        "summary": "De Beauvoir's groundbreaking analysis of women's oppression argues that one is not born but becomes a woman. The Second Sex, published in 1949, is Simone de Beauvoir's most ambitious work and the foundational text of postwar feminist philosophy. De Beauvoir applies an existentialist framework — drawn from her own work and from her ongoing collaboration with Sartre — to the historical situation of women, asking why women have been constructed throughout patriarchal civilization as the Other to a male absolute, and what it would mean for women to assume the freedom and responsibility that existentialism treats as constitutive of any human subject. The first volume traces the historical, biological, psychoanalytic, and economic accounts of women's situation and shows how each has functioned to naturalize what is in fact a contingent social construction. The second volume turns to the lived experience of girlhood, sexuality, marriage, motherhood, and aging, drawing on diaries, novels, and case studies, with the celebrated argument that femininity is something one becomes through a long process of socialization rather than something one is born with. The work shaped second-wave feminism worldwide and remains foundational reading in feminist philosophy and gender studies.",
     },
     {
         "title": "The Ethics of Ambiguity",
@@ -271,7 +271,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1947,
         "genre": "philosophy",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "De Beauvoir develops an existentialist ethics, arguing that freedom must be exercised in solidarity with others.",
+        "summary": "De Beauvoir develops an existentialist ethics, arguing that freedom must be exercised in solidarity with others. The Ethics of Ambiguity, published in 1947, is Simone de Beauvoir's most ambitious philosophical text after The Second Sex and the most sustained attempt of the early existentialist tradition to develop a positive ethics out of the recognition of human freedom. De Beauvoir takes as her starting point the ambiguous condition Sartre had described in Being and Nothingness — humans are simultaneously free transcending consciousnesses and embodied facticity, simultaneously subjects who exceed every situation and objects implicated in it — and argues that any honest ethics must begin from that ambiguity rather than try to resolve it in either direction. She catalogues a typology of inauthentic responses (the sub-man, the serious man, the nihilist, the adventurer, the passionate man) before arguing that genuine moral action requires recognizing one's own freedom and willing the freedom of others as a unified project. The result is an existentialist humanism with stronger ethical commitments than Sartre's contemporaneous work, and a critique of the various forms of bad faith by which agents try to evade the responsibilities of their freedom. The work has been heavily reread in recent feminist and postcolonial philosophy.",
     },
     {
         "title": "Either/Or",
@@ -279,7 +279,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1843,
         "genre": "philosophy",
         "mood": ["existential crisis", "self-discovery"],
-        "summary": "Kierkegaard contrasts the aesthetic and ethical ways of life, exploring the anguish of choosing how to exist.",
+        "summary": "Kierkegaard contrasts the aesthetic and ethical ways of life, exploring the anguish of choosing how to exist. Either/Or, Søren Kierkegaard's first major work and one of his strangest, was published in 1843 under the layered pseudonyms typical of his authorship. The book presents itself as a manuscript discovered in a desk and edited by a man named Victor Eremita — but the contents are themselves a clash of voices. The first volume is the work of an unnamed seducer-figure called A, who articulates the aesthetic life of immediacy, mood, irony, and ever-renewed pleasure, with the famous Diapsalmata, the seducer's diary, and the long essay on Mozart's Don Giovanni. The second volume is a long letter from a married Judge Wilhelm to A, defending the ethical life of marriage, vocation, and chosen continuity over the aesthetic stance, and arguing that the deepest happiness available to a finite being is not in the renewable surprise of new pleasures but in the deliberate choice of oneself in commitment. Kierkegaard does not adjudicate between the two voices, leaving the reader to choose. The book is the foundational text of his three-stage dialectic and a touchstone of nineteenth-century existential thought.",
     },
     {
         "title": "Fear and Trembling",
@@ -287,7 +287,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1843,
         "genre": "philosophy",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Kierkegaard meditates on Abraham's willingness to sacrifice Isaac, exploring faith as a leap beyond reason.",
+        "summary": "Kierkegaard meditates on Abraham's willingness to sacrifice Isaac, exploring faith as a leap beyond reason. Fear and Trembling, published in 1843 under the pseudonym Johannes de Silentio, is Kierkegaard's most extended single meditation on the concept of religious faith and the limits of ethical reason. The book takes as its central case the binding of Isaac in Genesis 22 — the story in which God commands Abraham to sacrifice his son Isaac, and Abraham, in obedience, raises the knife — and works the case in four imaginative variations before turning to a sustained philosophical analysis. Kierkegaard distinguishes the tragic hero, who acts within the universal categories of ethics, from the knight of faith, who must on a religious command act in a way that the ethical cannot justify and that the agent cannot publicly explain. He calls this the teleological suspension of the ethical. The book is partly an indirect argument with Hegel's totalizing rationalism, partly a meditation on the relationship between Kierkegaard and his broken engagement to Regine Olsen, and partly a foundational statement of the Christian existentialist tradition. It remains the most accessible major work in his pseudonymous authorship.",
     },
     {
         "title": "The Sickness unto Death",
@@ -295,7 +295,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1849,
         "genre": "philosophy",
         "mood": ["existential crisis", "self-discovery"],
-        "summary": "Kierkegaard diagnoses despair as the universal human condition and argues that the self can only be grounded in God.",
+        "summary": "Kierkegaard diagnoses despair as the universal human condition and argues that the self can only be grounded in God. The Sickness unto Death, published in 1849 under the pseudonym Anti-Climacus, is Kierkegaard's most rigorous philosophical analysis of despair and the fullest single statement of his theological psychology. The opening section develops a famously intricate definition of the self — not a thing but a relation that relates to itself, and in relating to itself relates to that which has constituted the relation — and argues that the self can stand in right relation to itself only by transparently grounding itself in the power that posits it, which Kierkegaard names God. Despair, in his analysis, is the misrelation of the self to itself, and the book traces its forms in increasing depth: not knowing one is in despair, despair at not willing to be oneself, despair at willing to be oneself on one's own terms. The closing section identifies despair as the spiritual sickness that, unlike biological illness, neither kills the patient nor allows them to recover, and that is therefore properly named the sickness unto death. The work is foundational reading in nineteenth-century existential and theological thought.",
     },
     {
         "title": "Being and Time",
@@ -303,7 +303,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1927,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Heidegger's dense masterwork reframes the question of being, introducing concepts like Dasein, thrownness, and being-toward-death.",
+        "summary": "Heidegger's dense masterwork reframes the question of being, introducing concepts like Dasein, thrownness, and being-toward-death. Being and Time, published in 1927, is Martin Heidegger's most ambitious single work and one of the most consequential philosophical texts of the twentieth century. Heidegger argues that Western philosophy has spent two and a half millennia inquiring into beings — particular things and their properties — without ever asking the prior question of what being itself means. The book sets out to reopen that question through what he calls fundamental ontology: an analysis of the one being for whom its own being is an issue, namely Dasein, the human being understood not as a substance with properties but as the temporally-stretched, situationally-engaged, possibility-projecting kind of entity humans are. Heidegger develops the existential analytic through a sequence of structures — being-in-the-world, the worldhood of the world, being-with, the public and inauthentic mode of das Man, anxiety as the mood that discloses Dasein's groundlessness, and being-toward-death as the structure that, properly faced, opens the possibility of authentic existence. The book's projected second half on the meaning of being itself was never completed. It shaped Sartre, Levinas, Gadamer, Derrida, Foucault, and continental philosophy more broadly.",
     },
     {
         "title": "Phenomenology of Spirit",
@@ -311,7 +311,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1807,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Hegel traces the development of consciousness through dialectical stages toward absolute knowledge.",
+        "summary": "Hegel traces the development of consciousness through dialectical stages toward absolute knowledge. The Phenomenology of Spirit, Hegel's first major work, is the most ambitious narrative reconstruction of human consciousness in the philosophical canon — a single sustained journey beginning with the immediate sensory awareness of an ordinary perceiver and ending with the absolute knowledge in which Spirit recognizes itself as both subject and substance of its own history. The opening sections trace the dialectic of consciousness through sense-certainty, perception, and force-and-understanding, each shape collapsing internally into the next. The famous middle section on the master-slave dialectic shows the recognition of self-consciousness emerging out of the life-and-death struggle between two would-be masters and producing, paradoxically, the slave as the bearer of the eventual freedom both initially sought. Subsequent sections move through stoicism, skepticism, and unhappy consciousness; reason in its observing, active, and law-giving forms; the long history of Spirit through ancient ethical life, the Roman world, Christianity, and modernity; religion in its symbolic forms; and finally absolute knowing. The work shaped nearly every major philosophical tradition that followed, from Marxist materialism to existentialism to twentieth-century French theory, and remains essential reading for any serious engagement with continental philosophy.",
     },
     {
         "title": "The World as Will and Representation",
@@ -319,7 +319,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1818,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Schopenhauer argues that the world is driven by a blind, purposeless will and that only art, compassion, and asceticism offer escape.",
+        "summary": "Schopenhauer argues that the world is driven by a blind, purposeless will and that only art, compassion, and asceticism offer escape. The World as Will and Representation, first published in 1819 and substantially expanded in 1844, is Arthur Schopenhauer's only major systematic work and the foundational text of philosophical pessimism. Schopenhauer takes Kant's distinction between phenomena and the thing-in-itself but identifies the thing-in-itself as Will — a blind, irrational, ceaselessly striving force that he believes anyone can find within themselves through introspection, as the inner experience of their own embodied desire, and that he then projects outward to read all of nature. Because Will is by nature unsatisfiable, life under its dominion is structurally a swing between the suffering of frustrated desire and the boredom that follows brief satisfactions. The four books of the work develop the metaphysics of Will, the natural philosophy of Will in nature, the doctrine of aesthetic experience as a temporary suspension of Will through the contemplation of Platonic Ideas, and the ascetic ethics of compassion and the renunciation of Will as the only durable escape from suffering. The work shaped Wagner, Nietzsche, Tolstoy, and the Frankfurt School, and remains essential reading in nineteenth-century philosophy.",
     },
     {
         "title": "Philosophical Investigations",
@@ -327,7 +327,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1953,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Wittgenstein dismantles his own earlier philosophy, arguing that meaning comes from use and that many philosophical problems dissolve when we attend to language.",
+        "summary": "Wittgenstein dismantles his own earlier philosophy, arguing that meaning comes from use and that many philosophical problems dissolve when we attend to language. The Philosophical Investigations, published posthumously in 1953, is Ludwig Wittgenstein's later masterwork and a deliberate retraction of much of his early Tractatus Logico-Philosophicus. Where the Tractatus had treated language as a logical mirror of facts, the Investigations treats language as a heterogeneous toolbox of practices — language games — embedded in forms of life. Meaning, in this later view, is not the picture a sentence holds up to reality but its use within the practices of a community of speakers. The book develops the famous critiques of Augustine's picture of language as labels for things, of the idea of a private language, of mental images as the bearers of understanding, and of philosophical confusions that arise when we use words outside the language games in which they have a clear use. Wittgenstein writes in a distinctive series of numbered remarks that often begin a thread, drop it, and return to it after intervening detours. The work shaped twentieth-century philosophy of language, philosophy of mind, and ordinary-language philosophy.",
     },
     {
         "title": "Tractatus Logico-Philosophicus",
@@ -335,7 +335,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1921,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Wittgenstein's austere early work argues that the limits of language are the limits of the world.",
+        "summary": "Wittgenstein's austere early work argues that the limits of language are the limits of the world. The Tractatus Logico-Philosophicus, published in 1921 in German and 1922 in English, is Ludwig Wittgenstein's only book-length work to appear in his lifetime, written largely in the trenches of the First World War. The book is structured as a numbered tree of seven main propositions, each elaborated through subordinate numbered remarks at multiple decimal depths, that together build up a complete picture of language, logic, and the world. Wittgenstein argues that meaningful propositions are pictures of possible states of affairs, that logic itself shows the formal structure of language and the world but cannot be said in propositions, and that the limits of language are the limits of the world. The book ends with the famous remark that whereof one cannot speak, thereof one must be silent — and Wittgenstein meant it strictly: ethics, aesthetics, the meaning of life, and metaphysics, in his early view, lie outside the bounds of what can be meaningfully said and can only be shown. He believed for several years that he had solved the central problems of philosophy. He later renounced much of the Tractatus's framework in his Philosophical Investigations.",
     },
     {
         "title": "A Theory of Justice",
@@ -343,7 +343,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1971,
         "genre": "philosophy",
         "mood": ["Sunday morning", "late night reflection"],
-        "summary": "Rawls revives social contract theory with the veil of ignorance, arguing for justice as fairness.",
+        "summary": "Rawls revives social contract theory with the veil of ignorance, arguing for justice as fairness. A Theory of Justice, published in 1971, is John Rawls's most important work and the single most influential book in twentieth-century Anglophone political philosophy. Rawls revives the social-contract tradition of Locke, Rousseau, and Kant against the dominant utilitarianism of his age, arguing that principles of justice should be those that free and equal persons would unanimously choose under what he calls the veil of ignorance — a hypothetical original position in which the choosers know all the general facts about human society but none of the particular facts about themselves (their race, gender, talents, religion, social class) that might bias their choice in self-serving directions. From that original position, Rawls argues, rational choosers would unanimously select two principles: equal basic liberties for all, and the difference principle, which permits social and economic inequalities only insofar as they work to the greatest benefit of the least-advantaged members of society. The book reshaped Anglophone political philosophy, set the agenda for half a century of subsequent debate, and remains the indispensable starting point for anyone serious about questions of distributive justice.",
     },
     {
         "title": "Justice: What's the Right Thing to Do?",
@@ -351,7 +351,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2009,
         "genre": "philosophy",
         "mood": ["Sunday morning", "self-discovery"],
-        "summary": "Sandel makes political philosophy accessible by examining real moral dilemmas through competing philosophical frameworks.",
+        "summary": "Sandel makes political philosophy accessible by examining real moral dilemmas through competing philosophical frameworks. Justice: What's the Right Thing to Do?, published in 2009 and based on Michael Sandel's enormously popular Harvard course Justice (which became one of the first courses widely viewed online), is a tour through major moral and political traditions organized around concrete cases rather than abstract theory. Sandel works systematically through utilitarianism (Bentham and Mill), libertarianism (Robert Nozick), Kantian deontology, Rawlsian liberalism, Aristotelian virtue ethics, and his own communitarian position, illustrating each with cases drawn from contemporary controversy: the trolley problem, the morality of military conscription, surrogate motherhood, affirmative action, hate speech, same-sex marriage, the question of what the state owes to its veterans. He argues that the dominant liberal framework's attempt to keep questions of the good life out of public discourse is neither possible nor desirable, and that political philosophy needs to take more seriously the kinds of substantive moral questions communitarian and Aristotelian traditions take on directly. The book is unusually accessible for political philosophy and has been adopted as the standard introductory text in many undergraduate ethics courses.",
     },
     {
         "title": "The Tyranny of Merit",
@@ -359,7 +359,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2020,
         "genre": "philosophy",
         "mood": ["career pivot", "existential crisis"],
-        "summary": "Sandel argues that meritocracy breeds hubris among winners and humiliation among losers, corroding the common good.",
+        "summary": "Sandel argues that meritocracy breeds hubris among winners and humiliation among losers, corroding the common good. The Tyranny of Merit, published in 2020, is Michael Sandel's most ambitious book of political philosophy aimed squarely at a contemporary diagnosis: the populist anger that produced Brexit, the 2016 US election, and parallel movements across Western democracies, which Sandel reads less as the work of a few demagogues than as the predictable consequence of a meritocratic ideology that has hollowed out the dignity of work for those without elite credentials. He traces the rise of the language of meritocracy in the second half of the twentieth century, drawing a sharp line from postwar social-democratic conceptions of justice to the credentialist neoliberalism that culminated in the rhetoric of 'rising' and 'making it' on both center-left and center-right. The book argues that meritocracy systematically inflates the moral pride of winners and the shame of losers, replaces solidarity with envy, and corrodes the idea of the common good. Sandel proposes recovery routes through dignity-of-work policies, civic education, and a substantively richer public discourse on the value of contribution. The book has been widely discussed in policy circles.",
     },
     {
         "title": "Animal Liberation",
@@ -367,7 +367,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1975,
         "genre": "philosophy",
         "mood": ["self-discovery", "existential crisis"],
-        "summary": "Singer makes the philosophical case against speciesism, launching the modern animal rights movement.",
+        "summary": "Singer makes the philosophical case against speciesism, launching the modern animal rights movement. Animal Liberation, published in 1975, is Peter Singer's most influential work and the founding text of the modern animal-rights movement. Singer is a utilitarian, and the book's central philosophical move is to apply the standard utilitarian principle of equal consideration of interests across species. He argues that the morally relevant fact about a being is whether it can suffer — whether it has interests that can be set back by what we do to it — and that any consistent ethics must give equal weight to comparable interests regardless of which species the bearer happens to belong to. He coins the term speciesism for the systematic discounting of nonhuman animal interests on grounds analogous to those once used to discount the interests of women, of slaves, and of other species of human beings. The book combines philosophical argument with an extended factual catalogue of the conditions of factory farming and laboratory animal research, drawn from industry sources, that produced its enormous public effect. The book has shaped the development of animal-welfare law, the rise of vegetarian and vegan movements, and the academic field of animal ethics over the past half century.",
     },
     {
         "title": "The Life You Can Save",
@@ -751,7 +751,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2006,
         "genre": "philosophy",
         "mood": ["morning ritual", "self-discovery", "Sunday morning"],
-        "summary": "Haidt tests ancient philosophical wisdom about happiness against modern psychological research.",
+        "summary": "Haidt tests ancient philosophical wisdom about happiness against modern psychological research. Jonathan Haidt's premise is that traditions of practical philosophy worked out, by trial and reflection over centuries, much of what experimental psychology has only recently been able to demonstrate empirically. He organizes the book around ten 'Great Ideas' that recur across the world's major contemplative traditions — among them the divided self, reciprocity, the role of adversity, the way love and work create meaning, the importance of moral capital — and examines each in light of contemporary research. His controlling metaphor, borrowed from his own moral psychology, is the rider and the elephant: the rational mind sits atop a far larger emotional machine and can guide it only with skill. The book is best known for the way Haidt rehabilitates virtue ethics for a scientific audience, showing why advice that sounds like a fortune cookie often turns out to be empirically validated. It has become a staple introduction to positive psychology, used widely in undergraduate teaching and by readers looking for a serious modern engagement with ancient wisdom that does not collapse into either self-help or dismissive scientism.",
     },
     {
         "title": "The Righteous Mind",
