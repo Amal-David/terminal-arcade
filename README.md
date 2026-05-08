@@ -48,6 +48,8 @@ Classic endless block stacking with standard wall kicks, one next-piece preview,
 
 Play White against a built-in rule-based engine on a full-screen pixel-art board with easy, medium, and hard difficulty levels.
 
+![Chess — Gameplay](assets/screenshots/chess_gameplay.png)
+
 [Read more →](chess_game/README.md)
 
 ### The Bookshelf
