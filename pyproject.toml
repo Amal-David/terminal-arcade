@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "terminal-arcade"
-version = "0.4.0"
-description = "Terminal games: Dino Run, Snake, Tetris, Chess, Star Blast, and an interactive bookshelf explorer."
+version = "0.5.0"
+description = "Terminal games: Dino Run, Snake, Tetris, Chess, Star Blast, an interactive bookshelf explorer, and Wonder — a daily fact-or-story cabinet."
 readme = "README.md"
 requires-python = ">=3.10"
 keywords = ["game", "terminal", "curses", "runner", "snake", "tetris", "chess"]
@@ -19,6 +19,7 @@ tetris = "tetris_game.game:run"
 chess-game = "chess_game.game:run"
 star-blast = "star_blast.game:run"
 bookshelf = "bookshelf.app:run"
+wonder = "wonder.app:run"
 
 [tool.setuptools]
-packages = ["dino_game", "snake_game", "tetris_game", "chess_game", "star_blast", "bookshelf", "bookshelf.data", "bookshelf.screens", "bookshelf.ui", "bookshelf.skill", "terminal_arcade"]
+packages = ["dino_game", "snake_game", "tetris_game", "chess_game", "star_blast", "bookshelf", "bookshelf.data", "bookshelf.screens", "bookshelf.ui", "bookshelf.skill", "wonder", "wonder.data", "wonder.screens", "wonder.ui", "wonder.skill", "terminal_arcade"]

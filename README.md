@@ -1,6 +1,6 @@
 # Terminal Arcade
 
-A retro arcade for your terminal — pure Python, zero dependencies, curses-based. Six fully-playable games and an interactive bookshelf, all behind a single launcher. Plus drop-in **Claude Code** and **Codex** hooks that surface a curated book quote every Nth tool call — configurable cadence (5 / 10 / 20) so the wisdom lands without breaking your flow.
+A retro arcade for your terminal — pure Python, zero dependencies, curses-based. Five fully-playable games, an interactive bookshelf, and **Wonder** — a daily fact-or-story cabinet — all behind a single launcher. Plus drop-in **Claude Code** and **Codex** hooks that surface a curated book quote every Nth tool call — configurable cadence (5 / 10 / 20) so the wisdom lands without breaking your flow.
 
 ```bash
 python3 -m bookshelf.skill.cadence 10   # one quote per 10 tool calls
@@ -61,6 +61,14 @@ A terminal book discovery app with 313 books across motivation, startup, and rom
 
 [Read more →](bookshelf/README.md)
 
+### Wonder
+
+Pick a mood — funny, heartwarming, weird, or inspiring — and pull one fresh fact or story from the internet for the day. Caches the day's pick so re-opens are instant, falls back to a bundled curated set when offline, and lets you save anything that landed for later. Zero external dependencies — uses stdlib `urllib` and free public APIs (icanhazdadjoke, uselessfacts, r/UpliftingNews, r/MadeMeSmile).
+
+```bash
+python3 -m wonder              # or: wonder
+```
+
 ## Requirements
 
 - Python 3.10+
@@ -75,7 +83,7 @@ cd terminal-arcade
 pip install -e .
 ```
 
-If `pip` warns that `arcade`, `dino-run`, `snake-game`, `tetris`, `chess-game`, `star-blast`, or `bookshelf` were installed to a directory that is not on `PATH`, you can either run the modules directly or add the user script directory to `PATH`.
+If `pip` warns that `arcade`, `dino-run`, `snake-game`, `tetris`, `chess-game`, `star-blast`, `bookshelf`, or `wonder` were installed to a directory that is not on `PATH`, you can either run the modules directly or add the user script directory to `PATH`.
 
 User script directories:
 
@@ -99,6 +107,7 @@ python3 -m tetris_game
 python3 -m chess_game
 python3 -m star_blast
 python3 -m bookshelf
+python3 -m wonder
 ```
 
 ```powershell
@@ -113,6 +122,7 @@ py -m tetris_game
 py -m chess_game
 py -m star_blast
 py -m bookshelf
+py -m wonder
 ```
 
 ## Run
@@ -144,6 +154,9 @@ python3 -m star_blast       # or: star-blast      # Windows: py -m star_blast
 
 # The Bookshelf
 python3 -m bookshelf        # or: bookshelf       # Windows: py -m bookshelf
+
+# Wonder
+python3 -m wonder           # or: wonder          # Windows: py -m wonder
 ```
 
 ## Claude Code Ambient Quotes
@@ -341,6 +354,85 @@ Run `pip install -e .` from the repo root.
 
 **Notifications appear too often / not often enough**
 Bump `codex_quote_cadence`. Cadence counts Codex turns (one per assistant response), not individual tool calls.
+
+## Daily Wonder Hooks
+
+The Wonder cabinet also doubles as an ambient hook for Claude Code and Codex. Once a day (by default) you'll get one fresh fact or story — funny, heartwarming, weird, or inspiring — surfaced inline while you work. The hook never touches the network from the hook path itself: it reads whatever the Wonder app has cached for today, or falls back to a bundled curated pick if nothing's cached yet. Open the cabinet (`python3 -m wonder`) any time to pre-warm tomorrow's pick.
+
+### Quick Start — Claude Code
+
+**Requirements:** Python 3.10+, Claude Code, `pip install -e .` already run
+
+Add to `~/.claude/settings.json` (alongside any existing hook):
+
+```json
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /path/to/terminal-arcade/wonder/skill/hook.py",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+Replace `/path/to/terminal-arcade` with the real path. Restart Claude Code. The first tool call each day surfaces a Wonder via `systemMessage`; subsequent calls that day are silent.
+
+### Quick Start — Codex
+
+Add the notify line to `~/.codex/config.toml`:
+
+```toml
+notify = ["python3", "/path/to/terminal-arcade/wonder/skill/codex_notify.py"]
+```
+
+On macOS the wonder pops as a Notification Center alert on the first turn each day; other platforms get a stderr line in the turn log.
+
+### Cadence
+
+`daily` is the default. Switch with the CLI:
+
+```bash
+python3 -m wonder.skill.cadence                  # show current
+python3 -m wonder.skill.cadence daily            # Claude: once per day (default)
+python3 -m wonder.skill.cadence 5                # Claude: every 5th tool call
+python3 -m wonder.skill.cadence off              # Claude: disable
+python3 -m wonder.skill.cadence 10 --codex       # Codex: every 10th turn
+python3 -m wonder.skill.cadence daily --both     # both: once per day
+```
+
+By default the hook rotates through Funny → Heartwarming → Weird → Inspiring across days. Pin a single mood instead:
+
+```bash
+python3 -m wonder.skill.cadence --category funny
+python3 -m wonder.skill.cadence --category rotate    # back to the daily rotation
+```
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `wonder_cadence` | `daily` | Claude hook: `daily` / `<int>` / `off` |
+| `codex_wonder_cadence` | `daily` | Codex hook: `daily` / `<int>` / `off` |
+| `wonder_category` | `rotate` | `rotate`, `funny`, `heartwarming`, `weird`, `inspiring`, or `surprise` |
+
+Config lives in the same file as the Wonder app — `wonder/config.json` under the app's data directory (e.g. `~/Library/Application Support/wonder/` on macOS). The Wonder app's daily `cache.json` is the source of truth for what the hook surfaces.
+
+### Troubleshooting
+
+**`ModuleNotFoundError: No module named 'wonder'`**
+Run `pip install -e .` from the repo root.
+
+**Always shows the same offline pick**
+Open the Wonder cabinet at least once so it can fetch live content for today: `python3 -m wonder`. Until then the hook surfaces the deterministic bundled fallback, which is the same each time you call within a day.
+
+**Want a fresh pick mid-day**
+Inside the Wonder cabinet, press `R` to force-refresh the current category. The hook will pick up the new cached entry on its next fire.
 
 ## Test
 
