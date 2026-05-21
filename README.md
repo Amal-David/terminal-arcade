@@ -1,12 +1,12 @@
 # Terminal Arcade
 
-A retro arcade for your terminal — pure Python, zero dependencies, curses-based. Five fully-playable games, an interactive bookshelf, and **Wonder** — a daily fact-or-story cabinet — all behind a single launcher. Plus drop-in **Claude Code** and **Codex** hooks that surface a curated book quote every Nth tool call — configurable cadence (5 / 10 / 20) so the wisdom lands without breaking your flow.
+A retro arcade for your terminal — pure Python, zero dependencies, curses-based. Six fully-playable games, an interactive bookshelf, **Wonder** — a daily fact-or-story cabinet — and **Polyglot** — pick one of 20 language pairs and learn it ambiently while you work — all behind a single launcher. Plus drop-in **Claude Code** and **Codex** hooks that surface a curated book quote, a daily wonder, or a language phrase every Nth tool call — configurable cadence (5 / 10 / 20) so the wisdom lands without breaking your flow.
 
 ```bash
 python3 -m bookshelf.skill.cadence 10   # one quote per 10 tool calls
 ```
 
-**Topics:** `python` · `terminal` · `curses` · `arcade` · `retro-games` · `games` · `cli` · `claude-code` · `codex` · `bookshelf` · `ascii-art` · `chiptune`
+**Topics:** `python` · `terminal` · `curses` · `arcade` · `retro-games` · `games` · `cli` · `claude-code` · `codex` · `bookshelf` · `polyglot` · `language-learning` · `ascii-art` · `chiptune`
 
 ![Arcade Launcher](assets/screenshots/arcade_launcher.png)
 
@@ -19,6 +19,16 @@ A large-sprite terminal space shooter with a full-size ship, asteroid obstacles,
 ![Star Blast — Gameplay](assets/screenshots/star_blast_gameplay.png)
 
 [Read more →](star_blast/README.md)
+
+### Terminal Kombat
+
+An original large-sprite 16-bit terminal fighter with selectable warriors, CPU pressure, best-of-three rounds, jumps, crouches, throws, sweeps, blocking, meter, specials, and finishers.
+
+```bash
+python3 -m kombat_game              # or: terminal-kombat
+```
+
+[Read more →](kombat_game/README.md)
 
 ### Dino Run
 
@@ -69,6 +79,16 @@ Pick a mood — funny, heartwarming, weird, or inspiring — and pull one fresh 
 python3 -m wonder              # or: wonder
 ```
 
+### Polyglot
+
+Pick one of 20 language pairs (English ↔ Spanish, French, German, Italian, Portuguese, Japanese, Korean, Mandarin, Russian, Arabic, Hindi, Dutch, Swedish, Turkish, plus six reverse pairs into English) and Polyglot installs a Claude Code + Codex hook that surfaces a phrase from that pair every Nth tool call — letters, vocab, full sentences with pronunciation, ~250 items per pair (~5,000 total). Switching pairs never re-edits `settings.json`; only the active-pair config flips, so override is instant.
+
+```bash
+python3 -m polyglot                          # or: polyglot   — opens the 20-pair cabinet
+python3 -m polyglot.skill.installer status   # see what's installed and which pair is active
+python3 -m polyglot.skill.cadence 10 --both  # one phrase per 10 events on both Claude and Codex
+```
+
 ## Requirements
 
 - Python 3.10+
@@ -83,7 +103,32 @@ cd terminal-arcade
 pip install -e .
 ```
 
-If `pip` warns that `arcade`, `dino-run`, `snake-game`, `tetris`, `chess-game`, `star-blast`, `bookshelf`, or `wonder` were installed to a directory that is not on `PATH`, you can either run the modules directly or add the user script directory to `PATH`.
+### `error: externally-managed-environment` (Homebrew Python, PEP 668)
+
+Newer Pythons (e.g. Homebrew's `python@3.13` / `python@3.14`) refuse a bare `pip install` to protect the system install. Either use `pipx`, a venv, or pass `--user --break-system-packages`:
+
+```bash
+# Option A — pipx (recommended; isolates the install)
+brew install pipx
+pipx install -e .
+
+# Option B — venv
+python3 -m venv .venv && source .venv/bin/activate
+pip install -e .
+
+# Option C — user install with the override
+pip install --user --break-system-packages -e .
+```
+
+### `command not found: arcade` after install
+
+`pip` writes the launchers (`arcade`, `dino-run`, `snake-game`, `tetris`, `chess-game`, `star-blast`, `terminal-kombat`, `bookshelf`, `wonder`, `polyglot`) into Python's user-script directory, which is **not on `PATH` by default** on macOS. Add it permanently:
+
+```bash
+# macOS / Linux — add to ~/.zshrc (or ~/.bashrc) and reload your shell
+echo 'export PATH="$(python3 -m site --user-base)/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
 
 User script directories:
 
@@ -93,21 +138,19 @@ User script directories:
 | Linux | `$(python3 -m site --user-base)/bin` |
 | Windows | `$(py -m site --user-base)\Scripts` |
 
-Examples:
+Prefer not to touch `PATH`? Run the modules directly instead — this always works after `pip install -e .`:
 
 ```bash
-# macOS / Linux: temporary PATH update for the current shell
-export PATH="$(python3 -m site --user-base)/bin:$PATH"
-
-# macOS / Linux: run without touching PATH
-python3 -m terminal_arcade
+python3 -m terminal_arcade   # full launcher (or: arcade)
 python3 -m dino_game
 python3 -m snake_game
 python3 -m tetris_game
 python3 -m chess_game
 python3 -m star_blast
+python3 -m kombat_game
 python3 -m bookshelf
 python3 -m wonder
+python3 -m polyglot
 ```
 
 ```powershell
@@ -121,8 +164,10 @@ py -m snake_game
 py -m tetris_game
 py -m chess_game
 py -m star_blast
+py -m kombat_game
 py -m bookshelf
 py -m wonder
+py -m polyglot
 ```
 
 ## Run
@@ -152,11 +197,17 @@ python3 -m chess_game       # or: chess-game      # Windows: py -m chess_game
 # Star Blast
 python3 -m star_blast       # or: star-blast      # Windows: py -m star_blast
 
+# Terminal Kombat
+python3 -m kombat_game      # or: terminal-kombat # Windows: py -m kombat_game
+
 # The Bookshelf
 python3 -m bookshelf        # or: bookshelf       # Windows: py -m bookshelf
 
 # Wonder
 python3 -m wonder           # or: wonder          # Windows: py -m wonder
+
+# Polyglot
+python3 -m polyglot         # or: polyglot        # Windows: py -m polyglot
 ```
 
 ## Claude Code Ambient Quotes
@@ -433,6 +484,110 @@ Open the Wonder cabinet at least once so it can fetch live content for today: `p
 
 **Want a fresh pick mid-day**
 Inside the Wonder cabinet, press `R` to force-refresh the current category. The hook will pick up the new cached entry on its next fire.
+
+## Polyglot Ambient Phrases
+
+Polyglot is the first arcade cabinet with a **one-step installer** — opening the cabinet, picking a language pair, and pressing `I` writes the Claude Code + Codex hook entries for you (after showing you the unified diff and asking for confirmation). Switching pairs later never touches `settings.json` again — only the polyglot config's active-pair flips, so override is instant and there's never a stale hook entry to clean up.
+
+The dataset ships with **20 language pairs × ~250 phrases each = ~5,000 phrases total**, across:
+
+- **EN → XX (14 pairs):** Spanish, French, German, Italian, Portuguese (Brazilian), Japanese, Korean, Mandarin (Simplified), Russian, Arabic (MSA), Hindi, Dutch, Swedish, Turkish
+- **XX → EN (6 pairs):** Spanish, Portuguese, French, German, Japanese, Korean
+
+Each pair covers the script/alphabet, numbers and time, core vocab (colors, family, food, drink, body, weather, animals, verbs, adjectives), travel/work phrases (greetings, courtesy, restaurant, directions, emergency), and ~75 everyday sentences — every entry with a pronunciation hint in the appropriate scheme (Hepburn for Japanese, Revised Romanization for Korean, Pinyin with tone numbers for Mandarin, BGN/PCGN for Russian, IAST for Hindi, ALA-LC for Arabic, English-friendly stress hints for Latin-script pairs).
+
+### Quick Start
+
+**Requirements:** Python 3.10+, Claude Code or Codex (or both), `pip install -e .` already run
+
+```bash
+python3 -m polyglot                     # or: polyglot
+```
+
+Use arrow keys to move across the grid of 20 pairs. Press `Enter` to browse a pair's content by category, or `I` to install that pair as the active hook directly from the grid.
+
+The installer:
+
+1. Shows the current active pair (if any) and which target it's replacing.
+2. Reports whether the Claude and Codex hooks are already installed.
+3. Prints a unified diff of the proposed `~/.claude/settings.json` change.
+4. Prompts for confirmation (`y/N`) before writing.
+5. Falls back to printing the manual JSON/TOML snippet if the settings file can't be written.
+
+Switch pairs any time by reopening polyglot and picking a different one — no further confirmation needed for the hook entry itself, since it's already wired.
+
+### Cadence
+
+```bash
+python3 -m polyglot.skill.cadence              # show current
+python3 -m polyglot.skill.cadence 10           # Claude: every 10th tool call
+python3 -m polyglot.skill.cadence 20 --codex   # Codex: every 20th turn
+python3 -m polyglot.skill.cadence 10 --both    # both
+```
+
+### CLI installer
+
+For headless or scripted setups you can drive the installer from the shell:
+
+```bash
+python3 -m polyglot.skill.installer status               # show active pair + hook state
+python3 -m polyglot.skill.installer install --pair en-es # confirm-and-install
+python3 -m polyglot.skill.installer install --print      # just print snippets, no write
+python3 -m polyglot.skill.installer install --yes        # skip confirmation prompts
+python3 -m polyglot.skill.installer set-pair en-ja       # switch active pair without re-installing
+python3 -m polyglot.skill.installer uninstall            # remove the polyglot Claude hook
+```
+
+Manual fallback (if the installer can't write the file): drop this into `~/.claude/settings.json`:
+
+```json
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /path/to/terminal-arcade/polyglot/skill/hook.py",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+And this into `~/.codex/config.toml`:
+
+```toml
+notify = ["python3", "/path/to/terminal-arcade/polyglot/skill/codex_notify.py"]
+```
+
+### How it works
+
+The hook entry in `settings.json` always points at `polyglot/skill/hook.py`. On each fire it reads the active pair id from polyglot's own config (`~/Library/Application Support/polyglot/config.json` on macOS, `~/.local/share/polyglot/` on Linux), picks a phrase from that pair's content with the same variety algorithm as bookshelf (deprioritize recently shown, exhaust the unseen pool before repeating), and emits a `systemMessage` like:
+
+```
+🌍 hola  [oh-LAH]
+   — "hello" (English → Spanish)
+   [1/264 unique phrases shown]
+```
+
+Picker state resets automatically when you switch pairs, so variety scoring starts fresh in each language.
+
+### Troubleshooting
+
+**`ModuleNotFoundError: No module named 'polyglot'`**
+Run `pip install -e .` from the repo root.
+
+**No phrases appearing**
+- Confirm a pair is active: `python3 -m polyglot.skill.installer status` should print `Active pair:` with a non-empty value.
+- The hook fires every 5 tool calls by default — use a few tools and wait.
+- Verify the hook entry exists in `~/.claude/settings.json`.
+
+**Want to switch language without re-confirming the JSON change**
+Either open polyglot and pick a new pair (the active pair flips silently), or run `python3 -m polyglot.skill.installer set-pair en-ja`.
 
 ## Test
 

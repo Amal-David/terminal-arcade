@@ -101,10 +101,20 @@ def build_entries() -> list[ArcadeEntry]:
 
         run_star_blast()
 
+    def launch_kombat() -> None:
+        from kombat_game.game import run as run_kombat
+
+        run_kombat()
+
     def launch_wonder() -> None:
         from wonder.app import run as run_wonder
 
         run_wonder()
+
+    def launch_polyglot() -> None:
+        from polyglot.app import run as run_polyglot
+
+        run_polyglot()
 
     return [
         ArcadeEntry(
@@ -153,6 +163,15 @@ def build_entries() -> list[ArcadeEntry]:
             launch=launch_star_blast,
         ),
         ArcadeEntry(
+            id="terminal_kombat",
+            title="Terminal Kombat",
+            subtitle="Large-sprite 16-bit fighter",
+            blurb="Pick an original warrior and fight huge terminal avatars with jumps, crouches, sweeps, throws, specials, finishers, and CPU pressure.",
+            controls="A/D move  |  W jump  |  S crouch  |  J/K/U/O/H attacks  |  ; throw  |  L block  |  I special  |  F finisher",
+            min_size=(118, 38),
+            launch=launch_kombat,
+        ),
+        ArcadeEntry(
             id="bookshelf",
             title="Bookshelf",
             subtitle="Interactive quote explorer",
@@ -169,6 +188,15 @@ def build_entries() -> list[ArcadeEntry]:
             controls="Arrows pick  |  Enter open  |  R refresh  |  S save  |  F favorites  |  Q back",
             min_size=(80, 24),
             launch=launch_wonder,
+        ),
+        ArcadeEntry(
+            id="polyglot",
+            title="Polyglot",
+            subtitle="Learn a language",
+            blurb="Pick one of 20 language pairs (English ↔ Spanish, Japanese, Mandarin, Arabic, and more). Selecting a pair installs an ambient hook that surfaces a phrase every Nth tool call so you absorb the alphabet, vocab, and sentences while you work.",
+            controls="Arrows pick  |  Enter open  |  I install  |  C cadence  |  P print snippet  |  Q back",
+            min_size=(96, 28),
+            launch=launch_polyglot,
         ),
     ]
 

@@ -10,9 +10,9 @@ class ArcadeLauncherTests(unittest.TestCase):
     def test_build_entries_has_expected_order_and_metadata(self) -> None:
         entries = build_entries()
 
-        self.assertEqual(["dino", "snake", "tetris", "chess", "star_blast", "bookshelf", "wonder"], [entry.id for entry in entries])
-        self.assertEqual(["Dino Run", "Snake", "Tetris", "Chess", "Star Blast", "Bookshelf", "Wonder"], [entry.title for entry in entries])
-        self.assertEqual([(70, 20), (50, 20), (72, 26), (108, 48), (96, 34), (80, 24), (80, 24)], [entry.min_size for entry in entries])
+        self.assertEqual(["dino", "snake", "tetris", "chess", "star_blast", "terminal_kombat", "bookshelf", "wonder", "polyglot"], [entry.id for entry in entries])
+        self.assertEqual(["Dino Run", "Snake", "Tetris", "Chess", "Star Blast", "Terminal Kombat", "Bookshelf", "Wonder", "Polyglot"], [entry.title for entry in entries])
+        self.assertEqual([(70, 20), (50, 20), (72, 26), (108, 48), (96, 34), (118, 38), (80, 24), (80, 24), (96, 28)], [entry.min_size for entry in entries])
         self.assertTrue(all(callable(entry.launch) for entry in entries))
 
     def test_move_selection_wraps_in_both_directions(self) -> None:
@@ -20,11 +20,13 @@ class ArcadeLauncherTests(unittest.TestCase):
         self.assertEqual(0, move_selection(2, 1, 3))
 
     def test_interpret_key_maps_navigation_launch_and_quit(self) -> None:
-        self.assertEqual(("move", -1), interpret_key(curses.KEY_UP, 6))
-        self.assertEqual(("move", 1), interpret_key(ord("j"), 6))
-        self.assertEqual(("launch", None), interpret_key(10, 6))
-        self.assertEqual(("launch_index", 2), interpret_key(ord("3"), 6))
-        self.assertEqual(("launch_index", 5), interpret_key(ord("6"), 6))
+        self.assertEqual(("move", -1), interpret_key(curses.KEY_UP, 9))
+        self.assertEqual(("move", 1), interpret_key(ord("j"), 9))
+        self.assertEqual(("launch", None), interpret_key(10, 9))
+        self.assertEqual(("launch_index", 2), interpret_key(ord("3"), 9))
+        self.assertEqual(("launch_index", 5), interpret_key(ord("6"), 9))
+        self.assertEqual(("launch_index", 7), interpret_key(ord("8"), 9))
+        self.assertEqual(("launch_index", 8), interpret_key(ord("9"), 9))
         self.assertEqual(("quit", None), interpret_key(ord("q"), 5))
 
     def test_interpret_key_ignores_out_of_range_quick_launch(self) -> None:

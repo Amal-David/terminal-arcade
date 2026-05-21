@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "terminal-arcade"
-version = "0.5.0"
-description = "Terminal games: Dino Run, Snake, Tetris, Chess, Star Blast, an interactive bookshelf explorer, and Wonder — a daily fact-or-story cabinet."
+version = "0.6.0"
+description = "Terminal games: Dino Run, Snake, Tetris, Chess, Star Blast, Terminal Kombat, an interactive bookshelf explorer, Wonder — a daily fact-or-story cabinet, and Polyglot — pick a language pair and learn it ambiently while you work."
 readme = "README.md"
 requires-python = ">=3.10"
-keywords = ["game", "terminal", "curses", "runner", "snake", "tetris", "chess"]
+keywords = ["game", "terminal", "curses", "runner", "snake", "tetris", "chess", "fighter"]
 license = "MIT"
 
 [project.scripts]
@@ -18,8 +18,10 @@ snake-game = "snake_game.game:run"
 tetris = "tetris_game.game:run"
 chess-game = "chess_game.game:run"
 star-blast = "star_blast.game:run"
+terminal-kombat = "kombat_game.game:run"
 bookshelf = "bookshelf.app:run"
 wonder = "wonder.app:run"
+polyglot = "polyglot.app:run"
 
 [tool.setuptools]
-packages = ["dino_game", "snake_game", "tetris_game", "chess_game", "star_blast", "bookshelf", "bookshelf.data", "bookshelf.screens", "bookshelf.ui", "bookshelf.skill", "wonder", "wonder.data", "wonder.screens", "wonder.ui", "wonder.skill", "terminal_arcade"]
+packages = ["dino_game", "snake_game", "tetris_game", "chess_game", "star_blast", "kombat_game", "bookshelf", "bookshelf.data", "bookshelf.screens", "bookshelf.ui", "bookshelf.skill", "wonder", "wonder.data", "wonder.screens", "wonder.ui", "wonder.skill", "polyglot", "polyglot.data", "polyglot.screens", "polyglot.ui", "polyglot.skill", "terminal_arcade"]
