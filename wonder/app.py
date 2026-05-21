@@ -52,7 +52,10 @@ def _today_status(cache: dict) -> dict[str, str]:
 
 
 def main(stdscr) -> None:
-    curses.curs_set(0)
+    try:
+        curses.curs_set(0)
+    except curses.error:
+        pass
     stdscr.nodelay(True)
     stdscr.timeout(120)
     init_colors()
