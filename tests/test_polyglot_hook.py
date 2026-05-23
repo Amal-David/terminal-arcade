@@ -67,6 +67,10 @@ class PhrasePickerVarietyTests(unittest.TestCase):
     def test_recent_window_constant_is_finite(self) -> None:
         self.assertGreaterEqual(RECENT_WINDOW, 10)
 
+    def test_select_phrase_index_rejects_empty_phrases(self) -> None:
+        with self.assertRaises(ValueError):
+            select_phrase_index([], {}, [])
+
 
 class HookEndToEndTests(unittest.TestCase):
     @_with_isolated_state

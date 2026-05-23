@@ -35,7 +35,19 @@ def _truncate(text: str, limit: int = NOTIFICATION_BODY_MAX) -> str:
 
 
 def _osascript_quote(s: str) -> str:
-    return s.replace("\\", "\\\\").replace('"', '\\"')
+    """Escape a string for safe embedding inside an AppleScript double-quoted literal.
+
+    Backslash first (so we don't double-escape the escapes we add next), then
+    quotes, then any control characters that would let phrase text break out
+    of the string literal (newlines, carriage returns, tabs).
+    """
+    return (
+        s.replace("\\", "\\\\")
+        .replace('"', '\\"')
+        .replace("\n", "\\n")
+        .replace("\r", "\\r")
+        .replace("\t", "\\t")
+    )
 
 
 def surface_phrase(phrase: dict) -> None:

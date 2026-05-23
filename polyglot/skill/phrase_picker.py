@@ -30,6 +30,8 @@ def select_phrase_index(
     shown_counts: dict[str, int],
     recent_indices: list[int],
 ) -> int:
+    if not phrases:
+        raise ValueError("select_phrase_index requires a non-empty phrases list")
     recent_set = set(recent_indices)
     unseen = [i for i in range(len(phrases)) if shown_counts.get(str(i), 0) == 0]
 

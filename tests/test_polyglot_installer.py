@@ -122,6 +122,21 @@ class ClaudeHookInstallerTests(unittest.TestCase):
             self.assertTrue(any("echo other" in c for c in commands))
             self.assertFalse(any("polyglot" in c for c in commands))
 
+    def test_backup_is_atomic_and_skipped_when_already_present(self) -> None:
+        """O_EXCL means a pre-existing backup is never re-written even if the source file changes."""
+        with tempfile.TemporaryDirectory() as tmp:
+            settings_path = Path(tmp) / "settings.json"
+            settings_path.write_text(json.dumps({"model": "first"}))
+            installer.install_claude_hook(prompt=False, path=settings_path)
+            backup = settings_path.with_name(settings_path.name + installer.SETTINGS_BACKUP_SUFFIX)
+            self.assertTrue(backup.exists())
+            original_backup_text = backup.read_text()
+
+            # Even if someone hand-rewrites the live settings, a re-run must NOT overwrite the backup.
+            settings_path.write_text(json.dumps({"model": "second-rewritten"}))
+            installer._atomic_backup_once(settings_path)
+            self.assertEqual(backup.read_text(), original_backup_text)
+
     def test_declined_install_does_not_write(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             settings_path = Path(tmp) / "settings.json"

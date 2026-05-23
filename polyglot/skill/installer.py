@@ -62,6 +62,24 @@ CODEX_HOOK_FILENAME = "codex_notify.py"
 SETTINGS_BACKUP_SUFFIX = ".polyglot.bak"
 
 
+def _atomic_backup_once(path: Path) -> None:
+    """Snapshot `path` to `<path>.polyglot.bak` exactly once, atomically.
+
+    Uses O_CREAT|O_EXCL so two concurrent installs cannot race past each
+    other and overwrite the original-known-good copy with already-modified
+    content. If the backup already exists, we leave it alone.
+    """
+    backup = path.with_name(path.name + SETTINGS_BACKUP_SUFFIX)
+    try:
+        fd = os.open(str(backup), os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644)
+    except FileExistsError:
+        return
+    try:
+        os.write(fd, path.read_bytes())
+    finally:
+        os.close(fd)
+
+
 def claude_settings_path() -> Path:
     return Path.home() / ".claude" / "settings.json"
 
@@ -181,9 +199,7 @@ def write_claude_settings(new_settings: dict, path: Path | None = None) -> None:
     path = path or claude_settings_path()
     path.parent.mkdir(parents=True, exist_ok=True)
     if path.exists():
-        backup = path.with_name(path.name + SETTINGS_BACKUP_SUFFIX)
-        if not backup.exists():
-            backup.write_bytes(path.read_bytes())
+        _atomic_backup_once(path)
     fd, tmp_path = tempfile.mkstemp(prefix=".settings.", dir=str(path.parent))
     try:
         with os.fdopen(fd, "w", encoding="utf-8") as fh:
@@ -359,9 +375,7 @@ def install_codex_hook(
             return HookOutcome("codex", InstallResult.DECLINED, "User declined Codex install.", diff)
 
     try:
-        backup = config_path.with_name(config_path.name + SETTINGS_BACKUP_SUFFIX)
-        if not backup.exists():
-            backup.write_bytes(config_path.read_bytes())
+        _atomic_backup_once(config_path)
         fd, tmp_path = tempfile.mkstemp(prefix=".config.", dir=str(config_path.parent))
         with os.fdopen(fd, "w", encoding="utf-8") as fh:
             fh.write(new_text)
