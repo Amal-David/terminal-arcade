@@ -69,6 +69,10 @@ A terminal book discovery app with 313 books across motivation, startup, and rom
 ![The Bookshelf — Browse](assets/screenshots/bookshelf_browse.png)
 ![The Bookshelf — Detail](assets/screenshots/bookshelf_detail.png)
 
+The ambient hook surfaces a curated quote every Nth tool call — inline in your Claude Code or Codex session:
+
+![The Bookshelf — Ambient Hook](assets/screenshots/bookshelf_ambient_hook.png)
+
 [Read more →](bookshelf/README.md)
 
 ### Wonder
@@ -82,6 +86,8 @@ python3 -m wonder              # or: wonder
 ### Polyglot
 
 Pick one of 20 language pairs (English ↔ Spanish, French, German, Italian, Portuguese, Japanese, Korean, Mandarin, Russian, Arabic, Hindi, Dutch, Swedish, Turkish, plus six reverse pairs into English) and Polyglot installs a Claude Code + Codex hook that surfaces a phrase from that pair every Nth tool call — letters, vocab, full sentences with pronunciation, ~250 items per pair (~5,000 total). Switching pairs never re-edits `settings.json`; only the active-pair config flips, so override is instant.
+
+![Polyglot — Ambient Hook](assets/screenshots/polyglot_ambient_hook.png)
 
 ```bash
 python3 -m polyglot                          # or: polyglot   — opens the 20-pair cabinet
