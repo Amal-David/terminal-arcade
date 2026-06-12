@@ -101,6 +101,21 @@ def build_entries() -> list[ArcadeEntry]:
 
         run_star_blast()
 
+    def launch_kombat() -> None:
+        from kombat_game.game import run as run_kombat
+
+        run_kombat()
+
+    def launch_wonder() -> None:
+        from wonder.app import run as run_wonder
+
+        run_wonder()
+
+    def launch_polyglot() -> None:
+        from polyglot.app import run as run_polyglot
+
+        run_polyglot()
+
     return [
         ArcadeEntry(
             id="dino",
@@ -148,6 +163,15 @@ def build_entries() -> list[ArcadeEntry]:
             launch=launch_star_blast,
         ),
         ArcadeEntry(
+            id="terminal_kombat",
+            title="Terminal Kombat",
+            subtitle="Large-sprite 16-bit fighter",
+            blurb="Pick an original warrior and fight huge terminal avatars with jumps, crouches, sweeps, throws, specials, finishers, and CPU pressure.",
+            controls="A/D move  |  W jump  |  S crouch  |  J/K/U/O/H attacks  |  ; throw  |  L block  |  I special  |  F finisher",
+            min_size=(118, 38),
+            launch=launch_kombat,
+        ),
+        ArcadeEntry(
             id="bookshelf",
             title="Bookshelf",
             subtitle="Interactive quote explorer",
@@ -155,6 +179,24 @@ def build_entries() -> list[ArcadeEntry]:
             controls="Arrows move  |  Enter open  |  / search  |  C collection  |  Q back or quit",
             min_size=(80, 24),
             launch=launch_bookshelf,
+        ),
+        ArcadeEntry(
+            id="wonder",
+            title="Wonder",
+            subtitle="Daily fact or story",
+            blurb="Pick a mood — funny, heartwarming, weird, or inspiring — and pull one fresh story or fact from the internet for the day. Saves your favorites for later.",
+            controls="Arrows pick  |  Enter open  |  R refresh  |  S save  |  F favorites  |  Q back",
+            min_size=(80, 24),
+            launch=launch_wonder,
+        ),
+        ArcadeEntry(
+            id="polyglot",
+            title="Polyglot",
+            subtitle="Learn a language",
+            blurb="Pick one of 20 language pairs (English ↔ Spanish, Japanese, Mandarin, Arabic, and more). Selecting a pair installs an ambient hook that surfaces a phrase every Nth tool call so you absorb the alphabet, vocab, and sentences while you work.",
+            controls="Arrows pick  |  Enter open  |  I install  |  C cadence  |  P print snippet  |  Q back",
+            min_size=(96, 28),
+            launch=launch_polyglot,
         ),
     ]
 
@@ -241,19 +283,19 @@ def render(stdscr, entries: list[ArcadeEntry], selected: int, has_color: bool) -
     safe_addstr(stdscr, detail_y, detail_x + 2, " Game Card ", accent_attr)
 
     for idx, entry in enumerate(entries):
-        line_y = list_y + 2 + idx * 2
+        line_y = list_y + 2 + idx
         prefix = "▶" if idx == selected else " "
         label = f"{prefix} [{idx + 1}] {entry.title}"
         attr = selected_attr if idx == selected else curses.A_BOLD
         safe_addstr(stdscr, line_y, list_x + 2, label, attr)
-        safe_addstr(stdscr, line_y + 1, list_x + 6, entry.subtitle, curses.A_DIM)
 
     current = entries[selected]
     safe_addstr(stdscr, detail_y + 2, detail_x + 3, current.title, accent_attr)
     safe_addstr(stdscr, detail_y + 2, detail_x + detail_w - 10, f"{selected + 1}/{len(entries)}", meta_attr)
+    safe_addstr(stdscr, detail_y + 3, detail_x + 3, current.subtitle, curses.A_DIM | curses.A_BOLD)
 
     for offset, line in enumerate(textwrap.wrap(current.blurb, detail_w - 6)):
-        safe_addstr(stdscr, detail_y + 4 + offset, detail_x + 3, line)
+        safe_addstr(stdscr, detail_y + 5 + offset, detail_x + 3, line)
 
     size_text = f"Needs terminal: {current.min_size[0]}x{current.min_size[1]}+"
     safe_addstr(stdscr, detail_y + detail_h - 5, detail_x + 3, size_text, meta_attr)

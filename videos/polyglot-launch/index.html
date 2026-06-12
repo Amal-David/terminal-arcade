@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #0b0d1a;
+        font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+        color: #f1f5f9;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+      }
+      .scene-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 100px 140px;
+        gap: 24px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Menlo', monospace; }
+      .display { font-family: 'Space Grotesk', system-ui, sans-serif; }
+
+      /* Subtle scanline backdrop */
+      .scanlines {
+        position: absolute; inset: 0; pointer-events: none;
+        background-image: repeating-linear-gradient(
+          to bottom,
+          rgba(94, 234, 212, 0.025) 0px,
+          rgba(94, 234, 212, 0.025) 1px,
+          transparent 1px,
+          transparent 3px
+        );
+        z-index: 1;
+      }
+      .glow-blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(120px);
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      /* SCENE 1 — Hook */
+      #scene1 .prompt-line {
+        font-size: 56px;
+        color: #475569;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+      }
+      #scene1 .typed {
+        font-size: 132px;
+        font-weight: 700;
+        letter-spacing: -3px;
+        color: #f1f5f9;
+        line-height: 1.05;
+      }
+      #scene1 .cursor {
+        display: inline-block;
+        width: 14px;
+        height: 110px;
+        background: #5eead4;
+        margin-left: 14px;
+        vertical-align: middle;
+        transform: translateY(-4px);
+      }
+      #scene1 .tag {
+        margin-top: 28px;
+        font-size: 34px;
+        color: #94a3b8;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+      }
+
+      /* SCENE 2 — Variety carousel */
+      #scene2 .pre-label {
+        font-size: 32px;
+        color: #f472b6;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+      #scene2 .big-title {
+        font-size: 124px;
+        font-weight: 700;
+        letter-spacing: -3px;
+        color: #f1f5f9;
+        line-height: 1.05;
+        margin-bottom: 48px;
+      }
+      #scene2 .big-title em {
+        font-style: normal;
+        color: #5eead4;
+      }
+      #scene2 .card-stage {
+        position: relative;
+        width: 1200px;
+        height: 360px;
+      }
+      #scene2 .card {
+        position: absolute;
+        inset: 0;
+        background: #13162a;
+        border: 2px solid #1f2547;
+        border-radius: 22px;
+        padding: 56px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        opacity: 0;
+      }
+      #scene2 .card .pair-flag {
+        position: absolute;
+        top: 28px;
+        right: 36px;
+        font-size: 60px;
+        line-height: 1;
+      }
+      #scene2 .card .pair-label {
+        position: absolute;
+        top: 32px;
+        left: 36px;
+        font-size: 24px;
+        letter-spacing: 4px;
+        color: #f472b6;
+        text-transform: uppercase;
+      }
+      #scene2 .card .target {
+        font-size: 102px;
+        font-weight: 700;
+        letter-spacing: -2px;
+        color: #f1f5f9;
+        line-height: 1.05;
+      }
+      #scene2 .card .pron {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 36px;
+        color: #fde047;
+      }
+      #scene2 .card .source {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 28px;
+        color: #94a3b8;
+      }
+
+      /* SCENE 3 — Terminal */
+      #scene3 .scene-content {
+        align-items: stretch;
+        padding: 90px 160px;
+      }
+      #scene3 .frame-title {
+        font-size: 36px;
+        color: #94a3b8;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      #scene3 .frame-title em {
+        font-style: normal;
+        color: #5eead4;
+      }
+      #scene3 .terminal {
+        background: #0f1124;
+        border: 2px solid #1f2547;
+        border-radius: 18px;
+        padding: 32px 44px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 30px;
+        line-height: 1.55;
+        color: #f1f5f9;
+        position: relative;
+      }
+      #scene3 .terminal::before {
+        content: "";
+        position: absolute;
+        top: 18px;
+        left: 22px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #f472b6;
+        box-shadow: 26px 0 #fde047, 52px 0 #86efac;
+      }
+      #scene3 .terminal-body {
+        margin-top: 22px;
+      }
+      #scene3 .tool-call {
+        opacity: 0;
+        margin-bottom: 6px;
+      }
+      #scene3 .tool-call .num { color: #475569; margin-right: 14px; }
+      #scene3 .tool-call .verb { color: #5eead4; }
+      #scene3 .tool-call .target { color: #f1f5f9; }
+      #scene3 .tool-call .ok { color: #86efac; margin-left: 10px; }
+      #scene3 .surface {
+        opacity: 0;
+        margin-top: 24px;
+        padding: 26px 32px;
+        background: linear-gradient(135deg, rgba(94,234,212,0.10), rgba(244,114,182,0.10));
+        border-left: 4px solid #5eead4;
+        border-radius: 10px;
+      }
+      #scene3 .surface .heading {
+        font-size: 28px;
+        color: #fde047;
+        margin-bottom: 8px;
+        letter-spacing: 2px;
+      }
+      #scene3 .surface .phrase {
+        font-size: 56px;
+        color: #f1f5f9;
+        font-weight: 600;
+        letter-spacing: -1px;
+      }
+      #scene3 .surface .meta {
+        font-size: 24px;
+        color: #94a3b8;
+        margin-top: 10px;
+      }
+      #scene3 .surface .meta em { font-style: normal; color: #f472b6; }
+
+      /* SCENE 4 — Stats */
+      #scene4 .stat-row {
+        display: flex;
+        gap: 90px;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 56px;
+      }
+      #scene4 .stat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        opacity: 0;
+      }
+      #scene4 .stat-num {
+        font-size: 200px;
+        font-weight: 700;
+        letter-spacing: -8px;
+        line-height: 1;
+        color: #fde047;
+        font-variant-numeric: tabular-nums;
+      }
+      #scene4 .stat-label {
+        font-size: 30px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #94a3b8;
+      }
+      #scene4 .install-card {
+        background: #13162a;
+        border: 2px solid #1f2547;
+        border-radius: 16px;
+        padding: 28px 44px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 38px;
+        color: #f1f5f9;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        opacity: 0;
+      }
+      #scene4 .install-card .dollar { color: #5eead4; }
+      #scene4 .install-card .cmd { color: #f1f5f9; }
+      #scene4 .install-card .arrow { color: #475569; margin: 0 10px; }
+      #scene4 .install-card .badge {
+        background: #86efac;
+        color: #052e16;
+        padding: 6px 18px;
+        border-radius: 999px;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-left: 8px;
+      }
+
+      /* SCENE 5 — Closing */
+      #scene5 .scene-content { gap: 28px; }
+      #scene5 .mark {
+        font-size: 220px;
+        font-weight: 700;
+        letter-spacing: -10px;
+        line-height: 0.95;
+        background: linear-gradient(135deg, #5eead4 0%, #f472b6 70%, #fde047 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      #scene5 .tag-line {
+        font-size: 44px;
+        color: #f1f5f9;
+        letter-spacing: 2px;
+        font-weight: 500;
+      }
+      #scene5 .tag-line em {
+        font-style: normal;
+        color: #5eead4;
+      }
+      #scene5 .footer-row {
+        margin-top: 24px;
+        display: flex;
+        gap: 36px;
+        align-items: center;
+      }
+      #scene5 .pill {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 28px;
+        color: #94a3b8;
+        padding: 14px 28px;
+        border: 1.5px solid #1f2547;
+        background: #13162a;
+        border-radius: 999px;
+      }
+      #scene5 .pill em { font-style: normal; color: #fde047; }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="30"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div class="scanlines"></div>
+
+      <!-- SCENE 1 — 0-4.2s — Hook -->
+      <div id="scene1" class="scene clip" data-start="0" data-duration="4.4" data-track-index="1">
+        <div class="glow-blob" style="width:700px;height:700px;background:#5eead4;opacity:0.10;top:-200px;left:-200px;"></div>
+        <div class="glow-blob" style="width:600px;height:600px;background:#f472b6;opacity:0.10;bottom:-200px;right:-150px;"></div>
+        <div class="scene-content">
+          <div class="prompt-line mono">$ claude code .</div>
+          <div class="typed display">while you code<span class="cursor"></span></div>
+          <div class="tag display">A new cabinet from Terminal Arcade</div>
+        </div>
+      </div>
+
+      <!-- SCENE 2 — 4.0-10.6s — Concept + variety carousel -->
+      <div id="scene2" class="scene clip" data-start="4.0" data-duration="6.6" data-track-index="2">
+        <div class="glow-blob" style="width:800px;height:800px;background:#f472b6;opacity:0.08;top:-300px;right:-200px;"></div>
+        <div class="glow-blob" style="width:700px;height:700px;background:#5eead4;opacity:0.10;bottom:-250px;left:-200px;"></div>
+        <div class="scene-content">
+          <div class="pre-label">Polyglot — language hook for Claude Code &amp; Codex</div>
+          <div class="big-title display">learn a <em>language</em>.</div>
+
+          <div class="card-stage">
+            <div class="card" id="card-es">
+              <div class="pair-label">EN → ES</div>
+              <div class="pair-flag">🇪🇸</div>
+              <div class="target mono">hola</div>
+              <div class="pron mono">[ OH-lah ]</div>
+              <div class="source mono">— hello</div>
+            </div>
+            <div class="card" id="card-ja">
+              <div class="pair-label">EN → JA</div>
+              <div class="pair-flag">🇯🇵</div>
+              <div class="target mono">こんにちは</div>
+              <div class="pron mono">[ konnichiwa ]</div>
+              <div class="source mono">— hello</div>
+            </div>
+            <div class="card" id="card-zh">
+              <div class="pair-label">EN → ZH</div>
+              <div class="pair-flag">🇨🇳</div>
+              <div class="target mono">你好</div>
+              <div class="pron mono">[ ni3 hao3 ]</div>
+              <div class="source mono">— hello</div>
+            </div>
+            <div class="card" id="card-ar">
+              <div class="pair-label">EN → AR</div>
+              <div class="pair-flag">🇸🇦</div>
+              <div class="target mono">مرحبا</div>
+              <div class="pron mono">[ marhaban ]</div>
+              <div class="source mono">— hello</div>
+            </div>
+            <div class="card" id="card-hi">
+              <div class="pair-label">EN → HI</div>
+              <div class="pair-flag">🇮🇳</div>
+              <div class="target mono">नमस्ते</div>
+              <div class="pron mono">[ namaste ]</div>
+              <div class="source mono">— hello</div>
+            </div>
+            <div class="card" id="card-ru">
+              <div class="pair-label">EN → RU</div>
+              <div class="pair-flag">🇷🇺</div>
+              <div class="target mono">привет</div>
+              <div class="pron mono">[ privet ]</div>
+              <div class="source mono">— hello</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCENE 3 — 10.3-18.4s — Terminal in action -->
+      <div id="scene3" class="scene clip" data-start="10.3" data-duration="8.1" data-track-index="1">
+        <div class="glow-blob" style="width:700px;height:700px;background:#5eead4;opacity:0.07;top:-200px;right:-150px;"></div>
+        <div class="scene-content">
+          <div class="frame-title display">Every <em>Nth</em> tool call — a phrase appears.</div>
+          <div class="terminal">
+            <div class="terminal-body">
+              <div class="tool-call" id="t-call-1"><span class="num">1.</span><span class="verb">Read</span> <span class="target">README.md</span><span class="ok"> ✓</span></div>
+              <div class="tool-call" id="t-call-2"><span class="num">2.</span><span class="verb">Bash</span> <span class="target">ls polyglot/data/</span><span class="ok"> ✓</span></div>
+              <div class="tool-call" id="t-call-3"><span class="num">3.</span><span class="verb">Grep</span> <span class="target">PhraseEntry</span><span class="ok"> ✓</span></div>
+              <div class="tool-call" id="t-call-4"><span class="num">4.</span><span class="verb">Edit</span> <span class="target">launcher.py</span><span class="ok"> ✓</span></div>
+              <div class="tool-call" id="t-call-5"><span class="num">5.</span><span class="verb">Bash</span> <span class="target">pytest tests/</span><span class="ok"> ✓</span></div>
+              <div class="surface" id="t-surface">
+                <div class="heading mono">🌍 systemMessage — Polyglot</div>
+                <div class="phrase mono">¿Qué pasa?</div>
+                <div class="meta mono">[ keh PAH-sah ]  —  <em>"What's up?"</em>  ·  English → Spanish</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCENE 4 — 18.1-24.4s — Stats + install -->
+      <div id="scene4" class="scene clip" data-start="18.1" data-duration="6.3" data-track-index="2">
+        <div class="glow-blob" style="width:800px;height:800px;background:#fde047;opacity:0.08;top:-300px;left:-200px;"></div>
+        <div class="glow-blob" style="width:700px;height:700px;background:#f472b6;opacity:0.10;bottom:-250px;right:-200px;"></div>
+        <div class="scene-content">
+          <div class="stat-row">
+            <div class="stat" id="stat-1">
+              <div class="stat-num">70</div>
+              <div class="stat-label">language pairs</div>
+            </div>
+            <div class="stat" id="stat-2">
+              <div class="stat-num">18,235</div>
+              <div class="stat-label">phrases</div>
+            </div>
+            <div class="stat" id="stat-3">
+              <div class="stat-num">5×</div>
+              <div class="stat-label">configurable cadence</div>
+            </div>
+          </div>
+          <div class="install-card mono" id="install-card">
+            <span class="dollar">$</span>
+            <span class="cmd">python3 -m polyglot</span>
+            <span class="arrow">→</span>
+            <span class="cmd">pick a pair</span>
+            <span class="badge">INSTALLED</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCENE 5 — 24.1-30s — Closing -->
+      <div id="scene5" class="scene clip" data-start="24.1" data-duration="5.9" data-track-index="1">
+        <div class="glow-blob" style="width:900px;height:900px;background:#5eead4;opacity:0.10;top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+        <div class="scene-content">
+          <div class="mark display">POLYGLOT</div>
+          <div class="tag-line display">your IDE is now a <em>passport</em>.</div>
+          <div class="footer-row">
+            <div class="pill mono">part of <em>terminal-arcade</em></div>
+            <div class="pill mono">$ pip install -e .</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // ===== SCENE 1 — 0-4.4s =====
+      tl.from("#scene1", { opacity: 0, duration: 0.4, ease: "power2.out" }, 0);
+      tl.from("#scene1 .prompt-line", { y: 30, opacity: 0, duration: 0.5, ease: "power3.out" }, 0.3);
+      tl.from("#scene1 .typed", { y: 60, opacity: 0, duration: 0.7, ease: "expo.out" }, 0.6);
+      tl.from("#scene1 .cursor", { scaleY: 0, transformOrigin: "bottom", opacity: 0, duration: 0.4, ease: "power2.out" }, 1.1);
+      tl.to("#scene1 .cursor", { opacity: 0, duration: 0.4, ease: "steps(1)", repeat: 4, yoyo: true, overwrite: "auto" }, 1.6);
+      tl.from("#scene1 .tag", { y: 20, opacity: 0, duration: 0.5, ease: "power2.out" }, 1.6);
+
+      // Scene 1 → Scene 2 — incoming scene's fade-in handles the transition;
+      // framework hides scene1 at its data-duration end.
+
+      // ===== SCENE 2 — 4.0-10.6s =====
+      tl.from("#scene2", { opacity: 0, duration: 0.4, ease: "power2.out" }, 4.0);
+      tl.from("#scene2 .pre-label", { y: 30, opacity: 0, duration: 0.5, ease: "power3.out" }, 4.3);
+      tl.from("#scene2 .big-title", { y: 50, opacity: 0, duration: 0.7, ease: "expo.out" }, 4.5);
+
+      // Phrase cards — staggered swap (each visible ~0.85s)
+      const cards = ["#card-es", "#card-ja", "#card-zh", "#card-ar", "#card-hi", "#card-ru"];
+      const cardStart = 5.5;
+      const cardDur = 0.85;
+      cards.forEach((sel, i) => {
+        const t = cardStart + i * cardDur;
+        tl.fromTo(sel, { opacity: 0, y: 50, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: "expo.out" }, t);
+        if (i < cards.length - 1) {
+          tl.to(sel, { opacity: 0, y: -30, scale: 0.96, duration: 0.3, ease: "power2.in" }, t + cardDur - 0.05);
+        }
+      });
+
+      // Scene 2 → Scene 3 — incoming scene's fade-in handles the transition.
+
+      // ===== SCENE 3 — 10.3-18.4s =====
+      tl.from("#scene3", { opacity: 0, duration: 0.4, ease: "power2.out" }, 10.3);
+      tl.from("#scene3 .frame-title", { y: 30, opacity: 0, duration: 0.5, ease: "power3.out" }, 10.55);
+      tl.from("#scene3 .terminal", { y: 40, opacity: 0, duration: 0.6, ease: "power3.out" }, 10.75);
+
+      // Tool calls tick in one by one
+      const calls = ["#t-call-1", "#t-call-2", "#t-call-3", "#t-call-4", "#t-call-5"];
+      calls.forEach((sel, i) => {
+        tl.to(sel, { opacity: 1, duration: 0.3, ease: "power2.out" }, 11.5 + i * 0.55);
+        tl.from(sel, { x: -20, duration: 0.3, ease: "power2.out" }, 11.5 + i * 0.55);
+      });
+
+      // Surface (systemMessage) bursts in on the 5th call
+      tl.to("#t-surface", { opacity: 1, duration: 0.5, ease: "expo.out" }, 14.5);
+      tl.from("#t-surface", { y: 30, scale: 0.98, duration: 0.5, ease: "expo.out" }, 14.5);
+      tl.from("#t-surface .phrase", { y: 20, opacity: 0, duration: 0.45, ease: "power3.out" }, 14.7);
+      tl.from("#t-surface .meta", { y: 15, opacity: 0, duration: 0.4, ease: "power2.out" }, 14.95);
+
+      // Scene 3 → Scene 4 — incoming scene's fade-in handles the transition.
+
+      // ===== SCENE 4 — 18.1-24.4s =====
+      tl.from("#scene4", { opacity: 0, duration: 0.4, ease: "power2.out" }, 18.1);
+      ["#stat-1", "#stat-2", "#stat-3"].forEach((sel, i) => {
+        tl.to(sel, { opacity: 1, duration: 0.4, ease: "power2.out" }, 18.4 + i * 0.22);
+        tl.from(sel + " .stat-num", { y: 50, scale: 0.85, duration: 0.6, ease: "expo.out" }, 18.4 + i * 0.22);
+        tl.from(sel + " .stat-label", { opacity: 0, y: 18, duration: 0.4, ease: "power2.out" }, 18.55 + i * 0.22);
+      });
+
+      tl.to("#install-card", { opacity: 1, duration: 0.4, ease: "power2.out" }, 20.4);
+      tl.from("#install-card", { y: 40, scale: 0.96, duration: 0.5, ease: "expo.out" }, 20.4);
+      tl.from("#install-card .badge", { scale: 0.5, opacity: 0, duration: 0.4, ease: "back.out(2.2)" }, 21.0);
+
+      // Scene 4 → Scene 5 — incoming scene's fade-in handles the transition.
+
+      // ===== SCENE 5 — 24.1-30s =====
+      tl.from("#scene5", { opacity: 0, duration: 0.5, ease: "power2.out" }, 24.1);
+      tl.from("#scene5 .mark", { y: 80, opacity: 0, scale: 0.94, duration: 0.9, ease: "expo.out" }, 24.4);
+      tl.from("#scene5 .tag-line", { y: 30, opacity: 0, duration: 0.6, ease: "power3.out" }, 25.1);
+      tl.from("#scene5 .footer-row .pill", { y: 25, opacity: 0, duration: 0.5, stagger: 0.12, ease: "power2.out" }, 25.6);
+
+      // Scene 5 holds its final state — no exit; framework ends the video at 30s.
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
