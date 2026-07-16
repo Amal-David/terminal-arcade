@@ -13,6 +13,7 @@ from terminal_arcade.ui import hide_cursor, safe_addstr
 
 FPS = 20
 FRAME_TIME = 1.0 / FPS
+MAX_CATCH_UP_STEPS = 5
 
 MIN_WIDTH = 118
 MIN_HEIGHT = 38
@@ -767,7 +768,10 @@ def start_attack(state: CombatState, side: Side, attack: AttackName) -> bool:
 
     spec = ATTACKS[attack]
     if spec.requires_finisher_window and not can_use_finisher(attacker, defender):
-        state.message = f"{attacker.spec.name} needs a weakened foe and full finisher meter."
+        state.message = (
+            f"{attacker.spec.name} needs the foe at {FINISHER_HEALTH} HP or less "
+            f"and {spec.meter_cost} meter."
+        )
         state.message_timer = FPS
         return False
     if attacker.meter < spec.meter_cost:
@@ -904,6 +908,9 @@ def choose_cpu_action(state: CombatState, rng: random.Random | None = None) -> s
         return "block"
     if enemy.meter >= ATTACKS["special"].meter_cost and distance <= 24 and rng.random() < 0.24:
         return "special"
+    best_basic_reach = max(spec.reach for spec in ATTACKS.values() if spec.meter_cost == 0)
+    if distance > best_basic_reach + enemy.spec.reach_bonus:
+        return "advance"
     roll = rng.random()
     if distance <= 7 and roll < 0.18:
         return "throw"
@@ -948,6 +955,22 @@ def update_state(state: CombatState, rng: random.Random | None = None) -> None:
         state.message_timer -= 1
     state.round_frames_left = max(0, state.round_frames_left - 1)
     _check_round_end(state)
+
+
+def _advance_fixed_timestep(
+    state: CombatState,
+    rng: random.Random,
+    last_tick: float,
+    now: float,
+) -> float:
+    catch_up_steps = 0
+    while now - last_tick >= FRAME_TIME and catch_up_steps < MAX_CATCH_UP_STEPS:
+        update_state(state, rng)
+        last_tick += FRAME_TIME
+        catch_up_steps += 1
+    if now - last_tick >= FRAME_TIME:
+        return now
+    return last_tick
 
 
 def _check_round_end(state: CombatState) -> None:
@@ -1286,9 +1309,7 @@ def main(stdscr) -> None:
                 return
 
         now = time.monotonic()
-        while now - last_tick >= FRAME_TIME:
-            update_state(state, rng)
-            last_tick += FRAME_TIME
+        last_tick = _advance_fixed_timestep(state, rng, last_tick, now)
 
         render_game(stdscr, state, has_color)
         time.sleep(0.005)

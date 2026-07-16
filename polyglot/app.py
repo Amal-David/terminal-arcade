@@ -28,7 +28,10 @@ def _run_cadence_outside_curses() -> None:
         value = int(parts[0])
     except ValueError:
         print(f"Invalid cadence: {parts[0]}")
-        input("Press Enter to continue...")
+        try:
+            input("Press Enter to continue...")
+        except EOFError:
+            pass
         return
     suffix = parts[1].lower() if len(parts) > 1 else ""
     args = [str(value)]
@@ -73,20 +76,20 @@ def run() -> None:
     while True:
         try:
             command = curses.wrapper(_curses_main)
+            if not command:
+                return
+
+            verb, _, pair_id = command.partition(":")
+            pair = next((p for p in ALL_PAIRS if p.id == pair_id), None)
+
+            if verb == "install" and pair:
+                run_install_flow(pair, print_only=False)
+            elif verb == "print" and pair:
+                run_install_flow(pair, print_only=True)
+            elif verb == "cadence":
+                _run_cadence_outside_curses()
         except KeyboardInterrupt:
             return
-        if not command:
-            return
-
-        verb, _, pair_id = command.partition(":")
-        pair = next((p for p in ALL_PAIRS if p.id == pair_id), None)
-
-        if verb == "install" and pair:
-            run_install_flow(pair, print_only=False)
-        elif verb == "print" and pair:
-            run_install_flow(pair, print_only=True)
-        elif verb == "cadence":
-            _run_cadence_outside_curses()
 
 
 if __name__ == "__main__":

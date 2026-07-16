@@ -106,6 +106,15 @@ class TerminalKombatRulesTests(unittest.TestCase):
         self.assertEqual(0, state.player.meter)
         self.assertLess(state.enemy.health, state.enemy.spec.max_health)
 
+    def test_finisher_requirement_message_reports_actual_thresholds(self) -> None:
+        state = kombat.new_match()
+        state.enemy.health = kombat.FINISHER_HEALTH + 1
+
+        self.assertFalse(kombat.start_attack(state, "player", "finisher"))
+
+        self.assertIn(str(kombat.FINISHER_HEALTH), state.message)
+        self.assertIn(str(kombat.ATTACKS["finisher"].meter_cost), state.message)
+
     def test_expanded_actions_include_crouch_jump_throw_sweep_and_finisher(self) -> None:
         state = kombat.new_match()
         state.player.x = 20
@@ -172,6 +181,16 @@ class TerminalKombatRulesTests(unittest.TestCase):
         self.assertTrue(moved)
         self.assertLess(state.enemy.x, 80)
 
+    def test_unmetered_cpu_advances_beyond_its_best_basic_reach(self) -> None:
+        state = kombat.new_match()
+        state.player.x = 30
+        state.enemy.x = 48
+        state.enemy.meter = 0
+
+        action = kombat.choose_cpu_action(state, random.Random(0))
+
+        self.assertEqual("advance", action)
+
     def test_cpu_can_choose_richer_close_range_actions(self) -> None:
         state = kombat.new_match()
         state.player.x = 30
@@ -200,6 +219,18 @@ class TerminalKombatRulesTests(unittest.TestCase):
             kombat.run()
 
         wrapper.assert_called_once_with(kombat.main)
+
+    def test_fixed_timestep_catch_up_is_capped_and_resynchronized(self) -> None:
+        state = kombat.new_match()
+        rng = random.Random(0)
+        last_tick = 10.0
+        now = last_tick + kombat.FRAME_TIME * 100
+
+        with patch("kombat_game.game.update_state") as update_state:
+            next_tick = kombat._advance_fixed_timestep(state, rng, last_tick, now)
+
+        self.assertEqual(kombat.MAX_CATCH_UP_STEPS, update_state.call_count)
+        self.assertEqual(now, next_tick)
 
 
 if __name__ == "__main__":
