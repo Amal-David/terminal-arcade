@@ -7,6 +7,7 @@ import curses
 from polyglot.data.content_loader import ALL_PAIRS
 from polyglot.data.pairs import LanguagePair
 from polyglot.ui.widgets import draw_box, init_colors, safe_addstr
+from terminal_arcade.ui import hide_cursor
 
 GRID_COLS = 4
 GRID_ROWS = 5
@@ -160,10 +161,7 @@ def _jump_page(selected: int, delta: int) -> int:
 
 def open_grid(stdscr, *, initial: int = 0, status_line: str = "") -> tuple[str, int]:
     """Returns (action, idx) where action ∈ {'quit', 'open', 'install', 'cadence'}."""
-    try:
-        curses.curs_set(0)
-    except curses.error:
-        pass
+    hide_cursor()
     stdscr.keypad(True)
     stdscr.timeout(150)
     has_color = init_colors()

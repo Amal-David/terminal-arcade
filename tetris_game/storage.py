@@ -3,9 +3,9 @@
 from __future__ import annotations
 
 import json
-import os
-import sys
 from pathlib import Path
+
+from terminal_arcade.platform import app_data_dir, atomic_write_json
 
 
 APP_DIR_NAME = "tetris-game"
@@ -13,17 +13,7 @@ SCORE_FILE = "high_score.json"
 
 
 def data_dir(base_dir: Path | None = None) -> Path:
-    if base_dir is not None:
-        return Path(base_dir)
-
-    home = Path.home()
-    if sys.platform == "darwin":
-        root = home / "Library" / "Application Support"
-    elif os.name == "nt":
-        root = Path(os.environ.get("APPDATA", home / "AppData" / "Roaming"))
-    else:
-        root = Path(os.environ.get("XDG_DATA_HOME", home / ".local" / "share"))
-    return root / APP_DIR_NAME
+    return app_data_dir(APP_DIR_NAME, base_dir)
 
 
 def load_high_score(base_dir: Path | None = None) -> int:
@@ -37,7 +27,5 @@ def load_high_score(base_dir: Path | None = None) -> int:
 
 def save_high_score(score: int, base_dir: Path | None = None) -> None:
     path = data_dir(base_dir) / SCORE_FILE
-    path.parent.mkdir(parents=True, exist_ok=True)
     payload = {"high_score": max(0, int(score))}
-    path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-
+    atomic_write_json(path, payload)

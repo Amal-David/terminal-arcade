@@ -7,8 +7,17 @@ import textwrap
 from dataclasses import dataclass
 from typing import Callable
 
+from terminal_arcade.catalog import (
+    AMBIENT_CATEGORY,
+    BOOK_COUNT,
+    CATEGORY_LABELS,
+    GAME_CATEGORY,
+    POLYGLOT_PAIR_COUNT,
+)
+from terminal_arcade.ui import hide_cursor, safe_addstr
+
 MIN_WIDTH = 80
-MIN_HEIGHT = 24
+MIN_HEIGHT = 28
 
 MOVE_UP_KEYS = {curses.KEY_UP, ord("k"), ord("K")}
 MOVE_DOWN_KEYS = {curses.KEY_DOWN, ord("j"), ord("J")}
@@ -29,6 +38,7 @@ TITLE_ART = [
 class ArcadeEntry:
     id: str
     title: str
+    category: str
     subtitle: str
     blurb: str
     controls: str
@@ -36,22 +46,61 @@ class ArcadeEntry:
     launch: Callable[[], None]
 
 
-def safe_addstr(stdscr, y: int, x: int, text: str, attr: int = 0) -> None:
-    """Draw text while clipping to the visible terminal bounds."""
-    height, width = stdscr.getmaxyx()
-    if y < 0 or y >= height or x >= width:
-        return
-    if x < 0:
-        text = text[-x:]
-        x = 0
-    max_len = width - x - 1
-    if max_len <= 0:
-        return
-    text = text[:max_len]
-    try:
-        stdscr.addstr(y, x, text, attr)
-    except curses.error:
-        pass
+@dataclass(frozen=True)
+class LauncherLayout:
+    list_x: int
+    list_y: int
+    list_width: int
+    list_height: int
+    detail_x: int
+    detail_y: int
+    detail_width: int
+    detail_height: int
+    footer_y: int
+    list_capacity: int
+
+    @property
+    def list_bottom(self) -> int:
+        return self.list_y + self.list_height - 1
+
+    @property
+    def detail_bottom(self) -> int:
+        return self.detail_y + self.detail_height - 1
+
+
+def compute_layout(height: int, width: int, entry_count: int) -> LauncherLayout:
+    """Compute a bounded launcher layout for the current terminal."""
+    footer_y = height - 2
+    panel_y = 10
+    panel_height = max(8, min(18, footer_y - panel_y - 2))
+    list_width = min(30, max(24, width // 3))
+    list_x = 2
+    detail_x = list_x + list_width + 2
+    detail_width = max(20, width - detail_x - 2)
+    raw_capacity = max(1, panel_height - 5)
+    list_capacity = max(1, min(max(1, entry_count), raw_capacity))
+    return LauncherLayout(
+        list_x=list_x,
+        list_y=panel_y,
+        list_width=list_width,
+        list_height=panel_height,
+        detail_x=detail_x,
+        detail_y=panel_y,
+        detail_width=detail_width,
+        detail_height=panel_height,
+        footer_y=footer_y,
+        list_capacity=list_capacity,
+    )
+
+
+def visible_window(selected: int, total: int, capacity: int) -> tuple[int, int]:
+    """Return a viewport that always contains the selected entry."""
+    if total <= 0:
+        return 0, 0
+    capacity = max(1, min(capacity, total))
+    selected = max(0, min(selected, total - 1))
+    start = max(0, min(selected - capacity + 1, total - capacity))
+    return start, start + capacity
 
 
 def init_colors() -> bool:
@@ -120,6 +169,7 @@ def build_entries() -> list[ArcadeEntry]:
         ArcadeEntry(
             id="dino",
             title="Dino Run",
+            category=GAME_CATEGORY,
             subtitle="Endless runner",
             blurb="Sprint through rotating biomes, pick your dinosaur, and use the roar meter to smash fragile hazards.",
             controls="SPACE or UP jump  |  DOWN duck  |  X roar  |  P pause  |  Q quit",
@@ -129,6 +179,7 @@ def build_entries() -> list[ArcadeEntry]:
         ArcadeEntry(
             id="snake",
             title="Snake",
+            category=GAME_CATEGORY,
             subtitle="Classic Nokia snake",
             blurb="Chase food, avoid the walls, and manage the increasing speed as the snake grows across the grid.",
             controls="Arrows or WASD move  |  P pause  |  Q quit",
@@ -138,6 +189,7 @@ def build_entries() -> list[ArcadeEntry]:
         ArcadeEntry(
             id="tetris",
             title="Tetris",
+            category=GAME_CATEGORY,
             subtitle="Classic endless stacker",
             blurb="Stack tetrominoes, chase line clears, and survive the accelerating pace with one next-piece preview.",
             controls="←/A left  |  →/D right  |  ↓/S drop  |  SPACE hard drop  |  X/↑ cw  |  Z ccw",
@@ -147,6 +199,7 @@ def build_entries() -> list[ArcadeEntry]:
         ArcadeEntry(
             id="chess",
             title="Chess",
+            category=GAME_CATEGORY,
             subtitle="Rule-based strategy duel",
             blurb="Play White against a built-in engine on a full-screen pixel board with denser piece sprites and legal-move hints.",
             controls="Arrows or hjkl move cursor  |  Space/Enter select  |  X cancel  |  undo/new/resign",
@@ -156,6 +209,7 @@ def build_entries() -> list[ArcadeEntry]:
         ArcadeEntry(
             id="star_blast",
             title="Star Blast",
+            category=GAME_CATEGORY,
             subtitle="Large-sprite space shooter",
             blurb="Pilot a full-size terminal starship through asteroid fields, enemy craft, turret platforms, and carrier bosses.",
             controls="LEFT or A strafe  |  RIGHT or D strafe  |  HOLD SPACE fire  |  F autofire  |  Q quit",
@@ -165,6 +219,7 @@ def build_entries() -> list[ArcadeEntry]:
         ArcadeEntry(
             id="terminal_kombat",
             title="Terminal Kombat",
+            category=GAME_CATEGORY,
             subtitle="Large-sprite 16-bit fighter",
             blurb="Pick an original warrior and fight huge terminal avatars with jumps, crouches, sweeps, throws, specials, finishers, and CPU pressure.",
             controls="A/D move  |  W jump  |  S crouch  |  J/K/U/O/H attacks  |  ; throw  |  L block  |  I special  |  F finisher",
@@ -174,8 +229,9 @@ def build_entries() -> list[ArcadeEntry]:
         ArcadeEntry(
             id="bookshelf",
             title="Bookshelf",
+            category=AMBIENT_CATEGORY,
             subtitle="Interactive quote explorer",
-            blurb="Browse curated books, open details, flip through quotes, and keep a lightweight personal collection.",
+            blurb=f"Browse {BOOK_COUNT} curated books, open details, flip through quotes, and keep a lightweight personal collection.",
             controls="Arrows move  |  Enter open  |  / search  |  C collection  |  Q back or quit",
             min_size=(80, 24),
             launch=launch_bookshelf,
@@ -183,6 +239,7 @@ def build_entries() -> list[ArcadeEntry]:
         ArcadeEntry(
             id="wonder",
             title="Wonder",
+            category=AMBIENT_CATEGORY,
             subtitle="Daily fact or story",
             blurb="Pick a mood — funny, heartwarming, weird, or inspiring — and pull one fresh story or fact from the internet for the day. Saves your favorites for later.",
             controls="Arrows pick  |  Enter open  |  R refresh  |  S save  |  F favorites  |  Q back",
@@ -192,8 +249,9 @@ def build_entries() -> list[ArcadeEntry]:
         ArcadeEntry(
             id="polyglot",
             title="Polyglot",
+            category=AMBIENT_CATEGORY,
             subtitle="Learn a language",
-            blurb="Pick one of 20 language pairs (English ↔ Spanish, Japanese, Mandarin, Arabic, and more). Selecting a pair installs an ambient hook that surfaces a phrase every Nth tool call so you absorb the alphabet, vocab, and sentences while you work.",
+            blurb=f"Pick one of {POLYGLOT_PAIR_COUNT} language pairs. Selecting a pair installs an ambient hook that surfaces alphabet, vocabulary, and sentences while you work.",
             controls="Arrows pick  |  Enter open  |  I install  |  C cadence  |  P print snippet  |  Q back",
             min_size=(96, 28),
             launch=launch_polyglot,
@@ -267,56 +325,121 @@ def render(stdscr, entries: list[ArcadeEntry], selected: int, has_color: bool) -
     subtitle = "Pick a cabinet, press play, and return here when you quit."
     safe_addstr(stdscr, y + 1, max(0, (width - len(subtitle)) // 2), subtitle, sub_attr)
 
-    list_x = 4
-    list_y = y + 4
-    list_w = 28
-    list_h = 11
-    detail_x = list_x + list_w + 3
-    detail_y = list_y
-    detail_w = width - detail_x - 4
-    detail_h = list_h + 4
+    layout = compute_layout(height, width, len(entries))
+    _draw_box(
+        stdscr,
+        layout.list_y,
+        layout.list_x,
+        layout.list_width,
+        layout.list_height,
+        box_attr,
+    )
+    _draw_box(
+        stdscr,
+        layout.detail_y,
+        layout.detail_x,
+        layout.detail_width,
+        layout.detail_height,
+        box_attr,
+    )
 
-    _draw_box(stdscr, list_y, list_x, list_w, list_h, box_attr)
-    _draw_box(stdscr, detail_y, detail_x, detail_w, detail_h, box_attr)
+    safe_addstr(stdscr, layout.list_y, layout.list_x + 2, " Cabinets ", accent_attr)
+    safe_addstr(stdscr, layout.detail_y, layout.detail_x + 2, " Cabinet Card ", accent_attr)
 
-    safe_addstr(stdscr, list_y, list_x + 2, " Cabinets ", accent_attr)
-    safe_addstr(stdscr, detail_y, detail_x + 2, " Game Card ", accent_attr)
-
-    for idx, entry in enumerate(entries):
-        line_y = list_y + 2 + idx
+    start, end = visible_window(selected, len(entries), layout.list_capacity)
+    row_y = layout.list_y + 1
+    last_category = None
+    for idx in range(start, end):
+        entry = entries[idx]
+        if entry.category != last_category:
+            category = CATEGORY_LABELS.get(entry.category, entry.category.title())
+            safe_addstr(stdscr, row_y, layout.list_x + 2, f"── {category} ──", meta_attr)
+            row_y += 1
+            last_category = entry.category
         prefix = "▶" if idx == selected else " "
         label = f"{prefix} [{idx + 1}] {entry.title}"
         attr = selected_attr if idx == selected else curses.A_BOLD
-        safe_addstr(stdscr, line_y, list_x + 2, label, attr)
+        safe_addstr(stdscr, row_y, layout.list_x + 2, label, attr)
+        row_y += 1
+
+    scroll_parts = []
+    if start > 0:
+        scroll_parts.append("↑ more")
+    if end < len(entries):
+        scroll_parts.append("↓ more")
+    if scroll_parts:
+        safe_addstr(
+            stdscr,
+            layout.list_bottom - 1,
+            layout.list_x + 2,
+            "  ".join(scroll_parts),
+            curses.A_DIM,
+        )
 
     current = entries[selected]
-    safe_addstr(stdscr, detail_y + 2, detail_x + 3, current.title, accent_attr)
-    safe_addstr(stdscr, detail_y + 2, detail_x + detail_w - 10, f"{selected + 1}/{len(entries)}", meta_attr)
-    safe_addstr(stdscr, detail_y + 3, detail_x + 3, current.subtitle, curses.A_DIM | curses.A_BOLD)
+    category = CATEGORY_LABELS.get(current.category, current.category.title())
+    safe_addstr(stdscr, layout.detail_y + 2, layout.detail_x + 3, current.title, accent_attr)
+    safe_addstr(
+        stdscr,
+        layout.detail_y + 2,
+        layout.detail_x + layout.detail_width - 10,
+        f"{selected + 1}/{len(entries)}",
+        meta_attr,
+    )
+    safe_addstr(
+        stdscr,
+        layout.detail_y + 3,
+        layout.detail_x + 3,
+        f"{category} · {current.subtitle}",
+        curses.A_DIM | curses.A_BOLD,
+    )
 
-    for offset, line in enumerate(textwrap.wrap(current.blurb, detail_w - 6)):
-        safe_addstr(stdscr, detail_y + 5 + offset, detail_x + 3, line)
+    max_blurb_lines = max(1, layout.detail_height - 10)
+    blurb_lines = textwrap.wrap(current.blurb, layout.detail_width - 6)[:max_blurb_lines]
+    for offset, line in enumerate(blurb_lines):
+        safe_addstr(stdscr, layout.detail_y + 5 + offset, layout.detail_x + 3, line)
 
     size_text = f"Needs terminal: {current.min_size[0]}x{current.min_size[1]}+"
-    safe_addstr(stdscr, detail_y + detail_h - 5, detail_x + 3, size_text, meta_attr)
+    safe_addstr(
+        stdscr,
+        layout.detail_bottom - 4,
+        layout.detail_x + 3,
+        size_text,
+        meta_attr,
+    )
 
     controls_label = "Controls"
-    safe_addstr(stdscr, detail_y + detail_h - 4, detail_x + 3, controls_label, accent_attr)
-    for offset, line in enumerate(textwrap.wrap(current.controls, detail_w - 6)):
-        safe_addstr(stdscr, detail_y + detail_h - 3 + offset, detail_x + 3, line, curses.A_DIM)
+    safe_addstr(
+        stdscr,
+        layout.detail_bottom - 3,
+        layout.detail_x + 3,
+        controls_label,
+        accent_attr,
+    )
+    for offset, line in enumerate(textwrap.wrap(current.controls, layout.detail_width - 6)[:2]):
+        safe_addstr(
+            stdscr,
+            layout.detail_bottom - 2 + offset,
+            layout.detail_x + 3,
+            line,
+            curses.A_DIM,
+        )
 
-    quick_launch = "/".join(str(index) for index in range(1, len(entries) + 1))
-    footer = f"↑/↓ or j/k move   Enter or Space play   {quick_launch} quick launch   Q or Esc quit"
-    safe_addstr(stdscr, height - 2, max(0, (width - len(footer)) // 2), footer, curses.A_DIM)
+    quick_launch = "1-9 quick launch" if len(entries) > 1 else "1 quick launch"
+    footer = f"↑/↓ or j/k move   Enter/Space play   {quick_launch}   Q/Esc quit"
+    safe_addstr(
+        stdscr,
+        layout.footer_y,
+        max(0, (width - len(footer)) // 2),
+        footer,
+        curses.A_DIM,
+    )
     stdscr.refresh()
 
 
 def launcher_main(stdscr, entries: list[ArcadeEntry], initial_index: int = 0) -> int | None:
     """Run the curses launcher and return the selected entry index."""
-    try:
-        curses.curs_set(0)
-    except curses.error:
-        pass
+    hide_cursor()
     stdscr.keypad(True)
     stdscr.timeout(100)
     has_color = init_colors()

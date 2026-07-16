@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 SAMPLE_RATE = 22_050
-ASSET_DIR = Path(__file__).resolve().parent.parent / "assets" / "audio"
+ASSET_DIR = Path(__file__).resolve().parent.parent / "dino_game" / "audio_assets"
 
 
 def envelope(position: int, total: int, attack: float = 0.08, release: float = 0.2) -> float:

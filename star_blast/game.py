@@ -7,6 +7,8 @@ import random
 import time
 from dataclasses import dataclass, field
 
+from terminal_arcade.ui import hide_cursor, safe_addstr
+
 from .audio import AudioManager
 from .storage import load_scores, save_scores
 
@@ -327,23 +329,6 @@ def compute_playfield(term_h: int, term_w: int) -> tuple[int, int, int, int]:
     ox = max(1, (term_w - (field_w + 2)) // 2)
     oy = max(2, (term_h - (field_h + 2)) // 2 - 1)
     return ox, oy, field_w, field_h
-
-
-def safe_addstr(stdscr, y: int, x: int, text: str, attr: int = 0) -> None:
-    height, width = stdscr.getmaxyx()
-    if y < 0 or y >= height or x >= width:
-        return
-    if x < 0:
-        text = text[-x:]
-        x = 0
-    max_len = width - x - 1
-    if max_len <= 0:
-        return
-    text = text[:max_len]
-    try:
-        stdscr.addstr(y, x, text, attr)
-    except curses.error:
-        pass
 
 
 def draw_sprite(stdscr, y: int, x: int, sprite: tuple[str, ...], attr: int) -> None:
@@ -1011,10 +996,7 @@ def render(stdscr, state: GameState, has_color: bool) -> None:
 
 
 def main(stdscr) -> None:
-    try:
-        curses.curs_set(0)
-    except curses.error:
-        pass
+    hide_cursor()
     stdscr.keypad(True)
     stdscr.nodelay(True)
     stdscr.timeout(0)

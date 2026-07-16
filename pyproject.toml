@@ -10,6 +10,22 @@ readme = "README.md"
 requires-python = ">=3.10"
 keywords = ["game", "terminal", "curses", "runner", "snake", "tetris", "chess", "fighter"]
 license = "MIT"
+classifiers = [
+    "Environment :: Console :: Curses",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+
+[project.urls]
+Homepage = "https://github.com/Amal-David/terminal-arcade"
+Repository = "https://github.com/Amal-David/terminal-arcade"
+Issues = "https://github.com/Amal-David/terminal-arcade/issues"
 
 [project.scripts]
 arcade = "terminal_arcade.launcher:run"
@@ -25,3 +41,7 @@ polyglot = "polyglot.app:run"
 
 [tool.setuptools]
 packages = ["dino_game", "snake_game", "tetris_game", "chess_game", "star_blast", "kombat_game", "bookshelf", "bookshelf.data", "bookshelf.screens", "bookshelf.ui", "bookshelf.skill", "wonder", "wonder.data", "wonder.screens", "wonder.ui", "wonder.skill", "polyglot", "polyglot.data", "polyglot.screens", "polyglot.ui", "polyglot.skill", "terminal_arcade"]
+
+[tool.setuptools.package-data]
+dino_game = ["audio_assets/*.wav"]
+star_blast = ["audio_assets/*.wav", "audio_assets/LICENSE.txt"]

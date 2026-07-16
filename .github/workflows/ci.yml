@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: ${{ matrix.os }} / Python ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python-version: ["3.10", "3.11", "3.12", "3.13", "3.14"]
+        include:
+          - os: macos-latest
+            python-version: "3.10"
+          - os: macos-latest
+            python-version: "3.14"
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Compile Python sources
+        run: python -m compileall -q terminal_arcade dino_game snake_game tetris_game chess_game star_blast kombat_game bookshelf wonder polyglot scripts tests
+      - name: Check content and catalog metadata
+        run: |
+          python scripts/check_summary_lengths.py
+          python scripts/check_catalog_metadata.py
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
+  wheel:
+    name: Clean wheel and isolated install
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.10"
+      - name: Build wheel from the clean checkout
+        run: python -m pip wheel . --no-deps --wheel-dir dist
+      - name: Smoke-test the isolated wheel install
+        run: python scripts/check_wheel_install.py dist/terminal_arcade-*.whl
+      - uses: actions/upload-artifact@v7
+        with:
+          name: terminal-arcade-wheel
+          path: dist/*.whl
+          if-no-files-found: error

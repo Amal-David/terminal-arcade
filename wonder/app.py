@@ -5,6 +5,8 @@ from __future__ import annotations
 import curses
 import datetime as _dt
 
+from terminal_arcade.ui import hide_cursor
+
 from wonder.fetcher import CATEGORIES, SURPRISE
 from wonder.screens.category import CategoryScreen
 from wonder.screens.favorites import FavoritesScreen
@@ -52,10 +54,7 @@ def _today_status(cache: dict) -> dict[str, str]:
 
 
 def main(stdscr) -> None:
-    try:
-        curses.curs_set(0)
-    except curses.error:
-        pass
+    hide_cursor()
     stdscr.nodelay(True)
     stdscr.timeout(120)
     init_colors()
