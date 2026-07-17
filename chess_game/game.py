@@ -7,6 +7,8 @@ from dataclasses import dataclass, field
 import random
 import time
 
+from terminal_arcade.ui import hide_cursor, safe_addstr
+
 from .core import (
     DIFFICULTIES,
     Position,
@@ -109,22 +111,6 @@ class GameState:
 def append_log(state: GameState, text: str) -> None:
     state.move_log.append(text)
     state.move_log = state.move_log[-12:]
-
-
-def safe_addstr(stdscr, y: int, x: int, text: str, attr: int = 0) -> None:
-    height, width = stdscr.getmaxyx()
-    if y < 0 or y >= height or x >= width:
-        return
-    if x < 0:
-        text = text[-x:]
-        x = 0
-    max_len = width - x - 1
-    if max_len <= 0:
-        return
-    try:
-        stdscr.addstr(y, x, text[:max_len], attr)
-    except curses.error:
-        pass
 
 
 def init_colors() -> bool:
@@ -608,10 +594,7 @@ def drive_engine_turn(state: GameState) -> None:
 
 
 def main(stdscr) -> None:
-    try:
-        curses.curs_set(0)
-    except curses.error:
-        pass
+    hide_cursor()
     stdscr.nodelay(True)
     stdscr.keypad(True)
     stdscr.timeout(100)

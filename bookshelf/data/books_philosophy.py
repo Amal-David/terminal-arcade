@@ -375,7 +375,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2009,
         "genre": "philosophy",
         "mood": ["fresh start", "self-discovery"],
-        "summary": "Singer argues that affluent people have a moral obligation to donate a significant portion of their income to effective charities.",
+        "summary": "Singer argues that affluent people have a moral obligation to donate a significant portion of their income to effective charities. He begins with the famous shallow-pond thought experiment: if you would ruin an expensive pair of shoes to save a nearby drowning child, distance should not erase the duty to prevent an equally avoidable death elsewhere. The book turns that intuition into a practical program for giving, comparing charities by the measurable good they accomplish and challenging donors to treat philanthropy as a regular part of their budget rather than an occasional emotional response. Singer profiles people who pledge substantial income, examines the psychological barriers that make distant suffering easy to ignore, and proposes a graduated standard that asks more from the very wealthy without demanding absolute self-denial from everyone else. The argument helped popularize effective altruism, though critics dispute its demanding utilitarian assumptions and its confidence in quantifying impact. The book is most useful as a direct confrontation with the gap between what comfortable readers say every life is worth and how they actually choose to spend.",
     },
     {
         "title": "Practical Ethics",
@@ -383,7 +383,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1979,
         "genre": "philosophy",
         "mood": ["Sunday morning", "self-discovery"],
-        "summary": "Singer applies utilitarian ethics to controversial issues including euthanasia, animal rights, and global poverty.",
+        "summary": "Singer applies utilitarian ethics to controversial issues including euthanasia, animal rights, and global poverty. Rather than beginning from inherited rules or the sanctity of familiar categories, he asks whose interests are affected by an action and how those interests should be weighed. Successive chapters examine equality, discrimination, the moral status of animals, abortion, embryo research, voluntary and involuntary euthanasia, duties to refugees, environmental responsibility, and aid to people living in extreme poverty. Singer's preference utilitarianism gives special attention to sentience, self-awareness, and the capacity to form plans, producing conclusions that remain influential precisely because many readers find them disturbing. Later editions respond to objections and revise several positions, so the work also documents a philosopher changing his public arguments under criticism. Practical Ethics does not offer a neutral map of applied ethics; it demonstrates a consistent method and invites readers to test whether they accept its premises when the results conflict with intuition. Its enduring value lies in making moral consistency difficult to evade across cases that public debate usually keeps separate.",
     },
     {
         "title": "The Fragility of Goodness",
@@ -391,7 +391,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1986,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Nussbaum examines ancient Greek views on luck and ethics, arguing that vulnerability is essential to the good life.",
+        "summary": "Nussbaum examines ancient Greek views on luck and ethics, arguing that vulnerability is essential to the good life. Through close readings of Aeschylus, Sophocles, Euripides, Plato, and Aristotle, she asks whether a good person can flourish through virtue alone or whether love, friendship, family, political community, and bodily fortune remain indispensable. Tragedy matters to her argument because its characters face genuine conflicts between valuable commitments, not puzzles that disappear once reason identifies a single correct rule. Plato's effort to make the soul self-sufficient is contrasted with Aristotle's richer account of practical wisdom, which accepts that excellent action depends on circumstances no agent fully controls. Nussbaum also defends literary form as a mode of ethical inquiry: a tragedy can show the texture of hesitation, grief, and competing obligation more adequately than an abstract proposition. The result is both a major study of Greek ethics and a challenge to modern theories that equate moral security with invulnerability. It portrays human goodness as fragile not because virtue is weak, but because caring seriously exposes a life to loss.",
     },
     {
         "title": "Creating Capabilities",
@@ -399,7 +399,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2011,
         "genre": "philosophy",
         "mood": ["Sunday morning", "fresh start"],
-        "summary": "Nussbaum presents the capabilities approach to human development, defining ten central capabilities every society should guarantee.",
+        "summary": "Nussbaum presents the capabilities approach to human development, defining ten central capabilities every society should guarantee. She rejects economic measures such as gross domestic product when they hide profound differences in what individuals can actually do and be. Her alternative evaluates whether each person has a genuine opportunity for bodily health and integrity, imagination and thought, emotional attachment, practical reason, social affiliation, concern for other species, play, and meaningful control over political and material conditions. These are capabilities rather than compulsory achievements: a government should make a choice possible without dictating how a citizen must live. Nussbaum grounds the threshold in equal human dignity and insists that every person counts separately, preventing national averages or family welfare from concealing deprivation among women, disabled people, or marginalized groups. The book distinguishes her account from utilitarianism, resource-based equality, and Amartya Sen's less fixed formulation. Written for readers beyond academic philosophy, it connects constitutional principles to development policy and asks a concrete question of institutions: not how much wealth exists, but what lives people are truly free to build.",
     },
     {
         "title": "The Consolations of Philosophy",
@@ -407,7 +407,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2000,
         "genre": "philosophy",
         "mood": ["rainy afternoon", "cozy night", "self-discovery"],
-        "summary": "De Botton shows how six great philosophers can help with everyday problems like inadequacy, frustration, and heartbreak.",
+        "summary": "De Botton shows how six great philosophers can help with everyday problems like inadequacy, frustration, and heartbreak. Each chapter pairs a recognizable distress with a thinker: Socrates addresses unpopularity, Epicurus material anxiety, Seneca frustration, Montaigne feelings of inadequacy, Schopenhauer romantic disappointment, and Nietzsche suffering and difficulty. The book presents philosophy as a practical tradition of diagnosis and consolation rather than a museum of abstract systems, mixing biography, quotation, photographs, and contemporary scenes to make old arguments feel available in ordinary life. Its consolations are deliberately unsentimental. Epicurus recommends friendship and independence rather than luxury; Seneca asks readers to prepare for fortune's indifference; Schopenhauer explains why love's intensity does not guarantee lasting compatibility; Nietzsche treats chosen hardship as a condition of growth. Specialists may find the portraits selective, but that selectivity serves a clear introductory purpose: each philosopher becomes a sustained answer to one human problem. De Botton's larger claim is that ideas can alter the interpretation of misfortune, and that changing an interpretation may not remove pain but can make it intelligible and therefore more bearable.",
     },
     {
         "title": "How Proust Can Change Your Life",
@@ -415,7 +415,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1997,
         "genre": "philosophy",
         "mood": ["rainy afternoon", "cozy night"],
-        "summary": "De Botton extracts practical life lessons from Marcel Proust's work, making a case for reading as self-improvement.",
+        "summary": "De Botton extracts practical life lessons from Marcel Proust's work, making a case for reading as self-improvement. Organized like an irreverent advice manual, the book asks how Proust might teach readers to love life, read attentively, take time, suffer successfully, express emotion, become a good friend, open their eyes, and put books down. Episodes from In Search of Lost Time sit beside letters, anecdotes, photographs, and details of Proust's secluded routine, turning an intimidating modernist novelist into a companion for ordinary frustrations. De Botton emphasizes Proust's belief that habit deadens perception: art restores value to rooms, people, and sensations that familiarity has made invisible. He also resists treating literature as a collection of detachable maxims. The best reading does not replace a reader's experience with an author's authority; it lends sharper language and attention so that the reader can recognize a life more fully. Comic in tone but serious in purpose, the book argues that a long novel changes us less by issuing instructions than by retraining what we notice, remember, and consider worthy of description.",
     },
     {
         "title": "The Architecture of Happiness",
@@ -423,7 +423,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2006,
         "genre": "philosophy",
         "mood": ["Sunday morning", "self-discovery"],
-        "summary": "De Botton explores how the buildings we inhabit shape our moods and what architecture reveals about our values.",
+        "summary": "De Botton explores how the buildings we inhabit shape our moods and what architecture reveals about our values. Moving through houses, offices, streets, churches, and furniture, he argues that designed environments embody ideals of order, dignity, warmth, power, serenity, and belonging. A room can remind its occupants of qualities they want to possess, while an ugly or indifferent setting can make those aspirations harder to sustain. The discussion ranges across classical, Gothic, modernist, and vernacular styles, pairing architectural history with photographs and reflections on memory, identity, and taste. De Botton rejects the idea that beauty can be reduced to a universal formula; judgments arise from psychological needs, historical associations, and the balance of contrasting virtues such as simplicity and exuberance. He is equally skeptical that architecture can guarantee happiness, because no façade repairs a damaged relationship or a troubled mind. Its quieter power is commemorative and suggestive: buildings give durable form to values that people easily forget. The book makes architectural criticism accessible by asking not only whether a structure looks good, but what kind of person and common life it invites.",
     },
     {
         "title": "Status Anxiety",
@@ -431,7 +431,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2004,
         "genre": "philosophy",
         "mood": ["career pivot", "self-discovery"],
-        "summary": "De Botton examines our obsession with social status and offers philosophical remedies drawn from art, politics, and religion.",
+        "summary": "De Botton examines our obsession with social status and offers philosophical remedies drawn from art, politics, and religion. He defines status anxiety as the fear that society will judge us unsuccessful and therefore unworthy of respect or love. The modern promise that anyone can rise intensifies this fear: when rank appears earned rather than inherited, poverty or obscurity can feel like evidence of personal failure. De Botton traces causes including lovelessness, snobbery, expectation, meritocracy, and dependence on unpredictable markets, showing how newspapers, portraits, careers, and social comparison teach people what counts as a valuable life. The second half explores possible correctives. Philosophy questions public opinion; art reveals dignity in neglected experience; politics exposes status systems as historical constructions; Christianity levels worldly hierarchy before death; bohemian traditions deliberately reverse conventional measures of success. None abolishes ambition, but each creates distance from a single hostile scoreboard. The book's lasting insight is that the desire for rank often conceals a desire for recognition, and that freedom begins by choosing more humane audiences and standards before the market or crowd chooses them for us.",
     },
     {
         "title": "How to Be a Stoic",
@@ -439,7 +439,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2017,
         "genre": "philosophy",
         "mood": ["morning ritual", "fresh start", "daily grind"],
-        "summary": "Pigliucci presents Stoicism as a practical philosophy for modern life, using Epictetus as a guide.",
+        "summary": "Pigliucci presents Stoicism as a practical philosophy for modern life, using Epictetus as a guide. Framed as a series of imagined conversations while the author walks through Rome, the book translates ancient doctrines into decisions about work, relationships, grief, disability, anger, and mortality. Its foundation is the dichotomy of control: judgments, intentions, and chosen actions belong to us, while reputation, outcomes, other people, and much of the body do not. Pigliucci stresses that this distinction is not passive resignation; it redirects effort toward effective agency while accepting that even excellent action cannot command fortune. He explains the Stoic disciplines of desire, action, and assent, along with practices such as negative visualization, voluntary discomfort, and an evening review of conduct. The account also updates ancient physics and rejects dubious claims made by some popular Stoic movements, presenting the philosophy as compatible with modern science and social responsibility. By combining memoir, scholarship, and exercises, Pigliucci shows Stoicism not as emotional suppression or relentless productivity but as training in wiser judgment, ethical character, and cooperation with other human beings.",
     },
     {
         "title": "The Obstacle Is the Way",
@@ -447,7 +447,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2014,
         "genre": "philosophy",
         "mood": ["hustle mode", "fresh start", "daily grind"],
-        "summary": "Holiday draws on Stoic philosophy to argue that obstacles can be turned into advantages through perception, action, and will.",
+        "summary": "Holiday draws on Stoic philosophy to argue that obstacles can be turned into advantages through perception, action, and will. Inspired by Marcus Aurelius's claim that an impediment to action can advance action, the book divides its method into three disciplines. Perception asks readers to strip events of panic and self-pity so they can see the facts clearly. Action favors persistent, specific movement over complaint, perfectionism, or waiting for ideal conditions. Will concerns the inner posture required when no external solution exists: anticipation, endurance, humility, and the ability to find meaning in unavoidable loss. Historical vignettes about figures such as John D. Rockefeller, Ulysses S. Grant, Amelia Earhart, and civil-rights leaders illustrate the pattern, sometimes more as motivational examples than as sustained history. Holiday does not claim every disaster is secretly desirable; his practical point is that difficulty supplies constraints around which ingenuity and character can organize. The book helped lead the contemporary revival of popular Stoicism by converting its disciplines into a compact operating framework. Readers should treat it as an invitation to practice, not as proof that structural barriers disappear through attitude alone.",
     },
     {
         "title": "Ego Is the Enemy",
@@ -455,7 +455,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2016,
         "genre": "philosophy",
         "mood": ["hustle mode", "career pivot", "self-discovery"],
-        "summary": "Holiday argues that ego is the greatest barrier to success, drawing on historical examples from Howard Hughes to Genghis Khan.",
+        "summary": "Holiday argues that ego is the greatest barrier to success, drawing on historical examples from Howard Hughes to Genghis Khan. He uses ego to mean an unhealthy conviction of personal importance that substitutes image, entitlement, and applause for accurate self-knowledge. The book follows a three-part cycle: aspiration, success, and failure. While aspiring, ego encourages premature self-promotion instead of apprenticeship; in success, it isolates leaders from criticism and turns achievement into overreach; in failure, it protects pride by blaming others and prevents the honest assessment needed to recover. Counterexamples including George Marshall, Katharine Graham, Jackie Robinson, and other public figures model restraint, purpose, and a willingness to remain students. The brief episodes are moral illustrations rather than comprehensive biographies, and the argument borrows heavily from Stoic suspicion of whatever lies outside character and choice. Holiday's useful distinction is between confidence grounded in work and identity dependent on recognition. Ambition itself is not the enemy: the danger begins when maintaining a heroic story about oneself becomes more important than the task, the team, or the evidence that plans must change.",
     },
     {
         "title": "Stillness Is the Key",
@@ -463,7 +463,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2019,
         "genre": "philosophy",
         "mood": ["morning ritual", "cozy night"],
-        "summary": "Holiday draws on Stoic, Buddhist, and Epicurean wisdom to argue that stillness is the key to meaning and excellence.",
+        "summary": "Holiday draws on Stoic, Buddhist, and Epicurean wisdom to argue that stillness is the key to meaning and excellence. Stillness here is not inactivity but the capacity to remain deliberate amid noise, appetite, fear, and constant demands for reaction. The book examines three connected domains: mind, spirit, and body. Mental stillness requires separating signal from distraction, creating space for reflection, and resisting certainty; spiritual stillness depends on values, gratitude, relationships, and coming to terms with mortality; physical stillness grows from sleep, walking, routine, solitude, and limits on compulsive consumption. Examples range from Seneca and the Buddha to Winston Churchill, Anne Frank, Fred Rogers, and athletes, presenting different traditions as converging on practices of attention and self-command. The synthesis sometimes smooths real philosophical differences, but it gives readers an accessible counterweight to productivity culture disguised as endless urgency. Holiday's central point is that speed without direction multiplies error. Periods of quiet make better action possible because they reveal motives, restore perspective, and let a person choose what deserves energy before circumstance or technology chooses on their behalf.",
     },
     {
         "title": "The Daily Stoic",
@@ -471,7 +471,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2016,
         "genre": "philosophy",
         "mood": ["morning ritual", "daily grind"],
-        "summary": "A year's worth of daily Stoic meditations drawn from Seneca, Epictetus, and Marcus Aurelius.",
+        "summary": "A year's worth of daily Stoic meditations drawn from Seneca, Epictetus, and Marcus Aurelius. Holiday and Hanselman arrange 366 short entries into a progression through the Stoic disciplines of perception, action, and will, with monthly themes such as clarity, passions, problem solving, duty, fortitude, and mortality. Each page pairs a translated passage from an ancient source with a brief modern commentary, making the volume suitable for a morning reading or evening review rather than continuous argument. The selections repeatedly return to the distinction between what depends on our choices and what belongs to fortune, but they also emphasize justice, service, friendship, humility, and preparation for death. Because quotations are excerpted and modernized, the book works best as a doorway to the primary texts rather than a replacement for their context or disagreements. Its practical strength is repetition: ideas that are easy to admire once become harder disciplines when revisited across changing circumstances. The format invites readers to journal, test a principle during the day, and notice whether their judgments align with the character they claim to value.",
     },
     {
         "title": "Man's Search for Meaning",
@@ -479,7 +479,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1946,
         "genre": "philosophy",
         "mood": ["existential crisis", "self-discovery", "late night reflection"],
-        "summary": "Frankl draws on his experience in Nazi concentration camps to argue that finding meaning is the primary motivation of human life.",
+        "summary": "Frankl draws on his experience in Nazi concentration camps to argue that finding meaning is the primary motivation of human life. The first part recounts imprisonment in Auschwitz and other camps, describing humiliation, hunger, arbitrary death, emotional numbing, and the fragile inner resources that sometimes helped prisoners endure. Frankl is careful not to turn survival into evidence of superior virtue; chance and circumstance remained decisive. Yet he observes that a future task, a loved person held in memory, or a chosen stance toward unavoidable suffering could preserve a remnant of spiritual freedom even when nearly every external freedom had been destroyed. The second part outlines logotherapy, his psychotherapeutic approach, which treats the search for meaning rather than pleasure or power as a central human drive. Meaning is concrete and situational, discovered through work, love, or the attitude taken toward suffering that cannot be changed. The book has immense inspirational force, but its historical testimony should not be reduced to a slogan that pain is useful. Frankl's harder claim is that responsibility persists without implying that victims caused or deserved what happened to them.",
     },
     {
         "title": "The Courage to Be",
@@ -487,7 +487,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1952,
         "genre": "philosophy",
         "mood": ["existential crisis", "self-discovery"],
-        "summary": "Tillich explores courage as the self-affirmation of being in the face of anxiety and meaninglessness.",
+        "summary": "Tillich explores courage as the self-affirmation of being in the face of anxiety and meaninglessness. Beginning with classical accounts from Plato and the Stoics, he distinguishes fear, which has a definite object, from anxiety, in which existence itself feels threatened. Modern life exposes three principal forms of anxiety: fate and death, guilt and condemnation, and emptiness and meaninglessness. Attempts to escape them through conformity or totalitarian belonging sacrifice the individual self, while isolated self-assertion loses the world of shared meaning. Tillich therefore analyzes two incomplete forms of courage, the courage to be as a part and the courage to be as oneself, before grounding both in the 'courage to accept acceptance' by what he calls the God above God. This theological language does not offer proof that suffering will end; it names an ultimate affirmation that can include doubt rather than requiring certainty. Written after war and exile, the book connects existential philosophy, psychology, and Protestant theology. Its enduring question is how a finite person can act and affirm life honestly without denying mortality, responsibility, or the possibility that familiar meanings may collapse.",
     },
     {
         "title": "I and Thou",
@@ -495,7 +495,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1923,
         "genre": "philosophy",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "Buber distinguishes between I-Thou and I-It relationships, arguing that authentic human connection is the foundation of meaning.",
+        "summary": "Buber distinguishes between I-Thou and I-It relationships, arguing that authentic human connection is the foundation of meaning. I-It names the necessary world of experience, classification, planning, and use, in which a person encounters something as an object with properties. I-Thou names a meeting in which the other is addressed as a whole presence rather than reduced to a role or bundle of traits. Buber does not suggest abandoning practical objectification; human life requires it, and every encounter eventually returns to the It-world. The danger is allowing that mode to become total, turning people, nature, and even God into objects to be managed. Written in compressed, lyrical sections, the book moves from encounters with other persons and the natural world toward the 'eternal Thou,' arguing that genuine relation has a spiritual dimension without being a technique for mystical escape. I and Thou shaped dialogical philosophy, theology, psychotherapy, and theories of education. Its ethical force comes from grammar made existential: whether we speak to someone or merely about them changes what kind of reality can appear between us.",
     },
     {
         "title": "The Prince",
@@ -503,7 +503,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1532,
         "genre": "philosophy",
         "mood": ["hustle mode", "career pivot"],
-        "summary": "Machiavelli's notorious guide to political power argues that rulers must sometimes set aside morality to maintain the state.",
+        "summary": "Machiavelli's notorious guide to political power argues that rulers must sometimes set aside conventional morality to maintain the state. Written in 1513 after the Medici returned to Florence, imprisoned Machiavelli, and excluded him from office, the short treatise analyzes how principalities are acquired, secured, and lost. He compares hereditary and new states, mercenary and citizen armies, generosity and parsimony, cruelty and mercy, and the risks of being loved or feared. His prince needs virtù: not Christian virtue, but flexible capacity, boldness, judgment, and the strength to shape events. Fortuna represents the unstable field that no ruler controls, making adaptation more important than fixed goodness. Examples from Cesare Borgia, Roman history, and contemporary Italian politics support advice that often separates effective rule from private innocence. Scholars still debate whether the text is sincere counsel, satire, or a coded republican intervention, especially when read beside Machiavelli's Discourses. Its scandal lies less in recommending evil than in describing politics without pretending that good intentions guarantee public safety. The book remains indispensable for thinking about emergency power, appearances, and responsibility for consequences.",
     },
     {
         "title": "On Liberty",
@@ -511,7 +511,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1859,
         "genre": "philosophy",
         "mood": ["Sunday morning", "self-discovery"],
-        "summary": "Mill's classic defense of individual freedom argues that the only legitimate reason to restrict liberty is to prevent harm to others.",
+        "summary": "Mill's classic defense of individual freedom argues that the only legitimate reason to restrict liberty is to prevent harm to others. The harm principle applies to competent adults and protects thought, speech, association, tastes, and experiments in living from legal coercion and the subtler tyranny of social opinion. Mill defends even false or offensive speech because suppressed views may be true, may contain part of the truth, or may force a true belief to remain living knowledge rather than inherited dogma. Individuality is not merely a private indulgence: diverse ways of life generate discoveries from which society can learn. At the same time, liberty does not excuse conduct that violates definite obligations or injures other people, and Mill acknowledges special questions involving children, dependency, and public functions. Published in 1859 and shaped by his intellectual partnership with Harriet Taylor Mill, the essay remains foundational to liberal political theory. Its difficult legacy lies in deciding what counts as harm, when diffuse social effects justify intervention, and whether unequal power can make an apparently voluntary choice less free than the principle assumes.",
     },
     {
         "title": "Utilitarianism",
@@ -519,7 +519,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1863,
         "genre": "philosophy",
         "mood": ["Sunday morning", "late night reflection"],
-        "summary": "Mill refines Bentham's utilitarianism, distinguishing between higher and lower pleasures and defending the greatest happiness principle.",
+        "summary": "Mill refines Bentham's utilitarianism, distinguishing between higher and lower pleasures and defending the greatest happiness principle. He states the creed as judging actions right insofar as they promote happiness and wrong insofar as they produce the reverse, with happiness understood as pleasure and the absence of pain. Against the charge that this is a doctrine fit only for animals, Mill argues that competent judges prefer pleasures engaging intellect, imagination, and moral feeling even when those pleasures bring discontent. The essay addresses common objections about motivation, demandingness, calculation, and conflict with justice. Its controversial 'proof' moves from each person's desire for their own happiness to general happiness as a good, while the final chapter explains justice through vital social utilities protected by rights and sanctions. Mill also distinguishes the standard of morality from the motives of a particular agent and allows secondary rules to guide ordinary decisions. The work is concise enough to reveal unresolved tensions between aggregate welfare and individual protection, which is why it remains central. It offers not a mechanical pleasure calculator but a reform-minded theory whose strongest critics helped define modern ethics.",
     },
     {
         "title": "The Communist Manifesto",
@@ -527,7 +527,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1848,
         "genre": "philosophy",
         "mood": ["existential crisis", "career pivot"],
-        "summary": "Marx and Engels call for workers to unite, arguing that all history is the history of class struggle.",
+        "summary": "Marx and Engels call for workers to unite, arguing that the history of existing societies is a history of class struggle. Commissioned by the Communist League and published amid the revolutions of 1848, the manifesto describes the bourgeoisie as a genuinely revolutionary class that shattered feudal relations, created a world market, transformed production, and subjected inherited institutions to relentless change. Those achievements also generate a proletariat that owns no productive property and must sell labor under conditions increasingly shaped by capital. The text predicts that capitalism's crises and concentration will organize workers into a political force capable of abolishing class ownership. It distinguishes communists from rival socialist movements, answers objections about property, family, nationality, and culture, and ends with the famous international appeal. Many specific predictions did not unfold as written, and regimes claiming Marx's authority produced histories the pamphlet cannot settle on its own. Yet its compressed account of globalization, commodification, and instability remains striking. Readers encounter both a piece of revolutionary rhetoric and an analytic claim that economic structures shape political possibilities and social consciousness.",
     },
     {
         "title": "A Room of One's Own",
@@ -535,7 +535,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1929,
         "genre": "philosophy",
         "mood": ["self-discovery", "rainy afternoon"],
-        "summary": "Woolf argues that women need financial independence and private space to write, exploring how patriarchy has shaped literary history.",
+        "summary": "Woolf argues that women need financial independence and private space to write, exploring how patriarchy has shaped literary history. Developed from lectures delivered at two women's colleges in 1928, the essay follows a fictional narrator through libraries, dining rooms, streets, and bookshelves as she investigates the topic of women and fiction. The contrast between wealthy male colleges and poorly funded female institutions makes material inequality visible before any abstract theory appears. Woolf invents Shakespeare's equally gifted sister, Judith, to show how education, domestic obligation, sexual danger, and the absence of opportunity could destroy talent before it reached the page. She recovers predecessors such as Aphra Behn and considers how anger, dependence, and the need to please male gatekeepers distort literary possibility. The famous prescription of five hundred pounds a year and a lockable room is therefore structural, not decorative. Woolf also imagines an androgynous creative mind, a claim later feminists have debated. The essay's mixture of argument, scene, irony, and speculation demonstrates its own thesis: intellectual freedom needs material support, historical memory, and forms supple enough to expose exclusion.",
     },
     {
         "title": "The Souls of Black Folk",
@@ -543,7 +543,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1903,
         "genre": "philosophy",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "Du Bois introduces the concept of double consciousness and examines the experience of being Black in America.",
+        "summary": "Du Bois introduces the concept of double consciousness and examines the experience of being Black in America after Emancipation. Published in 1903, the collection combines sociology, history, political argument, memoir, music, and elegy; each chapter opens with a bar of a spiritual, which Du Bois calls a sorrow song. The image of the Veil describes a color line that separates Black life from white recognition, while double consciousness names the strain of seeing oneself through one's own experience and through a society that regards Blackness with contempt. Du Bois criticizes Booker T. Washington's accommodationist program, analyzes the Freedmen's Bureau, education, sharecropping, religion, and the political economy of the South, and offers intimate portraits of a teacher, a bereaved father, and communities denied full citizenship. His demand is not assimilation at the cost of cultural inheritance but a nation in which multiple identities can flourish without exclusion. The book helped found modern Black studies and empirical sociology while retaining extraordinary literary power. Its central question—how democracy can understand a people it has forced behind a veil—remains unresolved.",
     },
     {
         "title": "The Wretched of the Earth",
@@ -551,7 +551,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1961,
         "genre": "philosophy",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Fanon analyzes the psychological and political effects of colonialism, arguing that decolonization is inherently violent.",
+        "summary": "Fanon analyzes the psychological and political effects of colonialism, arguing that decolonization overturns a world built and maintained through violence. Writing during the Algerian struggle and drawing on his work as a psychiatrist and revolutionary, he describes the colonial order as a divided space in which settlers monopolize land, legitimacy, and humanity while the colonized are treated as objects. Violence in this setting is not introduced from nowhere by rebellion; it already structures daily rule, though Fanon's claims about liberating counterviolence remain fiercely contested. Later chapters warn that national independence can be captured by a weak local bourgeoisie that inherits colonial institutions without redistributing power or developing democratic participation. He examines peasantry, urban militants, national culture, racial identity, and the mental disorders produced by torture and war. Jean-Paul Sartre's famous preface intensified the book's reputation but should not substitute for Fanon's more complex analysis. The work influenced liberation movements and postcolonial theory across the world. It is both a document of a particular war and a warning that removing a flag does not by itself decolonize an economy, a psyche, or a state.",
     },
     {
         "title": "Discipline and Punish",
@@ -559,7 +559,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1975,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Foucault traces how modern society shifted from public punishment to surveillance and normalization as forms of control.",
+        "summary": "Foucault traces how modern society shifted from spectacular public punishment to surveillance, examination, and normalization as forms of control. The book opens by juxtaposing the gruesome 1757 execution of Damiens with a regimented nineteenth-century prison timetable, dramatizing a change not simply toward kindness but toward a more continuous power over bodies. Foucault follows disciplinary techniques through armies, schools, hospitals, workshops, and prisons: partitioning space, scheduling time, ranking performance, recording deviations, and training individuals to monitor themselves. Bentham's Panopticon becomes the model of visibility that is unverifiable yet potentially constant, making obedience automatic. The prison persists despite repeated evidence of failure because it produces categories, expertise, and a manageable delinquent population useful to a broader 'carceral' society. Foucault calls this a genealogy rather than a linear humanitarian history; knowledge in criminology, medicine, and administration develops inside relations of power. Critics question omissions and historical generalizations, but the framework transformed social theory. Its unsettling proposition is that institutions can become less visibly cruel while growing more intimate, efficient, and productive in shaping the kinds of persons they claim merely to observe.",
     },
     {
         "title": "The History of Sexuality, Volume 1",
@@ -567,7 +567,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1976,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Foucault argues that rather than repressing sexuality, modern society produced an explosion of discourse about it.",
+        "summary": "Foucault argues that rather than simply repressing sexuality, modern Western society produced an explosion of discourse about it. He challenges the 'repressive hypothesis,' the familiar story that Victorian power silenced sex until modern liberation finally spoke the truth. From Christian confession through medicine, psychiatry, demography, education, and psychoanalysis, institutions continually required people to describe desires, classify practices, and discover a supposedly hidden sexual identity. This productive power does not operate only through law and prohibition; it generates knowledge, pleasures, norms, and subjects. Foucault contrasts a juridical model centered on sovereignty with dispersed relations of power and introduces biopower, the management of individual bodies and whole populations through health, reproduction, mortality, and risk. The closing discussion cautions against imagining that speaking more about sex automatically escapes control, because the demand to confess may itself belong to the apparatus. As the first volume of an unfinished and later redirected history, the book offers a method rather than a complete chronology. It reshaped sexuality studies by asking not which desires power forbids, but how historical practices make particular desires legible as the truth of a person.",
     },
     {
         "title": "Simulacra and Simulation",
@@ -575,7 +575,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1981,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Baudrillard argues that modern culture has replaced reality with signs and simulations, creating a hyperreality.",
+        "summary": "Baudrillard argues that modern culture has replaced stable reality with circulating signs and simulations, producing what he calls hyperreality. He opens with Borges's fable of a map as large as the empire, then reverses it: in contemporary society the model comes before the territory and helps manufacture what will count as real. Successive stages of the image move from reflecting reality to masking its absence and finally to having no relation to an external original. Disneyland, advertising, television, consumer goods, opinion polling, and political spectacle become examples of systems that present their own staging as proof that an authentic world exists somewhere outside them. Baudrillard's compressed essays are deliberately provocative rather than a conventional empirical theory, and his claim that the Gulf War 'did not take place' later showed both the force and danger of that style. The book influenced media theory, art, film, and cyberculture, including The Matrix. Its enduring question is not whether material events exist, but how institutions and images preformat experience so thoroughly that the distinction between representation and reality becomes difficult to recover.",
     },
     {
         "title": "The Structure of Scientific Revolutions",
@@ -583,7 +583,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1962,
         "genre": "philosophy",
         "mood": ["late night reflection", "career pivot"],
-        "summary": "Kuhn introduces paradigm shifts, arguing that science progresses through revolutionary changes rather than gradual accumulation.",
+        "summary": "Kuhn introduces paradigm shifts, arguing that science progresses through periods of revolutionary change rather than by simply accumulating facts. A mature field normally conducts 'normal science' inside a shared paradigm: exemplary problems, instruments, standards, and background assumptions that tell researchers what counts as a legitimate puzzle and solution. Anomalies usually prompt further work rather than immediate rejection, but persistent failures can create crisis and make a competing framework intelligible. A scientific revolution occurs when the community reorganizes its practice around that new framework, as in transitions from Ptolemaic to Copernican astronomy or Newtonian to relativistic physics. Kuhn's controversial idea of incommensurability holds that rival paradigms partly differ in language, standards, and perception, so no neutral algorithm mechanically selects between them. He did not mean that evidence is irrelevant or every theory equally good, and later editions clarified the role of disciplinary matrices and exemplars. The book transformed the history and philosophy of science by making research communities and conceptual discontinuity central. 'Paradigm shift' became overused in popular speech, but its precise challenge remains: observation is never wholly independent of the framework that makes it scientifically meaningful.",
     },
     {
         "title": "The Open Society and Its Enemies",
@@ -591,7 +591,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1945,
         "genre": "philosophy",
         "mood": ["Sunday morning", "late night reflection"],
-        "summary": "Popper defends liberal democracy against totalitarianism, critiquing Plato, Hegel, and Marx as enemies of the open society.",
+        "summary": "Popper defends liberal democracy against totalitarianism, critiquing Plato, Hegel, and Marx as intellectual sources of the closed society. Written during the Second World War, the two-volume work attacks historicism, the belief that history unfolds according to discoverable laws that authorize political prophecy and large-scale social engineering. Popper reads Plato's ideal state as a program for arrested change, Hegel as providing nationalist obscurity with philosophical prestige, and Marx as combining genuine moral concern with a false scientific prediction of inevitable revolution. Against utopian plans that sacrifice present people to a perfected future, he advocates piecemeal social engineering: limited reforms whose consequences can be criticized, tested, and reversed. An open society does not depend on rulers possessing final truth; it builds institutions that remove bad governments without bloodshed and protect disagreement. Popper's interpretations, especially of Plato and Hegel, have been widely challenged as selective and historically strained. Even so, the political principle is powerful: because knowledge is fallible, institutions should expose decisions to correction rather than granting any person or party immunity through a theory of destiny.",
     },
     {
         "title": "The Logic of Scientific Discovery",
@@ -599,7 +599,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1959,
         "genre": "philosophy",
         "mood": ["late night reflection", "productivity"],
-        "summary": "Popper argues that scientific theories can never be proven, only falsified, establishing falsifiability as the criterion of science.",
+        "summary": "Popper argues that scientific theories can never be conclusively verified, but they can be exposed to possible falsification. He frames the problem against induction: no finite number of observed white swans logically proves that all swans are white, while one genuine black swan can refute the universal claim. A theory is scientific when it rules out conceivable observations and therefore takes empirical risks; doctrines that reinterpret every outcome as confirmation escape criticism at the cost of explanatory content. Research advances through bold conjectures followed by severe attempts to find error, with surviving theories corroborated rather than declared true. Popper also analyzes probability, basic statements, simplicity, and the logic of testing, and he distinguishes the psychological process of discovering an idea from the logical assessment of its consequences. Actual scientific practice is more complicated than a single decisive test because observations and auxiliary assumptions can themselves be questioned, a problem later philosophers emphasized. Still, the work established critical rationalism and redirected philosophy of science from the search for secure foundations toward organized error correction. Its practical ideal is intellectual courage: formulate claims clearly enough that evidence could show where they fail.",
     },
     {
         "title": "After Virtue",
@@ -607,7 +607,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1981,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "MacIntyre argues that modern moral philosophy has failed and advocates a return to Aristotelian virtue ethics.",
+        "summary": "MacIntyre argues that modern moral philosophy is fragmented because it preserved the vocabulary of morality after losing the shared social framework that once made that vocabulary coherent. Contemporary disputes between rights, utility, and justice therefore become interminable: rival positions appeal to premises that cannot be rationally settled within a common tradition. He traces this condition through the failed Enlightenment effort to justify morality independently of inherited purposes, then contrasts Nietzsche's exposure of moral claims as will to power with an Aristotelian alternative. In that alternative, virtues are qualities needed to achieve goods internal to practices, to sustain the narrative unity of a whole life, and to preserve traditions of inquiry across generations. Chess, medicine, science, and politics illustrate practices whose genuine excellences can be corrupted by external goods such as money, status, and power. MacIntyre closes with a call for new local forms of community capable of carrying moral life through a dark age. The book revived virtue ethics and generated extensive criticism about history, pluralism, and exclusion. Its key insight is that character cannot be understood apart from practices, stories, institutions, and the communities that teach people what flourishing means.",
     },
     {
         "title": "Anarchy, State, and Utopia",
@@ -615,7 +615,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1974,
         "genre": "philosophy",
         "mood": ["late night reflection", "career pivot"],
-        "summary": "Nozick defends the minimal state and argues that any more extensive government violates individual rights.",
+        "summary": "Nozick defends a minimal state limited to protecting people against force, theft, fraud, and breaches of contract, arguing that a more extensive state violates individual rights. His entitlement theory judges a distribution not by its pattern at a moment but by its history: holdings are just if acquired and transferred justly, with rectification required for past injustice. The famous Wilt Chamberlain example argues that voluntary exchanges will continually disrupt any preferred equality, so maintaining a pattern requires repeated interference with people's choices. Against Rawls, Nozick claims that treating talents and their products as a common asset fails to respect persons as separate owners of their lives. The opening section attempts to derive a protective state from an anarchic state of nature without anyone's rights being infringed; the final section imagines a framework in which diverse voluntary communities can pursue different visions of the good. Critics challenge self-ownership, initial acquisition, inherited injustice, and the realism of consent under unequal power. The book nonetheless became the definitive philosophical statement of modern libertarianism and a demanding counterpoint to redistributive theories of justice.",
     },
     {
         "title": "The Concept of Mind",
@@ -623,7 +623,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1949,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Ryle attacks Cartesian dualism as a category mistake, arguing that mind is not a ghost in a machine.",
+        "summary": "Ryle attacks Cartesian dualism as a category mistake, arguing that a mind is not a private ghost inhabiting a bodily machine. The 'official doctrine' imagines mental events occurring in a hidden realm parallel to physical behavior, creating an impossible problem of how the two realms interact and how anyone knows another mind exists. Ryle's category-mistake examples show the error: a visitor who sees colleges, libraries, and offices and then asks where the university is has treated an organization as one more building. In the same way, intelligence, belief, emotion, and intention are not occult objects added to behavior; they name dispositions, capacities, patterns, and the ways actions are performed. Knowing how cannot always be reduced to first contemplating propositions about what to do, because that would launch an infinite regress of intelligent internal planning. Although later philosophers rejected behaviorist implications and restored a larger role for inner experience, Ryle's analyses changed philosophy of mind and ordinary-language philosophy. The book teaches a durable diagnostic method: before solving a metaphysical mystery, ask whether grammar has tempted us to invent an entity of the wrong logical type.",
     },
     {
         "title": "Zen and the Art of Motorcycle Maintenance",
@@ -631,7 +631,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1974,
         "genre": "philosophy",
         "mood": ["road trip", "self-discovery", "summer vibes"],
-        "summary": "Pirsig explores the concept of Quality through a cross-country motorcycle trip, blending philosophy with personal narrative.",
+        "summary": "Pirsig explores the concept of Quality through a cross-country motorcycle trip, blending philosophical inquiry with travel narrative and memoir. A father rides with his son Chris while reflecting on maintenance, technology, education, and the former self he calls Phaedrus, whose obsessive search for a foundation of value ended in breakdown and electroconvulsive treatment. The practical contrast between 'classical' understanding, which attends to systems and function, and 'romantic' understanding, which responds to immediate appearance, structures the early journey. Pirsig wants an approach that can join them, using careful motorcycle maintenance as an example of work in which reason, attention, and care are not enemies. Phaedrus's pursuit of Quality leads to the claim that value is encountered before subjects and objects are conceptually divided, a claim developed through encounters with Greek philosophy and academic institutions. The narrative's emotional tension prevents the metaphysics from becoming a detached lecture: ideas have costs inside a damaged father-son relationship. The book became a countercultural classic because it treats technical competence as a spiritual practice and asks how people might repair the split between living meaningfully and understanding how things work.",
     },
     {
         "title": "Sophie's World",
@@ -639,7 +639,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1991,
         "genre": "philosophy",
         "mood": ["fresh start", "self-discovery", "rainy afternoon"],
-        "summary": "A young girl receives mysterious philosophy lessons, providing a readable tour through the history of Western thought.",
+        "summary": "A young girl receives mysterious philosophy lessons, providing a readable tour through the history of Western thought. Fourteen-year-old Sophie Amundsen first finds questions such as 'Who are you?' and 'Where does the world come from?' in her mailbox, followed by lessons from the philosopher Alberto Knox. Their course moves from myth and the pre-Socratics through Socrates, Plato, Aristotle, medieval Christianity, Descartes, Spinoza, empiricism, Kant, Romanticism, Hegel, Marx, Darwin, Freud, and modern cosmology. A second mystery concerns postcards addressed to another girl, Hilde, and gradually reveals that Sophie and Alberto may be characters inside a book written by Hilde's father. This metafictional turn makes free will, authorship, and reality part of the plot rather than merely topics in the lessons. Gaarder necessarily compresses and centers a European canon, but the novel gives beginners a chronological framework and models philosophy as astonishment sustained by questions. Its charm lies in making intellectual history consequential to characters who discover that understanding the stories organizing a world may be the first step toward resisting them.",
     },
     {
         "title": "At the Existentialist Café",
@@ -647,7 +647,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2016,
         "genre": "philosophy",
         "mood": ["rainy afternoon", "cozy night"],
-        "summary": "Bakewell brings existentialism to life by telling the stories of Sartre, de Beauvoir, Heidegger, and their circle.",
+        "summary": "Bakewell brings existentialism to life by telling the intertwined stories of Sartre, de Beauvoir, Heidegger, Camus, Merleau-Ponty, Husserl, and their circle. The narrative begins in a Paris café with a conversation about phenomenology and follows the movement through lectures, love affairs, occupations, arguments, political commitments, and public fame. Rather than presenting existentialism as a closed doctrine, Bakewell shows thinkers disagreeing about freedom, embodiment, authenticity, oppression, responsibility, and the meaning of experience. Husserl's instruction to return to the things themselves opens a path that Heidegger transforms into an inquiry about Being, while Sartre and de Beauvoir bring radical freedom into ethics, literature, feminism, and anti-colonial politics. Their biographies also create hard tests for their ideas: Heidegger's Nazism, Sartre's political enthusiasms, Camus's break with former allies, and de Beauvoir's unequal relationships cannot be separated from questions of choice and bad faith. Written with scholarly clarity and novelistic pace, the book restores the uncertainty of a philosophy later reduced to black clothing and café gloom. It asks readers to inherit existentialism as a live demand to examine how freedom operates inside concrete situations.",
     },
     {
         "title": "How to Live: A Life of Montaigne",
@@ -655,7 +655,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2010,
         "genre": "philosophy",
         "mood": ["rainy afternoon", "self-discovery", "Sunday morning"],
-        "summary": "Bakewell uses Montaigne's essays to answer twenty questions about how to live well.",
+        "summary": "Bakewell uses Montaigne's essays and biography to answer twenty variations of the question of how to live. Her responses—do not worry about death, pay attention, use little tricks, question everything, preserve a private room, be convivial, wake from habit—emerge from episodes rather than commandments. Montaigne withdrew from public office to write in a tower, but his retirement remained porous to family, friendship, travel, politics, illness, and the French wars of religion. His endlessly revised Essays made the changing self their subject, replacing the posture of a finished sage with an honest record of contradiction, bodily detail, and uncertainty. Bakewell follows his encounter with Skepticism, his grief for Étienne de La Boétie, his term as mayor of Bordeaux, and the afterlife of his work among readers from Pascal to Virginia Woolf. The result is neither conventional biography nor a simplified advice book. It shows that Montaigne's practical wisdom comes from resisting final formulas: living well requires curiosity about one's experience, tolerance for human variety, and enough humor to let a former certainty be corrected by the next day.",
     },
     {
         "title": "The Essays",
@@ -663,7 +663,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1580,
         "genre": "philosophy",
         "mood": ["rainy afternoon", "self-discovery", "cozy night"],
-        "summary": "Montaigne's pioneering personal essays explore everything from cannibals to friendship, inventing a new literary form.",
+        "summary": "Montaigne's pioneering personal essays explore friendship, education, cruelty, custom, solitude, sexuality, illness, mortality, and subjects as ordinary as sleep or thumbs. First published in 1580 and repeatedly expanded until his death, the collection takes its name from attempts or trials rather than definitive treatises. Montaigne makes himself the object of inquiry, recording memory lapses, physical habits, changing judgments, and borrowed quotations in order to study the variable human condition. His motto, 'What do I know?', expresses a Skepticism that distrusts fanatic certainty during the violence of the French religious wars. In 'Of Cannibals' he reverses European judgments of Brazilian peoples to expose civilized brutality; in 'Of Friendship' he memorializes Étienne de La Boétie; in later essays he studies experience as something no system can exhaust. The first-person voice does not simply celebrate individuality: it tests how much of one apparently private self is shared by others. By allowing digression and contradiction to remain visible, Montaigne invented the modern essay as a form whose movement is its thought. The work rewards browsing, rereading, and disagreement more than extraction of a settled doctrine.",
     },
     {
         "title": "Confessions",
@@ -671,7 +671,7 @@ PHILOSOPHY_BOOKS = [
         "year": 397,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Augustine's spiritual autobiography traces his journey from hedonism to Christianity, exploring memory, time, and the nature of evil.",
+        "summary": "Augustine's spiritual autobiography traces his journey from restless ambition and divided desire to Christian conversion, while exploring memory, time, language, and the nature of evil. Addressed throughout to God, the work is confession both as admission and as praise, turning recollected life into theological inquiry. Augustine examines childhood theft, education in rhetoric, adherence to Manichaeism, his career and relationships, the influence of his mother Monica, and the Milan garden scene in which a child's voice prompts him to read Paul's epistles. Conversion does not end the questioning. The later books analyze memory as a vast interior space, ask how an immaterial God can be sought there, interpret Genesis, and confront the puzzle that past and future do not exist in the same way as the present. Evil is understood not as a rival substance but as a privation or corruption of good, while human willing remains painfully divided. Written around 397–400, Confessions created a model for Western autobiography, spiritual testimony, and inward psychology. Its lasting drama is the difficulty of knowing a self that cannot fully account for its own motives without addressing something beyond itself.",
     },
     {
         "title": "Meditations on First Philosophy",
@@ -679,7 +679,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1641,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Descartes doubts everything until he reaches the one thing he cannot doubt: that he is thinking, therefore he exists.",
+        "summary": "Descartes subjects his beliefs to methodical doubt until he reaches what seems impossible to doubt: while he is thinking, he must exist as a thinking thing. Across six meditations, familiar sources of knowledge are stripped away. The senses sometimes deceive, dreams can imitate waking life, and an imagined evil deceiver could manipulate even mathematical judgments. The cogito supplies a first certainty, after which Descartes analyzes the mind's ideas, argues for the existence and non-deceptive nature of God, distinguishes mind from extended body, and attempts to restore confidence in the external world. The famous wax example shows that judgment rather than sensation grasps an object's identity through change. Princess Elisabeth and later critics pressed the central difficulty of how an unextended mind can interact with a physical body, while the arguments for God have also remained disputed. Published with objections and replies in 1641, the work made the solitary first-person investigator a central figure of modern philosophy. Its importance lies not in leaving readers permanently skeptical, but in demanding that claims to knowledge identify foundations strong enough to survive the most radical counterexample imagination can construct.",
     },
     {
         "title": "Ethics",
@@ -687,7 +687,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1677,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Spinoza constructs an entire philosophical system in geometric form, arguing that God and Nature are one and the same.",
+        "summary": "Spinoza constructs a philosophical system in geometric form, arguing that God and Nature are one infinite substance rather than a creator standing outside creation. Definitions, axioms, propositions, demonstrations, and scholia carry the reader from metaphysics through psychology to ethics and political life. Individual things are finite modes of the one substance; mind and body are not interacting substances but the same reality understood under the attributes of thought and extension. Every being strives to persevere through conatus, while inadequate ideas and passive emotions leave people governed by causes they only partly understand. Freedom therefore cannot mean escaping causal necessity. It means becoming more active through adequate knowledge, reorganizing affects with stronger understanding, and attaining an intellectual love of God that sees particular events within the order of nature. Spinoza's denial of providence, miracles, and a personal deity led to excommunication and made the posthumously published book notorious. The austere method contains a practical ambition: replace resentment, superstition, and moral condemnation with causal understanding. Ethics remains demanding because it asks whether accepting necessity can increase agency rather than extinguish responsibility, and whether joy can arise from seeing ourselves as parts of a whole we do not command.",
     },
     {
         "title": "Pensées",
@@ -695,7 +695,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1670,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Pascal's fragmentary reflections on faith, reason, and the human condition, including his famous wager on God's existence.",
+        "summary": "Pascal's fragmentary reflections on faith, reason, and the human condition were notes toward an unfinished defense of Christianity, assembled after his death under the title Pensées. He portrays human beings as contradictory: capable of reason and aware of infinity, yet physically fragile, morally compromised, and unable to remain quietly alone without diversion. Entertainment, ambition, gambling, and social bustle help people avoid confronting mortality and the emptiness of a life without secure meaning. Pascal distinguishes the spirit of geometry from the intuitive 'spirit of finesse' and insists that reason has limits it must rationally acknowledge. The famous wager does not claim to prove God; it addresses a person already forced to live as though the question matters, comparing the stakes of commitment under uncertainty and recommending practices that might reshape belief. Other fragments interpret prophecy, Scripture, grace, and the hiddenness of God through a Jansenist Christianity indebted to Augustine. Editorial arrangements differ because no final order survives, making discontinuity part of the reading experience. The book endures because its apologetic purpose is inseparable from a penetrating psychology of distraction, self-deception, longing, and the unstable grandeur of a thinking animal.",
     },
     {
         "title": "Metaphysics",
@@ -703,7 +703,7 @@ PHILOSOPHY_BOOKS = [
         "year": -340,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Aristotle investigates the nature of being, substance, and causation in what he called first philosophy.",
+        "summary": "Aristotle investigates being, substance, causation, change, and the first principles of reality in the collection later called the Metaphysics. The work is not a single polished treatise but fourteen books assembled from related inquiries, which helps explain its repetitions and shifting vocabulary. Aristotle begins from earlier Greek thinkers, then asks what it means to study being qua being rather than one special kind of entity. Individual substances, composed of form and matter, occupy the center of the account; potentiality and actuality explain how change is possible without treating everything as either wholly fixed or emerging from nothing. The four causes—material, formal, efficient, and final—offer different answers to why a thing is as it is. Later books develop the principle of non-contradiction and culminate in the unmoved mover, pure actuality whose thinking is thinking about itself. Interpretive disputes about the unity of the text and the relation between primary substance and theology remain active. The work supplied much of the vocabulary of medieval and modern metaphysics and still frames questions about essence, identity, dependence, possibility, and explanation.",
     },
     {
         "title": "Discourse on the Origin of Inequality",
@@ -711,7 +711,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1755,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Rousseau argues that inequality is not natural but arose with the development of private property and civilization.",
+        "summary": "Rousseau argues that major forms of human inequality are historical products rather than simple expressions of nature. Responding to a prize question from the Academy of Dijon, he distinguishes natural inequalities such as age or strength from moral and political inequalities of wealth, honor, authority, and dependence. His speculative state of nature portrays solitary humans moved by self-preservation and pity, with limited needs and little reason to dominate one another. Language, cooperation, comparison, agriculture, metallurgy, and especially private property gradually produce amour-propre, the social desire to be esteemed, along with competition and dependence. The famous first claimant who fenced land begins a process in which laws presented as protection institutionalize advantages already gained by the rich. Rousseau does not offer this reconstruction as literal archival history or recommend returning to animal simplicity. It is a critical genealogy designed to strip existing hierarchy of inevitability and expose civilization's moral costs. The essay complicates optimistic stories of progress: arts, institutions, and refined capacities develop together with vanity and domination. Its challenge is to imagine political association that preserves freedom and equality without denying the social development that now makes an isolated natural life impossible.",
     },
     {
         "title": "The Varieties of Religious Experience",
@@ -719,7 +719,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1902,
         "genre": "philosophy",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "James examines religious experiences as psychological phenomena, arguing for their validity and importance regardless of theological truth.",
+        "summary": "James examines religious experience through psychology and first-person testimony, setting institutional doctrine aside to ask what religion does in individual lives. Based on the Gifford Lectures of 1901–02, the book assembles diaries, conversion narratives, mystical reports, accounts of melancholy, and autobiographical documents from many traditions. James contrasts healthy-minded religion with the divided or 'sick soul,' analyzes conversion as the unification of a previously unstable self, and identifies features of mystical states such as ineffability, noetic quality, transiency, and passivity. His pragmatic test concerns fruits rather than roots: an experience should be judged by the durable changes in conduct, energy, charity, and integration it produces, not dismissed merely because pathology or subconscious processes contributed to it. He remains open to a wider spiritual reality while refusing to prove a specific theology from the evidence. The selection and categories reflect the limits of his period, but the method helped found the psychology of religion. The book's continuing power lies in taking extraordinary testimony seriously without surrendering critical comparison, and in showing that questions of truth, health, and practical consequence overlap without becoming identical.",
     },
     {
         "title": "Pragmatism",
@@ -727,7 +727,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1907,
         "genre": "philosophy",
         "mood": ["morning ritual", "productivity"],
-        "summary": "James presents pragmatism as a method for resolving philosophical disputes by evaluating ideas based on their practical consequences.",
+        "summary": "James presents pragmatism as a method for clarifying philosophical disputes by tracing the practical difference competing ideas would make in experience. A concept's meaning lies in its conceivable consequences, so arguments that generate no difference in action, expectation, or feeling may be verbal rather than substantive. Across eight public lectures, James applies this method to temperament in philosophy, free will, materialism, design, the one and the many, common sense, and religious belief. His account of truth is especially controversial: true ideas are not arbitrary inventions, but beliefs that can be verified, cohere with established experience, and prove themselves good guides over time. Reality constrains inquiry even as human purposes shape which paths through it matter. James opposes both rigid rationalism seeking timeless certainty and a narrow empiricism hostile to moral or religious possibility, advocating a pluralistic universe still in the making. Critics accused him of reducing truth to usefulness, a simplification he repeatedly resisted. The book made American pragmatism accessible beyond specialists and models philosophy as mediation between abstractions and lived problems. Its central demand is to cash out impressive words in consequences without assuming that only immediately measurable consequences are real.",
     },
     {
         "title": "The Problems of Philosophy",
@@ -735,7 +735,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1912,
         "genre": "philosophy",
         "mood": ["Sunday morning", "fresh start"],
-        "summary": "Russell provides a clear and concise introduction to epistemology, asking what we can know and how we can know it.",
+        "summary": "Russell provides a concise introduction to epistemology by asking what, if anything, can be known with certainty. He begins from an ordinary table and shows how its color, shape, texture, and even existence differ across perspectives, distinguishing immediate sense-data from the inferred physical object. That problem opens into discussions of idealism, matter, induction, a priori knowledge, universals, intuition, truth, falsehood, and the limits of philosophical proof. Russell accepts that many beliefs cannot be demonstrated deductively, yet argues that systematic coherence and explanatory power can justify knowledge beyond direct acquaintance. His distinction between knowledge by acquaintance and knowledge by description explains how people refer to entities they have never directly experienced, while his realism about universals resists reducing relations and qualities to private mental events. Published in 1912, the book reflects early analytic philosophy's commitment to clarity without pretending its questions are easy. It closes by defending philosophy not for final answers but for enlarging possible thought and loosening the tyranny of unexamined certainty. The work remains an effective beginner's text because each abstract problem grows from a familiar object and every proposed solution makes its remaining assumptions visible.",
     },
     {
         "title": "The Conquest of Happiness",
@@ -743,7 +743,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1930,
         "genre": "philosophy",
         "mood": ["morning ritual", "fresh start", "self-discovery"],
-        "summary": "Russell offers practical philosophical advice on overcoming unhappiness, from envy and boredom to fatigue and fear.",
+        "summary": "Russell offers practical philosophical advice on escaping avoidable unhappiness and cultivating durable interests in the world. Writing in 1930 from personal experience rather than clinical psychology, he diagnoses sources of misery including self-absorption, competition, boredom, fatigue, envy, guilt, persecution mania, and fear of public opinion. Excessive inward monitoring makes happiness harder, while meaningful work, affection, broad curiosity, and a proportionate view of one's place redirect attention beyond the ego. Russell does not promise that attitude can overcome poverty, illness, oppression, or every form of depression; his subject is the misery generated and intensified by mistaken habits among readers with some freedom to change them. Chapters on zest, family, work, impersonal interests, effort and resignation, and the 'happy man' build a secular ethic of outward engagement. Some social assumptions now feel dated, but the prose remains candid, witty, and resistant to mystical formulas. The underlying argument is that happiness is usually a by-product rather than an object captured by anxious pursuit. A person becomes less divided by developing genuine concern for people and projects whose value does not depend on constant proof of personal importance.",
     },
     {
         "title": "The Happiness Hypothesis",
@@ -759,7 +759,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2012,
         "genre": "philosophy",
         "mood": ["Sunday morning", "self-discovery"],
-        "summary": "Haidt explains why good people are divided by politics and religion, revealing the moral foundations underlying our disagreements.",
+        "summary": "Haidt explains why decent people divide over politics and religion by examining the intuitive foundations of moral judgment. His social-intuitionist model compares conscious reasoning to a rider serving a much larger elephant: people usually feel a verdict first and construct arguments afterward, although relationships and reflection can slowly train intuition. Cross-cultural research leads to moral foundations including care, fairness, loyalty, authority, sanctity, and liberty. Haidt argues that progressive politics emphasizes care and equality, while conservative traditions draw on a broader set, helping explain why each side can mistake the other's moral priorities for simple malice or stupidity. A final section describes groups as capable of becoming temporarily 'hive-like,' gaining cooperation and meaning while risking exclusion and self-righteousness. The evolutionary stories and measurement of foundations remain debated, and the framework should not freeze individuals into party stereotypes. Its practical contribution is interpretive charity without moral relativism: understanding the values inside an opponent's argument does not require endorsing the conclusion. The book asks readers to notice when reasoning is functioning as a press secretary and to build conversations in which trust makes genuine reconsideration possible.",
     },
     {
         "title": "Mortality",
@@ -767,7 +767,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2012,
         "genre": "philosophy",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Hitchens confronts his terminal cancer with characteristic wit and clarity, reflecting on suffering, identity, and death.",
+        "summary": "Hitchens confronts terminal esophageal cancer with characteristic wit and clarity, reflecting on suffering, identity, friendship, language, and death. Written as essays for Vanity Fair after his 2010 diagnosis, the book begins with the abrupt deportation from the 'country of the well' into the land of illness, where medical routines and other people's expectations reorganize daily life. Hitchens describes treatment, pain, the loss of his speaking voice, and the strange etiquette surrounding a dying public atheist. He rejects claims that cancer is punishment, that prayer has produced a spiritual conversion, or that combat metaphors make those who die insufficiently brave. At the same time, he records gratitude toward doctors, readers, family, and friends without turning vulnerability into a sentimental lesson. An unfinished final chapter preserves notes and fragments, making the interruption of authorship materially visible. Mortality does not offer a systematic philosophy or claim fearlessness; its honesty lies in showing a fiercely verbal person negotiate the possible loss of language and control. The book asks how someone can remain recognizable to himself while disease steadily changes the conditions under which that self has been performed.",
     },
     {
         "title": "The Examined Life",
@@ -775,7 +775,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1989,
         "genre": "philosophy",
         "mood": ["self-discovery", "late night reflection"],
-        "summary": "Nozick reflects on life's biggest questions with personal warmth, covering death, love, creativity, and the meaning of life.",
+        "summary": "Nozick reflects on life's largest questions with a personal warmth quite different from the formal arguments of his political philosophy. Short, linked essays consider dying, parental love, romantic attachment, sexuality, emotion, happiness, creativity, the Holocaust, religious faith, enlightenment, and what gives a life weight. Nozick treats philosophy as an attempt to place experience inside explanatory structures without pretending that a single structure exhausts it. He proposes a 'reality principle' according to which value grows through richer connection with reality, and he asks readers to imagine an experience machine in which any desired life could be simulated. The intuition that many would refuse the machine suggests that people want actually to do and become things, not merely feel as if they had. Other sections are exploratory and openly inconclusive, recording changes in the author's convictions rather than defending one system. The book's range can feel uneven, but that is part of its experiment in examined living. It models an accomplished analytic philosopher allowing mortality, love, and historical catastrophe to pressure the boundaries of argument while still asking for distinctions clear enough to be challenged.",
     },
     {
         "title": "What Does It All Mean?",
@@ -783,7 +783,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1987,
         "genre": "philosophy",
         "mood": ["fresh start", "Sunday morning"],
-        "summary": "Nagel provides an accessible introduction to philosophy's central questions in under a hundred pages.",
+        "summary": "Nagel provides an accessible introduction to philosophy's central questions in under a hundred pages, deliberately avoiding a survey of famous thinkers. Nine compact chapters begin directly with problems: how we know anything beyond our own minds, whether other minds exist, how words connect with the world, whether free will survives causal explanation, what makes actions right or wrong, why inequality matters, what death means to the person who dies, and whether life is absurd. Nagel presents arguments and counterarguments in plain language without announcing an official solution, allowing beginners to experience philosophy as pressure on assumptions they did not know they held. Thought experiments make skepticism and identity immediate rather than historical curiosities. The book also shows why everyday answers often relocate a puzzle instead of resolving it—for example, appealing to social convention when the authority of convention is precisely at issue. Its brevity is disciplined rather than superficial: each chapter isolates a question that can expand into an entire field. The invitation is to continue thinking after certainty fails, not to memorize a vocabulary or defer to professional philosophers.",
     },
     {
         "title": "The View from Nowhere",
@@ -791,7 +791,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1986,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Nagel explores the tension between subjective and objective viewpoints and its implications for knowledge, ethics, and meaning.",
+        "summary": "Nagel explores the tension between the subjective standpoint of a particular person and the objective aspiration to view the world independently of that position. Objectivity develops through steps: we correct for immediate perception, then for personal interest, local convention, and eventually the peculiarities of being human. Yet every detached account is achieved by a subject and may omit features—conscious experience, agency, value—that cannot be understood from nowhere. Nagel applies this conflict to mind and body, skepticism, personal identity, freedom, ethics, and the meaning of life. His earlier question about what it is like to be a bat returns as a limit on physical accounts that capture structure while leaving out point of view. In ethics, impartial reasons coexist with agent-relative commitments, making complete theoretical unification doubtful. The book does not recommend abandoning objectivity; it seeks a form that can recognize its own standpoint and reintegrate what abstraction leaves behind. Nagel's lucid argument resists both reductionism and easy relativism. Its enduring problem is methodological: how can a thinker transcend perspective enough to discover truth without pretending that perspective is merely an error to be erased?",
     },
     {
         "title": "Reasons and Persons",
@@ -799,7 +799,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1984,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Parfit challenges conventional thinking about personal identity, rationality, and morality with thought experiments that reshape ethics.",
+        "summary": "Parfit challenges conventional ideas about personal identity, rational choice, and morality through a sequence of tightly connected thought experiments. The first part analyzes self-defeating theories of prudence and collective action, showing how individually rational choices can produce outcomes worse for everyone. The middle argues for a reductionist view of persons: identity over time consists in physical and psychological continuity and connectedness, not a further indivisible self. Cases involving teletransportation, fission, memory, and duplication suggest that strict identity may not be what matters for survival. This conclusion can reduce fear of death and weaken the apparent gulf between concern for oneself and concern for others. The final part examines duties to future generations, introducing the non-identity problem: policies can harm no particular future person by making different people exist, yet still seem morally wrong. Population cases lead to the 'repugnant conclusion,' in which an enormous population whose lives are barely worth living appears better than a smaller flourishing one. Published in 1984, the book transformed analytic ethics. Its difficulty comes from cumulative argument, but its purpose is practical: clearer metaphysics may change how people distribute concern across time and persons.",
     },
     {
         "title": "On What Matters",
@@ -807,7 +807,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2011,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Parfit argues that the three major traditions in moral philosophy — Kantian, consequentialist, and contractualist — are climbing the same mountain.",
+        "summary": "Parfit argues that leading Kantian, consequentialist, and contractualist traditions may be climbing the same moral mountain from different sides. The enormous work develops and compares principles about reasons, rationality, consent, universal law, and the wrongness of acts, engaging extensively with Kant, Scanlon, and contemporary critics. Parfit revises familiar formulations to avoid objections: what matters is not merely whether an act maximizes good consequences or follows a rule, but whether principles could be optimific, universally willed, and reasonably rejected. His 'Triple Theory' proposes that an act is wrong just when it is forbidden by principles whose universal acceptance would make things go best, that everyone could rationally will, and that no one could reasonably reject. Later volumes defend objective normative truths against naturalism, subjectivism, and nihilism, arguing that reasons can be real without existing as physical entities. The convergence claim remains controversial because differences between traditions may reappear in how the shared terms are defined. Even so, On What Matters is a rare attempt to reduce disagreement through exhaustive charitable reconstruction. It treats moral philosophy as cooperative inquiry whose stakes include whether reasons can guide action beyond preference and power.",
     },
     {
         "title": "The Human Condition",
@@ -815,7 +815,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1958,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Arendt distinguishes labor, work, and action as the three fundamental human activities, arguing that political action defines us.",
+        "summary": "Arendt distinguishes labor, work, and action as fundamental activities of the active life and argues that modernity has dangerously reordered them. Labor answers biological necessity and must be repeated; work fabricates a relatively durable human world of objects and institutions; action occurs directly among plural persons through speech and deed, revealing who someone is and beginning something new. Greek distinctions between private household and public polis provide a historical lens, not a simple model to restore. Arendt analyzes the rise of the social, where administration and economic necessity overtake a public realm once reserved for freedom and distinction. Action is unpredictable, irreversible, and dependent on others, so promises stabilize its future and forgiveness releases actors from consequences that cannot be undone. Natality—the fact that newcomers enter the world—grounds the capacity for beginnings more than mortality does. The book also examines property, technology, consumption, and the dream of escaping earthly limits. Critics challenge its exclusions and idealized antiquity, but its vocabulary transformed political theory. The Human Condition asks what forms of common space let people appear to one another as distinct equals rather than as workers, consumers, or populations to be managed.",
     },
     {
         "title": "Eichmann in Jerusalem",
@@ -823,7 +823,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1963,
         "genre": "philosophy",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Arendt coins the phrase 'the banality of evil' in her controversial report on Adolf Eichmann's trial.",
+        "summary": "Arendt develops the phrase 'the banality of evil' in her controversial report on the 1961 Jerusalem trial of Adolf Eichmann, a major organizer of Nazi deportations. She rejects his self-presentation as a powerless functionary while also refusing to portray him as a demonic mastermind. What struck her was his reliance on clichés, careerist obedience, and an inability or unwillingness to think from another person's standpoint. Banality describes this shallow mode of participation, not the scale of the crimes, the innocence of the perpetrator, or the normality of genocide. The book recounts the machinery of deportation, questions the prosecution's historical framing, and controversially discusses the coerced role of Jewish councils under impossible conditions. Those passages, factual disputes, and Arendt's tone provoked lasting criticism from survivors, historians, and friends. Later archival evidence also complicates her estimate of Eichmann's ideological commitment. Read carefully, the work remains a study of judgment under bureaucratic rule and of legal responsibility for unprecedented crimes. Its disturbing claim is that catastrophic evil may be carried out by people who replace thought and moral imagination with official language, procedure, and advancement.",
     },
     {
         "title": "The Tao of Pooh",
@@ -831,7 +831,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1982,
         "genre": "philosophy",
         "mood": ["cozy night", "Sunday morning", "rainy afternoon"],
-        "summary": "Hoff uses Winnie-the-Pooh to explain the principles of Taoism, making Eastern philosophy delightfully accessible.",
+        "summary": "Hoff uses Winnie-the-Pooh and the other residents of the Hundred Acre Wood to introduce principles associated with Taoism. Pooh represents the Uncarved Block: simple, receptive, and unburdened by the compulsive cleverness that makes Owl pedantic, Rabbit controlling, and Eeyore resigned. Episodes from A. A. Milne illustrate wu wei, often translated as effortless or non-coercive action, in which effective conduct follows the grain of circumstances rather than forcing them. Hoff also discusses the limits of abstract knowledge, the value of an ordinary mind, the usefulness of emptiness, and the way anxious striving can manufacture the obstacles it seeks to conquer. The playful dialogue between author and characters makes the book unusually approachable, though its broad contrast between Taoist wisdom and a busy, intellectualized West simplifies both Chinese traditions and Western life. It is best read as an invitation rather than a scholarly guide to the Tao Te Ching or Zhuangzi. Its central lesson is embodied in Pooh's apparent foolishness: attention, patience, and contentment can reveal possibilities missed by intelligence that is always categorizing, competing, and trying to arrive somewhere else.",
     },
     {
         "title": "Siddhartha",
@@ -839,7 +839,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1922,
         "genre": "philosophy",
         "mood": ["self-discovery", "rainy afternoon", "cozy night"],
-        "summary": "Hesse's novel follows a young man's spiritual journey through pleasure, wealth, and asceticism toward enlightenment.",
+        "summary": "Hesse's novel follows a young Brahmin's son through asceticism, sensual pleasure, wealth, despair, and a quieter form of awakening. Siddhartha leaves home with his friend Govinda, studies with wandering Samanas, and meets the historical Buddha, whose teaching he admires but declines to follow because no doctrine can transfer another person's lived insight. In the city, Kamala teaches him love and Kamaswami teaches commerce; years of appetite and gambling estrange him from his earlier search. At the edge of suicide he hears the sacred syllable Om and eventually learns from Vasudeva, a ferryman who listens to the river. The river's simultaneous voices reveal time not as a straight sequence but as a unity in which sorrow, joy, error, and transformation belong together. Hesse draws freely from Hindu and Buddhist ideas rather than reproducing either tradition with doctrinal precision. Published in 1922 and later embraced by Western counterculture, the novel makes spiritual development inseparable from mistakes that ascetic purity tried to avoid. Its final wisdom is not a formula but a practice of listening deeply enough that apparent opposites cease demanding premature resolution.",
     },
     {
         "title": "The Prophet",
@@ -847,7 +847,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1923,
         "genre": "philosophy",
         "mood": ["morning ritual", "cozy night", "self-discovery"],
-        "summary": "Gibran's poetic prose explores love, marriage, work, joy, and sorrow through the teachings of a departing sage.",
+        "summary": "Gibran's poetic prose explores love, marriage, children, work, freedom, pain, friendship, beauty, religion, and death through the teachings of a departing sage. Almustafa has waited twelve years in the city of Orphalese for the ship that will carry him home. As it arrives, residents ask him to speak on the concerns that organize their lives, and his responses unfold as brief sermons full of parallel images and paradox. Love crowns and crucifies; children come through parents but do not belong to them; work makes visible one's love of life; joy and sorrow are inseparable hollows carved by the same experience. The frame gives the advice emotional weight because every lesson is also a farewell, ending with Almustafa's promise that absence will not exhaust his presence. Gibran blends Biblical cadence, Sufi resonance, Romantic individualism, and his experience between Lebanon and the United States without binding the book to a single creed. Its universal tone can seem vague, but its language has made it a companion at weddings, funerals, and transitions for generations. The Prophet offers less a system than images readers can carry into relationships and revisit as their meanings change.",
     },
     {
         "title": "Walden",
@@ -855,7 +855,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1854,
         "genre": "philosophy",
         "mood": ["cozy night", "self-discovery", "rainy afternoon"],
-        "summary": "Thoreau's account of two years living simply at Walden Pond, reflecting on nature, solitude, and the essentials of life.",
+        "summary": "Thoreau's account of two years living near Walden Pond reflects on labor, consumption, solitude, society, nature, and the possibility of deliberate life. Beginning in 1845, he built a small cabin on land owned by Ralph Waldo Emerson, less than two miles from Concord rather than in untouched wilderness. The book compresses the experiment into a symbolic year, mixing financial accounts, natural observation, satire, local history, and Transcendentalist meditation. Thoreau asks how much life is exchanged for supposedly necessary houses, clothing, status, and work, and whether simplifying material demands can free attention for more important purposes. Solitude alternates with visitors, trips to town, and awareness of the railroad and market reshaping the landscape. Detailed chapters on ponds, animals, winter, ice, and spring treat nature as both material reality and source of renewal. Walden is not a universal manual for poverty or self-sufficiency; Thoreau benefited from land, community, and choices unavailable to many. Its durable challenge is experimental: examine inherited definitions of success by changing daily arrangements, then report honestly what becomes visible when less time belongs to maintenance and conformity.",
     },
     {
         "title": "Civil Disobedience",
@@ -863,7 +863,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1849,
         "genre": "philosophy",
         "mood": ["self-discovery", "existential crisis"],
-        "summary": "Thoreau argues that individuals have a duty to resist unjust laws, influencing Gandhi, King, and countless social movements.",
+        "summary": "Thoreau argues that individuals must not permit government to make them agents of injustice, even when resistance brings punishment. Written after his brief imprisonment for refusing a poll tax that supported slavery and the Mexican-American War, the essay begins from distrust of government but moves beyond a general call for small administration. Voting and private disapproval are insufficient when the state actively commits wrong; conscience may require withdrawing material cooperation and accepting jail rather than paying for violence. Thoreau distinguishes the person from the machinery of the state and describes principled refusal as a counter-friction capable of stopping it. His individualism raises hard questions about democratic obligation, collective strategy, and who can safely bear punishment, yet the essay supplied language and tactics to later movements. Gandhi developed satyagraha through a broader tradition that included Thoreau, and Martin Luther King Jr. placed civil disobedience within organized nonviolent struggle and an account of just and unjust law. The work's lasting force lies in turning political complaint into personal accounting: if an institution acts in one's name and with one's resources, when does ordinary compliance become participation?",
     },
     {
         "title": "Self-Reliance and Other Essays",
@@ -871,7 +871,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1841,
         "genre": "philosophy",
         "mood": ["morning ritual", "fresh start", "self-discovery"],
-        "summary": "Emerson champions individual intuition and nonconformity, urging readers to trust themselves above all else.",
+        "summary": "Emerson champions individual intuition and principled nonconformity, urging readers to resist borrowed judgment and discover an original relation to the world. In 'Self-Reliance,' he attacks the pressure to make present thought consistent with past statements, arguing that growth may look contradictory from outside. Trusting oneself does not mean indulging every impulse; it means listening for a deeper moral perception before reputation, fashion, institutions, or admired predecessors replace it. Other essays develop Transcendentalist themes through nature, friendship, love, circles, intellect, art, and the 'Over-Soul,' where private insight participates in a reality larger than the isolated ego. Emerson's aphoristic style moves by provocation and metaphor rather than sequential proof, producing lines that can be inspiring or dangerously detached from material dependence and social obligation. His influence runs through American literature, pragmatism, reform movements, and the national mythology of independence. Read with its limits visible, the collection asks a demanding question: can a person remain receptive to others and responsible to a community while refusing conformity that numbs judgment? Emerson's best answer treats genuine independence as a source of creative relation, not as permission to ignore consequence.",
     },
     {
         "title": "The Pleasure of Thinking",
@@ -879,7 +879,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2015,
         "genre": "philosophy",
         "mood": ["Sunday morning", "fresh start"],
-        "summary": "Schick introduces critical thinking and informal logic through engaging philosophical puzzles and everyday examples.",
+        "summary": "Schick introduces critical thinking and informal logic through philosophical puzzles, scientific controversies, and examples drawn from ordinary claims. The book treats good reasoning as an active pleasure rather than a defensive school exercise. Readers learn to identify conclusions and premises, distinguish deductive validity from inductive strength, clarify ambiguous language, recognize common fallacies, and ask what evidence would actually discriminate between rival explanations. Discussions of testimony, probability, causal inference, extraordinary claims, pseudoscience, morality, and knowledge show why skepticism should be proportioned rather than indiscriminate. A responsible thinker neither accepts a claim because an authority or crowd repeats it nor rejects everything that lacks certainty; the task is to compare alternatives and update confidence when evidence changes. Thought experiments make hidden assumptions visible, while practical examples connect formal standards to advertising, news, debate, and personal decision making. The work's broader philosophical point is that beliefs have consequences and therefore carry obligations of care. Intellectual independence is not having an opinion on every topic but knowing when one's reasons are weak, what would count against them, and where further inquiry is worth the cost.",
     },
     {
         "title": "Think: A Compelling Introduction to Philosophy",
@@ -887,7 +887,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1999,
         "genre": "philosophy",
         "mood": ["fresh start", "Sunday morning"],
-        "summary": "Blackburn provides an engaging introduction to philosophy's biggest questions about knowledge, mind, free will, and ethics.",
+        "summary": "Blackburn provides an engaging introduction to philosophy's central questions about knowledge, mind, freedom, identity, God, reasoning, and ethics. Rather than offering a chronological history, he organizes chapters around problems that continue to structure debate and brings historical figures into each argument when their tools become useful. Descartes frames skepticism and the relation between mind and body; Hume sharpens questions about causation and the self; Kant enters discussions of experience and moral law. Blackburn explains how apparently obvious positions generate difficulties under pressure, then compares alternatives without pretending every puzzle has a consensus solution. Examples and thought experiments keep technical distinctions connected to ordinary beliefs about responsibility, perception, and what makes a life go well. The book also models analytic philosophy's virtues—clarity, explicit premises, and willingness to follow an objection—while acknowledging that style alone cannot decide substantive values. Think works as a map rather than a set of verdicts. Its aim is to make readers better participants in arguments by showing where questions branch, what a proposed answer commits them to, and why inherited common sense may need defense rather than automatic authority.",
     },
     {
         "title": "The Story of Philosophy",
@@ -895,7 +895,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1926,
         "genre": "philosophy",
         "mood": ["Sunday morning", "rainy afternoon"],
-        "summary": "Durant brings the great philosophers to life through vivid biographical storytelling, from Plato to Nietzsche.",
+        "summary": "Durant brings major philosophers to life through vivid biographical storytelling, connecting their systems to temperament, circumstance, and historical conflict. First published in 1926 for a broad audience, the book devotes substantial portraits to Plato, Aristotle, Francis Bacon, Spinoza, Voltaire, Kant, Schopenhauer, Herbert Spencer, and Nietzsche, with later sections on contemporary European and American thinkers. Durant summarizes arguments through memorable prose and interprets philosophy as an effort to bring wisdom and order to life, not merely technical dispute. The method makes difficult figures approachable: exile and politics illuminate Plato, isolation and persecution illuminate Spinoza, personal pessimism shadows Schopenhauer, and illness and cultural revolt shape Nietzsche. Its canon, judgments, and confidence reflect its era; women and non-Western traditions are largely absent, and specialists will dispute many compressions. Those limits make it a starting point rather than a reliable final authority. The book's historical importance lies in demonstrating that serious intellectual history could reach mass readership without losing narrative energy. It encourages readers to encounter the primary works by showing that ideas emerge from recognizable human efforts to understand suffering, power, knowledge, and social change.",
     },
     {
         "title": "A History of Western Philosophy",
@@ -903,7 +903,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1945,
         "genre": "philosophy",
         "mood": ["Sunday morning", "rainy afternoon"],
-        "summary": "Russell's sweeping and opinionated survey of Western philosophy from the Greeks to the early twentieth century.",
+        "summary": "Russell's sweeping and opinionated survey follows Western philosophy from the pre-Socratics through early twentieth-century analytic thought. Written during the Second World War, it organizes thinkers within the political and social conditions that made their questions urgent, dividing the narrative among ancient, Catholic, and modern periods. Plato and Aristotle receive extended analysis; medieval theology is placed beside the institutions of the Church; Renaissance science and Reformation conflict prepare the way for Descartes, Spinoza, Leibniz, Locke, Hume, Rousseau, Kant, Hegel, Marx, Nietzsche, pragmatism, and logical analysis. Russell writes with unusual clarity and wit, but also with judgments that are partisan, sometimes dismissive, and often historically dated. His own commitments to empiricism, logic, liberalism, and scientific outlook shape the story, while non-Western traditions and many influential women disappear from the frame. The book should therefore be read as a brilliant philosopher arguing with a selected lineage, not as a neutral encyclopedia. Its value lies in revealing connections between metaphysics and public life and in giving readers a continuous map they can correct through newer scholarship and primary texts.",
     },
     {
         "title": "The Enchiridion",
@@ -911,7 +911,7 @@ PHILOSOPHY_BOOKS = [
         "year": 125,
         "genre": "philosophy",
         "mood": ["morning ritual", "daily grind", "fresh start"],
-        "summary": "A concise handbook of Stoic advice on what is and is not within our control, designed for daily practice.",
+        "summary": "A concise handbook of Stoic advice, the Enchiridion distills teachings recorded from Epictetus by his student Arrian into a manual for daily practice. Its opening distinction organizes everything that follows: judgments, impulses, desires, aversions, and chosen actions are up to us, while body, property, reputation, office, and outcomes are not fully ours. Freedom comes from directing concern toward the first group and meeting the second without making it the measure of character. Brief sections apply this discipline to insult, illness, grief, ambition, social roles, pleasure, divination, and death. Epictetus does not counsel indifference to other people; he asks practitioners to fulfill relationships and civic duties while accepting that love cannot guarantee possession or permanence. The severe compression can make Stoicism sound passive or emotionally cold when separated from the fuller Discourses, where training, community, and moral purpose are clearer. Used alongside that context, the handbook functions as intended: a portable sequence of reminders to rehearse before pressure arrives. Its central challenge is not to control feeling by force, but to examine the judgments that turn external events into claims about whether one's life has failed.",
     },
     {
         "title": "The Art of Living",
@@ -919,7 +919,7 @@ PHILOSOPHY_BOOKS = [
         "year": 135,
         "genre": "philosophy",
         "mood": ["morning ritual", "daily grind"],
-        "summary": "Sharon Lebell's modern interpretation of Epictetus, distilling Stoic wisdom into practical guidance for everyday life.",
+        "summary": "Sharon Lebell's modern interpretation of Epictetus distills Stoic teachings into brief guidance for everyday life. Rather than providing a literal translation of the Enchiridion or Discourses, she paraphrases and rearranges their ideas in contemporary language under headings about control, desire, work, friendship, speech, adversity, and character. The central discipline remains faithful to Epictetus: distinguish chosen judgment and action from reputation, possessions, other people's conduct, and results that fortune can overturn. Entries encourage readers to pause before reacting, practice the roles created by relationships, prefer integrity to applause, and treat setbacks as occasions for exercising capacities already under their authority. The accessible tone removes historical barriers but also softens some theological, social, and argumentative context, so readers seeking Epictetus's exact voice should pair it with a primary translation. As a practical companion, however, the book succeeds through brevity and repetition. It treats philosophy as training rather than information, asking whether a principle remembered during insult, loss, or temptation can reshape conduct. Its version of serenity is active self-command joined to responsibility, not withdrawal from difficult people or public life.",
     },
     {
         "title": "Candide",
@@ -927,7 +927,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1759,
         "genre": "philosophy",
         "mood": ["beach read", "existential crisis"],
-        "summary": "Voltaire's biting satire follows an optimistic young man through one disaster after another, skewering Leibniz's philosophy that this is the best of all possible worlds.",
+        "summary": "Voltaire's biting satire follows an optimistic young man through war, earthquake, enslavement, persecution, greed, and betrayal, skewering the claim that this is the best of all possible worlds. Candide begins in a German castle under the instruction of Pangloss, whose unshakable optimism converts every horror into evidence of providential design. Expelled after loving Cunégonde, Candide crosses Europe, South America, and the Ottoman world, repeatedly discovering that explanations protect doctrine more reliably than they help sufferers. The Lisbon earthquake and the Inquisition place the tale inside contemporary debates about evil, while Eldorado offers an imagined society whose abundance exposes European violence and avarice. Characters survive wildly improbable disasters, making repetition itself the comic argument against philosophical rationalization. The closing instruction to cultivate our garden rejects both Pangloss's metaphysical certainty and idle despair, favoring limited work, cooperation, and responsibility within reach. The novella does not construct a full alternative ethics, and its stereotypes require historical scrutiny. Its lasting energy comes from making cruelty ridiculous without making suffering trivial, and from demanding that elegant theories answer to the world they claim to explain.",
     },
     {
         "title": "The Plague",
@@ -935,7 +935,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1947,
         "genre": "philosophy",
         "mood": ["existential crisis", "rainy afternoon"],
-        "summary": "Camus uses an epidemic in an Algerian city as an allegory for the human condition, exploring solidarity in the face of absurdity.",
+        "summary": "Camus uses an epidemic in the Algerian city of Oran to examine solidarity, denial, exile, and moral action in the face of absurd suffering. When rats die and plague cases multiply, officials delay naming the danger while quarantine separates residents from ordinary futures. Doctor Rieux works without believing he can secure final victory; Tarrou organizes volunteer sanitary squads; Rambert tries to escape to the woman he loves before choosing to remain; Paneloux interprets the epidemic through faith and is forced to revise his sermon after witnessing a child's death. Their responses create an ethics measured less by heroic purity than by doing one's job and refusing complicity with preventable suffering. Published in 1947, the novel invites readings through the French Resistance and fascism, but its plague is not exhausted by one allegory. Camus's restrained narration shows how catastrophe becomes routine, how private grief collides with public statistics, and how relief can encourage forgetting. The final warning that the bacillus never disappears turns vigilance into a civic obligation. Human beings cannot eliminate death or guarantee meaning, yet they can choose decency, truthful witness, and shared resistance to whatever increases the world's suffering.",
     },
     {
         "title": "Nausea",
@@ -943,7 +943,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1938,
         "genre": "philosophy",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Sartre's first novel follows a historian overcome by the sheer contingency and absurdity of existence.",
+        "summary": "Sartre's first novel follows Antoine Roquentin, a solitary historian in the fictional town of Bouville, as ordinary objects lose familiarity and reveal the sheer contingency of existence. Diary entries record his failing research on the Marquis de Rollebon, encounters with the self-educating man in the library, memories of his former lover Anny, and waves of physical disgust that he calls nausea. The climactic vision of a chestnut-tree root strips away names and purposes: things simply exist, excessive and without rational necessity, while language usually conceals that fact beneath useful categories. Roquentin also discovers that consciousness has no fixed essence waiting inside it; identity is a project continually made rather than a substance possessed. A jazz recording offers a contrast because its notes form a completed necessity, suggesting that creating a work might shape contingency without denying it. Published in 1938, the novel dramatizes themes Sartre later states philosophically in Being and Nothingness. Its force comes from making metaphysics bodily and social: freedom is not initially exhilarating, but vertigo after inherited explanations and roles can no longer guarantee who a person is.",
     },
     {
         "title": "The Fall",
@@ -951,7 +951,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1956,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "A former Parisian lawyer confesses his moral failures in an Amsterdam bar, probing guilt, innocence, and self-deception.",
+        "summary": "A former Parisian lawyer delivers a seductive monologue in Amsterdam bars, confessing moral failures while gradually placing his silent listener—and the reader—on trial. Jean-Baptiste Clamence once enjoyed success as a generous advocate for widows and orphans, but a woman's suicide in the Seine exposes how much his virtue depended on admiration and control. After hearing unexplained laughter behind him, he begins dismantling the heroic image he had performed. He now calls himself a 'judge-penitent': by accusing himself first and declaring universal guilt, he gains the authority to judge everyone else while appearing humble. The canal-ring setting evokes circles of hell, and a stolen panel from the Ghent Altarpiece gives his confession another secret audience. Camus compresses questions of hypocrisy, responsibility, postwar judgment, and religious guilt into a second-person conversation whose other half never speaks. Clamence's insight is real, but his self-knowledge becomes another instrument of domination rather than repentance. The novella asks whether confession can escape vanity and whether recognizing that no one is innocent leads to solidarity, paralysis, or permission to abandon moral distinctions altogether.",
     },
     {
         "title": "Zen Mind, Beginner's Mind",
@@ -959,7 +959,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1970,
         "genre": "philosophy",
         "mood": ["morning ritual", "cozy night", "fresh start"],
-        "summary": "Suzuki's talks on Zen meditation emphasize maintaining the openness and eagerness of a beginner's mind.",
+        "summary": "Suzuki's talks on Zen meditation emphasize shoshin, the openness and readiness of a beginner's mind. Compiled by students from lectures at the San Francisco Zen Center, the book discusses posture, breathing, attention, repetition, nonduality, and the relation between formal zazen and ordinary activity. Practice is not a technique for acquiring a special experience or proving spiritual attainment; sitting is itself the expression of Buddha nature when performed wholeheartedly and without gaining ideas. Suzuki repeatedly warns that experts narrow possibilities by clinging to what they know, whereas beginner's mind can meet each moment without comparison. Simple instructions about keeping the spine upright or returning to breath sit beside reflections on emptiness, transience, and the mistake of separating enlightenment from practice. The informal English and edited oral form make difficult ideas inviting, though the book represents a particular Soto Zen lineage and should not stand for all Buddhist traditions. Its apparent simplicity is demanding: non-attachment includes letting go of the identity of someone successfully being non-attached. The work remains a classic because it presents discipline and freshness as partners, showing how sustained form can support attention that does not harden into routine.",
     },
     {
         "title": "The Book: On the Taboo Against Knowing Who You Are",
@@ -967,7 +967,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1966,
         "genre": "philosophy",
         "mood": ["self-discovery", "late night reflection", "existential crisis"],
-        "summary": "Watts argues that the feeling of being a separate ego in a bag of skin is an illusion, drawing on Hindu and Buddhist philosophy.",
+        "summary": "Watts argues that the feeling of being a separate ego enclosed in a 'bag of skin' is a culturally reinforced illusion. Drawing from Vedanta, Buddhism, Taoism, cybernetics, and ecology, he describes the organism and environment as one transactional field: breathing, eating, perception, language, and social identity make any independent self impossible to locate. The taboo in the subtitle is Western reluctance to recognize identity with the larger process of nature, summarized in the Hindu expression tat tvam asi, 'you are that.' Watts does not mean that an individual personality possesses cosmic power. He asks readers to see personality as a role or pattern through which the universe acts, much as a wave is not separate from the ocean that forms it. Chapters criticize models of the world as artifact, machine, or collection of isolated things and propose a more organic image. His broad synthesis is popular philosophy rather than precise scholarship, sometimes blending traditions that differ substantially. Its enduring appeal lies in making ecological interdependence existential: alienation changes when a person experiences the world not as foreign matter confronting an inner spectator, but as the larger body of every action.",
     },
     {
         "title": "The Way of Zen",
@@ -975,7 +975,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1957,
         "genre": "philosophy",
         "mood": ["morning ritual", "self-discovery"],
-        "summary": "Watts introduces Zen Buddhism to Western readers, tracing its roots in Chinese Taoism and Indian Buddhism.",
+        "summary": "Watts introduces Zen Buddhism to Western readers by tracing its development from Indian Mahayana Buddhism through Chinese Chan and Japanese Zen. He explains how Taoist language and sensibility transformed imported Buddhist ideas, emphasizing direct awareness, spontaneity, nonduality, and liberation from the conceptual habits that divide experience into a controlling self and an external world. Historical chapters discuss the Buddha, emptiness, the rise of Chan, and major figures such as Bodhidharma and Hui-neng. Practical chapters turn to zazen, koans, Zen arts, and the relation between disciplined training and action that appears effortless. Watts writes as an interpreter rather than a monastic teacher, using comparisons with Western psychology and philosophy to make unfamiliar ideas legible. That accessibility also produces simplifications, romanticized history, and a tendency to present one Zen sensibility as the essence of Asian thought. The book is therefore best paired with primary texts and lineage-specific guidance. Its lasting achievement is experiential: it helps readers see why awakening cannot be possessed as information by an isolated ego, because the effort to grasp it reproduces the separation the practice is meant to expose.",
     },
     {
         "title": "The Power of Now",
@@ -983,7 +983,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1997,
         "genre": "philosophy",
         "mood": ["morning ritual", "self-discovery", "fresh start"],
-        "summary": "Tolle argues that most human suffering comes from identifying with the mind and living in the past or future rather than the present.",
+        "summary": "Tolle argues that much avoidable suffering comes from identifying completely with mental narration and resisting the immediacy of the present. Written as questions and answers, the book distinguishes practical clock time from psychological time, in which regret and anticipation become a continuous identity. The 'pain-body' names accumulated emotional patterns that feed on reactive thought, while presence means noticing thought, sensation, and feeling without treating each as a command or final truth. Tolle recommends attention to breathing, the inner body, silence, and ordinary activity as doorways out of compulsive interpretation. He draws broadly from Christianity, Buddhism, Hinduism, and mystical traditions while presenting the teaching in nonsectarian language. Critics may question its loose use of sources, its metaphysical claims, and any implication that presence alone can resolve trauma or structural hardship. Read as contemplative practice rather than comprehensive psychology, its useful distinction is between a problem that requires action now and suffering generated by mentally rehearsing an absent past or future. The book asks whether awareness can hold difficult experience without denial, making room for a response less governed by the story of who has been harmed or what must happen next.",
     },
     {
         "title": "Letters to a Young Poet",
@@ -991,7 +991,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1929,
         "genre": "philosophy",
         "mood": ["self-discovery", "cozy night", "rainy afternoon"],
-        "summary": "Rilke's ten letters to a young aspiring poet offer profound advice on solitude, creativity, love, and living with questions.",
+        "summary": "Rilke's ten letters to the aspiring poet Franz Xaver Kappus offer counsel on solitude, creativity, love, vocation, doubt, and patience. Written between 1903 and 1908, the letters respond to requests for literary judgment by refusing the authority Kappus seeks. Rilke tells him to ask whether he must write, to examine the depths from which work arises, and to distrust criticism that replaces inward necessity with public approval. Solitude is not presented as glamorous isolation but as a difficult space in which identity and artistic perception can mature. Rilke also advises treating unresolved questions as locked rooms to be lived rather than prematurely answered, and imagines love as two solitudes that protect and border one another instead of collapsing into possession. Because Kappus's side of the correspondence is largely absent, readers encounter a shaped selection rather than a complete dialogue, and some advice reflects Rilke's own contradictions. The book endures because it does not promise a career formula. It reframes creative uncertainty as part of the work, asking artists to build a life capable of sustaining attention before demanding evidence that the world will reward it.",
     },
     {
         "title": "The Unbearable Lightness of Being",
@@ -999,7 +999,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1984,
         "genre": "philosophy",
         "mood": ["existential crisis", "self-discovery", "late night reflection"],
-        "summary": "Kundera's philosophical novel explores weight and lightness, love and politics, against the backdrop of the Prague Spring.",
+        "summary": "Kundera's philosophical novel explores weight and lightness, love and betrayal, body and soul, against the Prague Spring and the Soviet invasion of Czechoslovakia. Tomas, a surgeon and compulsive lover, is drawn to Tereza, whose longing for fidelity and embodied uniqueness conflicts with his erotic separation of sex from love. Sabina turns betrayal into an aesthetic of freedom, while Franz seeks moral seriousness in public causes and misunderstood devotion. The narrator interrupts their stories with reflections on Nietzsche's eternal return, kitsch, coincidence, compassion, and the ways a single unrepeatable life can seem both weightless and unbearably consequential. Political repression changes careers, homes, and relationships, but the novel refuses to reduce private life to an allegory of history. Photographs, dreams, bowler hats, and the death of a dog carry meanings no abstract opposition fully captures. Kundera's treatment of gender and bodies has generated substantial criticism, yet the form remains inventive. By revealing outcomes before their narrative arrival, the book shifts attention from suspense to interpretation: people cannot test alternate lives, so they give meaning to choices without ever knowing whether another path would have been truer.",
     },
     {
         "title": "Straw Dogs",
@@ -1007,7 +1007,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2002,
         "genre": "philosophy",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Gray attacks the humanist belief in progress, arguing that humans are just another animal species with no special destiny.",
+        "summary": "Gray attacks the humanist belief that humanity can master its condition through knowledge and cumulative moral progress. The title invokes Hobbes, but the essays range across Darwin, Taoism, Christianity, technology, ecology, political utopias, and the modern conviction that history has a destination. Human beings are animals whose intelligence often enlarges appetite and destructive capacity rather than freeing them from it. Science reliably increases knowledge and power, Gray argues, while ethical and political gains remain contingent achievements that can be lost. Secular ideologies frequently inherit religious structures of salvation, replacing heaven with a perfected future made by revolution, markets, or technical control. Against that restless project, he draws on contemplative traditions and the lives of other animals to imagine value without a grand human purpose. The book is aphoristic and intentionally polemical; critics challenge its selective history, bleak anthropology, and tendency to understate real institutional improvement. Its strongest contribution is diagnostic rather than predictive. It asks whether faith in progress prevents societies from recognizing recurring cruelty and ecological limit, and whether a good life might require less confidence in destiny and more attention to the finite world humans already share.",
     },
     # ── Additional Philosophy ─────────────────────────────────────────────
     {
@@ -1016,7 +1016,7 @@ PHILOSOPHY_BOOKS = [
         "year": 524,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis", "cozy night"],
-        "summary": "Imprisoned and awaiting execution, Boethius finds comfort in a dialogue with Lady Philosophy about fortune, happiness, and the nature of God.",
+        "summary": "Imprisoned and awaiting execution, Boethius stages a dialogue with Lady Philosophy about fortune, happiness, providence, freedom, and evil. The narrator begins abandoned by the Muses and lamenting his fall from high office; Philosophy diagnoses grief as forgetfulness of what he is and what goods can truly belong to him. Fortune's wheel gives and removes wealth, rank, pleasure, and reputation, proving that unstable possessions cannot constitute happiness. The highest good must be self-sufficient and is identified with God, while apparent goods derive their attraction from partial participation in that unity. Later books confront why evil people prosper, how divine providence relates to chance, and whether God's timeless knowledge of events is compatible with human freedom. Prose alternates with verse, making argument and consolation answer one another. Written in the sixth century without explicit appeal to Christian revelation, the work carried Greek philosophy into medieval Latin culture and became one of the most read books of the Middle Ages. Its consolation is not that loss is unreal, but that dependence on fortune confuses temporary conditions with the kind of agency and understanding adversity cannot simply confiscate.",
     },
     {
         "title": "Critique of Practical Reason",
@@ -1024,7 +1024,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1788,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Kant argues that moral law is grounded in pure practical reason and that freedom, God, and immortality are necessary postulates of the moral life.",
+        "summary": "Kant argues that moral obligation arises from practical reason rather than inclination, social convention, or expected consequences. The second Critique develops the autonomy of the will: a rational agent is free when acting under a law reason can give universally, not when merely following whichever desire is strongest. The categorical imperative and respect for the moral law explain how duty can motivate finite beings whose happiness and virtue do not naturally coincide. Kant distinguishes the good will from empirical success and describes the highest good as a world in which happiness is proportioned to moral worth. Freedom, immortality, and God appear as postulates of practical reason—not objects proved by theoretical knowledge, but commitments Kant believes moral striving rationally requires. The work also analyzes moral feeling, incentives, and the 'fact of reason,' the immediate consciousness of obligation that anchors the system. Readers dispute whether the postulates follow and whether formal universal law can guide concrete conflict. The book's enduring achievement is to treat persons as self-legislating ends whose dignity forbids using them merely as instruments, grounding responsibility in capacities that coercion and appetite do not fully explain.",
     },
     {
         "title": "Process and Reality",
@@ -1032,7 +1032,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1929,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Whitehead constructs a comprehensive metaphysical system in which reality is composed of events and processes rather than static substances.",
+        "summary": "Whitehead constructs a metaphysical system in which reality is fundamentally composed of events of becoming rather than inert, self-contained substances. He calls the basic units 'actual occasions,' momentary processes that arise by prehending or feeling prior realities and integrating them into a new concrete experience. Each occasion is both determined by its world and creative in how it unifies that inheritance, after which it becomes data for what follows. Enduring objects are therefore patterned societies of events, not static foundations. Eternal objects supply possibilities of form, while God has primordial and consequent aspects that order possibility and receive the world's changing experience without acting as an external craftsman. Whitehead's vocabulary—concrescence, nexus, prehension, creativity—is difficult because it tries to escape categories inherited from substance metaphysics. Developed from science, mathematics, aesthetics, and theology, the system seeks to include causal order and felt value within one account. Process and Reality became foundational for process philosophy and theology, ecological thought, and later theories of relation. Its central proposal is that relation is not something added after entities exist; entities become what they are by taking a world into themselves.",
     },
     {
         "title": "The Myth of the Eternal Return",
@@ -1040,7 +1040,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1954,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Eliade explores how archaic societies understood time as cyclical, contrasting their world of sacred repetition with modern linear history.",
+        "summary": "Eliade explores how many traditional societies give reality to actions by repeating sacred archetypes rather than locating meaning in unique historical progress. Ritual, myth, temple, kingship, and New Year ceremonies return communities to an originating time when gods or ancestors established the pattern of the world. Through this 'eternal return,' ordinary space and duration are periodically regenerated, while events without exemplary meaning can be experienced as unreal or chaotic. Eliade contrasts this orientation with Jewish and Christian traditions that grant decisive significance to linear history and with modern historicism, in which people must bear suffering as the product of impersonal events. He asks whether modern historical consciousness can endure the 'terror of history' without transcendence. The wide comparative range made the book influential in religious studies, literature, and theories of myth, but scholars criticize its universal categories, selective evidence, and tendency to idealize a single archaic mentality across distinct cultures. Read critically, it remains valuable for showing that calendars and rituals do more than measure time: they organize what a community considers repeatable, memorable, and real. Its final question concerns whether freedom requires escaping inherited patterns or finding forms that make history bearable.",
     },
     {
         "title": "The Rebel",
@@ -1048,7 +1048,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1951,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Camus traces the history of rebellion from metaphysical revolt to political revolution, arguing for revolt tempered by moderation.",
+        "summary": "Camus traces rebellion from the individual's refusal of humiliation through metaphysical revolt, revolutionary terror, and modern totalitarianism. To say no to oppression also affirms a limit and an implicit human solidarity: something in every person must not be violated. Camus reads figures and movements including Prometheus, the Marquis de Sade, the Russian nihilists, Hegel, Marx, anarchists, and surrealists, asking how rebellion that begins in justice comes to justify murder in the name of history. When revolution claims knowledge of a final future, present people become expendable material and the rebel's original limit is betrayed. Camus opposes both passive acceptance and absolute violence with measure, tension, and fidelity to shared mortality. The book's historical interpretations are selective, and its critique of revolutionary communism caused the famous break with Sartre's circle. It should be read as a moral essay shaped by war, Resistance, and ideological conflict rather than a neutral history. Its enduring challenge is to sustain resistance without becoming what resistance opposes: act against injustice, accept responsibility for force, and refuse doctrines that make innocence infinitely available for sacrifice.",
     },
     {
         "title": "Truth and Method",
@@ -1056,7 +1056,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1960,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Gadamer argues that understanding is always interpretive and that our historical situatedness is not an obstacle to truth but its very condition.",
+        "summary": "Gadamer argues that understanding is always historically situated and that this condition enables interpretation rather than merely distorting it. Against the ambition to secure the human sciences through a method modeled on natural science, he examines experiences of art, history, language, and dialogue in which truth exceeds procedural control. A reader approaches a text with prejudgments inherited from tradition; responsible interpretation does not erase them but exposes them to revision through encounter with what the text asks. Gadamer calls the resulting event a fusion of horizons, not agreement without difference but an expansion of the questions within which subject matter becomes intelligible. His account of effective history shows that interpreters are shaped by the very past they investigate, while the model of conversation treats understanding as listening for a claim rather than reconstructing a private intention. Language is the medium in which world and interpreter meet. Critics, including Habermas, ask whether this trust in tradition adequately detects ideology and domination. The book founded philosophical hermeneutics by replacing the dream of a view outside history with disciplined participation in it. Its standard of openness requires risking one's assumptions, not simply celebrating them.",
     },
     {
         "title": "The Phenomenology of Perception",
@@ -1064,7 +1064,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1945,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Merleau-Ponty argues that perception is primary to thought and that the lived body — not the disembodied mind — is our window onto the world.",
+        "summary": "Merleau-Ponty argues that perception is primary and that the lived body, rather than a detached mind processing neutral data, is our way of having a world. Through studies of neurological disorders, phantom limbs, spatial orientation, movement, sexuality, language, and other people, he challenges both empiricism and intellectualism. The first reduces perception to causal sensations; the second makes it a judgment imposed by consciousness. Neither explains the body's pre-reflective know-how, as when a skilled hand reaches, a blind person's cane becomes an extension of touch, or habit reorganizes practical space. Body and world form an intentional relation before they are divided into subject and object. Ambiguity is therefore not a defect awaiting final theory but a basic feature of embodied existence. Drawing on Husserl, Gestalt psychology, and existential phenomenology, the book also reworks freedom as situated rather than absolute. Its dense analyses transformed philosophy of mind, cognitive science, feminist theory, and studies of disability and embodiment. The continuing insight is that consciousness does not first occupy an inner theater and infer the world; it is already oriented through posture, capacity, history, and a field shared with others.",
     },
     {
         "title": "Debt: The First 5,000 Years",
@@ -1072,7 +1072,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2011,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis", "career pivot"],
-        "summary": "Graeber overturns the standard economic narrative of barter-to-money, showing that debt and moral obligation preceded markets.",
+        "summary": "Graeber overturns the textbook story that barter naturally produced money and then credit, arguing that systems of debt and account often preceded widespread cash exchange. Drawing on anthropology, history, religion, and political theory, he follows obligations across roughly five millennia, from Mesopotamian temple ledgers and ancient jubilees through coinage, empire, slavery, medieval credit, colonial conquest, and modern finance. Debt is never merely numerical: language about owing, guilt, honor, redemption, and repayment converts unequal power into moral duty. Graeber distinguishes human economies organized around relationships from commercial exchange that makes persons commensurable, and he shows how violence can turn social obligations into exact, transferable sums. The account moves between long historical cycles of virtual credit and bullion money, linking coinage to armies and taxation. Specialists dispute details, periodization, and the breadth of its synthesis, but the book changed public discussion after the financial crisis. Its central provocation is that a debt's enforceability does not prove its justice. By recovering cancellation, negotiation, and competing moral traditions, Graeber makes apparently technical financial arrangements available for democratic and ethical judgment.",
     },
     {
         "title": "Bullshit Jobs",
@@ -1080,7 +1080,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2018,
         "genre": "philosophy",
         "mood": ["career pivot", "existential crisis", "daily grind"],
-        "summary": "Graeber argues that a huge proportion of modern jobs are pointless and that their existence is socially and psychologically destructive.",
+        "summary": "Graeber argues that many modern employees privately believe their jobs make no meaningful contribution and that being forced to perform usefulness is psychologically damaging. He distinguishes bullshit jobs, whose occupants cannot justify their existence, from poorly paid or unpleasant jobs that clearly accomplish necessary work. A playful taxonomy includes flunkies who confer status, goons who manipulate or threaten, duct tapers who patch avoidable defects, box tickers who simulate compliance, and taskmasters who create or supervise unnecessary activity. Drawing on worker testimonies, organizational incentives, and the moral history of labor, Graeber asks why productivity gains have not produced the shorter working week once predicted. He points to managerial expansion, political attachment to employment, and a culture that treats paid suffering as evidence of deservingness while care work remains underpaid. Critics question the survey evidence, definitions, and whether employees can reliably judge indirect value. Still, the book names a widespread experience of misalignment between time, purpose, and institutional theater. Its policy horizon includes basic income and less moral worship of work, but its immediate demand is simpler: stop confusing administrative busyness with social contribution.",
     },
     {
         "title": "The Genealogy of Morals",
@@ -1088,7 +1088,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1887,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Nietzsche traces the origins of moral concepts like guilt and bad conscience to the suppression of instincts by civilization.",
+        "summary": "Nietzsche traces the historical construction of moral concepts in three polemical essays on value, guilt, punishment, conscience, and ascetic ideals. The first contrasts aristocratic 'good and bad' valuation with a slave revolt in morality that redefines powerful traits as evil and elevates humility, patience, and suffering through ressentiment. The second follows guilt from the material relation between creditor and debtor, arguing that punishment and social constraint turn aggressive instincts inward to form the bad conscience. The third asks why ascetic ideals attract priests, philosophers, artists, scientists, and sufferers, diagnosing their ability to give pain a meaning even when that meaning negates life. Nietzsche calls this a genealogy because he investigates contingent struggles and transformations rather than accepting moral concepts as timeless facts. His rhetoric, historical claims, and treatment of domination demand critical reading, and later political appropriations often distorted his targets. The work's enduring method is to ask what forms of life a value serves, what affects sustain it, and what costs its apparent universality conceals. Critique does not prove that every inherited value is false, but it removes innocence from the claim that its origin is beyond history and power.",
     },
     {
         "title": "Why Liberalism Failed",
@@ -1096,7 +1096,7 @@ PHILOSOPHY_BOOKS = [
         "year": 2018,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Deneen argues that liberalism has failed because it succeeded too well, dissolving the communal bonds and cultural norms it depends on.",
+        "summary": "Deneen argues that liberalism is failing through the successful realization of its own premises rather than through an external betrayal. Both market-oriented and state-oriented versions, he claims, treat individual autonomy as liberation from inherited place, custom, family, religion, nature, and local obligation. Expanding markets and administrative government then work together: uprooted individuals depend on centralized institutions, while those institutions manage the social damage produced by further uprooting. Education becomes credentialing for mobility, technology promises mastery without limit, and political participation thins into distant management by elites. Deneen contrasts this order with practices of household, community, craft, citizenship, and ecological restraint, proposing not a return to a vanished past but local cultures capable of sustaining chosen limits. Critics challenge his unified account of liberalism, treatment of hierarchy and exclusion, and lack of a clear institutional alternative; liberal traditions also contain resources for association, equality, and self-correction that his diagnosis underplays. The book became influential across ideological lines because it names discontents not captured by electoral categories. Its hardest question is whether freedom can be redefined as cultivated capacity within obligations rather than indefinite escape from them.",
     },
     {
         "title": "The Will to Believe and Other Essays",
@@ -1104,7 +1104,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1897,
         "genre": "philosophy",
         "mood": ["morning ritual", "self-discovery"],
-        "summary": "James argues that in certain cases we are justified in choosing to believe without sufficient evidence, especially regarding religious faith.",
+        "summary": "James argues that in certain genuine options a person may responsibly commit without sufficient prior evidence, especially when waiting would itself decide the matter. A genuine option is living, forced, and momentous: the alternatives are psychologically possible, no neutral suspension avoids consequence, and the opportunity may not recur. Religious faith is his central case, but friendship, trust, courage, and cooperative ventures also depend on attitudes that help create the evidence later available. James answers W. K. Clifford's demand to avoid error by distinguishing two intellectual aims: believe truth and shun falsehood. Neither can always dominate the other without loss. The title essay does not license believing whatever feels comforting; hypotheses must be live possibilities, evidence still governs ordinary factual questions, and commitment is permitted only where intellect cannot settle a forced choice. Other essays develop pluralism, moral philosophy, psychical research, and the lives of exceptional individuals. Critics dispute whether religious belief fits the criteria and whether desire can justly influence conviction. The collection's lasting contribution is to show that inquiry occurs inside life: sometimes trust is not the conclusion of evidence but a condition under which a truth about relationship or practice can become knowable.",
     },
     {
         "title": "Sources of the Self",
@@ -1112,7 +1112,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1989,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Taylor traces the emergence of the modern Western sense of self from Plato through the Romantics, showing how our identity is shaped by moral frameworks.",
+        "summary": "Taylor traces the historical formation of the modern Western self by reconstructing the moral sources that make identity intelligible. He rejects the picture of a neutral, disengaged individual who can choose values from nowhere; people orient themselves within qualitative distinctions about what is higher, worthy, shameful, or meaningful, even when they deny having such frameworks. The narrative moves from Platonic and Christian inwardness through Augustine, the Reformation, Descartes, Locke, Enlightenment naturalism, the affirmation of ordinary life, Romantic expression, and modern ideals of authenticity. Taylor describes a turn inward that changes from discovering divine order to articulating an original personal voice, while also following the rise of instrumental reason and secular moral sentiment. These sources coexist in tension rather than forming a simple story of decline or progress. The book's scale and concentration on Latin Christendom invite criticism and extension, but its method transformed debates about identity and modernity. Sources of the Self argues that moral disagreement cannot be understood only as conflict over isolated rules. It concerns the background pictures of agency, nature, community, and the good that let any rule appear compelling in the first place.",
     },
     {
         "title": "Finite and Infinite Games",
@@ -1120,7 +1120,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1986,
         "genre": "philosophy",
         "mood": ["fresh start", "self-discovery", "morning ritual"],
-        "summary": "Carse distinguishes between finite games played to win and infinite games played to continue playing, applying the distinction to life, war, and culture.",
+        "summary": "Carse distinguishes finite games, played within agreed boundaries to secure a winning title, from infinite games, played so that play can continue and new possibilities can emerge. Finite players require fixed rules, opponents, spatial and temporal limits, and an audience that recognizes victory. Infinite players treat rules as changeable, include surprise rather than defending against it, and understand freedom as the capacity to begin again. In short, numbered sections, Carse applies the contrast to politics, war, education, sexuality, religion, property, storytelling, nature, and death. Power tries to eliminate resistance and preserve titles; strength remains open to relationship and transformation. A society organizes finite contests, while culture repeatedly alters the horizons inside which any contest makes sense. The binary can become too sweeping if treated as a literal classification, and later business adaptations often convert infinite play back into a strategy for winning. Carse's philosophical text is more radical: no one can guarantee continuation or possess infinity as an achievement. Its value is diagnostic, asking whether a rule, institution, or identity serves a living practice or demands that possibility stop so a victor can be permanently named.",
     },
     {
         "title": "The Order of Things",
@@ -1128,7 +1128,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1966,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Foucault examines the hidden structures of knowledge in Western thought, from the Renaissance to the modern age, and famously predicts the death of man as a concept.",
+        "summary": "Foucault examines the historical conditions that make particular forms of knowledge possible, comparing Western thought from the Renaissance through the classical and modern periods. He calls these underlying orders epistemes: not explicit theories held by everyone, but relations among language, classification, representation, labor, life, and exchange that determine what can appear as an intelligible object. The book begins with a dazzling reading of Velázquez's Las Meninas and moves through natural history, general grammar, wealth, biology, philology, and political economy. Renaissance resemblance gives way to classical representation, which in turn gives way around 1800 to a modern configuration centered on finite human beings who are both knowing subjects and objects of knowledge. The famous image of 'man' erased like a face drawn in sand predicts the end of that recent arrangement, not human extinction. Foucault's archaeology brackets conventional stories of cumulative progress to identify discontinuities, a method critics find abstract and insufficiently causal. The work remains influential because it asks scholars to historicize their own categories. What seems a natural object of study may depend on a temporary organization of discourse whose boundaries become visible only when another order begins.",
     },
     {
         "title": "One-Dimensional Man",
@@ -1136,7 +1136,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1964,
         "genre": "philosophy",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Marcuse argues that advanced industrial society creates false needs that integrate individuals into the existing system of production and consumption.",
+        "summary": "Marcuse argues that advanced industrial society absorbs opposition by shaping needs, language, technology, and imagination to fit its existing order. Material abundance and consumer choice can coexist with domination when people identify freedom with selecting among commodities and treat the system's priorities as their own. 'One-dimensional' thought collapses the distance between what exists and what might be possible, translating critique into operational problems that experts can manage. Marcuse analyzes advertising, mass media, automation, Cold War politics, positivist philosophy, and a language that fuses contradictory terms until alternatives become difficult to articulate. Technology is not neutral in its social form; rationality organized around efficiency can embed political purposes while appearing merely technical. Yet forces of negation survive in art, outsiders, and needs that the system cannot fully satisfy. Written in 1964, the book reflects affluent industrial capitalism and has to be reconsidered under digital platforms and fragmented media, but its diagnosis remains recognizable. It asks whether comfort and participation count as liberation when the range of imaginable lives has already been narrowed by institutions that profit from every permitted preference.",
     },
     {
         "title": "The Society of the Spectacle",
@@ -1144,7 +1144,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1967,
         "genre": "philosophy",
         "mood": ["existential crisis", "late night reflection"],
-        "summary": "Debord argues that modern life has become a vast accumulation of spectacles, where authentic social life has been replaced by its representation.",
+        "summary": "Debord argues that in advanced capitalism social relations are increasingly mediated by images, commodities, and representations—a condition he calls the spectacle. The spectacle is not simply television or advertising and not merely a collection of deceptive pictures; it is a social organization in which lived activity confronts people as something separate to watch and consume. Work produces a world that appears independent of its producers, while leisure offers packaged choices that reproduce the same passivity. In 221 compressed theses, Debord draws from Marx's commodity fetishism, Lukács's reification, avant-garde art, and revolutionary politics to analyze celebrity, news, tourism, urban planning, and bureaucratic power. He distinguishes concentrated and diffuse forms of spectacle associated with authoritarian and consumer societies, later arguing that they merged into an integrated form. The book became a key text for the Situationist International and the upheavals of 1968. Its totalizing language can obscure differences among media and audiences, but its central relation remains potent in platform culture. The challenge is not to discover a pure authenticity behind images; it is to recover collective agency over activities and spaces that representation has organized on people's behalf.",
     },
     {
         "title": "On Violence",
@@ -1152,7 +1152,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1970,
         "genre": "philosophy",
         "mood": ["late night reflection", "existential crisis"],
-        "summary": "Arendt distinguishes power from violence and argues that violence is fundamentally antipolitical, arising only when power is threatened.",
+        "summary": "Arendt distinguishes power from violence and challenges traditions that treat politics as command backed by force. Power arises when people act together and lasts only while their collective support continues; violence relies on instruments that can multiply physical strength but cannot create legitimacy. A government may use overwhelming weapons precisely because its power is eroding, while a nonviolent movement can reveal that institutions depend on obedience more than coercion. Written amid war, decolonization, student revolt, and arguments about revolutionary violence, the essay engages thinkers from Marx and Fanon to contemporary strategists. Arendt rejects biological metaphors that naturalize aggression and warns that means can overwhelm ends: violence may destroy an old order but cannot by itself establish the durable relationships that political freedom requires. Her clean distinction is contested because real institutions often combine consent, hierarchy, and coercion, and oppressed groups may not possess a nonviolent path to safety. Still, the framework clarifies why military superiority does not guarantee rule. On Violence asks political actors to judge instruments by the world they are capable of building, not only by the enemy they can defeat.",
     },
     {
         "title": "The Life of the Mind",
@@ -1160,7 +1160,7 @@ PHILOSOPHY_BOOKS = [
         "year": 1978,
         "genre": "philosophy",
         "mood": ["late night reflection", "self-discovery"],
-        "summary": "Arendt's final work examines the three activities of the mind — thinking, willing, and judging — and their relationship to political life.",
+        "summary": "Arendt's final, unfinished work investigates thinking and willing and was intended to conclude with judging. Prompted partly by her account of Eichmann's thoughtlessness, she asks what people are doing when they withdraw from appearances into mental activity and whether that activity bears on the capacity to resist evil. The volume on thinking begins from the world's plurality and the mind's ability to make absent things present, following Socrates, Plato, philosophy's relation to common sense, and the silent two-in-one dialogue of a self that must live with itself. The volume on willing traces conflict among desire, reason, freedom, and beginning through Paul, Augustine, Duns Scotus, Nietzsche, and Heidegger. Arendt resists turning thought into a rulebook for conduct, yet conscience may arise because a person unwilling to examine action cannot sustain that inner companionship. Her notes for judging and related lectures point toward Kant's enlarged mentality, which imagines other standpoints without surrendering judgment. The book remains fragmentary by circumstance and by subject. Its importance lies in connecting apparently private faculties to public responsibility while refusing the comforting claim that intelligence or philosophical sophistication automatically produces goodness.",
     },
     {
         "title": "The Courage to Create",
@@ -1168,6 +1168,6 @@ PHILOSOPHY_BOOKS = [
         "year": 1975,
         "genre": "philosophy",
         "mood": ["self-discovery", "fresh start", "side project vibes"],
-        "summary": "May explores the relationship between creativity and courage, arguing that genuine creative acts require the willingness to confront anxiety.",
+        "summary": "May explores creativity as an encounter that requires courage because making something new threatens both personal equilibrium and an established social order. Drawing on existential psychology, artists, scientists, myth, and his experience as a therapist, he distinguishes creative courage from mere rebellion or self-expression. The creator meets a material, problem, or form with intense absorption; insight emerges from that relationship rather than from an isolated ego imposing its will. Anxiety is unavoidable because imagination opens possibilities that do not yet have public validation, and guilt may arise from failing to realize capacities one can sense but not guarantee. May discusses the Apollonian need for shape alongside Dionysian vitality, the role of limits in generating form, and society's ambivalence toward people whose work exposes new ways of seeing. Some examples and psychological generalizations reflect the 1970s, but the central account resists productivity formulas. Courage does not ensure acclaim or even successful completion. It is the willingness to remain present to uncertainty, accept the risk of failure and misunderstanding, and give an emerging possibility enough disciplined attention to become shareable with others.",
     },
 ]

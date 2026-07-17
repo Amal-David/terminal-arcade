@@ -7,6 +7,7 @@ import textwrap
 
 from polyglot.data.pairs import LanguagePair, PhraseEntry
 from polyglot.ui.widgets import draw_box, init_colors, safe_addstr
+from terminal_arcade.ui import hide_cursor
 
 CATEGORY_TABS = ("script", "vocab", "phrase", "sentence")
 QUIT_KEYS = {ord("q"), ord("Q"), 27}
@@ -116,10 +117,7 @@ def _render(
 
 def open_detail(stdscr, pair: LanguagePair) -> str:
     """Returns one of 'back', 'install', 'cadence', 'print'."""
-    try:
-        curses.curs_set(0)
-    except curses.error:
-        pass
+    hide_cursor()
     stdscr.keypad(True)
     stdscr.timeout(150)
     has_color = init_colors()

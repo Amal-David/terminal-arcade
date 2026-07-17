@@ -5,6 +5,8 @@ import random
 import time
 from dataclasses import dataclass, field
 
+from terminal_arcade.ui import hide_cursor, safe_addstr
+
 from .assets import (
     BIOME_BACKDROP_TILES,
     BIOME_GROUNDS,
@@ -445,22 +447,6 @@ def get_obstacle_hitbox(obstacle: Obstacle, frame_count: int, ground_y: int) -> 
     draw_y = ground_y - len(sprite)
     draw_y += obstacle.y_offset
     return centered_hitbox(int(obstacle.x), draw_y, sprite, obstacle.spec.hitbox)
-
-
-def safe_addstr(stdscr, y: int, x: int, text: str, attr: int = 0) -> None:
-    height, width = stdscr.getmaxyx()
-    if y < 0 or y >= height or x >= width:
-        return
-    if x < 0:
-        text = text[-x:]
-        x = 0
-    max_len = width - x - 1
-    if max_len <= 0:
-        return
-    try:
-        stdscr.addstr(y, x, text[:max_len], attr)
-    except curses.error:
-        pass
 
 
 def draw_sprite(stdscr, sprite: list[str], y: int, x: int, attr: int = 0) -> None:
@@ -963,10 +949,7 @@ def render_game_over(stdscr, state: GameState, height: int, width: int, has_colo
 
 
 def main(stdscr) -> None:
-    try:
-        curses.curs_set(0)
-    except curses.error:
-        pass
+    hide_cursor()
 
     stdscr.nodelay(True)
     stdscr.timeout(0)

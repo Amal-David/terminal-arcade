@@ -4,23 +4,7 @@ from __future__ import annotations
 
 import curses
 
-
-def safe_addstr(stdscr, y: int, x: int, text: str, attr: int = 0) -> None:
-    """Draw text while clipping to visible terminal bounds."""
-    height, width = stdscr.getmaxyx()
-    if y < 0 or y >= height or x >= width:
-        return
-    if x < 0:
-        text = text[-x:]
-        x = 0
-    max_len = width - x - 1
-    if max_len <= 0:
-        return
-    text = text[:max_len]
-    try:
-        stdscr.addstr(y, x, text, attr)
-    except curses.error:
-        pass
+from terminal_arcade.ui import safe_addstr
 
 
 def draw_box(stdscr, y: int, x: int, width: int, height: int, attr: int = 0) -> None:

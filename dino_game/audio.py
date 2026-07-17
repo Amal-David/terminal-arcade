@@ -6,7 +6,7 @@ import threading
 from pathlib import Path
 
 
-AUDIO_DIR = Path(__file__).resolve().parent.parent / "assets" / "audio"
+AUDIO_DIR = Path(__file__).resolve().parent / "audio_assets"
 
 
 class AudioManager:

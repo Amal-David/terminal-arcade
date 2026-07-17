@@ -7,6 +7,8 @@ import random
 import time
 from dataclasses import dataclass, field
 
+from terminal_arcade.ui import hide_cursor, safe_addstr
+
 from .storage import load_high_score, save_high_score
 
 
@@ -395,23 +397,6 @@ def update(state: GameState, rng: random.Random) -> None:
             break
 
 
-def safe_addstr(stdscr, y: int, x: int, text: str, attr: int = 0) -> None:
-    height, width = stdscr.getmaxyx()
-    if y < 0 or y >= height or x >= width:
-        return
-    if x < 0:
-        text = text[-x:]
-        x = 0
-    max_len = width - x - 1
-    if max_len <= 0:
-        return
-    text = text[:max_len]
-    try:
-        stdscr.addstr(y, x, text, attr)
-    except curses.error:
-        pass
-
-
 def init_colors() -> bool:
     if not curses.has_colors():
         return False
@@ -526,10 +511,7 @@ def render(stdscr, state: GameState, has_color: bool) -> None:
 
 
 def main(stdscr) -> None:
-    try:
-        curses.curs_set(0)
-    except curses.error:
-        pass
+    hide_cursor()
     stdscr.keypad(True)
     stdscr.nodelay(True)
     stdscr.timeout(0)
@@ -562,4 +544,3 @@ def run() -> None:
         curses.wrapper(main)
     except KeyboardInterrupt:
         pass
-

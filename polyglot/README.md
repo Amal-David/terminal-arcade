@@ -1,6 +1,6 @@
 # Polyglot
 
-Pick one of 20 language pairs and Polyglot installs a Claude Code + Codex hook that surfaces a phrase from that pair every Nth tool call — letters, vocab, full sentences with pronunciation, ~250 items per pair (~5,000 total). Switching pairs never re-edits `settings.json`; only the active-pair config flips, so override is instant.
+Pick one of 70 language pairs and Polyglot installs a Claude Code + Codex hook that surfaces a phrase from that pair every Nth tool call — letters, vocab, full sentences with pronunciation, at least 250 items per pair (more than 18,000 total). Switching pairs never re-edits `settings.json`; only the active-pair config flips, so override is instant.
 
 ![Polyglot — Ambient Hook](../assets/screenshots/polyglot_ambient_hook.png)
 
@@ -10,12 +10,12 @@ Pick one of 20 language pairs and Polyglot installs a Claude Code + Codex hook t
 python3 -m polyglot    # or: polyglot
 ```
 
-Use arrow keys to move across the 20-pair grid. Press `Enter` to browse a pair's content by category, or `I` to install that pair as the active hook directly from the grid.
+Use arrow keys and page controls to move across the paginated 70-pair grid. Press `Enter` to browse a pair's content by category, or `I` to install that pair as the active hook directly from the grid.
 
 ## Language Pairs
 
-- **EN → XX (14 pairs):** Spanish, French, German, Italian, Portuguese (Brazilian), Japanese, Korean, Mandarin (Simplified), Russian, Arabic (MSA), Hindi, Dutch, Swedish, Turkish
-- **XX → EN (6 pairs):** Spanish, Portuguese, French, German, Japanese, Korean
+- **English → another language (52 pairs):** major European, Asian, African, and constructed-language options.
+- **Another language → English (18 pairs):** reverse-direction learning for widely used source languages.
 
 Each pair covers script/alphabet, numbers and time, core vocab (colors, family, food, drink, body, weather, animals, verbs, adjectives), travel/work phrases, and ~75 everyday sentences — every entry with a pronunciation hint (Hepburn, Revised Romanization, Pinyin, BGN/PCGN, IAST, ALA-LC, or English-friendly stress hints).
 

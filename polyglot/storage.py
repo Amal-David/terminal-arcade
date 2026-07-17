@@ -3,9 +3,9 @@
 from __future__ import annotations
 
 import json
-import os
-import sys
 from pathlib import Path
+
+from terminal_arcade.platform import app_data_dir, atomic_write_json
 
 APP_DIR_NAME = "polyglot"
 STATE_FILE = "state.json"
@@ -26,16 +26,7 @@ DEFAULT_STATE = {
 
 
 def data_dir(base_dir: Path | None = None) -> Path:
-    if base_dir is not None:
-        return Path(base_dir)
-    home = Path.home()
-    if sys.platform == "darwin":
-        root = home / "Library" / "Application Support"
-    elif os.name == "nt":
-        root = Path(os.environ.get("APPDATA", home / "AppData" / "Roaming"))
-    else:
-        root = Path(os.environ.get("XDG_DATA_HOME", home / ".local" / "share"))
-    return root / APP_DIR_NAME
+    return app_data_dir(APP_DIR_NAME, base_dir)
 
 
 def _load_json(filename: str, defaults, base_dir: Path | None = None):
@@ -63,8 +54,7 @@ def _copy_defaults(defaults):
 
 def _save_json(filename: str, payload, base_dir: Path | None = None) -> None:
     path = data_dir(base_dir) / filename
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    atomic_write_json(path, payload)
 
 
 def load_state(base_dir: Path | None = None) -> dict:

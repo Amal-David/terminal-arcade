@@ -5,6 +5,8 @@ from __future__ import annotations
 import curses
 import sys
 
+from terminal_arcade.ui import hide_cursor
+
 from bookshelf.data.books import Book, load_all_books
 from bookshelf.data.quotes import QUOTES
 from bookshelf.screens.book_detail import BookDetailScreen
@@ -49,7 +51,7 @@ def _quotes_for_book(book: Book) -> list:
 
 def main(stdscr) -> None:
     # Setup
-    curses.curs_set(0)
+    hide_cursor()
     stdscr.nodelay(True)
     stdscr.timeout(50)  # 20 FPS
     init_colors()

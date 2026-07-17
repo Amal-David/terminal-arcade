@@ -6,7 +6,7 @@ import time
 from pathlib import Path
 
 
-AUDIO_DIR = Path(__file__).resolve().parent.parent / "assets" / "audio" / "star_blast"
+AUDIO_DIR = Path(__file__).resolve().parent / "audio_assets"
 SOUND_FILES = {
     "laser": "laser.wav",
     "enemy_blast": "enemy_blast.wav",

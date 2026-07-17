@@ -3,9 +3,9 @@
 from __future__ import annotations
 
 import json
-import os
-import sys
 from pathlib import Path
+
+from terminal_arcade.platform import app_data_dir, atomic_write_json
 
 
 APP_DIR_NAME = "star-blast"
@@ -17,17 +17,7 @@ DEFAULT_SCORES = {
 
 
 def data_dir(base_dir: Path | None = None) -> Path:
-    if base_dir is not None:
-        return Path(base_dir)
-
-    home = Path.home()
-    if sys.platform == "darwin":
-        root = home / "Library" / "Application Support"
-    elif os.name == "nt":
-        root = Path(os.environ.get("APPDATA", home / "AppData" / "Roaming"))
-    else:
-        root = Path(os.environ.get("XDG_DATA_HOME", home / ".local" / "share"))
-    return root / APP_DIR_NAME
+    return app_data_dir(APP_DIR_NAME, base_dir)
 
 
 def load_scores(base_dir: Path | None = None) -> dict[str, int]:
@@ -52,9 +42,8 @@ def load_scores(base_dir: Path | None = None) -> dict[str, int]:
 
 def save_scores(scores: dict[str, int], base_dir: Path | None = None) -> None:
     path = data_dir(base_dir) / SCORES_FILE
-    path.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "campaign_high_score": max(0, int(scores.get("campaign_high_score", 0))),
         "endless_high_score": max(0, int(scores.get("endless_high_score", 0))),
     }
-    path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    atomic_write_json(path, payload)

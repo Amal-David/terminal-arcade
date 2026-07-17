@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import curses
 
+from terminal_arcade.ui import safe_addstr
 from wonder.ui.colors import FRAME, TITLE_HIGHLIGHT
 
 
@@ -15,23 +16,6 @@ def truncate(text: str, max_len: int) -> str:
     if max_len <= 1:
         return text[:max_len]
     return text[: max_len - 1] + "…"
-
-
-def safe_addstr(stdscr, y: int, x: int, text: str, attr: int = 0) -> None:
-    """Write text to screen with bounds checking."""
-    h, w = stdscr.getmaxyx()
-    if y < 0 or y >= h or x >= w:
-        return
-    if x < 0:
-        text = text[-x:]
-        x = 0
-    max_len = w - x - 1
-    if max_len <= 0:
-        return
-    try:
-        stdscr.addnstr(y, x, text, max_len, attr)
-    except curses.error:
-        pass
 
 
 def draw_box(stdscr, y: int, x: int, height: int, width: int, attr: int = 0) -> None:

@@ -1,6 +1,6 @@
 # Terminal Arcade
 
-A retro arcade for your terminal — pure Python, zero dependencies, curses-based. Six fully-playable games, an interactive bookshelf, **Wonder** — a daily fact-or-story cabinet — and **Polyglot** — pick one of 20 language pairs and learn it ambiently while you work — all behind a single launcher. Plus drop-in **Claude Code** and **Codex** hooks that surface a curated book quote, a daily wonder, or a language phrase every Nth tool call — configurable cadence (5 / 10 / 20) so the wisdom lands without breaking your flow.
+A retro arcade for your terminal — pure Python, zero dependencies, curses-based. Six fully playable games and three ambient companions share one launcher: **Bookshelf**, **Wonder**, and **Polyglot**, with 70 language pairs for learning while you work. Drop-in **Claude Code** and **Codex** hooks can surface a curated book quote, a daily wonder, or a language phrase every Nth tool call — configurable cadence (5 / 10 / 20) so the wisdom lands without breaking your flow.
 
 ```bash
 python3 -m bookshelf.skill.cadence 10   # one quote per 10 tool calls
@@ -62,9 +62,11 @@ Play White against a built-in rule-based engine on a full-screen pixel-art board
 
 [Read more →](chess_game/README.md)
 
+## Ambient companions
+
 ### The Bookshelf
 
-A terminal book discovery app with 313 books across motivation, startup, and romance genres. Browse, search, collect favorites, and explore quotes.
+A terminal book discovery app with 983 books across eight genres: fiction, history, motivation, philosophy, psychology, romance, science, and startup. Browse, search, collect favorites, and explore quotes.
 
 ![The Bookshelf — Browse](assets/screenshots/bookshelf_browse.png)
 ![The Bookshelf — Detail](assets/screenshots/bookshelf_detail.png)
@@ -87,12 +89,12 @@ python3 -m wonder              # or: wonder
 
 ### Polyglot
 
-Pick one of 20 language pairs and Polyglot installs a Claude Code + Codex hook that surfaces a phrase from that pair every Nth tool call — ~250 items per pair (~5,000 total). Switching pairs never re-edits `settings.json`; only the active-pair config flips.
+Pick one of 70 language pairs and Polyglot installs a Claude Code + Codex hook that surfaces a phrase from that pair every Nth tool call — at least 250 items per pair (more than 18,000 total). Switching pairs never re-edits `settings.json`; only the active-pair config flips.
 
 ![Polyglot — Ambient Hook](assets/screenshots/polyglot_ambient_hook.png)
 
 ```bash
-python3 -m polyglot                          # or: polyglot   — opens the 20-pair cabinet
+python3 -m polyglot                          # or: polyglot   — opens the 70-pair cabinet
 python3 -m polyglot.skill.installer status   # see what's installed and which pair is active
 python3 -m polyglot.skill.cadence 10 --both  # one phrase per 10 events on both Claude and Codex
 ```
@@ -102,8 +104,9 @@ python3 -m polyglot.skill.cadence 10 --both  # one phrase per 10 events on both 
 ## Requirements
 
 - Python 3.10+
-- A terminal with curses support (most Unix terminals, macOS Terminal, iTerm2)
+- macOS or Linux with a curses-capable terminal
 - macOS for audio playback (optional — game works without sound)
+- Windows is not currently supported.
 
 ## Install
 
@@ -146,7 +149,6 @@ User script directories:
 |---|---|
 | macOS | `$(python3 -m site --user-base)/bin` |
 | Linux | `$(python3 -m site --user-base)/bin` |
-| Windows | `$(py -m site --user-base)\Scripts` |
 
 Prefer not to touch `PATH`? Run the modules directly instead — this always works after `pip install -e .`:
 
@@ -163,23 +165,6 @@ python3 -m wonder
 python3 -m polyglot
 ```
 
-```powershell
-# Windows PowerShell: temporary PATH update for the current session
-$env:Path = "$(py -m site --user-base)\Scripts;$env:Path"
-
-# Windows: run without touching PATH
-py -m terminal_arcade
-py -m dino_game
-py -m snake_game
-py -m tetris_game
-py -m chess_game
-py -m star_blast
-py -m kombat_game
-py -m bookshelf
-py -m wonder
-py -m polyglot
-```
-
 ## Run
 
 The module form (`python3 -m ...`) always works after `pip install -e .`. The short script names (`arcade`, `dino-run`, etc.) only work if the user script directory is on your `PATH` — see the install notes above if `command not found`.
@@ -188,36 +173,35 @@ The module form (`python3 -m ...`) always works after `pip install -e .`. The sh
 # Full arcade launcher (recommended — always works)
 python3 -m terminal_arcade
 # or, if user scripts are on PATH: arcade
-# Windows: py -m terminal_arcade
 
 # Direct shortcuts
 
 # Dino Run
-python3 -m dino_game        # or: dino-run        # Windows: py -m dino_game
+python3 -m dino_game        # or: dino-run
 
 # Snake
-python3 -m snake_game       # or: snake-game      # Windows: py -m snake_game
+python3 -m snake_game       # or: snake-game
 
 # Tetris
-python3 -m tetris_game      # or: tetris          # Windows: py -m tetris_game
+python3 -m tetris_game      # or: tetris
 
 # Chess
-python3 -m chess_game       # or: chess-game      # Windows: py -m chess_game
+python3 -m chess_game       # or: chess-game
 
 # Star Blast
-python3 -m star_blast       # or: star-blast      # Windows: py -m star_blast
+python3 -m star_blast       # or: star-blast
 
 # Terminal Kombat
-python3 -m kombat_game      # or: terminal-kombat # Windows: py -m kombat_game
+python3 -m kombat_game      # or: terminal-kombat
 
 # The Bookshelf
-python3 -m bookshelf        # or: bookshelf       # Windows: py -m bookshelf
+python3 -m bookshelf        # or: bookshelf
 
 # Wonder
-python3 -m wonder           # or: wonder          # Windows: py -m wonder
+python3 -m wonder           # or: wonder
 
 # Polyglot
-python3 -m polyglot         # or: polyglot        # Windows: py -m polyglot
+python3 -m polyglot         # or: polyglot
 ```
 
 ## Test

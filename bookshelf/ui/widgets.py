@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import curses
+
 from bookshelf.ui.colors import (
     BODY_TEXT,
     FAVORITE_HEART,
@@ -12,23 +13,7 @@ from bookshelf.ui.colors import (
     TITLE_HIGHLIGHT,
 )
 from bookshelf.ui.ascii_art import truncate
-
-
-def safe_addstr(stdscr, y: int, x: int, text: str, attr: int = 0) -> None:
-    """Write text to screen with bounds checking."""
-    h, w = stdscr.getmaxyx()
-    if y < 0 or y >= h or x >= w:
-        return
-    if x < 0:
-        text = text[-x:]
-        x = 0
-    max_len = w - x - 1
-    if max_len <= 0:
-        return
-    try:
-        stdscr.addnstr(y, x, text, max_len, attr)
-    except curses.error:
-        pass
+from terminal_arcade.ui import safe_addstr
 
 
 def draw_box(stdscr, y: int, x: int, height: int, width: int, attr: int = 0) -> None:

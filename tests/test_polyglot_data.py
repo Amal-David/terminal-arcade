@@ -1,4 +1,4 @@
-"""Polyglot data integrity tests — all 20 pair modules must shape up."""
+"""Polyglot data integrity tests — all 70 pair modules must shape up."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ MIN_PHRASES_PER_PAIR = 200
 
 
 class PolyglotDataIntegrity(unittest.TestCase):
-    def test_loads_exactly_twenty_pairs(self) -> None:
+    def test_loads_exactly_seventy_pairs(self) -> None:
         self.assertEqual(EXPECTED_PAIR_COUNT, len(ALL_PAIRS))
         self.assertEqual(EXPECTED_PAIR_COUNT, len(list_pairs()))
 

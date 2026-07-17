@@ -3,9 +3,10 @@
 from __future__ import annotations
 
 import json
-import os
 import sys
 from pathlib import Path
+
+from terminal_arcade.platform import app_data_dir, atomic_write_json
 
 # State lives in a durable location, not /tmp/
 APP_DIR_NAME = "bookshelf"
@@ -18,14 +19,7 @@ DEFAULT_CONTEXT_MATCHING = True
 
 def _state_dir() -> Path:
     """Platform-aware state directory (same as bookshelf storage)."""
-    home = Path.home()
-    if sys.platform == "darwin":
-        root = home / "Library" / "Application Support"
-    elif os.name == "nt":
-        root = Path(os.environ.get("APPDATA", home / "AppData" / "Roaming"))
-    else:
-        root = Path(os.environ.get("XDG_DATA_HOME", home / ".local" / "share"))
-    return root / APP_DIR_NAME
+    return app_data_dir(APP_DIR_NAME)
 
 
 HOOK_STATE_FILE = _state_dir() / "hook_state.json"
@@ -42,8 +36,7 @@ def load_hook_state() -> dict:
 def save_hook_state(state: dict) -> None:
     """Save hook state."""
     try:
-        HOOK_STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
-        HOOK_STATE_FILE.write_text(json.dumps(state), encoding="utf-8")
+        atomic_write_json(HOOK_STATE_FILE, state, indent=None)
     except OSError:
         pass
 

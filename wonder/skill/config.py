@@ -21,6 +21,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+from terminal_arcade.platform import atomic_write_json  # noqa: E402
 from wonder.storage import data_dir, load_config  # noqa: E402
 
 DEFAULT_CADENCE = "daily"
@@ -50,8 +51,7 @@ def load_hook_state() -> dict:
 def save_hook_state(state: dict) -> None:
     path = _state_path()
     try:
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(json.dumps(state, indent=2), encoding="utf-8")
+        atomic_write_json(path, state)
     except OSError:
         pass
 
