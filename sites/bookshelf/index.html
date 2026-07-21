@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f1ecd9">
+    <meta name="description" content="Bookshelf turns the pauses between Codex and Claude Code turns into small, perspective-widening encounters with books.">
+    <link rel="canonical" href="https://bookshelf-agent.pages.dev/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bookshelf">
+    <meta property="og:title" content="Bookshelf — Book quotes inside Codex and Claude Code">
+    <meta property="og:description" content="Let the terminal widen your world while your coding agent works.">
+    <meta property="og:url" content="https://bookshelf-agent.pages.dev/">
+    <meta property="og:image" content="https://bookshelf-agent.pages.dev/assets/bookshelf-poster.png">
+    <meta property="og:image:alt" content="Bookshelf selecting a compact relevant book quote in the terminal">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bookshelf — Let the terminal widen your world">
+    <meta name="twitter:description" content="A private, token-efficient literary companion inside Codex and Claude Code sessions.">
+    <meta name="twitter:image" content="https://bookshelf-agent.pages.dev/assets/bookshelf-poster.png">
+    <title>Bookshelf — Book quotes inside Codex and Claude Code</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <style>
+      @font-face { font-family: "Source Serif"; src: url("./assets/fonts/source-serif-4-latin-400-normal.woff2") format("woff2"); font-display: swap; font-weight: 400; }
+      @font-face { font-family: "Source Serif"; src: url("./assets/fonts/source-serif-4-latin-600-normal.woff2") format("woff2"); font-display: swap; font-weight: 600; }
+      @font-face { font-family: "JetBrains Mono"; src: url("./assets/fonts/jetbrains-mono-latin-400-normal.woff2") format("woff2"); font-display: swap; font-weight: 400; }
+      :root { --paper:#f1ecd9; --cream:#faf7ea; --forest:#254f31; --deep:#17371f; --rose:#dc9cac; --ink:#153d2a; --rule:rgba(21,61,42,.3); --serif:"Source Serif", Georgia, serif; --mono:"JetBrains Mono", monospace; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; min-width:0; overflow-x:hidden; background:linear-gradient(rgba(21,61,42,.025) 1px,transparent 1px),var(--paper); background-size:100% 8px; color:var(--ink); font-family:var(--serif); }
+      a { color:inherit; text-underline-offset:.18em; }
+      a:focus-visible, summary:focus-visible { outline:3px solid var(--rose); outline-offset:4px; }
+      .skip-link { background:var(--deep); color:var(--cream); left:1rem; padding:.7rem 1rem; position:absolute; top:-4rem; z-index:5; }
+      .skip-link:focus { top:1rem; }
+      .shell { margin:auto; max-width:1440px; padding:0 clamp(1.25rem,4vw,4rem); }
+      .masthead { align-items:center; border-bottom:1px solid var(--rule); display:flex; justify-content:space-between; min-height:76px; }
+      .brand { align-items:center; display:inline-flex; font-size:1.55rem; gap:.7rem; text-decoration:none; }
+      .mark { align-items:center; border:1px solid var(--rose); border-radius:50%; display:inline-flex; font:.75rem var(--mono); height:2rem; justify-content:center; width:2rem; }
+      nav { display:flex; font:.68rem var(--mono); gap:1.4rem; letter-spacing:.09em; text-transform:uppercase; }
+      nav a { text-decoration:none; }
+      .hero { display:grid; gap:clamp(2.5rem,7vw,8rem); grid-template-columns:minmax(0,1.25fr) minmax(17rem,.75fr); padding:clamp(5rem,10vw,10rem) 0 7rem; }
+      .eyebrow { font:.7rem var(--mono); letter-spacing:.16em; margin:0 0 1.5rem; text-transform:uppercase; }
+      h1,h2,h3,p { margin-top:0; }
+      h1 { font-size:clamp(3.8rem,8vw,7.6rem); font-weight:400; letter-spacing:-.06em; line-height:.88; margin-bottom:2rem; max-width:50rem; }
+      h1 em { color:var(--forest); font-style:normal; }
+      h2 { font-size:clamp(2.5rem,5vw,5.5rem); font-weight:400; letter-spacing:-.05em; line-height:.94; }
+      h3 { font-size:1.7rem; font-weight:400; line-height:1.05; }
+      .lede { font-size:clamp(1.2rem,2vw,1.65rem); line-height:1.5; max-width:42rem; }
+      .actions { display:flex; flex-wrap:wrap; gap:.8rem; margin-top:2rem; }
+      .button { border:1px solid var(--ink); display:inline-block; font:.68rem var(--mono); letter-spacing:.09em; padding:1rem 1.25rem; text-decoration:none; text-transform:uppercase; }
+      .button.primary { background:var(--forest); border-color:var(--forest); color:var(--cream); }
+      .facts { border-top:1px solid var(--rule); display:grid; gap:.9rem; grid-template-columns:repeat(3,minmax(0,1fr)); margin-top:3.5rem; padding-top:1rem; }
+      .facts strong { display:block; font:1.15rem var(--mono); margin-bottom:.25rem; }
+      .facts span { font:.62rem var(--mono); letter-spacing:.06em; text-transform:uppercase; }
+      .quote-card { align-self:center; background:var(--forest); box-shadow:18px 18px 0 var(--rose); color:var(--cream); min-width:0; padding:1.7rem; position:relative; }
+      .quote-card::before { border:1px solid rgba(250,247,234,.3); content:""; inset:.9rem; pointer-events:none; position:absolute; }
+      .quote-card p { font:.64rem var(--mono); letter-spacing:.13em; position:relative; text-align:right; text-transform:uppercase; }
+      blockquote { font-size:clamp(2.7rem,4vw,4.4rem); letter-spacing:-.05em; line-height:.96; margin:7rem .5rem 4rem; position:relative; }
+      .attribution { border-top:1px solid rgba(250,247,234,.45); display:flex; font:.62rem var(--mono); gap:1rem; justify-content:space-between; letter-spacing:.08em; padding:.85rem .5rem 0; position:relative; text-transform:uppercase; }
+      section { padding:clamp(4.5rem,9vw,8rem) 0; }
+      .dark { background:var(--deep); color:var(--cream); }
+      .section-grid { display:grid; gap:2rem; grid-template-columns:.7fr 1.3fr; }
+      .section-copy { font-size:1.18rem; line-height:1.55; max-width:44rem; }
+      .terminal { background:#0e2015; border:1px solid rgba(250,247,234,.32); box-shadow:12px 12px 0 var(--rose); color:var(--cream); font:clamp(.72rem,1.5vw,.94rem)/1.65 var(--mono); margin:2.5rem 0 0; max-width:100%; overflow-wrap:anywhere; padding:1.4rem; white-space:pre-wrap; }
+      .terminal .dim { color:#b9c9b4; }
+      .terminal .result { color:#ffe4a4; }
+      .rules { border-top:1px solid var(--rule); margin:2rem 0 0; padding:0; }
+      .rules li { border-bottom:1px solid var(--rule); list-style:none; padding:1rem 0; }
+      .rules strong { font:1rem var(--mono); }
+      .privacy { background:var(--rose); color:var(--deep); }
+      .privacy-grid { display:grid; gap:2rem; grid-template-columns:1fr 1fr; }
+      .privacy ul { margin:0; padding-left:1.2rem; }
+      .privacy li { line-height:1.55; margin:.55rem 0; }
+      .counts { display:grid; gap:0; grid-template-columns:repeat(2,minmax(0,1fr)); margin-top:2.5rem; }
+      .counts div { border-bottom:1px solid var(--rule); min-width:0; padding:1.2rem 0; }
+      .counts div:nth-child(odd) { padding-right:1.4rem; }
+      .counts strong { display:block; font:clamp(1.55rem,3vw,2.5rem) var(--mono); }
+      .counts span { font-size:1.02rem; line-height:1.3; }
+      .tiers { display:grid; gap:1rem; grid-template-columns:repeat(2,minmax(0,1fr)); margin-top:2rem; }
+      .tier { border:1px solid var(--ink); min-width:0; padding:1.3rem; }
+      .tier p { line-height:1.5; margin-bottom:0; }
+      .tier small { font:.65rem var(--mono); letter-spacing:.07em; text-transform:uppercase; }
+      .media-frame { border:1px solid rgba(250,247,234,.35); box-shadow:12px 12px 0 var(--rose); margin-top:2.5rem; max-width:100%; }
+      .media-label { display:flex; font:.62rem var(--mono); gap:1rem; justify-content:space-between; letter-spacing:.09em; padding:.8rem 1rem; text-transform:uppercase; }
+      video { background:#0c160f; display:block; max-width:100%; width:100%; }
+      .media-pending { background:#0c160f; min-height:15rem; padding:1rem; }
+      .media-pending p { font-size:1.1rem; line-height:1.5; margin:3.5rem auto; max-width:37rem; text-align:center; }
+      .media-pending a { font-family:var(--mono); font-size:.72rem; }
+      .transcript { border:1px solid rgba(250,247,234,.35); border-top:0; margin:0; padding:1rem; }
+      .transcript summary { cursor:pointer; font:.72rem var(--mono); letter-spacing:.08em; text-transform:uppercase; }
+      .transcript p { line-height:1.5; margin:1rem 0 0; max-width:58rem; }
+      .cta { background:var(--forest); color:var(--cream); }
+      .cta h2 { max-width:58rem; }
+      footer { border-top:1px solid rgba(250,247,234,.3); display:flex; font:.62rem var(--mono); gap:1rem; justify-content:space-between; letter-spacing:.08em; padding:1.5rem 0; text-transform:uppercase; }
+      @media (max-width: 760px) { .masthead { min-height:66px; } nav a:not(:last-child) { display:none; } .hero,.section-grid,.privacy-grid { grid-template-columns:1fr; } .hero { padding-top:4.5rem; } .quote-card { box-shadow:9px 9px 0 var(--rose); } blockquote { margin-top:4rem; } .facts { gap:.7rem; } .tiers { grid-template-columns:1fr; } footer { flex-direction:column; } }
+      @media (max-width: 390px) { .shell { padding-left:1rem; padding-right:1rem; } h1 { font-size:3.35rem; } .facts { grid-template-columns:1fr; } .counts { grid-template-columns:1fr; } .counts div:nth-child(odd) { padding-right:0; } .media-label { align-items:flex-start; flex-direction:column; } }
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation-duration:.01ms !important; scroll-behavior:auto !important; transition-duration:.01ms !important; } }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="shell masthead">
+      <a class="brand" href="#top"><span class="mark" aria-hidden="true">B</span>Bookshelf</a>
+      <nav aria-label="Primary navigation"><a href="#proof">Proof</a><a href="#privacy">Privacy</a><a href="#catalog">Catalog</a><a href="https://github.com/Amal-David/bookshelf">GitHub ↗</a></nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="shell hero" id="top">
+        <div>
+          <p class="eyebrow">Bookshelf for Codex + Claude Code</p>
+          <h1>Let the terminal <em>widen your world</em> while it works.</h1>
+          <p class="lede">Instead of staring at another tool call, meet one useful thought every few completed turns—a quiet quote chosen to add perspective without stealing your focus.</p>
+          <div class="actions"><a class="button primary" href="https://github.com/Amal-David/bookshelf">Add Bookshelf to your agent ↗</a><a class="button" href="#demo">Watch five real turns</a></div>
+          <div class="facts" aria-label="Ambient delivery summary"><div><strong>5</strong><span>completed turns</span></div><div><strong>1</strong><span>widening thought</span></div><div><strong>0</strong><span>model calls</span></div></div>
+        </div>
+        <aside class="quote-card" aria-label="Example Bookshelf result"><p>turn 5 · a moment of perspective</p><blockquote>“Do nothing which is of no use.”</blockquote><div class="attribution"><span>Miyamoto Musashi</span><span>The Book of Five Rings</span></div></aside>
+      </section>
+
+      <section class="dark" id="proof"><div class="shell">
+        <div class="section-grid"><p class="eyebrow">Useful waiting, by design</p><div><h2>A small literary reset between agent turns.</h2><p class="section-copy">Bookshelf counts completed turns locally and stays quiet until its cadence is due. Then it surfaces one compact quote through the same Stop-hook path packaged for Codex and Claude Code.</p></div></div>
+        <pre class="terminal" aria-label="Terminal example"><code><span class="dim">$</span> bookshelf quote --intent refactor
+
+<span class="result">“Do nothing which is of no use.” — Miyamoto Musashi, The Book of Five Rings</span>
+
+<span class="dim">$</span> bookshelf feedback up<span class="dim">|down</span></code></pre>
+        <ul class="rules"><li><strong>Intent → tags, locally.</strong> <span>For example, <code>refactor</code> maps to simplicity, discipline, and focus.</span></li><li><strong>Feedback stays local.</strong> <span><code>bookshelf feedback up|down</code> adjusts a future local pick; it does not report a task back to a service.</span></li></ul>
+      </div></section>
+
+      <section class="privacy" id="privacy"><div class="shell privacy-grid"><div><p class="eyebrow">Bounded by design</p><h2>Enough context to be useful. Nothing else.</h2></div><div class="section-copy"><p>Bookshelf accepts an explicit intent or a bounded host metadata label only. It does not accept or inspect commands, paths, prompts, transcripts, code, tool arguments, model output, or network calls.</p><ul><li>Ambient delivery is optional and off by default.</li><li>If the host cannot provide the bounded signal safely, matching fails closed.</li><li>Adapters keep their own errors contained; this is not a guarantee about a host turn.</li></ul></div></div></section>
+
+      <section class="shell" id="catalog"><p class="eyebrow">The library behind the moment</p><h2>Thousands of possible encounters, selected with clear boundaries.</h2><p class="section-copy">The interactive terminal library, search, reading lists, and on-demand quote command are there when you want them. They support the ambient moment; they are not the point of it.</p><div class="counts" aria-label="Catalog counts"><div><strong>3,124</strong><span>quote records</span></div><div><strong>3,111</strong><span>normalized unique texts</span></div><div><strong>1,117</strong><span>catalogued books</span></div><div><strong>949</strong><span>quoted works</span></div><div><strong>585</strong><span>v2 primary-source-linked records pending human review</span></div><div><strong>2,539</strong><span>legacy records explicitly unverified</span></div></div></section>
+
+      <section class="shell" id="hosts"><div class="section-grid"><p class="eyebrow">Where it meets you</p><div><h2>Inside the coding session. Not in another tab.</h2><p class="section-copy">The plugin packages the same fail-soft Stop hook for Codex Desktop, Codex CLI, and Claude Code. Pi and Hermes adapters are included too, but the central experience is simple: while your agent works, the waiting gives something back.</p></div></div><div class="tiers"><article class="tier"><small>Codex Desktop + CLI</small><h3>One plugin surface</h3><p>Install the packaged Codex plugin and let its <code>systemMessage</code> appear at the Stop boundary.</p></article><article class="tier"><small>Claude Code</small><h3>The same cadence</h3><p>The validated plugin declares the same optional Stop adapter for Claude Code sessions.</p></article><article class="tier"><small>Pi + Hermes</small><h3>Broader agent support</h3><p>Both install the canonical skill and their native end-of-turn adapter.</p></article><article class="tier"><small>Private by default</small><h3>Local and bounded</h3><p>No prompt, transcript, code, command, path, tool argument, or model output is sent anywhere.</p></article></div></section>
+
+      <section class="dark" id="demo"><div class="shell"><div class="section-grid"><p class="eyebrow">Real CLI capture</p><div><h2>Five completed turns. One useful interruption.</h2><p class="section-copy">This recording invokes the shipped standalone Stop hook in an isolated terminal. The first four turns stay silent; the fifth returns the compact system message that Codex and Claude Code can surface in-session.</p></div></div><div class="media-frame"><div class="media-label"><span>Bookshelf · Codex + Claude Code compatible Stop hook</span><span>Real terminal capture</span></div><video controls playsinline preload="metadata" poster="./assets/bookshelf-poster.png"><source src="./assets/bookshelf-demo.mp4" type="video/mp4">Your browser does not support the Bookshelf demo video.</video></div><details class="transcript"><summary>Transcript and summary</summary><p>A real isolated CLI capture invokes five completed-turn Stop events. The first four return no visible message. On the fifth, Bookshelf emits: “Do nothing which is of no use.” — Miyamoto Musashi, <em>The Book of Five Rings</em>. The video intentionally shows only the CLI behavior, while the packaged hook is shared by Codex and Claude Code.</p></details></div></section>
+
+      <section class="cta"><div class="shell"><p class="eyebrow">Make the waiting useful</p><h2>Let every few turns leave you a little less narrow.</h2><div class="actions"><a class="button" href="https://github.com/Amal-David/bookshelf">Add Bookshelf to your agent ↗</a><a class="button" href="#top">Back to the beginning ↑</a></div><footer><span>Bookshelf · MIT-licensed software</span><span>Catalog provenance varies by record</span></footer></div></section>
+    </main>
+  <script src="https://pagecast-feedback.amaldavid77773524.workers.dev/widget.js" data-slug="endlessly-brooding-cavern-29bf971e4f06b37e880793b556d0a682" data-publication="endlessly-brooding-cavern-29bf971e4f06b37e880793b556d0a682" data-reactions="false" defer></script>
+<a data-pagecast-badge href="https://pagecasthq.pages.dev/?ref=badge" target="_blank" rel="noopener" style="position:fixed;left:14px;bottom:14px;z-index:2147483646;display:inline-flex;align-items:center;padding:6px 11px;font:500 12px/1 -apple-system,BlinkMacSystemFont,system-ui,sans-serif;color:#52525b;text-decoration:none;background:#fff;border:1px solid #e4e4e7;border-radius:999px;box-shadow:0 2px 10px rgba(0,0,0,.06)">Published with&nbsp;<strong style="font-weight:600;color:#c9530a">Pagecast</strong></a>
+</body>
+</html>

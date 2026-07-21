@@ -1,0 +1,18 @@
+# Bookshelf
+
+> Bookshelf surfaces compact, relevant book quotes during Codex, Claude Code,
+> Pi, and Hermes sessions. Selection, cadence, feedback, and history stay local;
+> the runtime makes no model or network calls.
+
+## Use Bookshelf
+
+- [Source and installation](https://github.com/Amal-David/bookshelf)
+- [Project README](https://github.com/Amal-David/bookshelf#readme)
+- [Agent skill](https://bookshelf-agent.pages.dev/.well-known/agent-skills/bookshelf/SKILL.md)
+
+## Product boundaries
+
+- The public website is documentation for locally installed software.
+- Bookshelf does not expose a hosted API, MCP server, A2A agent, authentication
+  service, payment service, or commerce protocol.
+- Book and quote provenance varies by record and is described in the repository.

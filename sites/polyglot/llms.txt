@@ -1,0 +1,18 @@
+# Polyglot
+
+> Polyglot turns pauses between Codex, Claude Code, Pi, and Hermes turns into
+> private language-learning moments, with optional typed recall and local spaced
+> repetition across 74 language directions.
+
+## Use Polyglot
+
+- [Source and installation](https://github.com/Amal-David/polyglot)
+- [Project README](https://github.com/Amal-David/polyglot#readme)
+- [Agent skill](https://polyglot-agent.pages.dev/.well-known/agent-skills/polyglot/SKILL.md)
+
+## Product boundaries
+
+- The public website is documentation for locally installed software.
+- Polyglot does not expose a hosted API, MCP server, A2A agent, authentication
+  service, payment service, or commerce protocol.
+- Typed answers are not retained; explicit grades schedule local review state.

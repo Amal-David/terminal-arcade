@@ -1,0 +1,25 @@
+# Bookshelf welcomes search and agent-assisted discovery.
+User-agent: *
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://bookshelf-agent.pages.dev/sitemap.xml
