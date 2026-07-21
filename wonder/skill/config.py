@@ -21,7 +21,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from terminal_arcade.platform import atomic_write_json  # noqa: E402
+from terminal_arcade.platform import atomic_write_json, locked_json_update  # noqa: E402
 from wonder.storage import data_dir, load_config  # noqa: E402
 
 DEFAULT_CADENCE = "daily"
@@ -33,6 +33,7 @@ CODEX_KEY = "codex_wonder_cadence"
 CATEGORY_KEY = "wonder_category"
 
 HOOK_STATE_FILE = "hook_state.json"
+DEFAULT_HOOK_STATE = {}
 
 VALID_CATEGORIES = {"rotate", "funny", "heartwarming", "weird", "inspiring", "surprise"}
 
@@ -54,6 +55,11 @@ def save_hook_state(state: dict) -> None:
         atomic_write_json(path, state)
     except OSError:
         pass
+
+
+def update_hook_state(update):
+    """Run a hook-state read/modify/write transaction under an exclusive lock."""
+    return locked_json_update(_state_path(), DEFAULT_HOOK_STATE, update, indent=None)
 
 
 def _normalize_cadence(value, default):

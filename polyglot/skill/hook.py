@@ -51,14 +51,15 @@ def main() -> None:
     from polyglot.skill.config import (
         get_active_pair_id,
         get_cadence,
-        load_hook_state,
-        save_hook_state,
+        update_hook_state,
     )
 
-    state = load_hook_state()
-    call_count = state.get("call_count", 0) + 1
-    state["call_count"] = call_count
-    save_hook_state(state)
+    def increment_call(state: dict) -> int:
+        call_count = state.get("call_count", 0) + 1
+        state["call_count"] = call_count
+        return call_count
+
+    call_count = update_hook_state(increment_call)
 
     pair_id = get_active_pair_id()
     if not pair_id:

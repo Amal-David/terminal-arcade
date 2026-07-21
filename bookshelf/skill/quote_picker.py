@@ -114,35 +114,35 @@ def pick_quote(context_tags: list[str] | None = None) -> dict | None:
     total_quotes_shown in the shared hook state.
     """
     from bookshelf.data.quotes import QUOTES
-    from bookshelf.skill.config import load_hook_state, save_hook_state
+    from bookshelf.skill.config import update_hook_state
 
     if not QUOTES:
         return None
 
-    state = load_hook_state()
-    shown_counts: dict[str, int] = state.get("shown_counts", {})
-    recent_indices: list[int] = state.get("recent_indices", [])
-    idx = select_quote_index(QUOTES, shown_counts, recent_indices, context_tags)
-    q = QUOTES[idx]
+    def choose(state: dict) -> dict:
+        shown_counts: dict[str, int] = state.get("shown_counts", {}) or {}
+        recent_indices: list[int] = state.get("recent_indices", []) or []
+        idx = select_quote_index(QUOTES, shown_counts, recent_indices, context_tags)
+        q = QUOTES[idx]
 
-    shown_counts[str(idx)] = shown_counts.get(str(idx), 0) + 1
-    recent_indices.append(idx)
-    if len(recent_indices) > RECENT_WINDOW:
-        recent_indices = recent_indices[-RECENT_WINDOW:]
+        shown_counts[str(idx)] = shown_counts.get(str(idx), 0) + 1
+        recent_indices.append(idx)
+        if len(recent_indices) > RECENT_WINDOW:
+            recent_indices = recent_indices[-RECENT_WINDOW:]
 
-    state["shown_counts"] = shown_counts
-    state["recent_indices"] = recent_indices
-    state["last_quote_idx"] = idx
-    state["total_quotes_shown"] = state.get("total_quotes_shown", 0) + 1
-    save_hook_state(state)
+        state["shown_counts"] = shown_counts
+        state["recent_indices"] = recent_indices
+        state["last_quote_idx"] = idx
+        state["total_quotes_shown"] = state.get("total_quotes_shown", 0) + 1
 
-    times = shown_counts[str(idx)]
-    return {
-        "text": q.text,
-        "author": q.author,
-        "book": q.book_title,
-        "tags": list(q.tags),
-        "times_shown": times,
-        "total_shown": state["total_quotes_shown"],
-        "unique_shown": len(shown_counts),
-    }
+        return {
+            "text": q.text,
+            "author": q.author,
+            "book": q.book_title,
+            "tags": list(q.tags),
+            "times_shown": shown_counts[str(idx)],
+            "total_shown": state["total_quotes_shown"],
+            "unique_shown": len(shown_counts),
+        }
+
+    return update_hook_state(choose)

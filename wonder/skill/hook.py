@@ -43,8 +43,7 @@ if PROJECT_ROOT not in sys.path:
 
 from wonder.skill.config import (  # noqa: E402
     get_cadence,
-    load_hook_state,
-    save_hook_state,
+    update_hook_state,
 )
 from wonder.skill.wonder_picker import (  # noqa: E402
     format_system_message,
@@ -81,11 +80,8 @@ def main() -> None:
     # input_data is read for symmetry with bookshelf and future context use.
     _ = input_data
 
-    state = load_hook_state()
     cadence = get_cadence()
-
-    fire = _should_fire(cadence, state)
-    save_hook_state(state)
+    fire = update_hook_state(lambda state: _should_fire(cadence, state))
 
     if not fire:
         print(json.dumps({}))

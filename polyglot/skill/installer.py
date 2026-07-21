@@ -22,6 +22,8 @@ import argparse
 import difflib
 import json
 import os
+import re
+import stat
 import sys
 import tempfile
 from dataclasses import dataclass
@@ -70,13 +72,20 @@ def _atomic_backup_once(path: Path) -> None:
     content. If the backup already exists, we leave it alone.
     """
     backup = path.with_name(path.name + SETTINGS_BACKUP_SUFFIX)
+    source_mode = stat.S_IMODE(path.stat().st_mode)
+    source_bytes = path.read_bytes()
     try:
-        fd = os.open(str(backup), os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644)
+        fd = os.open(str(backup), os.O_CREAT | os.O_EXCL | os.O_WRONLY, source_mode)
     except FileExistsError:
         return
     try:
-        os.write(fd, path.read_bytes())
-    finally:
+        os.fchmod(fd, source_mode)
+        os.write(fd, source_bytes)
+    except BaseException:
+        os.close(fd)
+        backup.unlink(missing_ok=True)
+        raise
+    else:
         os.close(fd)
 
 
@@ -304,33 +313,65 @@ def codex_snippet(hook_cmd: str) -> str:
     return f'notify = ["python3", "{hook_cmd}"]'
 
 
-def _codex_hook_present(text: str, hook_cmd: str) -> bool:
-    for line in text.splitlines():
+_CODEX_NOTIFY_KEY = re.compile(r"^notify\s*=")
+_TOML_TABLE_HEADER = re.compile(r"^\[\[?[A-Za-z0-9_.\"'-]+\]\]?(?:\s*#.*)?$")
+
+
+def _is_table_header(line: str) -> bool:
+    return bool(_TOML_TABLE_HEADER.match(line.strip()))
+
+
+def _root_notify_index(lines: list[str]) -> int | None:
+    """Return the exact root-level ``notify`` key before the first TOML table."""
+    for index, line in enumerate(lines):
         stripped = line.strip()
-        if stripped.startswith("notify") and hook_cmd in stripped and "polyglot" in stripped:
-            return True
-    return False
+        if not stripped or stripped.startswith("#"):
+            continue
+        if _is_table_header(stripped):
+            break
+        if _CODEX_NOTIFY_KEY.match(stripped):
+            return index
+    return None
+
+
+def _first_table_index(lines: list[str]) -> int | None:
+    for index, line in enumerate(lines):
+        stripped = line.strip()
+        if _is_table_header(stripped):
+            return index
+    return None
+
+
+def _codex_hook_present(text: str, hook_cmd: str) -> bool:
+    lines = text.splitlines()
+    index = _root_notify_index(lines)
+    if index is None:
+        return False
+    line = lines[index]
+    return hook_cmd in line and "polyglot" in line
 
 
 def _replace_or_append_codex_notify(text: str, hook_cmd: str) -> str:
     snippet = codex_snippet(hook_cmd)
     lines = text.splitlines()
-    out: list[str] = []
-    replaced = False
-    for line in lines:
-        stripped = line.strip()
-        if not replaced and stripped.startswith("notify") and "=" in stripped:
-            out.append(snippet)
-            replaced = True
-            continue
-        out.append(line)
-    if not replaced:
-        if out and out[-1].strip():
-            out.append("")
-        out.append(snippet)
-    if not text.endswith("\n"):
-        return "\n".join(out) + "\n"
-    return "\n".join(out) + "\n"
+    notify_index = _root_notify_index(lines)
+    if notify_index is not None:
+        notify_line = lines[notify_index]
+        if notify_line.count("[") != notify_line.count("]"):
+            raise ValueError("multiline root notify values require a manual edit")
+        lines[notify_index] = snippet
+    else:
+        table_index = _first_table_index(lines)
+        insert_at = len(lines) if table_index is None else table_index
+        prefix = lines[:insert_at]
+        suffix = lines[insert_at:]
+        if prefix and prefix[-1].strip():
+            prefix.append("")
+        prefix.append(snippet)
+        if suffix and suffix[0].strip():
+            prefix.append("")
+        lines = prefix + suffix
+    return "\n".join(lines) + "\n"
 
 
 def install_codex_hook(
@@ -359,7 +400,13 @@ def install_codex_hook(
     if _codex_hook_present(text, hook_cmd):
         return HookOutcome("codex", InstallResult.ALREADY_PRESENT, "Codex hook already installed.")
 
-    new_text = _replace_or_append_codex_notify(text, hook_cmd)
+    try:
+        new_text = _replace_or_append_codex_notify(text, hook_cmd)
+    except ValueError as exc:
+        msg = f"Could not safely update {config_path}: {exc}. Replace the root notify key with:\n\n"
+        msg += codex_snippet(hook_cmd)
+        print(msg)
+        return HookOutcome("codex", InstallResult.PRINTED_FALLBACK, msg)
     diff = "".join(
         difflib.unified_diff(
             text.splitlines(keepends=True),
