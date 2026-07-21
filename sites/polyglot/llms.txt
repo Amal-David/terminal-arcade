@@ -8,7 +8,7 @@
 
 - [Source and installation](https://github.com/Amal-David/polyglot)
 - [Project README](https://github.com/Amal-David/polyglot#readme)
-- [Agent skill](https://polyglot-agent.pages.dev/.well-known/agent-skills/polyglot/SKILL.md)
+- [Agent skill](https://polyglot-5os.pages.dev/.well-known/agent-skills/polyglot/SKILL.md)
 
 ## Product boundaries
 

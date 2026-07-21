@@ -6,17 +6,17 @@ Cloudflare Pages project so origin-scoped crawlers and agent-readiness scanners
 can assess the products independently.
 
 ```bash
-node /path/to/pagecast/src/cli.js pages deploy sites/bookshelf \
-  --project bookshelf-agent --json
+node /path/to/pagecast/src/cli.js publish site sites/bookshelf \
+  --project bookshelf --json
 
-node /path/to/pagecast/src/cli.js pages deploy sites/polyglot \
-  --project polyglot-agent --json
+node /path/to/pagecast/src/cli.js publish site sites/polyglot \
+  --project polyglot --json
 ```
 
 Production URLs:
 
-- <https://bookshelf-agent.pages.dev/>
-- <https://polyglot-agent.pages.dev/>
+- <https://bookshelf-8dz.pages.dev/>
+- <https://polyglot-5os.pages.dev/>
 
 The `_worker.js` file in each bundle performs one narrow dynamic behavior:
 requests for `/` with `Accept: text/markdown` receive that site's `llms.txt`.

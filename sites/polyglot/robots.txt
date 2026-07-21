@@ -22,4 +22,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://polyglot-agent.pages.dev/sitemap.xml
+Sitemap: https://polyglot-5os.pages.dev/sitemap.xml

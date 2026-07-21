@@ -22,4 +22,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://bookshelf-agent.pages.dev/sitemap.xml
+Sitemap: https://bookshelf-8dz.pages.dev/sitemap.xml

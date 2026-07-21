@@ -8,7 +8,7 @@
 
 - [Source and installation](https://github.com/Amal-David/bookshelf)
 - [Project README](https://github.com/Amal-David/bookshelf#readme)
-- [Agent skill](https://bookshelf-agent.pages.dev/.well-known/agent-skills/bookshelf/SKILL.md)
+- [Agent skill](https://bookshelf-8dz.pages.dev/.well-known/agent-skills/bookshelf/SKILL.md)
 
 ## Product boundaries
 

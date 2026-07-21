@@ -28,8 +28,8 @@ class Site:
 
 
 SITES = (
-    Site("bookshelf", "https://bookshelf-agent.pages.dev", "https://github.com/Amal-David/bookshelf"),
-    Site("polyglot", "https://polyglot-agent.pages.dev", "https://github.com/Amal-David/polyglot"),
+    Site("bookshelf", "https://bookshelf-8dz.pages.dev", "https://github.com/Amal-David/bookshelf"),
+    Site("polyglot", "https://polyglot-5os.pages.dev", "https://github.com/Amal-David/polyglot"),
 )
 
 
