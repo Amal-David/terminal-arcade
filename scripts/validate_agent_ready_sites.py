@@ -58,6 +58,14 @@ def validate_site(site: Site) -> None:
     for relative_asset in set(re.findall(r'\./(assets/[^"\) ]+)', html)):
         _require((site.root / relative_asset).is_file(), f"{site.name}: missing {relative_asset}")
 
+    if site.name == "bookshelf":
+        demo_source = (REPO_ROOT / "videos/cli-recordings/bookshelf-claude-demo.sh").read_text(encoding="utf-8")
+        _require("autoplay muted loop" in html, "bookshelf: terminal demo must autoplay as the primary experience")
+        for implementation_detail in ("ambient.py", "systemMessage", "printf '{}'", 'print_line "{}"'):
+            _require(implementation_detail not in demo_source, f"bookshelf: demo leaks hook plumbing: {implementation_detail}")
+        for user_facing_moment in ("Claude Code", "bookshelf/skill/quote_picker.py", "Do nothing which is of no use."):
+            _require(user_facing_moment in demo_source, f"bookshelf: demo is missing {user_facing_moment}")
+
     robots = (site.root / "robots.txt").read_text(encoding="utf-8")
     _require("User-agent: *" in robots and "Allow: /" in robots, f"{site.name}: invalid wildcard crawl rules")
     _require("Content-Signal: ai-train=no, search=yes, ai-input=yes" in robots, f"{site.name}: content signal missing")
