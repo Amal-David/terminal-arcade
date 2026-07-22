@@ -1,0 +1,11 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "bookshelf",
+      "type": "skill-md",
+      "description": "Surface relevant book quotes locally during coding-agent sessions without sending prompts, transcripts, code, commands, or paths to a service.",
+      "url": "/.well-known/agent-skills/bookshelf/SKILL.md"
+    }
+  ]
+}

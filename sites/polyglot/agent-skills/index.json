@@ -1,0 +1,11 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "polyglot",
+      "type": "skill-md",
+      "description": "Surface a small language-learning prompt locally during coding-agent sessions, with optional typed recall and local spaced repetition.",
+      "url": "/.well-known/agent-skills/polyglot/SKILL.md"
+    }
+  ]
+}

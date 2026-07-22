@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3eedc">
+    <meta name="description" content="Polyglot turns the pauses between Codex and Claude Code turns into small, private language-learning moments.">
+    <link rel="canonical" href="https://polyglot-5os.pages.dev/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Polyglot">
+    <meta property="og:title" content="Polyglot — Learn a language while your coding agent works">
+    <meta property="og:description" content="One useful word or phrase every few completed Codex or Claude Code turns.">
+    <meta property="og:url" content="https://polyglot-5os.pages.dev/">
+    <meta property="og:image" content="https://polyglot-5os.pages.dev/assets/polyglot-poster.png">
+    <meta property="og:image:alt" content="Polyglot typed-recall and spaced-repetition learning in the terminal">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Polyglot — Make the waiting teach you something">
+    <meta name="twitter:description" content="Private, token-efficient language learning inside Codex and Claude Code sessions.">
+    <meta name="twitter:image" content="https://polyglot-5os.pages.dev/assets/polyglot-poster.png">
+    <title>Polyglot — Learn a language between Codex and Claude Code turns</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <style>
+      @font-face { font-family: Newsreader; src: url("./assets/fonts/newsreader-latin-400-normal.woff2") format("woff2"); font-display: swap; }
+      @font-face { font-family: Hanken; src: url("./assets/fonts/hanken-grotesk-latin-400-normal.woff2") format("woff2"); font-display: swap; }
+      @font-face { font-family: Hanken; src: url("./assets/fonts/hanken-grotesk-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+      @font-face { font-family: "DM Mono"; src: url("./assets/fonts/dm-mono-latin-400-normal.woff2") format("woff2"); font-display: swap; }
+      :root { --paper:#f3eedc; --cream:#fffbed; --ink:#10133b; --blue:#1736d1; --rule:rgba(23,54,209,.33); --serif:Newsreader,Georgia,serif; --sans:Hanken,Arial,sans-serif; --mono:"DM Mono",monospace; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; color:var(--ink); background:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px),var(--paper); background-size:32px 32px; font-family:var(--sans); }
+      a { color:inherit; text-decoration-thickness:1px; text-underline-offset:3px; }
+      a:focus-visible, summary:focus-visible { outline:3px solid var(--blue); outline-offset:4px; }
+      .skip { position:absolute; left:12px; top:-60px; z-index:10; display:inline-flex; align-items:center; min-height:44px; padding:10px 14px; color:var(--cream); background:var(--blue); font-family:var(--mono); font-size:12px; }
+      .skip:focus { top:12px; }
+      .shell { width:min(1440px,100%); margin:auto; padding-inline:clamp(20px,5vw,68px); }
+      header { display:flex; align-items:center; justify-content:space-between; min-height:78px; border-bottom:1px solid var(--blue); gap:20px; }
+      .brand { display:flex; align-items:center; min-height:44px; gap:12px; font-family:var(--serif); font-size:27px; text-decoration:none; }
+      .mark { display:grid; place-items:center; width:34px; height:34px; color:var(--cream); background:var(--blue); font:13px var(--mono); }
+      nav { display:flex; flex-wrap:wrap; gap:22px; font:10px var(--mono); letter-spacing:.1em; text-transform:uppercase; } nav a { display:inline-flex; align-items:center; min-height:44px; }
+      .eyebrow, .kicker { margin:0; color:var(--blue); font:10px var(--mono); letter-spacing:.15em; text-transform:uppercase; }
+      .hero { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr); gap:clamp(44px,8vw,128px); padding-block:clamp(74px,11vw,162px) 88px; }
+      h1,h2,h3,p { margin-top:0; }
+      h1,h2,h3 { font-weight:400; }
+      h1 { max-width:820px; margin:22px 0 30px; font:clamp(58px,7.4vw,116px)/.89 var(--serif); letter-spacing:-.057em; }
+      h1 em { color:var(--blue); font-style:normal; }
+      .lede { max-width:670px; font-size:clamp(18px,2vw,25px); line-height:1.48; }
+      .actions { display:flex; flex-wrap:wrap; gap:14px; margin-top:34px; }
+      .button { display:inline-flex; align-items:center; justify-content:center; min-height:50px; padding:0 20px; border:1px solid var(--blue); font:10px var(--mono); letter-spacing:.09em; text-decoration:none; text-transform:uppercase; }
+      .button.primary { color:var(--cream); background:var(--blue); }
+      .button:hover { background:var(--blue); color:var(--cream); }
+      .hero-note { align-self:end; border:1px solid var(--blue); background:var(--cream); box-shadow:12px 12px 0 var(--blue); padding:25px; }
+      .hero-note strong { display:block; margin:46px 0 8px; color:var(--blue); font:clamp(48px,6vw,74px)/.8 var(--serif); letter-spacing:-.06em; }
+      .hero-note p:last-child { margin:0; font:12px/1.5 var(--mono); }
+      .stats { display:grid; grid-template-columns:repeat(4,1fr); color:var(--cream); background:var(--blue); }
+      .stats div { min-height:128px; padding:26px clamp(20px,4vw,58px); border-right:1px solid rgba(255,251,237,.4); }
+      .stats strong { display:block; font:48px/.9 var(--serif); letter-spacing:-.045em; }
+      .stats span { display:block; margin-top:9px; font:9px var(--mono); letter-spacing:.13em; text-transform:uppercase; }
+      section { border-bottom:1px solid var(--blue); }
+      .section { padding-block:clamp(70px,10vw,126px); }
+      .heading { display:grid; grid-template-columns:.5fr 1.25fr .82fr; gap:30px; margin-bottom:54px; }
+      h2 { margin:0; font:clamp(43px,5.2vw,80px)/.94 var(--serif); letter-spacing:-.052em; }
+      .heading > p:last-child, .body-copy { font-size:17px; line-height:1.6; }
+      .terminal { overflow:hidden; border:1px solid var(--blue); background:#10133b; color:#fffbed; box-shadow:13px 13px 0 var(--blue); }
+      .terminal-bar { display:flex; justify-content:space-between; gap:12px; padding:13px 18px; border-bottom:1px solid rgba(255,251,237,.4); font:9px var(--mono); letter-spacing:.1em; text-transform:uppercase; }
+      pre { overflow:auto; margin:0; padding:clamp(22px,4vw,52px); font:clamp(13px,1.7vw,20px)/1.8 var(--mono); white-space:pre-wrap; }
+      .prompt { color:#a9b8ff; } .answer { color:#ffec75; } .grade { color:#90e8bd; }
+      .ledger { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid rgba(255,251,237,.4); }
+      .ledger div { padding:18px; } .ledger div + div { border-left:1px solid rgba(255,251,237,.4); }
+      .ledger dt { color:#a9b8ff; font:9px var(--mono); letter-spacing:.12em; text-transform:uppercase; } .ledger dd { margin:7px 0 0; font:16px var(--serif); }
+      .annotation { margin:24px 0 0; max-width:920px; font-size:15px; line-height:1.6; }
+      .principles { display:grid; grid-template-columns:repeat(2,1fr); border:1px solid var(--blue); background:var(--cream); }
+      .principles article { min-height:220px; padding:28px; border-bottom:1px solid var(--rule); } .principles article:nth-child(odd) { border-right:1px solid var(--rule); }
+      .principles h3 { margin:48px 0 15px; color:var(--blue); font:34px/1 var(--serif); letter-spacing:-.04em; }
+      .principles p { margin:0; line-height:1.55; }
+      .data { color:var(--cream); background:var(--blue); }
+      .data .eyebrow { color:var(--cream); } .data h2 { max-width:850px; }
+      .fact-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; margin-top:60px; background:rgba(255,251,237,.5); }
+      .fact-grid article { min-height:192px; padding:25px; background:var(--blue); } .fact-grid strong { display:block; margin-bottom:40px; font:48px/.85 var(--serif); letter-spacing:-.05em; } .fact-grid p { margin:0; font-size:14px; line-height:1.48; }
+      .directions { margin-top:1px; padding:26px; color:var(--ink); background:var(--cream); } .directions p { margin:0; font:14px/1.6 var(--sans); } .directions code { font-family:var(--mono); }
+      .hosts { display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--blue); background:var(--cream); }
+      .hosts article { min-height:195px; padding:24px; border-right:1px solid var(--rule); } .hosts article:last-child { border:0; } .hosts h3 { margin:40px 0 13px; color:var(--blue); font:34px/1 var(--serif); } .hosts p { margin:0; font-size:14px; line-height:1.52; }
+      .video-slot { margin-top:52px; border:1px solid var(--blue); background:var(--cream); box-shadow:11px 11px 0 var(--blue); } .video-slot video { display:block; max-height:78vh; object-fit:contain; width:100%; background:#10133b; } .video-slot p { margin:0; padding:12px 16px; font:10px var(--mono); letter-spacing:.08em; text-transform:uppercase; }
+      .transcript { margin-top:54px; border-top:1px solid var(--blue); border-bottom:1px solid var(--blue); } .transcript summary { cursor:pointer; display:flex; align-items:center; min-height:44px; padding:20px 0; color:var(--blue); font:11px var(--mono); letter-spacing:.1em; text-transform:uppercase; } .transcript div { max-width:760px; padding:0 0 24px; font-size:16px; line-height:1.6; }
+      .final { padding-block:clamp(80px,12vw,160px); } .final h2 { max-width:940px; margin-top:22px; font-size:clamp(55px,7.4vw,112px); } footer { display:flex; justify-content:space-between; gap:18px; padding-block:26px; color:var(--cream); background:var(--blue); font:9px var(--mono); letter-spacing:.1em; text-transform:uppercase; }
+      @media (max-width:900px) { .hero,.heading { grid-template-columns:1fr; } .hero-note { max-width:460px; } .hosts { grid-template-columns:repeat(2,1fr); } .hosts article:nth-child(2) { border-right:0; } .hosts article:nth-child(-n+2) { border-bottom:1px solid var(--rule); } }
+      @media (max-width:620px) { body { background-size:24px 24px; overflow-x:hidden; } header { min-height:68px; } nav { gap:13px; font-size:9px; } nav a:not(:last-child) { display:none; } .hero { padding-top:72px; } .stats { grid-template-columns:repeat(2,1fr); } .stats div:nth-child(2n) { border-right:0; } .stats div:nth-child(-n+2) { border-bottom:1px solid rgba(255,251,237,.4); } .heading { gap:18px; } .terminal { box-shadow:7px 7px 0 var(--blue); } .ledger,.principles,.hosts { grid-template-columns:1fr; } .ledger div + div,.principles article:nth-child(odd) { border-left:0; } .principles article:nth-child(odd),.hosts article { border-right:0; } .principles article { min-height:0; } .fact-grid { grid-template-columns:1fr; } .fact-grid article { min-height:0; } footer { flex-direction:column; } }
+      @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="shell">
+      <a class="brand" href="#top" aria-label="Polyglot home"><span class="mark" aria-hidden="true">P</span>Polyglot</a>
+      <nav aria-label="Primary"><a href="#ambient">Watch</a><a href="#data">Data</a><a href="#hosts">Hosts</a><a href="https://github.com/Amal-David/polyglot">GitHub ↗</a></nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="shell hero" id="top">
+        <div>
+          <p class="eyebrow">Polyglot for Codex + Claude Code</p>
+          <h1>Learn a language in the <em>pauses</em> between agent turns.</h1>
+          <p class="lede">Instead of staring at terminal churn, collect one useful word or phrase every few completed turns. No extra tab. No streak pressure. Just something small that adds up.</p>
+          <div class="actions"><a class="button primary" href="https://github.com/Amal-David/polyglot">Add Polyglot to your agent ↗</a><a class="button" href="#ambient">Watch the terminal demo</a></div>
+        </div>
+        <aside class="hero-note" aria-label="Ambient learning example"><p class="kicker">Turn 5 / EN → DE</p><strong>hello → hallo</strong><p>one small thing that compounds<br>ungraded &nbsp; / &nbsp; local &nbsp; / &nbsp; quiet</p></aside>
+      </section>
+      <section class="stats" aria-label="Ambient learning summary"><div><strong>5</strong><span>completed turns</span></div><div><strong>1</strong><span>useful phrase</span></div><div><strong>74</strong><span>language directions</span></div><div><strong>0</strong><span>model calls</span></div></section>
+      <section class="section shell" id="ambient"><div class="heading"><p class="eyebrow">Claude Code terminal</p><h2>The work finishes. Polyglot teaches one useful phrase.</h2><p>No hook commands or payloads—just the experience inside a coding session.</p></div><div class="video-slot"><div class="terminal-bar"><span>Polyglot · Claude Code</span><span>English → German at the turn boundary</span></div><video controls autoplay muted loop playsinline preload="metadata" poster="./assets/polyglot-poster.png"><source src="./assets/polyglot-demo.mp4" type="video/mp4">Your browser does not support the Polyglot terminal demo.</video></div><details class="transcript"><summary>Accessible transcript</summary><div><p>Claude Code adds a regression test for the German review scheduler and runs 24 focused tests successfully. At the turn boundary, Polyglot displays <code>hello → hallo</code> with the pronunciation <code>HAH-loh</code>.</p></div></details></section>
+      <section class="section shell" id="review">
+        <div class="heading"><p class="eyebrow">When you want deliberate practice</p><h2>Recall it. Grade it. See it again when it matters.</h2><p>The terminal review flow is optional and secondary: it turns ambient exposure into locally scheduled learning.</p></div>
+        <div class="terminal" aria-label="Polyglot German typed recall terminal sequence"><div class="terminal-bar"><span>polyglot / review</span><span>en-de · reverse</span></div><pre><span class="prompt">$ polyglot review --pair en-de --direction reverse</span>
+
+Prompt: sehen
+Your answer: <span class="answer">to see</span>
+Answer: to see
+<span class="grade">Grade [again/hard/good/easy]: good</span></pre><dl class="ledger"><div><dt>Local due state</dt><dd>Next review: tomorrow</dd></div><div><dt>Progress ledger</dt><dd>seen 1 · good 1 · due 0</dd></div></dl></div>
+        <p class="annotation"><strong>Why “tomorrow”?</strong> The CLI shown above displays the answer and accepts the grade. The due-tomorrow line is an explanation of the shipped deterministic new-card <code>good</code> interval—one day—not invented CLI output.</p>
+      </section>
+      <section class="section shell" aria-labelledby="privacy-title"><div class="heading"><p class="eyebrow">Privacy / token boundary</p><h2 id="privacy-title">A narrow learning signal, kept local.</h2><p>Polyglot isolates practice state from the ambient companion. That boundary is deliberate: a phrase can be useful without becoming evidence about the learner.</p></div><div class="principles"><article><p class="kicker">01 / typed input</p><h3>Not retained</h3><p>Typed answers are not persisted. Explicit grades—not answer text—schedule local SQLite state.</p></article><article><p class="kicker">02 / ambient</p><h3>Ungraded, then due-only</h3><p>A fresh pair can show one labelled starter exposure without creating learner state. After explicit review begins, ambient mode reads due state only and never mutates mastery, grades, or intervals.</p></article><article><p class="kicker">03 / isolation</p><h3>No injection</h3><p>No model or network call; no learner history, prompt, or transcript is injected into an agent turn.</p></article><article><p class="kicker">04 / audit</p><h3>Small enough to inspect</h3><p>The largest audited ambient line is 85 characters, about 43 tokens.</p></article></div></section>
+      <section class="section data" id="data"><div class="shell"><p class="eyebrow">The catalog behind the moment</p><h2>Broad coverage. Conservative learning facts.</h2><p class="body-copy">The 19,281-entry catalog, interactive cabinet, typed recall, and spaced repetition are there when you want deliberate study. They support the ambient moment; they are not the point of it.</p><div class="fact-grid"><article><strong>520</strong><p>German learning-metadata records. German already existed; this is not marketed as a newly added language.</p></article><article><strong>119</strong><p>Conservative exact-lemma article/gender facts.</p></article><article><strong>79</strong><p>Exact-text clozes. Automated and not native-speaker reviewed.</p></article></div><div class="directions"><p><strong>New reverse directions:</strong> <code>PL→EN 264</code>, <code>UK→EN 265</code>, <code>SV→EN 261</code>, <code>EL→EN 256</code>. Each is mechanically derived from existing shipped source records, with no new translation or transliteration claims. Polyglot does not claim an official Duolingo top 20.</p></div></div></section>
+      <section class="section shell" id="hosts"><div class="heading"><p class="eyebrow">Where it meets you</p><h2>Inside the coding session. Not in another tab.</h2><p>Codex Desktop, Codex CLI, and Claude Code share the central Stop-hook experience. Pi and Hermes support extends the same idea to more agent workflows.</p></div><div class="hosts"><article><p class="kicker">Codex Desktop + CLI</p><h3>One plugin</h3><p>Packaged skill and fail-soft Stop hook with a compact <code>systemMessage</code>.</p></article><article><p class="kicker">Claude Code</p><h3>Same cadence</h3><p>The validated plugin declares the same optional Stop adapter.</p></article><article><p class="kicker">Pi</p><h3>Extended</h3><p>The canonical skill and native end-of-turn extension are included.</p></article><article><p class="kicker">Hermes</p><h3>Extended</h3><p>The namespaced skill, hook, and command load together.</p></article></div></section>
+      <section class="shell final"><p class="eyebrow">Make the waiting useful</p><h2>Let every few turns teach you one thing.</h2><div class="actions"><a class="button primary" href="https://github.com/Amal-David/polyglot">Add Polyglot to your agent ↗</a></div></section>
+    </main>
+    <footer class="shell"><span>Polyglot · educational content</span><span>Ambient learning · terminal tools included</span></footer>
+</body>
+</html>
