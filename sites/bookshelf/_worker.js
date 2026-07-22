@@ -6,6 +6,23 @@ const DISCOVERY_LINKS = [
   '</.well-known/agent-skills/index.json>; rel="describedby"; type="application/json"',
 ].join(", ");
 
+export function acceptsMarkdown(header) {
+  if (!header) return false;
+
+  return header.split(",").some((range) => {
+    const [mediaType, ...parameters] = range.trim().toLowerCase().split(";");
+    if (mediaType.trim() !== MARKDOWN_ACCEPT) return false;
+
+    const quality = parameters
+      .map((parameter) => parameter.trim())
+      .find((parameter) => parameter.startsWith("q="));
+    if (!quality) return true;
+
+    const value = Number(quality.slice(2));
+    return Number.isFinite(value) && value > 0 && value <= 1;
+  });
+}
+
 function decorate(response, { root }) {
   const decorated = new Response(response.body, response);
   decorated.headers.set("X-Content-Type-Options", "nosniff");
@@ -21,10 +38,7 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const root = url.pathname === "/";
-    const wantsMarkdown = request.headers
-      .get("Accept")
-      ?.toLowerCase()
-      .includes(MARKDOWN_ACCEPT);
+    const wantsMarkdown = acceptsMarkdown(request.headers.get("Accept"));
 
     if (root && wantsMarkdown) {
       const markdownUrl = new URL("/llms.txt", url);

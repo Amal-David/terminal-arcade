@@ -97,7 +97,7 @@ def validate_site(site: Site) -> None:
         _require(unsupported in llms, f"{site.name}: missing capability boundary: {unsupported}")
 
     worker = (site.root / "_worker.js").read_text(encoding="utf-8")
-    _require('includes(MARKDOWN_ACCEPT)' in worker, f"{site.name}: markdown negotiation is missing")
+    _require('acceptsMarkdown(request.headers.get("Accept"))' in worker, f"{site.name}: markdown negotiation is missing")
     _require('new URL("/llms.txt", url)' in worker, f"{site.name}: markdown source is wrong")
     _require('rel="describedby"' in worker, f"{site.name}: skills Link relation is missing")
     _require("url.pathname.startsWith(SKILLS_PREFIX)" in worker, f"{site.name}: well-known skills routing is missing")

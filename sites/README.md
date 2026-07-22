@@ -20,8 +20,9 @@ Production URLs:
 
 The `_worker.js` file in each bundle performs one narrow dynamic behavior:
 requests for `/` with `Accept: text/markdown` receive that site's `llms.txt`.
-Normal browser requests continue to receive `index.html` and all other paths
-are served by the static asset binding.
+Normal browser requests continue to receive `index.html`. Only approved public
+files, assets, and agent-skill paths are served by the static asset binding;
+unknown paths return `404`.
 
 Run `python3 scripts/validate_agent_ready_sites.py` before deploying. After a
 deployment, submit each production root—not a nested Pagecast `/p/...` URL—to
