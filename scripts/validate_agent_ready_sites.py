@@ -66,11 +66,12 @@ def validate_site(site: Site) -> None:
         for user_facing_moment in (
             "Claude Code v2.1.217",
             "Opus 4.8",
-            "moonshot-with-unit-tests",
-            "moonshot/launch_plan.py",
+            "rewrite-prod-in-rust-by-lunch",
+            "migration/plan.rs",
             "Do nothing which is of no use.",
             "Good. What survived?",
-            "financially irresponsible",
+            "rollback button",
+            "deadline has been downgraded to fictional",
         ):
             _require(user_facing_moment in demo_source, f"bookshelf: demo is missing {user_facing_moment}")
 
