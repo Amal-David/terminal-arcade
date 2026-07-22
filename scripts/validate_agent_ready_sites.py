@@ -71,8 +71,20 @@ def validate_site(site: Site) -> None:
             "--idle-time-limit 0.7",
         ):
             _require(actual_capture_marker in demo_source, f"bookshelf: actual capture renderer is missing {actual_capture_marker}")
-        for private_marker in ("@gmail", "Resume this session", "claude --resume"):
-            _require(private_marker not in actual_cast, f"bookshelf: actual capture retains private marker {private_marker}")
+        for private_marker in ("@gmail", "resume this session", "claude --resume", "/users/", "/private/", "amal", "organization"):
+            _require(
+                private_marker not in actual_cast.lower(),
+                f"bookshelf: actual capture retains private marker {private_marker}",
+            )
+        for cast_marker in (
+            "rewrite-prod-in-rust-by-lunch",
+            "rollback_window_minutes",
+            "cargo test",
+            "fastest",
+            "darker",
+            "Crime",
+        ):
+            _require(cast_marker in actual_cast, f"bookshelf: actual capture is missing {cast_marker}")
         for user_facing_moment in (
             "Actual Claude Code 2.1.217 session",
             "Opus 4.8",
@@ -80,7 +92,7 @@ def validate_site(site: Site) -> None:
             "rollback_window_minutes",
             "both tests passing",
             "The darker the night, the brighter the stars.",
-            "1.25×",
+            "1.25\u00d7",
         ):
             _require(user_facing_moment in html, f"bookshelf: actual demo transcript is missing {user_facing_moment}")
 
