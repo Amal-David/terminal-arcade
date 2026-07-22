@@ -60,20 +60,29 @@ def validate_site(site: Site) -> None:
 
     if site.name == "bookshelf":
         demo_source = (REPO_ROOT / "videos/cli-recordings/bookshelf-claude-demo.sh").read_text(encoding="utf-8")
+        actual_cast = (REPO_ROOT / "videos/cli-recordings/bookshelf-claude-actual.cast").read_text(encoding="utf-8")
         _require("autoplay muted loop" in html, "bookshelf: terminal demo must autoplay as the primary experience")
-        for implementation_detail in ("ambient.py", "systemMessage", "printf '{}'", 'print_line "{}"'):
+        for implementation_detail in ("systemMessage", "printf '{}'", 'print_line "{}"', "type_line"):
             _require(implementation_detail not in demo_source, f"bookshelf: demo leaks hook plumbing: {implementation_detail}")
+        for actual_capture_marker in (
+            "bookshelf-claude-actual.cast",
+            "agg",
+            "--speed 1.25",
+            "--idle-time-limit 0.7",
+        ):
+            _require(actual_capture_marker in demo_source, f"bookshelf: actual capture renderer is missing {actual_capture_marker}")
+        for private_marker in ("@gmail", "Resume this session", "claude --resume"):
+            _require(private_marker not in actual_cast, f"bookshelf: actual capture retains private marker {private_marker}")
         for user_facing_moment in (
-            "Claude Code v2.1.217",
+            "Actual Claude Code 2.1.217 session",
             "Opus 4.8",
             "rewrite-prod-in-rust-by-lunch",
-            "migration/plan.rs",
-            "Do nothing which is of no use.",
-            "Good. What survived?",
-            "rollback button",
-            "deadline has been downgraded to fictional",
+            "rollback_window_minutes",
+            "both tests passing",
+            "The darker the night, the brighter the stars.",
+            "1.25×",
         ):
-            _require(user_facing_moment in demo_source, f"bookshelf: demo is missing {user_facing_moment}")
+            _require(user_facing_moment in html, f"bookshelf: actual demo transcript is missing {user_facing_moment}")
 
     if site.name == "polyglot":
         demo_source = (REPO_ROOT / "videos/cli-recordings/polyglot-claude-demo.sh").read_text(encoding="utf-8")
