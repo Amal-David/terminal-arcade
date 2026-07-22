@@ -25,40 +25,41 @@ type_line() {
 }
 
 clear
-printf '%b' "${orange}╭─── Claude Code v2.1.14 "
-printf '─%.0s' {1..54}
+printf '%b' "${orange}╭─── Claude Code v2.1.217 "
+printf '─%.0s' {1..53}
 printf '%b\n' "╮${reset}"
 printf '%b  %b✻%b %-74s%b│%b\n' "${orange}│${reset}" "$orange" "${reset}${text}" "Welcome back, Amal!" "$orange" "$reset"
-printf '%b    %-74s%b│%b\n' "${orange}│${reset}${muted}" "Sonnet 4.5 · ~/terminal-arcade" "$orange" "$reset"
+printf '%b    %-74s%b│%b\n' "${orange}│${reset}${muted}" "Opus 4.8 · ~/moonshot-with-unit-tests" "$orange" "$reset"
 printf '%b' "${orange}╰"
 printf '─%.0s' {1..78}
 printf '%b\n' "╯${reset}"
 printf '\n'
 sleep 0.5
 
-type_line "❯ Simplify the quote selector and run the focused tests."
+type_line "❯ Make the Moon profitable by Friday. Delete anything useless and test the plan."
 printf '\n'
 sleep 0.8
 
-print_line "${orange}⏺${reset} ${text}I’ll trace the selection path, remove the duplicate branch, and verify it.${reset}"
+print_line "${orange}⏺${reset} ${text}I’ll cut ceremonial scope, protect survival systems, and verify the launch plan.${reset}"
 printf '\n'
 sleep 0.8
 
-print_line "${orange}⏺${reset} ${tool}Read${reset}${text}(bookshelf/skill/quote_picker.py)${reset}"
-print_line "  ${muted}⎿  Read 114 lines${reset}"
+print_line "${orange}⏺${reset} ${tool}Read${reset}${text}(moonshot/launch_plan.py)${reset}"
+print_line "  ${muted}⎿  Read 86 lines${reset}"
 sleep 0.75
 
-print_line "${orange}⏺${reset} ${tool}Update${reset}${text}(bookshelf/skill/quote_picker.py)${reset}"
-print_line "  ${muted}⎿  Added 8 lines, removed 13 lines${reset}"
+print_line "${orange}⏺${reset} ${tool}Update${reset}${text}(moonshot/launch_plan.py)${reset}"
+print_line "  ${muted}⎿  Added 6 lines, removed 41 lines${reset}"
 sleep 0.75
 
-print_line "${orange}⏺${reset} ${tool}Bash${reset}${text}(python3 -m unittest tests.test_bookshelf_hook)${reset}"
-print_line "  ${muted}⎿  Ran 19 tests in 0.31s${reset}"
+print_line "${orange}⏺${reset} ${tool}Bash${reset}${text}(python3 -m unittest tests.test_launch_plan)${reset}"
+print_line "  ${muted}⎿  Ran 27 tests in 0.42s${reset}"
 print_line "     ${success}OK${reset}"
 printf '\n'
 sleep 0.9
 
-print_line "${orange}⏺${reset} ${text}Simplified the candidate selection path and preserved unseen-first behavior.${reset}"
+print_line "${orange}⏺${reset} ${text}Cut the NFT gift shop, lunar loyalty points, and executive zero-gravity offsite.${reset}"
+print_line "  ${text}The plan now funds oxygen before branding.${reset}"
 printf '\n'
 sleep 0.9
 
@@ -67,5 +68,13 @@ print_line "${quote}📖 “Do nothing which is of no use.”${reset}"
 print_line "   ${text}— Miyamoto Musashi, ${orange}The Book of Five Rings${reset}"
 print_line "${muted}────────────────────────────────────────────────────────────────────────${reset}"
 printf '\n'
+sleep 0.8
+
+type_line "❯ Good. What survived?"
+printf '\n'
+sleep 0.6
+print_line "${orange}⏺${reset} ${text}Oxygen, return fuel, and one honest spreadsheet.${reset}"
+print_line "  ${text}The Moon remains ambitious; the roadmap is now merely financially irresponsible.${reset}"
+printf '\n'
 printf '%b' "${text}❯ ${reset}"
-sleep 4
+sleep 30

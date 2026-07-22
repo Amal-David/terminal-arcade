@@ -3,7 +3,7 @@ Output "sites/bookshelf/assets/bookshelf-demo.mp4"
 Set Shell "zsh"
 Set Width 1440
 Set Height 900
-Set FontSize 24
+Set FontSize 22
 Set FontFamily "JetBrains Mono"
 Set TypingSpeed 55ms
 Set Theme "OneDark"
@@ -16,4 +16,4 @@ Show
 
 Type "claude"
 Enter
-Sleep 14s
+Sleep 22s

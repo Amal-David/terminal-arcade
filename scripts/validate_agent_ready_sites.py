@@ -63,7 +63,15 @@ def validate_site(site: Site) -> None:
         _require("autoplay muted loop" in html, "bookshelf: terminal demo must autoplay as the primary experience")
         for implementation_detail in ("ambient.py", "systemMessage", "printf '{}'", 'print_line "{}"'):
             _require(implementation_detail not in demo_source, f"bookshelf: demo leaks hook plumbing: {implementation_detail}")
-        for user_facing_moment in ("Claude Code", "bookshelf/skill/quote_picker.py", "Do nothing which is of no use."):
+        for user_facing_moment in (
+            "Claude Code v2.1.217",
+            "Opus 4.8",
+            "moonshot-with-unit-tests",
+            "moonshot/launch_plan.py",
+            "Do nothing which is of no use.",
+            "Good. What survived?",
+            "financially irresponsible",
+        ):
             _require(user_facing_moment in demo_source, f"bookshelf: demo is missing {user_facing_moment}")
 
     if site.name == "polyglot":
