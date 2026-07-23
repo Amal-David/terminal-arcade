@@ -105,11 +105,26 @@ def validate_site(site: Site) -> None:
 
     if site.name == "polyglot":
         demo_source = (REPO_ROOT / "videos/cli-recordings/polyglot-claude-demo.sh").read_text(encoding="utf-8")
+        actual_cast = (REPO_ROOT / "videos/cli-recordings/polyglot-claude-actual.cast").read_text(encoding="utf-8")
         _require("autoplay muted loop" in html, "polyglot: terminal demo must autoplay as the primary experience")
         for implementation_detail in ("ambient.py", "systemMessage", "printf '{}'", 'print_line "{}"'):
             _require(implementation_detail not in demo_source, f"polyglot: demo leaks hook plumbing: {implementation_detail}")
-        for user_facing_moment in ("Claude Code", "polyglot/scheduler.py", "hello → hallo", "HAH-loh"):
-            _require(user_facing_moment in demo_source, f"polyglot: demo is missing {user_facing_moment}")
+        for edit_marker in ("Claude Code", "v2.1.218", "Opus", "Friday", "friday-deploy-guard", "3 passed", "Polyglot", "hallo"):
+            _require(edit_marker in actual_cast, f"polyglot: actual capture is missing {edit_marker}")
+        for renderer_marker in ("setpts=(PTS-STARTPTS)/3.5", "zoompan", "drawbox", "-t 11", "-ss 10"):
+            _require(renderer_marker in demo_source, f"polyglot: renderer is missing {renderer_marker}")
+        for user_facing_moment in (
+            "Actual Claude Code 2.1.218 session",
+            "Opus 4.8",
+            "fix-friday-deploys-before-standup",
+            "requires_rollback_plan",
+            "all three tests passing",
+            "Polyglot starter · hello → hallo",
+            "1.25×",
+            "four-second highlighted hold",
+            "No tool call, edit, test result, response, or phrase was synthesized",
+        ):
+            _require(user_facing_moment in html, f"polyglot: actual demo transcript is missing {user_facing_moment}")
 
     robots = (site.root / "robots.txt").read_text(encoding="utf-8")
     _require("User-agent: *" in robots and "Allow: /" in robots, f"{site.name}: invalid wildcard crawl rules")
