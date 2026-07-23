@@ -76,13 +76,15 @@ def main(argv: list[str] | None = None) -> int:
     if event != "turn-ended":
         return 0
 
-    from bookshelf.skill.config import get_codex_cadence, load_hook_state, save_hook_state
+    from bookshelf.skill.config import get_codex_cadence, update_hook_state
     from bookshelf.skill.quote_picker import pick_quote
 
-    state = load_hook_state()
-    turn_count = state.get("codex_turn_count", 0) + 1
-    state["codex_turn_count"] = turn_count
-    save_hook_state(state)
+    def increment_turn(state: dict) -> int:
+        turn_count = state.get("codex_turn_count", 0) + 1
+        state["codex_turn_count"] = turn_count
+        return turn_count
+
+    turn_count = update_hook_state(increment_turn)
 
     cadence = get_codex_cadence()
     if cadence <= 0 or turn_count % cadence != 0:

@@ -80,15 +80,12 @@ def main(argv: list[str] | None = None) -> int:
 
     from wonder.skill.config import (
         get_codex_cadence,
-        load_hook_state,
-        save_hook_state,
+        update_hook_state,
     )
     from wonder.skill.wonder_picker import format_notification, pick_wonder
 
-    state = load_hook_state()
     cadence = get_codex_cadence()
-    fire = _should_fire(cadence, state)
-    save_hook_state(state)
+    fire = update_hook_state(lambda state: _should_fire(cadence, state))
 
     if not fire:
         return 0

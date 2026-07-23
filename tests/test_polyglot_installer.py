@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import stat
 import tempfile
 import unittest
 from pathlib import Path
@@ -137,6 +138,17 @@ class ClaudeHookInstallerTests(unittest.TestCase):
             installer._atomic_backup_once(settings_path)
             self.assertEqual(backup.read_text(), original_backup_text)
 
+    def test_backup_preserves_private_source_permissions(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            settings_path = Path(tmp) / "settings.json"
+            settings_path.write_text(json.dumps({"secret": "private"}))
+            settings_path.chmod(0o600)
+
+            installer._atomic_backup_once(settings_path)
+
+            backup = settings_path.with_name(settings_path.name + installer.SETTINGS_BACKUP_SUFFIX)
+            self.assertEqual(stat.S_IMODE(backup.stat().st_mode), 0o600)
+
     def test_declined_install_does_not_write(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             settings_path = Path(tmp) / "settings.json"
@@ -181,6 +193,61 @@ class CodexInstallerTests(unittest.TestCase):
             self.assertIn("polyglot", text)
             self.assertNotIn("echo", text)
             self.assertIn("model = \"x\"", text)
+
+    def test_install_does_not_replace_notify_prefixed_key(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            cfg = Path(tmp) / "config.toml"
+            cfg.write_text("notify_timeout = 5\nmodel = \"x\"\n")
+
+            installer.install_codex_hook(prompt=False, path=cfg)
+
+            text = cfg.read_text()
+            self.assertIn("notify_timeout = 5", text)
+            self.assertIn("notify = [", text)
+
+    def test_install_ignores_nested_notify_and_inserts_root_key_before_tables(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            cfg = Path(tmp) / "config.toml"
+            cfg.write_text('[features]\nnotify = "nested"\nhooks = true\n')
+
+            installer.install_codex_hook(prompt=False, path=cfg)
+
+            lines = cfg.read_text().splitlines()
+            self.assertTrue(lines[0].startswith("notify = ["))
+            self.assertIn('notify = "nested"', lines)
+
+    def test_install_preserves_multiline_root_values(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            cfg = Path(tmp) / "config.toml"
+            cfg.write_text('trusted_commands = [\n  "git status",\n]\n[features]\nhooks = true\n')
+
+            installer.install_codex_hook(prompt=False, path=cfg)
+
+            text = cfg.read_text()
+            self.assertIn('trusted_commands = [\n  "git status",\n]', text)
+            self.assertLess(text.index("notify = ["), text.index("[features]"))
+
+    def test_install_refuses_to_rewrite_multiline_notify_value(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            cfg = Path(tmp) / "config.toml"
+            original = 'notify = [\n  "echo",\n  "hi",\n]\nmodel = "x"\n'
+            cfg.write_text(original)
+
+            outcome = installer.install_codex_hook(prompt=False, path=cfg)
+
+            self.assertEqual(outcome.result, installer.InstallResult.PRINTED_FALLBACK)
+            self.assertEqual(cfg.read_text(), original)
+
+    def test_codex_backup_preserves_private_config_permissions(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            cfg = Path(tmp) / "config.toml"
+            cfg.write_text('model = "x"\n')
+            cfg.chmod(0o600)
+
+            installer.install_codex_hook(prompt=False, path=cfg)
+
+            backup = cfg.with_name(cfg.name + installer.SETTINGS_BACKUP_SUFFIX)
+            self.assertEqual(stat.S_IMODE(backup.stat().st_mode), 0o600)
 
     def test_install_is_idempotent(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

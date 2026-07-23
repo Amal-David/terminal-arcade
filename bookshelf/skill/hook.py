@@ -50,12 +50,14 @@ def main():
     except (json.JSONDecodeError, Exception):
         input_data = {}
 
-    from bookshelf.skill.config import load_hook_state, save_hook_state, get_cadence, is_context_matching_enabled
+    from bookshelf.skill.config import get_cadence, is_context_matching_enabled, update_hook_state
 
-    state = load_hook_state()
-    call_count = state.get("call_count", 0) + 1
-    state["call_count"] = call_count
-    save_hook_state(state)
+    def increment_call(state: dict) -> int:
+        call_count = state.get("call_count", 0) + 1
+        state["call_count"] = call_count
+        return call_count
+
+    call_count = update_hook_state(increment_call)
 
     cadence = get_cadence()
 

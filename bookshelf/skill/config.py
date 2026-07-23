@@ -6,7 +6,7 @@ import json
 import sys
 from pathlib import Path
 
-from terminal_arcade.platform import app_data_dir, atomic_write_json
+from terminal_arcade.platform import app_data_dir, atomic_write_json, locked_json_update
 
 # State lives in a durable location, not /tmp/
 APP_DIR_NAME = "bookshelf"
@@ -24,13 +24,22 @@ def _state_dir() -> Path:
 
 HOOK_STATE_FILE = _state_dir() / "hook_state.json"
 
+DEFAULT_HOOK_STATE = {
+    "call_count": 0,
+    "codex_turn_count": 0,
+    "last_quote_idx": -1,
+    "shown_counts": {},
+    "recent_indices": [],
+    "total_quotes_shown": 0,
+}
+
 
 def load_hook_state() -> dict:
     """Load hook state (call counter, shown history, etc.)."""
     try:
         return json.loads(HOOK_STATE_FILE.read_text(encoding="utf-8"))
     except (FileNotFoundError, json.JSONDecodeError, OSError):
-        return {"call_count": 0, "last_quote_idx": -1, "shown_counts": {}, "recent_indices": []}
+        return dict(DEFAULT_HOOK_STATE)
 
 
 def save_hook_state(state: dict) -> None:
@@ -39,6 +48,11 @@ def save_hook_state(state: dict) -> None:
         atomic_write_json(HOOK_STATE_FILE, state, indent=None)
     except OSError:
         pass
+
+
+def update_hook_state(update):
+    """Run a hook-state read/modify/write transaction under an exclusive lock."""
+    return locked_json_update(HOOK_STATE_FILE, DEFAULT_HOOK_STATE, update, indent=None)
 
 
 def get_cadence() -> int:

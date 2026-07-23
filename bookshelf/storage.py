@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import copy
 import json
 from pathlib import Path
 
@@ -36,12 +37,12 @@ def _load_json(filename: str, defaults: dict, base_dir: Path | None = None) -> d
     try:
         payload = json.loads(path.read_text(encoding="utf-8"))
         if not isinstance(payload, dict):
-            return dict(defaults)
-        merged = dict(defaults)
+            return copy.deepcopy(defaults)
+        merged = copy.deepcopy(defaults)
         merged.update(payload)
         return merged
     except (FileNotFoundError, OSError, json.JSONDecodeError, TypeError, ValueError):
-        return dict(defaults)
+        return copy.deepcopy(defaults)
 
 
 def _save_json(filename: str, payload: dict, base_dir: Path | None = None) -> None:
