@@ -69,6 +69,11 @@ def validate_site(site: Site) -> None:
             "agg",
             "--speed 1.25",
             "--idle-time-limit 0.7",
+            "setpts=(PTS-STARTPTS)/3",
+            "zoompan",
+            "drawbox",
+            "-t 10.55",
+            "-ss 9.5",
         ):
             _require(actual_capture_marker in demo_source, f"bookshelf: actual capture renderer is missing {actual_capture_marker}")
         for private_marker in ("@gmail", "resume this session", "claude --resume", "/users/", "/private/", "amal", "organization"):
@@ -93,6 +98,8 @@ def validate_site(site: Site) -> None:
             "both tests passing",
             "The darker the night, the brighter the stars.",
             "1.25\u00d7",
+            "four-second highlighted hold",
+            "one quote per completed response",
         ):
             _require(user_facing_moment in html, f"bookshelf: actual demo transcript is missing {user_facing_moment}")
 
